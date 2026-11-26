@@ -1,0 +1,54 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+
+interface Props {
+  route: RouteRecord;
+}
+
+const { route } = Astro.props;
+const slug = route.path.split("/").filter(Boolean)[0] ?? "";
+const guides: Readonly<Record<string, { kicker: string; intro: string; topics: readonly string[] }>> = {
+  assessments: { kicker: "Check understanding", intro: "Assessment starts with a clear view of the knowledge being checked. This public guide explains the boundaries around preparation, attempt history and protected assessment material.", topics: ["Separate practice from a scored attempt", "Confirm eligibility before an assessment opens", "Keep attempt history inside the authorised workspace"] },
+  cohort: { kicker: "Learn together", intro: "A cohort turns individual study into a shared delivery rhythm. Public guidance can explain structure and expectations; membership and personal progress stay private.", topics: ["Define the cohort and its facilitator", "Make dates and participation rules visible", "Keep learner records out of public pages"] },
+  controls: { kicker: "Govern the work", intro: "Controls make a project repeatable. They connect decisions, evidence and ownership without pretending that a checklist alone proves delivery.", topics: ["Name the control owner", "Record the evidence a control requires", "Escalate exceptions instead of hiding them"] },
+  dashboard: { kicker: "See the whole", intro: "A useful dashboard answers a decision, not merely displays activity. This guide focuses on the questions a public overview can answer without exposing private portfolio data.", topics: ["Start with the decision the view supports", "Distinguish progress from outcome", "Show freshness and missing data honestly"] },
+  documents: { kicker: "Keep the record", intro: "Project documents become useful when their purpose, owner and current version are clear. Public guidance covers document discipline; controlled files remain in the authorised workspace.", topics: ["Give every document an owner", "Separate draft from approved", "Link the decision to its supporting record"] },
+  exams: { kicker: "Verify capability", intro: "An exam is a controlled assessment, not a public content library. The public guide explains access and preparation boundaries while questions and results remain protected.", topics: ["Confirm the allowed attempt policy", "Prepare without publishing live questions", "Report results only to authorised learners"] },
+  industries: { kicker: "Apply the method", intro: "Project methods travel; assumptions do not. Use industry context to adapt governance, delivery cadence and evidence without claiming a universal template fits every organisation.", topics: ["Identify the regulatory context", "Adapt artefacts to the delivery model", "Record which assumptions changed"] },
+  lessons: { kicker: "Build capability", intro: "A lesson should change what someone can do next. Public learning pages can set direction and prerequisites while tracked completion belongs to an account.", topics: ["State the outcome before the content", "Connect the lesson to a working artefact", "Keep completion data private"] },
+  plan: { kicker: "Shape the work", intro: "Planning connects outcomes, scope, sequence and constraints. A good plan stays explicit about uncertainty instead of turning an estimate into a promise.", topics: ["Define the outcome and acceptance evidence", "Make dependencies visible", "Replan when the evidence changes"] },
+  pmo: { kicker: "Coordinate delivery", intro: "A project management office creates a shared operating rhythm across work. This public guide introduces that coordination without exposing portfolio or resource records.", topics: ["Standardise the decision process", "Report exceptions with context", "Keep governance proportionate to the work"] },
+  portfolio: { kicker: "Choose the work", intro: "Portfolio management balances outcomes, capacity and risk across initiatives. Public guidance can explain the method; live priorities and financial data remain protected.", topics: ["Compare initiatives on the same criteria", "Make trade-offs explicit", "Revisit priorities as capacity changes"] },
+  programme: { kicker: "Connect outcomes", intro: "A programme coordinates related projects around an outcome no single project can deliver. Its public guide explains the relationship between benefits, dependencies and governance.", topics: ["Define the outcome across projects", "Manage dependencies between teams", "Track benefits beyond project closure"] }
+};
+const guide = guides[slug] ?? { kicker: "Project delivery", intro: route.description, topics: ["Clarify the outcome", "Make ownership visible", "Record the evidence"] };
+const related = ["plan", "pmo", "portfolio", "programme", "controls", "dashboard"].filter((item) => item !== slug).slice(0, 3);
+const requestHref = `https://digitracks.net/contact/?intent=demo&origin=learnpmo&route=${encodeURIComponent(route.path)}`;
+---
+
+<section class="pmo-guide" aria-labelledby="pmo-title">
+  <div class="shell pmo-guide__hero">
+    <div class="pmo-guide__copy">
+      <p class="t-label">LearnPMO / public field guide</p>
+      <h1 id="pmo-title">{route.title.replace(" | Digi Tracks", "")}<em>.</em></h1>
+      <p class="pmo-guide__lede">{guide.intro}</p>
+      <div class="button-row"><Button href="#pmo-method" ctaId="read-pmo-guide">Read the working method</Button><Button href={requestHref} variant="secondary">Ask about workspace access</Button></div>
+    </div>
+    <div class="pmo-guide__plate" aria-hidden="true"><span>{guide.kicker}</span><strong>{slug.slice(0, 3).toUpperCase()}</strong><small>PUBLIC GUIDE / {String(Object.keys(guides).indexOf(slug) + 1).padStart(2, "0")}</small></div>
+  </div>
+</section>
+
+<section class="section pmo-method" id="pmo-method" aria-labelledby="pmo-method-title">
+  <div class="shell pmo-method__grid">
+    <div><p class="t-label">The working method</p><h2 id="pmo-method-title">Three moves that make the work easier to govern.</h2></div>
+    <ol>{guide.topics.map((topic, index) => <li key={topic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{topic}</h3><p>{index === 0 ? "Begin with a precise statement of what is being governed, delivered or learned. Ambiguity at the start becomes rework later." : index === 1 ? "Make the responsible person, supporting evidence and decision point visible to the people doing the work." : "Treat the record as a living project artefact. Update it when assumptions, scope or delivery evidence changes."}</p></li>)}</ol>
+  </div>
+</section>
+
+<section class="section section--ruled pmo-continue" aria-labelledby="pmo-continue-title">
+  <div class="shell">
+    <div class="section-head"><div><p class="t-label">Continue the path</p><h2 id="pmo-continue-title">Connect the next idea.</h2></div><p>The public guide is readable without an account. Saved plans, cohort data, assessments and progress require authorised workspace access.</p></div>
+    <ul class="index-list">{related.map((item) => <li><a href={`/${item}/`}><strong>{item[0].toUpperCase() + item.slice(1)}</strong><span>{guides[item]?.kicker}</span><small>Read guide</small></a></li>)}</ul>
+  </div>
+</section>

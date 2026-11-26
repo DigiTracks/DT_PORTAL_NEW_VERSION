@@ -1,0 +1,14 @@
+---
+import PageHero from "@digitracks/ui/components/PageHero.astro";
+import SiteLayout from "@digitracks/ui/components/SiteLayout.astro";
+import Button from "@digitracks/ui/components/Button.astro";
+import "@digitracks/ui/styles/base.css";
+import commonStyles from "@digitracks/ui/styles/portal-common.css?inline";
+---
+
+<SiteLayout title="Page not found | DigiTracks" description="This page does not exist." origin="https://digitracks.net/" indexable={false} pageStyles={commonStyles}>
+  <PageHero id="not-found-title" title="This page is not here." eyebrow="404" lede="The address may be wrong, or the page may have moved. The catalogue and learning paths are still available." compact>
+    <Button href="/products/">Browse products</Button>
+    <Button href="/" variant="secondary">Return home</Button>
+  </PageHero>
+</SiteLayout>

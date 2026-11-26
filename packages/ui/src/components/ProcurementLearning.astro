@@ -1,0 +1,90 @@
+---
+import { productRegistry } from "@digitracks/catalog";
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+import ProductMark from "./ProductMark";
+
+interface Props {
+  route: RouteRecord;
+}
+
+const { route } = Astro.props;
+const sherpa = productRegistry.find((product) => product.id === "sherpa")!;
+const requestHref = `https://digitracks.net/contact/?intent=learning&origin=${route.origin}&route=${encodeURIComponent(route.path)}&product=sherpa`;
+const capabilities = [
+  ["Academy", "Modules, learning paths, progress, quizzes, badges and local exam history."],
+  ["Calculators", "Financial and procurement calculations saved with the learner’s working context."],
+  ["Reference library", "SOPs, checklists, templates, decision guides and commercial scenarios."],
+  ["Local retrieval", "A copilot that retrieves from bundled knowledge and links its cited sources."],
+  ["Document packs", "Build an HTML pack and open the browser print dialog; native PDF generation is not verified."],
+  ["Saved work", "Local calculations and settings, with JSON backup and restore plus an in-memory fallback."]
+] as const;
+const boundaries = [
+  ["Enrolment and access", "No course seat, enrolment service or access entitlement is issued by this public page."],
+  ["Credentials", "Accreditation and verifiable external credentials are not verified. Local results are not presented as accredited certification."],
+  ["Cross-device progress", "Saved state is local to the device. Automatic cloud sync or cross-device progress is not verified."],
+  ["AI and integrations", "The copilot is local retrieval, not a verified external language model. No MCP or team-workflow integration is claimed."],
+  ["Offline behavior", "The current live build has no verified offline PWA. Do not rely on offline installation or synchronisation."],
+  ["Commercial scope", "ProcureSherpa Learning names the Academy component; it is not presented as a separately verified SKU."]
+] as const;
+---
+
+<section class="procurement-learning" aria-labelledby="procurement-learning-title">
+  <div class="shell procurement-learning__hero">
+    <div class="procurement-learning__copy">
+      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>ProcureSherpa Learning / Academy component</p>
+      <h1 id="procurement-learning-title">Learn the work.<br><em>Then use the tool.</em></h1>
+      <p class="procurement-learning__lede">{route.description}</p>
+      <div class="button-row"><Button href={requestHref} ctaId="request-learning-access">Ask about learning access</Button><Button href="https://digitracks.net/products/sherpa-toolkit/" external variant="secondary" ctaId="inspect-product">Inspect Procure Sherpa</Button></div>
+      <p class="procurement-learning__note">Public guidance only. This page does not enrol a learner, issue credentials or claim that access has been granted.</p>
+    </div>
+    <figure class="academy-instrument" aria-label="ProcureSherpa Academy learning model">
+      <div class="academy-instrument__head"><ProductMark product={sherpa} size={42} /><span>ACADEMY / LOCAL WORKING MODEL</span><small>01</small></div>
+      <div class="academy-instrument__body">
+        <div><span>Learn</span><strong>Module + path</strong><small>Progress and quizzes</small></div>
+        <i aria-hidden="true"></i>
+        <div><span>Practise</span><strong>Scenario + calculator</strong><small>Saved working context</small></div>
+        <i aria-hidden="true"></i>
+        <div><span>Review</span><strong>Local exam history</strong><small>No accredited claim</small></div>
+      </div>
+      <div class="academy-instrument__foot"><span>LOCAL STATE</span><span>JSON BACKUP / RESTORE</span><span>BUNDLED KNOWLEDGE</span></div>
+      <figcaption>Published component model · not an application screenshot</figcaption>
+    </figure>
+  </div>
+  <div class="shell procurement-learning__ledger"><span>Academy modules</span><span>Calculators & references</span><span>Scenarios & saved work</span><span>Local-first boundary</span></div>
+</section>
+
+<section class="academy-scope section" aria-labelledby="academy-scope-title">
+  <div class="shell">
+    <div class="section-head"><div><p class="t-label">01 / Published learning scope</p><h2 id="academy-scope-title">Capability you can work with.</h2></div><p>ProcureSherpa combines structured learning with practical procurement references and calculations in a browser-based toolkit.</p></div>
+    <ol class="academy-capability-grid">{capabilities.map(([title, description], index) => <li><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{description}</p></li>)}</ol>
+  </div>
+</section>
+
+<section class="academy-local section" aria-labelledby="academy-local-title">
+  <div class="shell academy-local__grid">
+    <div><p class="t-label">02 / Local working model</p><h2 id="academy-local-title">Your practice stays on the device by default.</h2></div>
+    <div class="prose"><p>Progress, calculations and settings use browser-local storage, with an in-memory fallback. JSON backup and restore let the learner move a working copy deliberately; it is not automatic cloud synchronisation.</p><p>The retrieval copilot searches bundled knowledge and presents linked source citations. It should be described as local retrieval, not as a verified external AI service.</p><Button href={requestHref} variant="secondary" ctaId="request-learning-access">Ask how access is provided</Button></div>
+  </div>
+</section>
+
+<section class="academy-boundary section" aria-labelledby="academy-boundary-title">
+  <div class="shell academy-boundary__grid">
+    <div><p class="t-label">03 / Access and evidence boundary</p><h2 id="academy-boundary-title">What this learning path does not prove.</h2><p>These are deliberate limits, not missing features waiting to be inferred.</p></div>
+    <dl>{boundaries.map(([term, detail]) => <div><dt>{term}</dt><dd>{detail}</dd></div>)}</dl>
+  </div>
+</section>
+
+<section class="academy-connections section" aria-labelledby="academy-connections-title">
+  <div class="shell">
+    <div class="section-head"><div><p class="t-label">04 / Connect learning to the decision</p><h2 id="academy-connections-title">Learn beside the tool.<br>Evaluate the tool separately.</h2></div></div>
+    <div class="academy-connections__grid">
+      <a href="https://digitracks.net/procurement-software/" external><span>Procurement ecosystem</span><h3>Compare Vertex, Vantor, Procure5 and Procure Sherpa by job, deployment and evidence.</h3><small>Explore the category <span aria-hidden="true">↗</span></small></a>
+      <a href="https://digitracks.net/products/sherpa-toolkit/" external><span>Procure Sherpa</span><h3>Inspect the free browser toolkit and its code-backed local capabilities.</h3><small>Inspect the product <span aria-hidden="true">↗</span></small></a>
+    </div>
+  </div>
+</section>
+
+<section class="academy-close" aria-labelledby="academy-close-title">
+  <div class="shell academy-close__grid"><div><p class="t-label">Learning access</p><h2 id="academy-close-title">Ask for the right kind of access.</h2></div><div><p>Tell us whether you need the public toolkit, guided learning or a product evaluation. We will confirm what is available rather than imply enrolment.</p><Button href={requestHref} ctaId="request-learning-access">Ask about ProcureSherpa Learning</Button></div></div>
+</section>

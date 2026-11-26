@@ -1,0 +1,28 @@
+---
+interface Props {
+  onDark?: boolean;
+  height?: number;
+  className?: string;
+  priority?: boolean;
+}
+
+const {
+  onDark = true,
+  height = 28,
+  className,
+  priority = false
+} = Astro.props;
+const width = Math.round(height * 729 / 120);
+---
+
+<img
+  class={["brand__lockup", className].filter(Boolean).join(" ")}
+  src={onDark ? "/brand/brand-lockup-light-320.webp" : "/brand/brand-lockup-dark-320.webp"}
+  alt="Digi Tracks"
+  width={width}
+  height={height}
+  loading={priority ? "eager" : "lazy"}
+  fetchpriority={priority ? "high" : "auto"}
+  decoding="async"
+  draggable={false}
+/>

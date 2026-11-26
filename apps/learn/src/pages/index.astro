@@ -1,0 +1,18 @@
+---
+import LearningHome from "@digitracks/ui/components/LearningHome.astro";
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import { routeRegistry } from "@digitracks/seo";
+
+const route = routeRegistry.find((item) => item.origin === "learn" && item.path === "/")!;
+const routes = routeRegistry.filter((item) => item.origin === "learn" && item.routeClass === "public-seo" && item.indexable && !item.redirectTo);
+const navItems = [
+  { label: "Learning paths", href: "/#learning-paths" },
+  { label: "SourceCraft", href: "https://sourcecraft.digitracks.net/" },
+  { label: "LearnPMO", href: "https://learnpmo.digitracks.net/" },
+  { label: "HCM Fusion", href: "https://hcmfusion.digitracks.net/" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="Learn" navItems={navItems} bodyClass="page-learning-home">
+  <LearningHome routes={routes} />
+</OriginLayout>

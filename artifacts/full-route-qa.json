@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-11-26T00:59:52.141Z",
+  "routes": 86,
+  "states": 344,
+  "issues": [],
+  "brokenLinks": [],
+  "fragmentFailures": [],
+  "cssFailures": [],
+  "linkReferences": 30900,
+  "fragmentReferences": 684,
+  "cssReferences": 2064,
+  "method": {
+    "targetMinimum": "24x24 CSS px, with WCAG 2.2 spacing exception",
+    "inputMinimum": "16px to prevent mobile focus zoom",
+    "hashRoutes": "validated by dedicated workspace tests"
+  }
+}

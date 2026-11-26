@@ -1,0 +1,18 @@
+---
+import HcmFusionHome from "@digitracks/ui/components/HcmFusionHome.astro";
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import { routeRegistry } from "@digitracks/seo";
+
+const route = routeRegistry.find((item) => item.origin === "hcmfusion" && item.path === "/")!;
+const baselineCount = routeRegistry.filter((item) => item.origin === "hcmfusion" && item.baselineSitemap).length;
+const blockedCount = routeRegistry.filter((item) => item.origin === "hcmfusion" && (item.routeClass === "public-seo" || item.routeClass === "public-utility") && !item.redirectTo && !item.hashRoute && !item.indexable).length;
+const navItems = [
+  { label: "Evidence", href: "/#hcm-evidence" },
+  { label: "Gaps", href: "/sources/gaps/" },
+  { label: "Releases", href: "/sources/releases/" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="HCM Fusion" navItems={navItems} requestLabel="Ask about access" bodyClass="page-hcmfusion">
+  <HcmFusionHome baselineCount={baselineCount} blockedCount={blockedCount} />
+</OriginLayout>

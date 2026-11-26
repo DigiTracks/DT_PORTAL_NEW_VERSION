@@ -1,0 +1,37 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+import ProcurementLearning from "./ProcurementLearning.astro";
+
+interface Props {
+  route: RouteRecord;
+}
+
+const { route } = Astro.props;
+const isContact = route.path === "/contact/";
+const isProcurementLearning = route.template === "procurement-learning";
+const name = route.title.replace(" | Digi Tracks", "");
+const requestHref = `https://digitracks.net/contact/?intent=learning&origin=${route.origin}&route=${encodeURIComponent(route.path)}`;
+---
+
+{isProcurementLearning ? (
+  <ProcurementLearning route={route} />
+) : (
+<section class="learning-entry" aria-labelledby="learning-entry-title">
+  <div class="shell learning-entry__hero">
+    <div><p class="t-label">Digi Tracks learning / {isContact ? "Access guidance" : "Product learning path"}</p><h1 id="learning-entry-title">{isContact ? "Ask for the right kind of access." : name}</h1><p class="learning-entry__lede">{route.description}</p></div>
+    <div class="learning-entry__stamp" aria-hidden="true"><span>{isContact ? "ACCESS" : name.slice(0, 8).toUpperCase()}</span><strong>{isContact ? "?" : "↗"}</strong><small>DIGITRACKS / LEARN</small></div>
+  </div>
+  <div class="shell learning-entry__body">
+    <aside><p class="t-label">On this page</p><a href="#learning-entry-next">What happens next</a><a href="#learning-entry-boundary">Access boundary</a><a href="https://digitracks.net/products/">Product catalogue</a></aside>
+    <div class="prose">
+      <h2 id="learning-entry-next">Start with the outcome you need.</h2>
+      <p>{isContact ? "Tell us which system you are evaluating, the workflow you want to understand and whether you need product guidance, migration help or authorised learning access." : `This path connects learning to the ${name} product context. Start with the workflow you need to understand, then ask for the access appropriate to that goal.`}</p>
+      <p>A product demo, a course seat and a migration consultation are different requests. Naming the right one helps avoid sending protected material to someone who only needs a guided overview.</p>
+      <h2 id="learning-entry-boundary">What this public page does not do.</h2>
+      <p>It does not enrol a learner, issue a demo link, expose assessment questions or save progress. Those actions require a configured, authorised service and a clear confirmation of what was actually granted.</p>
+      <Button href={requestHref} ctaId="request-learning-access">{isContact ? "Request access guidance" : "Ask about this learning path"}</Button>
+    </div>
+  </div>
+</section>
+)}

@@ -1,0 +1,24 @@
+---
+import HcmEvidencePage from "@digitracks/ui/components/HcmEvidencePage.astro";
+import OriginBoundary from "@digitracks/ui/components/OriginBoundary.astro";
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import { routeRegistry, staticPageRoutes } from "@digitracks/seo";
+
+export function getStaticPaths() {
+  return staticPageRoutes("hcmfusion", routeRegistry).map((route) => ({
+    params: { path: route.path.split("/").filter(Boolean).join("/") },
+    props: { route }
+  }));
+}
+
+const { route } = Astro.props;
+const navItems = [
+  { label: "Evidence", href: "/#hcm-evidence" },
+  { label: "Gaps", href: "/sources/gaps/" },
+  { label: "Releases", href: "/sources/releases/" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="HCM Fusion" navItems={navItems} requestLabel="Ask about access" bodyClass="page-hcmfusion">
+  {route.indexable ? <HcmEvidencePage route={route} /> : <OriginBoundary route={route} />}
+</OriginLayout>

@@ -1,0 +1,25 @@
+---
+import LearnPmoGuide from "@digitracks/ui/components/LearnPmoGuide.astro";
+import OriginBoundary from "@digitracks/ui/components/OriginBoundary.astro";
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import { routeRegistry, staticPageRoutes } from "@digitracks/seo";
+
+export function getStaticPaths() {
+  return staticPageRoutes("learnpmo", routeRegistry).map((route) => ({
+    params: { path: route.path.split("/").filter(Boolean).join("/") },
+    props: { route }
+  }));
+}
+
+const { route } = Astro.props;
+const navItems = [
+  { label: "Plan", href: "/plan/" },
+  { label: "Portfolio", href: "/portfolio/" },
+  { label: "Programme", href: "/programme/" },
+  { label: "Controls", href: "/controls/" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="LearnPMO" navItems={navItems} requestLabel="Ask about access" bodyClass="page-learnpmo">
+  {route.indexable ? <LearnPmoGuide route={route} /> : <OriginBoundary route={route} mode="workspace" />}
+</OriginLayout>

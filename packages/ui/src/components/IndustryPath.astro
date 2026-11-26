@@ -1,0 +1,177 @@
+---
+import { productRegistry, type ProductRecord, type SolutionRecord } from "@digitracks/catalog";
+import Button from "./Button.astro";
+import ProductMark from "./ProductMark";
+
+interface Props {
+  solution: SolutionRecord;
+}
+
+const { solution } = Astro.props;
+const products = solution.productIds.map((id) => productRegistry.find((product) => product.id === id)).filter((product): product is ProductRecord => Boolean(product));
+const details = {
+  education: {
+    code: "ED / 01",
+    discipline: "Education & Academics",
+    headline: ["Run the institution.", "Prepare the candidate."],
+    context: "One education conversation can contain two very different jobs: operating an institution and preparing an individual for a competency-based interview. This path keeps them separate.",
+    questions: ["Which institutional records and approvals need to move?", "Is the candidate evaluating practice, access or the planned Pro edition?", "What sample-data and production boundaries must be tested?"],
+    model: "Two coordinated paths, with no implied integration"
+  },
+  healthcare: {
+    code: "CL / 02",
+    discipline: "Clinical Healthcare",
+    headline: ["Coordinate the clinic.", "Keep the hand-offs visible."],
+    context: "An outpatient clinic evaluation begins with the patient journey: appointment, record, practitioner and billing hand-offs. The software decision should follow that map, not precede it.",
+    questions: ["Where does scheduling hand off to clinical records?", "Which billing and reporting fields are mandatory?", "What integration, migration and compliance questions remain open?"],
+    model: "Appointment-to-billing workflow model"
+  },
+  "beauty-wellness": {
+    code: "BW / 03",
+    discipline: "Beauty & Wellness",
+    headline: ["A calmer day.", "From booking to checkout."],
+    context: "Salons, spas and wellness studios need bookings, client notes, checkout and stock to work together without adding unnecessary administration to the working day.",
+    questions: ["How does a typical booking move through the day?", "Which service-menu and stock rules need configuration?", "What staff access, migration and training is required?"],
+    model: "Studio operating-day model"
+  },
+  "business-operations": {
+    code: "OP / 04",
+    discipline: "Business Operations",
+    headline: ["Improve one process.", "Then choose the sequence."],
+    context: "A focused operational improvement does not require a whole-organisation replacement. Start with the process that has a clear owner, a defined constraint and a decision that can be evaluated.",
+    questions: ["Which process has the clearest owner and next step?", "Can one Unify module be evaluated independently?", "What would justify a broader shared operating model later?"],
+    model: "Modular operating-model map"
+  },
+  procurement: {
+    code: "PR / 05",
+    discipline: "Procurement & Sourcing",
+    headline: ["Operate the workflow.", "Interrogate the evidence."],
+    context: "Procurement teams need to distinguish supplier operations, contract control, spend, integrity checks and practitioner learning before selecting a system or a shortlist.",
+    questions: ["Is the need an operating platform, an integrity check or learning?", "Which deployment and data-control constraints apply?", "Which claims require production evidence rather than a showcase?"],
+    model: "Source-to-contract and integrity map"
+  },
+  recruitment: {
+    code: "RC / 06",
+    discipline: "Recruitment",
+    headline: ["Review the match.", "Prepare the candidate."],
+    context: "Hiring teams need a reviewable shortlist; candidates need structured interview practice. Deterministic matching and AI-assisted coaching serve different decisions and must not be conflated.",
+    questions: ["How should requisition criteria become reviewable scoring rules?", "What local data handling and deployment does hiring require?", "Is candidate practice being evaluated as a separate workflow?"],
+    model: "Two-lane hiring and practice model"
+  }
+} as const;
+const detail = details[solution.id as keyof typeof details] ?? details["business-operations"];
+const theme = `industry-path--${solution.id}`;
+const contactHref = "/contact/?intent=consultation";
+---
+
+<section class={`industry-hero ${theme}`} aria-labelledby="industry-title">
+  <div class="industry-hero__rule" aria-hidden="true"></div>
+  <div class="shell industry-hero__grid">
+    <div class="industry-hero__copy">
+      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>{detail.code} / {detail.discipline}</p>
+      <h1 id="industry-title"><span>{detail.headline[0]}</span><em>{detail.headline[1]}</em></h1>
+      <p>{solution.summary}</p>
+      <div class="button-row"><Button href={contactHref} ctaId="request-product-consultation">Discuss this industry workflow</Button><Button href="#industry-instruments" variant="secondary" ctaId="inspect-product">Review the product path</Button></div>
+    </div>
+
+    {solution.id === "education" && <figure class="industry-model industry-model--education" aria-label="Institution operations and candidate practice model">
+      <div class="industry-model__head"><span>DT / EDUCATION</span><span>Two distinct paths</span></div>
+      <div class="education-model__lanes">
+        <div><small>Institution</small><ProductMark product={products[0]} size={54} /><strong>Operate</strong><p>Records · academics · fees · administration</p></div>
+        <div><small>Individual</small><ProductMark product={products[1]} size={54} /><strong>Prepare</strong><p>Role-grounded practice · coaching · debrief</p></div>
+      </div>
+      <figcaption>{detail.model} · not an application screenshot</figcaption>
+    </figure>}
+
+    {solution.id === "healthcare" && <figure class="industry-model industry-model--healthcare" aria-label="Outpatient clinic workflow model">
+      <div class="industry-model__head"><span>DT / CLINIC</span><span>Patient journey</span></div>
+      <ol class="journey-model"><li><span>01</span><strong>Appointment</strong><small>Schedule & reception</small></li><li><span>02</span><strong>Record</strong><small>Clinical context</small></li><li><span>03</span><strong>Checkout</strong><small>Billing & follow-up</small></li></ol>
+      <figcaption>{detail.model} · not an application screenshot</figcaption>
+    </figure>}
+
+    {solution.id === "beauty-wellness" && <figure class="industry-model industry-model--studio" aria-label="Wellness studio operating-day model">
+      <div class="industry-model__head"><span>DT / STUDIO</span><span>Operating day</span></div>
+      <div class="studio-model__time"><strong>09:00</strong><span>Bookings</span><i></i><span>Client notes</span></div>
+      <div class="studio-model__time"><strong>13:00</strong><span>Checkout</span><i></i><span>Stock</span></div>
+      <div class="studio-model__time"><strong>17:00</strong><span>Reconcile</span><i></i><span>Next day</span></div>
+      <figcaption>{detail.model} · not an application screenshot</figcaption>
+    </figure>}
+
+    {solution.id === "business-operations" && <figure class="industry-model industry-model--modules" aria-label="Modular business operations model">
+      <div class="industry-model__head"><span>DT / OPERATIONS</span><span>Module sequence</span></div>
+      <div class="module-model"><span>Owner</span><i></i><span>Process</span><i></i><span>Module</span><i></i><span>Decision</span></div>
+      <div class="module-model__note"><small>Start focused</small><strong>One operational constraint</strong></div>
+      <figcaption>{detail.model} · not an application screenshot</figcaption>
+    </figure>}
+
+    {solution.id === "procurement" && <figure class="industry-model industry-model--procurement" aria-label="Procurement operations and integrity model">
+      <div class="industry-model__head"><span>DT / PROCUREMENT</span><span>Decision map</span></div>
+      <ol class="procurement-model"><li><span>Source</span><i></i></li><li><span>Contract</span><i></i></li><li><span>Pay</span><i></i></li><li><span>Verify</span></li></ol>
+      <div class="procurement-model__second"><span>Spend</span><span>Integrity</span><span>Learning</span></div>
+      <figcaption>{detail.model} · not an application screenshot</figcaption>
+    </figure>}
+
+    {solution.id === "recruitment" && <figure class="industry-model industry-model--recruitment" aria-label="Candidate matching and interview practice model">
+      <div class="industry-model__head"><span>DT / RECRUITMENT</span><span>Two lanes</span></div>
+      <div class="recruitment-model__lane"><small>Hiring team</small><strong>Role criteria</strong><i></i><strong>Reviewable match</strong></div>
+      <div class="recruitment-model__lane"><small>Candidate</small><strong>Role brief</strong><i></i><strong>Practice & debrief</strong></div>
+      <figcaption>{detail.model} · not an application screenshot</figcaption>
+    </figure>}
+  </div>
+  <div class="shell industry-hero__audience"><span>Built for</span><p>{solution.audience}</p></div>
+</section>
+
+<section class="industry-challenge section" aria-labelledby="industry-challenge-title">
+  <div class="shell industry-challenge__grid">
+    <div><p class="t-label">01 / The operating question</p><h2 id="industry-challenge-title">Begin with the constraint.</h2></div>
+    <div class="prose"><p>{solution.challenge}</p><p>{detail.context}</p></div>
+  </div>
+</section>
+
+<section class="industry-workflow section" aria-labelledby="industry-workflow-title">
+  <div class="shell">
+    <div class="section-head"><div><p class="t-label">02 / Evaluation path</p><h2 id="industry-workflow-title">A deliberate sequence.</h2></div><p>This is an evaluation framework, not a promised delivery timetable.</p></div>
+    <ol class="industry-sequence">
+      {solution.workflow.map((stage, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{stage.title}</h3><p>{stage.description}</p></div><i aria-hidden="true"></i></li>)}
+    </ol>
+  </div>
+</section>
+
+<section class="industry-instruments section" id="industry-instruments" aria-labelledby="industry-instruments-title">
+  <div class="shell">
+    <div class="section-head"><div><p class="t-label">03 / Instruments in this path</p><h2 id="industry-instruments-title">Products with a specific job.</h2></div><p>Related products are not automatically integrated. Each retains its own deployment, evidence and access boundary.</p></div>
+    <div class="industry-product-grid">
+      {products.map((product) => {
+        const requestOnly = product.availability === "request-only";
+        const href = `/contact/?intent=${requestOnly ? "product-enquiry" : "demo"}&product=${encodeURIComponent(product.id)}`;
+        return <article class="industry-product-card">
+          <div class="industry-product-card__head"><ProductMark product={product} size={58} /><a href={`${product.route}/`} aria-label={`Inspect product: ${product.name}`}>Inspect product <span aria-hidden="true">↗</span></a></div>
+          <p class="t-label">{product.category} / {requestOnly ? "Request only" : product.status}</p>
+          <h3>{product.name}</h3>
+          <p>{product.summary}.</p>
+          <p class="industry-product-card__audience"><strong>Who benefits</strong>{product.audience}.</p>
+          <p class="industry-product-card__evidence"><strong>Evidence boundary</strong>{product.evidenceNote ?? "Published product scope; production evaluation remains required."}</p>
+          <Button href={href} variant="secondary" ctaId={requestOnly ? "request-product-consultation" : "request-product-demo"}>{requestOnly ? "Register product interest" : "Request a product evaluation"}</Button>
+        </article>;
+      })}
+    </div>
+  </div>
+</section>
+
+<section class="industry-questions section" aria-labelledby="industry-questions-title">
+  <div class="shell industry-questions__grid">
+    <div><p class="t-label">04 / Bring these questions</p><h2 id="industry-questions-title">Make the evaluation specific.</h2></div>
+    <ol>{detail.questions.map((question, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><p>{question}</p></li>)}</ol>
+  </div>
+</section>
+
+<section class="industry-outcomes section" aria-labelledby="industry-outcomes-title">
+  <div class="shell industry-outcomes__grid">
+    <div><p class="t-label">05 / Useful evaluation outputs</p><h2 id="industry-outcomes-title">What a good first conversation should produce.</h2></div>
+    <ol>{solution.outcomes.map((outcome) => <li><span aria-hidden="true">↗</span><p>{outcome}</p></li>)}</ol>
+  </div>
+</section>
+
+<section class="industry-close" aria-labelledby="industry-close-title">
+  <div class="shell industry-close__grid"><div><p class="t-label">Industry-specific next step</p><h2 id="industry-close-title">Bring the workflow you need to change.</h2></div><div><p>Tell us the current process, the tools involved and the evidence required for a decision. We will keep the enquiry tied to this industry and the relevant products.</p><Button href={contactHref} ctaId="request-product-consultation">Start the evaluation conversation</Button></div></div>
+</section>

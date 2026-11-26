@@ -1,0 +1,62 @@
+---
+import { breadcrumbSchema, routeUrl, type RouteRecord } from "@digitracks/seo";
+import SiteLayout from "./SiteLayout.astro";
+import "../styles/base.css";
+import commonStyles from "../styles/origin-common.css?inline";
+import learnStyles from "../styles/origin-learn.css?inline";
+import sourcecraftStyles from "../styles/origin-sourcecraft.css?inline";
+import procuresherpaStyles from "../styles/origin-procuresherpa.css?inline";
+import learnpmoStyles from "../styles/origin-learnpmo.css?inline";
+import hcmfusionStyles from "../styles/origin-hcmfusion.css?inline";
+
+interface Props {
+  route: RouteRecord;
+  brandSuffix: string;
+  navItems: Array<{ label: string; href: string }>;
+  requestHref?: string;
+  requestLabel?: string;
+  bodyClass?: string;
+}
+
+const { route, brandSuffix, navItems, requestHref, requestLabel, bodyClass } = Astro.props;
+const canonical = routeUrl(route.origin, route.path);
+const isHome = route.path === "/";
+const breadcrumbs = route.breadcrumbs.map((item) => ({ name: item.label, item: routeUrl(route.origin, item.path) }));
+const structuredData = route.indexable && breadcrumbs.length
+  ? JSON.stringify([breadcrumbSchema(breadcrumbs)]).replace(/</g, "\\u003c")
+  : undefined;
+const resolvedRequestHref = requestHref ?? `https://digitracks.net/contact/?intent=demo&origin=${route.origin}`;
+const originStyles: Record<string, string> = {
+  learn: learnStyles,
+  sourcecraft: sourcecraftStyles,
+  procuresherpa: procuresherpaStyles,
+  learnpmo: learnpmoStyles,
+  hcmfusion: hcmfusionStyles
+};
+const pageStyles = [commonStyles, originStyles[route.origin]].filter(Boolean).join("\n");
+---
+
+<SiteLayout
+  title={route.title}
+  description={route.description}
+  origin={routeUrl(route.origin, "/")}
+  canonical={canonical}
+  indexable={route.indexable}
+  socialImage={route.socialImage}
+  manifestHref={route.origin === "sourcecraft" ? "/manifest.webmanifest" : route.origin === "learnpmo" ? "/site.webmanifest" : undefined}
+  structuredData={structuredData}
+  pageStyles={pageStyles}
+  navItems={navItems}
+  requestHref={resolvedRequestHref}
+  requestLabel={requestLabel}
+  brandSuffix={brandSuffix}
+  originId={route.origin}
+  bodyClass={bodyClass}
+>
+  {!isHome && <nav class="breadcrumbs shell origin-breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      {route.breadcrumbs.map((item, index) => <li>{index < route.breadcrumbs.length - 1 ? <a href={routeUrl(route.origin, item.path)}>{item.label}</a> : <span aria-current="page">{item.label}</span>}</li>)}
+    </ol>
+  </nav>}
+  <slot />
+</SiteLayout>

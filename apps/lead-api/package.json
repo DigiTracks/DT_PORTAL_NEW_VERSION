@@ -1,0 +1,22 @@
+{
+  "name": "@digitracks/lead-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --port 8788",
+    "build": "wrangler deploy --dry-run --no-autoconfig --outdir dist",
+    "preview": "wrangler dev --local --port 8788",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.typecheck.json"
+  },
+  "dependencies": {
+    "@digitracks/catalog": "workspace:*",
+    "@digitracks/content": "workspace:*",
+    "@digitracks/seo": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "wrangler": "4.168.0"
+  }
+}

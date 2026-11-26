@@ -1,0 +1,142 @@
+[
+  {
+    "route": "/",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "overflow": 0,
+    "state": "ready",
+    "canvases": 1
+  },
+  {
+    "route": "/",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "overflow": 0,
+    "state": "ready",
+    "canvases": 1
+  },
+  {
+    "route": "/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "overflow": 0,
+    "state": "ready",
+    "canvases": 1
+  },
+  {
+    "route": "/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "overflow": 0,
+    "state": "fallback",
+    "canvases": 0
+  },
+  {
+    "route": "/",
+    "reducedMotion": true,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "state": "fallback",
+    "canvases": 0
+  },
+  {
+    "route": "/products/procure5/procuredecision/",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "overflow": 0,
+    "title": {
+      "text": "ProcureDecision",
+      "clientWidth": 535,
+      "scrollWidth": 535,
+      "fontSize": "79.2px",
+      "rects": [
+        {
+          "left": 24,
+          "right": 537.453125
+        }
+      ]
+    },
+    "icons": [
+      {
+        "icon": "scales",
+        "width": 192,
+        "height": 84.6875
+      },
+      {
+        "icon": "calculator",
+        "width": 192,
+        "height": 84.6875
+      },
+      {
+        "icon": "scorecard",
+        "width": 192,
+        "height": 75.1875
+      },
+      {
+        "icon": "sliders",
+        "width": 192,
+        "height": 84.6875
+      }
+    ]
+  },
+  {
+    "route": "/products/procure5/procuredecision/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "overflow": 0,
+    "title": {
+      "text": "ProcureDecision",
+      "clientWidth": 319,
+      "scrollWidth": 319,
+      "fontSize": "40.95px",
+      "rects": [
+        {
+          "left": 12,
+          "right": 274.359375
+        }
+      ]
+    },
+    "icons": [
+      {
+        "icon": "scales",
+        "width": 141.28125,
+        "height": 66.3125
+      },
+      {
+        "icon": "calculator",
+        "width": 141.28125,
+        "height": 60.796875
+      },
+      {
+        "icon": "scorecard",
+        "width": 141.28125,
+        "height": 60.796875
+      },
+      {
+        "icon": "sliders",
+        "width": 141.28125,
+        "height": 66.3125
+      }
+    ]
+  }
+]

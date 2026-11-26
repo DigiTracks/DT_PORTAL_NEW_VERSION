@@ -1,0 +1,54 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+import OriginBoundary from "./OriginBoundary.astro";
+import SourceCraftExplorer from "./SourceCraftExplorer.tsx";
+
+interface Props {
+  route: RouteRecord;
+  routes: readonly RouteRecord[];
+}
+
+const { route, routes } = Astro.props;
+const isFavourites = route.path === "/favourites/";
+const isExplorer = route.path === "/explore/";
+const isRegions = route.path === "/regions/";
+const regions = routes.filter((item) => item.path.startsWith("/regions/") && item.path !== "/regions/");
+const indexRecords = routes.map(({ path, title, description, contentStatus }) => ({ path, title, description, contentStatus }));
+const isWorkspace = route.path === "/compare/" || route.path === "/dashboard/";
+const title = route.title.replace(" | Digi Tracks", "");
+---
+
+{isWorkspace ? (
+  <OriginBoundary route={route} mode="workspace" />
+) : isFavourites || isExplorer ? (
+  <section class="source-tool-page" aria-labelledby="source-tool-title">
+    <div class="shell">
+      <p class="t-label">{isFavourites ? "Local reading list" : "Public index"}</p>
+      <h1 id="source-tool-title">{isFavourites ? "Keep the useful routes close." : "Explore the procurement index."}</h1>
+      <p class="source-tool-page__lede">{isFavourites ? "Favourites are stored only in this browser under the SourceCraft namespace. They are not account data and are not synchronised." : route.description}</p>
+      <SourceCraftExplorer routes={indexRecords} initialFavouritesOnly={isFavourites} client:visible />
+    </div>
+  </section>
+) : isRegions ? (
+  <section class="source-regions" aria-labelledby="source-regions-title">
+    <div class="shell">
+      <p class="t-label">Regional index</p><h1 id="source-regions-title">Context changes by place.</h1>
+      <p class="source-regions__lede">Nine regional identifiers are preserved from the audited catalogue. Detailed notes remain withheld until migration permission and editorial review are recorded.</p>
+      <ol class="source-region-grid">{regions.map((region, index) => <li key={region.id}><a href={region.path}><span>{String(index + 1).padStart(2, "0")}</span><h2>{region.title.replace(" · SourceCraft", "").replace(" | Digi Tracks", "")}</h2><p>{region.description}</p><small>Permission required / noindex</small></a></li>)}</ol>
+    </div>
+  </section>
+) : route.path === "/offline/" ? (
+  <section class="source-article" aria-labelledby="source-article-title"><div class="shell source-article__grid"><div><p class="t-label">Offline boundary</p><h1 id="source-article-title">Useful offline. Honest about limits.</h1></div><div class="prose"><p>The public SourceCraft shell can cache its own interface and public index. It does not promise offline access to rights-reserved editorial content, account data or another origin.</p><p>Favourites and recents remain local to this device. If storage is unavailable, the interface says so and keeps changes in memory only.</p><Button href="/explore/" variant="secondary">Open the public index</Button></div></div></section>
+) : route.contentStatus === "approved" ? (
+  <section class="source-article" aria-labelledby="source-article-title">
+    <div class="shell source-article__grid">
+      <div><p class="t-label">SourceCraft / public guide</p><h1 id="source-article-title">{title}</h1><p class="source-article__lede">{route.description}</p></div>
+      <div class="prose">
+        {route.path === "/about/" ? <><h2>Code and content have different licences.</h2><p>The audited site states that the SourceCraft application code is MIT-licensed. Its term text, editorial notes and regional notes are rights reserved. This replacement does not turn one permission into the other.</p><h2>Review status is part of the record.</h2><p>The public index contains 122 term identifiers and nine regional identifiers. Their detail pages remain non-indexable while review or permission is outstanding.</p><Button href="/explore/" variant="secondary">Inspect the public index</Button></> : route.path === "/sources/" ? <><h2>Evidence before approval.</h2><p>A route can be preserved without its content being approved. Each record needs an identifiable source, a rights position and an editorial decision before publication.</p><h2>Unknown is a valid result.</h2><p>Missing ownership, version or migration permission is recorded as a gap. It is never replaced by a plausible-looking definition or release claim.</p><Button href="https://digitracks.net/contact/?intent=consultation&origin=sourcecraft" variant="secondary">Supply authorised source material</Button></> : <><h2>A public entry point.</h2><p>This page introduces SourceCraft’s procurement vocabulary and its publication boundaries. It does not republish unreviewed term definitions or regional advice.</p><h2>Use the index first.</h2><p>Search the public records, save useful identifiers locally, then check the review status before relying on any material.</p><Button href="/explore/" variant="secondary">Search the index</Button></>}
+      </div>
+    </div>
+  </section>
+) : (
+  <OriginBoundary route={route} />
+)}

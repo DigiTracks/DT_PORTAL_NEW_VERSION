@@ -1,0 +1,5413 @@
+{
+  "format": "cloudflare-pages-redirects-v1",
+  "generatedAt": "2026-11-26T00:54:23.821Z",
+  "ruleCount": 893,
+  "origins": [
+    {
+      "id": "portal",
+      "origin": "https://digitracks.net",
+      "trailingSlash": true,
+      "file": "apps/portal/public/_redirects",
+      "rules": [
+        {
+          "origin": "portal",
+          "from": "/about",
+          "to": "https://digitracks.net/about/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/api/lead",
+          "to": "https://digitracks.net/api/lead/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/api/send-email",
+          "to": "https://digitracks.net/api/send-email/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/contact",
+          "to": "https://digitracks.net/contact/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/developer-tools",
+          "to": "https://digitracks.net/developer-tools/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/engineering",
+          "to": "https://digitracks.net/engineering/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/faq",
+          "to": "https://digitracks.net/faq/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/field-operations",
+          "to": "https://digitracks.net/field-operations/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/industries",
+          "to": "https://digitracks.net/industries/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/offline-first-software",
+          "to": "https://digitracks.net/offline-first-software/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/pricing",
+          "to": "https://digitracks.net/pricing/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/privacy",
+          "to": "https://digitracks.net/privacy/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/procurement-software",
+          "to": "https://digitracks.net/procurement-software/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products",
+          "to": "https://digitracks.net/products/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/campus-grid",
+          "to": "https://digitracks.net/products/campus-grid/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/chronos",
+          "to": "https://digitracks.net/products/chronos/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/construction-management",
+          "to": "https://digitracks.net/products/construction-management/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/glowra",
+          "to": "https://digitracks.net/products/glowra/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/mindone",
+          "to": "https://digitracks.net/products/mindone/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/mindone-pro",
+          "to": "https://digitracks.net/products/mindone-pro/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/mindone/compare",
+          "to": "https://digitracks.net/products/mindone/compare/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/nipuna",
+          "to": "https://digitracks.net/products/nipuna/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/opspilot",
+          "to": "https://digitracks.net/products/opspilot/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/orion",
+          "to": "https://digitracks.net/products/orion/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/orion-hunter",
+          "to": "https://digitracks.net/products/orion-hunter/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/procure5",
+          "to": "https://digitracks.net/products/procure5/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/procure5/contractleak",
+          "to": "https://digitracks.net/products/procure5/contractleak/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/procure5/procuredecision",
+          "to": "https://digitracks.net/products/procure5/procuredecision/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/procure5/procureleak",
+          "to": "https://digitracks.net/products/procure5/procureleak/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/procure5/procureoutcomes",
+          "to": "https://digitracks.net/products/procure5/procureoutcomes/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/procure5/tenderguard",
+          "to": "https://digitracks.net/products/procure5/tenderguard/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/quote-simulator",
+          "to": "https://digitracks.net/products/quote-simulator/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/recon",
+          "to": "https://digitracks.net/products/recon/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/sherpa-toolkit",
+          "to": "https://digitracks.net/products/sherpa-toolkit/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/transportation-management",
+          "to": "https://digitracks.net/products/transportation-management/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify",
+          "to": "https://digitracks.net/products/unify/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/arventa",
+          "to": "https://digitracks.net/products/unify/arventa/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/connexa",
+          "to": "https://digitracks.net/products/unify/connexa/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/logistra",
+          "to": "https://digitracks.net/products/unify/logistra/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/monexa",
+          "to": "https://digitracks.net/products/unify/monexa/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/nexora",
+          "to": "https://digitracks.net/products/unify/nexora/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/orbitra",
+          "to": "https://digitracks.net/products/unify/orbitra/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/planora",
+          "to": "https://digitracks.net/products/unify/planora/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/procura",
+          "to": "https://digitracks.net/products/unify/procura/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/unify/workzen",
+          "to": "https://digitracks.net/products/unify/workzen/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/vantor",
+          "to": "https://digitracks.net/products/vantor/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/vedik",
+          "to": "https://digitracks.net/products/vedik/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/vedik/school-erp",
+          "to": "https://digitracks.net/products/vedik/school-erp/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/vedik/social-community",
+          "to": "https://digitracks.net/products/vedik/social-community/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/vedik/university",
+          "to": "https://digitracks.net/products/vedik/university/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/vedik/unnati",
+          "to": "https://digitracks.net/products/vedik/unnati/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/products/vertex",
+          "to": "https://digitracks.net/products/vertex/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/robots.txt",
+          "to": "https://digitracks.net/robots.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/services",
+          "to": "https://digitracks.net/services/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/sitemap.xml",
+          "to": "https://digitracks.net/sitemap.xml/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/solutions",
+          "to": "https://digitracks.net/solutions/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/solutions/beauty-wellness",
+          "to": "https://digitracks.net/solutions/beauty-wellness/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/solutions/business-operations",
+          "to": "https://digitracks.net/solutions/business-operations/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/solutions/education",
+          "to": "https://digitracks.net/solutions/education/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/solutions/healthcare",
+          "to": "https://digitracks.net/solutions/healthcare/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/solutions/procurement",
+          "to": "https://digitracks.net/solutions/procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/solutions/recruitment",
+          "to": "https://digitracks.net/solutions/recruitment/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/terms",
+          "to": "https://digitracks.net/terms/",
+          "permanent": true
+        },
+        {
+          "origin": "portal",
+          "from": "/trust",
+          "to": "https://digitracks.net/trust/",
+          "permanent": true
+        }
+      ]
+    },
+    {
+      "id": "learn",
+      "origin": "https://learn.digitracks.net",
+      "trailingSlash": true,
+      "file": "apps/learn/public/_redirects",
+      "rules": [
+        {
+          "origin": "learn",
+          "from": "/contact",
+          "to": "https://learn.digitracks.net/contact/",
+          "permanent": true
+        },
+        {
+          "origin": "learn",
+          "from": "/hcmfusion",
+          "to": "https://learn.digitracks.net/hcmfusion/",
+          "permanent": true
+        },
+        {
+          "origin": "learn",
+          "from": "/learnpmo",
+          "to": "https://learn.digitracks.net/learnpmo/",
+          "permanent": true
+        },
+        {
+          "origin": "learn",
+          "from": "/procuresherpa",
+          "to": "https://learn.digitracks.net/procuresherpa/",
+          "permanent": true
+        },
+        {
+          "origin": "learn",
+          "from": "/robots.txt",
+          "to": "https://learn.digitracks.net/robots.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "learn",
+          "from": "/sitemap.xml",
+          "to": "https://learn.digitracks.net/sitemap.xml/",
+          "permanent": true
+        },
+        {
+          "origin": "learn",
+          "from": "/sourcecraft",
+          "to": "https://learn.digitracks.net/sourcecraft/",
+          "permanent": true
+        }
+      ]
+    },
+    {
+      "id": "sourcecraft",
+      "origin": "https://sourcecraft.digitracks.net",
+      "trailingSlash": true,
+      "file": "apps/sourcecraft/public/_redirects",
+      "rules": [
+        {
+          "origin": "sourcecraft",
+          "from": "/about",
+          "to": "https://sourcecraft.digitracks.net/about/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/compare",
+          "to": "https://sourcecraft.digitracks.net/compare/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/dashboard",
+          "to": "https://sourcecraft.digitracks.net/dashboard/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/data/library.json",
+          "to": "https://sourcecraft.digitracks.net/data/library.json/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/explore",
+          "to": "https://sourcecraft.digitracks.net/explore/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/favourites",
+          "to": "https://sourcecraft.digitracks.net/favourites/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/learn",
+          "to": "https://sourcecraft.digitracks.net/learn/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/library.json",
+          "to": "https://sourcecraft.digitracks.net/library.json/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/manifest.webmanifest",
+          "to": "https://sourcecraft.digitracks.net/manifest.webmanifest/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/offline",
+          "to": "https://sourcecraft.digitracks.net/offline/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions",
+          "to": "https://sourcecraft.digitracks.net/regions/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/GB",
+          "to": "https://sourcecraft.digitracks.net/regions/GB/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/GB-ENG",
+          "to": "https://sourcecraft.digitracks.net/regions/GB-ENG/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/GB-NIR",
+          "to": "https://sourcecraft.digitracks.net/regions/GB-NIR/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/GB-SCT",
+          "to": "https://sourcecraft.digitracks.net/regions/GB-SCT/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/GB-WLS",
+          "to": "https://sourcecraft.digitracks.net/regions/GB-WLS/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/GLOBAL",
+          "to": "https://sourcecraft.digitracks.net/regions/GLOBAL/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/IN",
+          "to": "https://sourcecraft.digitracks.net/regions/IN/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/US",
+          "to": "https://sourcecraft.digitracks.net/regions/US/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/regions/US-CA",
+          "to": "https://sourcecraft.digitracks.net/regions/US-CA/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/robots.txt",
+          "to": "https://sourcecraft.digitracks.net/robots.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/sitemap.xml",
+          "to": "https://sourcecraft.digitracks.net/sitemap.xml/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/sources",
+          "to": "https://sourcecraft.digitracks.net/sources/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/sw.js",
+          "to": "https://sourcecraft.digitracks.net/sw.js/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/addressable-spend",
+          "to": "https://sourcecraft.digitracks.net/terms/addressable-spend/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/ai-in-procurement",
+          "to": "https://sourcecraft.digitracks.net/terms/ai-in-procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/anchoring",
+          "to": "https://sourcecraft.digitracks.net/terms/anchoring/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/approval-threshold",
+          "to": "https://sourcecraft.digitracks.net/terms/approval-threshold/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/audit-trail",
+          "to": "https://sourcecraft.digitracks.net/terms/audit-trail/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/auto-renewal",
+          "to": "https://sourcecraft.digitracks.net/terms/auto-renewal/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/batna",
+          "to": "https://sourcecraft.digitracks.net/terms/batna/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/benchmarking",
+          "to": "https://sourcecraft.digitracks.net/terms/benchmarking/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/budget-variance",
+          "to": "https://sourcecraft.digitracks.net/terms/budget-variance/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/business-case",
+          "to": "https://sourcecraft.digitracks.net/terms/business-case/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/business-continuity-planning",
+          "to": "https://sourcecraft.digitracks.net/terms/business-continuity-planning/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/cash-flow-forecast",
+          "to": "https://sourcecraft.digitracks.net/terms/cash-flow-forecast/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/catalogue-buying",
+          "to": "https://sourcecraft.digitracks.net/terms/catalogue-buying/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/category-management",
+          "to": "https://sourcecraft.digitracks.net/terms/category-management/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/category-strategy",
+          "to": "https://sourcecraft.digitracks.net/terms/category-strategy/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/circular-procurement",
+          "to": "https://sourcecraft.digitracks.net/terms/circular-procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/compliance",
+          "to": "https://sourcecraft.digitracks.net/terms/compliance/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/concession-strategy",
+          "to": "https://sourcecraft.digitracks.net/terms/concession-strategy/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/confidentiality-nda",
+          "to": "https://sourcecraft.digitracks.net/terms/confidentiality-nda/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/conflict-of-interest",
+          "to": "https://sourcecraft.digitracks.net/terms/conflict-of-interest/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/contract-amendment",
+          "to": "https://sourcecraft.digitracks.net/terms/contract-amendment/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/contract-assignment",
+          "to": "https://sourcecraft.digitracks.net/terms/contract-assignment/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/contract-management",
+          "to": "https://sourcecraft.digitracks.net/terms/contract-management/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/contract-renegotiation",
+          "to": "https://sourcecraft.digitracks.net/terms/contract-renegotiation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/contract-renewal",
+          "to": "https://sourcecraft.digitracks.net/terms/contract-renewal/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/contract-variation",
+          "to": "https://sourcecraft.digitracks.net/terms/contract-variation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/cost-avoidance",
+          "to": "https://sourcecraft.digitracks.net/terms/cost-avoidance/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/data-protection-in-procurement",
+          "to": "https://sourcecraft.digitracks.net/terms/data-protection-in-procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/data-quality",
+          "to": "https://sourcecraft.digitracks.net/terms/data-quality/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/demand-management",
+          "to": "https://sourcecraft.digitracks.net/terms/demand-management/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/digital-procurement",
+          "to": "https://sourcecraft.digitracks.net/terms/digital-procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/e-auction",
+          "to": "https://sourcecraft.digitracks.net/terms/e-auction/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/e-procurement",
+          "to": "https://sourcecraft.digitracks.net/terms/e-procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/entire-agreement-clause",
+          "to": "https://sourcecraft.digitracks.net/terms/entire-agreement-clause/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/environmental-social-governance",
+          "to": "https://sourcecraft.digitracks.net/terms/environmental-social-governance/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/escalation",
+          "to": "https://sourcecraft.digitracks.net/terms/escalation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/expediting",
+          "to": "https://sourcecraft.digitracks.net/terms/expediting/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/force-majeure",
+          "to": "https://sourcecraft.digitracks.net/terms/force-majeure/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/foreign-exchange-risk",
+          "to": "https://sourcecraft.digitracks.net/terms/foreign-exchange-risk/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/framework-agreement",
+          "to": "https://sourcecraft.digitracks.net/terms/framework-agreement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/goods-receipt-note",
+          "to": "https://sourcecraft.digitracks.net/terms/goods-receipt-note/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/governance",
+          "to": "https://sourcecraft.digitracks.net/terms/governance/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/governing-law",
+          "to": "https://sourcecraft.digitracks.net/terms/governing-law/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/greenwashing",
+          "to": "https://sourcecraft.digitracks.net/terms/greenwashing/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/guided-buying",
+          "to": "https://sourcecraft.digitracks.net/terms/guided-buying/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/incoterms",
+          "to": "https://sourcecraft.digitracks.net/terms/incoterms/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/indemnity",
+          "to": "https://sourcecraft.digitracks.net/terms/indemnity/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/intellectual-property",
+          "to": "https://sourcecraft.digitracks.net/terms/intellectual-property/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/invoice-exception",
+          "to": "https://sourcecraft.digitracks.net/terms/invoice-exception/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/invoice-matching",
+          "to": "https://sourcecraft.digitracks.net/terms/invoice-matching/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/kraljic-matrix",
+          "to": "https://sourcecraft.digitracks.net/terms/kraljic-matrix/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/landed-cost",
+          "to": "https://sourcecraft.digitracks.net/terms/landed-cost/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/letter-of-credit",
+          "to": "https://sourcecraft.digitracks.net/terms/letter-of-credit/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/limitation-of-liability",
+          "to": "https://sourcecraft.digitracks.net/terms/limitation-of-liability/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/liquidated-damages",
+          "to": "https://sourcecraft.digitracks.net/terms/liquidated-damages/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/make-or-buy-analysis",
+          "to": "https://sourcecraft.digitracks.net/terms/make-or-buy-analysis/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/market-analysis",
+          "to": "https://sourcecraft.digitracks.net/terms/market-analysis/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/master-services-agreement",
+          "to": "https://sourcecraft.digitracks.net/terms/master-services-agreement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/maverick-spend",
+          "to": "https://sourcecraft.digitracks.net/terms/maverick-spend/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/modern-slavery",
+          "to": "https://sourcecraft.digitracks.net/terms/modern-slavery/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/negotiation-leverage",
+          "to": "https://sourcecraft.digitracks.net/terms/negotiation-leverage/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/negotiation-preparation",
+          "to": "https://sourcecraft.digitracks.net/terms/negotiation-preparation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/negotiation-strategy",
+          "to": "https://sourcecraft.digitracks.net/terms/negotiation-strategy/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/net-present-value",
+          "to": "https://sourcecraft.digitracks.net/terms/net-present-value/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/payment-terms",
+          "to": "https://sourcecraft.digitracks.net/terms/payment-terms/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/procurement-analytics",
+          "to": "https://sourcecraft.digitracks.net/terms/procurement-analytics/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/procurement-automation",
+          "to": "https://sourcecraft.digitracks.net/terms/procurement-automation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/product-carbon-footprint",
+          "to": "https://sourcecraft.digitracks.net/terms/product-carbon-footprint/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/public-procurement",
+          "to": "https://sourcecraft.digitracks.net/terms/public-procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/purchase-order",
+          "to": "https://sourcecraft.digitracks.net/terms/purchase-order/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/purchase-order-acknowledgement",
+          "to": "https://sourcecraft.digitracks.net/terms/purchase-order-acknowledgement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/purchase-price-variance",
+          "to": "https://sourcecraft.digitracks.net/terms/purchase-price-variance/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/purchase-requisition",
+          "to": "https://sourcecraft.digitracks.net/terms/purchase-requisition/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/purchase-to-pay",
+          "to": "https://sourcecraft.digitracks.net/terms/purchase-to-pay/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/request-for-information",
+          "to": "https://sourcecraft.digitracks.net/terms/request-for-information/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/request-for-proposal",
+          "to": "https://sourcecraft.digitracks.net/terms/request-for-proposal/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/request-for-quotation",
+          "to": "https://sourcecraft.digitracks.net/terms/request-for-quotation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/request-for-tender",
+          "to": "https://sourcecraft.digitracks.net/terms/request-for-tender/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/retendering",
+          "to": "https://sourcecraft.digitracks.net/terms/retendering/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/return-on-investment",
+          "to": "https://sourcecraft.digitracks.net/terms/return-on-investment/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/sanctions-screening",
+          "to": "https://sourcecraft.digitracks.net/terms/sanctions-screening/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/savings-tracking",
+          "to": "https://sourcecraft.digitracks.net/terms/savings-tracking/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/scope-3-emissions",
+          "to": "https://sourcecraft.digitracks.net/terms/scope-3-emissions/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/segregation-of-duties",
+          "to": "https://sourcecraft.digitracks.net/terms/segregation-of-duties/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/service-level-agreement",
+          "to": "https://sourcecraft.digitracks.net/terms/service-level-agreement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/should-cost-analysis",
+          "to": "https://sourcecraft.digitracks.net/terms/should-cost-analysis/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/should-cost-negotiation",
+          "to": "https://sourcecraft.digitracks.net/terms/should-cost-negotiation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/single-source-vs-sole-source",
+          "to": "https://sourcecraft.digitracks.net/terms/single-source-vs-sole-source/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/source-to-contract",
+          "to": "https://sourcecraft.digitracks.net/terms/source-to-contract/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/source-to-pay",
+          "to": "https://sourcecraft.digitracks.net/terms/source-to-pay/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/sourcing-event",
+          "to": "https://sourcecraft.digitracks.net/terms/sourcing-event/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/sourcing-pipeline",
+          "to": "https://sourcecraft.digitracks.net/terms/sourcing-pipeline/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/spend-analysis",
+          "to": "https://sourcecraft.digitracks.net/terms/spend-analysis/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/spend-cube",
+          "to": "https://sourcecraft.digitracks.net/terms/spend-cube/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/statement-of-work",
+          "to": "https://sourcecraft.digitracks.net/terms/statement-of-work/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/strategic-sourcing",
+          "to": "https://sourcecraft.digitracks.net/terms/strategic-sourcing/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-code-of-conduct",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-code-of-conduct/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-decarbonisation",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-decarbonisation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-development",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-development/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-diversity",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-diversity/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-due-diligence",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-due-diligence/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-exit-management",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-exit-management/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-innovation",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-innovation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-onboarding",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-onboarding/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-performance-review",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-performance-review/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-relationship-management",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-relationship-management/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-risk-assessment",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-risk-assessment/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-scorecard",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-scorecard/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supplier-segmentation",
+          "to": "https://sourcecraft.digitracks.net/terms/supplier-segmentation/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/supply-chain-risk",
+          "to": "https://sourcecraft.digitracks.net/terms/supply-chain-risk/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/sustainable-procurement",
+          "to": "https://sourcecraft.digitracks.net/terms/sustainable-procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/tail-spend",
+          "to": "https://sourcecraft.digitracks.net/terms/tail-spend/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/termination-clause",
+          "to": "https://sourcecraft.digitracks.net/terms/termination-clause/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/three-way-match",
+          "to": "https://sourcecraft.digitracks.net/terms/three-way-match/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/total-cost-of-carbon",
+          "to": "https://sourcecraft.digitracks.net/terms/total-cost-of-carbon/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/total-cost-of-ownership",
+          "to": "https://sourcecraft.digitracks.net/terms/total-cost-of-ownership/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/trade-off-analysis",
+          "to": "https://sourcecraft.digitracks.net/terms/trade-off-analysis/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/value-engineering",
+          "to": "https://sourcecraft.digitracks.net/terms/value-engineering/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/walk-away-point",
+          "to": "https://sourcecraft.digitracks.net/terms/walk-away-point/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/warranty",
+          "to": "https://sourcecraft.digitracks.net/terms/warranty/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/working-capital",
+          "to": "https://sourcecraft.digitracks.net/terms/working-capital/",
+          "permanent": true
+        },
+        {
+          "origin": "sourcecraft",
+          "from": "/terms/zopa",
+          "to": "https://sourcecraft.digitracks.net/terms/zopa/",
+          "permanent": true
+        }
+      ]
+    },
+    {
+      "id": "procuresherpa",
+      "origin": "https://procuresherpa.digitracks.net",
+      "trailingSlash": false,
+      "file": "apps/procuresherpa/public/_redirects",
+      "rules": [
+        {
+          "origin": "procuresherpa",
+          "from": "/robots.txt/",
+          "to": "https://procuresherpa.digitracks.net/robots.txt",
+          "permanent": true
+        },
+        {
+          "origin": "procuresherpa",
+          "from": "/sitemap.xml/",
+          "to": "https://procuresherpa.digitracks.net/sitemap.xml",
+          "permanent": true
+        }
+      ]
+    },
+    {
+      "id": "learnpmo",
+      "origin": "https://learnpmo.digitracks.net",
+      "trailingSlash": true,
+      "file": "apps/learnpmo/public/_redirects",
+      "rules": [
+        {
+          "origin": "learnpmo",
+          "from": "/",
+          "to": "https://learnpmo.digitracks.net/dashboard/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/account",
+          "to": "https://learnpmo.digitracks.net/account/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/api",
+          "to": "https://learnpmo.digitracks.net/api/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/assessments",
+          "to": "https://learnpmo.digitracks.net/assessments/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/assumptions",
+          "to": "https://learnpmo.digitracks.net/assumptions/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/charter",
+          "to": "https://learnpmo.digitracks.net/charter/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/cohort",
+          "to": "https://learnpmo.digitracks.net/cohort/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/controls",
+          "to": "https://learnpmo.digitracks.net/controls/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/dashboard",
+          "to": "https://learnpmo.digitracks.net/dashboard/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/decisions",
+          "to": "https://learnpmo.digitracks.net/decisions/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/definitely-not-a-real-route-audit",
+          "to": "https://learnpmo.digitracks.net/definitely-not-a-real-route-audit/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/dependencies",
+          "to": "https://learnpmo.digitracks.net/dependencies/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/documents",
+          "to": "https://learnpmo.digitracks.net/documents/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/exams",
+          "to": "https://learnpmo.digitracks.net/exams/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/favicon.ico",
+          "to": "https://learnpmo.digitracks.net/favicon.ico/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/financials",
+          "to": "https://learnpmo.digitracks.net/financials/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/industries",
+          "to": "https://learnpmo.digitracks.net/industries/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/kanban",
+          "to": "https://learnpmo.digitracks.net/kanban/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/lessons",
+          "to": "https://learnpmo.digitracks.net/lessons/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/lessons-learned",
+          "to": "https://learnpmo.digitracks.net/lessons-learned/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/manifest.webmanifest",
+          "to": "https://learnpmo.digitracks.net/manifest.webmanifest/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/plan",
+          "to": "https://learnpmo.digitracks.net/plan/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/pmo",
+          "to": "https://learnpmo.digitracks.net/pmo/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/portfolio",
+          "to": "https://learnpmo.digitracks.net/portfolio/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/programme",
+          "to": "https://learnpmo.digitracks.net/programme/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/projects",
+          "to": "https://learnpmo.digitracks.net/projects/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/registers",
+          "to": "https://learnpmo.digitracks.net/registers/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/reports",
+          "to": "https://learnpmo.digitracks.net/reports/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/review",
+          "to": "https://learnpmo.digitracks.net/review/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/robots.txt",
+          "to": "https://learnpmo.digitracks.net/robots.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/scope",
+          "to": "https://learnpmo.digitracks.net/scope/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/search",
+          "to": "https://learnpmo.digitracks.net/search/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/settings",
+          "to": "https://learnpmo.digitracks.net/settings/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/site.webmanifest",
+          "to": "https://learnpmo.digitracks.net/site.webmanifest/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/sitemap.xml",
+          "to": "https://learnpmo.digitracks.net/sitemap.xml/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/sprints",
+          "to": "https://learnpmo.digitracks.net/sprints/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/tasks",
+          "to": "https://learnpmo.digitracks.net/tasks/",
+          "permanent": true
+        },
+        {
+          "origin": "learnpmo",
+          "from": "/timesheets",
+          "to": "https://learnpmo.digitracks.net/timesheets/",
+          "permanent": true
+        }
+      ]
+    },
+    {
+      "id": "hcmfusion",
+      "origin": "https://hcmfusion.digitracks.net",
+      "trailingSlash": true,
+      "file": "apps/hcmfusion/public/_redirects",
+      "rules": [
+        {
+          "origin": "hcmfusion",
+          "from": "/admin",
+          "to": "https://hcmfusion.digitracks.net/admin/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/analytics",
+          "to": "https://hcmfusion.digitracks.net/analytics/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/api",
+          "to": "https://hcmfusion.digitracks.net/api/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/certifications",
+          "to": "https://hcmfusion.digitracks.net/certifications/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/certifications/cross-module-implementation",
+          "to": "https://hcmfusion.digitracks.net/certifications/cross-module-implementation/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/certifications/hcm-foundations",
+          "to": "https://hcmfusion.digitracks.net/certifications/hcm-foundations/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/certifications/recruiting",
+          "to": "https://hcmfusion.digitracks.net/certifications/recruiting/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/certifications/time-and-labor",
+          "to": "https://hcmfusion.digitracks.net/certifications/time-and-labor/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts",
+          "to": "https://hcmfusion.digitracks.net/concepts/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-accrual-plan",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-accrual-plan/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-certification",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-certification/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-compensatory-plan",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-compensatory-plan/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-component",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-component/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-concurrency",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-concurrency/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-data-loading",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-data-loading/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-date-effectivity",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-date-effectivity/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-deep-links",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-deep-links/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-donation-plan",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-donation-plan/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-eligibility-profile",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-eligibility-profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-extracts",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-extracts/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-fast-formula",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-fast-formula/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-lookups-flexfields",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-lookups-flexfields/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-payroll-elements",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-payroll-elements/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-plan",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-plan/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-processes",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-processes/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-processing-rules",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-processing-rules/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-qualification-plan",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-qualification-plan/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-rate-definition",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-rate-definition/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-schedule-resolution",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-schedule-resolution/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-type",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-type/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-type-display-rules",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-type-display-rules/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/absence-type-record",
+          "to": "https://hcmfusion.digitracks.net/concepts/absence-type-record/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/bridge-orc-corehr",
+          "to": "https://hcmfusion.digitracks.net/concepts/bridge-orc-corehr/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/bridge-otl-payroll",
+          "to": "https://hcmfusion.digitracks.net/concepts/bridge-otl-payroll/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/bridge-otl-pc",
+          "to": "https://hcmfusion.digitracks.net/concepts/bridge-otl-pc/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-assignment",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-assignment/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-business-unit",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-business-unit/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-department",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-department/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-enterprise",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-enterprise/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-job",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-job/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-legal-entity",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-legal-entity/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-payroll-relationship",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-payroll-relationship/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-position",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-position/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-security-model",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-security-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-three-structures",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-three-structures/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/core-hr-work-relationship",
+          "to": "https://hcmfusion.digitracks.net/concepts/core-hr-work-relationship/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-application-flows",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-application-flows/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-career-site",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-career-site/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-contextualization",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-contextualization/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-mental-model",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-offering",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-offering/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-person-id",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-person-id/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-requisition",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-requisition/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-requisition-rest-access",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-requisition-rest-access/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/orc-selection-processes",
+          "to": "https://hcmfusion.digitracks.net/concepts/orc-selection-processes/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-calculation-rules",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-calculation-rules/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-consumer-sets",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-consumer-sets/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-consumer-validation",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-consumer-validation/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-entry-profile",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-entry-profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-entry-rules",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-entry-rules/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-exception",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-exception/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-hcm-group",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-hcm-group/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-periods",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-periods/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-processing-chain",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-processing-chain/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-processing-profile",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-processing-profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-reporting-channels",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-reporting-channels/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-rule-types",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-rule-types/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-time-card-actions",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-time-card-actions/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/otl-time-consumer",
+          "to": "https://hcmfusion.digitracks.net/concepts/otl-time-consumer/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-calc-card",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-calc-card/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-cycle",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-cycle/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-earnings-deductions",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-earnings-deductions/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-element-entry",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-element-entry/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-entry",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-entry/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-flow",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-flow/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-payment-method",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-payment-method/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-relationship",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-relationship/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-transfer",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-transfer/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/concepts/payroll-tru",
+          "to": "https://hcmfusion.digitracks.net/concepts/payroll-tru/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence",
+          "to": "https://hcmfusion.digitracks.net/evidence/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ACCRUAL-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ACCRUAL-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CERT-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CERT-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-COMP-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-COMP-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-COMP-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-COMP-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-COMP-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-COMP-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-COMP-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-COMP-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-COMP-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-COMP-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-COMP-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-COMP-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-COMP-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-COMP-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-CTIME-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-CTIME-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DATE-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DATE-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-DON-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-DON-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELEM-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELEM-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELEM-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELEM-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELEM-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELEM-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELEM-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELEM-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELEM-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELEM-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELEM-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELEM-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELEM-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELEM-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELEM-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELEM-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-ELIG-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-ELIG-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FLEX-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FLEX-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FLEX-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FLEX-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FLEX-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FLEX-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FLEX-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FLEX-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FLEX-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FLEX-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FLEX-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FLEX-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-FORM-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-FORM-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LINK-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LINK-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOAD-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOAD-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOAD-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOAD-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOAD-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOAD-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOAD-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOAD-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOAD-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOAD-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOAD-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOAD-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOAD-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOAD-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOAD-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOAD-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOOKUP-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOOKUP-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOOKUP-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOOKUP-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOOKUP-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOOKUP-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOOKUP-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOOKUP-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOOKUP-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOOKUP-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOOKUP-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOOKUP-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-LOOKUP-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-LOOKUP-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PLAN-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PLAN-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PLAN-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PLAN-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PLAN-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PLAN-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PLAN-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PLAN-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PLAN-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PLAN-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PLAN-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PLAN-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PLAN-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PLAN-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-PROC-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-PROC-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-QUAL-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-QUAL-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RATE-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RATE-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RULE-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RULE-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RULE-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RULE-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-RULE-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-RULE-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SCHED-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SCHED-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SETUP-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SETUP-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-SETUP-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-SETUP-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-015",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-015/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-016",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-016/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-017",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-017/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-018",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-018/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-019",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-019/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-020",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-020/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-021",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-021/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-TYPE-022",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-TYPE-022/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-XTRACT-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-XTRACT-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-XTRACT-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-XTRACT-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-XTRACT-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-XTRACT-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ABS-XTRACT-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ABS-XTRACT-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ASG-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ASG-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ASG-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ASG-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ASG-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ASG-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ASG-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ASG-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ASG-029",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ASG-029/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ASG-030",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ASG-030/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ASG-031",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ASG-031/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ASG-034",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ASG-034/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ENT-024",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ENT-024/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ENT-025",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ENT-025/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ENT-026",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ENT-026/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ENT-027",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ENT-027/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ENT-028",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ENT-028/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-GRADE-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-GRADE-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-JOB-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-JOB-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-JOB-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-JOB-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-NWK-020",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-NWK-020/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ORDER-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ORDER-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ORDER-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ORDER-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-ORDER-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-ORDER-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-POS-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-POS-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-POS-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-POS-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-POS-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-POS-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-SYNC-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-SYNC-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-WR-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-WR-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-WR-016",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-WR-016/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-WR-017",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-WR-017/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-WR-018",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-WR-018/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-WR-019",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-WR-019/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-WR-021",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-WR-021/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/COREHR-WS-015",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/COREHR-WS-015/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-CAREERSITE-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-CAREERSITE-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-CAREERSITE-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-CAREERSITE-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-CAREERSITE-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-CAREERSITE-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-CAREERSITE-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-CAREERSITE-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-CAREERSITE-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-CAREERSITE-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-CSP-020",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-CSP-020/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-CSP-021",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-CSP-021/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-OFFERING-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-OFFERING-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-OPTIN-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-OPTIN-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-PERSONID-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-PERSONID-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-PREREQ-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-PREREQ-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-REST-030",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-REST-030/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-REST-031",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-REST-031/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-REST-033",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-REST-033/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-REST-034",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-REST-034/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-REST-035",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-REST-035/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/ORC-REST-036",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/ORC-REST-036/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-ACTION-060",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-ACTION-060/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-ACTION-061",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-ACTION-061/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-ACTION-062",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-ACTION-062/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHAIN-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHAIN-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHAIN-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHAIN-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHANNEL-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHANNEL-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHANNEL-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHANNEL-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHANNEL-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHANNEL-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHANNEL-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHANNEL-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHANNEL-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHANNEL-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHANNEL-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHANNEL-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CHANNEL-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CHANNEL-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CONSUMER-050",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CONSUMER-050/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CONSUMER-051",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CONSUMER-051/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CONSUMER-052",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CONSUMER-052/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-CONSUMER-053",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-CONSUMER-053/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-ENTRYPROFILE-020",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-ENTRYPROFILE-020/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-ENTRYPROFILE-021",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-ENTRYPROFILE-021/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-ENTRYPROFILE-022",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-ENTRYPROFILE-022/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-ENTRYPROFILE-023",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-ENTRYPROFILE-023/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-ENTRYPROFILE-024",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-ENTRYPROFILE-024/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-PERIOD-040",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-PERIOD-040/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-PERIOD-041",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-PERIOD-041/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-PERIOD-042",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-PERIOD-042/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-PERIOD-043",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-PERIOD-043/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-PROCPROFILE-030",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-PROCPROFILE-030/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-PROCPROFILE-031",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-PROCPROFILE-031/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-PROCPROFILE-032",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-PROCPROFILE-032/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-RULES-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-RULES-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-RULES-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-RULES-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-RULES-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-RULES-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/OTL-SUBMIT-064",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/OTL-SUBMIT-064/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-015",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-015/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-016",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-016/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-018",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-018/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-019",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-019/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-020",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-020/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CARD-022",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CARD-022/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CYCLE-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CYCLE-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CYCLE-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CYCLE-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CYCLE-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CYCLE-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-CYCLE-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-CYCLE-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ELEM-015",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ELEM-015/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-ENTRY-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-ENTRY-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-FLOW-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-FLOW-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-FLOW-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-FLOW-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-FLOW-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-FLOW-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-FLOW-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-FLOW-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-PPM-015",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-PPM-015/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-013",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-013/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-014",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-014/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-016",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-016/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-REL-018",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-REL-018/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-TRU-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-TRU-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-002",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-002/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-008",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-008/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-009",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-009/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-010",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-010/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-011",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-011/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-012",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-012/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/PAY-XFER-015",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/PAY-XFER-015/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/SEC-HCM-001",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/SEC-HCM-001/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/SEC-HCM-003",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/SEC-HCM-003/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/SEC-HCM-004",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/SEC-HCM-004/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/SEC-HCM-005",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/SEC-HCM-005/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/SEC-HCM-006",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/SEC-HCM-006/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/evidence/claims/SEC-HCM-007",
+          "to": "https://hcmfusion.digitracks.net/evidence/claims/SEC-HCM-007/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/absence.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/absence.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/absence.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/absence.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/absence.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/absence.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/compensation.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/compensation.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/compensation.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/compensation.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/compensation.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/compensation.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/core-hr.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/core-hr.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/core-hr.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/core-hr.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/core-hr.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/core-hr.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/learning.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/learning.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/learning.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/learning.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/learning.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/learning.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/otl.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/otl.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/otl.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/otl.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/otl.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/otl.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/payroll.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/payroll.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/payroll.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/payroll.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/payroll.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/payroll.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/recruiting.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/recruiting.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/recruiting.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/recruiting.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/recruiting.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/recruiting.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/talent.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/talent.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/talent.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/talent.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/talent.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/talent.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/workforce-monitoring.html",
+          "to": "https://hcmfusion.digitracks.net/export/module/workforce-monitoring.html/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/workforce-monitoring.md",
+          "to": "https://hcmfusion.digitracks.net/export/module/workforce-monitoring.md/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/export/module/workforce-monitoring.txt",
+          "to": "https://hcmfusion.digitracks.net/export/module/workforce-monitoring.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary",
+          "to": "https://hcmfusion.digitracks.net/glossary/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/absence-plan",
+          "to": "https://hcmfusion.digitracks.net/glossary/absence-plan/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/accrual-vs-entitlement",
+          "to": "https://hcmfusion.digitracks.net/glossary/accrual-vs-entitlement/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/business-unit",
+          "to": "https://hcmfusion.digitracks.net/glossary/business-unit/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/career-site",
+          "to": "https://hcmfusion.digitracks.net/glossary/career-site/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/career-site-contextualization",
+          "to": "https://hcmfusion.digitracks.net/glossary/career-site-contextualization/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/core-hr-payroll-boundary",
+          "to": "https://hcmfusion.digitracks.net/glossary/core-hr-payroll-boundary/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/effort-vs-result",
+          "to": "https://hcmfusion.digitracks.net/glossary/effort-vs-result/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/hcm-group",
+          "to": "https://hcmfusion.digitracks.net/glossary/hcm-group/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/job-requisition",
+          "to": "https://hcmfusion.digitracks.net/glossary/job-requisition/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/job-vs-position",
+          "to": "https://hcmfusion.digitracks.net/glossary/job-vs-position/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/learning-record",
+          "to": "https://hcmfusion.digitracks.net/glossary/learning-record/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/legal-entity",
+          "to": "https://hcmfusion.digitracks.net/glossary/legal-entity/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/pay-element",
+          "to": "https://hcmfusion.digitracks.net/glossary/pay-element/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/payroll-relationship",
+          "to": "https://hcmfusion.digitracks.net/glossary/payroll-relationship/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/person-id-constraint",
+          "to": "https://hcmfusion.digitracks.net/glossary/person-id-constraint/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/position",
+          "to": "https://hcmfusion.digitracks.net/glossary/position/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/repeating-time-period",
+          "to": "https://hcmfusion.digitracks.net/glossary/repeating-time-period/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/retroactive-payroll",
+          "to": "https://hcmfusion.digitracks.net/glossary/retroactive-payroll/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/time-calculation-rule",
+          "to": "https://hcmfusion.digitracks.net/glossary/time-calculation-rule/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/time-consumer",
+          "to": "https://hcmfusion.digitracks.net/glossary/time-consumer/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/time-consumer-set",
+          "to": "https://hcmfusion.digitracks.net/glossary/time-consumer-set/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/time-consumer-validation",
+          "to": "https://hcmfusion.digitracks.net/glossary/time-consumer-validation/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/time-entry-exception",
+          "to": "https://hcmfusion.digitracks.net/glossary/time-entry-exception/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/time-entry-rule",
+          "to": "https://hcmfusion.digitracks.net/glossary/time-entry-rule/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/worker-time-entry-profile",
+          "to": "https://hcmfusion.digitracks.net/glossary/worker-time-entry-profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/glossary/worker-time-processing-profile",
+          "to": "https://hcmfusion.digitracks.net/glossary/worker-time-processing-profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/labs",
+          "to": "https://hcmfusion.digitracks.net/labs/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn",
+          "to": "https://hcmfusion.digitracks.net/learn/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/absence",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/absence/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/benefits",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/benefits/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/compensation",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/compensation/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/core-hr",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/core-hr/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/global-payroll",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/global-payroll/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/learning",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/learning/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/otl",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/otl/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/payroll",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/payroll/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/procurement",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/procurement/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/recruiting",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/recruiting/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/talent",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/talent/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/courses/workforce-monitoring",
+          "to": "https://hcmfusion.digitracks.net/learn/courses/workforce-monitoring/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-accrual-plan-config",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-accrual-plan-config/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-certifications",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-certifications/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-compensatory-plans",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-compensatory-plans/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-concurrency",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-concurrency/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-data-loading",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-data-loading/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-date-effectivity",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-date-effectivity/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-deep-links",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-deep-links/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-donation-plans",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-donation-plans/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-eligibility-profiles",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-eligibility-profiles/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-extracts",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-extracts/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-fast-formulas",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-fast-formulas/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-lookups-flexfields",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-lookups-flexfields/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-mental-model",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-payroll-elements",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-payroll-elements/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-plan-types",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-plan-types/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-processes",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-processes/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-processing-rules",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-processing-rules/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-qualification-plans",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-qualification-plans/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-rate-definitions",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-rate-definitions/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-schedule-identification",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-schedule-identification/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-type-display-rules",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-type-display-rules/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/absence-type-record",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/absence-type-record/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/core-hr-configuration-order",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/core-hr-configuration-order/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/core-hr-enterprise-structures",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/core-hr-enterprise-structures/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/core-hr-jobs-and-positions",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/core-hr-jobs-and-positions/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/core-hr-security-model",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/core-hr-security-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/core-hr-worker-assignment",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/core-hr-worker-assignment/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/core-hr-worker-lifecycle",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/core-hr-worker-lifecycle/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/orc-career-sites",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/orc-career-sites/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/orc-mental-model",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/orc-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/orc-requisition-rest-access",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/orc-requisition-rest-access/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/otl-consumer-sets",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/otl-consumer-sets/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/otl-mental-model",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/otl-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/otl-processing-profile",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/otl-processing-profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/otl-repeating-time-periods",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/otl-repeating-time-periods/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/otl-reporting-channels",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/otl-reporting-channels/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/otl-rule-types",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/otl-rule-types/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/otl-time-card-actions",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/otl-time-card-actions/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/otl-time-entry-profiles",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/otl-time-entry-profiles/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/payroll-calc-cards",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/payroll-calc-cards/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/payroll-element-entries",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/payroll-element-entries/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/payroll-mental-model",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/payroll-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/payroll-payment-methods",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/payroll-payment-methods/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/payroll-personal-entries",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/payroll-personal-entries/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/payroll-relationships",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/payroll-relationships/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/payroll-transfers",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/payroll-transfers/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/lessons/payroll-tru",
+          "to": "https://hcmfusion.digitracks.net/learn/lessons/payroll-tru/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/paths",
+          "to": "https://hcmfusion.digitracks.net/learn/paths/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/recall",
+          "to": "https://hcmfusion.digitracks.net/learn/recall/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/saved",
+          "to": "https://hcmfusion.digitracks.net/learn/saved/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/sops/create-career-site",
+          "to": "https://hcmfusion.digitracks.net/learn/sops/create-career-site/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/sops/create-worker-time-processing-profile",
+          "to": "https://hcmfusion.digitracks.net/learn/sops/create-worker-time-processing-profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/sops/diagnose-missing-time-in-consumer",
+          "to": "https://hcmfusion.digitracks.net/learn/sops/diagnose-missing-time-in-consumer/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/learn/tutor",
+          "to": "https://hcmfusion.digitracks.net/learn/tutor/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/login",
+          "to": "https://hcmfusion.digitracks.net/login/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice",
+          "to": "https://hcmfusion.digitracks.net/practice/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-accrual-plan",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-accrual-plan/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-certifications",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-certifications/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-compensatory-plans",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-compensatory-plans/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-concurrency",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-concurrency/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-data-loading",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-data-loading/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-date-effectivity",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-date-effectivity/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-deep-links",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-deep-links/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-donation-plans",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-donation-plans/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-eligibility",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-eligibility/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-extracts",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-extracts/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-formulas",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-formulas/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-lookups-flexfields",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-lookups-flexfields/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-mental-model",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-payroll-elements",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-payroll-elements/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-plan-types",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-plan-types/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-processes",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-processes/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-processing-rules",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-processing-rules/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-qualification-plans",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-qualification-plans/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-rate-definitions",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-rate-definitions/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-schedule-identification",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-schedule-identification/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-type-display-rules",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-type-display-rules/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-absence-type-record",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-absence-type-record/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-core-hr-configuration-order",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-core-hr-configuration-order/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-core-hr-enterprise-structures",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-core-hr-enterprise-structures/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-core-hr-jobs-and-positions",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-core-hr-jobs-and-positions/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-core-hr-security-model",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-core-hr-security-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-core-hr-worker-assignment",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-core-hr-worker-assignment/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-core-hr-worker-lifecycle",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-core-hr-worker-lifecycle/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-orc-career-sites",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-orc-career-sites/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-orc-mental-model",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-orc-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-orc-requisition-rest-access",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-orc-requisition-rest-access/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-otl-consumer-sets",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-otl-consumer-sets/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-otl-mental-model",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-otl-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-otl-processing-profile",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-otl-processing-profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-otl-repeating-time-periods",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-otl-repeating-time-periods/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-otl-reporting-channels",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-otl-reporting-channels/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-otl-rule-types",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-otl-rule-types/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-otl-time-card-actions",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-otl-time-card-actions/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-otl-time-entry-profiles",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-otl-time-entry-profiles/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-payroll-calc-cards",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-payroll-calc-cards/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-payroll-element-entries",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-payroll-element-entries/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-payroll-mental-model",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-payroll-mental-model/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-payroll-payment-methods",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-payroll-payment-methods/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-payroll-personal-entries",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-payroll-personal-entries/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-payroll-relationships",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-payroll-relationships/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-payroll-transfers",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-payroll-transfers/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/quizzes/assessment-payroll-tru",
+          "to": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-payroll-tru/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/scenarios",
+          "to": "https://hcmfusion.digitracks.net/practice/scenarios/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/scenarios/orc-career-site-wrong-jobs",
+          "to": "https://hcmfusion.digitracks.net/practice/scenarios/orc-career-site-wrong-jobs/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/scenarios/otl-missing-time-in-payroll",
+          "to": "https://hcmfusion.digitracks.net/practice/scenarios/otl-missing-time-in-payroll/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/practice/sops",
+          "to": "https://hcmfusion.digitracks.net/practice/sops/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/profile",
+          "to": "https://hcmfusion.digitracks.net/profile/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/progress",
+          "to": "https://hcmfusion.digitracks.net/progress/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/resources",
+          "to": "https://hcmfusion.digitracks.net/resources/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/robots.txt",
+          "to": "https://hcmfusion.digitracks.net/robots.txt/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/sitemap.xml",
+          "to": "https://hcmfusion.digitracks.net/sitemap.xml/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/sources",
+          "to": "https://hcmfusion.digitracks.net/sources/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/sources/gaps",
+          "to": "https://hcmfusion.digitracks.net/sources/gaps/",
+          "permanent": true
+        },
+        {
+          "origin": "hcmfusion",
+          "from": "/sources/releases",
+          "to": "https://hcmfusion.digitracks.net/sources/releases/",
+          "permanent": true
+        }
+      ]
+    }
+  ]
+}

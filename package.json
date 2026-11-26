@@ -1,0 +1,40 @@
+{
+  "name": "digitracks-nextgen-portal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": ">=24.0.0 <25.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @digitracks/portal dev",
+    "generate:manifests": "node scripts/generate-deploy-manifests.mjs",
+    "generate:brand": "node scripts/sync-source-assets.mjs",
+    "prebuild": "pnpm generate:manifests",
+    "build": "pnpm -r --if-present build",
+    "postbuild": "node scripts/generate-security-headers.mjs",
+    "typecheck": "pnpm -r --workspace-concurrency=2 --if-present typecheck",
+    "test": "vitest run",
+    "test:api": "pnpm --filter @digitracks/lead-api test",
+    "test:e2e": "pnpm --filter './apps/*' --filter '!@digitracks/lead-api' --parallel build && node scripts/generate-security-headers.mjs && playwright test",
+    "test:lead-form": "playwright test --config playwright.lead-form.config.ts",
+    "test:analytics": "playwright test --config playwright.analytics.config.ts",
+    "audit:a11y": "node scripts/audit-browser.mjs --accessibility",
+    "audit:performance": "node scripts/audit-browser.mjs --performance",
+    "budget": "node scripts/measure-budgets.mjs",
+    "audit:routes": "node scripts/audit-routes.mjs",
+    "verify:preservation": "node scripts/verify-preservation.mjs",
+    "verify:estate": "node scripts/verify-estate.mjs",
+    "verify": "pnpm verify:preservation && pnpm typecheck && pnpm test && pnpm test:api && pnpm build && pnpm budget && pnpm audit:routes && pnpm verify:estate && pnpm audit:a11y && pnpm test:e2e && pnpm test:lead-form && pnpm test:analytics && pnpm verify:estate"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.1",
+    "@playwright/test": "1.65.1",
+    "@types/node": "24.10.0",
+    "lighthouse": "13.6.0",
+    "typescript": "6.0.3",
+    "vitest": "5.1.1",
+    "wrangler": "4.168.0"
+  }
+}

@@ -1,0 +1,65 @@
+---
+import type { ProductRecord } from "@digitracks/catalog";
+import ProductMark from "./ProductMark";
+import ProductSignal from "./ProductSignal";
+
+interface Props {
+  product: ProductRecord;
+  nestedProducts: readonly ProductRecord[];
+}
+
+const { product, nestedProducts } = Astro.props;
+const category = product.category.toLowerCase().replaceAll(" ", "-");
+const isProcurementFlow = product.id === "vertex" && product.capabilities[0]?.includes("→");
+const flowSteps = isProcurementFlow ? product.capabilities[0].split("→").map((step) => step.trim()) : [];
+const isFamily = nestedProducts.length > 0;
+---
+
+<aside class={`product-instrument product-instrument--${category}`} aria-label={`${product.name} catalogue instrument`}>
+  <div class="product-instrument__topline">
+    <span>DT / {product.id.toUpperCase()}</span>
+    <span>{product.status}</span>
+  </div>
+  <div class="product-instrument__stage">
+    <div class="product-instrument__grid" aria-hidden="true"></div>
+    <div class="product-instrument__identity"><ProductMark product={product} size={76} /><span>{product.category} / catalogue instrument</span></div>
+    {isFamily ? (
+      <div class="instrument-family">
+        <div class="instrument-family__core">
+          <ProductMark product={product} size={58} />
+          <span>Parent system</span>
+          <strong>{product.name}</strong>
+        </div>
+        <div class="instrument-family__branches">
+          {nestedProducts.map((item, index) => (
+            <a href={`${item.route}/`}><ProductMark product={item} size={30} /><span>{String(index + 1).padStart(2, "0")}</span><strong>{item.name}</strong></a>
+          ))}
+        </div>
+      </div>
+    ) : isProcurementFlow ? (
+      <div class="instrument-flow">
+        <div class="instrument-flow__label"><span>Procurement control path</span><span>05 gates</span></div>
+        <div class="instrument-flow__rail">
+          {flowSteps.map((step, index) => <div><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></div>)}
+        </div>
+        <div class="instrument-flow__footer"><span>Contract-gated</span><span>Receipt verified</span><span>Matched</span></div>
+      </div>
+    ) : product.installCommand ? (
+      <div class="instrument-terminal">
+        <div><span></span><span></span><span></span><small>local shell</small></div>
+        <code>{product.installCommand}</code>
+        <p><span>›</span> {product.capabilities[0]}</p>
+        <p><span>›</span> {product.capabilities[1]}</p>
+        <p class="instrument-terminal__ready"><span>›</span> {product.deployment}</p>
+      </div>
+    ) : (
+      <div class="instrument-generic">
+        <ProductSignal product={product} />
+      </div>
+    )}
+  </div>
+  <div class="product-instrument__foot">
+    <span>{product.platforms.join(" / ") || "Platforms to confirm"}</span>
+    <span>{product.deployment}</span>
+  </div>
+</aside>

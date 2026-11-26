@@ -1,0 +1,39 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+
+interface Props {
+  route: RouteRecord;
+}
+
+const { route } = Astro.props;
+const isGaps = route.path === "/sources/gaps/";
+const gaps = [
+  { id: "GAP-01", title: "Migration permission", status: "UNKNOWN", detail: "Rights-reserved concept, certification and assessment material has no recorded permission for republication." },
+  { id: "GAP-02", title: "Application parity", status: "UNKNOWN", detail: "Authorised source, fixtures and a parity baseline are not available for the public replacement." },
+  { id: "GAP-03", title: "Assessment policy", status: "UNKNOWN", detail: "Protected questions, scoring rules, attempt policy and learner-data boundaries require owner approval." },
+  { id: "GAP-04", title: "Tenant service", status: "NOT CONFIGURED", detail: "Authenticated progress and tenant separation need a real identity and data service; the static site cannot supply it." },
+  { id: "GAP-05", title: "Indexability", status: "REVIEW REQUIRED", detail: "Only independently authored home and evidence pages are currently indexable. Historic content routes remain noindex." }
+];
+---
+
+<section class="hcm-evidence-page" aria-labelledby="hcm-evidence-page-title">
+  <div class="shell hcm-evidence-page__hero">
+    <p class="t-label">HCM Fusion / {isGaps ? "Evidence register" : "Release method"}</p>
+    <h1 id="hcm-evidence-page-title">{isGaps ? "What we cannot prove yet." : "A release claim needs a record."}</h1>
+    <p>{isGaps ? "Open gaps are part of the public evidence, not details to smooth over. Each one blocks a specific kind of publication or behavior." : "No HCM Fusion release, module parity or assessment behavior is claimed from the static replacement. This page defines the evidence required before such a claim can be approved."}</p>
+  </div>
+  <div class="shell hcm-evidence-page__body">
+    {isGaps ? (
+      <div class="hcm-gap-list">{gaps.map((gap) => <article key={gap.id}><span>{gap.id}</span><div><h2>{gap.title}</h2><p>{gap.detail}</p></div><strong>{gap.status}</strong></article>)}</div>
+    ) : (
+      <div class="hcm-release-method">
+        <article><span>01</span><h2>Identify the source.</h2><p>Record the authorised repository, document or export, its version and the date it was read. A live page alone is not a migration licence.</p></article>
+        <article><span>02</span><h2>Prove permission.</h2><p>Record ownership and permission for the exact material being published. Public accessibility does not grant republication rights.</p></article>
+        <article><span>03</span><h2>Verify behavior.</h2><p>Compare the authorised application with the replacement using real fixtures. Document every unsupported route, state and data boundary.</p></article>
+        <article><span>04</span><h2>Approve the claim.</h2><p>Only then may a release note describe availability, parity or assessment behavior. Until that evidence exists, the honest status is UNKNOWN.</p></article>
+      </div>
+    )}
+    <div class="hcm-evidence-page__cta"><div><p class="t-label">Owner input</p><h2>Close the gap with evidence.</h2></div><Button href="https://digitracks.net/contact/?intent=consultation&origin=hcmfusion" variant="secondary">Discuss authorised source material</Button></div>
+  </div>
+</section>

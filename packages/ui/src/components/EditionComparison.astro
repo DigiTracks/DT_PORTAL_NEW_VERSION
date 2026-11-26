@@ -1,0 +1,132 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+
+interface Props {
+  route: RouteRecord;
+}
+
+const { route } = Astro.props;
+const requestHref = "/contact/?intent=product-enquiry&product=mindone";
+const rows = [
+  {
+    term: "Published positioning",
+    mindone: "Free entry edition",
+    pro: "Planned complete edition"
+  },
+  {
+    term: "Availability",
+    mindone: "Pre-launch; request only",
+    pro: "Pre-launch; request only"
+  },
+  {
+    term: "Published practice scope",
+    mindone: "Résumé- and job-description-grounded questions, spoken or typed answers, answer-specific coaching and a structured debrief.",
+    pro: "Not published as a Pro entitlement. Confirm whether the complete edition includes the same foundation."
+  },
+  {
+    term: "Approved feature entitlements",
+    mindone: "Published product scope; final release scope requires confirmation.",
+    pro: "UNKNOWN — no approved Pro-only feature list is published."
+  },
+  {
+    term: "Price and licence",
+    mindone: "UNKNOWN — final commercial terms are not published.",
+    pro: "UNKNOWN — final commercial terms are not published."
+  },
+  {
+    term: "Usage limits",
+    mindone: "UNKNOWN — quotas and session limits are not published.",
+    pro: "UNKNOWN — quotas and session limits are not published."
+  },
+  {
+    term: "Hosted AI and data handling",
+    mindone: "Published as optional hosted AI with explicit consent; provider and retention details require confirmation.",
+    pro: "UNKNOWN — provider, entitlement and retention details are not published."
+  },
+  {
+    term: "Integrations",
+    mindone: "No ATS, MCP or other integration has been verified.",
+    pro: "No ATS, MCP or other integration has been verified."
+  },
+  {
+    term: "Deployment",
+    mindone: "UNKNOWN — production deployment details are not published.",
+    pro: "UNKNOWN — production deployment details are not published."
+  },
+  {
+    term: "Release timing",
+    mindone: "UNKNOWN — no approved launch date is published.",
+    pro: "UNKNOWN — no approved launch date is published."
+  }
+] as const;
+---
+
+<section class="edition-hero" aria-labelledby="edition-comparison-title">
+  <div class="edition-hero__mark" aria-hidden="true">M/2</div>
+  <div class="shell edition-hero__grid">
+    <div>
+      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>MIND ONE / Edition comparison</p>
+      <h1 id="edition-comparison-title">Two names.<br><em>One clear boundary.</em></h1>
+    </div>
+    <div class="edition-hero__copy">
+      <p>{route.description}</p>
+      <p>Published positioning is not the same thing as an approved entitlement. Unknowns stay visible so the comparison cannot become a sales promise.</p>
+      <div class="button-row"><Button href={requestHref} ctaId="request-mindone-access">Ask about edition access</Button><Button href="/products/mindone/" variant="secondary">Explore MIND ONE</Button></div>
+    </div>
+  </div>
+</section>
+
+<section class="edition-matrix-section section" aria-labelledby="edition-matrix-title">
+  <div class="shell">
+    <div class="section-head">
+      <div><p class="t-label">01 / Published comparison</p><h2 id="edition-matrix-title">What is known.<br>What is not.</h2></div>
+      <p>“UNKNOWN” means the information was not verified in the available product evidence. It does not mean the feature is included or excluded.</p>
+    </div>
+    <div class="edition-table-wrap" tabindex="0" role="region" aria-label="MIND ONE edition comparison, scroll horizontally on small screens">
+      <table class="edition-table">
+        <caption>Published MIND ONE and MIND ONE Pro positions</caption>
+        <thead><tr><th scope="col">Comparison point</th><th scope="col">MIND ONE</th><th scope="col">MIND ONE Pro</th></tr></thead>
+        <tbody>
+          {rows.map((row) => <tr><th scope="row">{row.term}</th><td>{row.mindone}</td><td>{row.pro}</td></tr>)}
+        </tbody>
+      </table>
+    </div>
+    <p class="edition-table-hint">On a small screen, swipe within the comparison or focus it and use the arrow keys.</p>
+  </div>
+</section>
+
+<section class="edition-decisions section" aria-labelledby="edition-decisions-title">
+  <div class="shell edition-decisions__grid">
+    <div><p class="t-label">02 / Choose the right conversation</p><h2 id="edition-decisions-title">Start with the requirement, not the label.</h2></div>
+    <div class="edition-decisions__cards">
+      <article>
+        <span>01 / Entry practice</span>
+        <h3>Evaluate MIND ONE</h3>
+        <p>Review the published résumé-grounded practice and coaching scope. Ask for current availability and data-handling details.</p>
+        <Button href="/products/mindone/" variant="secondary">Review MIND ONE</Button>
+      </article>
+      <article>
+        <span>02 / Complete edition</span>
+        <h3>Register Pro interest</h3>
+        <p>Describe the capabilities, commercial terms and deployment you need from a complete edition. No purchase or access is implied.</p>
+        <Button href="/contact/?intent=product-enquiry&product=mindone-pro" ctaId="request-mindone-access">Register Pro interest</Button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="edition-questions section" aria-labelledby="edition-questions-title">
+  <div class="shell edition-questions__grid">
+    <div><p class="t-label">03 / Straight answers</p><h2 id="edition-questions-title">Before you request access.</h2></div>
+    <div class="edition-questions__list">
+      <details><summary>Does MIND ONE Pro have verified extra features?</summary><p>No approved Pro-only feature list was verified. “Complete edition” is the published positioning; the entitlement table still requires owner confirmation.</p></details>
+      <details><summary>Can I buy or open a full demo now?</summary><p>Both editions are request-only and pre-launch. The enquiry form records interest; it does not take payment, issue a demo link or grant product access.</p></details>
+      <details><summary>Are the two editions connected to Nipuna?</summary><p>No integration between MIND ONE and Nipuna was verified. MIND ONE supports interview practice; Nipuna’s published scope concerns recruiting and deterministic candidate matching.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="edition-close" aria-labelledby="edition-close-title">
+  <div class="shell edition-close__grid"><div><p class="t-label">Next step</p><h2 id="edition-close-title">Ask for the facts that decide the fit.</h2></div><div><p>Tell us which edition you are evaluating and which unknowns matter most. We will respond with confirmed scope rather than a generic demo promise.</p><Button href={requestHref} ctaId="request-mindone-access">Ask about edition access</Button></div></div>
+</section>

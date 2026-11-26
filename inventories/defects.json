@@ -1,0 +1,701 @@
+{
+  "metadata": {
+    "generatedAt": "2026-11-25T00:31:19Z",
+    "schemaVersion": 1,
+    "purpose": "Prioritized defect and evidence-gap register for the DigiTracks replacement audit.",
+    "severityVocabulary": {
+      "P1": "Release blocker or material security, integrity, governance, discoverability or conversion failure.",
+      "P2": "Material quality, SEO, accessibility, performance or operability issue to fix before launch.",
+      "P3": "Lower-priority hardening, documentation or reconciliation item."
+    },
+    "statusVocabulary": ["open", "blocked", "resolved", "accepted-exclusion", "evidence-gap"],
+    "sourceNotes": [
+      "fresh_verified records were checked by local read-only source or public read-only HTTP/source during the 2026-11-25 audit.",
+      "prior_observed records preserve the supplied baseline. Their original observation date was not supplied; recordedAt is 2026-11-25 and originalObservedAt remains UNKNOWN.",
+      "No form was submitted and no state-changing request was made.",
+      "A defect is not proof of WCAG, Lighthouse, mobile or field-performance conformance; those measurements remain separate evidence gaps."
+    ],
+    "referenceRepository": {
+      "path": "/data/HomeWorks/DT-Portal-main",
+      "head": "9a4a9af84a0447926aa96f1cc4b2210232f44ffb",
+      "mode": "read-only"
+    }
+  },
+  "defects": [
+    {
+      "id": "DEF-001",
+      "title": "HCM Fusion assessment answers and rationales are exposed before submission",
+      "host": "hcmfusion.digitracks.net",
+      "category": "security-integrity",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion owner and assessment owner",
+      "evidence": [
+        {"type": "public-page-source", "source": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-core-hr-configuration-order", "detail": "Serialized RSC payload contains key, isCorrect, rationale and correctOrder. Twelve isCorrect occurrences were found in the inspected four-question payload."}
+      ],
+      "impact": "Learners can obtain answer keys and scoring rationale before submitting; the published claim that answers are marked after submission is not upheld by the delivered payload.",
+      "recommendation": "Keep answer keys, correctness and scoring rationale server-side until submission. Return only the minimum result view after a validated attempt and test every assessment family.",
+      "acceptanceCriteria": "No pre-submission response, client bundle, RSC payload or client state contains answer keys, correct ordering, correctness flags or answer rationales; scoring tests pass for valid, invalid and replayed attempts."
+    },
+    {
+      "id": "DEF-002",
+      "title": "HCM Fusion robots policy conflicts with indexable evidence and user routes",
+      "host": "hcmfusion.digitracks.net",
+      "category": "seo-governance",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion owner and SEO owner",
+      "evidence": [
+        {"type": "public-file", "source": "https://hcmfusion.digitracks.net/robots.txt", "detail": "Disallows /admin, /api/, /login, /profile, /progress, /learn/saved, /analytics and /evidence/."},
+        {"type": "public-link-crawl", "source": "https://hcmfusion.digitracks.net/sources", "detail": "371 public /evidence/claims/<ID> links."},
+        {"type": "read-only-http", "source": "https://hcmfusion.digitracks.net/profile", "detail": "200 with robots index, follow; /progress and other user routes show the same conflict."}
+      ],
+      "impact": "Search engines receive contradictory signals. Evidence pages are publicly linked but disallowed, while private/user routes advertise indexability.",
+      "recommendation": "Approve a route-level indexability matrix with the owner. Align robots, meta robots, canonicals, authentication and sitemap membership; do not automatically index the current unsitemapped surface.",
+      "acceptanceCriteria": "Every route has one intentional policy; public evidence is either crawlable and sitemapped or deliberately excluded; private/user/admin/API routes are non-indexable and protected as appropriate."
+    },
+    {
+      "id": "DEF-003",
+      "title": "SourceCraft indexes 122 terms that remain in editorial review",
+      "host": "sourcecraft.digitracks.net",
+      "category": "content-governance",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "SourceCraft editorial owner",
+      "evidence": [
+        {"type": "public-page-source", "source": "https://sourcecraft.digitracks.net/explore/", "detail": "122 occurrences of status in_review; inspected reviewedAt values are null."},
+        {"type": "read-only-http", "source": "https://sourcecraft.digitracks.net/sitemap.xml", "detail": "All 122 term pages are sitemap members and emit index, follow."}
+      ],
+      "impact": "Unreviewed editorial content is publicly discoverable and can be mistaken for approved guidance.",
+      "recommendation": "Require editorial approval and a real reviewed date before indexing or migration. Otherwise emit deliberate noindex and exclude from sitemaps while preserving preview access if needed.",
+      "acceptanceCriteria": "No in_review term is indexable or sitemapped; approved records have reviewer, reviewed date, substantive update date and source/permission metadata."
+    },
+    {
+      "id": "DEF-004",
+      "title": "Rights-reserved SourceCraft and HCM Fusion content has no migration permission",
+      "host": "estate",
+      "category": "legal-content-blocker",
+      "severity": "P1",
+      "status": "blocked",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "Digi Tracks owner and editorial/legal approver",
+      "evidence": [
+        {"type": "public-page", "source": "https://sourcecraft.digitracks.net/about/#licensing", "detail": "Term text, editorial notes and regional notes are all rights reserved; no reuse grant."},
+        {"type": "scope-constraint", "source": "Approved plan", "detail": "Public crawlability is not redistribution permission; HCM lessons, concepts, glossary, evidence, assessments, procedures, scenarios and diagrams require permission."}
+      ],
+      "impact": "Content cannot be lawfully copied into the replacement on the available evidence.",
+      "recommendation": "Obtain written permission and editorial approval with scope, attribution, update rights and permitted derivatives. Independently author content where permission is not granted.",
+      "acceptanceCriteria": "A signed/recorded permission covers every migrated content family and asset; provenance records link each item to that permission."
+    },
+    {
+      "id": "DEF-005",
+      "title": "Authorized application source and state/scoring schemas are missing",
+      "host": "procuresherpa.digitracks.net; learnpmo.digitracks.net; hcmfusion.digitracks.net",
+      "category": "application-parity-blocker",
+      "severity": "P1",
+      "status": "blocked",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "Application owners",
+      "evidence": [
+        {"type": "scope-constraint", "source": "Approved plan", "detail": "Canonical content, assessment scoring, scenario branches, progress schemas, migrations, authentication/roles, tenant boundaries, exports and deployment configuration are required owner inputs."}
+      ],
+      "impact": "Authenticated behavior, scoring, saved work and tenant isolation cannot be reproduced faithfully or safely from public HTML alone.",
+      "recommendation": "Obtain authorized source/data and migration fixtures. Keep blocked features explicitly unavailable rather than shipping simulated production behavior.",
+      "acceptanceCriteria": "Owner-supplied repositories/data are reviewed; schema and role contracts are documented; migrations and parity tests pass against approved fixtures."
+    },
+    {
+      "id": "DEF-006",
+      "title": "No estate visual asset is proven approved for reuse",
+      "host": "estate",
+      "category": "asset-provenance-blocker",
+      "severity": "P1",
+      "status": "blocked",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "Brand and product owners",
+      "evidence": [
+        {"type": "asset-inventory", "source": "/data/HomeWorks/digitracks-nextgen-portal/inventories/assets.json", "detail": "100 records; 85 unknown provenance, nine generated placeholders, two font candidates, one prohibited font and three licence texts. Zero approved visual assets."}
+      ],
+      "impact": "Logos, screenshots, photos, icons and social cards could be reused without ownership or licence evidence; generated wordmarks could be mistaken for approved identities.",
+      "recommendation": "Record owner, licence/permission, source hash, approval date and permitted use for each asset. Replace placeholders only with approved marks or clearly labelled original typographic treatments.",
+      "acceptanceCriteria": "Every shipped visual asset has an approved allowlist record and matching source/destination hash; no unknown or generated-placeholder asset is presented as verified product identity."
+    },
+    {
+      "id": "DEF-007",
+      "title": "Portal lead flow lacks durable received, retry and CRM-webhook semantics",
+      "host": "digitracks.net; learn.digitracks.net",
+      "category": "conversion-data-delivery",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "Platform and CRM owners",
+      "evidence": [
+        {"type": "local-source", "source": "/data/HomeWorks/DT-Portal-main/worker/index.ts", "detail": "Direct email delivery from /api/send-email and /api/lead; no D1/outbox/queue/webhook implementation."},
+        {"type": "local-source", "source": "/data/HomeWorks/DT-Portal-main/src/data/legal.ts", "detail": "Forms send to the studio inbox."}
+      ],
+      "impact": "A visitor can be told a message was received without durable storage, retry, dead-letter handling or proven CRM delivery.",
+      "recommendation": "Implement the approved D1/outbox/queue flow with stable idempotency, bounded retries and signed CRM webhook. Return received only after durable write and distinguish received from delivered.",
+      "acceptanceCriteria": "Staging proves inbox and webhook receipt, idempotency, signature rejection, timeout/retry, permanent failure and dead-letter handling without PII in analytics."
+    },
+    {
+      "id": "DEF-008",
+      "title": "HCM Fusion serves pages without a Content Security Policy",
+      "host": "hcmfusion.digitracks.net",
+      "category": "security-headers",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://hcmfusion.digitracks.net/", "detail": "No content-security-policy header."}
+      ],
+      "impact": "The application lacks a browser-enforced mitigation for script injection and unintended external resource loads.",
+      "recommendation": "Generate a tested CSP from one source, using nonces/hashes where required and explicit connect/script/frame/worker allowances.",
+      "acceptanceCriteria": "All document routes emit an enforced CSP; no console/runtime regressions; strict-mode tests reject unexpected origins and inline execution."
+    },
+    {
+      "id": "DEF-009",
+      "title": "ProcureSherpa serves its application without a Content Security Policy",
+      "host": "procuresherpa.digitracks.net",
+      "category": "security-headers",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "ProcureSherpa platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://procuresherpa.digitracks.net/", "detail": "No content-security-policy header."}
+      ],
+      "impact": "A large inline/local-first application has no CSP containment for script or resource injection.",
+      "recommendation": "Define a CSP compatible with the local-first architecture and test file/hosted modes without weakening the policy unnecessarily.",
+      "acceptanceCriteria": "CSP is present and enforced on hosted documents; application, calculator, export and offline behaviors pass under the policy."
+    },
+    {
+      "id": "DEF-010",
+      "title": "LearnPMO CSP permits broad external connections and inline styles",
+      "host": "learnpmo.digitracks.net",
+      "category": "security-headers",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "LearnPMO platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://learnpmo.digitracks.net/", "detail": "connect-src allows https: and wss:; style-src allows unsafe-inline; image/font sources also allow broad https:."}
+      ],
+      "impact": "The nonce-based script policy is weakened by permissive resource and connection directives.",
+      "recommendation": "Allowlist required origins and remove broad network/style permissions where feasible. Keep nonce-based script handling.",
+      "acceptanceCriteria": "CSP contains no unjustified wildcard external origins; optional cloud sync fails closed when its endpoint is not allowlisted."
+    },
+    {
+      "id": "DEF-011",
+      "title": "LearnPMO unknown routes return an indexable application shell",
+      "host": "learnpmo.digitracks.net",
+      "category": "seo-routing",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "LearnPMO platform and SEO owners",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://learnpmo.digitracks.net/definitely-not-a-real-route-audit", "detail": "200 application shell with robots index, follow."},
+        {"type": "read-only-http", "source": "https://learnpmo.digitracks.net/api", "detail": "200 application shell; /api/ redirects to /api."}
+      ],
+      "impact": "Arbitrary invalid paths can be indexed as soft 404s, diluting crawl quality and confusing users.",
+      "recommendation": "Use a route manifest and return a real static 404 for unknown public paths. Reserve API namespaces for API behavior, not HTML shells.",
+      "acceptanceCriteria": "Unknown paths return 404 with useful navigation and noindex; valid workspace routes retain their intended status and state behavior."
+    },
+    {
+      "id": "DEF-012",
+      "title": "HCM Fusion configuration-order content says seven steps but enumerates six actions",
+      "host": "hcmfusion.digitracks.net",
+      "category": "content-accuracy",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion editorial owner",
+      "evidence": [
+        {"type": "public-page", "source": "https://hcmfusion.digitracks.net/learn/lessons/core-hr-configuration-order", "detail": "Seven setup steps wording; six actions: legal entity, business unit, department, location, worker time entry profile and assignment."},
+        {"type": "public-export", "source": "https://hcmfusion.digitracks.net/export/module/core-hr.md", "detail": "Repeats the seven-step wording."}
+      ],
+      "impact": "Learners receive a contradictory prerequisite count in lesson, objectives and exports.",
+      "recommendation": "Choose an owner-approved model that clearly distinguishes six configuration actions from decision/terminal nodes, then update all derivatives from one source.",
+      "acceptanceCriteria": "Lesson, objectives, long descriptions and all export formats agree on action, decision and terminal-node counts."
+    },
+    {
+      "id": "DEF-013",
+      "title": "HCM Fusion catalogue and coverage counts are stale or differently scoped",
+      "host": "hcmfusion.digitracks.net",
+      "category": "content-accuracy",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion content owner",
+      "evidence": [
+        {"type": "public-page", "source": "https://hcmfusion.digitracks.net/learn/courses", "detail": "States 12 modules, 47 of 156 lessons, five published modules, four in production and three planned."},
+        {"type": "read-only-http", "source": "https://hcmfusion.digitracks.net/sitemap.xml", "detail": "Nine course pages; three additional courses return 200 but are unsitemapped."},
+        {"type": "public-page", "source": "https://hcmfusion.digitracks.net/sources", "detail": "States 446 claims/441 verified/five gaps; only 371 evidence pages are publicly linked."}
+      ],
+      "impact": "Users cannot tell which counts describe planned, published, public or verified material.",
+      "recommendation": "Derive all counts from approved registries and label scope explicitly: planned, published, public, sitemapped, reviewed and migration-cleared.",
+      "acceptanceCriteria": "No hard-coded derived count can drift; course, source and sitemap views reconcile or explain intentional scope differences."
+    },
+    {
+      "id": "DEF-014",
+      "title": "HCM Fusion Markdown exports claim 53 diagrams but the set contains 51",
+      "host": "hcmfusion.digitracks.net",
+      "category": "content-accuracy-export",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion content and export owners",
+      "evidence": [
+        {"type": "public-export-set", "source": "https://hcmfusion.digitracks.net/export/module/", "detail": "All 27 exports returned 200. HTML figures, Markdown Diagram headings and text Diagram headings each total 51 across nine modules."},
+        {"type": "public-export", "source": "https://hcmfusion.digitracks.net/export/module/absence.md", "detail": "States 53 diagrams while Absence contains 22."}
+      ],
+      "impact": "Every Markdown module export carries a stale estate-wide count, undermining export trust.",
+      "recommendation": "Generate per-module and total diagram counts from the content registry; add format parity tests.",
+      "acceptanceCriteria": "Each export reports its actual diagram/figure count; HTML, Markdown and text totals agree; no hard-coded 53 remains without evidence."
+    },
+    {
+      "id": "DEF-015",
+      "title": "SourceCraft trailing-slash aliases return duplicate 200 documents",
+      "host": "sourcecraft.digitracks.net",
+      "category": "seo-routing",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "SourceCraft platform and SEO owners",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://sourcecraft.digitracks.net/terms/batna/", "detail": "/terms/batna also returns 200 with identical bytes; both canonicalize to the slash form without redirecting."},
+        {"type": "read-only-http", "source": "https://sourcecraft.digitracks.net/explore", "detail": "/explore and /explore/ both return 200; /regions/IN behaves similarly."},
+        {"type": "read-only-http", "source": "https://sourcecraft.digitracks.net/favourites", "detail": "Alias and slash form both return 200."}
+      ],
+      "impact": "Duplicate URL forms create avoidable crawl and analytics ambiguity.",
+      "recommendation": "Choose one trailing-slash policy and issue one-hop 308 redirects for aliases while preserving deep-link mappings.",
+      "acceptanceCriteria": "Only canonical forms return 200; aliases redirect once to the same-origin canonical; no loops or chains."
+    },
+    {
+      "id": "DEF-016",
+      "title": "SourceCraft Explore and Twitter metadata are generic",
+      "host": "sourcecraft.digitracks.net",
+      "category": "seo-metadata",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "SourceCraft SEO owner",
+      "evidence": [
+        {"type": "public-page-source", "source": "https://sourcecraft.digitracks.net/explore/", "detail": "og:title and og:url use homepage values; og:image and Twitter image use /og/default.png."},
+        {"type": "read-only-http-crawl", "source": "https://sourcecraft.digitracks.net/sitemap.xml", "detail": "All 139 pages have social images, but the inspected system uses generic/default artwork rather than page-specific evidence."}
+      ],
+      "impact": "Shared previews do not distinguish terms, regions or utility intent.",
+      "recommendation": "Generate unique titles/descriptions and approved 1200x630 social cards from verified brand assets or original technical diagrams.",
+      "acceptanceCriteria": "Every indexable template has useful unique metadata and a reachable approved social image; utility routes are deliberately noindex where appropriate."
+    },
+    {
+      "id": "DEF-017",
+      "title": "SourceCraft manifest icon dimensions do not match the files",
+      "host": "sourcecraft.digitracks.net",
+      "category": "pwa-assets",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "SourceCraft brand and platform owners",
+      "evidence": [
+        {"type": "public-file", "source": "https://sourcecraft.digitracks.net/manifest.webmanifest", "detail": "Declares /icons/icon-192.png as 192x192 and /icons/icon-512.png as 512x512."},
+        {"type": "read-only-http", "source": "https://sourcecraft.digitracks.net/icons/icon-192.png", "detail": "Actual 192x175."},
+        {"type": "read-only-http", "source": "https://sourcecraft.digitracks.net/icons/icon-512.png", "detail": "Actual 512x465; maskable 512 icon is 512x512."}
+      ],
+      "impact": "Install surfaces can crop, scale or reject icons inconsistently.",
+      "recommendation": "Ship approved true-square 192, 512 and maskable assets with safe-area padding; derive manifest entries from measured dimensions.",
+      "acceptanceCriteria": "Manifest dimensions equal actual files; install/update tests pass on supported browsers and the artwork has clearance evidence."
+    },
+    {
+      "id": "DEF-018",
+      "title": "SourceCraft emits no JSON-LD across 139 sitemap pages",
+      "host": "sourcecraft.digitracks.net",
+      "category": "seo-structured-data",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "SourceCraft SEO owner",
+      "evidence": [
+        {"type": "read-only-http-crawl", "source": "https://sourcecraft.digitracks.net/sitemap.xml", "detail": "Zero JSON-LD blocks across 139 pages."}
+      ],
+      "impact": "Term and regional content lacks eligible structured signals for search discovery.",
+      "recommendation": "Add DefinedTerm and appropriate Article/BreadcrumbList data only for approved content and verified facts.",
+      "acceptanceCriteria": "Schema validates, matches visible content, contains no unsupported ratings/prices/reviews and is emitted only on eligible approved routes."
+    },
+    {
+      "id": "DEF-019",
+      "title": "HCM Fusion lacks JSON-LD and social images on all 168 sitemap pages",
+      "host": "hcmfusion.digitracks.net",
+      "category": "seo-metadata",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion SEO and brand owners",
+      "evidence": [
+        {"type": "read-only-http-crawl", "source": "https://hcmfusion.digitracks.net/sitemap.xml", "detail": "0 JSON-LD blocks; 168 pages lack OG/Twitter images; canonical and one H1 are present on all 168."}
+      ],
+      "impact": "Rich reading, course and evidence surfaces have weak preview and structured-data coverage.",
+      "recommendation": "Prioritize approved Course, Article and BreadcrumbList schema plus unique social cards; do not invent instructor credentials, ratings or outcomes.",
+      "acceptanceCriteria": "Eligible approved templates emit validated same-origin metadata/schema and approved social cards; private routes remain excluded."
+    },
+    {
+      "id": "DEF-020",
+      "title": "LearnPMO lacks JSON-LD and social images on all 12 sitemap pages",
+      "host": "learnpmo.digitracks.net",
+      "category": "seo-metadata",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "LearnPMO SEO and brand owners",
+      "evidence": [
+        {"type": "read-only-http-crawl", "source": "https://learnpmo.digitracks.net/sitemap.xml", "detail": "0 JSON-LD blocks; all 12 pages lack OG/Twitter images; canonical and one H1 are present."}
+      ],
+      "impact": "Public application/workspace pages have limited preview and structured-data coverage, and their indexing intent itself needs review.",
+      "recommendation": "Approve which workspace pages are public-seo versus utility/private, then generate metadata only for intentional public pages.",
+      "acceptanceCriteria": "Each of the 12 routes has an explicit indexability decision, unique metadata where public, and approved social imagery where eligible."
+    },
+    {
+      "id": "DEF-021",
+      "title": "ProcureSherpa initial shell has no H1 and no social image",
+      "host": "procuresherpa.digitracks.net",
+      "category": "seo-accessibility",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "ProcureSherpa SEO and accessibility owners",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://procuresherpa.digitracks.net/", "detail": "200; canonical and one JSON-LD block present; zero H1 elements in initial HTML; no OG/Twitter image."}
+      ],
+      "impact": "The only sitemap URL lacks a server-rendered primary heading and social preview image; client-only content may also be unavailable to non-JavaScript crawlers.",
+      "recommendation": "Server-render a meaningful H1 and public shell content, add approved social imagery, and document the client-route indexing strategy.",
+      "acceptanceCriteria": "Initial HTML contains one descriptive H1 and approved OG/Twitter image; hash-route discoverability is explicitly designed and tested rather than assumed."
+    },
+    {
+      "id": "DEF-022",
+      "title": "ProcureSherpa ships an approximately 1 MB HTML shell and 2.92 MB content script",
+      "host": "procuresherpa.digitracks.net",
+      "category": "performance",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "ProcureSherpa platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://procuresherpa.digitracks.net/", "detail": "1,007,173-byte HTML response in the audit capture."},
+        {"type": "read-only-http", "source": "https://procuresherpa.digitracks.net/content.js", "detail": "Approximately 2.92 MB JavaScript."}
+      ],
+      "impact": "Initial transfer and parse costs are likely high, especially on mobile; actual LCP/INP/CLS remain unmeasured.",
+      "recommendation": "Separate static shell/content data, route-level code splitting, compression and caching; defer nonessential tools while preserving local-first/offline behavior.",
+      "acceptanceCriteria": "Representative mobile lab and field budgets are measured and met; no regression in offline, hash deep links, calculator behavior or exports."
+    },
+    {
+      "id": "DEF-023",
+      "title": "Portal business identity and customer proof are incomplete",
+      "host": "digitracks.net",
+      "category": "conversion-trust",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "Digi Tracks business owner",
+      "evidence": [
+        {"type": "local-source", "source": "/data/HomeWorks/DT-Portal-main/src/data/studio.ts", "detail": "Country empty; founder/legal entity/city/phone/owned social profile unset; TESTIMONIALS empty."}
+      ],
+      "impact": "Visitors cannot verify who operates the studio or substantiate product outcomes, weakening quote and demo conversion.",
+      "recommendation": "Obtain approved business identity and genuine proof. Until supplied, state only verified contact details and omit unsupported testimonials/logos/case studies.",
+      "acceptanceCriteria": "Published identity details have owner evidence; every testimonial/logo/case study has permission and source; absent proof is not fabricated."
+    },
+    {
+      "id": "DEF-024",
+      "title": "HCM Fusion public reading pages use private no-store caching",
+      "host": "hcmfusion.digitracks.net",
+      "category": "performance-caching",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://hcmfusion.digitracks.net/", "detail": "Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate on public pages."}
+      ],
+      "impact": "Public lessons and evidence cannot benefit from shared caching, increasing repeat transfer and origin load.",
+      "recommendation": "Define per-template cache policy: public immutable content can use validated shared caching; authenticated/user responses remain private/no-store.",
+      "acceptanceCriteria": "Public content caches safely with invalidation on substantive updates; private progress/notes/bookmarks never enter shared caches."
+    },
+    {
+      "id": "DEF-025",
+      "title": "HCM Fusion duplicate/slow unauthenticated API calls remain unquantified",
+      "host": "hcmfusion.digitracks.net",
+      "category": "performance-api",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "prior_observed",
+      "recordedAt": "2026-11-25",
+      "originalObservedAt": "UNKNOWN — prior baseline supplied without an original date",
+      "owner": "HCM Fusion platform owner",
+      "evidence": [
+        {"type": "prior-audit-brief", "source": "Approved plan and supplied baseline", "detail": "Duplicate/slow unauthenticated API calls reported; no fresh browser network/timing trace was captured in this read-only phase."},
+        {"type": "public-javascript", "source": "https://hcmfusion.digitracks.net/", "detail": "Public chunks reference /api/bookmarks, /api/notes, /api/progress/lesson and /api/auth/sign-out; this does not by itself prove duplication."}
+      ],
+      "impact": "Potential duplicate requests and slow unauthenticated calls may waste bandwidth and delay interactive views, but magnitude is UNKNOWN.",
+      "recommendation": "Capture a read-only browser network/timing trace per template, deduplicate shared requests, add caching/abort behavior where safe and measure before/after.",
+      "acceptanceCriteria": "Request counts, timing and payload sizes are documented per template; no duplicate critical calls remain; authenticated boundaries are preserved."
+    },
+    {
+      "id": "DEF-026",
+      "title": "Three valid HCM Fusion course pages are indexable but absent from the sitemap",
+      "host": "hcmfusion.digitracks.net",
+      "category": "seo-sitemap",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion content and SEO owners",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://hcmfusion.digitracks.net/learn/courses/benefits", "detail": "200, self-canonical, index, follow, not in sitemap."},
+        {"type": "read-only-http", "source": "https://hcmfusion.digitracks.net/learn/courses/global-payroll", "detail": "200, self-canonical, index, follow, not in sitemap."},
+        {"type": "read-only-http", "source": "https://hcmfusion.digitracks.net/learn/courses/procurement", "detail": "200, self-canonical, index, follow, not in sitemap."}
+      ],
+      "impact": "Valid public courses have conflicting discovery signals and complicate the 12-module/9-course reconciliation.",
+      "recommendation": "After editorial approval, either include them in the sitemap with correct coverage metadata or deliberately noindex them; do not leave accidental mismatches.",
+      "acceptanceCriteria": "Every valid indexable course is sitemapped; every omitted course has an explicit policy and rationale."
+    },
+    {
+      "id": "DEF-027",
+      "title": "LearnPMO manifest and favicon URLs return HTML",
+      "host": "learnpmo.digitracks.net",
+      "category": "pwa-routing",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "LearnPMO platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://learnpmo.digitracks.net/manifest.webmanifest", "detail": "200 text/html, not a manifest."},
+        {"type": "read-only-http", "source": "https://learnpmo.digitracks.net/site.webmanifest", "detail": "200 text/html."},
+        {"type": "read-only-http", "source": "https://learnpmo.digitracks.net/favicon.ico", "detail": "200 text/html."}
+      ],
+      "impact": "Install metadata and browser icon discovery are broken or ambiguous; the HTML fallback can also be indexed.",
+      "recommendation": "Serve correct MIME types and approved assets, or return a deliberate 404 for unsupported aliases. Add utility-route tests.",
+      "acceptanceCriteria": "Manifest JSON parses, icons match declared dimensions, favicon is a valid image, and HTML utility fallbacks are noindex or absent."
+    },
+    {
+      "id": "DEF-028",
+      "title": "Previously reported SourceCraft /favourites/ 404 no longer reproduces",
+      "host": "sourcecraft.digitracks.net",
+      "category": "resolved-routing",
+      "severity": "P3",
+      "status": "resolved",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "SourceCraft platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://sourcecraft.digitracks.net/favourites/", "detail": "200; noindex, follow; canonical /favourites/."},
+        {"type": "prior-audit-brief", "source": "Supplied baseline", "detail": "Earlier report said the route was broken/404."}
+      ],
+      "impact": "Repeating the old defect would create false audit noise; browser persistence behavior still requires functional testing.",
+      "recommendation": "Retain the current 200/noindex behavior as the baseline and test saved-state migration rather than recreating the old 404.",
+      "acceptanceCriteria": "Route stays successful; slash policy is normalized; favourites state migration and offline behavior are tested with fixtures."
+    },
+    {
+      "id": "DEF-029",
+      "title": "Non-indexable stats origin returns HTTP 520",
+      "host": "stats.digitracks.net",
+      "category": "availability-scope",
+      "severity": "P3",
+      "status": "accepted-exclusion",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "Digi Tracks operations owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://stats.digitracks.net/", "detail": "520."}
+      ],
+      "impact": "The origin is unavailable but is outside the approved six-host public replacement scope.",
+      "recommendation": "Keep it excluded from public navigation/sitemaps; document the owner decision if observability is later brought into scope.",
+      "acceptanceCriteria": "Replacement scope remains six hosts; no link or sitemap entry presents stats as a public product."
+    },
+    {
+      "id": "DEF-030",
+      "title": "Search Console, IndexNow and analytics verification are unknown",
+      "host": "estate",
+      "category": "seo-operations-evidence-gap",
+      "severity": "P3",
+      "status": "evidence-gap",
+      "evidenceStatus": "prior_observed",
+      "recordedAt": "2026-11-25",
+      "originalObservedAt": "UNKNOWN — prior baseline supplied without an original date",
+      "owner": "Digi Tracks operations owner",
+      "evidence": [
+        {"type": "prior-audit-brief", "source": "Approved plan and supplied baseline", "detail": "Search Console acceptance and property verification were not supplied."}
+      ],
+      "impact": "Indexing acceptance, coverage errors and analytics operation cannot be reported as complete.",
+      "recommendation": "Obtain owner access or operator evidence; document submission/verification as owner actions with dates and screenshots/exports where permitted.",
+      "acceptanceCriteria": "Each origin has a verified property or an explicit UNKNOWN/owner-action record; no local script claims external acceptance."
+    },
+    {
+      "id": "DEF-031",
+      "title": "Accessibility, Lighthouse, Core Web Vitals and mobile conformance are unmeasured",
+      "host": "estate",
+      "category": "qa-evidence-gap",
+      "severity": "P2",
+      "status": "evidence-gap",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "QA and accessibility owners",
+      "evidence": [
+        {"type": "method-limitation", "source": "This audit", "detail": "Static HTML/source/header inspection only; no axe, manual keyboard/screen-reader, device matrix, Lighthouse or field-data run."}
+      ],
+      "impact": "The audit cannot substantiate WCAG 2.2 AA, responsive behavior or performance targets.",
+      "recommendation": "Run automated and manual accessibility testing plus representative lab and field performance measurement in the implementation QA phase.",
+      "acceptanceCriteria": "QA report includes device/browser matrix, axe results, manual keyboard/focus/screen-reader/zoom/reflow/reduced-motion checks and measured LCP/INP/CLS/Lighthouse with limitations."
+    },
+    {
+      "id": "DEF-032",
+      "title": "ProcureSherpa reuses three content IDs across different type namespaces",
+      "host": "procuresherpa.digitracks.net",
+      "category": "content-registry-integrity",
+      "severity": "P3",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "ProcureSherpa content owner",
+      "evidence": [
+        {"type": "public-javascript", "source": "https://procuresherpa.digitracks.net/content.js", "detail": "make-or-buy, framework-agreement and supplier-financial-risk each occur as both kb and dec. Typed routes are unique, so the correct total is 506 rather than 503."}
+      ],
+      "impact": "Code or registries that assume globally unique IDs can resolve relationships or saved state incorrectly even though typed URLs remain distinct.",
+      "recommendation": "Use composite content keys (type, id) and preserve the existing typed URL mappings; validate uniqueness at the composite-key level.",
+      "acceptanceCriteria": "All content, relations, saved state and exports use type-aware keys; tests reject accidental cross-type collisions."
+    },
+    {
+      "id": "DEF-033",
+      "title": "Portal route, prerender and metadata definitions are duplicated and documentation has drifted",
+      "host": "digitracks.net",
+      "category": "architecture-maintainability",
+      "severity": "P2",
+      "status": "open",
+      "evidenceStatus": "prior_observed",
+      "recordedAt": "2026-11-25",
+      "originalObservedAt": "UNKNOWN — prior baseline supplied without an original date",
+      "owner": "Portal platform owner",
+      "evidence": [
+        {"type": "prior-audit-brief", "source": "Approved plan and supplied baseline", "detail": "Duplicated runtime/prerender/metadata route definitions and historical documentation drift reported."},
+        {"type": "local-source-reference", "source": "/data/HomeWorks/DT-Portal-main/scripts/prerender.mjs", "detail": "Approved plan identifies this as a reference for generated metadata/sitemap/header principles, not a runtime dependency."}
+      ],
+      "impact": "Manual synchronization increases the risk of stale counts, route omissions and inconsistent metadata.",
+      "recommendation": "Drive routes, sitemaps, redirects, metadata, schema and tests from one typed registry; derive counts rather than duplicating them.",
+      "acceptanceCriteria": "Build/tests reject duplicate routes, missing content, cross-origin canonicals, unsupported claims and stale derived counts."
+    },
+    {
+      "id": "DEF-034",
+      "title": "Portal rate limiting is not proven enforceable and bot verification was inactive",
+      "host": "digitracks.net; learn.digitracks.net",
+      "category": "security-abuse-controls",
+      "severity": "P1",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "Portal platform and security owners",
+      "evidence": [
+        {"type": "local-source", "source": "/data/HomeWorks/DT-Portal-main/worker/index.ts", "detail": "Documents non-enforcing Cloudflare Rate Limiting binding; compensating per-isolate memory limit, optional Turnstile and owner-managed WAF rule."},
+        {"type": "read-only-http", "source": "https://digitracks.net/", "detail": "Live CSP has no Turnstile host, consistent with bot verification being off."}
+      ],
+      "impact": "Public lead endpoints may have weaker abuse controls than the architecture requires; WAF enforcement is unverified.",
+      "recommendation": "Configure fail-closed bot verification for production and prove approximate rate limiting at the edge/API boundary. Document WAF ownership and tests without exposing secrets.",
+      "acceptanceCriteria": "Staging proves valid/invalid Turnstile, rate-limit behavior, origin/method/schema/size rejection and safe error responses; production WAF evidence is owner-recorded."
+    },
+    {
+      "id": "DEF-035",
+      "title": "HCM Fusion lacks COOP/CORP isolation headers",
+      "host": "hcmfusion.digitracks.net",
+      "category": "security-headers",
+      "severity": "P3",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "HCM Fusion platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://hcmfusion.digitracks.net/", "detail": "No Cross-Origin-Opener-Policy or Cross-Origin-Resource-Policy observed."}
+      ],
+      "impact": "The origin misses useful cross-origin isolation hardening, particularly around authenticated/user features.",
+      "recommendation": "Add owner-approved COOP/CORP values and test popup, export and authentication behavior.",
+      "acceptanceCriteria": "Headers are consistent across document/API/asset routes and do not break required cross-origin flows."
+    },
+    {
+      "id": "DEF-036",
+      "title": "LearnPMO HSTS does not declare preload",
+      "host": "learnpmo.digitracks.net",
+      "category": "security-headers",
+      "severity": "P3",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "LearnPMO platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "https://learnpmo.digitracks.net/", "detail": "Strict-Transport-Security: max-age=31536000; includeSubDomains, without preload."}
+      ],
+      "impact": "Transport policy is weaker and less consistent than the other five origins, though HSTS is present.",
+      "recommendation": "Align HSTS after confirming all subdomains are HTTPS-ready; preload only after owner approval and validation.",
+      "acceptanceCriteria": "HSTS policy is documented and consistent; no HTTP or broken subdomain remains before preload consideration."
+    },
+    {
+      "id": "DEF-037",
+      "title": "SourceCraft favourites/recents storage keys were not fully confirmed",
+      "host": "sourcecraft.digitracks.net",
+      "category": "state-migration-evidence-gap",
+      "severity": "P3",
+      "status": "evidence-gap",
+      "evidenceStatus": "prior_observed",
+      "recordedAt": "2026-11-25",
+      "originalObservedAt": "UNKNOWN — prior baseline supplied without an original date",
+      "owner": "SourceCraft application owner",
+      "evidence": [
+        {"type": "prior-audit-brief", "source": "Approved plan", "detail": "Plan names source-craft:favourites:v1 and source-craft:recent:v1 for migration."},
+        {"type": "public-javascript", "source": "https://sourcecraft.digitracks.net/", "detail": "Inspected chunks confirmed source-craft:explore-url, source-craft:region and source-craft:region:v1, but not the two named state keys."}
+      ],
+      "impact": "A migration could reset or misread saved terms/recents if the actual schema differs from the plan.",
+      "recommendation": "Obtain authorized state schema and fixtures; inspect real browser storage read-only where permitted; version and test migrations without silent reset.",
+      "acceptanceCriteria": "Every preserved key and value shape has a documented fixture; migration tests prove no data loss and clear handling of corrupt state."
+    },
+    {
+      "id": "DEF-038",
+      "title": "Estate deployment and origin-state boundaries span two platforms",
+      "host": "estate",
+      "category": "operations-architecture",
+      "severity": "P3",
+      "status": "open",
+      "evidenceStatus": "fresh_verified",
+      "verifiedAt": "2026-11-25T00:31:19Z",
+      "owner": "Digi Tracks platform owner",
+      "evidence": [
+        {"type": "read-only-http", "source": "Six-origin root header capture", "detail": "Cloudflare serves portal/Learn; Vercel serves the four application hosts."}
+      ],
+      "impact": "Header, cache, CSP, deployment and incident behavior can drift across origins; cookies/localStorage must remain origin-bound.",
+      "recommendation": "Generate shared security/SEO policy from one source while keeping per-origin deployment adapters, state namespaces and manifests explicit.",
+      "acceptanceCriteria": "Automated estate tests assert per-origin headers, canonicals, sitemaps, manifests and state isolation; no runtime dependency crosses back to the reference repository."
+    }
+  ]
+}

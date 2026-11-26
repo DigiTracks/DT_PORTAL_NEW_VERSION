@@ -1,0 +1,241 @@
+---
+import { productRegistry } from "@digitracks/catalog";
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+import ProductMark from "./ProductMark";
+
+interface Props {
+  route: RouteRecord;
+}
+
+const { route } = Astro.props;
+const vertex = productRegistry.find((product) => product.id === "vertex")!;
+const vantor = productRegistry.find((product) => product.id === "vantor")!;
+const procure5 = productRegistry.find((product) => product.id === "procure5")!;
+const sherpa = productRegistry.find((product) => product.id === "sherpa")!;
+const integritySystems = productRegistry.filter((product) => product.parentId === "procure5");
+const consultationHref = "/contact/?intent=consultation";
+const learningHref = "https://learn.digitracks.net/procuresherpa/";
+const instruments = [
+  {
+    code: "01",
+    job: "Operate",
+    product: vertex,
+    purpose: "Project and procurement operations",
+    proof: "Fictional showcase + published production scope",
+    href: "/contact/?intent=demo&product=vertex",
+    action: "Request a Vertex evaluation",
+    ctaId: "request-product-demo"
+  },
+  {
+    code: "02",
+    job: "Control",
+    product: vantor,
+    purpose: "Self-hosted procurement operations",
+    proof: "Public evaluation release; material evidence conflicts",
+    href: "/contact/?intent=product-enquiry&product=vantor",
+    action: "Qualify Vantor for evaluation",
+    ctaId: "request-product-consultation"
+  },
+  {
+    code: "03",
+    job: "Verify",
+    product: procure5,
+    purpose: "Five procurement-integrity systems",
+    proof: "Published system boundaries; implementation review required",
+    href: "/contact/?intent=product-enquiry&product=procure5",
+    action: "Discuss the integrity scope",
+    ctaId: "request-product-consultation"
+  },
+  {
+    code: "04",
+    job: "Learn",
+    product: sherpa,
+    purpose: "Browser learning and decision support",
+    proof: "Code-backed local toolkit; not a procurement ERP",
+    href: `${sherpa.route}/`,
+    action: "Inspect Procure Sherpa",
+    ctaId: "inspect-product"
+  }
+] as const;
+const comparison = [
+  {
+    term: "Primary job",
+    vertex: "Run project and procurement workflows in one self-contained system.",
+    vantor: "Evaluate a self-hosted procurement operating system across sourcing, contracts, purchasing and spend."
+  },
+  {
+    term: "Public evidence",
+    vertex: "A fictional showcase demonstrates PR, RFQ, PO, GRN and invoice flows. Production scope is vendor-stated.",
+    vantor: "Public source shows implementation breadth, but the repository says the release is not production-hardened."
+  },
+  {
+    term: "Deployment shape",
+    vertex: "Windows desktop installer and a public web showcase.",
+    vantor: "Single-container SQLite, or self-hosted PostgreSQL, Redis, worker and Keycloak."
+  },
+  {
+    term: "Workflow controls",
+    vertex: "Sealed RFQs, contract-gated purchase orders, finance approvals, receiving and three-way matching.",
+    vantor: "Supplier qualification, sourcing, contracts, requisition-to-invoice, approvals, budgets and three-way match."
+  },
+  {
+    term: "Search and AI",
+    vertex: "No AI or MCP capability was verified.",
+    vantor: "Lexical document search and typed AI tools are published. AI citation behavior conflicts across sources."
+  },
+  {
+    term: "Integrations",
+    vertex: "No named external integration was verified.",
+    vantor: "OIDC is published. No named production ERP connector or first-party MCP implementation was verified."
+  },
+  {
+    term: "Licence",
+    vertex: "Proprietary; commercial terms require confirmation.",
+    vantor: "UNKNOWN — the official page says AGPL-3.0-or-later; the public repository says Apache-2.0."
+  },
+  {
+    term: "Production boundary",
+    vertex: "The showcase does not prove production parity, integrations or edition entitlements.",
+    vantor: "Not production-hardened according to the repository; the official page's readiness claim requires reconciliation."
+  }
+] as const;
+const conflicts = [
+  ["Licence", "Official page: AGPL-3.0-or-later", "Public repository: Apache-2.0"],
+  ["Readiness", "Official page: Ready to Deploy", "Public repository: not production-hardened"],
+  ["AI evidence", "Official page: every answer cited", "Public repository: incomplete evidence references"]
+] as const;
+---
+
+<section class="ecosystem-hero" aria-labelledby="ecosystem-title">
+  <div class="ecosystem-hero__grid-pattern" aria-hidden="true"></div>
+  <div class="shell ecosystem-hero__grid">
+    <div class="ecosystem-hero__copy">
+      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>Procurement / operating platforms, integrity and learning</p>
+      <h1 id="ecosystem-title">Different jobs.<br><em>Deliberate tools.</em></h1>
+      <p>{route.description}</p>
+      <div class="button-row">
+        <Button href={consultationHref} ctaId="request-procurement-demo">Discuss your procurement brief</Button>
+        <Button href="#procurement-instruments" variant="secondary" ctaId="explore-procurement">Compare the instruments</Button>
+      </div>
+    </div>
+    <figure class="ecosystem-map" aria-label="Procurement category map">
+      <div class="ecosystem-map__head"><span>DT / PROCUREMENT</span><span>04 distinct roles</span></div>
+      <ol>
+        {instruments.map((instrument) => <li>
+          <span>{instrument.code}</span>
+          <ProductMark product={instrument.product} size={42} />
+          <div><small>{instrument.job}</small><strong>{instrument.product.name}</strong></div>
+          <i aria-hidden="true"></i>
+        </li>)}
+        <li class="ecosystem-map__learning">
+          <span>05</span><b aria-hidden="true">A</b><div><small>Practise</small><strong>ProcureSherpa Learning</strong></div><i aria-hidden="true"></i>
+        </li>
+      </ol>
+      <figcaption>Category map · related tools, not one integrated suite</figcaption>
+    </figure>
+  </div>
+  <div class="shell ecosystem-hero__foot"><span>Source-to-contract</span><span>Integrity controls</span><span>Practitioner capability</span><span>Evidence before access</span></div>
+</section>
+
+<section class="ecosystem-instruments section" id="procurement-instruments" aria-labelledby="procurement-instruments-title">
+  <div class="shell">
+    <div class="section-head">
+      <div><p class="t-label">01 / Choose by the work</p><h2 id="procurement-instruments-title">Start with the job,<br>not the product name.</h2></div>
+      <p>These instruments can sit in the same procurement conversation. They are not presented as one platform, and no shared account, data layer or integration is implied.</p>
+    </div>
+    <ol class="ecosystem-instrument-grid">
+      {instruments.map((instrument) => <li>
+        <article class="ecosystem-instrument-card">
+          <div class="ecosystem-instrument-card__top"><span>{instrument.code} / {instrument.job}</span><ProductMark product={instrument.product} size={54} /></div>
+          <h3>{instrument.product.name}</h3>
+          <p class="ecosystem-instrument-card__purpose">{instrument.purpose}</p>
+          <p>{instrument.product.summary}.</p>
+          <dl>
+            <div><dt>Evidence</dt><dd>{instrument.proof}</dd></div>
+            <div><dt>Deployment</dt><dd>{instrument.product.deployment}</dd></div>
+          </dl>
+          <Button href={instrument.href} variant="secondary" ctaId={instrument.ctaId}>{instrument.action}</Button>
+        </article>
+      </li>)}
+    </ol>
+  </div>
+</section>
+
+<section class="ecosystem-compare section" aria-labelledby="ecosystem-compare-title">
+  <div class="shell">
+    <div class="section-head section-head--inverse">
+      <div><p class="t-label">02 / Vertex and Vantor</p><h2 id="ecosystem-compare-title">Two operating-system approaches.<br>Different evidence.</h2></div>
+      <p>Both address procurement operations. Their deployment models and public proof are different enough that a single “request a demo” promise would be misleading.</p>
+    </div>
+    <div class="ecosystem-table-wrap" tabindex="0" role="region" aria-label="Vertex and Vantor comparison, scroll horizontally on small screens">
+      <table class="ecosystem-table">
+        <caption>Vertex and Vantor evaluation comparison</caption>
+        <thead><tr><th scope="col">Evaluation point</th><th scope="col">Vertex</th><th scope="col">Vantor</th></tr></thead>
+        <tbody>{comparison.map((row) => <tr><th scope="row">{row.term}</th><td>{row.vertex}</td><td>{row.vantor}</td></tr>)}</tbody>
+      </table>
+    </div>
+    <p class="ecosystem-table-hint">Swipe within the comparison on a small screen, or focus it and use the arrow keys.</p>
+  </div>
+</section>
+
+<section class="ecosystem-conflicts section" aria-labelledby="ecosystem-conflicts-title">
+  <div class="shell ecosystem-conflicts__grid">
+    <div>
+      <p class="t-label">03 / Vantor evidence register</p>
+      <h2 id="ecosystem-conflicts-title">Three claims need reconciliation before production use.</h2>
+      <p>Vantor remains available for evaluation. The public release should not be described as production-hardened, definitively licensed or consistently cited until the conflicting sources are resolved by the owner.</p>
+      <Button href="/contact/?intent=product-enquiry&product=vantor" variant="secondary" ctaId="request-product-consultation">Ask for the current Vantor position</Button>
+    </div>
+    <ol class="conflict-register">
+      {conflicts.map(([term, official, repository], index) => <li>
+        <span>{String(index + 1).padStart(2, "0")}</span>
+        <div><h3>{term}</h3><p><small>Published product page</small>{official}</p><p><small>Public repository</small>{repository}</p></div>
+        <strong>CONFLICT</strong>
+      </li>)}
+    </ol>
+  </div>
+</section>
+
+<section class="ecosystem-integrity section" aria-labelledby="ecosystem-integrity-title">
+  <div class="shell ecosystem-integrity__grid">
+    <div class="ecosystem-integrity__intro">
+      <p class="t-label">04 / Procure5</p>
+      <h2 id="ecosystem-integrity-title">Integrity is a family of questions, not one feature.</h2>
+      <p>Procure5 groups five published systems around invoice leakage, tender conduct, contract payment, sourcing decisions and benefits realisation. Each has a separate public product record.</p>
+      <p>The family describes a published scope. Production readiness, implementation evidence and commercial terms still require evaluation rather than being inferred from the portfolio name.</p>
+      <Button href={`${procure5.route}/`} variant="secondary" ctaId="inspect-product">Inspect the Procure5 family</Button>
+    </div>
+    <ol class="integrity-register">
+      {integritySystems.map((system, index) => <li><a href={`${system.route}/`}>
+        <span>{String(index + 1).padStart(2, "0")}</span><ProductMark product={system} size={40} />
+        <div><h3>{system.name}</h3><p>{system.summary}</p></div><i aria-hidden="true">↗</i>
+      </a></li>)}
+    </ol>
+  </div>
+</section>
+
+<section class="ecosystem-learning section" aria-labelledby="ecosystem-learning-title">
+  <div class="shell ecosystem-learning__grid">
+    <div class="ecosystem-learning__mark" aria-hidden="true"><span>ACADEMY</span><strong>A/05</strong></div>
+    <div>
+      <p class="t-label">05 / ProcureSherpa Learning</p>
+      <h2 id="ecosystem-learning-title">Build capability alongside the operating decision.</h2>
+      <p>ProcureSherpa Learning is the Academy component of Procure Sherpa on the Learn origin. It brings together modules, quizzes, local exam history, calculators, SOPs, checklists, templates, scenarios and saved work.</p>
+      <p>It is a learning path, not a separately verified SKU. Enrolment, accreditation, credentials and cross-device progress are not verified.</p>
+      <div class="button-row"><Button href={learningHref} external ctaId="explore-learning-paths">Explore ProcureSherpa Learning</Button><Button href="/contact/?intent=learning&product=sherpa" variant="secondary" ctaId="request-learning-access">Ask about learning access</Button></div>
+    </div>
+  </div>
+</section>
+
+<section class="ecosystem-boundary section" aria-labelledby="ecosystem-boundary-title">
+  <div class="shell ecosystem-boundary__grid">
+    <p class="t-label">Integration boundary</p>
+    <div><h2 id="ecosystem-boundary-title">What this ecosystem does not claim.</h2><p>No first-party DigiTracks procurement MCP server was verified. No shared procurement data layer, automatic synchronisation, named ERP connector or cross-product integration is implied by this category page.</p></div>
+    <nav aria-label="Procurement next steps"><a href="/solutions/procurement/">Procurement solution path <span aria-hidden="true">↗</span></a><a href={consultationHref}>Scope an evaluation <span aria-hidden="true">↗</span></a></nav>
+  </div>
+</section>
+
+<section class="ecosystem-close" aria-labelledby="ecosystem-close-title">
+  <div class="shell ecosystem-close__grid"><div><p class="t-label">Qualified procurement conversation</p><h2 id="ecosystem-close-title">Tell us where control is breaking down.</h2></div><div><p>Share the workflow, deployment constraint and evidence you need. We will route the enquiry to the relevant product conversation rather than send a generic demo link.</p><Button href={consultationHref} ctaId="request-procurement-demo">Discuss procurement</Button></div></div>
+</section>

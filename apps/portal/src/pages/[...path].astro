@@ -1,0 +1,17 @@
+---
+import RegistryPage from "@digitracks/ui/components/RegistryPage.astro";
+import { productRegistry } from "@digitracks/catalog";
+import { routeRegistry, staticPageRoutes } from "@digitracks/seo";
+
+export function getStaticPaths() {
+  return staticPageRoutes("portal", routeRegistry).map((route) => ({
+      params: { path: route.path.split("/").filter(Boolean).join("/") },
+      props: { route }
+    }));
+}
+
+const { route } = Astro.props;
+const product = productRegistry.find((item) => `${item.route}/` === route.path);
+---
+
+<RegistryPage route={route} product={product} />

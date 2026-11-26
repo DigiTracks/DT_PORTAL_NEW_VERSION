@@ -1,0 +1,1466 @@
+{
+  "generatedAt": "2026-11-26T00:59:53.641Z",
+  "mode": "accessibility",
+  "failures": [],
+  "performance": [
+    {
+      "app": "portal",
+      "url": "http://127.0.0.1:4341/",
+      "finalDisplayedUrl": "http://127.0.0.1:4341/",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcpMs": 2013.70755,
+        "inpMs": null,
+        "cls": 0,
+        "totalBlockingTimeMs": 0,
+        "firstContentfulPaintMs": 2013.70755,
+        "speedIndexMs": 2013.70755,
+        "transferBytes": 371415,
+        "javascriptBytes": 1155.584
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.84,
+          "title": "First Contentful Paint",
+          "displayValue": "2.0 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.97,
+          "title": "Largest Contentful Paint",
+          "displayValue": "2.0 s"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index",
+          "displayValue": "2.0 s"
+        }
+      ]
+    },
+    {
+      "app": "learn",
+      "url": "http://127.0.0.1:4342/",
+      "finalDisplayedUrl": "http://127.0.0.1:4342/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcpMs": 935.77865,
+        "inpMs": null,
+        "cls": 0.001305126459962588,
+        "totalBlockingTimeMs": 0,
+        "firstContentfulPaintMs": 935.77865,
+        "speedIndexMs": 935.77865,
+        "transferBytes": 114506,
+        "javascriptBytes": 558.4559999999999
+      },
+      "failedAudits": []
+    },
+    {
+      "app": "sourcecraft",
+      "url": "http://127.0.0.1:4343/",
+      "finalDisplayedUrl": "http://127.0.0.1:4343/",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcpMs": 1736.9395,
+        "inpMs": null,
+        "cls": 0.000778615179294994,
+        "totalBlockingTimeMs": 0,
+        "firstContentfulPaintMs": 1736.9395,
+        "speedIndexMs": 1736.9395,
+        "transferBytes": 246053,
+        "javascriptBytes": 796.848
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.91,
+          "title": "First Contentful Paint",
+          "displayValue": "1.7 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.99,
+          "title": "Largest Contentful Paint",
+          "displayValue": "1.7 s"
+        }
+      ]
+    },
+    {
+      "app": "procuresherpa",
+      "url": "http://127.0.0.1:4344/",
+      "finalDisplayedUrl": "http://127.0.0.1:4344/",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcpMs": 1802.364,
+        "inpMs": null,
+        "cls": 0.0007475702820245375,
+        "totalBlockingTimeMs": 7,
+        "firstContentfulPaintMs": 1802.364,
+        "speedIndexMs": 1802.364,
+        "transferBytes": 516944,
+        "javascriptBytes": 611.0960000000002
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.89,
+          "title": "First Contentful Paint",
+          "displayValue": "1.8 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.98,
+          "title": "Largest Contentful Paint",
+          "displayValue": "1.8 s"
+        }
+      ]
+    },
+    {
+      "app": "learnpmo",
+      "url": "http://127.0.0.1:4345/dashboard/",
+      "finalDisplayedUrl": "http://127.0.0.1:4345/dashboard/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcpMs": 916.54735,
+        "inpMs": null,
+        "cls": 0,
+        "totalBlockingTimeMs": 0,
+        "firstContentfulPaintMs": 916.54735,
+        "speedIndexMs": 916.54735,
+        "transferBytes": 156579,
+        "javascriptBytes": 483.64799999999997
+      },
+      "failedAudits": []
+    },
+    {
+      "app": "hcmfusion",
+      "url": "http://127.0.0.1:4346/",
+      "finalDisplayedUrl": "http://127.0.0.1:4346/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcpMs": 1501.9074,
+        "inpMs": null,
+        "cls": 0.001346465307110725,
+        "totalBlockingTimeMs": 60.36419999999998,
+        "firstContentfulPaintMs": 901.2716,
+        "speedIndexMs": 901.2716,
+        "transferBytes": 106193,
+        "javascriptBytes": 531.9719999999999
+      },
+      "failedAudits": []
+    }
+  ],
+  "accessibility": [
+    {
+      "name": "portal-home",
+      "app": "portal",
+      "path": "/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 2
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 28,
+        "incomplete": 2
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-home",
+      "app": "portal",
+      "path": "/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 2
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 28,
+        "incomplete": 2
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-products",
+      "app": "portal",
+      "path": "/products/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-products",
+      "app": "portal",
+      "path": "/products/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 33,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-product",
+      "app": "portal",
+      "path": "/products/unify/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/unify/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-product",
+      "app": "portal",
+      "path": "/products/unify/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/unify/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-flagship",
+      "app": "portal",
+      "path": "/products/mindone/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/mindone/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 4
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-flagship",
+      "app": "portal",
+      "path": "/products/mindone/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/mindone/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 4
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-flagship-pro",
+      "app": "portal",
+      "path": "/products/mindone-pro/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/mindone-pro/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 4
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-flagship-pro",
+      "app": "portal",
+      "path": "/products/mindone-pro/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/mindone-pro/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 4
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-edition-comparison",
+      "app": "portal",
+      "path": "/products/mindone/compare/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/mindone/compare/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 26,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-edition-comparison",
+      "app": "portal",
+      "path": "/products/mindone/compare/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/mindone/compare/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 27,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-procurement",
+      "app": "portal",
+      "path": "/procurement-software/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/procurement-software/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 4
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 28,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-procurement",
+      "app": "portal",
+      "path": "/procurement-software/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/procurement-software/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 4
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 29,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-elevated-product",
+      "app": "portal",
+      "path": "/products/vedik/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/vedik/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-elevated-product",
+      "app": "portal",
+      "path": "/products/vedik/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/products/vedik/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-industry",
+      "app": "portal",
+      "path": "/solutions/education/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/solutions/education/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-industry",
+      "app": "portal",
+      "path": "/solutions/education/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/solutions/education/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-services",
+      "app": "portal",
+      "path": "/services/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/services/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 21,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-services",
+      "app": "portal",
+      "path": "/services/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/services/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 21,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-contact",
+      "app": "portal",
+      "path": "/contact/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/contact/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "portal-contact",
+      "app": "portal",
+      "path": "/contact/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4341/contact/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 23,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "learn-home",
+      "app": "learn",
+      "path": "/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4342/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 2
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "learn-home",
+      "app": "learn",
+      "path": "/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4342/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 2
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "learn-product",
+      "app": "learn",
+      "path": "/procuresherpa/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4342/procuresherpa/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 24,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "learn-product",
+      "app": "learn",
+      "path": "/procuresherpa/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4342/procuresherpa/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 24,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "sourcecraft-home",
+      "app": "sourcecraft",
+      "path": "/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4343/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 2
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 29,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "sourcecraft-home",
+      "app": "sourcecraft",
+      "path": "/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4343/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 2
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 29,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "sourcecraft-boundary",
+      "app": "sourcecraft",
+      "path": "/terms/approval-threshold/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4343/terms/approval-threshold/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "sourcecraft-boundary",
+      "app": "sourcecraft",
+      "path": "/terms/approval-threshold/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4343/terms/approval-threshold/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "procuresherpa-workspace",
+      "app": "procuresherpa",
+      "path": "/#/academy",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4344/#/academy",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 25,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "procuresherpa-workspace",
+      "app": "procuresherpa",
+      "path": "/#/academy",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4344/#/academy",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 25,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "learnpmo-dashboard",
+      "app": "learnpmo",
+      "path": "/dashboard/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4345/dashboard/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "learnpmo-dashboard",
+      "app": "learnpmo",
+      "path": "/dashboard/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4345/dashboard/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "learnpmo-guide",
+      "app": "learnpmo",
+      "path": "/plan/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4345/plan/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "learnpmo-guide",
+      "app": "learnpmo",
+      "path": "/plan/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4345/plan/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "hcmfusion-home",
+      "app": "hcmfusion",
+      "path": "/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4346/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 2
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 20,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "hcmfusion-home",
+      "app": "hcmfusion",
+      "path": "/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4346/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 2
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 20,
+        "incomplete": 1
+      },
+      "failures": []
+    },
+    {
+      "name": "hcmfusion-evidence",
+      "app": "hcmfusion",
+      "path": "/sources/gaps/",
+      "viewport": "desktop",
+      "width": 1440,
+      "status": 200,
+      "url": "http://127.0.0.1:4346/sources/gaps/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 1440,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 0
+      },
+      "failures": []
+    },
+    {
+      "name": "hcmfusion-evidence",
+      "app": "hcmfusion",
+      "path": "/sources/gaps/",
+      "viewport": "mobile",
+      "width": 390,
+      "status": 200,
+      "url": "http://127.0.0.1:4346/sources/gaps/",
+      "keyboard": {
+        "firstTabbableText": "Skip to content",
+        "firstTabbableClass": "skip-link",
+        "focusOutline": "solid",
+        "scrollWidth": 390,
+        "h1Count": 1,
+        "landmarks": {
+          "main": 1,
+          "nav": 3
+        }
+      },
+      "health": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "badResponses": []
+      },
+      "axe": {
+        "violations": [],
+        "passes": 22,
+        "incomplete": 0
+      },
+      "failures": []
+    }
+  ]
+}

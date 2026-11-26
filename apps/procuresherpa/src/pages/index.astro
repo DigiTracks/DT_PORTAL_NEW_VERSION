@@ -1,0 +1,33 @@
+---
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import ProcureSherpaShell from "@digitracks/ui/components/ProcureSherpaShell.tsx";
+import { routeRegistry } from "@digitracks/seo";
+
+const route = routeRegistry.find((item) => item.origin === "procuresherpa" && item.path === "/");
+if (!route) throw new Error("ProcureSherpa home route is missing");
+const routes = routeRegistry.filter((item) => item.origin === "procuresherpa" && item.hashRoute);
+const records = routes.map(({ path, title, description }) => ({ path, title, description }));
+const navItems = [
+  { label: "Workspace", href: "/#/quickstart" },
+  { label: "Academy", href: "/#/academy" },
+  { label: "Glossary", href: "/#/glossary" },
+  { label: "Templates", href: "/#/tpl" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="ProcureSherpa" navItems={navItems} requestLabel="Request full demo" bodyClass="page-procuresherpa">
+  <section class="sherpa-app" aria-labelledby="sherpa-title">
+    <div class="sherpa-app__masthead">
+      <div>
+        <p class="t-label">ProcureSherpa / local-first workspace</p>
+        <h1 id="sherpa-title">Make the next decision <em>clear.</em></h1>
+      </div>
+      <div class="sherpa-app__masthead-meta">
+        <span>{routes.length} preserved routes</span>
+        <span>Local state only</span>
+        <a href="https://digitracks.net/contact/?intent=demo&product=sherpa" data-cta="request-product-demo">Request full demo access</a>
+      </div>
+    </div>
+    <ProcureSherpaShell records={records} client:idle />
+  </section>
+</OriginLayout>

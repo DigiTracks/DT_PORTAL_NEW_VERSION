@@ -1,0 +1,254 @@
+{
+  "portal": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "h1Count": 1,
+      "h1Text": "Complex work.Clear systems.",
+      "h1Width": 686.21875,
+      "firstSectionBottom": 901,
+      "robots": "index, follow"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "h1Count": 1,
+      "h1Text": "Complex work.Clear systems.",
+      "h1Width": 497.515625,
+      "firstSectionBottom": 769,
+      "robots": "index, follow"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "h1Count": 1,
+      "h1Text": "Complex work.Clear systems.",
+      "h1Width": 599,
+      "firstSectionBottom": 1264.46875,
+      "robots": "index, follow"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "h1Count": 1,
+      "h1Text": "Complex work.Clear systems.",
+      "h1Width": 366,
+      "firstSectionBottom": 1157,
+      "robots": "index, follow"
+    }
+  ],
+  "learn": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "h1Count": 1,
+      "h1Text": "Learn the work.Then do the work.",
+      "h1Width": 589.65625,
+      "firstSectionBottom": 868.703125,
+      "robots": "index, follow"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "h1Count": 1,
+      "h1Text": "Learn the work.Then do the work.",
+      "h1Width": 419.265625,
+      "firstSectionBottom": 708.0625,
+      "robots": "index, follow"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "h1Count": 1,
+      "h1Text": "Learn the work.Then do the work.",
+      "h1Width": 355.65625,
+      "firstSectionBottom": 1296.671875,
+      "robots": "index, follow"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "h1Count": 1,
+      "h1Text": "Learn the work.Then do the work.",
+      "h1Width": 296.515625,
+      "firstSectionBottom": 1273.34375,
+      "robots": "index, follow"
+    }
+  ],
+  "sourcecraft": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "h1Count": 1,
+      "h1Text": "Name the work.Sharpen the decision.",
+      "h1Width": 580.21875,
+      "firstSectionBottom": 828.703125,
+      "robots": "index, follow"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "h1Count": 1,
+      "h1Text": "Name the work.Sharpen the decision.",
+      "h1Width": 412.53125,
+      "firstSectionBottom": 697.984375,
+      "robots": "index, follow"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "h1Count": 1,
+      "h1Text": "Name the work.Sharpen the decision.",
+      "h1Width": 384.703125,
+      "firstSectionBottom": 1224.21875,
+      "robots": "index, follow"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "h1Count": 1,
+      "h1Text": "Name the work.Sharpen the decision.",
+      "h1Width": 329.46875,
+      "firstSectionBottom": 1291.171875,
+      "robots": "index, follow"
+    }
+  ],
+  "procuresherpa": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "h1Count": 1,
+      "h1Text": "Make the next decision clear.",
+      "h1Width": 730.03125,
+      "firstSectionBottom": 1852.734375,
+      "robots": "index, follow"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "h1Count": 1,
+      "h1Text": "Make the next decision clear.",
+      "h1Width": 519.0625,
+      "firstSectionBottom": 1902.75,
+      "robots": "index, follow"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "h1Count": 1,
+      "h1Text": "Make the next decision clear.",
+      "h1Width": 399.25,
+      "firstSectionBottom": 2218.765625,
+      "robots": "index, follow"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "h1Count": 1,
+      "h1Text": "Make the next decision clear.",
+      "h1Width": 366,
+      "firstSectionBottom": 3186.046875,
+      "robots": "index, follow"
+    }
+  ],
+  "learnpmo": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "h1Count": 1,
+      "h1Text": "Study plan | LearnPMO.",
+      "h1Width": 752.453125,
+      "firstSectionBottom": 899.609375,
+      "robots": "index, follow"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "h1Count": 1,
+      "h1Text": "Study plan | LearnPMO.",
+      "h1Width": 535.03125,
+      "firstSectionBottom": 767.609375,
+      "robots": "index, follow"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "h1Count": 1,
+      "h1Text": "Study plan | LearnPMO.",
+      "h1Width": 436.796875,
+      "firstSectionBottom": 1116.046875,
+      "robots": "index, follow"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "h1Count": 1,
+      "h1Text": "Study plan | LearnPMO.",
+      "h1Width": 366,
+      "firstSectionBottom": 1192.078125,
+      "robots": "index, follow"
+    }
+  ],
+  "hcmfusion": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "h1Count": 1,
+      "h1Text": "People systems.Carefully understood.",
+      "h1Width": 580.21875,
+      "firstSectionBottom": 828.703125,
+      "robots": "index, follow"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "h1Count": 1,
+      "h1Text": "People systems.Carefully understood.",
+      "h1Width": 412.53125,
+      "firstSectionBottom": 761.171875,
+      "robots": "index, follow"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "h1Count": 1,
+      "h1Text": "People systems.Carefully understood.",
+      "h1Width": 384.703125,
+      "firstSectionBottom": 1329.578125,
+      "robots": "index, follow"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "h1Count": 1,
+      "h1Text": "People systems.Carefully understood.",
+      "h1Width": 329.46875,
+      "firstSectionBottom": 1371.5,
+      "robots": "index, follow"
+    }
+  ]
+}

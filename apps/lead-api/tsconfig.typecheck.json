@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "@digitracks/catalog": ["src/shared/catalog.d.ts"],
+      "@digitracks/seo": ["src/shared/seo.d.ts"]
+    }
+  }
+}

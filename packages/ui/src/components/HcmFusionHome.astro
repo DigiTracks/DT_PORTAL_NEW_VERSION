@@ -1,0 +1,56 @@
+---
+import Button from "./Button.astro";
+
+interface Props {
+  baselineCount: number;
+  blockedCount: number;
+}
+
+const { baselineCount, blockedCount } = Astro.props;
+const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=hcmfusion";
+---
+
+<section class="hcm-hero" aria-labelledby="hcm-title">
+  <div class="shell hcm-hero__grid">
+    <div class="hcm-hero__copy">
+      <p class="t-label">HCM Fusion / evidence before exposure</p>
+      <h1 id="hcm-title">People systems.<br><em>Carefully understood.</em></h1>
+      <p class="hcm-hero__lede">A public home for HCM concepts, source verification and the limits of what can responsibly be republished.</p>
+      <div class="button-row">
+        <Button href="#hcm-evidence" ctaId="explore-hcm-evidence">Explore the evidence pages</Button>
+        <Button href={requestHref} variant="secondary">Ask about authorised material</Button>
+      </div>
+    </div>
+    <div class="hcm-monolith" aria-hidden="true">
+      <div class="hcm-monolith__face hcm-monolith__face--back">HCM</div>
+      <div class="hcm-monolith__face hcm-monolith__face--mid">FUSION</div>
+      <div class="hcm-monolith__face hcm-monolith__face--front"><span>EVIDENCE<br>BOUNDARY</span><small>01 / PUBLIC</small></div>
+    </div>
+  </div>
+  <div class="shell hcm-hero__ledger">
+    <div><strong>{String(baselineCount).padStart(3, "0")}</strong><span>baseline identifiers</span></div>
+    <div><strong>003</strong><span>public evidence pages</span></div>
+    <div><strong>{String(blockedCount).padStart(3, "0")}</strong><span>withheld from indexing</span></div>
+  </div>
+</section>
+
+<section class="section hcm-evidence" id="hcm-evidence" aria-labelledby="hcm-evidence-title">
+  <div class="shell">
+    <div class="section-head">
+      <div><p class="t-label">What is public</p><h2 id="hcm-evidence-title">Verification you can inspect.</h2></div>
+      <p>The build separates independently authored evidence pages from rights-reserved concept, certification and assessment material.</p>
+    </div>
+    <div class="hcm-evidence-grid">
+      <a href="/sources/gaps/"><span>01</span><p class="t-label">Evidence register</p><h3>What remains unknown.</h3><p>Source ownership, application parity, assessment policy and migration permission are recorded as gaps, not guessed.</p><small>Open gap register ↗</small></a>
+      <a href="/sources/releases/"><span>02</span><p class="t-label">Release method</p><h3>What a release claim must prove.</h3><p>Read the evidence required before release notes, concept pages or assessment material can be approved.</p><small>Open release method ↗</small></a>
+      <a href="https://digitracks.net/contact/?intent=demo&origin=hcmfusion"><span>03</span><p class="t-label">Authorised access</p><h3>Keep tenant data separate.</h3><p>Account access, protected assessment content and progress require an authenticated, tenant-aware service that is not configured here.</p><small>Discuss authorised access ↗</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ruled hcm-boundary" aria-labelledby="hcm-boundary-title">
+  <div class="shell hcm-boundary__grid">
+    <div><p class="t-label">Protected material</p><h2 id="hcm-boundary-title">Preserved does not mean published.</h2></div>
+    <div class="prose"><p>Historic HCM Fusion addresses remain reachable so links do not silently break. Rights-reserved content is withheld from search indexing and marked <code>noindex</code> until permission and editorial review are recorded.</p><p>No assessment answers, certification results, employee records, tenant data or learning progress are exposed in the public build.</p><Button href="/sources/gaps/" variant="secondary">See the open evidence gaps</Button></div>
+  </div>
+</section>

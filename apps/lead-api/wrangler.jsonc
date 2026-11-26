@@ -1,0 +1,40 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "digitracks-lead-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "vars": {
+    "ENVIRONMENT": "production",
+    "TURNSTILE_EXPECTED_ACTION": "lead"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "digitracks-leads",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "queues": {
+    "producers": [
+      { "binding": "LEAD_QUEUE", "queue": "lead-delivery" }
+    ],
+    "consumers": [
+      {
+        "queue": "lead-delivery",
+        "max_batch_size": 10,
+        "max_batch_timeout": 30,
+        "max_retries": 3,
+        "retry_delay": 60,
+        "visibility_timeout_ms": 180000,
+        "dead_letter_queue": "lead-delivery-dead-letter"
+      }
+    ]
+  },
+  "analytics_engine_datasets": [
+    { "binding": "ANALYTICS", "dataset": "digitracks_lead_events" }
+  ],
+  "triggers": {
+    "crons": ["*/5 * * * *"]
+  }
+}

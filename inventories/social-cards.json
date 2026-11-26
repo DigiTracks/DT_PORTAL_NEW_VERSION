@@ -1,0 +1,1692 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-25T20:16:01.922Z",
+  "generatedDate": "2026-11-25",
+  "generator": {
+    "name": "generate-social-cards.mjs",
+    "version": 2,
+    "command": "node scripts/generate-social-cards.mjs (Node 24)",
+    "node": "v24.18.0",
+    "renderer": "Playwright Chromium",
+    "rendererVersion": "158.0.8127.88",
+    "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+    "routeRegistry": "packages/seo/src/route-registry.generated.ts",
+    "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78",
+    "dimensions": {
+      "width": 1200,
+      "height": 630
+    },
+    "palette": [
+      "#090f17",
+      "#f4f2ed",
+      "#6ce5e8"
+    ],
+    "method": "Original typographic composition with the owner-supplied Digi Tracks lockup and route-seeded geometric SVG; local font data URIs only; external network requests blocked.",
+    "fonts": [
+      {
+        "family": "Host Grotesk Variable",
+        "file": "/packages/ui/node_modules/@fontsource-variable/host-grotesk/files/host-grotesk-latin-wght-normal.woff2",
+        "sha256": "ce9c9db8a488852eb7e4a52f51fd8ce0c93ef61a8d3bfa054b509ec92958dcfe",
+        "licence": "OFL-1.1",
+        "sourceProject": "@fontsource-variable/host-grotesk@5.3.0"
+      },
+      {
+        "family": "Instrument Serif",
+        "file": "/packages/ui/node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2",
+        "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+        "licence": "OFL-1.1",
+        "sourceProject": "@fontsource/instrument-serif@5.3.0"
+      }
+    ]
+  },
+  "counts": {
+    "cards": 86,
+    "sourceAssets": 42,
+    "fonts": 2,
+    "assetRecords": 130,
+    "byOrigin": {
+      "hcmfusion": 3,
+      "learn": 6,
+      "learnpmo": 12,
+      "portal": 59,
+      "procuresherpa": 1,
+      "sourcecraft": 5
+    }
+  },
+  "cards": [
+    {
+      "routeId": "hcmfusion:/",
+      "origin": "https://hcmfusion.digitracks.net",
+      "originId": "hcmfusion",
+      "path": "/",
+      "file": "apps/hcmfusion/public/social/home-cf34d14b303aa583.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "4fd00eb77b492b33ddf8f7a5ddeb3601feb314283e56f41f8321ec2797d2060f",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "hcmfusion:/sources/gaps/",
+      "origin": "https://hcmfusion.digitracks.net",
+      "originId": "hcmfusion",
+      "path": "/sources/gaps/",
+      "file": "apps/hcmfusion/public/social/sources-gaps-add66e9da4bbd834.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "13bcb6813ac88ba1ea3f1f72a8ef81da07ee26b145471113517777e90ba3bae9",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "hcmfusion:/sources/releases/",
+      "origin": "https://hcmfusion.digitracks.net",
+      "originId": "hcmfusion",
+      "path": "/sources/releases/",
+      "file": "apps/hcmfusion/public/social/sources-releases-cafc406026e0fbce.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "926550032b56764bb37442e84672b4dad3c93391b133aa086744fafad9322fc2",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learn:/",
+      "origin": "https://learn.digitracks.net",
+      "originId": "learn",
+      "path": "/",
+      "file": "apps/learn/public/social/home-6900891b71a1a2ef.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "6e7b2f1c5052b1e2151ad3603411de854ff4feb561fbdf0978066fb8cebc2812",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learn:/contact/",
+      "origin": "https://learn.digitracks.net",
+      "originId": "learn",
+      "path": "/contact/",
+      "file": "apps/learn/public/social/contact-cc078dc0f2750804.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "f2ec4f55a0fd642c11d4d14a09013e1d9457b55ebbfe765dc175e09ac295cf53",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learn:/hcmfusion/",
+      "origin": "https://learn.digitracks.net",
+      "originId": "learn",
+      "path": "/hcmfusion/",
+      "file": "apps/learn/public/social/hcmfusion-47a3697d5750dfe9.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "eb048b5c8113150a0705075a1d345b8b0da154d51276548456a4a5aa2e9e1d9a",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learn:/learnpmo/",
+      "origin": "https://learn.digitracks.net",
+      "originId": "learn",
+      "path": "/learnpmo/",
+      "file": "apps/learn/public/social/learnpmo-55d97c849924065e.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "3a9c0a887928c75d49ce807195b9ff5fcb04d758acbea2ef963c96a793e7c6d9",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learn:/procuresherpa/",
+      "origin": "https://learn.digitracks.net",
+      "originId": "learn",
+      "path": "/procuresherpa/",
+      "file": "apps/learn/public/social/procuresherpa-f9a277b01697d382.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "c36decbee4997f3083018ffd01e83434eea783e75fd4bbe1b500b7922fcbece4",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learn:/sourcecraft/",
+      "origin": "https://learn.digitracks.net",
+      "originId": "learn",
+      "path": "/sourcecraft/",
+      "file": "apps/learn/public/social/sourcecraft-338e1af42ec56c0f.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "f69ac1d0310a1f6171ffe9e0e6447b75323aa307930b9ab58a9cffa097e36460",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/assessments/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/assessments/",
+      "file": "apps/learnpmo/public/social/assessments-9a7319f704336497.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "f08cb147128b2ddb1093d4f5b090473f6b40162465c7dc932787a540770676b9",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/cohort/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/cohort/",
+      "file": "apps/learnpmo/public/social/cohort-c4db403cff2b2a51.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "3ab2bcb3dde08abe9be5a3d1963f1379f149697c3d1a62c8c17e4cdb53d52453",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/controls/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/controls/",
+      "file": "apps/learnpmo/public/social/controls-c0d05d0ae0e3c137.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "6970552556b155f4150f14c9b8d7379993b226630b7e2d8d00b2cb9df04fc403",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/dashboard/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/dashboard/",
+      "file": "apps/learnpmo/public/social/dashboard-4f55b02ab5e2da2e.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "d44baa2b63fdeb44e54c783324971c56e6a4a21784c91b48a3f8ac0a70017315",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/documents/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/documents/",
+      "file": "apps/learnpmo/public/social/documents-23130e31d2f03593.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "f2f5ba3cef0e80b78e9750c1604bc931210cea78c209b8c703bc53a0f9f58b81",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/exams/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/exams/",
+      "file": "apps/learnpmo/public/social/exams-558d4267f555d650.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "25e3a533c11c2490a3d49e9590a9749c04f505cec8eaab73b973220ec1ed79c3",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/industries/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/industries/",
+      "file": "apps/learnpmo/public/social/industries-ca202dc696dee17e.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "1f503caef112b4ad8a70b3e025bf40215beb70d18bac1e8fb3cce9ce2951b654",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/lessons/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/lessons/",
+      "file": "apps/learnpmo/public/social/lessons-02d01595921d7b68.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "3d762ee936a3c2afbd097c5e9f822d459b8af1cd3e662cfd55ac775e2abc3a23",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/plan/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/plan/",
+      "file": "apps/learnpmo/public/social/plan-6297117262f54304.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "c5e69f5ed0d2b45b278715d134ab204e0f198a14d26d9d38c5b164b4dd43996b",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/pmo/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/pmo/",
+      "file": "apps/learnpmo/public/social/pmo-d77e88709ad87431.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "c04f004355fb2aa33512e3fabac00ef948f833cba71137e570343a3122f8877d",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/portfolio/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/portfolio/",
+      "file": "apps/learnpmo/public/social/portfolio-7cc3f4d0ca08733b.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "7031d199564a9398ddc935bf62c6cedfde3cc90e85a9562ab50693b18cc64ca6",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "learnpmo:/programme/",
+      "origin": "https://learnpmo.digitracks.net",
+      "originId": "learnpmo",
+      "path": "/programme/",
+      "file": "apps/learnpmo/public/social/programme-ae9976fd69ae50b7.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "b28ca3e61efcbe9782a2bdcdbad910f3fb05180c4ecc92995576cbfc890f9c65",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/",
+      "file": "apps/portal/public/social/home-d736a37f2cbf142f.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "19bdc1b79e120786ebf45af594564fda76b48bbceae0e489ede962de68ee7cf4",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/about/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/about/",
+      "file": "apps/portal/public/social/about-5d338e310dba313c.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "e3727c8d2ff0c5e90d3590f4d6a9dba4f723d6be86ba30b1f50c62872348d03e",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/contact/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/contact/",
+      "file": "apps/portal/public/social/contact-56ef96b2dad11e54.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "5c292110727150e0700fdfad5687eff03ad9f47b0f998da39826732cc365be08",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/developer-tools/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/developer-tools/",
+      "file": "apps/portal/public/social/developer-tools-a503acb2896660c2.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "ef3bd4c7f7fad84215bd42fc9e2064eadb7b046ff135b1ee0023da6a53d1df3a",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/engineering/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/engineering/",
+      "file": "apps/portal/public/social/engineering-21a1cc7e700153ae.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "6d58f498a515c70cf5aa60859fc2e28d149dd47597c05814aac9376e37f06da2",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/faq/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/faq/",
+      "file": "apps/portal/public/social/faq-3b8c81e8e1627bba.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "15f93eedf4e36e3024bb57ca5d529c16cc667a14b16b04ba63588b013d9cbaeb",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/field-operations/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/field-operations/",
+      "file": "apps/portal/public/social/field-operations-9310af9c577417d3.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "1740c0491cf7537487bc82c32727d543b977d815892cbd836eb532c533bb89a1",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/industries/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/industries/",
+      "file": "apps/portal/public/social/industries-d9c7fc4671d5e58b.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "fe302d380d730db512239674dfb365c68999300379f31d2104c8d1e743161142",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/offline-first-software/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/offline-first-software/",
+      "file": "apps/portal/public/social/offline-first-software-e8fcdd1e88656684.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "52a9e8409c40890b47a705a5273696560b7449353ce1ee3302ef005286fbeeb3",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/pricing/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/pricing/",
+      "file": "apps/portal/public/social/pricing-682e56a202cf5d70.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "b989b4f6a1065da54c82fc85a5acf376de786138a0522150331859ee796859cb",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/procurement-software/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/procurement-software/",
+      "file": "apps/portal/public/social/procurement-software-d62d85bf62f006dc.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "154d29a8ef6cbb1cccf57f5df2959ba2f4373e1e6c39c3c6949fcd507cce56fc",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/products/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/",
+      "file": "apps/portal/public/social/products-3d13bfdd36fa3820.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "2a5df4afd517751da366debd80e59aa989b3f827f75740d03bda9b94222f6323",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:campus-grid",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/campus-grid/",
+      "file": "apps/portal/public/social/products-campus-grid-2e4ebb436d19f0a0.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "7198376c27d026442b20b80379ed638458c08dbca060ed192571581f9bcda0f6",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:chronos",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/chronos/",
+      "file": "apps/portal/public/social/products-chronos-401975b294f110c3.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "5d0c462a685aa2be1963589b87faafa7770c9def372566b8955b0dcee2d9e42a",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:construction",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/construction-management/",
+      "file": "apps/portal/public/social/products-construction-management-28fdd7f6a498b483.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "173b17267a1dcb5318ee4d031026afaf6c26c0f5b25262a53f4fcf4fbe1c7c42",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:glowra",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/glowra/",
+      "file": "apps/portal/public/social/products-glowra-8a364ce1a695201b.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "2a9f239390970376d0dd108ae810d4a395abd55165be1027cb84903398461d09",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:mindone-pro",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/mindone-pro/",
+      "file": "apps/portal/public/social/products-mindone-pro-96bddb5af6e1cb23.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "dc76b5d4d1a309c568b64ec28709355f7d2b5c6284510b6a3f302d3280f2d3a4",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:mindone",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/mindone/",
+      "file": "apps/portal/public/social/products-mindone-58de3fddcfdf2570.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "575368b3e2794106d17abdd1f482a3282849bf0e2f243511bc77ef15aa766782",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/products/mindone/compare/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/mindone/compare/",
+      "file": "apps/portal/public/social/products-mindone-compare-095879c44f97740f.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "aecc13310c4a72a2782c2767a260f9ca6b3fedf953e2a18926df7f191941300d",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:nipuna",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/nipuna/",
+      "file": "apps/portal/public/social/products-nipuna-c1917816c58c43bc.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "09585c05a01c32d3f3425366c0eef03b851af4b988ef08206582706aed91ad27",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:opspilot",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/opspilot/",
+      "file": "apps/portal/public/social/products-opspilot-80fb066c746c7cd1.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "5b83a552e2cfeffff4a12b9ce67549095d06cad287faa70de50471f312d28a22",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:orion-hunter",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/orion-hunter/",
+      "file": "apps/portal/public/social/products-orion-hunter-0ad4cfae5001661b.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "a1c192b030aef1c1549437ac97e2c7f0b790f36364fb068f6cc9bff7406dc002",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:orion",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/orion/",
+      "file": "apps/portal/public/social/products-orion-19b4d70f6269f596.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "5f62d64ee011ed8d6e0dff460676958d18015740d20f636cf00a6638e4868ae0",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:procure5",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/procure5/",
+      "file": "apps/portal/public/social/products-procure5-1252538c19c4da1f.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "d5cf92fc16a37d2126bd640541ef813f0b88d30686f72102c4bbf83a7ec2cdb3",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:contractleak",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/procure5/contractleak/",
+      "file": "apps/portal/public/social/products-procure5-contractleak-d22a8f7d21fb385c.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "ffca1cba31d17b477e5c2e465d7840e89c173e61483fa111ccfe86975d328928",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:procuredecision",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/procure5/procuredecision/",
+      "file": "apps/portal/public/social/products-procure5-procuredecision-c4c62fd249a1ce5f.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "3c54781cb734bfa2286a9c2008f4f43e241a3ac8803fb6f3cdf357b1c94f11c9",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:procureleak",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/procure5/procureleak/",
+      "file": "apps/portal/public/social/products-procure5-procureleak-9e5381f197c751fa.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "c1c728522afc6be5e8ec86ca3ee684745c22545c4ae005138ee3d45f8f301d77",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:procureoutcomes",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/procure5/procureoutcomes/",
+      "file": "apps/portal/public/social/products-procure5-procureoutcomes-c886f6a84e322a0e.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "7fceb6a051baa01e5b801791cad7b6fa88fd556c83c0cb3e0687c429fc4488c8",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:tenderguard",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/procure5/tenderguard/",
+      "file": "apps/portal/public/social/products-procure5-tenderguard-3d1dced2096af5d0.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "3fa60495c8cde0f88156c9fb67d6debb1818f83237e1decade804c847ff35b08",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:quote-simulator",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/quote-simulator/",
+      "file": "apps/portal/public/social/products-quote-simulator-8e32c321e7c60e9b.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "a750bd566e7a6721f63f4518efb8fb87f89a050ce67b588a46dfae9d422d93a9",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:recon",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/recon/",
+      "file": "apps/portal/public/social/products-recon-3c98782486a84339.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "51dcecba534a3892ee9852e74de3de9a7dcfcb5f12cbb84feaf975c4fb34ce6a",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:sherpa",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/sherpa-toolkit/",
+      "file": "apps/portal/public/social/products-sherpa-toolkit-207674806d21e38d.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "4625e9d6646ec05d324f32c973866ae39d932450d267a486cf80f40544df9253",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:transportation",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/transportation-management/",
+      "file": "apps/portal/public/social/products-transportation-management-eb3519206d24318f.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "55e2efa7f68551f8115e3903ddf2557fd2b93dc59a3d2b0ada98e35808b7c5c4",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:unify",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/",
+      "file": "apps/portal/public/social/products-unify-7407b9105790922d.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "6cbc3f53f874b5805e07a5c4b5cc7144db3315a69a234491e019de50a1ec0c50",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:arventa",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/arventa/",
+      "file": "apps/portal/public/social/products-unify-arventa-9f75fe60a599d033.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "087e74925bfb6428f417d642c55d889e730d5d324ff89a684a74964479b16c2a",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:connexa",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/connexa/",
+      "file": "apps/portal/public/social/products-unify-connexa-577cc586c9a5e57a.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "db64440f14a71fc8d6657c33a720363e741b27a057c76c2dd579f3cff2b9ec86",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:logistra",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/logistra/",
+      "file": "apps/portal/public/social/products-unify-logistra-02511cb623dda37c.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "fae8fefa262d47b4849bb445e881e678f4a4f11966cf47f2da3d96163f8a0345",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:monexa",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/monexa/",
+      "file": "apps/portal/public/social/products-unify-monexa-877af0b0364e9965.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "1f2a8a04531489d306845c1c2de647e0c5a2f098a5c16142cb95a89c46330997",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:nexora",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/nexora/",
+      "file": "apps/portal/public/social/products-unify-nexora-6fb58d71e997a71d.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "999c13e692a542a56f155d304bdc5a186e7985172193a21319d407ae63513a22",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:orbitra",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/orbitra/",
+      "file": "apps/portal/public/social/products-unify-orbitra-b2b8b3eb1eb550bc.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "aa42090424d586afd958999d651e0e525c3718e6c196e47408d736e138d8b66a",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:planora",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/planora/",
+      "file": "apps/portal/public/social/products-unify-planora-455f3f53da62087c.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "87fe1b674f5b31e4872f552c78fc86d520dfe9b59fe58bc7fd0e1fbcf3eb6c17",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:procura",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/procura/",
+      "file": "apps/portal/public/social/products-unify-procura-349a01e00f8ceb91.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "2d3bf7ffd1a16ec24573f04433f854d10dcbcfaf34eb07e818ef37a4ce5fec92",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:workzen",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/unify/workzen/",
+      "file": "apps/portal/public/social/products-unify-workzen-7fcd63b480255486.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "8a62c85c200ebc97bfe66f43e5df691f80917a2e7fd41faea785a12539f16353",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:vantor",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/vantor/",
+      "file": "apps/portal/public/social/products-vantor-5b7e6c662575fc6b.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "e1dd5a7d46f45adae8045cb3b29cdae36dd2563b8abe7e146985bcec157ca8fa",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:vedik",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/vedik/",
+      "file": "apps/portal/public/social/products-vedik-13a4b36619997084.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "2f1dcd117e21cef3ba3cc5c159a7ec7e112908470af6a8feb522f4be2f1623ca",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:vedik-school-erp",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/vedik/school-erp/",
+      "file": "apps/portal/public/social/products-vedik-school-erp-0bdda3676cbf8733.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "dbf342ec48a3c954523509176aface438f98c55edb65f06f9169dec2501174eb",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:vedik-social",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/vedik/social-community/",
+      "file": "apps/portal/public/social/products-vedik-social-community-712d05eb0af3cc2a.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "76f7a0f798894c92537d789fc56b3e8a83668df9f480b9b1c29ab50eb77d4bd0",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:vedik-university",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/vedik/university/",
+      "file": "apps/portal/public/social/products-vedik-university-03bae9b63c35955d.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "146b4baa571a3727a11359054b18db02cf7e6feb646049e4474535a5b927109a",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:unnati",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/vedik/unnati/",
+      "file": "apps/portal/public/social/products-vedik-unnati-c9fa769c4a8223ce.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "b59d6fb749365df0f4fd1234961dc7b63fea60d1217dfb4d7ec54b79e8e8d2d2",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:vertex",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/products/vertex/",
+      "file": "apps/portal/public/social/products-vertex-e92c1e0130be8b5c.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "7ca97db1672fb5f2ec0e7e306013d54e63b2efb95623171c5e6c0461633cc857",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/services/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/services/",
+      "file": "apps/portal/public/social/services-ed10dc003213327d.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "58354355ae3d4e5a674839c069fc1f5e12d25522ad0b46e51d097417327b2221",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/solutions/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/solutions/",
+      "file": "apps/portal/public/social/solutions-a7bb70df547c33ac.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "238c10cf478767815176c64022efdcf4301b145ec7a026f4567178bcb712cdc9",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/solutions/beauty-wellness/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/solutions/beauty-wellness/",
+      "file": "apps/portal/public/social/solutions-beauty-wellness-4c9265b811d45c50.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "3c158f22299dcac1bd2430a6506be24655fd4f006155be59efe32b428eb65292",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/solutions/business-operations/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/solutions/business-operations/",
+      "file": "apps/portal/public/social/solutions-business-operations-7001def414b11fd2.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "7ead04d54e4154dc09d2674c68ea0949e446137ebfbe37f561b350f330db3b81",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/solutions/education/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/solutions/education/",
+      "file": "apps/portal/public/social/solutions-education-17110052d995132f.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "05e18ef5a998c336a054d36600bdbb6ffa54fdeb62ef27ed32908385573a5a70",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/solutions/healthcare/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/solutions/healthcare/",
+      "file": "apps/portal/public/social/solutions-healthcare-e4d7d62ca7dde03e.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "541a5af14ce27b17fcb571c67495180a41847bd6c51aca1cec43c739059c0001",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/solutions/procurement/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/solutions/procurement/",
+      "file": "apps/portal/public/social/solutions-procurement-964b5e3d17e7bd42.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "50c57a836ca5aeaafa8ba3cebe204cbd1603a70feb790239d7ec21f19e3a6fe2",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/solutions/recruitment/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/solutions/recruitment/",
+      "file": "apps/portal/public/social/solutions-recruitment-0134910032d280af.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "a17dc404c97a31c2fb13f03da25440329631def9ac49dacf6530f0777dc606d3",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "portal:/trust/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/trust/",
+      "file": "apps/portal/public/social/trust-d9ffd2535bca495d.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "dd924e454d7df422ddd2d552468d197318e4ddee28b223385f29967553b50c18",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "procuresherpa:/",
+      "origin": "https://procuresherpa.digitracks.net",
+      "originId": "procuresherpa",
+      "path": "/",
+      "file": "apps/procuresherpa/public/social/home-00f068fd22233afa.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "88c4d402c2ea2a0e31d8e579e871019cf28047dd37641540a5fd86d7a454079c",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "sourcecraft:/",
+      "origin": "https://sourcecraft.digitracks.net",
+      "originId": "sourcecraft",
+      "path": "/",
+      "file": "apps/sourcecraft/public/social/home-b44955880a50cbdd.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "be507abbf278b0b8a1715485fb2092807e488a0fd40060c80ebfafb47d2bc221",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "sourcecraft:/about/",
+      "origin": "https://sourcecraft.digitracks.net",
+      "originId": "sourcecraft",
+      "path": "/about/",
+      "file": "apps/sourcecraft/public/social/about-124e0203561239fe.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "8f08bc118f60686e1a3485ccc61d4194790487e2c361f785b0fe446d884d1489",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "sourcecraft:/explore/",
+      "origin": "https://sourcecraft.digitracks.net",
+      "originId": "sourcecraft",
+      "path": "/explore/",
+      "file": "apps/sourcecraft/public/social/explore-f0e8e4b4be9d0603.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "fdb8d43b54c5ff869e8b300f7a342737bb54daacbe0f8d7bbc25c6d153f89ec5",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "sourcecraft:/regions/",
+      "origin": "https://sourcecraft.digitracks.net",
+      "originId": "sourcecraft",
+      "path": "/regions/",
+      "file": "apps/sourcecraft/public/social/regions-ffe8ac140656ff98.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "434aeff3f23e4ea65f0ec1a54e4cad300a55f06004524d0717b054986a300178",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    },
+    {
+      "routeId": "sourcecraft:/sources/",
+      "origin": "https://sourcecraft.digitracks.net",
+      "originId": "sourcecraft",
+      "path": "/sources/",
+      "file": "apps/sourcecraft/public/social/sources-6da8c9c6a176de44.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "ce6ee66f93b9deaae911b454fc18194f065c02ad4055c6a753d9cc0fa9747edf",
+      "generatedAt": "2026-11-25T20:16:01.922Z",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 2,
+        "scriptSha256": "47686c1691801100dcf904568ae880967d6a972b0717830fb3a21b15f121e518",
+        "routeRegistrySha256": "9f63ef398d6054147df5c9809376a83b9d1ece531aee616bb4e57c27eca4ae78"
+      }
+    }
+  ]
+}

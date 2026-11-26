@@ -1,0 +1,39 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+
+interface Props {
+  route: RouteRecord;
+  mode?: "rights" | "workspace" | "utility";
+}
+
+const { route, mode = "rights" } = Astro.props;
+const isWorkspace = mode === "workspace";
+const title = isWorkspace ? "The public guide ends here." : "Permission before republication.";
+const body = isWorkspace
+  ? "This address belongs to an authenticated application workspace. The public build preserves the route but does not expose account data, assessment material or progress."
+  : route.contentStatus === "in-review"
+    ? "This record is awaiting editorial review. Its public identifier is preserved, but the underlying text is not republished until the review and rights status are approved."
+    : "The public identifier is preserved. The underlying editorial material is not republished until ownership, migration permission and editorial approval are recorded.";
+const requestHref = `https://digitracks.net/contact/?intent=consultation&origin=${route.origin}&route=${encodeURIComponent(route.path)}`;
+---
+
+<section class="origin-boundary" aria-labelledby="boundary-title">
+  <div class="shell origin-boundary__grid">
+    <div class="origin-boundary__index" aria-hidden="true">
+      <span>{isWorkspace ? "PRIVATE" : route.contentStatus === "in-review" ? "REVIEW" : "RIGHTS"}</span>
+      <strong>{route.path.split("/").filter(Boolean).slice(-1)[0]?.slice(0, 18) ?? "ROOT"}</strong>
+      <small>{route.id}</small>
+    </div>
+    <div class="origin-boundary__copy">
+      <p class="t-label">{isWorkspace ? "Authenticated workspace" : "Preserved public route"}</p>
+      <h1 id="boundary-title">{title}</h1>
+      <p class="origin-boundary__lede">{body}</p>
+      <p>No score, progress, account state, assessment answer or product behavior is simulated here.</p>
+      <div class="button-row">
+        <Button href={requestHref} ctaId="request-authorised-access">Ask about authorised access</Button>
+        <Button href="https://digitracks.net/" variant="secondary">Return to Digi Tracks</Button>
+      </div>
+    </div>
+  </div>
+</section>

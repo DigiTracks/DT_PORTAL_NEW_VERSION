@@ -1,0 +1,25 @@
+---
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import SourceCraftPage from "@digitracks/ui/components/SourceCraftPage.astro";
+import { isFileRoute, routeRegistry, staticPageRoutes } from "@digitracks/seo";
+
+export function getStaticPaths() {
+  return staticPageRoutes("sourcecraft", routeRegistry).map((route) => ({
+    params: { path: route.path.split("/").filter(Boolean).join("/") },
+    props: { route }
+  }));
+}
+
+const { route } = Astro.props;
+const routes = routeRegistry.filter((item) => item.origin === "sourcecraft" && (item.routeClass === "public-seo" || item.routeClass === "public-utility") && !item.redirectTo && !item.hashRoute && !isFileRoute(item));
+const navItems = [
+  { label: "Explore", href: "/explore/" },
+  { label: "Regions", href: "/regions/" },
+  { label: "Sources", href: "/sources/" },
+  { label: "Licensing", href: "/about/" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="SourceCraft" navItems={navItems} bodyClass="page-sourcecraft">
+  <SourceCraftPage route={route} routes={routes} />
+</OriginLayout>

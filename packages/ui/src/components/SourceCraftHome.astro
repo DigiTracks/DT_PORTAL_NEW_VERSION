@@ -1,0 +1,60 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+import SourceCraftExplorer from "./SourceCraftExplorer.tsx";
+
+interface Props {
+  routes: readonly RouteRecord[];
+}
+
+const { routes } = Astro.props;
+const terms = routes.filter((route) => route.path.startsWith("/terms/"));
+const regions = routes.filter((route) => route.path.startsWith("/regions/") && route.path !== "/regions/");
+const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=sourcecraft";
+const indexRecords = routes.map(({ path, title, description, contentStatus }) => ({ path, title, description, contentStatus }));
+---
+
+<section class="source-hero" aria-labelledby="source-title">
+  <div class="shell source-hero__grid">
+    <div class="source-hero__copy">
+      <p class="t-label">SourceCraft / procurement language</p>
+      <h1 id="source-title">Name the work.<br><em>Sharpen the decision.</em></h1>
+      <p class="source-hero__lede">Search the public procurement index, keep a local reading list and see exactly which material is approved for publication.</p>
+      <div class="button-row">
+        <Button href="#source-index" ctaId="search-sourcecraft">Search the index</Button>
+        <Button href="/about/" variant="secondary">Read the licensing boundary</Button>
+      </div>
+    </div>
+    <div class="source-dial" aria-hidden="true">
+      <div class="source-dial__ring source-dial__ring--outer"></div>
+      <div class="source-dial__ring source-dial__ring--inner"></div>
+      <div class="source-dial__axis source-dial__axis--x"></div>
+      <div class="source-dial__axis source-dial__axis--y"></div>
+      <div class="source-dial__core"><strong>{terms.length}</strong><span>term records</span></div>
+      <span class="source-dial__label source-dial__label--top">PUBLIC INDEX</span>
+      <span class="source-dial__label source-dial__label--bottom">RIGHTS-AWARE</span>
+    </div>
+  </div>
+  <div class="shell source-hero__ledger">
+    <div><strong>{String(terms.length).padStart(3, "0")}</strong><span>term identifiers</span></div>
+    <div><strong>{String(regions.length).padStart(2, "0")}</strong><span>regional identifiers</span></div>
+    <div><strong>LOCAL</strong><span>favourites and recents</span></div>
+  </div>
+</section>
+
+<section class="section source-index" id="source-index" aria-labelledby="source-index-title">
+  <div class="shell">
+    <div class="section-head">
+      <div><p class="t-label">The working index</p><h2 id="source-index-title">Find a term. Keep the useful ones.</h2></div>
+      <p>The application code has a separate licence from the editorial material. This index exposes identifiers and review status, not unreviewed definitions.</p>
+    </div>
+    <SourceCraftExplorer routes={indexRecords} client:visible />
+  </div>
+</section>
+
+<section class="section section--ruled source-licensing" aria-labelledby="source-licensing-title">
+  <div class="shell source-licensing__grid">
+    <div><p class="t-label">Editorial integrity</p><h2 id="source-licensing-title">A clear line between code and content.</h2></div>
+    <div class="prose"><p>The audited SourceCraft site states that application code is MIT-licensed. Term text, editorial notes and regional notes are rights reserved. Those are different permissions and this build keeps them separate.</p><p>Term and regional detail pages remain available at their preserved addresses with <code>noindex</code> until editorial approval is recorded. Saving a route changes nothing about its rights status.</p><Button href={requestHref} variant="secondary">Ask about authorised content</Button></div>
+  </div>
+</section>

@@ -1,0 +1,226 @@
+---
+import type { ProductRecord } from "@digitracks/catalog";
+import { hubRegistry, productRegistry, solutionRegistry } from "@digitracks/catalog";
+import { breadcrumbSchema, routeUrl, type RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+import EditionComparison from "./EditionComparison.astro";
+import FlagshipProduct from "./FlagshipProduct.astro";
+import HomeExperience from "./HomeExperience.astro";
+import IndustryPath from "./IndustryPath.astro";
+import LeadForm from "./LeadForm.tsx";
+import PageHero from "./PageHero.astro";
+import ProcurementEcosystem from "./ProcurementEcosystem.astro";
+import ProductCatalogue from "./ProductCatalogue.tsx";
+import ProductInstrument from "./ProductInstrument.astro";
+import ServicesPage from "./ServicesPage.astro";
+import SiteLayout from "./SiteLayout.astro";
+import "../styles/base.css";
+import commonStyles from "../styles/portal-common.css?inline";
+import catalogueStyles from "../styles/portal-catalogue.css?inline";
+import contactStyles from "../styles/portal-contact.css?inline";
+import flagshipStyles from "../styles/portal-flagship.css?inline";
+import homeStyles from "../styles/portal-home.css?inline";
+import industryStyles from "../styles/portal-industry.css?inline";
+import procurementStyles from "../styles/portal-procurement.css?inline";
+import productStyles from "../styles/portal-product.css?inline";
+import servicesStyles from "../styles/portal-services.css?inline";
+
+interface Props {
+  route: RouteRecord;
+  product?: ProductRecord;
+}
+
+const { route, product } = Astro.props;
+const canonical = routeUrl(route.origin, route.path);
+const titleWithoutSite = route.title.split(" | ")[0];
+const breadcrumbs = route.breadcrumbs.map((item) => ({ name: item.label, item: routeUrl(route.origin, item.path) }));
+const schema = route.indexable
+  ? [
+      breadcrumbSchema(breadcrumbs),
+      ...(product && route.template === "product-detail" ? [{
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        name: product.name,
+        description: product.summary,
+        url: canonical,
+        applicationCategory: product.category,
+        operatingSystem: product.platforms.join(", ") || undefined
+      }] : [])
+    ]
+  : [];
+const structuredData = schema.length ? JSON.stringify(schema).replace(/</g, "\\u003c") : undefined;
+const products = productRegistry;
+const mindonePro = products.find((item) => item.id === "mindone-pro");
+const isRequestOnlyProduct = product?.availability === "request-only";
+const isFlagship = product?.id === "mindone" || product?.id === "mindone-pro";
+const contactHref = product
+  ? `/contact/?intent=${isRequestOnlyProduct ? "product-enquiry" : "demo"}&product=${encodeURIComponent(product.id)}`
+  : route.template === "edition-comparison"
+    ? "/contact/?intent=product-enquiry&product=mindone"
+    : route.template === "services" || route.template === "procurement-ecosystem"
+      ? "/contact/?intent=consultation"
+      : "/contact/?intent=consultation";
+const requestLabel = isRequestOnlyProduct
+  ? "Register product interest"
+  : route.template === "procurement-ecosystem"
+    ? "Discuss procurement"
+    : product
+      ? "Request a demo"
+      : "Start a conversation";
+const licensingHref = product
+  ? `/contact/?intent=product-enquiry&product=${encodeURIComponent(product.id)}`
+  : "/contact/?intent=product-enquiry";
+const relatedProducts = product
+  ? products.filter((item) => item.id !== product.id && (item.parentId === product.parentId || item.category === product.category)).slice(0, 4)
+  : [];
+const nestedProducts = product ? products.filter((item) => item.parentId === product.id) : [];
+const compactProductTitle = product ? !product.name.includes(" ") && product.name.length > 12 : false;
+const solutions = solutionRegistry;
+const hubs = hubRegistry;
+const isHome = route.template === "home";
+const isContact = route.path === "/contact/";
+const isFlagshipPage = isFlagship && Boolean(mindonePro);
+const isEditionComparison = route.template === "edition-comparison";
+const isProcurementEcosystem = route.template === "procurement-ecosystem";
+const isServices = route.template === "services";
+const isProductIndex = route.template === "product-index";
+const isSolutionIndex = route.template === "solution-index" || route.template === "industry-index";
+const isHub = route.template === "capability-hub";
+const hub = hubs.find((item) => `/${item.id}/` === route.path);
+const solution = solutions.find((item) => `/solutions/${item.id}/` === route.path);
+const pageStyleKey = isHome
+  ? "home"
+  : isFlagshipPage || isEditionComparison
+    ? "flagship"
+    : isProcurementEcosystem
+      ? "procurement"
+      : isServices
+        ? "services"
+        : product
+          ? "product"
+          : isProductIndex
+            ? "catalogue"
+            : isSolutionIndex || solution
+              ? "industry"
+              : isHub
+                ? "product"
+                : isContact
+                  ? "contact"
+                  : "common";
+const routeStyles: Record<string, string> = {
+  home: homeStyles,
+  flagship: flagshipStyles,
+  procurement: procurementStyles,
+  services: servicesStyles,
+  product: productStyles,
+  catalogue: catalogueStyles,
+  industry: industryStyles,
+  contact: contactStyles,
+  common: ""
+};
+const pageStyles = [
+  commonStyles,
+  routeStyles[pageStyleKey],
+  pageStyleKey === "home" || pageStyleKey === "catalogue" ? productStyles : ""
+].filter(Boolean).join("\n");
+---
+
+<SiteLayout
+  title={route.title}
+  description={route.description}
+  origin={route.canonicalOrigin ?? routeUrl(route.origin, "/")}
+  canonical={canonical}
+  indexable={route.indexable}
+  socialImage={route.socialImage}
+  structuredData={structuredData}
+  pageStyles={pageStyles}
+  requestHref={contactHref}
+  requestLabel={requestLabel}
+  bodyClass={`page-${route.template}${isFlagshipPage ? " page-flagship-product" : ""}`}
+  mainClass="site-main"
+>
+  {!isHome && <nav class="breadcrumbs shell" aria-label="Breadcrumb">
+    <ol>
+      {route.breadcrumbs.map((item, index) => <li>{index < route.breadcrumbs.length - 1 ? <a href={routeUrl(route.origin, item.path)}>{item.label}</a> : <span aria-current="page">{item.label}</span>}</li>)}
+    </ol>
+  </nav>}
+
+  {isHome ? (
+    <HomeExperience contactHref={contactHref} />
+  ) : isFlagshipPage && product && mindonePro ? (
+    <FlagshipProduct product={product} />
+  ) : isEditionComparison ? (
+    <EditionComparison route={route} />
+  ) : isProcurementEcosystem ? (
+    <ProcurementEcosystem route={route} />
+  ) : isServices ? (
+    <ServicesPage route={route} />
+  ) : product ? (
+    <>
+      <section class="hero hero--product" aria-labelledby="product-title">
+        <div class="shell hero-product__grid">
+          <div class="hero-product__copy">
+            <p class="t-label">{product.category} / {product.status}</p>
+            <h1 id="product-title" class={compactProductTitle ? "hero-product__title--compact" : undefined}>{product.name}</h1>
+            <p class="hero-product__lede">{product.summary}</p>
+            <div class="button-row">
+              <Button href={contactHref} ctaId="request-product-demo">Request full demo access</Button>
+              <Button href={licensingHref} variant="secondary" ctaId="request-quote">Discuss licensing</Button>
+            </div>
+            <dl class="hero-product__facts">
+              <div><dt>Deployment</dt><dd>{product.deployment}</dd></div>
+              <div><dt>Platforms</dt><dd>{product.platforms.join(" · ") || "Confirm during evaluation"}</dd></div>
+            </dl>
+          </div>
+          <ProductInstrument product={product} nestedProducts={nestedProducts} />
+        </div>
+      </section>
+      <section class="section" aria-labelledby="scope-title">
+        <div class="shell product-layout">
+          <div class="prose"><p class="t-label">What it covers</p><h2 id="scope-title">{titleWithoutSite}</h2><p>{product.description}</p></div>
+          <dl class="fact-list">
+            <div><dt>Availability</dt><dd>{product.availability === "request-only" ? "Request only" : product.status}</dd></div>
+            <div><dt>Deployment</dt><dd>{product.deployment}</dd></div>
+            <div><dt>Platforms</dt><dd>{product.platforms.join(", ") || "Confirm during evaluation"}</dd></div>
+            <div><dt>Licence</dt><dd>{product.licenceNote ?? (product.licenseModel === "open-source" ? "Open source; verify the published licence" : product.licenseModel === "source-available" ? "Source-available; not open source" : "Commercial terms on request")}</dd></div>
+          </dl>
+        </div>
+      </section>
+      <section class="section section--ruled" aria-labelledby="capabilities-title">
+        <div class="shell"><div class="section-head"><div><p class="t-label">Capability register</p><h2 id="capabilities-title">The working scope.</h2></div><p>These are site-stated capabilities, not a guarantee that every module is included in every licence.</p></div>
+          {product.capabilities.length ? <ul class="index-list index-list--simple">{product.capabilities.map((capability) => <li><strong>{capability}</strong></li>)}</ul> : <p>Capability details require owner confirmation.</p>}
+        </div>
+      </section>
+      {relatedProducts.length > 0 && <section class="section section--ruled" aria-labelledby="related-title"><div class="shell"><div class="section-head"><div><p class="t-label">Related</p><h2 id="related-title">Compare nearby tools.</h2></div></div><ul class="index-list">{relatedProducts.map((item) => <li><a href={`${item.route}/`}><strong>{item.name}</strong><span>{item.summary}</span><small>View</small></a></li>)}</ul></div></section>}
+    </>
+  ) : isProductIndex ? (
+    <ProductCatalogue products={products} contactHref={contactHref} client:visible />
+  ) : isSolutionIndex ? (
+    <>
+      <PageHero id="page-title" title={route.template === "industry-index" ? "Software by industry" : "Solutions by the work you do"} eyebrow={route.template === "industry-index" ? "Industry paths" : "Operational solutions"} lede={route.description} />
+      <section class="section" aria-labelledby="paths-title"><div class="shell"><ul class="index-list">{solutions.map((item) => <li><a href={`/solutions/${item.id}/`}><strong>{item.name}</strong><span>{item.summary}</span><small>{item.productIds.length} product {item.productIds.length === 1 ? "family" : "families"}</small></a></li>)}</ul></div></section>
+    </>
+  ) : isHub ? (
+    <>
+      <PageHero id="page-title" title={hub?.name ?? titleWithoutSite} eyebrow="Capability hub" lede={hub?.summary ?? route.description} />
+      <section class="section" aria-labelledby="tools-title"><div class="shell"><div class="section-head"><div><p class="t-label">Tool register</p><h2 id="tools-title">Compare the working instruments.</h2></div></div><ul class="index-list">{products.filter((item) => hub?.toolIds.includes(item.id)).map((item) => <li><a href={`${item.route}/`}><strong>{item.name}</strong><span>{item.summary}</span><small>{item.deployment}</small></a></li>)}</ul></div></section>
+    </>
+  ) : solution ? (
+    <IndustryPath solution={solution} />
+  ) : isContact ? (
+    <>
+      <PageHero id="page-title" title="Start a useful conversation" eyebrow="Product, demo, migration or support" lede="Tell us what you are trying to change. We will route the enquiry to the right product and confirm the next step." compact />
+      <section class="section" aria-labelledby="enquiry-title"><div class="shell contact-layout"><div class="prose"><p class="t-label">Before you enquire</p><h2 id="enquiry-title">A few details make the first reply better.</h2><p>Include the workflow, current tools, deployment constraints and who needs to be involved. Please do not send passwords, confidential records or personal data you do not need to share.</p><p>When delivery is configured, submitting this form records an enquiry only. Demo access is issued separately after qualification.</p></div><div class="panel panel__body"><LeadForm client:load /></div></div></section>
+    </>
+  ) : route.contentStatus && route.contentStatus !== "approved" ? (
+    <>
+      <PageHero id="page-title" title={titleWithoutSite} eyebrow="Preserved route / content not migrated" lede={route.description} compact />
+      <section class="section" aria-labelledby="boundary-title"><div class="shell prose"><h2 id="boundary-title">A clear boundary, not a placeholder lesson.</h2><p>The public identifier is preserved, but the underlying content is not republished until ownership, permission and editorial approval are recorded. No scoring, progress or assessment behavior is simulated.</p><Button href="/contact/?intent=consultation" variant="secondary">Ask about authorised access</Button></div></section>
+    </>
+  ) : (
+    <>
+      <PageHero id="page-title" title={titleWithoutSite} eyebrow={route.template === "legal" ? "Policy" : "Digi Tracks"} lede={route.description} compact />
+      <section class="section" aria-labelledby="details-title"><div class="shell prose"><p class="t-label">What to expect</p><h2 id="details-title">{route.template === "legal" ? "Clear terms and honest boundaries." : "A practical next step."}</h2><p>This page is part of the independent Digi Tracks replacement. Product claims are kept tied to the audited catalogue, and unavailable delivery or application behavior is identified rather than implied.</p>{route.template === "legal" && <p>Final legal wording, controller identity and retention periods require owner approval before publication.</p>}<Button href={contactHref} variant="secondary">Contact Digi Tracks</Button></div></section>
+    </>
+  )}
+</SiteLayout>

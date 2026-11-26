@@ -1,0 +1,108 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+
+interface Props {
+  route: RouteRecord;
+}
+
+const { route } = Astro.props;
+const engagements = [
+  {
+    code: "01",
+    title: "Product evaluation",
+    intent: "consultation",
+    summary: "Turn a broad product question into a scoped workflow, evidence and deployment review.",
+    scope: ["Map the users and workflow", "Compare published scope with the requirement", "Record deployment, licence and integration questions"],
+    cta: "Scope an evaluation"
+  },
+  {
+    code: "02",
+    title: "Implementation",
+    intent: "consultation",
+    summary: "Define configuration, roles, data, acceptance and rollout responsibilities before work begins.",
+    scope: ["Confirm the target operating model", "Identify configuration and integration boundaries", "Agree the evidence needed for acceptance"],
+    cta: "Discuss implementation"
+  },
+  {
+    code: "03",
+    title: "Migration",
+    intent: "migration",
+    summary: "Assess source data, transformation, reconciliation and cutover risk without assuming a clean transfer.",
+    scope: ["Inventory source records and quality", "Define mapping and reconciliation rules", "Plan validation, rollback and ownership"],
+    cta: "Assess a migration"
+  },
+  {
+    code: "04",
+    title: "Support",
+    intent: "support",
+    summary: "Triage an operational issue with the product, environment, impact and reproducible evidence in view.",
+    scope: ["Establish impact and affected workflow", "Collect safe diagnostic evidence", "Confirm ownership and the next response"],
+    cta: "Request support scoping"
+  }
+] as const;
+const sequence = [
+  ["Understand", "Document the workflow, users, current tools and constraints."],
+  ["Define", "Separate confirmed requirements from assumptions and unknowns."],
+  ["Validate", "Identify the product evidence, data checks and acceptance criteria required."],
+  ["Decide", "Agree the next engagement, owner and scope before implementation starts."]
+] as const;
+---
+
+<section class="services-hero" aria-labelledby="services-title">
+  <div class="services-hero__index" aria-hidden="true">S/04</div>
+  <div class="shell services-hero__grid">
+    <div>
+      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>Services / evaluation, implementation, migration and support</p>
+      <h1 id="services-title">Start with the evidence.<br><em>Then plan the work.</em></h1>
+    </div>
+    <div class="services-hero__copy">
+      <p>{route.description}</p>
+      <p>A useful engagement begins with the operating constraint, not a predetermined package. Scope, responsibilities and acceptance evidence come before delivery claims.</p>
+      <div class="button-row"><Button href="/contact/?intent=consultation" ctaId="request-conversation">Start a scoped conversation</Button><Button href="#services-engagements" variant="secondary">Review the engagement paths</Button></div>
+    </div>
+  </div>
+  <div class="shell services-hero__foot"><span>Workflow first</span><span>Evidence before commitment</span><span>Migration with reconciliation</span><span>No invented service levels</span></div>
+</section>
+
+<section class="services-engagements section" id="services-engagements" aria-labelledby="services-engagements-title">
+  <div class="shell">
+    <div class="section-head"><div><p class="t-label">01 / Engagement paths</p><h2 id="services-engagements-title">Four ways to begin.</h2></div><p>Choose the path closest to the decision or operational problem in front of you. The initial enquiry records intent; it does not confirm an engagement.</p></div>
+    <ol class="services-engagement-grid">
+      {engagements.map((engagement) => <li>
+        <article>
+          <div class="services-engagement-card__head"><span>{engagement.code}</span><i aria-hidden="true"></i></div>
+          <h3>{engagement.title}</h3>
+          <p>{engagement.summary}</p>
+          <ul>{engagement.scope.map((item) => <li>{item}</li>)}</ul>
+          <Button href={`/contact/?intent=${engagement.intent}`} variant="secondary" ctaId="request-conversation">{engagement.cta}</Button>
+        </article>
+      </li>)}
+    </ol>
+  </div>
+</section>
+
+<section class="services-sequence section" aria-labelledby="services-sequence-title">
+  <div class="shell services-sequence__grid">
+    <div><p class="t-label">02 / Working sequence</p><h2 id="services-sequence-title">Clarity before commitment.</h2><p>This sequence organises the conversation. It is not a fixed delivery plan, timeline or guarantee.</p></div>
+    <ol>{sequence.map(([title, description], index) => <li><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{description}</p></div></li>)}</ol>
+  </div>
+</section>
+
+<section class="services-boundary section" aria-labelledby="services-boundary-title">
+  <div class="shell services-boundary__grid">
+    <div><p class="t-label">03 / Commercial and delivery boundary</p><h2 id="services-boundary-title">What is not being promised here.</h2></div>
+    <div class="prose"><p>No fixed price, delivery duration, service-level agreement, certification, staffing level or production outcome is advertised without an agreed scope and verified evidence.</p><p>Product demonstrations, implementation work, migration assessments and support triage are separate activities. An enquiry for one is not authorisation to begin another.</p><Button href="/contact/?intent=consultation" variant="secondary" ctaId="request-conversation">Ask for a scoped proposal</Button></div>
+  </div>
+</section>
+
+<section class="services-brief section" aria-labelledby="services-brief-title">
+  <div class="shell services-brief__grid">
+    <div class="services-brief__mark" aria-hidden="true"><span>ENGAGEMENT BRIEF</span><strong>04</strong><small>Understand · Define · Validate · Decide</small></div>
+    <div><p class="t-label">04 / Prepare the enquiry</p><h2 id="services-brief-title">Bring enough context for a useful first reply.</h2><ul><li>The product and workflow in question.</li><li>The current tools and deployment constraints.</li><li>The users, decision owners and operational impact.</li><li>The data, integration and acceptance questions that matter.</li></ul><p>Do not include passwords, access tokens, confidential records or personal data that is not needed for the enquiry.</p><Button href="/contact/?intent=consultation" ctaId="request-conversation">Prepare an enquiry</Button></div>
+  </div>
+</section>
+
+<section class="services-close" aria-labelledby="services-close-title">
+  <div class="shell services-close__grid"><div><p class="t-label">Next step</p><h2 id="services-close-title">Define the decision before the delivery.</h2></div><div><p>Tell us whether you need to evaluate, implement, migrate or support a product. We will confirm the right scope and evidence rather than assume a package.</p><Button href="/contact/?intent=consultation" ctaId="request-conversation">Start a conversation</Button></div></div>
+</section>

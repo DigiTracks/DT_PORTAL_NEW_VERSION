@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-26T01:03:03.670Z",
+  "counts": {
+    "origins": 6,
+    "routes": 2330,
+    "htmlFiles": 869,
+    "indexablePages": 86,
+    "noindexPages": 782,
+    "redirectDocuments": 1,
+    "socialImages": 86,
+    "redirects": 893
+  },
+  "assets": 130,
+  "errors": [],
+  "warnings": []
+}

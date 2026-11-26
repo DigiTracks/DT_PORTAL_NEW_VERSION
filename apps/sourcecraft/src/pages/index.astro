@@ -1,0 +1,24 @@
+---
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import SourceCraftHome from "@digitracks/ui/components/SourceCraftHome.astro";
+import { isFileRoute, routeRegistry } from "@digitracks/seo";
+
+const route = routeRegistry.find((item) => item.origin === "sourcecraft" && item.path === "/")!;
+const routes = routeRegistry.filter((item) => item.origin === "sourcecraft" && (item.routeClass === "public-seo" || item.routeClass === "public-utility") && !item.redirectTo && !item.hashRoute && !isFileRoute(item));
+const navItems = [
+  { label: "Explore", href: "/explore/" },
+  { label: "Regions", href: "/regions/" },
+  { label: "Sources", href: "/sources/" },
+  { label: "Licensing", href: "/about/" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="SourceCraft" navItems={navItems} bodyClass="page-sourcecraft">
+  <SourceCraftHome routes={routes} />
+</OriginLayout>
+
+<script>
+  if ("serviceWorker" in navigator && import.meta.env.PROD) {
+    window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => undefined));
+  }
+</script>

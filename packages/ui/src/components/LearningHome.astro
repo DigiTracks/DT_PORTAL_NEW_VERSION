@@ -1,0 +1,61 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+
+interface Props {
+  routes: readonly RouteRecord[];
+}
+
+const { routes } = Astro.props;
+const learningRoutes = routes.filter((route) => route.path !== "/" && route.path !== "/contact/");
+const requestHref = "https://digitracks.net/contact/?intent=demo&origin=learn";
+---
+
+<section class="learning-hero" aria-labelledby="learning-title">
+  <div class="shell learning-hero__grid">
+    <div class="learning-hero__copy">
+      <p class="t-label">Digi Tracks learning / six public origins</p>
+      <h1 id="learning-title">Learn the work.<br><em>Then do the work.</em></h1>
+      <p class="learning-hero__lede">A direct route into procurement, project delivery, people operations and the wider Digi Tracks software ecosystem.</p>
+      <div class="button-row">
+        <Button href="#learning-paths" ctaId="explore-learning-paths">Choose a learning path</Button>
+        <Button href={requestHref} variant="secondary">Ask about access</Button>
+      </div>
+    </div>
+    <div class="learning-orbit" aria-hidden="true">
+      <div class="learning-orbit__ring learning-orbit__ring--one"></div>
+      <div class="learning-orbit__ring learning-orbit__ring--two"></div>
+      <div class="learning-orbit__ring learning-orbit__ring--three"></div>
+      <div class="learning-orbit__core">D</div>
+      {learningRoutes.map((route, index) => <a key={route.id} href={route.path} tabIndex={-1} style={`--orbit-index:${index}`}><span>{String(index + 1).padStart(2, "0")}</span></a>)}
+    </div>
+  </div>
+  <div class="shell learning-hero__ledger">
+    <span>06 public origins</span><span>Direct product context</span><span>Access stated before enrolment</span>
+  </div>
+</section>
+
+<section class="section learning-paths" id="learning-paths" aria-labelledby="paths-title">
+  <div class="shell">
+    <div class="section-head">
+      <div><p class="t-label">Choose your direction</p><h2 id="paths-title">Start with the system you need to understand.</h2></div>
+      <p>Each path keeps its own public identity. Account data and learning progress are never shared between origins.</p>
+    </div>
+    <ol class="learning-path-grid">
+      {learningRoutes.map((route, index) => <li key={route.id}>
+        <a href={route.path}>
+          <span class="learning-path-grid__number">{String(index + 1).padStart(2, "0")}</span>
+          <div><p class="t-label">Learning origin</p><h3>{route.title.replace(" | Digi Tracks", "")}</h3><p>{route.description}</p></div>
+          <span class="learning-path-grid__arrow" aria-hidden="true">↗</span>
+        </a>
+      </li>)}
+    </ol>
+  </div>
+</section>
+
+<section class="section section--ruled learning-boundary" aria-labelledby="learning-boundary-title">
+  <div class="shell learning-boundary__grid">
+    <div><p class="t-label">A useful boundary</p><h2 id="learning-boundary-title">Public guidance is not the same as a course seat.</h2></div>
+    <div class="prose"><p>You can explore the public route and understand what an origin covers. Enrolment, assessments, saved progress and protected learning material require a separately authorised account.</p><p>Where access is not configured, this site says so rather than showing a simulated lesson or an invented completion state.</p><Button href={requestHref} variant="secondary">Ask which path fits</Button></div>
+  </div>
+</section>

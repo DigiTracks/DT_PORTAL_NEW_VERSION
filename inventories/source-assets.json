@@ -1,0 +1,744 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-25T20:57:36.708Z",
+  "approvedAt": "2026-11-25",
+  "referenceRoot": "/data/HomeWorks/DT-Portal-main",
+  "sourcePolicy": "Strictly read-only; only owner-approved identity assets are copied into this repository.",
+  "counts": {
+    "uniqueAssets": 42,
+    "masterAssets": 7,
+    "lockupDerivatives": 2,
+    "productMarks": 33,
+    "copiedFiles": 88
+  },
+  "assets": [
+    {
+      "id": "brand:brand-lockup-light.webp",
+      "path": "/brand/brand-lockup-light.webp",
+      "kind": "logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "DigiTracks estate identity, favicon and install icon use approved by the owner on 2026-11-25.",
+      "sha256": "81223e7ba25792009631bfffe70bd51bf5f6bd46ada20241ae6b73a1f1ea67f2",
+      "source": "../DT-Portal-main/public/brand-lockup-light.webp",
+      "destinations": [
+        "apps/portal/public/brand/brand-lockup-light.webp",
+        "apps/learn/public/brand/brand-lockup-light.webp",
+        "apps/sourcecraft/public/brand/brand-lockup-light.webp",
+        "apps/procuresherpa/public/brand/brand-lockup-light.webp",
+        "apps/learnpmo/public/brand/brand-lockup-light.webp",
+        "apps/hcmfusion/public/brand/brand-lockup-light.webp"
+      ]
+    },
+    {
+      "id": "brand:brand-lockup-dark.webp",
+      "path": "/brand/brand-lockup-dark.webp",
+      "kind": "logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "DigiTracks estate identity, favicon and install icon use approved by the owner on 2026-11-25.",
+      "sha256": "3846ff5fd7767746a0492f21ea7c6bc2f2005f28c21423ea9152227b9b83a9b4",
+      "source": "../DT-Portal-main/public/brand-lockup-dark.webp",
+      "destinations": [
+        "apps/portal/public/brand/brand-lockup-dark.webp",
+        "apps/learn/public/brand/brand-lockup-dark.webp",
+        "apps/sourcecraft/public/brand/brand-lockup-dark.webp",
+        "apps/procuresherpa/public/brand/brand-lockup-dark.webp",
+        "apps/learnpmo/public/brand/brand-lockup-dark.webp",
+        "apps/hcmfusion/public/brand/brand-lockup-dark.webp"
+      ]
+    },
+    {
+      "id": "brand:brand-mark.webp",
+      "path": "/brand/brand-mark.webp",
+      "kind": "logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "DigiTracks estate identity, favicon and install icon use approved by the owner on 2026-11-25.",
+      "sha256": "4954d00961b8b8ac47e0fe8a40e6d1937ea09e25890e553b21113139790d4fa8",
+      "source": "../DT-Portal-main/public/brand-mark.webp",
+      "destinations": [
+        "apps/portal/public/brand/brand-mark.webp",
+        "apps/learn/public/brand/brand-mark.webp",
+        "apps/sourcecraft/public/brand/brand-mark.webp",
+        "apps/procuresherpa/public/brand/brand-mark.webp",
+        "apps/learnpmo/public/brand/brand-mark.webp",
+        "apps/hcmfusion/public/brand/brand-mark.webp"
+      ]
+    },
+    {
+      "id": "brand:favicon.ico",
+      "path": "/favicon.ico",
+      "kind": "icon",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "DigiTracks estate identity, favicon and install icon use approved by the owner on 2026-11-25.",
+      "sha256": "945d272ce8e52e3c897a3f18120e8a5844b7c3e7b1da5df26e0347159605e5aa",
+      "source": "../DT-Portal-main/public/favicon.ico",
+      "destinations": [
+        "apps/portal/public/favicon.ico",
+        "apps/learn/public/favicon.ico",
+        "apps/sourcecraft/public/favicon.ico",
+        "apps/procuresherpa/public/favicon.ico",
+        "apps/learnpmo/public/favicon.ico",
+        "apps/hcmfusion/public/favicon.ico"
+      ]
+    },
+    {
+      "id": "brand:apple-touch-icon.png",
+      "path": "/apple-touch-icon.png",
+      "kind": "icon",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "DigiTracks estate identity, favicon and install icon use approved by the owner on 2026-11-25.",
+      "sha256": "8e64146e93fec585366d8f35b59f7893149b101b64ac5044204e2dcaabd4ac31",
+      "source": "../DT-Portal-main/public/apple-touch-icon.png",
+      "destinations": [
+        "apps/portal/public/apple-touch-icon.png",
+        "apps/learn/public/apple-touch-icon.png",
+        "apps/sourcecraft/public/apple-touch-icon.png",
+        "apps/procuresherpa/public/apple-touch-icon.png",
+        "apps/learnpmo/public/apple-touch-icon.png",
+        "apps/hcmfusion/public/apple-touch-icon.png"
+      ]
+    },
+    {
+      "id": "brand:icon-192.png",
+      "path": "/icons/icon-192.png",
+      "kind": "icon",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "DigiTracks estate identity, favicon and install icon use approved by the owner on 2026-11-25.",
+      "sha256": "07f22e41f69a630d4ffdb56ea8bde0abd85a43b70b588c1ef13d72f287ef6216",
+      "source": "../DT-Portal-main/public/icon-192.png",
+      "destinations": [
+        "apps/portal/public/icons/icon-192.png",
+        "apps/learn/public/icons/icon-192.png",
+        "apps/sourcecraft/public/icons/icon-192.png",
+        "apps/procuresherpa/public/icons/icon-192.png",
+        "apps/learnpmo/public/icons/icon-192.png",
+        "apps/hcmfusion/public/icons/icon-192.png"
+      ]
+    },
+    {
+      "id": "brand:icon-512.png",
+      "path": "/icons/icon-512.png",
+      "kind": "icon",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "DigiTracks estate identity, favicon and install icon use approved by the owner on 2026-11-25.",
+      "sha256": "1e5defcbb7a3e719cb6a3e4be94aa9317fb27fe726ae2a3a8f627e1ba3832ddf",
+      "source": "../DT-Portal-main/public/icon-512.png",
+      "destinations": [
+        "apps/portal/public/icons/icon-512.png",
+        "apps/learn/public/icons/icon-512.png",
+        "apps/sourcecraft/public/icons/icon-512.png",
+        "apps/procuresherpa/public/icons/icon-512.png",
+        "apps/learnpmo/public/icons/icon-512.png",
+        "apps/hcmfusion/public/icons/icon-512.png"
+      ]
+    },
+    {
+      "id": "brand:brand-lockup-light-320.webp",
+      "path": "/brand/brand-lockup-light-320.webp",
+      "kind": "logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Derived from the existing DigiTracks portal lockup",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Size-matched DigiTracks header and footer lockup; the supplied original remains unchanged.",
+      "sha256": "0af43f91077f8938e2a79601d9e32b317d447651a55f35381b4d5f9f92a9734e",
+      "source": "../DT-Portal-main/public/brand-lockup-light.webp",
+      "destinations": [
+        "apps/portal/public/brand/brand-lockup-light-320.webp",
+        "apps/learn/public/brand/brand-lockup-light-320.webp",
+        "apps/sourcecraft/public/brand/brand-lockup-light-320.webp",
+        "apps/procuresherpa/public/brand/brand-lockup-light-320.webp",
+        "apps/learnpmo/public/brand/brand-lockup-light-320.webp",
+        "apps/hcmfusion/public/brand/brand-lockup-light-320.webp"
+      ],
+      "derivation": {
+        "tool": "ImageMagick",
+        "operation": "Resize to 320px width, strip metadata, WebP quality 86",
+        "sourceSha256": "81223e7ba25792009631bfffe70bd51bf5f6bd46ada20241ae6b73a1f1ea67f2"
+      }
+    },
+    {
+      "id": "brand:brand-lockup-dark-320.webp",
+      "path": "/brand/brand-lockup-dark-320.webp",
+      "kind": "logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Derived from the existing DigiTracks portal lockup",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Size-matched DigiTracks header and footer lockup; the supplied original remains unchanged.",
+      "sha256": "5b98b98ff0bab7d6369a7d42358f605c6a73e24327038cc6fe0d451b176cd62c",
+      "source": "../DT-Portal-main/public/brand-lockup-dark.webp",
+      "destinations": [
+        "apps/portal/public/brand/brand-lockup-dark-320.webp",
+        "apps/learn/public/brand/brand-lockup-dark-320.webp",
+        "apps/sourcecraft/public/brand/brand-lockup-dark-320.webp",
+        "apps/procuresherpa/public/brand/brand-lockup-dark-320.webp",
+        "apps/learnpmo/public/brand/brand-lockup-dark-320.webp",
+        "apps/hcmfusion/public/brand/brand-lockup-dark-320.webp"
+      ],
+      "derivation": {
+        "tool": "ImageMagick",
+        "operation": "Resize to 320px width, strip metadata, WebP quality 86",
+        "sourceSha256": "3846ff5fd7767746a0492f21ea7c6bc2f2005f28c21423ea9152227b9b83a9b4"
+      }
+    },
+    {
+      "id": "product:arventa",
+      "path": "/products/arventa.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "d7effed0b525ed305aaaf43fc848db0480ab5870d3da831464c94492e850f45f",
+      "source": "../DT-Portal-main/public/products/arventa.webp",
+      "destinations": [
+        "apps/portal/public/products/arventa.webp"
+      ]
+    },
+    {
+      "id": "product:campus-grid",
+      "path": "/products/campus-grid.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "66056ea9fd4763986cac93d67e602de762038da99f0eac84113883d2d8cc1e1c",
+      "source": "../DT-Portal-main/public/products/campus-grid.webp",
+      "destinations": [
+        "apps/portal/public/products/campus-grid.webp"
+      ]
+    },
+    {
+      "id": "product:chronos",
+      "path": "/products/chronos.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "62a45d6d83830b2a4fbdef7ba59001ef4a29dca332f8518958ee883bb949ed61",
+      "source": "../DT-Portal-main/public/products/chronos.webp",
+      "destinations": [
+        "apps/portal/public/products/chronos.webp"
+      ]
+    },
+    {
+      "id": "product:connexa",
+      "path": "/products/connexa.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "da9ccd20c1fab8e9de538abbf5fc6049485dfab4d65d9d23b790f5985d7c4b96",
+      "source": "../DT-Portal-main/public/products/connexa.webp",
+      "destinations": [
+        "apps/portal/public/products/connexa.webp"
+      ]
+    },
+    {
+      "id": "product:construction-management",
+      "path": "/products/construction-management.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "c28ce0230c8cb739ba3a9ceb6fa5a4f7726982050afebe76668526e7926bc9a3",
+      "source": "../DT-Portal-main/public/products/construction-management.webp",
+      "destinations": [
+        "apps/portal/public/products/construction-management.webp"
+      ]
+    },
+    {
+      "id": "product:contractleak",
+      "path": "/products/contractleak.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "abf8f80b3e1a38b5488f91c6a3c18d0c7802d2b168e4e3666e034b45d34412ff",
+      "source": "../DT-Portal-main/public/products/contractleak.webp",
+      "destinations": [
+        "apps/portal/public/products/contractleak.webp"
+      ]
+    },
+    {
+      "id": "product:glowra",
+      "path": "/products/glowra.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "ab1b66daeea18b069d2bfbae37a569d97b06867c4055b1c5d516612987b11b72",
+      "source": "../DT-Portal-main/public/products/glowra.webp",
+      "destinations": [
+        "apps/portal/public/products/glowra.webp"
+      ]
+    },
+    {
+      "id": "product:logistra",
+      "path": "/products/logistra.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "d5e8a61a05d0ff8cbce91c83b23fc6c242bd6d8fe623877348336b7a902e9047",
+      "source": "../DT-Portal-main/public/products/logistra.webp",
+      "destinations": [
+        "apps/portal/public/products/logistra.webp"
+      ]
+    },
+    {
+      "id": "product:monexa",
+      "path": "/products/monexa.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "7beccfc5528720e7458fee7d1200d407db42a2c8e8e5acd249159b569195e185",
+      "source": "../DT-Portal-main/public/products/monexa.webp",
+      "destinations": [
+        "apps/portal/public/products/monexa.webp"
+      ]
+    },
+    {
+      "id": "product:nexora",
+      "path": "/products/nexora.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "9af8aafe351e4b6bcdb6a0aa16d18349cef20bc02aea60a76a7521b1bbbb3925",
+      "source": "../DT-Portal-main/public/products/nexora.webp",
+      "destinations": [
+        "apps/portal/public/products/nexora.webp"
+      ]
+    },
+    {
+      "id": "product:nipuna",
+      "path": "/products/nipuna.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "d5c40cff3109a7ef5d482ce63c68ecce49695db400da64d7a62e1bf6da85cc61",
+      "source": "../DT-Portal-main/public/products/nipuna.webp",
+      "destinations": [
+        "apps/portal/public/products/nipuna.webp"
+      ]
+    },
+    {
+      "id": "product:opspilot",
+      "path": "/products/opspilot.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "ee9587771101d6489aef226ad1ba77853408538cc51f5c543d6a27237df96325",
+      "source": "../DT-Portal-main/public/products/opspilot.webp",
+      "destinations": [
+        "apps/portal/public/products/opspilot.webp"
+      ]
+    },
+    {
+      "id": "product:orbitra",
+      "path": "/products/orbitra.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "79212216842ca592e0c5a9273e3b5f77298565da37b715bc28663b902ceeb99e",
+      "source": "../DT-Portal-main/public/products/orbitra.webp",
+      "destinations": [
+        "apps/portal/public/products/orbitra.webp"
+      ]
+    },
+    {
+      "id": "product:orion-hunter",
+      "path": "/products/orion-hunter.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "5c41807d236ddf465e0637fcc1d94033a29daa4b8a51cbbbf5fdca65874cbc4f",
+      "source": "../DT-Portal-main/public/products/orion-hunter.webp",
+      "destinations": [
+        "apps/portal/public/products/orion-hunter.webp"
+      ]
+    },
+    {
+      "id": "product:orion",
+      "path": "/products/orion.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "3b8967cfcfd38da97b9cfd0393743a4f06b05492558ade10ec076dc3051385e3",
+      "source": "../DT-Portal-main/public/products/orion.webp",
+      "destinations": [
+        "apps/portal/public/products/orion.webp"
+      ]
+    },
+    {
+      "id": "product:planora",
+      "path": "/products/planora.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "fbdf84e11669b5ad319252a9db3112e6570369d3972d8c1fc60d7cf4755c2808",
+      "source": "../DT-Portal-main/public/products/planora.webp",
+      "destinations": [
+        "apps/portal/public/products/planora.webp"
+      ]
+    },
+    {
+      "id": "product:procura",
+      "path": "/products/procura.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "50ac08ee4126bf07c26109ea9a8cfa49569f47508aae9d16ada4de38441828d5",
+      "source": "../DT-Portal-main/public/products/procura.webp",
+      "destinations": [
+        "apps/portal/public/products/procura.webp"
+      ]
+    },
+    {
+      "id": "product:procure5",
+      "path": "/products/procure5.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "c5f223426b9668ba4cc289959969da333c0c3b36ef3f9453f30961e02dd61814",
+      "source": "../DT-Portal-main/public/products/procure5.webp",
+      "destinations": [
+        "apps/portal/public/products/procure5.webp"
+      ]
+    },
+    {
+      "id": "product:procuredecision",
+      "path": "/products/procuredecision.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "2a8885e34e348edefdc7b8a7d0b02db024b0f735f810f895fcf28f46a758ed3c",
+      "source": "../DT-Portal-main/public/products/procuredecision.webp",
+      "destinations": [
+        "apps/portal/public/products/procuredecision.webp"
+      ]
+    },
+    {
+      "id": "product:procureleak",
+      "path": "/products/procureleak.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "227971b2ab5e9047dd3f797be3b541ebced9075d154f99bb2e61d69b0bfb8095",
+      "source": "../DT-Portal-main/public/products/procureleak.webp",
+      "destinations": [
+        "apps/portal/public/products/procureleak.webp"
+      ]
+    },
+    {
+      "id": "product:procureoutcomes",
+      "path": "/products/procureoutcomes.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "0aff13189f32747cf167c40695f0ee2f09e6b7b5a1e9e2eabefe967cb4a4cfc8",
+      "source": "../DT-Portal-main/public/products/procureoutcomes.webp",
+      "destinations": [
+        "apps/portal/public/products/procureoutcomes.webp"
+      ]
+    },
+    {
+      "id": "product:quote-simulator",
+      "path": "/products/quote-simulator.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "a8cc03e90c293738dcc601e9bc6c068b666d9aaa332b2eeb5c71e8274bfd4a9e",
+      "source": "../DT-Portal-main/public/products/quote-simulator.webp",
+      "destinations": [
+        "apps/portal/public/products/quote-simulator.webp"
+      ]
+    },
+    {
+      "id": "product:recon",
+      "path": "/products/recon.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "89434b74badb987500df15037803eb9a8aede9a9cabe631e889da4e6cd9e6cdc",
+      "source": "../DT-Portal-main/public/products/recon.webp",
+      "destinations": [
+        "apps/portal/public/products/recon.webp"
+      ]
+    },
+    {
+      "id": "product:sherpa-toolkit",
+      "path": "/products/sherpa-toolkit.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "d6888297d9f4cb1eabb08cfcfeed1dc501b63d7488dce1a1d4d8621eede67e82",
+      "source": "../DT-Portal-main/public/products/sherpa-toolkit.webp",
+      "destinations": [
+        "apps/portal/public/products/sherpa-toolkit.webp",
+        "apps/learn/public/products/sherpa-toolkit.webp"
+      ]
+    },
+    {
+      "id": "product:tenderguard",
+      "path": "/products/tenderguard.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "52b4b9cf078fcbbf2153a15fa75ed87a0e4b82c122a6ef41240e7b6b38db0c4c",
+      "source": "../DT-Portal-main/public/products/tenderguard.webp",
+      "destinations": [
+        "apps/portal/public/products/tenderguard.webp"
+      ]
+    },
+    {
+      "id": "product:transportation-management",
+      "path": "/products/transportation-management.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "06acad3c057f5c5962ea6ec9d523d531c15d18eb608b08a912232e9937aefa94",
+      "source": "../DT-Portal-main/public/products/transportation-management.webp",
+      "destinations": [
+        "apps/portal/public/products/transportation-management.webp"
+      ]
+    },
+    {
+      "id": "product:unify",
+      "path": "/products/unify.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "2bdcb1cb11dba75cc2aff40d050ad15c716ef96db7a14e3b1c27316859a0bf34",
+      "source": "../DT-Portal-main/public/products/unify.webp",
+      "destinations": [
+        "apps/portal/public/products/unify.webp"
+      ]
+    },
+    {
+      "id": "product:unnati",
+      "path": "/products/unnati.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "82a097f7eda205383ca7dae3f1d25582b4a5d713ee903a4253e30a66ce24fd5c",
+      "source": "../DT-Portal-main/public/products/unnati.webp",
+      "destinations": [
+        "apps/portal/public/products/unnati.webp"
+      ]
+    },
+    {
+      "id": "product:vantor",
+      "path": "/products/vantor.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "085106e7c2be2b29cbf45ffdd07373c8319b87f0cccb5be203d2d90a54e5c176",
+      "source": "../DT-Portal-main/public/products/vantor.webp",
+      "destinations": [
+        "apps/portal/public/products/vantor.webp"
+      ]
+    },
+    {
+      "id": "product:vedik-community",
+      "path": "/products/vedik-community.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "8e4c4a5b57dd9225c5d2fb0d4365fa99f599f152595f25c3889a8cf7eaaf11ac",
+      "source": "../DT-Portal-main/public/products/vedik-community.webp",
+      "destinations": [
+        "apps/portal/public/products/vedik-community.webp"
+      ]
+    },
+    {
+      "id": "product:vedik",
+      "path": "/products/vedik.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "29423eeca0104c8432b8d2e0fcfefe6b91f468196816c66af32695d091b12989",
+      "source": "../DT-Portal-main/public/products/vedik.webp",
+      "destinations": [
+        "apps/portal/public/products/vedik.webp"
+      ]
+    },
+    {
+      "id": "product:vertex",
+      "path": "/products/vertex.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "237a2a735314980477a40aa8c63683a29697e7599c68d24ade46fe297b814a16",
+      "source": "../DT-Portal-main/public/products/vertex.webp",
+      "destinations": [
+        "apps/portal/public/products/vertex.webp"
+      ]
+    },
+    {
+      "id": "product:workzen",
+      "path": "/products/workzen.webp",
+      "kind": "product-logo",
+      "owner": "DigiTracks",
+      "licence": "Proprietary - owner-supplied DigiTracks asset",
+      "sourceProject": "Existing DigiTracks portal public assets",
+      "approval": "approved",
+      "approvedAt": "2026-11-25",
+      "permittedUse": "Official product identity in the DigiTracks catalogue, approved by the owner on 2026-11-25.",
+      "sha256": "11a5e02017f95b30091c09883f1eee794dd30a8fb2488ffc19c96c20adf9141e",
+      "source": "../DT-Portal-main/public/products/workzen.webp",
+      "destinations": [
+        "apps/portal/public/products/workzen.webp"
+      ]
+    }
+  ]
+}

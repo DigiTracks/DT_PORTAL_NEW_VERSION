@@ -1,0 +1,33 @@
+---
+import Button from "./Button.astro";
+import SiteLayout from "./SiteLayout.astro";
+import "../styles/base.css";
+import commonStyles from "../styles/origin-common.css?inline";
+
+interface Props {
+  origin: string;
+  brandSuffix: string;
+  navItems: Array<{ label: string; href: string }>;
+}
+
+const { origin, brandSuffix, navItems } = Astro.props;
+---
+
+<SiteLayout
+  title={`Page not found | Digi Tracks ${brandSuffix}`}
+  description="This address is not part of the public route manifest."
+  origin={origin}
+  indexable={false}
+  pageStyles={commonStyles}
+  brandSuffix={brandSuffix}
+  originId={new URL(origin).hostname.split(".")[0]}
+  navItems={navItems}
+  requestHref="https://digitracks.net/contact/"
+>
+  <section class="origin-boundary" aria-labelledby="not-found-title">
+    <div class="shell origin-boundary__grid">
+      <div class="origin-boundary__index" aria-hidden="true"><span>HTTP / 404</span><strong>NOT FOUND</strong><small>NO SPA FALLBACK</small></div>
+      <div class="origin-boundary__copy"><p class="t-label">Public route manifest</p><h1 id="not-found-title">This address is not here.</h1><p class="origin-boundary__lede">The route may be wrong, private or awaiting authorised source material. Unknown public addresses return a real 404 rather than a simulated application screen.</p><div class="button-row"><Button href={origin}>Return home</Button><Button href="https://digitracks.net/" variant="secondary">Open Digi Tracks</Button></div></div>
+    </div>
+  </section>
+</SiteLayout>

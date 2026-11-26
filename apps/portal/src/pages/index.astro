@@ -1,0 +1,9 @@
+---
+import RegistryPage from "@digitracks/ui/components/RegistryPage.astro";
+import { routeRegistry } from "@digitracks/seo";
+
+const route = routeRegistry.find((item) => item.origin === "portal" && item.path === "/");
+if (!route) throw new Error("Portal home route is missing");
+---
+
+<RegistryPage route={route} />

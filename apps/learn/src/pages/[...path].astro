@@ -1,0 +1,24 @@
+---
+import LearningPage from "@digitracks/ui/components/LearningPage.astro";
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import { routeRegistry, staticPageRoutes } from "@digitracks/seo";
+
+export function getStaticPaths() {
+  return staticPageRoutes("learn", routeRegistry).map((route) => ({
+    params: { path: route.path.split("/").filter(Boolean).join("/") },
+    props: { route }
+  }));
+}
+
+const { route } = Astro.props;
+const navItems = [
+  { label: "Learning paths", href: "/#learning-paths" },
+  { label: "SourceCraft", href: "https://sourcecraft.digitracks.net/" },
+  { label: "LearnPMO", href: "https://learnpmo.digitracks.net/" },
+  { label: "HCM Fusion", href: "https://hcmfusion.digitracks.net/" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="Learn" navItems={navItems} bodyClass="page-learning-entry">
+  <LearningPage route={route} />
+</OriginLayout>

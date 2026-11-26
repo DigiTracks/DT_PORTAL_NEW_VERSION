@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-11-26",
+  "referenceSourceSha256": "e2434c5316cb83039dce1b3c48f1bebac916e66729c00aee2021c26665dc7b2b",
+  "catalogueEntries": 37,
+  "sourceProducts": 35,
+  "sourceFlagships": 17,
+  "requestOnlyRoutes": 2,
+  "prelaunchRoutes": 2,
+  "nestedProducts": 19,
+  "routes": 2330,
+  "baselineSitemapRoutes": 384,
+  "indexableRoutes": 86,
+  "governedContent": 1246
+}

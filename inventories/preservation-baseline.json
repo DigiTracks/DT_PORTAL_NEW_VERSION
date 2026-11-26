@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-11-25T00:09:51Z",
+  "repository": "/data/HomeWorks/DT-Portal-main",
+  "head": "9a4a9af84a0447926aa96f1cc4b2210232f44ffb",
+  "branch": "main",
+  "status": "clean",
+  "rules": [
+    "The existing repository must remain unmodified.",
+    "No symlink, Git alternate, workspace link, or runtime import may point to the existing repository.",
+    "No production deployment, DNS change, or secret change is authorized.",
+    "Any copied asset requires a recorded source hash and licence or owner permission."
+  ]
+}
