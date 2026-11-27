@@ -7,7 +7,7 @@ body.page-home {
   display: grid;
   grid-template-rows: minmax(0, 1fr) auto;
   height: auto;
-  min-height: min(calc(100svh - 5rem), 48rem);
+  min-height: 0;
   overflow: hidden;
   padding-block: clamp(2.2rem, 3.4vw, 3.4rem) 1.5rem;
   background:
@@ -37,16 +37,16 @@ body.page-home {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
-  align-items: center;
+  grid-template-columns: minmax(0, 44rem) minmax(0, 1fr);
+  align-items: start;
   min-height: 0;
-  gap: clamp(1rem, 3vw, 4rem);
+  gap: clamp(1.5rem, 3vw, 3.5rem);
 }
 
 .hero-home__copy {
   position: relative;
   z-index: 2;
-  padding-block: 2rem;
+  padding-block: clamp(0.5rem, 1.6vw, 1.4rem) 0;
 }
 
 .hero-home__eyebrow {
@@ -82,7 +82,11 @@ body.page-home {
 
 .hero-home__visual {
   position: relative;
-  height: clamp(28rem, 42vw, calc(100svh - 13rem));
+  height: clamp(30rem, 40vw, 46rem);
+  margin-top: 0;
+  align-self: center;
+  justify-self: stretch;
+  width: 100%;
   min-width: 0;
   overflow: hidden;
   background: transparent;

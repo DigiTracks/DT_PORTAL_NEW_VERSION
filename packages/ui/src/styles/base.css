@@ -40,7 +40,7 @@
   --p-border: color-mix(in srgb, var(--p-ink) 14%, var(--p-bg));
   --p-border-strong: color-mix(in srgb, var(--p-ink) 26%, var(--p-bg));
   --p-focus: var(--signal-deep);
-  --shell: min(100% - 2rem, 120rem);
+  --shell: calc(100% - 3rem);
   --s-1: 0.25rem;
   --s-2: 0.5rem;
   --s-3: 0.75rem;
@@ -1070,7 +1070,7 @@ h3 em,
 
 @media (max-width: 63.999rem) {
   :root {
-    --shell: min(100% - 2.5rem, 120rem);
+    --shell: calc(100% - 4.5rem);
   }
 
   .section-head {
@@ -1098,7 +1098,7 @@ h3 em,
 
 @media (max-width: 39.999rem) {
   :root {
-    --shell: min(100% - 1.5rem, 120rem);
+    --shell: calc(100% - 1.5rem);
   }
 
   body {

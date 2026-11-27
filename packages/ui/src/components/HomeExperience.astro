@@ -94,13 +94,6 @@ const solutionIcons = {
   procurement: "flow",
   recruitment: "users"
 } as const;
-const learningOrigins = [
-  { name: "Learn", href: "https://learn.digitracks.net/", copy: "A clear entry point into procurement learning and decision support.", meta: "Learning hub", icon: "book" },
-  { name: "SourceCraft", href: "https://sourcecraft.digitracks.net/", copy: "Procurement language, terms and regional reference.", meta: "Reference library", icon: "library" },
-  { name: "LearnPMO", href: "https://learnpmo.digitracks.net/", copy: "Project and programme management learning routes.", meta: "Practice library", icon: "folder" },
-  { name: "HCM Fusion", href: "https://hcmfusion.digitracks.net/", copy: "Human-capital concepts, evidence and learning paths.", meta: "HCM library", icon: "users" },
-  { name: "ProcureSherpa Learning", href: "https://learn.digitracks.net/procuresherpa/", copy: "Academy modules, calculators, reference material and local saved work.", meta: "Academy component", icon: "flow" }
-] as const;
 ---
 
 <section class="hero hero--home" data-enter aria-labelledby="home-title">
@@ -310,18 +303,6 @@ const learningOrigins = [
     </div>
     <ol class="home-services__list">
       {serviceEngagements.map(([title, summary, intent, cta]) => <li><div><h3>{title}</h3><p>{summary}</p></div><a href={`/contact/?intent=${intent}`} data-cta="request-conversation">{cta}<span aria-hidden="true">↗</span></a></li>)}
-    </ol>
-  </div>
-</section>
-
-<section class="learning-section section" aria-labelledby="learning-title">
-  <div class="shell">
-    <div class="section-head">
-      <div><p class="t-label">Learning & reference</p><h2 id="learning-title">Knowledge with<br>somewhere to go.</h2></div>
-      <p>Public learning and reference origins, each with its own purpose and state boundary.</p>
-    </div>
-    <ol class="origin-index">
-      {learningOrigins.map((origin) => <li><a href={origin.href}><span class="origin-index__icon"><Icon name={origin.icon} size={23} weight="duotone" /></span><strong>{origin.name}</strong><p>{origin.copy}</p><small>{origin.meta}</small><i aria-hidden="true">↗</i></a></li>)}
     </ol>
   </div>
 </section>

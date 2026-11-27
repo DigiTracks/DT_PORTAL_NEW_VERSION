@@ -85,17 +85,14 @@ const procurementLinks = [
 ];
 type ResourceLink = { label: string; href: string; note: string; external: boolean };
 type ResourceGroup = { label: string; links: ResourceLink[] };
+const learningLinks = [
+  { label: "Learn", href: "https://learn.digitracks.net/" },
+  { label: "Source Craft", href: "https://sourcecraft.digitracks.net/" },
+  { label: "LearnPMO", href: "https://learnpmo.digitracks.net/" },
+  { label: "HCM Fusion", href: "https://hcmfusion.digitracks.net/" },
+  { label: "ProcureSherpa Learning", href: "https://learn.digitracks.net/procuresherpa/" }
+];
 const resourceGroups: ResourceGroup[] = [
-  {
-    label: "Learning & reference",
-    links: [
-      { label: "Learn", href: "https://learn.digitracks.net/", note: "Courses, lessons and reference notes", external: true },
-      { label: "Source Craft", href: "https://sourcecraft.digitracks.net/", note: "Engineering reading and worked patterns", external: true },
-      { label: "LearnPMO", href: "https://learnpmo.digitracks.net/", note: "Project delivery method", external: true },
-      { label: "HCM Fusion", href: "https://hcmfusion.digitracks.net/", note: "People and HR operations reference", external: true },
-      { label: "ProcureSherpa Learning", href: "https://learn.digitracks.net/procuresherpa/", note: "Sourcing and procurement practice", external: true }
-    ]
-  },
   {
     label: "Engineering & trust",
     links: [
@@ -368,7 +365,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
         </div>
         <div class="site-footer__col">
           <h2 class="t-label">Learning</h2>
-          {resourceGroups[0].links.map((item) => <a href={item.href}>{item.label}</a>)}
+          {learningLinks.map((item) => <a href={item.href}>{item.label}</a>)}
         </div>
       </div>
       <div class="shell site-footer__legal">
