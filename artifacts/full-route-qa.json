@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-26T22:53:41.424Z",
+  "generatedAt": "2026-11-27T03:30:51.300Z",
   "routes": 86,
   "states": 344,
   "issues": [],
   "brokenLinks": [],
   "fragmentFailures": [],
   "cssFailures": [],
-  "linkReferences": 32656,
+  "linkReferences": 32632,
   "fragmentReferences": 688,
   "cssReferences": 2064,
   "method": {

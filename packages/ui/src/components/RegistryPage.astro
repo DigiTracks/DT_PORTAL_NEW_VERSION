@@ -8,6 +8,7 @@ import FlagshipProduct from "./FlagshipProduct.astro";
 import HomeExperience from "./HomeExperience.astro";
 import IndustryPath from "./IndustryPath.astro";
 import LeadForm from "./LeadForm.tsx";
+import MarketingPage from "./MarketingPage.astro";
 import PageHero from "./PageHero.astro";
 import ProcurementEcosystem from "./ProcurementEcosystem.astro";
 import ProductCatalogue from "./ProductCatalogue.tsx";
@@ -93,6 +94,8 @@ const isServices = route.template === "services";
 const isProductIndex = route.template === "product-index";
 const isSolutionIndex = route.template === "solution-index" || route.template === "industry-index";
 const isHub = route.template === "capability-hub";
+const marketingPaths = ["/about/", "/engineering/", "/faq/", "/trust/", "/pricing/", "/offline-first-software/"];
+const isMarketingPage = route.template === "marketing" && marketingPaths.includes(route.path);
 const hub = hubs.find((item) => `/${item.id}/` === route.path);
 const solution = solutions.find((item) => `/solutions/${item.id}/` === route.path);
 const pageStyleKey = isHome
@@ -216,6 +219,8 @@ const pageStyles = [
     </>
   ) : solution ? (
     <IndustryPath solution={solution} />
+  ) : isMarketingPage ? (
+    <MarketingPage route={route} />
   ) : isContact ? (
     <>
       <PageHero id="page-title" title="Start a useful conversation" eyebrow="Product, demo, migration or support" lede="Tell us what you are trying to change. We will route the enquiry to the right product and confirm the next step." compact />

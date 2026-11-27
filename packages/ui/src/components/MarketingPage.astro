@@ -1,0 +1,373 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+
+interface Props {
+  route: RouteRecord;
+}
+
+type Block =
+  | { kind: "prose"; label: string; title: string; body: string[] }
+  | { kind: "cards"; label: string; title: string; lede?: string; items: Array<{ index?: string; title: string; body: string; href?: string; meta?: string }> }
+  | { kind: "steps"; label: string; title: string; lede?: string; items: Array<{ title: string; body: string }> }
+  | { kind: "facts"; items: Array<{ value: string; label: string }> }
+  | { kind: "qa"; label: string; title: string; items: Array<{ q: string; a: string }> };
+
+interface PageContent {
+  eyebrow: string;
+  lead: string;
+  accent: string;
+  lede: string;
+  primary: { label: string; href: string };
+  secondary?: { label: string; href: string };
+  blocks: Block[];
+  close: { label: string; title: string; body: string; cta: string; href: string };
+}
+
+const { route } = Astro.props;
+const contactHref = `/contact/?intent=consultation&route=${encodeURIComponent(route.path)}`;
+
+const pages: Record<string, PageContent> = {
+  "/about/": {
+    eyebrow: "The studio",
+    lead: "One studio.",
+    accent: "Thirty-seven systems.",
+    lede: "Digi Tracks builds focused software for specialised work. Each product stands on its own, with its own deployment, licence and support terms, so teams adopt the tool that fits the work rather than a platform that dictates it.",
+    primary: { label: "See the product range", href: "/products/" },
+    secondary: { label: "Talk to the studio", href: "/contact/?intent=consultation" },
+    blocks: [
+      { kind: "facts", items: [
+        { value: "37", label: "Products in the catalogue" },
+        { value: "6", label: "Industries served" },
+        { value: "6", label: "Public origins" },
+        { value: "3", label: "Deployment models" }
+      ] },
+      { kind: "cards", label: "What we build", title: "Software that owns one job.", lede: "Three families, one standard: a clear workflow, a real deployment and a licence you can hold.", items: [
+        { index: "01", title: "Operational systems", body: "Education, clinics, salons and business operations. Connected where it helps, independent where it matters.", href: "/solutions/", meta: "20 products" },
+        { index: "02", title: "Procurement suite", body: "Sourcing, integrity, contract control and decision support, with a learning layer beside the tools.", href: "/procurement-software/", meta: "9 products" },
+        { index: "03", title: "Engineering tools", body: "Code intelligence, security reasoning, delivery evidence and local project operations.", href: "/engineering/", meta: "4 products" }
+      ] },
+      { kind: "steps", label: "How we work", title: "Four steps, no theatre.", items: [
+        { title: "Scope", body: "We map the workflow, the users and the constraints, then agree what success looks like in writing." },
+        { title: "Configure", body: "The product is configured around your operating model, roles and data, with integrations agreed up front." },
+        { title: "Deploy", body: "Desktop, self-hosted or web. Your team gets the installer, the licence and the runbook that matches the deployment." },
+        { title: "Support", body: "Named support terms per product, with a clear route for issues, upgrades and new requirements." }
+      ] },
+      { kind: "prose", label: "Why focused products", title: "Small surface, serious software.", body: [
+        "A tool that does one job well is easier to buy, easier to deploy and easier to trust. That is why the catalogue is built from focused products rather than a single monolith with modules bolted on.",
+        "Products can still work together. Where two systems share data, the exchange is scoped, documented and agreed with your team before rollout, never assumed because the logos sit on the same page."
+      ] }
+    ],
+    close: { label: "Next step", title: "Start with the work, not the catalogue.", body: "Tell us the workflow you need to change. We will point you to the product that fits and confirm deployment, licensing and next steps.", cta: "Start a conversation", href: contactHref }
+  },
+  "/engineering/": {
+    eyebrow: "Engineering tools",
+    lead: "Built for the people",
+    accent: "who ship.",
+    lede: "Four focused tools for engineering teams: inspect code, reason about security, evidence the delivery and control local project operations. Each runs on your machine or your infrastructure, with its own licence.",
+    primary: { label: "Explore the tools", href: "/products/" },
+    secondary: { label: "Book a technical demo", href: "/contact/?intent=demo" },
+    blocks: [
+      { kind: "cards", label: "The toolkit", title: "Four tools, four jobs.", items: [
+        { index: "01", title: "Orion", body: "Local-first code intelligence and static security analysis, with findings traced to the line that caused them.", href: "/products/orion/", meta: "Code intelligence" },
+        { index: "02", title: "Orion Hunter", body: "Evidence-first security reasoning and attack-path analysis for teams that must explain a finding, not just file it.", href: "/products/orion-hunter/", meta: "Security reasoning" },
+        { index: "03", title: "Recon", body: "Agentic SDLC with approvals, rollback and an evidence trail for every change.", href: "/products/recon/", meta: "Engineering delivery" },
+        { index: "04", title: "OpsPilot", body: "Local project operations, process control and diagnostics on the desktop.", href: "/products/opspilot/", meta: "Project operations" }
+      ] },
+      { kind: "prose", label: "How they are built", title: "Local first, evidence always.", body: [
+        "The engineering tools run where the work is: on a developer machine or inside your own infrastructure. Code and project data stay in your environment unless an integration is explicitly configured.",
+        "Licensing is per product. Orion and Recon install from a package manager, Orion Hunter is self-hosted on infrastructure you control, and OpsPilot is a desktop application. Support and upgrade terms are agreed per product."
+      ] },
+      { kind: "steps", label: "Rollout", title: "From trial to team standard.", items: [
+        { title: "Technical demo", body: "A working session on your repository or a representative sample, not a slide deck." },
+        { title: "Pilot", body: "A scoped pilot with named users, success criteria and a review date." },
+        { title: "Licence", body: "Per-product licensing sized to the team, with the deployment model you need." },
+        { title: "Support", body: "Upgrade path and support terms confirmed in writing before the rollout completes." }
+      ] }
+    ],
+    close: { label: "Next step", title: "Bring a repository, leave with a plan.", body: "Tell us the codebase, the security question or the delivery bottleneck. We will show the tool against it and confirm licensing.", cta: "Book a technical demo", href: contactHref }
+  },
+
+  "/faq/": {
+    eyebrow: "Questions",
+    lead: "Straight answers",
+    accent: "before you buy.",
+    lede: "Deployment, data, trials and support, answered plainly. If the answer you need is not here, ask us directly and you will get a specific reply.",
+    primary: { label: "Ask a question", href: "/contact/?intent=consultation" },
+    secondary: { label: "Browse products", href: "/products/" },
+    blocks: [
+      { kind: "qa", label: "Frequently asked", title: "The questions buyers actually ask.", items: [
+        { q: "How is the software deployed?", a: "Per product: desktop installers, self-hosted deployment on your infrastructure, or a web application. The deployment model is listed on each product page and confirmed in the licence." },
+        { q: "Can we try a product before buying?", a: "Yes. Demos and scoped pilots are available for most products, with named users and success criteria agreed in advance." },
+        { q: "Where does our data live?", a: "Self-hosted and desktop products keep data in your environment. Web products store data in the region and environment agreed in the order, and the data handling addendum is shared before signature." },
+        { q: "Do the products integrate with each other?", a: "Where two products share data, the exchange is scoped and documented per engagement. Related products are not automatically integrated." },
+        { q: "What does licensing look like?", a: "Licensing is per product, sized to users or sites, with support and upgrade terms agreed in writing. There is no mandatory platform licence across the catalogue." },
+        { q: "How long does implementation take?", a: "The scope sets the timeline. A single-team rollout is typically weeks, not quarters; multi-site and migrated deployments are planned with your team and confirmed in the statement of work." },
+        { q: "What support is included?", a: "Every licence includes a named support route and an agreed response commitment. Extended cover is available per product." },
+        { q: "Can we buy through procurement?", a: "Yes. We can complete security questionnaires, provide a security pack and work within your procurement process." }
+      ] }
+    ],
+    close: { label: "Still deciding?", title: "Ask the awkward question.", body: "Send the requirement, the constraint or the doubt. A specific answer is more useful than a brochure.", cta: "Ask Digi Tracks", href: contactHref }
+  },
+
+  "/trust/": {
+    eyebrow: "Trust and security",
+    lead: "Security you can",
+    accent: "audit, not assume.",
+    lede: "Deployment options, data handling and access control are documented per product. The security pack gives your team the detail it needs for review.",
+    primary: { label: "Request the security pack", href: "/contact/?intent=security" },
+    secondary: { label: "See deployment models", href: "/products/" },
+    blocks: [
+      { kind: "cards", label: "Posture", title: "Four commitments.", items: [
+        { index: "01", title: "Deployment choice", body: "Desktop, self-hosted or web. Teams that must keep data on-premises can, without a separate product." },
+        { index: "02", title: "Data handling", body: "A written data handling addendum per product: what is stored, where, for how long and who can reach it." },
+        { index: "03", title: "Access control", body: "Role-based access, local authentication or your identity provider where the deployment supports it." },
+        { index: "04", title: "Disclosure", body: "A named security contact and a documented route for reporting a vulnerability." }
+      ] },
+      { kind: "prose", label: "What we do not claim", title: "No borrowed badges.", body: [
+        "We do not display certifications we do not hold, uptime figures we have not measured, or customer logos we cannot publish. Where a control is provided by your infrastructure, we say so.",
+        "If your review needs a specific artefact, ask for it. Security questionnaires, architecture notes and data-flow diagrams are shared under NDA."
+      ] }
+    ],
+    close: { label: "Security review", title: "Give your reviewers the detail.", body: "Tell us the framework, the questionnaire or the control you need evidenced. We will send the pack and answer follow-ups directly.", cta: "Request the security pack", href: contactHref }
+  },
+
+  "/pricing/": {
+    eyebrow: "Commercials",
+    lead: "Priced per product,",
+    accent: "scoped per rollout.",
+    lede: "There is no single platform price list, because the catalogue is not a single platform. Each product is licensed on its own, and implementation is quoted against the scope you approve.",
+    primary: { label: "Request a scoped proposal", href: "/contact/?intent=consultation" },
+    secondary: { label: "Browse the catalogue", href: "/products/" },
+    blocks: [
+      { kind: "cards", label: "Commercial shapes", title: "Three ways to buy.", items: [
+        { index: "01", title: "Per-user licence", body: "For products used by named people: engineering tools, learning seats and desk-based workflows." },
+        { index: "02", title: "Site licence", body: "For products deployed across an institution, clinic, studio or plant, with a defined site boundary." },
+        { index: "03", title: "Implementation", body: "Scoped configuration, migration and training, quoted separately from the licence." }
+      ] },
+      { kind: "prose", label: "What shapes the quote", title: "No hidden multipliers.", body: [
+        "Users or sites, deployment model, integrations, migration volume and support level. Each is listed in the proposal with the assumption behind it, so finance can see exactly what changes the number.",
+        "Multi-product purchases are quoted together where the scope overlaps. Support and upgrades are itemised, not bundled into an opaque annual figure."
+      ] }
+    ],
+    close: { label: "Next step", title: "Get a number you can defend.", body: "Share the product, the user count and the deployment constraint. The proposal will show the licence, the implementation and the support line separately.", cta: "Request a scoped proposal", href: contactHref }
+  },
+
+  "/offline-first-software/": {
+    eyebrow: "Offline first",
+    lead: "Software that works",
+    accent: "where the work is.",
+    lede: "Clinics lose connectivity, studios get busy, sites have no reliable network. Offline-first design keeps the workflow running and syncs when the connection returns.",
+    primary: { label: "See offline-ready products", href: "/products/" },
+    secondary: { label: "Discuss your site", href: "/contact/?intent=consultation" },
+    blocks: [
+      { kind: "steps", label: "How it works", title: "Local by default.", items: [
+        { title: "Local store", body: "The working data lives on the device or your server, so a dropped connection does not stop the workflow." },
+        { title: "Deterministic rules", body: "Validation, matching and scoring run locally, so results do not depend on a remote service." },
+        { title: "Sync on return", body: "Changes queue locally and reconcile when the link is back, with conflicts surfaced rather than silently overwritten." },
+        { title: "Auditable", body: "Local events are recorded with timestamps and users, so the history survives the outage." }
+      ] },
+      { kind: "prose", label: "Where it matters", title: "Built for interrupted days.", body: [
+        "Vedik School, ProcureSherpa, Orion, Recon and OpsPilot are designed to keep working without a live connection. Web-only products are labelled as such on their product page.",
+        "If your environment cannot rely on the network, tell us at scoping. Deployment model and sync behaviour are agreed before rollout, not discovered after."
+      ] }
+    ],
+    close: { label: "Next step", title: "Design for the worst connection.", body: "Describe the site, the device and what must keep working during an outage. We will match the deployment to it.", cta: "Talk to us", href: contactHref }
+  }
+};
+
+const content = pages[route.path];
+
+---
+
+{content && (
+  <>
+    <section class="mk-hero">
+      <div class="shell mk-hero__inner">
+        <p class="t-label">{content.eyebrow}</p>
+        <h1 class="mk-hero__title" id="page-title">{content.lead}<br /><em>{content.accent}</em></h1>
+        <p class="mk-hero__lede">{content.lede}</p>
+        <div class="mk-hero__actions">
+          <Button href={content.primary.href}>{content.primary.label}</Button>
+          {content.secondary && <Button href={content.secondary.href} variant="secondary">{content.secondary.label}</Button>}
+        </div>
+      </div>
+    </section>
+
+    {content.blocks.map((block) => (
+      block.kind === "facts" ? (
+        <section class="mk-facts" aria-label="Key figures">
+          <div class="shell mk-facts__grid">
+            {block.items.map((item) => (
+              <div class="mk-fact"><strong>{item.value}</strong><span>{item.label}</span></div>
+            ))}
+          </div>
+        </section>
+      ) : block.kind === "cards" ? (
+        <section class="section mk-block">
+          <div class="shell">
+            <div class="mk-head">
+              <p class="t-label">{block.label}</p>
+              <h2>{block.title}</h2>
+              {block.lede && <p class="mk-head__lede">{block.lede}</p>}
+            </div>
+            <ul class="mk-cards">
+              {block.items.map((item) => (
+                <li class="mk-card">
+                  {item.index && <span class="mk-card__index">{item.index}</span>}
+                  <h3>{item.href ? <a href={item.href}>{item.title}</a> : item.title}</h3>
+                  <p>{item.body}</p>
+                  {item.meta && <span class="mk-card__meta">{item.meta}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : block.kind === "steps" ? (
+        <section class="section mk-block">
+          <div class="shell">
+            <div class="mk-head">
+              <p class="t-label">{block.label}</p>
+              <h2>{block.title}</h2>
+              {block.lede && <p class="mk-head__lede">{block.lede}</p>}
+            </div>
+            <ol class="mk-steps">
+              {block.items.map((item) => (
+                <li><h3>{item.title}</h3><p>{item.body}</p></li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      ) : block.kind === "qa" ? (
+        <section class="section mk-block">
+          <div class="shell">
+            <div class="mk-head">
+              <p class="t-label">{block.label}</p>
+              <h2>{block.title}</h2>
+            </div>
+            <div class="mk-qa">
+              {block.items.map((item) => (
+                <details class="mk-qa__item">
+                  <summary>{item.q}</summary>
+                  <p>{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : (
+        <section class="section mk-block mk-block--prose">
+          <div class="shell mk-prose">
+            <div><p class="t-label">{block.label}</p><h2>{block.title}</h2></div>
+            <div class="mk-prose__body">{block.body.map((para: string) => <p>{para}</p>)}</div>
+          </div>
+        </section>
+      )
+    ))}
+
+    <section class="mk-close">
+      <div class="shell mk-close__inner">
+        <p class="t-label">{content.close.label}</p>
+        <h2>{content.close.title}</h2>
+        <p>{content.close.body}</p>
+        <Button href={content.close.href}>{content.close.cta}</Button>
+      </div>
+    </section>
+  </>
+)}
+<style>
+  .mk-hero {
+    position: relative;
+    padding-block: clamp(4.5rem, 8vw, 8rem) clamp(3rem, 5vw, 4.5rem);
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at 82% 8%, rgb(245 207 101 / 20%), transparent 46%),
+      linear-gradient(rgb(13 27 46 / 4%) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(13 27 46 / 4%) 1px, transparent 1px),
+      var(--paper-bright);
+    background-size: auto, 4.5rem 4.5rem, 4.5rem 4.5rem, auto;
+    border-bottom: 1px solid rgb(13 27 46 / 12%);
+  }
+  .mk-hero__inner { display: grid; gap: 1.4rem; max-width: 74rem; }
+  .mk-hero__title {
+    margin: 0;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 7vw, 6.4rem);
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    line-height: 0.92;
+  }
+  .mk-hero__title em {
+    color: var(--night);
+    font-family: var(--font-editorial);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+  .mk-hero__lede { max-width: 54ch; margin: 0.4rem 0 0; color: #3f4c5e; font-size: clamp(1.02rem, 1.3vw, 1.2rem); line-height: 1.55; }
+  .mk-hero__actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+
+  .mk-facts { background: var(--night); color: var(--paper-bright); padding-block: clamp(2rem, 3.5vw, 3rem); }
+  .mk-facts__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: rgb(198 212 230 / 16%); }
+  .mk-fact { display: grid; gap: 0.35rem; padding: 1.1rem 1.4rem; background: var(--night); }
+  .mk-fact strong { font-family: var(--font-display); font-size: clamp(2.1rem, 3vw, 2.9rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--signal); }
+  .mk-fact span { color: rgb(198 212 230 / 78%); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
+  .mk-block { border-bottom: 1px solid rgb(13 27 46 / 10%); }
+  .mk-head { display: grid; gap: 0.9rem; max-width: 60rem; margin-bottom: clamp(2rem, 3vw, 3rem); }
+  .mk-head h2 { margin: 0; font-family: var(--font-display); font-size: clamp(1.9rem, 3.4vw, 3rem); font-weight: 500; letter-spacing: -0.035em; line-height: 1.02; color: var(--ink); }
+  .mk-head__lede { margin: 0; max-width: 52ch; color: #4a5567; line-height: 1.55; }
+
+  .mk-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 2vw, 1.8rem); margin: 0; padding: 0; list-style: none; }
+  .mk-card {
+    display: grid;
+    align-content: start;
+    gap: 0.75rem;
+    padding: 1.5rem 1.4rem 1.6rem;
+    border: 1px solid rgb(13 27 46 / 12%);
+    background: var(--paper-bright);
+    transition: transform 260ms var(--ease-out), border-color 260ms ease, box-shadow 260ms ease;
+  }
+  .mk-card:hover { transform: translateY(-3px); border-color: rgb(13 27 46 / 26%); box-shadow: 0 1.4rem 2.6rem rgb(13 27 46 / 10%); }
+  .mk-card__index { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.16em; color: #a4781f; }
+  .mk-card h3 { margin: 0; font-family: var(--font-display); font-size: 1.32rem; font-weight: 550; letter-spacing: -0.02em; color: var(--ink); }
+  .mk-card h3 a { color: inherit; text-decoration: none; }
+  .mk-card h3 a:hover { text-decoration: underline; text-underline-offset: 0.22em; }
+  .mk-card p { margin: 0; color: #46536a; font-size: 0.95rem; line-height: 1.5; }
+  .mk-card__meta { margin-top: 0.2rem; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7b8698; }
+
+  .mk-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin: 0; padding: 0; list-style: none; background: rgb(13 27 46 / 14%); counter-reset: step; }
+  .mk-steps li { background: var(--paper-bright); padding: 1.4rem 1.3rem; display: grid; gap: 0.5rem; align-content: start; }
+  .mk-steps li::before { counter-increment: step; content: counter(step, decimal-leading-zero); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.16em; color: #a4781f; }
+  .mk-steps h3 { margin: 0; font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); }
+  .mk-steps p { margin: 0; color: #4a5567; font-size: 0.92rem; line-height: 1.5; }
+
+  .mk-qa { display: grid; gap: 0; border-top: 1px solid rgb(13 27 46 / 14%); }
+  .mk-qa__item { border-bottom: 1px solid rgb(13 27 46 / 14%); }
+  .mk-qa__item summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 1rem; padding: 1.15rem 0; font-family: var(--font-display); font-size: clamp(1rem, 1.4vw, 1.15rem); font-weight: 550; color: var(--ink); }
+  .mk-qa__item summary::-webkit-details-marker { display: none; }
+  .mk-qa__item summary::after { content: "+"; font-family: var(--font-mono); color: #a4781f; }
+  .mk-qa__item[open] summary::after { content: "–"; }
+  .mk-qa__item p { margin: 0 0 1.2rem; max-width: 70ch; color: #46536a; line-height: 1.6; }
+
+  .mk-prose { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: clamp(1.5rem, 5vw, 5rem); align-items: start; }
+  .mk-prose h2 { margin: 0.6rem 0 0; font-family: var(--font-display); font-size: clamp(1.7rem, 2.8vw, 2.4rem); font-weight: 500; letter-spacing: -0.03em; line-height: 1.05; color: var(--ink); }
+  .mk-prose__body { display: grid; gap: 1rem; }
+  .mk-prose__body p { margin: 0; color: #3f4c5e; font-size: 1.02rem; line-height: 1.7; }
+
+  .mk-close { background: var(--night); color: var(--paper-bright); padding-block: clamp(3.5rem, 6vw, 6rem); }
+  .mk-close__inner { display: grid; gap: 1.1rem; justify-items: start; max-width: 62rem; }
+  .mk-close__inner h2 { margin: 0; font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1; }
+  .mk-close__inner p { margin: 0; max-width: 56ch; color: rgb(198 212 230 / 86%); line-height: 1.6; }
+
+  @media (max-width: 900px) {
+    .mk-facts__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mk-cards, .mk-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mk-prose { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 620px) {
+    .mk-cards, .mk-steps { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) { .mk-card { transition: none; } }
+</style>
