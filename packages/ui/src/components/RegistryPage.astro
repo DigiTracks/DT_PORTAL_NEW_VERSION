@@ -188,23 +188,41 @@ const pageStyles = [
           <ProductInstrument product={product} nestedProducts={nestedProducts} />
         </div>
       </section>
-      <section class="section" aria-labelledby="scope-title">
-        <div class="shell product-layout">
-          <div class="prose"><p class="t-label">What it covers</p><h2 id="scope-title">{titleWithoutSite}</h2><p>{product.description}</p></div>
-          <dl class="fact-list">
+      <section class="section product-scope" aria-labelledby="scope-title">
+        <div class="shell">
+          <div class="product-scope__intro">
+            <p class="t-label">What it covers</p>
+            <h2 id="scope-title">{titleWithoutSite} in practice.</h2>
+            <p class="product-scope__body">{product.description}</p>
+            <p class="product-scope__audience"><span class="t-label">Built for</span>{product.audience}</p>
+          </div>
+          <dl class="product-facts">
             <div><dt>Availability</dt><dd>{salesAvailability(product.availability)}</dd></div>
             <div><dt>Deployment</dt><dd>{product.deployment}</dd></div>
-            <div><dt>Platforms</dt><dd>{product.platforms.join(", ") || "Confirmed at onboarding"}</dd></div>
-            <div><dt>Licence</dt><dd>{product.licenceNote ?? (product.licenseModel === "open-source" ? "Open source; verify the published licence" : product.licenseModel === "source-available" ? "Source-available; not open source" : "Commercial terms on request")}</dd></div>
+            <div><dt>Platforms</dt><dd>{product.platforms.join(" · ") || "Confirmed at onboarding"}</dd></div>
+            <div><dt>Licence</dt><dd>{product.licenceNote ?? (product.licenseModel === "open-source" ? "Open source" : product.licenseModel === "source-available" ? "Source available" : "Per product, quoted on scope")}</dd></div>
           </dl>
         </div>
       </section>
       <section class="section section--ruled" aria-labelledby="capabilities-title">
-        <div class="shell"><div class="section-head"><div><p class="t-label">Capability register</p><h2 id="capabilities-title">The working scope.</h2></div><p>The working scope, confirmed for your deployment and licence.</p></div>
+        <div class="shell"><div class="section-head"><div><p class="t-label">Capabilities</p><h2 id="capabilities-title">{product.capabilities.length} capabilities in scope.</h2></div><p>Every capability below is part of the licensed product, confirmed against your deployment.</p></div>
           {product.capabilities.length ? <ul class="index-list index-list--simple">{product.capabilities.map((capability) => <li><strong>{capability}</strong></li>)}</ul> : <p>Capability details are confirmed during onboarding.</p>}
         </div>
       </section>
       {relatedProducts.length > 0 && <section class="section section--ruled" aria-labelledby="related-title"><div class="shell"><div class="section-head"><div><p class="t-label">Related</p><h2 id="related-title">Compare nearby tools.</h2></div></div><ul class="index-list">{relatedProducts.map((item) => <li><a href={`${item.route}/`}><strong>{item.name}</strong><span>{item.summary}</span><small>View</small></a></li>)}</ul></div></section>}
+      <section class="product-cta on-night" aria-labelledby="product-cta-title">
+        <div class="shell product-cta__inner">
+          <div>
+            <p class="t-label">Next step</p>
+            <h2 id="product-cta-title">See {product.name} on your workflow.</h2>
+            <p>Book a demo or a scoping call. We walk the product through your own process, deployment constraints and integration questions, then confirm licensing.</p>
+          </div>
+          <div class="button-row">
+            <Button href={contactHref} ctaId={productSupportsDemo ? "request-product-demo" : "request-product-interest"}>{productSupportsDemo ? "Book a demo" : "Talk to the product team"}</Button>
+            <Button href={licensingHref} variant="secondary" ctaId="request-quote">Discuss licensing</Button>
+          </div>
+        </div>
+      </section>
     </>
   ) : isProductIndex ? (
     <ProductCatalogue products={publicProducts} demoEligibleProductIds={demoEligibleProductIds} contactHref={contactHref} client:visible />
@@ -236,3 +254,22 @@ const pageStyles = [
     </>
   )}
 </SiteLayout>
+
+<style>
+  .product-scope .shell { display: grid; gap: clamp(2rem, 4vw, 3.4rem); }
+  .product-scope__intro { display: grid; gap: 0.9rem; max-width: 66ch; }
+  .product-scope__intro h2 { margin: 0; font-family: var(--font-display); font-size: clamp(2rem, 3.6vw, 3.2rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--ink); }
+  .product-scope__body { margin: 0; color: #3f4c5e; font-size: clamp(1.02rem, 1.3vw, 1.15rem); line-height: 1.65; }
+  .product-scope__audience { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: baseline; margin: 0.3rem 0 0; color: #4a5567; font-size: 0.95rem; line-height: 1.5; }
+  .product-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin: 0; background: rgb(13 27 46 / 14%); border-top: 1px solid rgb(13 27 46 / 14%); }
+  .product-facts > div { display: grid; gap: 0.4rem; padding: 1.1rem 1.2rem; background: var(--paper-bright); }
+  .product-facts dt { color: #7b8698; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; }
+  .product-facts dd { margin: 0; color: var(--ink); font-size: 0.98rem; font-weight: 500; }
+  .product-cta { padding-block: clamp(3.5rem, 6vw, 5.5rem); background: var(--night); color: var(--paper-bright); }
+  :global(.page-product-detail) .section { padding-block: clamp(2.6rem, 4.2vw, 4rem); }
+  .product-cta__inner { display: grid; grid-template-columns: minmax(0, 1.4fr) auto; gap: 2rem; align-items: end; }
+  .product-cta__inner h2 { margin: 0.6rem 0 0.8rem; font-family: var(--font-display); font-size: clamp(1.9rem, 3.4vw, 3rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1.02; }
+  .product-cta__inner p { margin: 0; max-width: 56ch; color: rgb(198 212 230 / 84%); line-height: 1.6; }
+  @media (max-width: 980px) { .product-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .product-cta__inner { grid-template-columns: 1fr; align-items: start; } }
+  @media (max-width: 560px) { .product-facts { grid-template-columns: 1fr; } }
+</style>

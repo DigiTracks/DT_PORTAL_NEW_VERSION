@@ -1,5 +1,5 @@
 ---
-import type { ProductRecord } from "@digitracks/catalog";
+import { salesStatus, type ProductRecord } from "@digitracks/catalog";
 import ProductMark from "./ProductMark";
 import ProductSignal from "./ProductSignal";
 
@@ -18,7 +18,7 @@ const isFamily = nestedProducts.length > 0;
 <aside class={`product-instrument product-instrument--${category}`} aria-label={`${product.name} catalogue instrument`}>
   <div class="product-instrument__topline">
     <span>DT / {product.id.toUpperCase()}</span>
-    <span>{product.status}</span>
+    <span>{salesStatus(product.status)}</span>
   </div>
   <div class="product-instrument__stage">
     <div class="product-instrument__grid" aria-hidden="true"></div>

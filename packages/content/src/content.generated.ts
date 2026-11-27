@@ -1,4 +1,4 @@
-// Generated from the approved audit baseline on 2026-11-26.
+// Generated from the approved audit baseline on 2026-11-27.
 export const governedContent = [
   {
     "id": "hcmfusion:/certifications/cross-module-implementation/",

@@ -58,7 +58,7 @@ const products = ALL_PRODUCTS.map((product) => {
     name: product.name,
     summary: product.tagline || product.description,
     description: product.description,
-    audience: `Teams evaluating ${product.category.toLowerCase()} software`,
+    audience: `Teams buying ${product.category.toLowerCase()} software`,
     category: product.category,
     licenseModel,
     buyingModel,
@@ -318,7 +318,7 @@ const productCorrections = {
   vantor: {
     summary: "Self-hostable procurement operating system",
     description: "Vantor is a self-hostable procurement operating system spanning suppliers, sourcing, contracts, purchasing, spend and governed AI-assisted workflows. It runs on a local SQLite option or a multi-tenant Postgres deployment, with deployment, support, licence terms and AI behaviour agreed with the Vantor team during rollout.",
-    audience: "Procurement, finance, legal, audit and platform teams evaluating a self-hosted system",
+    audience: "Procurement, finance, legal, audit and platform teams choosing a self-hosted system",
     capabilities: [
       "Supplier onboarding, qualification, risk and scorecards",
       "RFQ, quotation comparison, award and allocation",

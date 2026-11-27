@@ -7,45 +7,58 @@ interface Props {
 }
 
 const { route } = Astro.props;
+
 const engagements = [
   {
     code: "01",
     title: "Product fit",
     intent: "consultation",
-    summary: "Turn a product question into a scoped workflow, deployment model and rollout plan.",
-    scope: ["Map the users and workflow", "Compare published scope with the requirement", "Record deployment, licence and integration questions"],
+    summary: "Find the product and deployment model that fit the workflow, before anyone commits to a rollout.",
+    scope: ["Users, workflow and constraints mapped", "Published scope compared with your requirement", "Deployment, licence and integration questions recorded"],
+    outcome: "A shortlist, a deployment model and a rollout plan.",
     cta: "Scope a rollout"
   },
   {
     code: "02",
     title: "Implementation",
     intent: "consultation",
-    summary: "Define configuration, roles, data, acceptance and rollout responsibilities before work begins.",
-    scope: ["Confirm the target operating model", "Identify configuration and integration boundaries", "Agree the evidence needed for acceptance"],
+    summary: "Configure the product around your operating model, connect it to the systems you keep, and train the team that runs it.",
+    scope: ["Target operating model confirmed", "Roles, data and integrations configured", "Training and go-live checklist agreed"],
+    outcome: "A configured system, trained users and a go-live date.",
     cta: "Discuss implementation"
   },
   {
     code: "03",
     title: "Migration",
     intent: "migration",
-    summary: "Assess source data, transformation, reconciliation and cutover risk without assuming a clean transfer.",
-    scope: ["Inventory source records and quality", "Define mapping and reconciliation rules", "Plan validation, rollback and ownership"],
-    cta: "Assess a migration"
+    summary: "Move records, history and open work across with a reconciliation step that proves nothing was lost on the way.",
+    scope: ["Source records and quality inventoried", "Mapping and reconciliation rules defined", "Validation, rollback and ownership planned"],
+    outcome: "Reconciled data, a rehearsed cutover and a rollback path.",
+    cta: "Plan a migration"
   },
   {
     code: "04",
     title: "Support",
     intent: "support",
-    summary: "Triage an operational issue with the product, environment, impact and reproducible evidence in view.",
-    scope: ["Establish impact and affected workflow", "Collect safe diagnostic evidence", "Confirm ownership and the next response"],
-    cta: "Request support scoping"
+    summary: "Keep the system running with a named route for issues, a clear escalation path and upgrades that do not surprise the team.",
+    scope: ["Impact and affected workflow identified", "Diagnostics and environment captured once", "Owner and response window confirmed"],
+    outcome: "A named contact, an agreed response window and an upgrade path.",
+    cta: "Request support"
   }
 ] as const;
+
 const sequence = [
-  ["Understand", "Document the workflow, users, current tools and constraints."],
-  ["Define", "Separate confirmed requirements from assumptions and unknowns."],
-  ["Validate", "Identify the product evidence, data checks and acceptance criteria required."],
-  ["Decide", "Agree the next engagement, owner and scope before implementation starts."]
+  ["Discover", "Walk the workflow with the people who run it, and record the constraints that will shape the deployment."],
+  ["Define", "Write down the scope, the roles, the integrations and what a successful rollout looks like."],
+  ["Configure", "Set up the product, connect data, and test against the requirements already agreed."],
+  ["Validate", "Run acceptance checks with your team on real scenarios before anything goes live."],
+  ["Go live", "Cut over with a plan, a rollback path and support that is already in place."]
+] as const;
+
+const shapes = [
+  { title: "Licence", body: "Per user or per site, sized to the team that uses the product. Quoted per product, not as a platform-wide subscription." },
+  { title: "Implementation", body: "Fixed-scope configuration, migration and training. Quoted separately from the licence so the work is visible on its own line." },
+  { title: "Support", body: "A named route, an agreed response window and upgrades included or itemised — chosen per product and confirmed in writing." }
 ] as const;
 ---
 
@@ -53,21 +66,21 @@ const sequence = [
   <div class="services-hero__index" aria-hidden="true">S/04</div>
   <div class="shell services-hero__grid">
     <div>
-      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>Services / evaluation, implementation, migration and support</p>
-      <h1 id="services-title">Start with the evidence.<br><em>Then plan the work.</em></h1>
+      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>Services / product fit, implementation, migration and support</p>
+      <h1 id="services-title">From first demo<br><em>to live operation.</em></h1>
     </div>
     <div class="services-hero__copy">
-      <p>{route.description}</p>
-      <p>A useful engagement begins with the operating constraint, not a predetermined package. Scope, responsibilities and acceptance evidence come before delivery claims.</p>
-      <div class="button-row"><Button href="/contact/?intent=consultation" ctaId="request-conversation">Start a scoped conversation</Button><Button href="#services-engagements" variant="secondary">Review the engagement paths</Button></div>
+      <p>We scope the work around your workflow, agree what done looks like, and stay through rollout. One team from the first conversation to production support.</p>
+      <p>Most engagements start with a product question and end with a deployed system, a migrated dataset or a support route that answers inside an agreed window.</p>
+      <div class="button-row"><Button href="/contact/?intent=consultation" ctaId="request-conversation">Book a scoping call</Button><Button href="#services-engagements" variant="secondary">See engagement paths</Button></div>
     </div>
   </div>
-  <div class="shell services-hero__foot"><span>Workflow first</span><span>Evidence before commitment</span><span>Migration with reconciliation</span><span>No invented service levels</span></div>
+  <div class="shell services-hero__foot"><span>Workflow first</span><span>Named owner</span><span>Acceptance agreed up front</span><span>Support from day one</span></div>
 </section>
 
 <section class="services-engagements section" id="services-engagements" aria-labelledby="services-engagements-title">
   <div class="shell">
-    <div class="section-head"><div><p class="t-label">01 / Engagement paths</p><h2 id="services-engagements-title">Four ways to begin.</h2></div><p>Choose the path closest to the decision or operational problem in front of you. The initial enquiry records intent; it does not confirm an engagement.</p></div>
+    <div class="section-head"><div><p class="t-label">01 / Engagement paths</p><h2 id="services-engagements-title">Four ways to work with us.</h2></div><p>Start where the decision is. Each path has a defined outcome, a scope you approve and an owner on our side.</p></div>
     <ol class="services-engagement-grid">
       {engagements.map((engagement) => <li>
         <article>
@@ -75,6 +88,7 @@ const sequence = [
           <h3>{engagement.title}</h3>
           <p>{engagement.summary}</p>
           <ul>{engagement.scope.map((item) => <li>{item}</li>)}</ul>
+          <p class="services-outcome">{engagement.outcome}</p>
           <Button href={`/contact/?intent=${engagement.intent}`} variant="secondary" ctaId="request-conversation">{engagement.cta}</Button>
         </article>
       </li>)}
@@ -84,25 +98,47 @@ const sequence = [
 
 <section class="services-sequence section" aria-labelledby="services-sequence-title">
   <div class="shell services-sequence__grid">
-    <div><p class="t-label">02 / Working sequence</p><h2 id="services-sequence-title">Clarity before commitment.</h2><p>This sequence organises the conversation. It is not a fixed delivery plan, timeline or guarantee.</p></div>
+    <div><p class="t-label">02 / Working sequence</p><h2 id="services-sequence-title">Five steps to go live.</h2><p>The same sequence runs every engagement, so your team always knows what happens next and who owns it.</p></div>
     <ol>{sequence.map(([title, description], index) => <li><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{description}</p></div></li>)}</ol>
   </div>
 </section>
 
 <section class="services-boundary section" aria-labelledby="services-boundary-title">
   <div class="shell services-boundary__grid">
-    <div><p class="t-label">03 / Commercial and delivery boundary</p><h2 id="services-boundary-title">What is not being promised here.</h2></div>
-    <div class="prose"><p>No fixed price, delivery duration, service-level agreement, certification, staffing level or production outcome is advertised without an agreed scope and verified evidence.</p><p>Product demonstrations, implementation work, migration assessments and support triage are separate activities. An enquiry for one is not authorisation to begin another.</p><Button href="/contact/?intent=consultation" variant="secondary" ctaId="request-conversation">Ask for a scoped proposal</Button></div>
+    <div><p class="t-label">03 / Commercials</p><h2 id="services-boundary-title">Three lines on every quote.</h2><p class="services-boundary__lede">Licence, implementation and support are priced separately, so the number is easy to read and easy to defend.</p></div>
+    <div class="prose services-shapes">
+      {shapes.map((shape) => <div class="services-shape"><h3>{shape.title}</h3><p>{shape.body}</p></div>)}
+      <Button href="/contact/?intent=consultation" variant="secondary" ctaId="request-conversation">Request a scoped proposal</Button>
+    </div>
   </div>
 </section>
 
 <section class="services-brief section" aria-labelledby="services-brief-title">
   <div class="shell services-brief__grid">
-    <div class="services-brief__mark" aria-hidden="true"><span>ENGAGEMENT BRIEF</span><strong>04</strong><small>Understand · Define · Validate · Decide</small></div>
-    <div><p class="t-label">04 / Prepare the enquiry</p><h2 id="services-brief-title">Bring enough context for a useful first reply.</h2><ul><li>The product and workflow in question.</li><li>The current tools and deployment constraints.</li><li>The users, decision owners and operational impact.</li><li>The data, integration and acceptance questions that matter.</li></ul><p>Do not include passwords, access tokens, confidential records or personal data that is not needed for the enquiry.</p><Button href="/contact/?intent=consultation" ctaId="request-conversation">Prepare an enquiry</Button></div>
+    <div class="services-brief__mark" aria-hidden="true"><span>ENGAGEMENT BRIEF</span><strong>04</strong><small>Discover · Define · Configure · Validate · Go live</small></div>
+    <div><p class="t-label">04 / What to bring</p><h2 id="services-brief-title">Four details make the first call useful.</h2><ul><li>The workflow you need to change, and the product you are considering.</li><li>The tools it has to work with, and where it will be hosted.</li><li>The teams involved, who decides, and what happens if it slips.</li><li>The data volume, integrations and acceptance criteria you care about.</li></ul><p>That is enough to scope the work. Production data stays in your environment — we will never ask for it to open a conversation.</p><Button href="/contact/?intent=consultation" ctaId="request-conversation">Prepare an enquiry</Button></div>
   </div>
 </section>
 
 <section class="services-close" aria-labelledby="services-close-title">
-  <div class="shell services-close__grid"><div><p class="t-label">Next step</p><h2 id="services-close-title">Define the decision before the delivery.</h2></div><div><p>Tell us whether you need to evaluate, implement, migrate or support a product. We will confirm the right scope and evidence rather than assume a package.</p><Button href="/contact/?intent=consultation" ctaId="request-conversation">Start a conversation</Button></div></div>
+  <div class="shell services-close__grid"><div><p class="t-label">Next step</p><h2 id="services-close-title">Tell us what needs to change.</h2></div><div><p>Whether you need to choose a product, implement it, migrate to it or support it, the first call ends with a scope, an owner and a date.</p><div class="on-night"><Button href="/contact/?intent=consultation" ctaId="request-conversation">Start a conversation</Button></div></div></div>
 </section>
+
+<style>
+  .services-outcome {
+    margin: 0 0 0.2rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgb(13 27 46 / 12%);
+    color: var(--ink);
+    font-size: 0.9rem;
+    font-weight: 550;
+    line-height: 1.45;
+  }
+  .services-boundary__lede { max-width: 34ch; margin-top: 1rem; color: #4a5567; line-height: 1.55; }
+  .services-shapes { display: grid; gap: 0; border-top: 1px solid rgb(13 27 46 / 14%); }
+  .services-shape { display: grid; grid-template-columns: minmax(8rem, 0.5fr) minmax(0, 1.5fr); gap: 1.5rem; padding: 1.15rem 0; border-bottom: 1px solid rgb(13 27 46 / 14%); }
+  .services-shape h3 { margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); }
+  .services-shape p { margin: 0; color: #46536a; line-height: 1.6; }
+  .services-shapes :global(.button) { margin-top: 1.2rem; justify-self: start; }
+  @media (max-width: 720px) { .services-shape { grid-template-columns: 1fr; gap: 0.3rem; } }
+</style>
