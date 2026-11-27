@@ -49,7 +49,7 @@ const platformHrefs: Record<string, string> = {
     </nav>
   </div>
   <div class="shell learning-hero__ledger">
-    <span>{String(publicOriginCount).padStart(2, "0")} public origins</span><span>Direct product context</span><span>Open links, no account</span>
+    <span>{String(publicOriginCount).padStart(2, "0")} public origins</span><span>Direct product context</span><span>Free access, direct links</span>
   </div>
 </section>
 
@@ -57,7 +57,7 @@ const platformHrefs: Record<string, string> = {
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">Choose your direction</p><h2 id="paths-title">Start with the system you need to understand.</h2></div>
-      <p>Each path is its own public site. Reading is open; where progress is saved, the platform asks you to sign in.</p>
+      <p>Each path is its own public site, free to open and linked directly. Pick the one that matches the work and start in the browser.</p>
     </div>
     <ol class="learning-path-grid">
       {learningRoutes.map((route, index) => <li key={route.id}>
@@ -73,7 +73,7 @@ const platformHrefs: Record<string, string> = {
 
 <section class="section section--ruled learning-boundary" aria-labelledby="learning-boundary-title">
   <div class="shell learning-boundary__grid">
-    <div><p class="t-label">Direct links</p><h2 id="learning-boundary-title">Read first. Sign in only to save.</h2></div>
-    <div class="prose"><p>Each platform is a live site with its own material, and every published lesson is readable without an account. Where a platform records progress, practice scores or saved work, it asks you to sign in.</p><p>If you want a session run with your own contract, plan or process, talk to the studio and we will bring the platform to that conversation.</p><Button href={requestHref} variant="secondary">Talk to the studio</Button></div>
+    <div><p class="t-label">Direct links</p><h2 id="learning-boundary-title">Free to open. Linked directly.</h2></div>
+    <div class="prose"><p>Each platform is a live site with its own material, open to everyone from a direct link. No approval step sits between you and the first lesson — follow the link and read.</p><p>If you want a session run with your own contract, plan or process, talk to the studio and we will bring the platform to that conversation.</p><Button href={requestHref} variant="secondary">Talk to the studio</Button></div>
   </div>
 </section>

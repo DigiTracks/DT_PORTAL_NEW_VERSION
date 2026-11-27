@@ -20,7 +20,7 @@ const capabilities = [
   ["Saved work", "Local calculations and settings, with JSON backup and restore plus an in-memory fallback."]
 ] as const;
 const boundaries = [
-  ["Direct access", "Every published module is open in the browser. Where progress is saved, the platform asks you to sign in."],
+  ["Direct access", "Every published module, calculator and template is free to open from the direct link."],
   ["Credentials", "Results, badges and exam history stay local to the learner. Accreditation and external credentials are not part of this release."],
   ["Cross-device progress", "Progress saves on the device. Cloud sync across devices is on the roadmap."],
   ["AI and integrations", "The copilot retrieves from bundled knowledge and cites its sources, with no external model in the loop."],
@@ -86,5 +86,5 @@ const boundaries = [
 </section>
 
 <section class="academy-close" aria-labelledby="academy-close-title">
-  <div class="shell academy-close__grid"><div><p class="t-label">Learning access</p><h2 id="academy-close-title">Ask for the right kind of access.</h2></div><div><p>Tell us whether you need the public toolkit, guided learning or a scoped walkthrough. We will confirm what is available and send the link.</p><Button href={requestHref} ctaId="request-learning-access">Ask about ProcureSherpa Learning</Button></div></div>
+  <div class="shell academy-close__grid"><div><p class="t-label">Learning access</p><h2 id="academy-close-title">Open it, or ask for a walkthrough.</h2></div><div><p>Tell us whether you need the public toolkit, guided learning or a scoped walkthrough. We will confirm what is available and send the link.</p><Button href={requestHref} ctaId="request-learning-access">Ask about ProcureSherpa Learning</Button></div></div>
 </section>
