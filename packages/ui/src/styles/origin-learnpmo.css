@@ -1,21 +1,60 @@
+.pmo-guide,
+.pmo-method,
+.pmo-continue {
+  --p-bg: var(--paper);
+  --p-surface: var(--paper-bright);
+  --p-ink: var(--ink);
+  --p-muted: #705c54;
+  --p-border: color-mix(in srgb, var(--ink) 14%, var(--paper));
+  --p-border-strong: color-mix(in srgb, var(--ink) 28%, var(--paper));
+  --p-action: var(--signal-deep);
+  --p-action-ink: var(--paper-bright);
+  --p-focus: var(--signal-deep);
+  color: var(--ink);
+  color-scheme: light;
+}
+
 .pmo-method__grid {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: clamp(3rem, 8vw, 9rem);
 }
+
 body.page-learnpmo {
   background: var(--paper-bright);
 }
 
 .pmo-guide {
-  background: var(--paper);
+  position: relative;
+  overflow: hidden;
+  border-top: 0.45rem solid #e8b84b;
+  background:
+    linear-gradient(90deg, rgb(103 56 45 / 5%) 1px, transparent 1px),
+    linear-gradient(rgb(103 56 45 / 5%) 1px, transparent 1px),
+    var(--paper);
+  background-size: 4rem 4rem;
+}
+
+.pmo-guide::before {
+  position: absolute;
+  top: 12%;
+  right: 5%;
+  width: 10rem;
+  height: 24rem;
+  background: #86b7d4;
+  content: "";
+  opacity: 0.12;
+  pointer-events: none;
+  transform: rotate(12deg);
 }
 
 .pmo-guide__hero {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.42fr);
   align-items: center;
-  min-height: calc(100svh - 8.5rem);
+  min-height: calc(100svh - 9.5rem);
   gap: 4rem;
   padding-block: 4rem;
 }
@@ -26,6 +65,7 @@ body.page-learnpmo {
 }
 
 .pmo-guide h1 em {
+  background: linear-gradient(transparent 72%, #e8b84b 72%, #e8b84b 94%, transparent 94%);
   color: var(--signal-deep);
 }
 
@@ -36,40 +76,65 @@ body.page-learnpmo {
 }
 
 .pmo-guide__plate {
+  position: relative;
+  z-index: 1;
   display: flex;
   aspect-ratio: 0.76;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 1rem;
   padding: 1.4rem;
-  border: 1px solid var(--p-border-strong);
-  background: var(--night);
-  color: var(--paper-bright);
-  box-shadow: 1.5rem 1.5rem 0 var(--paper);
+  border: 1px solid var(--ink);
+  background: #b9d8e7;
+  color: var(--ink);
+  box-shadow: 1.2rem 1.2rem 0 #e8b84b;
+  isolation: isolate;
+}
+
+.pmo-guide__plate::before,
+.pmo-guide__plate::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border: 1px solid var(--ink);
+  content: "";
+}
+
+.pmo-guide__plate::before {
+  background: #efb29c;
+  transform: translate(-0.7rem, -0.55rem) rotate(-4deg);
+}
+
+.pmo-guide__plate::after {
+  background: #f6df9d;
+  transform: translate(0.65rem, -0.35rem) rotate(3deg);
 }
 
 .pmo-guide__plate span,
 .pmo-guide__plate small {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   letter-spacing: 0.07em;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
 .pmo-guide__plate strong {
-  color: var(--signal);
+  color: var(--signal-deep);
   font-family: var(--font-display);
   font-size: clamp(4rem, 8vw, 8rem);
-  font-weight: 500;
+  font-weight: 550;
   letter-spacing: -0.08em;
   line-height: 0.9;
   writing-mode: vertical-rl;
 }
 
 .pmo-guide__plate small {
-  color: var(--steel);
+  color: #5b463e;
 }
 
 .pmo-method {
+  border-top: 1px solid var(--p-border-strong);
   background: var(--paper-bright);
 }
 
@@ -84,15 +149,21 @@ body.page-learnpmo {
   display: grid;
   grid-template-columns: 3rem 1fr;
   gap: 0.5rem 1.5rem;
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--p-border-strong);
+  margin-bottom: 0.8rem;
+  padding: 2rem 1.4rem;
+  border: 1px solid var(--p-border-strong);
+  border-bottom: 0;
 }
+
+.pmo-method li:nth-child(1) { background: #f8e7b9; }
+.pmo-method li:nth-child(2) { background: #f5dcd3; }
+.pmo-method li:nth-child(3) { background: #deebf1; border-bottom: 1px solid var(--p-border-strong); }
 
 .pmo-method li > span {
   grid-row: 1 / 3;
   color: var(--signal-deep);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 
 .pmo-method li h3 {
@@ -105,7 +176,8 @@ body.page-learnpmo {
 }
 
 .pmo-continue {
-  background: var(--paper);
+  border-top: 1px solid var(--p-border-strong);
+  background: #deebf1;
 }
 
 .m-enter .pmo-guide__copy {
@@ -128,7 +200,9 @@ body.page-learnpmo {
   }
 
   .pmo-guide__plate {
-    width: min(100%, 24rem);
+    width: min(100%, 22rem);
+    margin-right: 0.75rem;
+    box-shadow: 0.8rem 0.8rem 0 #e8b84b;
   }
 }
 

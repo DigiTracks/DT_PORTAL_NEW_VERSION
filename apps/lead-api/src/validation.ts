@@ -1,5 +1,5 @@
 import { isEmail } from "./config";
-import { isKnownProductId, isPublicPage } from "./contracts";
+import { isDemoProductId, isKnownProductId, isPublicPage } from "./contracts";
 
 export const LEAD_INTENTS = [
   "product-enquiry",
@@ -117,7 +117,7 @@ export function validateLeadPayload(payload: unknown, sourceOrigin: string, allo
   ) {
     fields.add("productId");
   }
-  if (intent === "demo" && rawProductId === null) fields.add("productId");
+  if (intent === "demo" && (typeof rawProductId !== "string" || !isDemoProductId(rawProductId))) fields.add("productId");
 
   const page = pageContext(input.page, sourceOrigin, allowedOrigins);
   if (!page) fields.add("page");

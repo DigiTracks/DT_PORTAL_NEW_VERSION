@@ -1,5 +1,5 @@
-import { useEffect, useId, useLayoutEffect, useRef, useState, type FormEvent } from "react";
-import { productRegistry } from "@digitracks/catalog";
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type FormEvent } from "react";
+import { resolveLeadEndpoint } from "../lib/analytics";
 
 declare global {
   interface ImportMetaEnv {
@@ -24,7 +24,14 @@ export const LEAD_INTENTS = [
 
 export type LeadIntent = (typeof LEAD_INTENTS)[number];
 
+export interface LeadProductOption {
+  id: string;
+  name: string;
+  demoEligible: boolean;
+}
+
 export interface LeadFormProps {
+  products: readonly LeadProductOption[];
   initialIntent?: LeadIntent;
   initialProductId?: string | null;
 }
@@ -79,8 +86,6 @@ interface TurnstileApi {
 type TurnstileWindow = Window & { turnstile?: TurnstileApi };
 
 const TURNSTILE_SCRIPT_URL = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
-const publicProducts = productRegistry.filter((product) => product.availability !== "internal" && product.availability !== "retired");
-const publicProductIds = new Set(publicProducts.map((product) => product.id));
 const visibleFieldOrder: readonly VisibleField[] = ["intent", "name", "email", "organization", "productId", "message", "consent"];
 let turnstileLoader: Promise<TurnstileApi> | undefined;
 
@@ -166,7 +171,7 @@ function loadTurnstile(): Promise<TurnstileApi> {
   return turnstileLoader;
 }
 
-function validateFields(fields: LeadFields): FieldErrors {
+function validateFields(fields: LeadFields, demoProductIds: ReadonlySet<string>): FieldErrors {
   const errors: FieldErrors = {};
   if (!isLeadIntent(fields.intent)) errors.intent = "Choose a valid enquiry type.";
   if (!fields.name.trim()) errors.name = "Enter your name.";
@@ -174,7 +179,7 @@ function validateFields(fields: LeadFields): FieldErrors {
   if (!fields.email.trim()) errors.email = "Enter your email address.";
   else if (fields.email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/u.test(fields.email.trim())) errors.email = "Enter a valid email address.";
   if (fields.organization.trim().length > 160) errors.organization = "Organization must be 160 characters or fewer.";
-  if (fields.intent === "demo" && !fields.productId) errors.productId = "Choose a catalogue product for the demo request.";
+  if (fields.intent === "demo" && !demoProductIds.has(fields.productId)) errors.productId = "Choose a demo-eligible catalogue product for the demo request.";
   if (!fields.message.trim()) errors.message = "Tell us what you need.";
   else if (fields.message.trim().length > 4_000) errors.message = "Message must be 4,000 characters or fewer.";
   if (!fields.consent) errors.consent = "Consent is required before an enquiry can be submitted.";
@@ -196,8 +201,10 @@ async function readResponseJson(response: Response): Promise<Record<string, unkn
   }
 }
 
-export default function LeadForm({ initialIntent = "consultation", initialProductId = null }: LeadFormProps) {
+export default function LeadForm({ products, initialIntent = "consultation", initialProductId = null }: LeadFormProps) {
   const formId = useId();
+  const publicProductIds = useMemo(() => new Set(products.map((product) => product.id)), [products]);
+  const demoProductIds = useMemo(() => new Set(products.filter((product) => product.demoEligible).map((product) => product.id)), [products]);
   const formRef = useRef<HTMLFormElement>(null);
   const turnstileContainerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<string | undefined>(undefined);
@@ -221,14 +228,18 @@ export default function LeadForm({ initialIntent = "consultation", initialProduc
   const [challengeNotice, setChallengeNotice] = useState("");
   const [challengeAttempt, setChallengeAttempt] = useState(0);
   const [urlStateReady, setUrlStateReady] = useState(false);
+  const [endpoint, setEndpoint] = useState<string>();
 
-  const endpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT?.trim();
+  const configuredEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT?.trim();
   const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY?.trim();
-  const configured = Boolean(endpoint && siteKey);
+  const configured = Boolean(configuredEndpoint && siteKey);
+  const deliveryConfigured = Boolean(endpoint && siteKey);
+  const localDeliveryBlocked = Boolean(configuredEndpoint && urlStateReady && !endpoint);
   const pending = phase === "submitting";
-  const canSubmit = configured && urlStateReady && challengeStatus === "ready" && Boolean(turnstileToken) && !pending && phase !== "received";
+  const canSubmit = deliveryConfigured && urlStateReady && challengeStatus === "ready" && Boolean(turnstileToken) && !pending && phase !== "received";
   const selectedIntentLabel = intentOptions.find((option) => option.value === fields.intent)?.label ?? "General consultation";
-  const selectedProductName = publicProducts.find((product) => product.id === fields.productId)?.name;
+  const selectedProductName = products.find((product) => product.id === fields.productId)?.name;
+  const demoSelectionBlocked = Boolean(fields.productId && !demoProductIds.has(fields.productId));
   const emailFallbackHref = `mailto:contact@digitracks.net?subject=${encodeURIComponent(`Digi Tracks — ${selectedIntentLabel}`)}&body=${encodeURIComponent([
     `Enquiry type: ${selectedIntentLabel}`,
     selectedProductName ? `Product: ${selectedProductName}` : "",
@@ -239,6 +250,7 @@ export default function LeadForm({ initialIntent = "consultation", initialProduc
   ].filter(Boolean).join("\n"))}`;
 
   useLayoutEffect(() => {
+    setEndpoint(resolveLeadEndpoint(configuredEndpoint, window.location.hostname));
     const params = new URLSearchParams(window.location.search);
     const requestedIntent = params.get("intent");
     const requestedProductId = params.get("product");
@@ -246,13 +258,14 @@ export default function LeadForm({ initialIntent = "consultation", initialProduc
       const next = { ...current };
       if (isLeadIntent(requestedIntent)) next.intent = requestedIntent;
       if (requestedProductId && publicProductIds.has(requestedProductId)) next.productId = requestedProductId;
+      if (next.intent === "demo" && next.productId && !demoProductIds.has(next.productId)) next.intent = "product-enquiry";
       return next;
     });
     setUrlStateReady(true);
-  }, []);
+  }, [configuredEndpoint, demoProductIds, publicProductIds]);
 
   useEffect(() => {
-    if (!configured || !siteKey) return;
+    if (!deliveryConfigured || !endpoint || !siteKey) return;
     let active = true;
     widgetIdRef.current = undefined;
     setTurnstileToken("");
@@ -304,13 +317,20 @@ export default function LeadForm({ initialIntent = "consultation", initialProduc
         }
       }
     };
-  }, [challengeAttempt, configured, siteKey]);
+  }, [challengeAttempt, deliveryConfigured, endpoint, siteKey]);
 
   function updateField<K extends EditableField>(field: K, value: LeadFields[K]) {
-    setFields((current) => ({ ...current, [field]: value }));
+    setFields((current) => {
+      if (field === "intent" && value === "demo" && current.productId && !demoProductIds.has(current.productId)) return current;
+      if (field === "productId" && current.intent === "demo" && typeof value === "string" && value && !demoProductIds.has(value)) {
+        return { ...current, productId: value, intent: "product-enquiry" };
+      }
+      return { ...current, [field]: value };
+    });
     setErrors((current) => {
       const next = { ...current };
       if (field !== "honeypot") delete next[field as VisibleField];
+      if (field === "productId") delete next.intent;
       return next;
     });
   }
@@ -364,13 +384,13 @@ export default function LeadForm({ initialIntent = "consultation", initialProduc
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!configured || !endpoint || !siteKey || pendingRef.current || phase === "received") return;
+    if (!deliveryConfigured || !endpoint || !siteKey || pendingRef.current || phase === "received") return;
 
     const submission: LeadFields = {
       ...fields,
       honeypot: String(new FormData(event.currentTarget).get("honeypot") ?? ""),
     };
-    const nextErrors = validateFields(submission);
+    const nextErrors = validateFields(submission, demoProductIds);
     if (Object.keys(nextErrors).length > 0) {
       setErrors(nextErrors);
       setErrorMessage("Please correct the highlighted fields and try again.");
@@ -499,12 +519,14 @@ export default function LeadForm({ initialIntent = "consultation", initialProduc
     }
   }
 
-  if (!configured) {
+  if (!configured || (urlStateReady && !deliveryConfigured)) {
     return (
       <div className="lead-form lead-form--unconfigured">
         <p className="t-label">Enquiry delivery</p>
         <div role="status" aria-live="polite" aria-atomic="true">
-          <p className="status">Delivery not configured. The public enquiry endpoint and Turnstile site key are required before this form can accept details.</p>
+          <p className="status">{localDeliveryBlocked
+            ? "Delivery is disabled for this local preview. Enquiry submission requires a loopback API endpoint; production delivery is never contacted from localhost."
+            : "Delivery not configured. The public enquiry endpoint and Turnstile site key are required before this form can accept details."}</p>
           <p className="lead-form__privacy">No enquiry details are collected in this state.</p>
         </div>
         <a className="button button--primary" href={emailFallbackHref} data-cta="request-conversation">Continue by email</a>
@@ -562,7 +584,7 @@ export default function LeadForm({ initialIntent = "consultation", initialProduc
             aria-invalid={errors.intent ? true : undefined}
             aria-describedby={describedBy("intent")}
           >
-            {intentOptions.map((option) => <option value={option.value} key={option.value}>{option.label}</option>)}
+            {intentOptions.map((option) => <option value={option.value} key={option.value} disabled={option.value === "demo" && demoSelectionBlocked}>{option.label}</option>)}
           </select>
           {inlineError("intent")}
         </div>
@@ -636,9 +658,9 @@ export default function LeadForm({ initialIntent = "consultation", initialProduc
             aria-describedby={describedBy("productId", `${formId}-product-hint`)}
           >
             <option value="">{fields.intent === "demo" ? "Select a catalogue product" : "No specific product"}</option>
-            {publicProducts.map((product) => <option value={product.id} key={product.id}>{product.name}</option>)}
+            {products.map((product) => <option value={product.id} key={product.id} disabled={fields.intent === "demo" && !product.demoEligible}>{product.name}</option>)}
           </select>
-          <p className="lead-form__hint" id={`${formId}-product-hint`}>Demo requests require a catalogue product. Other enquiries may leave this blank.</p>
+          <p className="lead-form__hint" id={`${formId}-product-hint`}>Demo requests require a demo-eligible catalogue product. Other enquiries may leave this blank.</p>
           {inlineError("productId")}
         </div>
 

@@ -1,14 +1,14 @@
 .learning-boundary {
-  --p-bg: var(--night);
-  --p-surface: var(--night-raised);
-  --p-ink: var(--paper-bright);
-  --p-muted: var(--steel);
-  --p-border: rgb(252 251 248 / 13%);
-  --p-border-strong: rgb(252 251 248 / 24%);
-  --p-action: var(--signal);
-  --p-action-ink: var(--night);
-  --p-focus: var(--signal);
-  color: var(--paper-bright);
+  --p-bg: var(--close-bg);
+  --p-surface: var(--close-bg);
+  --p-ink: var(--close-ink);
+  --p-muted: var(--close-muted);
+  --p-border: var(--close-border);
+  --p-border-strong: color-mix(in srgb, var(--close-ink) 26%, var(--close-bg));
+  --p-action: var(--close-action);
+  --p-action-ink: var(--close-action-ink);
+  --p-focus: var(--close-action);
+  color: var(--close-ink);
   color-scheme: dark;
 }
 body.page-learning-home,
@@ -20,11 +20,29 @@ body.page-learning-entry {
   position: relative;
   overflow: hidden;
   padding: clamp(2.5rem, 4vw, 4rem) 0 0;
-  background: var(--paper);
+  background:
+    linear-gradient(90deg, rgb(20 33 63 / 5%) 1px, transparent 1px),
+    linear-gradient(rgb(20 33 63 / 5%) 1px, transparent 1px),
+    var(--paper);
+  background-size: 4.5rem 4.5rem;
   color: var(--ink);
 }
 
+.learning-hero::after {
+  position: absolute;
+  top: 9%;
+  right: -6rem;
+  width: 18rem;
+  aspect-ratio: 1;
+  border: 3rem solid rgb(239 118 88 / 13%);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
 .learning-hero__grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(24rem, 0.95fr);
   align-items: center;
@@ -56,67 +74,111 @@ body.page-learning-entry {
 
 .learning-orbit {
   position: relative;
-  width: min(100%, 39rem, calc(100svh - 18rem));
-  aspect-ratio: 1;
+  display: grid;
+  width: min(100%, 40rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: center;
+  gap: 1rem;
   justify-self: end;
-  border-radius: 50%;
-  background: var(--night);
-  box-shadow: 0 2.5rem 7rem rgb(9 15 23 / 16%);
+  padding: 2.2rem 1.4rem 1.4rem;
+  border: 1px solid var(--ink);
+  background: rgb(255 250 240 / 58%);
+  box-shadow: 1.2rem 1.2rem 0 #f3cf65;
 }
 
-.learning-orbit__ring {
+.learning-orbit__rule {
   position: absolute;
-  inset: 12%;
-  border: 1px solid rgb(108 229 232 / 24%);
-  border-radius: 50%;
-}
-
-.learning-orbit__ring--two {
-  inset: 26%;
-  border-color: rgb(252 251 248 / 18%);
-}
-
-.learning-orbit__ring--three {
-  inset: 39%;
-  border-color: rgb(108 229 232 / 45%);
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent 49.8%, rgb(20 33 63 / 12%) 50%, transparent 50.2%),
+    linear-gradient(transparent 49.8%, rgb(20 33 63 / 12%) 50%, transparent 50.2%);
+  pointer-events: none;
 }
 
 .learning-orbit__core {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: grid;
-  width: 4.5rem;
-  aspect-ratio: 1;
-  place-items: center;
-  border: 1px solid var(--signal);
-  color: var(--signal);
-  font-family: var(--font-mono);
-  font-size: 1.1rem;
-  transform: translate(-50%, -50%) rotate(45deg);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  justify-self: center;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--ink);
+  background: #244bc5;
+  color: #fffaf0;
+  transform: rotate(-2deg);
 }
 
-.learning-orbit a {
-  position: absolute;
-  top: calc(50% + sin(var(--orbit-index) * 60deg) * 38%);
-  left: calc(50% + cos(var(--orbit-index) * 60deg) * 38%);
-  display: grid;
-  width: 2.8rem;
-  aspect-ratio: 1;
-  place-items: center;
-  border: 1px solid rgb(252 251 248 / 40%);
-  border-radius: 50%;
-  background: var(--night);
-  color: var(--paper-bright);
+.learning-orbit__core small {
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.learning-orbit__core strong {
+  font-size: 0.9rem;
+  font-weight: 550;
+  line-height: 1.1;
+}
+
+.learning-orbit__card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-width: 0;
+  min-height: 11rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.7rem;
+  padding: 1.1rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
   text-decoration: none;
-  transform: translate(-50%, -50%);
+  transition: transform 180ms var(--ease-out), box-shadow 180ms ease;
 }
 
-.learning-orbit a:nth-of-type(3n) {
-  border-color: var(--signal);
-  color: var(--signal);
+.learning-orbit__card > span,
+.learning-orbit__card small {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.learning-orbit__card strong {
+  max-width: 12ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  font-weight: 550;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.learning-orbit__card--1 { background: #f3cf65; transform: rotate(-1.5deg); }
+.learning-orbit__card--2 { background: #cfe5d7; transform: rotate(1deg); }
+.learning-orbit__card--3 { background: #f4b29c; transform: rotate(1deg); }
+.learning-orbit__card--4 { background: #244bc5; color: #fffaf0; transform: rotate(-1.5deg); }
+
+.learning-orbit__card:focus-visible {
+  outline: 3px solid #d95c43;
+  outline-offset: 4px;
+  transform: translateY(-2px) rotate(0deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .learning-orbit__card:hover {
+    z-index: 3;
+    box-shadow: 0.55rem 0.55rem 0 rgb(20 33 63 / 16%);
+    transform: translateY(-4px) rotate(0deg);
+  }
+
+  .learning-orbit__card:hover small {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
 }
 
 .learning-hero__ledger {
@@ -127,7 +189,7 @@ body.page-learning-entry {
   padding-block: 1.2rem;
   border-top: 1px solid var(--p-border-strong);
   font-family: var(--font-mono);
-  font-size: 0.67rem;
+  font-size: 0.8rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -137,6 +199,7 @@ body.page-learning-entry {
 }
 
 .learning-path-grid {
+  --p-muted: #586570;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 4rem 0 0;
@@ -162,12 +225,18 @@ body.page-learning-entry {
   gap: 1rem;
   padding: 2rem;
   text-decoration: none;
+  transition: background-color 180ms ease;
 }
+
+.learning-path-grid li:nth-child(1) a { background: #fff4cf; }
+.learning-path-grid li:nth-child(2) a { background: #e5f0e7; }
+.learning-path-grid li:nth-child(3) a { background: #fbe4da; }
+.learning-path-grid li:nth-child(4) a { background: #e2e9ff; }
 
 .learning-path-grid__number,
 .learning-path-grid__arrow {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 
 .learning-path-grid__number {
@@ -188,8 +257,8 @@ body.page-learning-entry {
 }
 
 .learning-boundary {
-  background: var(--night);
-  color: var(--paper-bright);
+  background: var(--close-bg);
+  color: var(--close-ink);
 }
 
 .learning-boundary__grid {
@@ -199,7 +268,7 @@ body.page-learning-entry {
 }
 
 .learning-boundary .prose {
-  color: var(--steel);
+  color: var(--close-muted);
 }
 
 .learning-boundary .button {
@@ -243,7 +312,7 @@ body.page-learning-entry {
 .learning-entry__stamp span,
 .learning-entry__stamp small {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
 }
 
@@ -317,7 +386,7 @@ body.page-learning-entry {
   margin-top: 1.2rem;
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   line-height: 1.6;
 }
 
@@ -342,7 +411,7 @@ body.page-learning-entry {
   border-bottom: 1px solid var(--p-border);
   color: var(--steel);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
 }
 
@@ -374,7 +443,7 @@ body.page-learning-entry {
 .academy-instrument__foot {
   color: var(--steel);
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -416,7 +485,7 @@ body.page-learning-entry {
   border-top: 1px solid var(--p-border);
   color: var(--steel);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
 }
 
 .procurement-learning__ledger {
@@ -427,7 +496,7 @@ body.page-learning-entry {
   border-block: 1px solid var(--p-border);
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -460,7 +529,7 @@ body.page-learning-entry {
 .academy-capability-grid li > span {
   color: var(--signal-deep);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
 }
 
 .academy-capability-grid h3 {
@@ -535,7 +604,7 @@ body.page-learning-entry {
 
 .academy-boundary dt {
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -577,7 +646,7 @@ body.page-learning-entry {
 .academy-connections__grid a > small {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -675,7 +744,7 @@ body.page-learning-entry {
   .academy-instrument__head {
     grid-template-columns: 36px minmax(0, 1fr);
     padding-inline: 0.75rem;
-    font-size: 0.56rem;
+    font-size: 0.8rem;
   }
 
   .academy-instrument__head .product-mark {
@@ -704,13 +773,13 @@ body.page-learning-entry {
 
   .academy-instrument__foot {
     padding-inline: 0.75rem;
-    font-size: 0.54rem;
+    font-size: 0.8rem;
   }
 
   .procurement-learning__ledger {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .academy-capability-grid,
@@ -819,6 +888,23 @@ body.page-learning-entry {
   .learning-hero h1,
 .learning-entry h1 {
     font-size: clamp(3rem, 13vw, 4.8rem);
+  }
+
+  .learning-orbit {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1.5rem 1rem 1rem;
+    box-shadow: 0.65rem 0.65rem 0 #f3cf65;
+  }
+
+  .learning-orbit__core {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .learning-orbit__card {
+    min-height: 8.5rem;
   }
 
   .learning-path-grid {

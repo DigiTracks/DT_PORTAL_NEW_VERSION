@@ -123,6 +123,35 @@ async function openConfiguredForm(page: Page) {
   await expect(page.getByRole("button", { name: "Request product demo" })).toBeEnabled();
 }
 
+test("absolute portal links stay on the active loopback preview port", async ({ page }) => {
+  const productionRequests: string[] = [];
+  page.on("request", (request) => {
+    if (/^https?:\/\/(?:digitracks\.net|learn\.digitracks\.net|sourcecraft\.digitracks\.net|procuresherpa\.digitracks\.net|learnpmo\.digitracks\.net|hcmfusion\.digitracks\.net)(?::\d+)?(?:\/|$)/.test(request.url())) {
+      productionRequests.push(request.url());
+    }
+  });
+  await page.route(/^https?:\/\/(?:digitracks\.net|learn\.digitracks\.net|sourcecraft\.digitracks\.net|procuresherpa\.digitracks\.net|learnpmo\.digitracks\.net|hcmfusion\.digitracks\.net)(?::\d+)?(?:\/|$)/, (route) => route.abort());
+  await page.goto("/products/unify/");
+  await expect(page.locator(".site-header .brand")).toHaveAttribute("href", "http://127.0.0.1:4331/");
+  expect(productionRequests).toEqual([]);
+});
+
+test("loopback previews refuse production delivery and bot verification", async ({ page }) => {
+  test.skip(process.env.PLAYWRIGHT_UNSAFE_DELIVERY !== "1", "Run by the dedicated unsafe-delivery verification command.");
+  const externalRequests: string[] = [];
+  const externalPattern = /^https?:\/\/(?:digitracks\.net|challenges\.cloudflare\.com)(?:\/|$)/;
+  page.on("request", (request) => {
+    if (externalPattern.test(request.url())) externalRequests.push(request.url());
+  });
+  await page.route(externalPattern, (route) => route.abort("blockedbyclient"));
+  await page.goto("/contact/?intent=consultation");
+  await expect(page.getByText("Delivery is disabled for this local preview.", { exact: false })).toBeVisible();
+  await expect(page.locator("[data-lead-form]")).toHaveCount(0);
+  await expect(page.locator('script[data-digitracks-turnstile="true"]')).toHaveCount(0);
+  expect(externalRequests).toEqual([]);
+  await expectAccessible(page, "blocked production delivery configuration");
+});
+
 test("product CTA carries intent and catalogue product into the shared form", async ({ page }) => {
   const analytics = await captureAnalytics(page);
   await installTurnstileStub(page);
@@ -144,6 +173,47 @@ test("product CTA carries intent and catalogue product into the shared form", as
   const renderCalls = await page.evaluate(() => window.__turnstileCalls?.filter((call) => call.type === "render"));
   expect(renderCalls).toEqual([{ type: "render", sitekey: siteKey, widgetId: "widget-1" }]);
   await expectAccessible(page, "configured form with product context");
+});
+
+test("a manipulated request-only demo URL becomes a product enquiry and submits no demo payload", async ({ page }) => {
+  const getCaptured = await captureRequest(page, {
+    status: 202,
+    body: { status: "received", receiptId: "receipt-interest-001" }
+  });
+  const analytics = await captureAnalytics(page);
+  await installTurnstileStub(page);
+  await page.goto("/contact/?intent=demo&product=mindone");
+  await expect(page.getByLabel("What do you need?")).toHaveValue("product-enquiry");
+  await expect(page.getByLabel("Product", { exact: false })).toHaveValue("mindone");
+  await expect(page.getByRole("button", { name: "Send enquiry" })).toBeEnabled();
+  await fillValidEnquiry(page);
+  await page.getByLabel("How can we help?").fill("We want to register interest in MIND ONE Basic.");
+  await page.getByRole("button", { name: "Send enquiry" }).click();
+  await expect(page.getByRole("status")).toContainText("Request received; email/CRM delivery is pending");
+  expect(getCaptured()?.body).toMatchObject({ intent: "product-enquiry", productId: "mindone" });
+  await expect.poll(() => analytics.payloads).toEqual([
+    { event: "lead_start", intent: "product-enquiry", productId: "mindone" },
+    { event: "lead_submit", intent: "product-enquiry", productId: "mindone" }
+  ]);
+});
+
+test("manual form changes cannot pair demo intent with an ineligible product", async ({ page }) => {
+  await installTurnstileStub(page);
+  await page.goto("/contact/?intent=product-enquiry&product=mindone");
+  const intent = page.getByLabel("What do you need?");
+  const product = page.getByLabel("Product", { exact: false });
+  await expect(intent.locator('option[value="demo"]')).toBeDisabled();
+  await product.selectOption("unify");
+  await expect(intent.locator('option[value="demo"]')).toBeEnabled();
+  await intent.selectOption("demo");
+  await expect(intent).toHaveValue("demo");
+  await expect(product.locator('option[value="mindone"]')).toBeDisabled();
+  await product.evaluate((select) => {
+    (select as HTMLSelectElement).value = "mindone";
+    select.dispatchEvent(new Event("change", { bubbles: true }));
+  });
+  await expect(product).toHaveValue("mindone");
+  await expect(intent).toHaveValue("product-enquiry");
 });
 
 test("valid enquiry sends a fixed payload and confirms durable receipt without claiming delivery or access", async ({ page }) => {
@@ -206,6 +276,42 @@ test("valid enquiry sends a fixed payload and confirms durable receipt without c
   expect(consoleErrors).toEqual([]);
   const removed = await page.evaluate(() => window.__turnstileCalls?.filter((call) => call.type === "remove"));
   expect(removed).toEqual([{ type: "remove", widgetId: "widget-1" }]);
+});
+
+test("a consultation enquiry submits without a catalogue product", async ({ page }) => {
+  const getCaptured = await captureRequest(page, {
+    status: 202,
+    body: { status: "received", receiptId: "receipt-consultation-001" }
+  });
+  const analytics = await captureAnalytics(page);
+  await installTurnstileStub(page);
+  const originalUrl = "/contact/?intent=consultation&origin=learnpmo&route=%2Fplan%2F";
+  await page.goto(originalUrl);
+  await expect(page.getByLabel("What do you need?")).toHaveValue("consultation");
+  await expect(page.getByLabel("Product", { exact: false })).toHaveValue("");
+  await expect(page.getByLabel("Product", { exact: false })).not.toHaveAttribute("required", "");
+  await expect(page.getByRole("button", { name: "Send enquiry" })).toBeEnabled();
+  await fillValidEnquiry(page);
+  await expect.poll(() => analytics.payloads).toEqual([
+    { event: "lead_start", intent: "consultation" }
+  ]);
+  await page.getByRole("button", { name: "Send enquiry" }).click();
+
+  const confirmation = page.getByRole("status").filter({ hasText: "Request received; email/CRM delivery is pending" });
+  await expect(confirmation).toBeVisible();
+  await expect(confirmation).toContainText("Receipt ID: receipt-consultation-001");
+  await expectAccessible(page, "consultation receipt confirmation");
+  const captured = getCaptured();
+  expect(captured).toBeDefined();
+  expect(captured!.body).toMatchObject({
+    intent: "consultation",
+    productId: null,
+    page: new URL(originalUrl, page.url()).toString()
+  });
+  await expect.poll(() => analytics.payloads).toEqual([
+    { event: "lead_start", intent: "consultation" },
+    { event: "lead_submit", intent: "consultation" }
+  ]);
 });
 
 test("analytics transport failures do not change enquiry delivery or confirmation", async ({ page }) => {

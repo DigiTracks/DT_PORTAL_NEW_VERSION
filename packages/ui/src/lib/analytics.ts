@@ -62,15 +62,52 @@ export function buildBrowserEvent(event: unknown, context: BrowserEventContext =
   };
 }
 
-function configuredEndpoint(): string | undefined {
-  const configured = import.meta.env.PUBLIC_LEAD_ENDPOINT?.trim();
-  if (!configured) return undefined;
+export function isLoopbackHostname(hostname: string): boolean {
+  let host = hostname.trim().toLowerCase();
+  if (host.startsWith("[") && host.endsWith("]")) host = host.slice(1, -1);
+  host = host.replace(/\.$/, "");
+  if (host === "localhost" || host === "::1") return true;
+  if (/^127(?:\.\d{1,3}){3}$/.test(host)) {
+    return host.split(".").slice(1).every((octet) => Number(octet) <= 255);
+  }
+  if (!host.includes(":")) return false;
+
   try {
-    const endpoint = new URL("/api/events", configured);
-    const loopback = endpoint.hostname === "localhost" || endpoint.hostname === "127.0.0.1" || endpoint.hostname === "[::1]";
+    const canonical = new URL(`http://[${host}]/`).hostname.slice(1, -1);
+    if (canonical === "::1") return true;
+    const mapped = /^::ffff:([0-9a-f]{1,4}):([0-9a-f]{1,4})$/.exec(canonical);
+    if (!mapped) return false;
+    const high = Number.parseInt(mapped[1], 16);
+    return high >= 0x7f00 && high <= 0x7fff;
+  } catch {
+    return false;
+  }
+}
+
+export function resolveLeadEndpoint(configured: string | undefined, pageHostname: string): string | undefined {
+  const value = configured?.trim();
+  if (!value) return undefined;
+
+  const pageIsLoopback = isLoopbackHostname(pageHostname);
+
+  try {
+    const endpoint = new URL(value);
+    const endpointIsLoopback = isLoopbackHostname(endpoint.hostname);
     if (endpoint.username || endpoint.password) return undefined;
-    if (endpoint.protocol !== "https:" && !(endpoint.protocol === "http:" && loopback)) return undefined;
+    if (pageIsLoopback && !endpointIsLoopback) return undefined;
+    if (!pageIsLoopback && (endpointIsLoopback || endpoint.protocol !== "https:")) return undefined;
+    if (endpoint.protocol !== "https:" && !(pageIsLoopback && endpoint.protocol === "http:")) return undefined;
     return endpoint.toString();
+  } catch {
+    return undefined;
+  }
+}
+
+function configuredEndpoint(): string | undefined {
+  const endpoint = resolveLeadEndpoint(import.meta.env.PUBLIC_LEAD_ENDPOINT, window.location.hostname);
+  if (!endpoint) return undefined;
+  try {
+    return new URL("/api/events", endpoint).toString();
   } catch {
     return undefined;
   }

@@ -1,7 +1,18 @@
+import crypto from "node:crypto";
+import fs from "node:fs";
 import { describe, expect, it } from "vitest";
+import {
+  generatedAssetRegistry,
+  sourceAssetRegistry,
+  validateAssetRegistry
+} from "../../packages/brand/src/assets.ts";
 import { socialCardPath, socialCardUrl } from "../../packages/seo/src/social.ts";
 
 const portal = "https://digitracks.net";
+const inventory = JSON.parse(
+  fs.readFileSync(new URL("../../inventories/social-cards.json", import.meta.url), "utf8")
+);
+const sha256 = (value) => crypto.createHash("sha256").update(value).digest("hex");
 
 describe("social cards", () => {
   it("uses stable safe paths derived from canonical routes", () => {

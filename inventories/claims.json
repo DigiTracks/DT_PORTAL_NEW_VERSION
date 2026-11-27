@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-11-25T00:31:19Z",
+    "generatedAt": "2026-11-26T10:32:26Z",
     "schemaVersion": 1,
     "purpose": "Practical claim register for the independently rebuilt Digi Tracks estate. Publication wording is deliberately narrower than source copy.",
     "statusVocabulary": {
@@ -44,17 +44,17 @@
     },
     {
       "id": "CLM-002",
-      "subject": "Portal catalogue",
-      "claim": "The portal catalogue contains 17 flagship products and 18 nested products, 35 in total.",
+      "subject": "Replacement catalogue",
+      "claim": "The replacement catalogue contains 37 entries: 17 top-level products and 20 products nested within families.",
       "status": "verified",
-      "verifiedAt": "2026-11-25T00:31:19Z",
+      "verifiedAt": "2026-11-26T10:32:26Z",
       "owner": "Digi Tracks owner (individual UNKNOWN)",
       "evidence": [
-        {"type": "local-source", "source": "/data/HomeWorks/DT-Portal-main/src/data/products.ts", "detail": "PRODUCTS contains 17 entries; UNIFY_MODULES 9, VEDIK_MODULES 4 and PROCURE5_SYSTEMS 5."},
-        {"type": "local-source", "source": "/data/HomeWorks/DT-Portal-main/src/data/seo.ts", "detail": "Explicit catalogue comment states 35 products."}
+        {"type": "local-source", "source": "packages/catalog/src/catalog.generated.ts", "detail": "37 product records: 17 without parentId and 20 with parentId."},
+        {"type": "local-source", "source": "inventories/generated-registry-summary.json", "detail": "Catalogue summary records 37 entries and 20 nested products."}
       ],
-      "safePublicationWording": "The current portal source defines a 35-product catalogue: 17 flagships and 18 nested products.",
-      "doNotSay": "Do not imply that all 35 are generally available, production-ready or open source."
+      "safePublicationWording": "The replacement catalogue contains 37 entries: 17 top-level products and 20 products nested within families.",
+      "doNotSay": "Do not imply that all 37 are generally available, production-ready or open source, or that overlapping catalogue categories are mutually exclusive product lines."
     },
     {
       "id": "CLM-003",
@@ -134,8 +134,8 @@
         {"type": "public-registry", "source": "https://registry.npmjs.org/@ops_pilot%2fcli", "detail": "Latest 0.1.6; licence Apache-2.0."},
         {"type": "public-licence-text", "source": "https://www.apache.org/licenses/LICENSE-2.0.txt", "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"}
       ],
-      "safePublicationWording": "The published OpsPilot CLI package is licensed under Apache-2.0.",
-      "doNotSay": "Do not extend the package licence to every Digi Tracks logo, screenshot, document or unrelated product."
+      "safePublicationWording": "The published OpsPilot CLI package is licensed under Apache-2.0. Licensing for the desktop components remains unconfirmed.",
+      "doNotSay": "Do not extend the CLI package licence to OpsPilot desktop components, every Digi Tracks logo, screenshot, document or unrelated product."
     },
     {
       "id": "CLM-009",
@@ -449,7 +449,7 @@
     {
       "id": "CLM-031",
       "subject": "Approved identity and asset provenance",
-      "claim": "The replacement uses 40 owner-supplied identity assets plus two documented 320px lockup derivatives, including 33 unique official product marks; no official MIND ONE or MIND ONE Pro mark was supplied.",
+      "claim": "The replacement uses 40 owner-supplied identity assets plus two documented 320px lockup derivatives, including 33 unique official product marks; no official MIND ONE Basic or MIND ONE Complete mark was supplied.",
       "status": "verified",
       "verifiedAt": "2026-11-26",
       "owner": "Digi Tracks owner (individual UNKNOWN)",
@@ -532,31 +532,31 @@
     {
       "id": "CLM-037",
       "subject": "MIND ONE scope and editions",
-      "claim": "MIND ONE is vendor-stated as a pre-launch interview-practice product, with Free entry and complete Pro positioning but no approved edition entitlement table.",
+      "claim": "MIND ONE is a pre-launch interview-practice product. The owner directs a free, limited-feature Basic position and a Complete position with full MIND ONE feature access; released commercial entitlement, pricing and quotas are not established.",
       "status": "site-stated",
-      "verifiedAt": "2026-11-25",
+      "verifiedAt": "2026-11-26",
       "owner": "Digi Tracks owner (individual UNKNOWN)",
       "evidence": [
-        {"type": "public-page", "source": "https://digitracks.net/products/mindone", "detail": "Official scope, pre-launch state, Free/Pro positioning and no published launch date."},
-        {"type": "public-repository", "source": "https://github.com/chandrahotha/chandrahotha/blob/2be5ec964873f51e27f487ebe377487ee497115f/README.md", "detail": "Portfolio lists MINDONE as Up Next; no implementation repository was verified."}
+        {"type": "public-page", "source": "https://digitracks.net/products/mindone", "detail": "Official interview-practice scope, pre-launch state and no published launch date."},
+        {"type": "owner-direction", "source": "Owner portfolio correction, 2026-11-26", "detail": "Basic is free with limited features; the complete edition provides full feature access and the developed experience."}
       ],
-      "safePublicationWording": "MIND ONE is a pre-launch interview-practice product. Free and Pro positioning is published, but Pro entitlements, price and release timing require confirmation.",
-      "doNotSay": "Do not claim release availability, a launch date, measured outcomes, Pro-only features, ATS integration, MCP or verified multilingual speech."
+      "safePublicationWording": "MIND ONE Basic is the free, focused entry position. MIND ONE Complete provides the full MIND ONE feature set. Access remains request-only during pre-launch while commercial terms and quotas are confirmed.",
+      "doNotSay": "Do not claim release availability, a launch date, measured outcomes, billing or activation, unmetered hosted AI, ATS integration, MCP or verified multilingual speech."
     },
     {
       "id": "CLM-038",
-      "subject": "Vedik demonstration scope",
-      "claim": "Vedik's public School ERP demo is code-backed and uses mock data; production backend, wider application behavior and a settled module count are unverified.",
+      "subject": "Vedik demonstration and portfolio scope",
+      "claim": "Vedik is an education portfolio spanning School, Unnati College, University, Social Community, Campus Grid and related mobile or community initiatives. Its public School ERP demo is code-backed with sample data, while product-level deployment, identity and integration boundaries remain distinct.",
       "status": "verified",
-      "verifiedAt": "2026-11-25",
+      "verifiedAt": "2026-11-26",
       "owner": "Digi Tracks owner (individual UNKNOWN)",
       "evidence": [
-        {"type": "public-repository", "source": "https://github.com/Digi Tracks/Vedik-Demo/blob/eafaa5b881d2461ba41908d122b469b0fcbc3786/src/lib/site.ts", "detail": "Static route, plan and module definitions inspected read-only."},
+        {"type": "public-repository", "source": "Vedik public demo repository, commit eafaa5b881d2461ba41908d122b469b0fcbc3786", "detail": "Static School ERP route, plan and module definitions inspected read-only."},
         {"type": "public-demo", "source": "https://vedik-demo.netlify.app/", "detail": "School ERP demo shows mock-data school operations and a different module total from the repository README."},
-        {"type": "public-page", "source": "https://digitracks.net/products/vedik", "detail": "Vendor describes the wider education-platform family."}
+        {"type": "authorized-repository-review", "source": "Vedik portfolio repositories, commit-pinned read-only review, 2026-11-26", "detail": "School, mobile, Unnati, University, Community and Campus Grid implementations were inspected without execution or modification."}
       ],
-      "safePublicationWording": "Vedik's public School ERP demo shows role-based school operations with sample data. Production deployment and the wider application family require evaluation.",
-      "doNotSay": "Do not claim a settled module count, all four applications are code-backed, production-ready offline/mobile behavior or unverified integrations."
+      "safePublicationWording": "Vedik is one education portfolio with products for school, college, university, community and placement workflows. Each product has its own deployment and readiness boundary; the portfolio does not imply one shared production platform.",
+      "doNotSay": "Do not claim a settled module count, common SSO, universal identity, shared deployment, verified cross-product integrations, production-ready offline/mobile behavior or uniform release readiness."
     },
     {
       "id": "CLM-039",
@@ -599,6 +599,89 @@
       ],
       "safePublicationWording": "Procure Sherpa is a free browser-based procurement learning and decision-support toolkit. ProcureSherpa Learning names its Academy component.",
       "doNotSay": "Do not claim procurement ERP behavior, accredited credentials, native PDF generation, custom workflows, team administration, generative AI, MCP or a verified current offline PWA."
+    },
+    {
+      "id": "CLM-042",
+      "subject": "MIND ONE Basic and Complete public naming",
+      "claim": "The owner-approved public edition names are MIND ONE Basic and MIND ONE Complete. UNIFY remains the name of a separate ERP product and must not be used as the MIND ONE edition name.",
+      "status": "site-stated",
+      "verifiedAt": "2026-11-26",
+      "owner": "Digi Tracks owner (individual UNKNOWN)",
+      "evidence": [
+        {"type": "owner-direction", "source": "Owner portfolio correction, 2026-11-26", "detail": "The owner requested one MIND ONE family, a free limited Basic edition and a complete developed edition."},
+        {"type": "authorized-repository-review", "source": "UNIFY repository, commit cd5972cc72da83b3a8e4332d7bb1d309358ace8", "detail": "UNIFY is a separate nine-app ERP with its own identity and licensing."}
+      ],
+      "safePublicationWording": "MIND ONE is presented as one family with Basic and Complete editions. UNIFY remains a separate product.",
+      "doNotSay": "Do not rename MIND ONE Complete to UNIFY or imply that the two products are editions of one system."
+    },
+    {
+      "id": "CLM-043",
+      "subject": "MIND ONE Complete implemented scope",
+      "claim": "Authorized read-only review verified Complete-edition implementation for durable local profiles and sessions, saved history, resume/JD comparison, learning goals, progress tracking, role-development maps, source-attributed remote listings, app lock and diagnostics. This does not establish released commercial entitlement or unmetered provider use.",
+      "status": "verified",
+      "verifiedAt": "2026-11-26",
+      "owner": "Digi Tracks owner (individual UNKNOWN)",
+      "evidence": [
+        {"type": "authorized-repository-review", "source": "MIND ONE complete-edition repository, commit 1b8bd908ae35b94ea0b6e05eed6c17abced01673", "detail": "Private React/FastAPI implementation inspected through authenticated read-only repository browsing; no code was executed or modified."},
+        {"type": "authorized-repository-review", "source": "MIND ONE core repository, commit 963ee7fefc79f16075d163994a6210e94e6dc284", "detail": "Core local-first interview practice and consent-gated provider boundary inspected for edition comparison."}
+      ],
+      "safePublicationWording": "MIND ONE Complete adds durable practice history, resume and job-description comparison, learning goals, progress tracking, role-development maps and source-linked opportunity research to the MIND ONE workflow.",
+      "doNotSay": "Do not claim released entitlement enforcement, billing, subscription activation, unlimited hosted AI, verified ATS integration, production approval or a launch date."
+    },
+    {
+      "id": "CLM-044",
+      "subject": "Vedik product relationships and deployment boundaries",
+      "claim": "Vedik School web and Android share documented data and licensing foundations, but their schemas have drifted. Unnati, University, Community and Campus Grid maintain independent identity, licensing, tenancy or deployment boundaries; no common SSO, universal person ID, event bus or shared production plane was verified.",
+      "status": "verified",
+      "verifiedAt": "2026-11-26",
+      "owner": "Digi Tracks owner (individual UNKNOWN)",
+      "evidence": [
+        {"type": "authorized-repository-review", "source": "Vedik School and Android repositories, commits 1fa804a2f79ff54889a01c615dc3e0419a00a798 and 7298852daede71332c1586f64601fd0fcc6de808", "detail": "Documented PostgreSQL relationship and shared licensing package; schema model and enum counts differ."},
+        {"type": "authorized-repository-review", "source": "Unnati, University, Community and Campus Grid repositories, commit-pinned read-only review, 2026-11-26", "detail": "Independent application boundaries and readiness constraints inspected without execution."}
+      ],
+      "safePublicationWording": "Vedik products share an education mission and portfolio identity. School has documented web/mobile foundations, while each product's deployment, identity and integration requirements must be evaluated separately.",
+      "doNotSay": "Do not present Vedik as one already-deployed shared platform or claim common SSO, universal identity, synchronized schemas, shared event bus or verified cross-product integrations."
+    },
+    {
+      "id": "CLM-045",
+      "subject": "Campus Grid scope and readiness",
+      "claim": "Campus Grid is a multi-tenant placement platform within the Vedik portfolio, with institution, student and employer workflows, fail-closed eligibility and CSV V1 import/export. Repository-reported local gates do not establish production-environment readiness, and REST, webhook or scheduled synchronization remain planned rather than verified.",
+      "status": "verified",
+      "verifiedAt": "2026-11-26",
+      "owner": "Digi Tracks owner (individual UNKNOWN)",
+      "evidence": [
+        {"type": "authorized-repository-review", "source": "Campus Grid repository, commit 963c27d375be08c94940c262ed4fe34c097df296", "detail": "Placement workflows, eligibility engine, audit and CSV V1 ERP exchange inspected read-only; local gate results are repository-reported."}
+      ],
+      "safePublicationWording": "Campus Grid manages campus placement drives, eligibility, applications, assessments, interviews, offers and joining records. Production deployment and integrations require evaluation.",
+      "doNotSay": "Do not claim Campus Grid replaces Vertex, is an embedded School module, has verified ERP API/webhook synchronization or is proven production-ready."
+    },
+    {
+      "id": "CLM-046",
+      "subject": "Developer and security product independence",
+      "claim": "Orion, Orion Hunter, Recon and OpsPilot are four independent products. Orion Hunter is not an Orion edition; Recon is a separate engineering cockpit; OpsPilot is a non-AI project-operations tool. No shared runtime or verified integration among the four was found.",
+      "status": "verified",
+      "verifiedAt": "2026-11-26",
+      "owner": "Digi Tracks owner (individual UNKNOWN)",
+      "evidence": [
+        {"type": "authorized-repository-review", "source": "Orion, Orion Hunter, Recon and OpsPilot repositories, commit-pinned read-only review, 2026-11-26", "detail": "Orion c44aa9ae, Hunter a1581f18, Recon f443ea7e and OpsPilot 4e70582f were inspected for runtime, scope and integration evidence."}
+      ],
+      "safePublicationWording": "Orion, Orion Hunter, Recon and OpsPilot form a developer and security portfolio of independent tools. Each can be evaluated on its own workflow and deployment boundary.",
+      "doNotSay": "Do not call them editions of one suite, claim shared runtime, imply verified integration or describe OpsPilot as AI-powered."
+    },
+    {
+      "id": "CLM-047",
+      "subject": "Developer product claim boundaries",
+      "claim": "Orion engine-count and benchmark claims are unstable or independently unverified; Orion Hunter's engine count includes non-scanner components; Recon's absolute zero-code-egress wording does not hold when a hosted model is configured.",
+      "status": "verified",
+      "verifiedAt": "2026-11-26",
+      "owner": "Digi Tracks owner (individual UNKNOWN)",
+      "evidence": [
+        {"type": "authorized-repository-review", "source": "Orion repository, commit c44aa9ae75619c9ffd5ef7370a006115cdfc8894", "detail": "Current source and release version differ; README benchmark was not independently rerun."},
+        {"type": "authorized-repository-review", "source": "Orion Hunter repository, commit a1581f18a178d3b0c8a185ad6b675f34d334ff9c", "detail": "Tracked engines include adapters, graph consumers, pipeline stages and self-audit components."},
+        {"type": "authorized-repository-review", "source": "Recon repositories, commits f443ea7e14fb6474d48b4857590d2f205c97421c and a94cb21d697b16402a3ef4059f4b43411aeeafd6", "detail": "Local evidence and approval controls coexist with configurable hosted model gateways."}
+      ],
+      "safePublicationWording": "Recon keeps engineering evidence and approvals under user control. Source can remain local when local models are used; configured hosted models may receive the context sent to them.",
+      "doNotSay": "Do not publish unstable scanner totals, present README benchmarks as independently reproduced, count every Hunter component as an independent scanner or promise zero code egress under hosted-model configurations."
     }
   ]
 }

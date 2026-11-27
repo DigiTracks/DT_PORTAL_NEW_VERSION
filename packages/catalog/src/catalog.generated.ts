@@ -4,13 +4,13 @@ export const catalogData = {
     {
       "id": "vedik",
       "name": "Vedik",
-      "summary": "Education operations for schools, colleges and universities",
-      "description": "Vedik is an education-platform family. Its public School ERP demo shows role-based school operations with sample data, including learner records, attendance, academics, fees and administration. Production deployment, the wider application family and offline behavior require evaluation.",
-      "audience": "School, college and university administrators, principals, teachers and education operations teams",
+      "summary": "One education ecosystem across school, college, university, community and placement",
+      "description": "Vedik is a portfolio of education products rather than a single application. It brings together Vedik School, Unnati College, Vedik University, Vedik Social Community, Campus Grid and related mobile or community initiatives around one education mission. Each product retains its own deployment, identity, integration and readiness boundary.",
+      "audience": "School, college and university leaders, education operations teams, placement cells and student communities",
       "category": "Education",
       "licenseModel": "proprietary",
       "buyingModel": "subscription",
-      "availability": "available",
+      "availability": "request-only",
       "requestable": true,
       "claims": [
         {
@@ -20,30 +20,35 @@ export const catalogData = {
         {
           "id": "CLM-038",
           "status": "verified"
+        },
+        {
+          "id": "CLM-044",
+          "status": "verified"
         }
       ],
       "assetIds": [
         "product:vedik"
       ],
       "capabilities": [
-        "Role-based school dashboards and records",
-        "Students, teachers, attendance, classes and sections",
-        "Timetable, exams, marks and homework",
-        "Fees, finance, payroll and printable receipts",
-        "Library, transport, hostel and inventory",
-        "Communication, certificates and reports",
-        "Staff, leave, users, roles and licensing",
-        "Printable certificates, ID cards and payslips"
+        "Vedik School operations across learners, academics, fees and administration",
+        "Unnati College workflows for higher-education institutions",
+        "Vedik University and institutional administration initiatives",
+        "Vedik Social Community for education-focused community workflows",
+        "Campus Grid placement drives, eligibility and offer tracking",
+        "Related Android and education/community initiatives",
+        "Product-level evaluation across deployment, identity and integration needs",
+        "Public School ERP demonstration with sample data"
       ],
       "platforms": [
-        "Web"
+        "Web",
+        "Android (evaluation)"
       ],
-      "deployment": "Public static School ERP demo; production deployment requires evaluation",
-      "status": "Demo available / production evaluation",
+      "deployment": "Portfolio of independently deployed products; shared deployment is not verified",
+      "status": "Portfolio / product-level readiness varies",
       "route": "/products/vedik",
       "logo": "/products/vedik.webp",
-      "evidenceStatus": "code-backed",
-      "evidenceNote": "The public demo uses mock data and browser-stored persona state. It does not prove production backend, mobile or offline behavior.",
+      "evidenceStatus": "mixed",
+      "evidenceNote": "The public School demo uses sample data. Product-level deployment, identity, integration and release readiness vary; a common production platform, shared SSO and uniform readiness are not established.",
       "industryIds": [
         "education"
       ]
@@ -293,9 +298,9 @@ export const catalogData = {
     {
       "id": "orion",
       "name": "Orion",
-      "summary": "In-House Code Intelligence & Bug Finder: 77 Engines, Zero Cloud",
-      "description": "A zero-cloud code intelligence and security CLI: 77 specialized in-house engines for deep SAST, taint-proven injection guards, secret and PII detection, AI/LLM defense, IaC audits, supply-chain analysis and STRIDE threat modeling across 12 languages. Ships as standalone binaries via npm (Windows, macOS, Linux) with zero third-party runtime dependencies.",
-      "audience": "Teams evaluating developer tools software",
+      "summary": "Local-first code intelligence and static security analysis",
+      "description": "Orion is a proprietary, local-first code intelligence and static audit tool for engineering and security teams. It inspects source locally and supports review workflows without requiring a hosted runtime. Scanner totals and README benchmark figures are not published here because they change between source and release and were not independently reproduced.",
+      "audience": "Developers, security engineers and reviewers who need traceable local source analysis",
       "category": "Developer Tools",
       "licenseModel": "proprietary",
       "buyingModel": "quote-led",
@@ -307,52 +312,50 @@ export const catalogData = {
           "status": "verified"
         },
         {
-          "id": "CLM-005",
+          "id": "CLM-011",
+          "status": "site-stated"
+        },
+        {
+          "id": "CLM-046",
           "status": "verified"
         },
         {
-          "id": "CLM-011",
-          "status": "site-stated"
+          "id": "CLM-047",
+          "status": "verified"
         }
       ],
       "assetIds": [
         "product:orion"
       ],
       "capabilities": [
-        "77 Specialized In-House Engines",
-        "Deep SAST & Taint-Proven Injection Guards (SSRF, XXE, SSTI, CSRF…)",
-        "Secrets, PII & Entropy-Based Credential Detection",
-        "AI & LLM Defense: Prompt Injection, Agent Trust Boundaries",
-        "Docker, Kubernetes & Terraform IaC Audits",
-        "Supply Chain: SBOM, OSV.dev CVEs, Typosquat & Git-History Secrets",
-        "STRIDE Threat Modeling & PCI/SOC2/GDPR/HIPAA Mapping",
-        "Incremental & Baseline Diff Scanning",
-        "Auto-Fix Engine with CI Mode (orion fix --apply)",
-        "GitHub Action, Pre-Commit Hook & SARIF 2.1.0 Reports",
-        "Offline HTML Dashboard, JSON & SARIF Export",
-        "12 Languages · Zero Third-Party Runtime Dependencies",
-        "Recall 1.00 on 71 Real-World CVE Fixtures (7 Languages)"
+        "Local-first source inspection",
+        "Static code and security analysis",
+        "Review-oriented findings and evidence",
+        "CLI and Python-source workflows",
+        "Proprietary licence boundary"
       ],
       "platforms": [
         "CLI",
         "Web"
       ],
       "deployment": "Installed from a package manager",
-      "status": "Proprietary",
+      "status": "Public preview / release scope varies",
       "route": "/products/orion",
       "logo": "/products/orion.webp",
-      "installCommand": "npm install -g @orionscanner/cli"
+      "installCommand": "npm install -g @orionscanner/cli",
+      "evidenceStatus": "code-backed",
+      "evidenceNote": "Current source and latest published release differ. Engine totals and benchmark claims were not independently verified."
     },
     {
       "id": "orion-hunter",
       "name": "Orion Hunter",
-      "summary": "In-House Security Reasoning Platform: Evidence-First, Airgap-Ready",
-      "description": "A security reasoning platform built on 124 in-house engines: mapping code, live apps, identity and infrastructure into one evidence-backed security graph, with multi-hop attack paths and findings that carry their own source-to-sink proof.",
-      "audience": "Teams evaluating cybersecurity software",
+      "summary": "Evidence-first security reasoning and attack-path analysis",
+      "description": "Orion Hunter is an independent proprietary security reasoning platform. It combines a knowledge graph, attack paths, risk and compliance analysis, cases and remediation tracking with a local SQLite store, HTTP API and React portal. It is not an Orion edition, and its tracked component count must not be read as a count of independent scanners.",
+      "audience": "Security teams, analysts and reviewers who need graph-based investigation and remediation context",
       "category": "Cybersecurity",
       "licenseModel": "proprietary",
       "buyingModel": "quote-led",
-      "availability": "available",
+      "availability": "request-only",
       "requestable": true,
       "claims": [
         {
@@ -360,7 +363,11 @@ export const catalogData = {
           "status": "verified"
         },
         {
-          "id": "CLM-005",
+          "id": "CLM-046",
+          "status": "verified"
+        },
+        {
+          "id": "CLM-047",
           "status": "verified"
         }
       ],
@@ -368,27 +375,22 @@ export const catalogData = {
         "product:orion-hunter"
       ],
       "capabilities": [
-        "124 In-House Engines · 123 Tracked · Zero Unwired",
-        "15 Evidence-Backed Knowledge Graph Edge Types",
-        "Multi-Hop Attack Path Solver (9-Dimension Scoring)",
-        "8-State Reachability: Code → API → Identity → Network → Cloud → Data",
-        "SAST & Taint Analysis for Python, Java, JS, TS and Go",
-        "21 In-House Injection & AuthZ Detectors",
-        "Secrets: Pattern Library, Entropy Fallback & Git-History Scan",
-        "SCA With Version-Gated Advisories",
-        "Opt-In Dynamic Testing (DAST), Authorisation-Gated",
-        "Web Portal With Knowledge-Graph & Attack-Path Views",
-        "Compliance Mapping (PCI-DSS, HIPAA, GDPR, SOC2, ISO 27001)",
-        "Air-Gapped, Deterministic Egress · Own Parsers & Graph (No tree-sitter, No Neo4j)"
+        "Security knowledge graph and attack paths",
+        "Risk, compliance and case workflows",
+        "Remediation tracking and evidence context",
+        "Local SQLite persistence",
+        "HTTP API and React portal"
       ],
       "platforms": [
         "CLI",
         "Web"
       ],
       "deployment": "Self-hosted on infrastructure you control",
-      "status": "Commercial",
+      "status": "Request access / implementation scope under evaluation",
       "route": "/products/orion-hunter",
-      "logo": "/products/orion-hunter.webp"
+      "logo": "/products/orion-hunter.webp",
+      "evidenceStatus": "code-backed",
+      "evidenceNote": "Documented implementation scope covers the stated workflows. No shared runtime or integration with Orion, Recon or OpsPilot is claimed."
     },
     {
       "id": "construction",
@@ -571,27 +573,26 @@ export const catalogData = {
     {
       "id": "opspilot",
       "name": "OpsPilot",
-      "summary": "Open-Source Project Command Center: Desktop App & CLI",
-      "description": "A free, open-source command center for running a local project. It scans a directory, reports what it found with evidence, builds an ordered startup plan, then starts, stops and diagnoses your services from one window. A Rust engine drives both a Tauri desktop app and a `pilot` CLI, on Windows, macOS and Linux.",
-      "audience": "Teams evaluating developer tools software",
+      "summary": "Local project operations, process control and diagnostics",
+      "description": "OpsPilot includes a project-operations CLI and desktop tool. It scans projects, plans startup order, controls processes and ports, and supports Docker, database, diagnostics, drift and doctor-check workflows. The published @ops_pilot/cli package is Apache-2.0; licensing for the desktop components remains unconfirmed. It is not an AI product and no Orion, Hunter or Recon integration is verified.",
+      "audience": "Developers and operations teams managing local services, ports, databases and startup workflows",
       "category": "Developer Tools",
-      "licenseModel": "open-source",
+      "licenseModel": "unknown",
       "buyingModel": "free",
       "availability": "available",
       "requestable": true,
-      "licenseEvidence": "https://www.apache.org/licenses/LICENSE-2.0",
-      "licenceNote": "Apache License 2.0 (Apache-2.0)",
+      "licenceNote": "The published @ops_pilot/cli package is Apache-2.0. Licensing for the desktop components remains unconfirmed.",
       "claims": [
         {
           "id": "CLM-002",
           "status": "verified"
         },
         {
-          "id": "CLM-005",
+          "id": "CLM-008",
           "status": "verified"
         },
         {
-          "id": "CLM-008",
+          "id": "CLM-046",
           "status": "verified"
         }
       ],
@@ -599,16 +600,12 @@ export const catalogData = {
         "product:opspilot"
       ],
       "capabilities": [
-        "Evidence-Bearing Project Scan (Node, Python, Django, Prisma, Alembic, Docker, Cargo, env files)",
-        "One Normalized Project Model Shared by the CLI and the Desktop App",
-        "Ordered Startup Plan With Exact Commands and Honest Warnings",
-        "Tracked Process Lifecycle: Start, Stop, Restart, Tree Kill, Kill All",
-        "Real TCP Service Probes Merged With Tracked Process State",
-        "Docker Panel: Daemon, Containers, Compose Up/Down, Logs",
-        "Database Panel: Status, Migrate, Seed, Backup, Confirmed Reset/Restore",
-        "Live Logs With Pause, Search, Stream Filter and Copy",
-        "Deterministic Diagnostics: Problem, Evidence, Cause, Recommended Action",
-        "Tauri Desktop Command Center + `pilot [path] [--json]` CLI"
+        "Project scanning and startup plans",
+        "Process, service and port control",
+        "Startup ordering and dependency checks",
+        "Docker and database workflows",
+        "Diagnostics, drift and doctor checks",
+        "Rust CLI and Tauri desktop application"
       ],
       "platforms": [
         "Desktop",
@@ -618,32 +615,38 @@ export const catalogData = {
       "status": "Available",
       "route": "/products/opspilot",
       "logo": "/products/opspilot.webp",
-      "installCommand": "npm install -g @ops_pilot/cli"
+      "installCommand": "npm install -g @ops_pilot/cli",
+      "evidenceStatus": "mixed",
+      "evidenceNote": "The published CLI package has an Apache-2.0 licence. Desktop-component licensing and cross-product integrations remain unconfirmed."
     },
     {
       "id": "recon",
       "name": "Recon",
-      "summary": "Local-First Agentic SDLC: 25 Agent Brains, Zero Code Egress",
-      "description": "A local-first agentic SDLC tool and desktop engineering cockpit: 25 specialized agent brains work over your own checkout on AST-aware code review, SAST security scanning and compiler-verified automated patching, without sending your code anywhere.",
-      "audience": "Teams evaluating developer tools software",
+      "summary": "Local-first agentic SDLC with evidence, approvals and rollback",
+      "description": "Recon is an independent local-first AI engineering cockpit for software delivery. It combines a model gateway with human approvals, worktrees, checkpoints, validation and rollback around SQLite evidence. Local models can keep source on the machine; configured hosted models may receive the context sent to them, so absolute zero-code-egress wording is not used.",
+      "audience": "Engineering teams and developers who need reviewable AI-assisted delivery with operational controls",
       "category": "Developer Tools",
-      "licenseModel": "source-available",
+      "licenseModel": "proprietary",
       "buyingModel": "free",
-      "availability": "available",
+      "availability": "request-only",
       "requestable": true,
       "licenseEvidence": "https://unpkg.com/@reconscanner/recon/LICENSE",
-      "licenceNote": "Proprietary Digi Tracks licence, free to install, closed source (SEE LICENSE IN LICENSE)",
+      "licenceNote": "Proprietary Digi Tracks licence; free to install for permitted internal executable use. It is not open source.",
       "claims": [
         {
           "id": "CLM-002",
           "status": "verified"
         },
         {
-          "id": "CLM-005",
+          "id": "CLM-009",
           "status": "verified"
         },
         {
-          "id": "CLM-009",
+          "id": "CLM-046",
+          "status": "verified"
+        },
+        {
+          "id": "CLM-047",
           "status": "verified"
         }
       ],
@@ -651,26 +654,24 @@ export const catalogData = {
         "product:recon"
       ],
       "capabilities": [
-        "25 Specialized Agent Brains Across One SDLC Pipeline",
-        "Autonomous Agentic Runs, Not a Prompt Wrapper",
-        "AST-Aware Code Review",
-        "SAST Security Scanning in the Same Pass as Review",
-        "Compiler-Verified Automated Patching",
-        "Zero Code Egress: the Source Never Leaves the Machine",
-        "Local-First, Running Against Your Own Checkout",
-        "Desktop Engineering Cockpit",
-        "CLI Entry Points: `recon` and `reconscanner`",
-        "Static Analysis and Code-Quality Findings"
+        "Evidence-backed engineering sessions",
+        "Human approval checkpoints",
+        "Git worktrees and change checkpoints",
+        "Validation and rollback workflows",
+        "Configurable local or hosted model gateway",
+        "Go/Wails desktop backend and React interface"
       ],
       "platforms": [
         "CLI",
         "Desktop"
       ],
       "deployment": "Installed from a package manager",
-      "status": "Available",
+      "status": "Public documentation / request implementation access",
       "route": "/products/recon",
       "logo": "/products/recon.webp",
-      "installCommand": "npm install -g @reconscanner/recon"
+      "installCommand": "npm install -g @reconscanner/recon",
+      "evidenceStatus": "code-backed",
+      "evidenceNote": "The stated workflow is documented for evaluation. Hosted-model context handling depends on provider configuration; production implementation and release readiness require evaluation."
     },
     {
       "id": "vantor",
@@ -725,13 +726,13 @@ export const catalogData = {
     {
       "id": "campus-grid",
       "name": "Campus Grid",
-      "summary": "Placement Drives, Eligibility Rules and Offer Tracking for Campuses",
-      "description": "A multi-tenant campus placement platform for institutions, placement officers, students and employers: recruitment drives, a deterministic eligibility engine that returns reason codes, shortlisting, interview rounds, offer tracking and joining outcomes, with role-based access and an audit trail on every decision.",
-      "audience": "Teams evaluating education software",
+      "summary": "Placement drives, eligibility rules and offer tracking for campuses",
+      "description": "Campus Grid is the placement product in the Vedik education portfolio. It supports institution, student and employer workflows across drives, applications, assessments, interviews, offers and joining, with deterministic fail-closed eligibility and CSV V1 ERP import/export. Production deployment and API, webhook or scheduled synchronization require evaluation.",
+      "audience": "Training and placement officers, institution administrators, students and recruiting employers",
       "category": "Education",
       "licenseModel": "proprietary",
       "buyingModel": "subscription",
-      "availability": "available",
+      "availability": "request-only",
       "requestable": true,
       "claims": [
         {
@@ -739,30 +740,40 @@ export const catalogData = {
           "status": "verified"
         },
         {
-          "id": "CLM-005",
+          "id": "CLM-038",
+          "status": "verified"
+        },
+        {
+          "id": "CLM-045",
           "status": "verified"
         }
       ],
       "assetIds": [
         "product:campus-grid"
       ],
+      "parentId": "vedik",
       "capabilities": [
-        "Five Role Portals: Platform Admin, Institution Admin, Placement Officer, Student, Employer",
-        "Deterministic, Fail-Closed Eligibility Engine With Human-Readable Reason Codes",
-        "Rule Versioning and Snapshots So a Published Drive Keeps the Rules It Was Judged By",
-        "Recruitment Drives With Customisable Stages, Assessments and Interview Rounds",
-        "Application State Machine With Transactional Capacity and Duplicate-Apply Guards",
-        "Offer Lifecycle With Advisory Locks and One Issued Offer per Application",
-        "Tenant Isolation Scoped by Institution",
-        "Audit Pipeline Covering Every Change to a Record"
+        "Institution, student and employer consoles",
+        "Placement drives, applications and assessments",
+        "Interview scheduling, offers and joining records",
+        "Deterministic fail-closed eligibility rules",
+        "Audit history and placement reporting",
+        "CSV V1 ERP import and export",
+        "Planned REST, webhook and scheduled synchronization"
       ],
       "platforms": [
         "Web"
       ],
-      "deployment": "Self-hosted on infrastructure you control",
-      "status": "Ready to Deploy",
+      "deployment": "Self-hosted evaluation; production environment verification pending",
+      "status": "Local workflow checks reported / production verification pending",
       "route": "/products/campus-grid",
-      "logo": "/products/campus-grid.webp"
+      "logo": "/products/campus-grid.webp",
+      "evidenceStatus": "code-backed",
+      "evidenceNote": "Reported local workflow checks cover core workflows and CSV V1 exchange. They do not prove production-environment readiness or completed ERP API synchronization.",
+      "industryIds": [
+        "education",
+        "recruitment"
+      ]
     },
     {
       "id": "procure5",
@@ -1179,14 +1190,14 @@ export const catalogData = {
     },
     {
       "id": "vedik-school-erp",
-      "name": "Vedik School Management ERP",
-      "summary": "Comprehensive School ERP, Academics, Fee Collection & Administration",
-      "description": "A complete, all-in-one management system designed to streamline every aspect of school administration, from student admissions and fee collection to teacher workloads, daily attendance, examination gradebooks, transport, and academic reporting.",
-      "audience": "Teams evaluating education software",
+      "name": "Vedik School",
+      "summary": "School operations, academics, fees and administration",
+      "description": "Vedik School covers learner records, admissions, fees, attendance, timetables, examinations, transport, library and school administration. A public demonstration uses sample data. Production readiness and web/mobile schema alignment require evaluation before deployment.",
+      "audience": "School leaders, administrators, teachers and operations teams",
       "category": "Education",
       "licenseModel": "proprietary",
       "buyingModel": "subscription",
-      "availability": "available",
+      "availability": "request-only",
       "requestable": true,
       "claims": [
         {
@@ -1195,6 +1206,14 @@ export const catalogData = {
         },
         {
           "id": "CLM-005",
+          "status": "verified"
+        },
+        {
+          "id": "CLM-038",
+          "status": "verified"
+        },
+        {
+          "id": "CLM-044",
           "status": "verified"
         }
       ],
@@ -1217,21 +1236,23 @@ export const catalogData = {
         "Web",
         "Mobile"
       ],
-      "deployment": "Hosted browser application",
-      "status": "Ready to Deploy",
+      "deployment": "Independent web and Android products; schema alignment requires verification",
+      "status": "Production evaluation / sample-data demonstration available",
       "route": "/products/vedik/school-erp",
-      "logo": "/products/vedik.webp"
+      "logo": "/products/vedik.webp",
+      "evidenceStatus": "mixed",
+      "evidenceNote": "The public School ERP demonstration is observable with sample data. Production release readiness and synchronized web/mobile schemas are not established."
     },
     {
       "id": "vedik-social",
       "name": "Vedik Social Community",
-      "summary": "Real-Time Campus Social Network, Clubs, Consent & Child-Safe Community",
-      "description": "A real-time, child-safe campus community for schools and colleges: live feeds, clubs, events, verified portfolios and parent oversight. Ships as a branded platform customized per institution, with DPDP Act, CERT-In and IT Rules compliance built in, not as a rebrand of generic social media.",
-      "audience": "Teams evaluating education software",
+      "summary": "Education-focused campus community, clubs, events and consent workflows",
+      "description": "Vedik Social Community supports campus feeds, clubs, events, student portfolios, parent oversight and consent-aware community workflows. A conditional pilot is the proposed evaluation path; safety, moderation, deployment and compliance claims still require product-level evaluation.",
+      "audience": "Schools, colleges, student communities and community administrators",
       "category": "Education",
       "licenseModel": "proprietary",
       "buyingModel": "subscription",
-      "availability": "available",
+      "availability": "request-only",
       "requestable": true,
       "claims": [
         {
@@ -1240,6 +1261,10 @@ export const catalogData = {
         },
         {
           "id": "CLM-005",
+          "status": "verified"
+        },
+        {
+          "id": "CLM-044",
           "status": "verified"
         }
       ],
@@ -1265,21 +1290,23 @@ export const catalogData = {
         "Web",
         "Mobile"
       ],
-      "deployment": "Hosted browser application",
-      "status": "Ready to Deploy",
+      "deployment": "Independent hosted product; controlled pilot conditions require confirmation",
+      "status": "Conditional pilot / safety and deployment evaluation required",
       "route": "/products/vedik/social-community",
-      "logo": "/products/vedik-community.webp"
+      "logo": "/products/vedik-community.webp",
+      "evidenceStatus": "code-backed",
+      "evidenceNote": "Documented community workflows support a conditional pilot discussion. Uniform deployment readiness and completed compliance assurance are not established."
     },
     {
       "id": "unnati",
-      "name": "Unnati",
-      "summary": "College Management ERP, Admissions, Exams & Academic Intelligence",
-      "description": "A complete college management system extending Vedik into higher education: handling admissions, departmental academic workflows, examination grading, student progression, and institutional compliance reporting.",
-      "audience": "Teams evaluating education software",
+      "name": "Unnati College",
+      "summary": "College admissions, academics, examinations and administration",
+      "description": "Unnati extends the Vedik portfolio into higher education with admissions, departmental workflows, examinations, progression, fees, faculty workload and reporting. A controlled single-institution pilot is the proposed evaluation path; unrestricted production release is not established.",
+      "audience": "College leaders, administrators, faculty and academic operations teams",
       "category": "Education",
       "licenseModel": "proprietary",
       "buyingModel": "subscription",
-      "availability": "available",
+      "availability": "request-only",
       "requestable": true,
       "claims": [
         {
@@ -1288,6 +1315,10 @@ export const catalogData = {
         },
         {
           "id": "CLM-005",
+          "status": "verified"
+        },
+        {
+          "id": "CLM-044",
           "status": "verified"
         }
       ],
@@ -1309,21 +1340,23 @@ export const catalogData = {
         "Web",
         "Mobile"
       ],
-      "deployment": "Self-hosted on infrastructure you control",
-      "status": "Ready to Deploy",
+      "deployment": "Independent deployment; controlled single-institution pilot scope requires confirmation",
+      "status": "Conditional controlled single-institution pilot",
       "route": "/products/vedik/unnati",
-      "logo": "/products/unnati.webp"
+      "logo": "/products/unnati.webp",
+      "evidenceStatus": "code-backed",
+      "evidenceNote": "Documented workflow scope supports evaluation for a controlled single-institution pilot. Production rollout, support and integration readiness require separate confirmation."
     },
     {
       "id": "vedik-university",
-      "name": "Vedik University Management",
-      "summary": "Higher-Education Platform: Admissions, Academics, Exams & Compliance",
-      "description": "A white-label higher-education platform covering the full institutional lifecycle, admissions, academics, examinations, finance, HR, research and campus operations, in one system with unified student records, five role portals and event-driven integration across 40+ functional domains.",
-      "audience": "Teams evaluating education software",
+      "name": "Vedik University",
+      "summary": "Higher-education administration across the institutional lifecycle",
+      "description": "Vedik University is the university-level initiative in the Vedik education portfolio, covering admissions, academics, examinations, finance, HR, research and campus operations. Startup and schema readiness require verification before production deployment.",
+      "audience": "University leaders, registrars, administrators and campus operations teams",
       "category": "Education",
       "licenseModel": "proprietary",
       "buyingModel": "subscription",
-      "availability": "available",
+      "availability": "request-only",
       "requestable": true,
       "claims": [
         {
@@ -1332,6 +1365,10 @@ export const catalogData = {
         },
         {
           "id": "CLM-005",
+          "status": "verified"
+        },
+        {
+          "id": "CLM-044",
           "status": "verified"
         }
       ],
@@ -1353,10 +1390,12 @@ export const catalogData = {
       "platforms": [
         "Web"
       ],
-      "deployment": "Self-hosted on infrastructure you control",
-      "status": "Ready to Deploy",
+      "deployment": "Independent self-hosted product; production deployment not verified",
+      "status": "Production evaluation / startup and schema verification required",
       "route": "/products/vedik/university",
-      "logo": "/products/vedik.webp"
+      "logo": "/products/vedik.webp",
+      "evidenceStatus": "code-backed",
+      "evidenceNote": "The intended institutional scope is documented. Startup and schema readiness require verification; no production-readiness claim is made."
     },
     {
       "id": "procureleak",
@@ -1570,16 +1609,16 @@ export const catalogData = {
     },
     {
       "id": "mindone",
-      "name": "MIND ONE",
-      "summary": "Résumé-grounded interview practice with answer-specific coaching",
-      "description": "MIND ONE is a pre-launch interview-practice product for candidates and career changers. Its published scope covers résumé-grounded questions, spoken or typed answers, answer-specific coaching and a structured debrief. It is planned with Free and Pro variants; production availability, approved edition entitlements and outcomes are not yet published.",
+      "name": "MIND ONE Basic",
+      "summary": "Free, focused interview practice with answer-specific coaching",
+      "description": "MIND ONE Basic is the free, focused entry position in the MIND ONE family. It covers résumé- and job-description-grounded practice, spoken or typed answers, answer-specific coaching and a structured debrief. MIND ONE Complete expands the experience with durable history and progress tools. Access remains request-only during pre-launch while released quotas and entitlement rules are confirmed.",
       "audience": "Interview candidates, career changers and people practising competency-based interviews",
       "category": "Education",
       "licenseModel": "proprietary",
-      "buyingModel": "unknown",
+      "buyingModel": "free",
       "availability": "request-only",
       "requestable": true,
-      "edition": "Flagship / Free entry edition",
+      "edition": "Basic edition",
       "claims": [
         {
           "id": "CLM-004",
@@ -1587,6 +1626,10 @@ export const catalogData = {
         },
         {
           "id": "CLM-037",
+          "status": "site-stated"
+        },
+        {
+          "id": "CLM-042",
           "status": "site-stated"
         }
       ],
@@ -1595,18 +1638,16 @@ export const catalogData = {
         "Résumé and job-description-grounded practice questions",
         "Browser speech input with typed fallback",
         "Answer-specific coaching and model-answer rewriting",
-        "Optional numeric scoring",
         "Prioritised debrief tips and a drill sheet",
-        "Performance, competency and career-ladder readouts",
         "Local-only default with optional hosted AI by explicit consent",
-        "In-memory sessions with no account or telemetry"
+        "Focused in-memory practice sessions"
       ],
       "platforms": [],
       "deployment": "Pre-launch; deployment and provider details require confirmation",
-      "status": "Pre-launch / request only",
+      "status": "Pre-launch / free access by request",
       "route": "/products/mindone",
-      "evidenceStatus": "vendor-stated",
-      "evidenceNote": "No public implementation, release approval, launch date, provider list or measured outcome was verified.",
+      "evidenceStatus": "mixed",
+      "evidenceNote": "The practice workflow is documented for evaluation. Free-tier positioning is owner-stated; released quotas, access controls and launch availability remain unconfirmed.",
       "industryIds": [
         "education",
         "recruitment"
@@ -1614,17 +1655,17 @@ export const catalogData = {
     },
     {
       "id": "mindone-pro",
-      "name": "MIND ONE Pro",
-      "summary": "The planned complete MIND ONE edition",
-      "description": "MIND ONE Pro is described as the complete MIND ONE variant. Its approved entitlement table, price, deployment and release timing are not published, so this page records qualified interest without implying that Pro-only features or access are available.",
-      "audience": "Candidates and organisations seeking the planned complete MIND ONE edition",
+      "name": "MIND ONE Complete",
+      "summary": "Full MIND ONE feature access with durable practice history and progress tools",
+      "description": "MIND ONE Complete is the full-feature position in the MIND ONE family. Its implemented scope adds durable local profiles and sessions, saved history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity research, app lock and diagnostics. Access remains request-only during pre-launch; full feature access does not mean unmetered hosted AI, released billing or a confirmed launch date.",
+      "audience": "Candidates and organisations seeking the complete MIND ONE experience",
       "category": "Education",
       "licenseModel": "proprietary",
       "buyingModel": "unknown",
       "availability": "request-only",
       "requestable": true,
       "parentId": "mindone",
-      "edition": "Planned complete edition",
+      "edition": "Complete edition",
       "claims": [
         {
           "id": "CLM-004",
@@ -1633,21 +1674,33 @@ export const catalogData = {
         {
           "id": "CLM-037",
           "status": "site-stated"
+        },
+        {
+          "id": "CLM-042",
+          "status": "site-stated"
+        },
+        {
+          "id": "CLM-043",
+          "status": "verified"
         }
       ],
       "assetIds": [],
       "capabilities": [
-        "Complete-edition positioning published by the vendor",
-        "Approved feature entitlements pending",
-        "Price and licence terms pending",
-        "Release timing pending"
+        "The complete MIND ONE practice and coaching workflow",
+        "Durable local profiles and saved practice history",
+        "Résumé and job-description comparison",
+        "Learning goals and progress tracking",
+        "Role-development maps",
+        "Source-attributed remote opportunity listings",
+        "App lock and diagnostics",
+        "Provider and fair-use limits remain explicit"
       ],
       "platforms": [],
       "deployment": "Pre-launch; deployment details require confirmation",
-      "status": "Pre-launch / entitlement review",
+      "status": "Pre-launch / request only",
       "route": "/products/mindone-pro",
-      "evidenceStatus": "vendor-stated",
-      "evidenceNote": "No verified Pro-only feature, quota, integration, price or launch date is published.",
+      "evidenceStatus": "code-backed",
+      "evidenceNote": "The documented Complete scope includes durable local history and progress tools. It does not prove released commercial entitlement, billing, integration, provider terms, unmetered usage or public launch availability.",
       "industryIds": [
         "education",
         "recruitment"
@@ -1658,31 +1711,33 @@ export const catalogData = {
     {
       "id": "education",
       "name": "Education & Academics",
-      "summary": "Education operations and career practice, with distinct tools for institutions and individuals.",
-      "audience": "School, college and university administrators, education operations teams, candidates and career changers",
-      "challenge": "Education teams need clear operational records, while candidates need focused interview practice. Those are different workflows and should not be presented as one system.",
+      "summary": "One education portfolio for institutions, placement teams and candidates.",
+      "audience": "School, college and university administrators, placement cells, student communities, candidates and career changers",
+      "challenge": "Education institutions need operational products across school, college, university, community and placement workflows, while candidates need focused interview practice. Vedik provides one portfolio identity without pretending every product shares one deployment or identity system.",
       "workflow": [
         {
-          "title": "Run the institution",
-          "description": "Evaluate Vedik's public School ERP demo for role-based records, attendance, academics, fees and administration."
+          "title": "Map the education journey",
+          "description": "Identify the School, Unnati, University, Community or Campus Grid workflow that needs evaluation."
         },
         {
-          "title": "Prepare the candidate",
-          "description": "Review MIND ONE's pre-launch résumé-grounded practice and answer-specific coaching scope."
+          "title": "Review the product boundary",
+          "description": "Compare product-level deployment, readiness, identity and integration requirements rather than assuming one shared platform."
         },
         {
-          "title": "Confirm the boundary",
-          "description": "Separate sample-data demonstrations from production deployment, edition access and measured outcomes."
+          "title": "Choose the next conversation",
+          "description": "Request an institution or placement evaluation, or review MIND ONE Basic and Complete for candidate practice."
         }
       ],
       "outcomes": [
-        "A scoped education-operations evaluation",
-        "A clear candidate-practice access request",
-        "Documented deployment and evidence questions"
+        "A product-level education portfolio map",
+        "A qualified institution or placement evaluation",
+        "A separate candidate-practice access request"
       ],
       "productIds": [
         "vedik",
-        "mindone"
+        "campus-grid",
+        "mindone",
+        "mindone-pro"
       ],
       "industryIds": [
         "education"
@@ -1893,7 +1948,7 @@ export const catalogData = {
     {
       "id": "developer-tools",
       "name": "Developer & Security Tools",
-      "summary": "Local-first code audit, security, project operations and engineering tools.",
+      "summary": "Four independent tools for code intelligence, security reasoning, project operations and evidence-backed engineering delivery.",
       "toolIds": [
         "orion",
         "orion-hunter",

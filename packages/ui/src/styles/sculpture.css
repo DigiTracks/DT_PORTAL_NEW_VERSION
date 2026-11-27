@@ -18,6 +18,7 @@
 }
 
 .ecosystem-sculpture__stage {
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -29,6 +30,7 @@
 }
 
 .ecosystem-sculpture__fallback {
+  z-index: 2;
   display: block;
   opacity: 1;
   visibility: visible;
@@ -41,6 +43,197 @@
   visibility: hidden;
 }
 
+.ecosystem-sculpture__fallback-orbit {
+  position: absolute;
+  inset: 4%;
+  width: 92%;
+  height: 92%;
+}
+
+.ecosystem-sculpture__fallback-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: grid;
+  width: clamp(4.5rem, 14%, 7rem);
+  aspect-ratio: 1;
+  place-content: center;
+  justify-items: center;
+  gap: 0.25rem;
+  border: 1px solid rgb(108 229 232 / 72%);
+  background: #10212e;
+  box-shadow: 0 0 0 0.6rem rgb(108 229 232 / 6%), 0 1.5rem 4rem rgb(0 0 0 / 24%);
+  color: #fcfbf8;
+  text-align: center;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ecosystem-sculpture__fallback-core span,
+.ecosystem-sculpture__fallback-core small {
+  transform: rotate(-45deg);
+}
+
+.ecosystem-sculpture__fallback-core span {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 550;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.ecosystem-sculpture__fallback-core small {
+  color: #9aa2ab;
+  font-family: var(--font-mono);
+  font-size: clamp(0.42rem, 0.8vw, 0.58rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ecosystem-sculpture__fallback-card {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  width: clamp(7rem, 25%, 10.5rem);
+  aspect-ratio: 0.79;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.55rem;
+  padding: clamp(0.7rem, 1.6vw, 1.1rem);
+  border: 1px solid rgb(16 32 45 / 22%);
+  background: #fcfbf8;
+  box-shadow: 0 1.2rem 2.8rem rgb(0 0 0 / 24%);
+  color: #10202d;
+}
+
+.ecosystem-sculpture__fallback-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0.28rem;
+  background: var(--card-accent, #477bff);
+  content: "";
+}
+
+.ecosystem-sculpture__fallback-card .product-mark {
+  width: clamp(2.7rem, 5.4vw, 4.3rem);
+  height: clamp(2.7rem, 5.4vw, 4.3rem);
+  flex: none;
+}
+
+.ecosystem-sculpture__fallback-card > span {
+  max-width: 12ch;
+  font-family: var(--font-display);
+  font-size: clamp(0.78rem, 1.45vw, 1.2rem);
+  font-weight: 550;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.ecosystem-sculpture__fallback-card > small {
+  color: #5e6b75;
+  font-family: var(--font-mono);
+  font-size: clamp(0.42rem, 0.72vw, 0.56rem);
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.ecosystem-sculpture__fallback-card--1 {
+  --card-accent: #ffc857;
+  top: 2%;
+  left: 41%;
+  transform: rotate(-7deg);
+}
+
+.ecosystem-sculpture__fallback-card--2 {
+  --card-accent: #ff7657;
+  top: 16%;
+  right: 2%;
+  transform: rotate(8deg);
+}
+
+.ecosystem-sculpture__fallback-card--3 {
+  --card-accent: #6ce5e8;
+  top: 47%;
+  right: 1%;
+  transform: rotate(-5deg);
+}
+
+.ecosystem-sculpture__fallback-card--4 {
+  --card-accent: #79d6a2;
+  right: 15%;
+  bottom: 3%;
+  transform: rotate(5deg);
+}
+
+.ecosystem-sculpture__fallback-card--5 {
+  --card-accent: #477bff;
+  bottom: 3%;
+  left: 35%;
+  transform: rotate(-4deg);
+}
+
+.ecosystem-sculpture__fallback-card--6 {
+  --card-accent: #ffc857;
+  bottom: 17%;
+  left: 1%;
+  transform: rotate(-8deg);
+}
+
+.ecosystem-sculpture__fallback-card--7 {
+  --card-accent: #ff7657;
+  top: 22%;
+  left: 2%;
+  transform: rotate(6deg);
+}
+
+.ecosystem-sculpture__readout {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 50%;
+  z-index: 3;
+  display: grid;
+  min-width: min(18rem, 60%);
+  justify-items: center;
+  gap: 0.1rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgb(252 251 248 / 14%);
+  background: rgb(9 15 23 / 78%);
+  color: #fcfbf8;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: opacity 180ms ease;
+  backdrop-filter: blur(12px);
+}
+
+.ecosystem-sculpture[data-state="ready"] .ecosystem-sculpture__readout {
+  opacity: 1;
+}
+
+.ecosystem-sculpture__readout span,
+.ecosystem-sculpture__readout small {
+  color: #9aa2ab;
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ecosystem-sculpture__readout strong {
+  max-width: 24ch;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 550;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
 @media (max-width: 720px) {
   .ecosystem-sculpture__canvas {
     display: none;
@@ -51,10 +244,28 @@
     visibility: visible;
     transition: none;
   }
+
+  .ecosystem-sculpture__readout {
+    display: none;
+  }
+
+  .ecosystem-sculpture__fallback-card {
+    width: 27%;
+    padding: 0.6rem;
+  }
+
+  .ecosystem-sculpture__fallback-card > span {
+    font-size: clamp(0.62rem, 2.6vw, 0.82rem);
+  }
+
+  .ecosystem-sculpture__fallback-card > small {
+    font-size: 0.42rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ecosystem-sculpture__fallback {
+  .ecosystem-sculpture__fallback,
+  .ecosystem-sculpture__readout {
     transition: none;
   }
 }

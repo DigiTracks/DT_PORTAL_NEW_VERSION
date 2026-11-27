@@ -1,10 +1,12 @@
 import { useId } from "react";
-import type { ProductRecord } from "@digitracks/catalog";
+import type { PublicProductRecord } from "@digitracks/catalog";
 import Icon, { type IconName } from "./Icon";
 import ProductMark from "./ProductMark";
 
+type SignalProduct = Pick<PublicProductRecord, "id" | "name" | "category" | "logo" | "capabilities" | "installCommand">;
+
 interface ProductSignalProps {
-  product: ProductRecord;
+  product: SignalProduct;
   compact?: boolean;
   labels?: boolean;
   className?: string;
@@ -37,7 +39,7 @@ function capabilityIcon(capability: string): IconName {
   return capabilityIconRules.find(([pattern]) => pattern.test(capability))?.[1] ?? "check";
 }
 
-function visualKind(product: ProductRecord) {
+function visualKind(product: SignalProduct) {
   if (product.installCommand) return "terminal";
   if (product.id === "vertex" || product.id === "procure5") return "flow";
   if (product.category.toLowerCase().includes("engineering")) return "matrix";

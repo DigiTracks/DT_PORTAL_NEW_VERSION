@@ -1,12 +1,12 @@
 # Digi Tracks implementation notes
 
-**Date:** 2026-11-26
+**Date:** 2026-11-27
 
 **Project root:** `/data/HomeWorks/digitracks-nextgen-portal`
 
 **Reference repository:** `/data/HomeWorks/DT-Portal-main` — read-only, never a runtime dependency
 
-**Release state:** implementation and local verification complete; repository publication is separate from deployment or cutover
+**Release state:** implementation and generated-inventory review complete; the current local verification matrix passed on 27 November 2026. Repository publication is separate from deployment or cutover.
 
 ## 1. Architecture
 
@@ -33,6 +33,8 @@ artifacts/         Measured verification output
 ```
 
 The six public apps emit static HTML with `build.format: "file"`. React hydrates only where interaction is real: navigation, catalogue filtering, enquiry forms, SourceCraft local tools, ProcureSherpa workspace controls and the portal sculpture. Unknown public routes return a real noindex 404 rather than an application shell.
+
+Published HTML keeps production canonicals and cross-origin links. On loopback only, the shared layout rewrites HTTP, HTTPS and protocol-relative links to the six known Digi Tracks origins to the configured `127.0.0.1` preview origin, preserving path, query and fragment. The loopback guard covers `localhost`, the complete `127.0.0.0/8` range, `::1` and IPv4-mapped IPv6 loopback forms. The bridge covers ordinary, modified, middle-click, keyboard and dynamically inserted links, preserves custom ports on the active production origin and routes cross-production links to the real configured preview rather than an alias host. It assigns path, query and hash onto the loopback URL so network-path references such as `//evil.example` cannot replace the local authority. It does not run on published hosts and never changes generated metadata.
 
 Shared packages share code and contracts only. Cookies, localStorage, IndexedDB, authentication, service-worker cache names and runtime state are not shared across origins.
 
@@ -64,34 +66,34 @@ One generated route registry contains 2,330 records across six origins. Records 
 | HCM Fusion | `https://hcmfusion.digitracks.net` | 1,273 | 168 | 3 | 636 |
 | **Total** |  | **2,330** | **384** | **86** | **893** |
 
-The estate verifier reports 869 HTML files: 86 indexable pages, 782 noindex pages and one redirect document. The difference between preserved baseline mappings and current indexable records is intentional: rights-reserved, blocked, retired or unapproved content is not promoted into search simply because its URL existed before.
+The current estate verification records 869 HTML files: 86 indexable pages, 782 noindex pages and one redirect document, plus 893 redirects and 130 governed assets. The generated summary also records 1,246 governed content records; these include in-review/blocked templates and records and are distinct from emitted pages and governed assets. The difference between preserved baseline mappings and current indexable records is intentional: rights-reserved, blocked, retired or unapproved content is not promoted into search simply because its URL existed before.
 
 Each origin owns one trailing-slash policy, sitemap, robots declaration, canonical host and 404. SourceCraft and LearnPMO have install manifests; only SourceCraft registers a service worker. Redirects are permanent, same-origin and one-hop. ProcureSherpa hash routes remain non-indexable. Stats is outside the replacement scope and remains non-indexable/unavailable in the baseline evidence.
 
-Verification was performed before the first content commit, so the recorded sitemaps omit `lastmod` rather than inventing a build-date freshness claim. A post-publication build must use full git history to derive defensible dates. Search Console verification and sitemap submission remain owner actions.
+Current generated sitemaps omit `lastmod` because every sitemap endpoint calls `buildSitemapXml` without a date map, rather than inventing a build-date freshness claim. A post-publication build must use full git history or verified substantive content dates. Search Console verification and sitemap submission remain owner actions.
 
 ## 4. Product inventory
 
-The catalogue contains 37 records: 35 source-defined products plus two request-only MIND ONE edition routes. The public wording is **“35 source-defined products + two request-only MIND ONE edition routes.”** It does not describe all 37 entries as generally available products.
+The generated catalogue contains 37 entries: 27 source products, 13 source flagships, 10 request-only routes, two pre-launch routes and 20 nested products. These categories overlap; they are not additive. `available` is a registry label and does not independently establish production readiness or commercial entitlement.
 
 | ID | Name | Route | Registered availability |
 |---|---|---|---|
-| vedik | Vedik | `/products/vedik` | available |
+| vedik | Vedik | `/products/vedik` | request-only |
 | chronos | Chronos | `/products/chronos` | available |
 | glowra | Glowra | `/products/glowra` | available |
 | nipuna | Nipuna | `/products/nipuna` | available |
 | vertex | Vertex | `/products/vertex` | available |
 | unify | Unify | `/products/unify` | available |
 | orion | Orion | `/products/orion` | available |
-| orion-hunter | Orion Hunter | `/products/orion-hunter` | available |
+| orion-hunter | Orion Hunter | `/products/orion-hunter` | request-only |
 | construction | Construction Management | `/products/construction-management` | available |
 | transportation | Transportation Management | `/products/transportation-management` | available |
 | sherpa | Procure Sherpa | `/products/sherpa-toolkit` | available |
 | quote-simulator | Quote Simulator | `/products/quote-simulator` | available |
 | opspilot | OpsPilot | `/products/opspilot` | available |
-| recon | Recon | `/products/recon` | available |
+| recon | Recon | `/products/recon` | request-only |
 | vantor | Vantor | `/products/vantor` | available |
-| campus-grid | Campus Grid | `/products/campus-grid` | available |
+| campus-grid | Campus Grid | `/products/campus-grid` | request-only |
 | procure5 | Procure5 | `/products/procure5` | available |
 | nexora | Nexora | `/products/unify/nexora` | available |
 | arventa | Arventa | `/products/unify/arventa` | available |
@@ -102,17 +104,21 @@ The catalogue contains 37 records: 35 source-defined products plus two request-o
 | orbitra | Orbitra | `/products/unify/orbitra` | available |
 | workzen | Workzen | `/products/unify/workzen` | available |
 | connexa | Connexa | `/products/unify/connexa` | available |
-| vedik-school-erp | Vedik School Management ERP | `/products/vedik/school-erp` | available |
-| vedik-social | Vedik Social Community | `/products/vedik/social-community` | available |
-| unnati | Unnati | `/products/vedik/unnati` | available |
-| vedik-university | Vedik University Management | `/products/vedik/university` | available |
+| vedik-school-erp | Vedik School | `/products/vedik/school-erp` | request-only |
+| vedik-social | Vedik Social Community | `/products/vedik/social-community` | request-only |
+| unnati | Unnati College | `/products/vedik/unnati` | request-only |
+| vedik-university | Vedik University | `/products/vedik/university` | request-only |
 | procureleak | ProcureLeak | `/products/procure5/procureleak` | available |
 | tenderguard | TenderGuard | `/products/procure5/tenderguard` | available |
 | contractleak | ContractLeak | `/products/procure5/contractleak` | available |
 | procuredecision | ProcureDecision | `/products/procure5/procuredecision` | available |
 | procureoutcomes | ProcureOutcomes | `/products/procure5/procureoutcomes` | available |
-| mindone | MIND ONE | `/products/mindone` | request-only / pre-launch |
-| mindone-pro | MIND ONE Pro | `/products/mindone-pro` | request-only / planned complete edition |
+| mindone | MIND ONE Basic | `/products/mindone` | request-only / pre-launch |
+| mindone-pro | MIND ONE Complete | `/products/mindone-pro` | request-only / pre-launch |
+
+Unify is a separate modular ERP with nine nested apps: Nexora, Arventa, Monexa, Planora, Logistra, Procura, Orbitra, Workzen and Connexa. **UNIFY** was rejected as the Complete-edition name because of that collision. Campus Grid is a Vedik portfolio sibling and does not replace Vertex. Orion, Orion Hunter, Recon and OpsPilot are four distinct prime developer/security products, not editions of one product.
+
+MIND ONE Complete's reviewed implementation covers durable local profiles and sessions, saved practice history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed remote opportunity listings, app lock and diagnostics. It does not establish commercial entitlement, quotas, provider terms, billing, integrations, unmetered hosted use, production deployment or launch timing. Both MIND ONE editions remain request-only and pre-launch.
 
 Pipeline-only concepts are excluded from public products, forms, navigation, schema and sitemaps. Free-to-use and open-source remain separate licence concepts.
 
@@ -123,34 +129,45 @@ The approved source set contains 40 owner-supplied assets:
 - Seven master identity/icon assets.
 - Thirty-three unique official WebP product marks.
 
-Two size-matched 320px lockup derivatives bring the current approved identity inventory to 42 records and 87 copied files across six origins. Derivatives are recorded with their ImageMagick operation and source SHA-256; originals in the reference repository are unchanged. The official ICO is the favicon. Official 192px and 512px icons are used by the install manifests.
+Two size-matched 320px lockup derivatives bring the current approved identity inventory to 42 records and 88 copied files across six origins. Derivatives are recorded with their ImageMagick operation and source SHA-256; originals in the reference repository are unchanged. The official ICO is the favicon. Official 192px and 512px icons are used by the install manifests.
 
-Some products intentionally reuse a family mark. MIND ONE and MIND ONE Pro have no supplied official marks and retain neutral generated identifiers that are never described as official logos. `inventories/source-assets.json` is the current identity inventory. `inventories/assets.json` is historical audit-time evidence and is not the current approval list.
+Some products intentionally reuse a family mark. MIND ONE Basic and MIND ONE Complete have no supplied official marks and retain neutral generated identifiers that are never described as official logos. `inventories/source-assets.json` is the current identity inventory. `inventories/assets.json` is historical audit-time evidence and is not the current approval list.
 
 `pnpm generate:brand` is operator-only. It reads the approved old assets, verifies hashes and requires ImageMagick. Normal builds use local copies and need neither the old repository nor ImageMagick.
 
 ## 6. Visual and motion implementation
 
-The portal uses a dark cinematic ground, warm editorial reading surfaces, Host Grotesk, restrained Instrument Serif emphasis and one cyan signal colour. The rejected paper-only pass and radial orbital web are not present.
+The Portal uses a brighter cobalt/navy technical ground with coral, yellow and mint color fields, plus cream and paper section bands, a warm paper header and yellow footer. Each other origin has a distinct palette and composition:
 
-The homepage sculpture is **DT—01 / Systems Engine / Exploded Architecture**: five stacked machined layers, a hexagonal core, vertical conduits, support rails, ports, fasteners and status modules. It performs one 1.2-second assembly and a 72-second turntable at a 30fps cap. It hydrates only on desktop/fine-pointer/no-reduced-motion sessions, pauses when hidden or offscreen, handles context loss and disposes all geometries, materials, listeners, observers and the renderer on unmount. Mobile and reduced-motion sessions retain a static isometric SVG and do not initialize WebGL.
+| Origin | Current direction |
+|---|---|
+| Portal | Brighter cobalt/navy hero with coral, yellow and mint fields, warm paper header and yellow footer |
+| Learn | Cobalt, yellow, coral, mint and cream learning-path compositions |
+| SourceCraft | Paper, cobalt, yellow, coral and mint reference surfaces, including governed BATNA, Incoterms and TCO cards |
+| ProcureSherpa | Forest, mint, orange and cream local-first workspace |
+| LearnPMO | Terracotta, mustard, sky and cream field-guide system |
+| HCM Fusion | Blush, oxblood, gold and cream evidence composition |
 
-Product pages use catalogue-derived capability and architecture instruments. They are not fabricated application screenshots. Long product names wrap; long unbroken names receive a compact display treatment. Capability icons are selected semantically from the capability text rather than by list position.
+Header, footer and closing-section colors and lockup contrast respond to the active origin. Social cards and install manifests use the same origin-aware identity rather than one universal skin.
 
-The addendum adds purpose-built compositions rather than duplicating the generic product template:
+The portal hero uses a registry-driven **three-tier rotating product orbit**. All 37 catalogue entries are placed at regular angular intervals within their assigned tier. The lazy-loaded Three.js island performs a 1.15-second assembly and a 54-second turntable, capped at 30fps and 1.5 million pixels. It pauses when hidden or offscreen, handles context loss and disposes resources on unmount. WebGL initializes only for hover-capable fine-pointer sessions without a reduced-motion preference. Touch/mobile and reduced-motion sessions use a static featured product-deck fallback; the fallback itself does not contain all 37 products.
 
-- MIND ONE and MIND ONE Pro use a dedicated flagship narrative, practice-sequence instrument and product-bound request path.
-- `/products/mindone/compare/` compares only published positions and explicitly unresolved entitlements.
+The homepage presents MIND ONE Basic and MIND ONE Complete in one unified family block, avoids awkward decorative section numbering and uses a four-column footer. Product pages use catalogue-derived capability and architecture instruments rather than fabricated application screenshots. Long product names wrap, and capability icons are selected semantically from capability text.
+
+Purpose-built compositions remain in place:
+
+- MIND ONE Basic and MIND ONE Complete use a dedicated flagship narrative, practice-sequence instrument and product-bound request path.
+- `/products/mindone/compare/` separates reviewed implemented scope from explicitly unresolved commercial entitlements.
 - `/procurement-software/` explains the Vertex, Vantor, Procure5, Procure Sherpa and ProcureSherpa Learning relationships without implying unverified integration.
-- Six solution pages now contain industry-specific challenges, workflows, product applicability, qualitative outcomes and CTAs.
+- Six solution pages contain industry-specific challenges, workflows, product applicability, qualitative outcomes and CTAs.
 - `/services/` separates evaluation, implementation, migration and support from the product catalogue.
 - Construction and Transportation remain complete catalogue records but no longer lead the homepage hierarchy.
 
-The shared shell is `min(100% - 3rem, 112rem)`; readable prose keeps separate measures. The final MIND ONE pass uses the body face at `0.82rem` for supporting labels, a 110.592px H1 at 1536px and a measured 1,488px shell with 24px side insets. Visible naming is **MIND ONE**, never `MINDONE`; lowercase IDs and URLs remain stable.
+The desktop shared shell is `min(100% - 2rem, 120rem)`, with 2.5rem tablet and 1.5rem mobile gutters; readable prose keeps separate measures. Host Grotesk Variable carries display, body and interface text, while self-hosted Instrument Serif italic is used for selected editorial labels, including the MIND ONE “Résumé + role brief” sequence. Functional visible HTML text has a 12.8px (`0.8rem`) floor across active stylesheets, laptop body text is at least 17px, and decorative `aria-hidden`, SVG and screen-reader-only text is excluded from that invariant. Visible edition names are **MIND ONE Basic** and **MIND ONE Complete**; lowercase internal IDs and URLs remain stable.
 
 ### Stylesheet architecture
 
-`base.css` contains shared shell and design-system rules. Portal CSS is partitioned into common, home, flagship, procurement, industry, services, catalogue, product and contact families; child-origin CSS is partitioned by origin. `SiteLayout.astro` emits the applicable route/origin CSS inline, leaving only the small cacheable common stylesheet external. Exact shared-rule duplicates were removed. This corrected the previous render-blocking, high-unused-CSS regression and is covered by the final six-origin Lighthouse matrix.
+`base.css` contains shared shell and design-system rules, including origin tokens for the header, footer, close, focus and action colors. Portal CSS is partitioned into common, home, flagship, procurement, industry, services, catalogue, product and contact families; child-origin CSS is partitioned by origin. `SiteLayout.astro` emits the applicable route/origin CSS inline; shared layout/component CSS remains external. The current palettes, compositions and narrowed Portal island payloads pass the final Lighthouse and transfer-budget gates recorded in [QA_REPORT.md](QA_REPORT.md).
 
 ## 7. Origin behavior and state boundaries
 
@@ -184,9 +201,11 @@ No local tool implies server synchronisation. No assessment answer, score, progr
 
 ## 8. Enquiry and delivery flow
 
-The shared form carries a validated intent and catalogue product ID from route/query context. Supported intents are `product-enquiry`, `demo`, `consultation`, `migration`, `support`, `partnership` and `learning`. MIND ONE and MIND ONE Pro use `product-enquiry` because access is request-only; ProcureSherpa Learning uses `learning` with the `sherpa` product ID; Services routes select `consultation`, `migration` or `support` by engagement.
+The shared form carries a validated intent and catalogue product ID from route/query context. Supported intents are `product-enquiry`, `demo`, `consultation`, `migration`, `support`, `partnership` and `learning`. Demo eligibility is derived once from the shared catalogue rule: the product must be public, requestable and marked `available`. Static CTAs, the hydrated catalogue, industry paths, URL normalization, manual form changes, client validation, lead API validation and operator issuance all use that same boundary. Request-only, pre-launch, internal or retired products cannot enter `demo`; MIND ONE Basic and MIND ONE Complete therefore use `product-enquiry`. ProcureSherpa Learning uses `learning` with the `sherpa` product ID; Services routes select `consultation`, `migration` or `support` by engagement. `consultation` may carry `productId: null` in the lead body; browser analytics omit an absent product instead of sending `null`. An enquiry is not access, billing, a demo grant or commercial entitlement.
 
 If the endpoint or Turnstile site key is absent, the form collects no details and offers a contextual `mailto:contact@digitracks.net` fallback containing only the selected intent/product and a safe prompt. Nothing is sent from the page.
+
+The shared endpoint resolver applies a local-first policy before either form delivery or analytics is enabled. Loopback pages (`localhost`, `127.0.0.0/8`, `::1` and IPv4-mapped loopback IPv6) accept only loopback HTTP(S) endpoints; published pages accept only non-loopback HTTPS endpoints. Malformed, credentialed and non-HTTP endpoints are rejected. When a local preview is configured with a production endpoint, it renders an explicit blocked state, no lead form and no Turnstile script, and sends no production or bot-verification request.
 
 Submission order:
 
@@ -214,7 +233,7 @@ API-side Analytics Engine events still record server-observed lead/delivery/demo
 
 Public full-play URLs are removed. The journey requests access and offers an email fallback; it never says access was issued when only an enquiry was received.
 
-Operator endpoints issue, redeem and revoke signed grants. Tokens are unique, hashed at rest, expiring, revocable and single-use. Destination URLs come only from server-side `DEMO_DESTINATIONS_JSON`; the client cannot supply an arbitrary redirect.
+Operator endpoints issue, redeem and revoke signed grants. Tokens are unique, hashed at rest, expiring, revocable and single-use. Destination URLs come only from server-side `DEMO_DESTINATIONS_JSON`; the client cannot supply an arbitrary redirect. Issuance rejects products outside the same public, requestable and `available` demo-eligibility set used by the form and lead API.
 
 Real product destinations and the qualification policy were not supplied, so production issuance remains blocked rather than simulated.
 
@@ -247,7 +266,7 @@ Before an owner-approved release:
 4. Store Worker secrets in Cloudflare; configure verified From/Reply-To/destination addresses and the CRM staging contract.
 5. Route only `/api/*` to the Worker. Keep public page traffic asset-first and preserve real 404s.
 6. Build with full git history if sitemap dates are required; never substitute the build date for every URL.
-7. Verify every origin's canonical, robots, sitemap, redirects, social cards and security headers, plus the SourceCraft/LearnPMO manifests and SourceCraft-only service-worker scope where implemented.
+7. Verify every origin's canonical, robots, sitemap, redirects, origin-aware social cards and security headers, plus the origin-aware SourceCraft/LearnPMO manifests and SourceCraft-only service-worker scope where implemented.
 8. Run staging lead tests through real inbox/CRM receivers, including duplicates, bad signatures, replay, timeout, retries and dead letters.
 9. Approve DNS/cutover per origin, monitoring, alert ownership, backups and retention.
 10. Submit/verify Search Console properties and sitemaps; record actual acceptance.
@@ -256,18 +275,20 @@ Rollback is a separately approved static-asset/Worker version rollback plus DNS/
 
 ## 12. Evidence and limitations
 
-Final measured results are in [QA_REPORT.md](QA_REPORT.md). Core artifacts:
+Current measured local results and their limitations are in [QA_REPORT.md](QA_REPORT.md). Core artifacts:
 
 - `artifacts/preservation-verification.json`
 - `artifacts/estate-verification.json`
 - `artifacts/budgets.json`
+- `artifacts/full-route-qa.json`
 - `artifacts/browser-audit.json`
 - `artifacts/lighthouse-*.json`
+- `artifacts/visual-review/metrics.json`
 - `artifacts/security-headers.json`
 - `inventories/routes.json`
 - `inventories/source-assets.json`
 - `inventories/generated-registry-summary.json`
 
-Final local evidence covers 2,330 route records, 869 HTML files, 86 indexable pages, 893 redirects, 37 catalogue entries and 130 governed assets. The 86-route/344-state responsive crawl found no broken links, fragment failures, CSS failures, overflow or console/page errors. Forty accessibility/browser-health checks recorded zero axe violations. Rebuilt Lighthouse performance scored 98–100 across the six origins; LCP ranged from 916.5ms to 2,013.7ms and CLS from 0 to 0.001346.
+Current local evidence covers 2,330 route records, 869 HTML files, 86 indexable pages, 893 redirects, 37 catalogue entries and 130 governed assets. The 86-route/344-state responsive crawl found no broken links, fragment failures, CSS failures, overflow or console/page errors. Forty accessibility/browser-health checks recorded zero axe violations; the general browser suite passed 39/39; configured lead delivery passed 19 tests plus the separate production-endpoint refusal guard; analytics passed 2/2. The final Lighthouse matrix scored 98–100 across the six origins; LCP ranged from 1,004.8ms to 2,026.7ms and CLS from 0 to 0.004510.
 
-Automated checks do not prove WCAG conformance, field Core Web Vitals, live delivery or search-engine acceptance. Lighthouse INP was not measured. Production credentials, real application parity, editorial permission, official MIND ONE marks, business proof and external dashboards remain explicit owner dependencies.
+Automated checks do not prove WCAG conformance, field Core Web Vitals, measured INP, production behavior, customer outcomes, commercial entitlement, live delivery or search-engine acceptance. Lighthouse INP was not measured in the recorded runs. Production credentials, real application parity, editorial permission, official MIND ONE Basic/Complete marks, commercial/provider/deployment decisions, business proof and external dashboards remain explicit owner dependencies.

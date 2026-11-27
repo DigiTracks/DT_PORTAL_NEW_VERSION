@@ -1,38 +1,50 @@
 # Verified Product Intelligence
 
-**Research date:** 2026-11-25 UTC
+**Public research date:** 2026-11-25 UTC
 
-**Evidence current through:** approximately 19:26 UTC
+**Public evidence current through:** approximately 19:26 UTC
+
+**Owner-correction and authorized implementation-review date:** 2026-11-26
 
 **Accounts inspected:** [`chandrahotha`](https://github.com/chandrahotha) and [`DigiTracks`](https://github.com/DigiTracks)
 
-**Method:** public GitHub API, public repository browsing, official product pages, and static inspection of public demos
+**Public-research method:** public GitHub API, public repository browsing, official product pages, and static inspection of public demos
 
-**Restrictions observed:** no cloning, ZIP/repository downloads, repository modification, private-data access, commit, push, or product-code execution
+**Later review method:** authorized read-only inspection of current implementation and generated registries on 2026-11-26
+
+**Public-research restrictions observed:** no cloning, ZIP/repository downloads, repository modification, private-data access, commit, push, or product-code execution. The later review was limited to authorized source and inventory evidence.
 
 This inventory is research provenance, not public website copy. Personal repository links must not be added to the portal interface. Public wording must use the evidence-bounded conclusions below.
+
+The 2026-11-25 public research remains a dated snapshot. Owner corrections and authorized read-only review on 2026-11-26 supply a later evidence layer for naming, Complete-edition implementation and portfolio boundaries. The earlier public search is not credited with proving those later private/authorized findings. Where the layers differ, the dated public findings remain historical and the later reviewed/current source governs current website wording.
 
 ## Evidence levels
 
 | Level | Meaning |
 |---|---|
+| Reviewed implementation | Verified in an authorized read-only review on 2026-11-26; not commercial or production-release proof |
+| Current generated registry | Current catalogue, route, claim or inventory record generated on 2026-11-26 |
 | Code-backed | Present in public source or statically observable client code |
 | Observable demo | Visible in a public demo; not proof of production parity |
 | Vendor-stated | Published on an official product page; implementation not independently verified |
-| UNKNOWN | No sufficient public evidence, contradictory evidence, or owner approval required |
+| UNKNOWN | No sufficient evidence, contradictory evidence, or owner approval required |
 
 ## Executive decisions
 
-1. **MIND ONE can be the primary flagship narrative, but it must remain request-only and pre-launch.** Public release, launch date, outcomes, and production readiness are not verified.
-2. **MIND ONE Pro may be represented only as a request-only edition guidance page.** The official page calls it the complete variant, but the entitlement table is unapproved. No feature split, price, or launch date may be published.
-3. **ProcureSherpa Learning is best represented as the learning component of Procure Sherpa, not a separate SKU.** No separate product, repository, edition, or commercial offering was verified.
-4. **Procure Sherpa is a free browser-based learning and decision-support toolkit, not a procurement ERP.** Its copilot is local retrieval/matching, not a verified LLM. Custom workflows, team administration, native PDF generation, MCP, and accredited credentials are not supported.
-5. **Vantor requires corrective copy before promotion.** Public repository evidence conflicts with the current site on licence, production readiness, and AI citations. The portal must not choose a side without owner resolution.
-6. **Vertex and Vantor are distinct products.** No shared source, data model, or integration was verified.
-7. **No public DigiTracks procurement MCP server was verified.** Internal typed tool registries in Vantor and ProcurementOS-Agent are not MCP implementations.
-8. **Vedik has a code-backed static School ERP demo, but module counts conflict.** The repository says 18 modules while the live demo says 25. Other applications, production backend, mobile apps, offline behavior, and integrations remain unverified.
-9. **Nipuna has detailed vendor-stated capabilities but no public implementation evidence.** Its matching is explicitly deterministic and rule-based, not generative AI.
-10. **Construction and Transportation have no new first-party implementation evidence in this research.** Retain their existing pages without elevating or inventing claims.
+1. **MIND ONE Basic and MIND ONE Complete are the approved public edition names.** Both are request-only and pre-launch. Internal IDs and URLs remain `mindone` and `mindone-pro`, including `/products/mindone-pro/`.
+2. **Complete has reviewed implemented scope, but commercial/provider/deployment details remain unknown.** Reviewed implementation includes durable local profiles/sessions, saved practice history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed remote opportunity listings, app lock and diagnostics. It does not prove released entitlement, quotas, billing, provider terms, integrations, unmetered use, deployment or launch timing.
+3. **No official marks were supplied for either edition.** Neutral catalogue identifiers must not be described as official logos.
+4. **UNIFY was rejected as the Complete-edition name.** Unify is a separate modular ERP with nine nested apps: Nexora, Arventa, Monexa, Planora, Logistra, Procura, Orbitra, Workzen and Connexa.
+5. **Vedik is a five-product education ecosystem:** Vedik School, Unnati College, Vedik University, Vedik Social Community and Campus Grid. Campus Grid does not replace Vertex. Shared identity, SSO, deployment, schema or integration has not been verified.
+6. **Orion, Orion Hunter, Recon and OpsPilot are four distinct prime developer/security products.** Orion Hunter is not an Orion edition. No shared runtime or verified integration among the four was found.
+7. **ProcureSherpa Learning is best represented as the learning component of Procure Sherpa, not a separate SKU.** No separate product, repository, edition, or commercial offering was verified.
+8. **Procure Sherpa is a free browser-based learning and decision-support toolkit, not a procurement ERP.** Its copilot is local retrieval/matching, not a verified LLM. Custom workflows, team administration, native PDF generation, MCP, and accredited credentials are not supported.
+9. **Vantor requires corrective copy before promotion.** Public repository evidence conflicts with the current site on licence, production readiness, and AI citations. The portal must not choose a side without owner resolution.
+10. **Vertex and Vantor are distinct products.** No shared source, data model, or integration was verified.
+11. **No public DigiTracks procurement MCP server was verified.** Internal typed tool registries in Vantor and ProcurementOS-Agent are not MCP implementations.
+12. **Vedik has a code-backed static School ERP demo, but module counts conflict.** The repository says 18 modules while the live demo says 25. This historical conflict does not establish the implementation status of the other four ecosystem products.
+13. **Nipuna has detailed vendor-stated capabilities but no public implementation evidence.** Its matching is explicitly deterministic and rule-based, not generative AI.
+14. **Construction and Transportation have no new first-party implementation evidence in this research.** Retain their existing pages without elevating or inventing claims.
 
 ## Repository shortlist
 
@@ -46,13 +58,13 @@ This inventory is research provenance, not public website copy. Personal reposit
 | [`DigiTracks/Sherpa_ToolKit`](https://github.com/DigiTracks/Sherpa_ToolKit) | Upstream toolkit | 2026-09-26 | Older single-file toolkit, tests and PWA shell |
 | [`DigiTracks/Vedik-Demo`](https://github.com/DigiTracks/Vedik-Demo) | Static School ERP demo | 2026-09-26 | Code-backed Vedik demo scope |
 
-No public repository was found under either account for MIND ONE, MIND ONE Pro, Nipuna, Vertex, Procure5, Procura, or a procurement MCP server. `DigiTracks/Chronos-Demo` was not treated as evidence because it has no README or verified relationship to the requested portfolio.
+No public repository was found under either account during the 2026-11-25 search for either MIND ONE edition, Nipuna, Vertex, Procure5, Procura, or a procurement MCP server. This negative public-search result does not contradict the later authorized Complete-edition implementation review. `DigiTracks/Chronos-Demo` was not treated as evidence because it has no README or verified relationship to the requested portfolio.
 
 ## Product inventory
 
-### MIND ONE
+### MIND ONE — 25 November public research snapshot
 
-**Evidence:** vendor-stated plus profile README listing it as “Up Next.”
+**Historical evidence:** vendor-stated plus profile README listing it as “Up Next.” The implementation statements below were not verified by that public search and must not be read as the current Complete-edition behavior. The 26 November reviewed scope is recorded in the next section.
 
 **Purpose:** AI interview-practice coach for candidates preparing for interviews, changing roles, practising competency questions, and communicating experience more clearly.
 
@@ -74,48 +86,57 @@ No public repository was found under either account for MIND ONE, MIND ONE Pro, 
 
 **Relationships:** no verified integration with Nipuna or another recruiting product.
 
-**UNKNOWN:** implementation, release readiness, provider list, real-microphone behavior, Hindi/Spanish speech, privacy approval, pricing, and outcomes.
+**UNKNOWN at the public-research date:** implementation, release readiness, provider list, real-microphone behavior, Hindi/Spanish speech, privacy approval, pricing, and outcomes.
 
 **Safe public positioning:** “A pre-launch interview-practice product focused on résumé-grounded questions, answer-specific coaching and structured debrief. Request current access and scope.”
 
 **Do not claim:** released availability, launch date, verified outcomes, ATS integration, MCP, or verified multilingual speech.
 
-### MIND ONE Free and MIND ONE Pro
+### MIND ONE Basic and MIND ONE Complete
 
-**Evidence:** vendor-stated edition names only.
+**Evidence:** owner-approved names plus authorized read-only implementation review and current generated catalogue/claims on 2026-11-26.
 
-| Dimension | MIND ONE Free | MIND ONE Pro | Evidence status |
+| Dimension | MIND ONE Basic | MIND ONE Complete | Evidence status |
 |---|---|---|---|
-| Positioning | Free entry edition | Complete variant | Vendor-stated |
-| Public release | Not publicly released | Has not passed public-release approval | Vendor-stated |
-| Capability entitlement | UNKNOWN | UNKNOWN | Entitlement table not approved |
-| Price | UNKNOWN | UNKNOWN | Not published |
-| Launch date | None published | None published | Official page states no launch date |
-| Integrations | UNKNOWN by edition | UNKNOWN by edition | No edition-specific evidence |
-| Deployment | Pre-launch details require confirmation | Pre-launch details require confirmation | Vendor-stated boundary |
+| Public name | MIND ONE Basic | MIND ONE Complete | Owner-approved |
+| Internal ID | `mindone` | `mindone-pro` | Stable |
+| Route | `/products/mindone/` | `/products/mindone-pro/` | Stable |
+| Positioning | Focused free-access-by-request edition | Broader practice and development edition | Owner-approved positioning |
+| Availability | Request-only / pre-launch | Request-only / pre-launch | Current generated registry |
+| Reviewed implementation | Focused scope; released quotas remain unconfirmed | Durable local profiles/sessions, saved practice history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed remote opportunity listings, app lock and diagnostics | Reviewed implementation, not entitlement |
+| Commercial entitlement | UNKNOWN | UNKNOWN | Not established by implementation |
+| Quotas and billing | UNKNOWN | UNKNOWN | Not established |
+| Provider terms and hosted use | UNKNOWN | UNKNOWN | No unmetered hosted-AI claim |
+| Integrations | UNKNOWN by edition | UNKNOWN by edition | No released edition-specific integration claim |
+| Production deployment | UNKNOWN | UNKNOWN | Local implementation is not deployment proof |
+| Release timing | UNKNOWN | UNKNOWN | No launch date published |
+| Official edition mark | Not supplied | Not supplied | Neutral identifier only |
 
-**Safe public positioning:** “MIND ONE is planned with Free and Pro variants. Pro is described as the complete edition, but its approved entitlement table, price and release timing are not yet published.”
+**Safe public positioning:** “MIND ONE Basic and MIND ONE Complete are pre-launch editions available by request. Complete has reviewed implementation for local practice profiles, saved history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed remote opportunity listings, app lock and diagnostics. Commercial terms, quotas, provider use, deployment and release timing remain unconfirmed.”
 
-**Do not claim:** any specific Pro-only feature, quota, price, release date, or capability difference.
+**Do not claim:** released access, a launch date, approved quotas, billing, unmetered hosted AI, verified edition-specific integrations, production deployment, customer outcomes or commercial entitlement.
 
-**Implementation consequence:** a MIND ONE Pro page can collect qualified interest and state the evidence boundary. It must not display a fabricated feature checklist or imply that access is available.
+**Naming boundary:** UNIFY was rejected as the Complete-edition name because Unify is the separate nine-app ERP. The internal `mindone-pro` ID and `/products/mindone-pro/` URL remain unchanged.
+
+**Implementation consequence:** both edition pages collect a product-bound access enquiry. An enquiry does not take payment, issue a demo link, grant access or establish entitlement.
 
 ### Vedik
 
-**Evidence:** vendor-stated product page plus code-backed static demo.
+**Evidence:** 2026-11-25 vendor-stated product page plus code-backed static demo; expanded to a five-product education ecosystem by owner correction and current generated records on 2026-11-26.
 
-**Purpose:** offline-capable education ERP for education teams, schools, colleges and universities.
+**Purpose:** education ecosystem for school, college, university, community and campus-grid contexts.
 
-**Primary users:** school/college/university administrators, principals, teachers, education operations teams and students in the public demo.
+**Primary users:** education administrators, principals, teachers, education operations teams and students in the public demo.
 
-**Vendor-stated platform variants:**
+**Current ecosystem products:**
 
-- School Management ERP;
-- Social Community;
-- Unnati;
-- University Management.
+- Vedik School;
+- Unnati College;
+- Vedik University;
+- Vedik Social Community;
+- Campus Grid.
 
-The site also describes K-12, Colleges and Universities institution editions.
+The site also describes K-12, Colleges and Universities institution editions. Campus Grid is a Vedik portfolio sibling, not a replacement name for Vertex and not an already-integrated module inside School, Unnati or University.
 
 **Code-backed demo scope:** dashboard, students, teachers, attendance, classes, sections, subjects, timetable, exams, marks, homework, fees, finance, payroll, library, transport, hostel, inventory, communication, certificates, reports, staff, leave, settings, users/roles and licensing. The static demo uses mock data and browser-stored persona state. It includes printable receipts, certificates, ID cards and payslips; the live demo advertises CSV/Excel exports.
 
@@ -125,11 +146,11 @@ The site also describes K-12, Colleges and Universities institution editions.
 
 **Roadmap:** multi-campus central governance and PhD dissertation/research-publication tracking are vendor-stated roadmap items.
 
-**UNKNOWN:** production backend, the other three applications, offline behavior, mobile apps, integrations and current module count.
+**UNKNOWN:** production backend, implementation status of the other four ecosystem products, offline behavior, mobile apps, integrations and current module count. Vedik School web and Android share documented data/licensing foundations, but their schemas have drifted. Unnati, University, Community and Campus Grid maintain independent identity, licensing, tenancy or deployment boundaries; no common SSO, universal person ID, event bus or shared production plane was verified.
 
-**Safe public positioning:** “Vedik is an education-platform family. Its public School ERP demo shows role-based school operations with sample data; production deployment and the wider application family require evaluation.”
+**Safe public positioning:** “Vedik is an education ecosystem containing Vedik School, Unnati College, Vedik University, Vedik Social Community and Campus Grid. Its public School ERP demo shows role-based school operations with sample data; production deployment and wider ecosystem behavior require evaluation.”
 
-**Do not claim:** all four applications are code-backed, a settled module count, production-ready offline/mobile behavior, approved public pricing, or unverified integrations.
+**Do not claim:** all five products are code-backed or integrated, a shared identity/SSO/schema/deployment plane, a settled module count, production-ready offline/mobile behavior, approved public pricing, Campus Grid as a Vertex replacement, or unverified integrations.
 
 ### Nipuna
 
@@ -317,6 +338,39 @@ A private or planned DigiTracks MCP server cannot be ruled in or out. Do not cla
 
 **Public website disposition:** retain as supporting procurement intelligence unless the owner approves a dedicated catalogue entry. Do not add it to primary navigation merely because a public repository exists.
 
+### Unify
+
+**Evidence:** current generated catalogue and owner correction on 2026-11-26.
+
+**Purpose:** separate modular ERP with nine nested applications:
+
+- Nexora;
+- Arventa;
+- Monexa;
+- Planora;
+- Logistra;
+- Procura;
+- Orbitra;
+- Workzen;
+- Connexa.
+
+**Naming boundary:** UNIFY was rejected as the MIND ONE Complete name because it collides with this ERP. No MIND ONE/Unify integration is implied.
+
+**UNKNOWN:** commercial entitlement, shared production deployment, independently verified integration behavior and product-by-product production readiness. Registry availability labels do not resolve those questions.
+
+### Orion, Orion Hunter, Recon and OpsPilot
+
+**Evidence:** current generated catalogue and owner correction on 2026-11-26.
+
+| Product | ID | Route | Registered availability | Boundary |
+|---|---|---|---|---|
+| Orion | `orion` | `/products/orion/` | available | Distinct prime developer/security product |
+| Orion Hunter | `orion-hunter` | `/products/orion-hunter/` | request-only | Not an Orion edition |
+| Recon | `recon` | `/products/recon/` | request-only | Separate engineering cockpit |
+| OpsPilot | `opspilot` | `/products/opspilot/` | available | Non-AI project-operations tool |
+
+No shared runtime or verified integration among the four was found. Public copy must preserve the four-product distinction and must not collapse Orion Hunter into an Orion edition or describe OpsPilot as generative AI.
+
 ### Procure5
 
 **Evidence:** vendor-stated only.
@@ -347,21 +401,21 @@ No new public first-party implementation evidence was identified. Retain the exi
 
 ### Homepage hierarchy
 
-1. Product-led DigiTracks positioning.
-2. MIND ONE flagship, explicitly request-only/pre-launch.
-3. MIND ONE Free/Pro edition guidance with entitlement unknowns.
-4. Vedik and Nipuna as distinct education and recruiting platforms.
-5. Procurement ecosystem containing Vertex, Vantor, Procure Sherpa and ProcureSherpa Learning.
-6. Industry-specific solutions.
-7. Enterprise technology capabilities.
-8. Specialised implementations/services.
-9. Conversion close.
+- Product-led DigiTracks positioning.
+- One unified MIND ONE family block containing Basic and Complete, explicitly request-only/pre-launch.
+- Vedik and Nipuna as distinct education and recruiting ecosystems.
+- Procurement ecosystem containing Vertex, Vantor, Procure5, Procure Sherpa and ProcureSherpa Learning.
+- Orion, Orion Hunter, Recon and OpsPilot as four distinct developer/security products.
+- Industry-specific solutions and the registry-derived product atlas.
+- Enterprise technology posture, specialised implementations/services and conversion close.
+- Registry-driven three-tier orbit containing all 37 catalogue entries, with a static featured product-deck fallback.
 
 ### Navigation
 
-- Products → MIND ONE → MIND ONE Pro → Vedik → Nipuna → Procurement.
-- Procurement → Vertex → Vantor → Procure Sherpa → ProcureSherpa Learning.
+- Products → MIND ONE Basic → MIND ONE Complete → Vedik → Nipuna → Procurement → distinct developer/security products.
+- Procurement → Vertex → Vantor → Procure5 → Procure Sherpa → ProcureSherpa Learning.
 - Construction and Transportation remain in the catalogue and relevant industry paths, not the primary product menu.
+- The footer has four columns; Network links remain in the footer/legal row.
 
 ### Required corrections to existing claims
 
@@ -369,11 +423,26 @@ No new public first-party implementation evidence was identified. Retain the exi
 - Remove Procure Sherpa “verifiable certificates,” native-PDF, offline-PWA and fixed-count claims.
 - Keep Nipuna matching explicitly deterministic/rule-based.
 - Keep Vertex demo evidence labelled fictional/showcase-only.
-- Keep Vedik module totals out of public copy until reconciled.
-- Keep MIND ONE Pro entitlements, price and release timing `UNKNOWN`.
+- Keep Vedik module totals and shared identity/SSO/deployment/schema/integration claims out of public copy until verified.
+- Keep Campus Grid distinct from Vertex.
+- Keep MIND ONE Basic/Complete commercial entitlement, quotas, provider terms, billing, deployment and release timing `UNKNOWN`.
+- Keep `mindone-pro` and `/products/mindone-pro/` stable while displaying MIND ONE Complete.
+- Do not use UNIFY as an edition name; Unify is the separate nine-app ERP.
+- Keep Orion, Orion Hunter, Recon and OpsPilot as four distinct products.
 - Do not mention a DigiTracks procurement MCP server as an implemented capability.
 
 ## Source register
+
+### 26 November owner corrections and authorized review
+
+- Current generated catalogue: `packages/catalog/src/catalog.generated.ts`.
+- Current generated claims: `packages/content/src/claims.generated.ts`.
+- Current generated registry summary: `inventories/generated-registry-summary.json`.
+- Current edition comparison and request boundaries: `packages/ui/src/components/EditionComparison.astro` and `packages/ui/src/components/FlagshipProduct.astro`.
+- Current Vedik ecosystem boundaries: `packages/ui/src/components/VedikEcosystem.astro`.
+- Owner-approved naming and portfolio distinctions recorded in the generated catalogue/claims.
+
+These sources support the later evidence layer. They were not available to, and are not attributed to, the 25 November public search.
 
 ### MIND ONE
 
@@ -434,3 +503,5 @@ No new public first-party implementation evidence was identified. Retain the exi
 - No private repository, private document, credential or customer data was accessed.
 - GitHub code search temporarily exhausted quota; core API access remained available and targeted searches completed.
 - Product-page and repository conflicts remain unresolved until the owner supplies authoritative evidence.
+- The 2026-11-25 public snapshot does not prove the 2026-11-26 reviewed Complete-edition implementation, commercial entitlement, provider terms, deployment or launch status.
+- No public search result proves customer outcomes, production behavior or measured performance.

@@ -35,8 +35,151 @@ const mimeTypes = {
   ".ico": "image/x-icon",
   ".woff2": "font/woff2"
 };
-const chromePath = ["/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser"].find((candidate) => fs.existsSync(candidate));
-if (!chromePath) throw new Error("A system Chromium executable is required");
+export async function collectStylesheetReferences(page) {
+  return page.evaluate(() => {
+    const urls = [];
+    const errors = [];
+    const baseURI = document.baseURI;
+    for (const sheet of document.styleSheets) {
+      let rules;
+      try {
+        rules = [...sheet.cssRules];
+      } catch (error) {
+        errors.push({ type: "stylesheet-access", href: sheet.href, error: String(error) });
+        continue;
+      }
+      const stylesheetBase = sheet.href ?? baseURI;
+      for (const rule of rules) {
+        for (const match of rule.cssText.matchAll(/url\(\s*(?:"([^"]*)"|'([^']*)'|([^)]*?))\s*\)/g)) {
+          const href = match[1] ?? match[2] ?? match[3] ?? "";
+          if (!href || href.startsWith("#")) continue;
+          try {
+            urls.push(new URL(href, stylesheetBase).href);
+          } catch (error) {
+            errors.push({ type: "invalid-css-url", href, stylesheetBase, error: String(error) });
+          }
+        }
+      }
+    }
+    return { urls, errors };
+  });
+}
+
+export async function verifyFragment(page, item) {
+  let response;
+  try {
+    response = await page.goto(`http://127.0.0.1:${ports[item.origin]}${item.pathname}`, { waitUntil: "networkidle", timeout: 15_000 });
+  } catch (error) {
+    return { type: "fragment-navigation", ...item, error: String(error) };
+  }
+  if (!response || response.status() !== 200) {
+    return { type: "fragment-http", ...item, http: response?.status() ?? null };
+  }
+  const found = await page.evaluate((id) => Boolean(document.getElementById(id) || document.querySelector(`[name="${CSS.escape(id)}"]`)), item.fragment);
+  return found ? null : { type: "missing-fragment", ...item };
+}
+
+export function monitorNavigationHealth(page) {
+  let epoch = 0;
+  const requestEpochs = new WeakMap();
+  const state = { runtimeErrors: [], failedRequests: [], badResponses: [] };
+  const onRequest = (request) => requestEpochs.set(request, epoch);
+  const onPageError = (error) => state.runtimeErrors.push(error.message);
+  const onConsole = (message) => {
+    if (message.type() === "error") state.runtimeErrors.push(message.text());
+  };
+  const onRequestFailed = (request) => {
+    if (requestEpochs.get(request) !== epoch) return;
+    state.failedRequests.push({ url: request.url(), error: request.failure()?.errorText });
+  };
+  const onResponse = (response) => {
+    if (requestEpochs.get(response.request()) === epoch && response.status() >= 400) {
+      state.badResponses.push(`${response.status()} ${response.url()}`);
+    }
+  };
+  const onFrameNavigated = (frame) => {
+    if (frame !== page.mainFrame()) return;
+    epoch += 1;
+    state.runtimeErrors.length = 0;
+    state.failedRequests.length = 0;
+    state.badResponses.length = 0;
+  };
+
+  page.on("request", onRequest);
+  page.on("pageerror", onPageError);
+  page.on("console", onConsole);
+  page.on("requestfailed", onRequestFailed);
+  page.on("response", onResponse);
+  page.on("framenavigated", onFrameNavigated);
+
+  return {
+    beginNavigation() {
+      epoch += 1;
+      state.runtimeErrors.length = 0;
+      state.failedRequests.length = 0;
+      state.badResponses.length = 0;
+    },
+    snapshot() {
+      return {
+        runtimeErrors: [...state.runtimeErrors],
+        failedRequests: [...state.failedRequests],
+        badResponses: [...state.badResponses]
+      };
+    },
+    close() {
+      page.off("request", onRequest);
+      page.off("pageerror", onPageError);
+      page.off("console", onConsole);
+      page.off("requestfailed", onRequestFailed);
+      page.off("response", onResponse);
+      page.off("framenavigated", onFrameNavigated);
+    }
+  };
+}
+
+export async function decodeLazyImages(page, { timeoutMs = 3_000 } = {}) {
+  return page.evaluate(async (decodeTimeoutMs) => {
+    const rendered = (image) => {
+      const rect = image.getBoundingClientRect();
+      if (rect.width <= 0 || rect.height <= 0) return false;
+      for (let element = image; element; element = element.parentElement) {
+        const style = getComputedStyle(element);
+        if (style.display === "none" || style.visibility !== "visible") return false;
+      }
+      return image.checkVisibility({ checkOpacity: false, checkVisibilityCSS: true, checkContentVisibility: true });
+    };
+    const lazyImages = [...document.querySelectorAll('img[loading="lazy"]')];
+    const images = lazyImages.filter(rendered);
+    const failures = [];
+    for (const image of images) {
+      const src = image.currentSrc || image.src;
+      let timeoutId;
+      try {
+        image.scrollIntoView({ block: "center" });
+        const outcome = await Promise.race([
+          image.decode().then(() => "decoded").catch((error) => ({ type: "decode-error", error: String(error) })),
+          new Promise((resolve) => {
+            timeoutId = setTimeout(() => resolve({ type: "decode-timeout" }), decodeTimeoutMs);
+          })
+        ]);
+        if (outcome !== "decoded") failures.push({ ...outcome, src });
+      } catch (error) {
+        failures.push({ type: "decode-error", src, error: String(error) });
+      } finally {
+        clearTimeout(timeoutId);
+      }
+    }
+    window.scrollTo(0, 0);
+    return {
+      count: images.length,
+      skipped: lazyImages.length - images.length,
+      failures,
+      brokenImages: [...document.images]
+        .filter((image) => rendered(image) && (!image.complete || image.naturalWidth === 0))
+        .map((image) => image.currentSrc || image.src)
+    };
+  }, timeoutMs);
+}
 
 function resolveFile(dist, pathname) {
   const decoded = decodeURIComponent(pathname);
@@ -92,40 +235,29 @@ function localTarget(link) {
 }
 
 async function main() {
+  const chromePath = ["/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser"].find((candidate) => fs.existsSync(candidate));
+  if (!chromePath) throw new Error("A system Chromium executable is required");
   const routes = routeRegistry.filter((route) => route.indexable);
   if (routes.length !== 86) throw new Error(`Expected 86 indexable routes, found ${routes.length}`);
   const servers = await Promise.all(Object.keys(ports).map(startServer));
   const browser = await chromium.launch({ executablePath: chromePath, headless: true, args: ["--no-sandbox", "--disable-dev-shm-usage"] });
   const page = await browser.newPage();
-  const runtimeErrors = [];
-  const failedRequests = [];
-  page.on("pageerror", (error) => runtimeErrors.push(error.message));
-  page.on("console", (message) => { if (message.type() === "error") runtimeErrors.push(message.text()); });
-  page.on("requestfailed", (request) => failedRequests.push({ url: request.url(), error: request.failure()?.errorText }));
+  const health = monitorNavigationHealth(page);
 
   const issues = [];
   const links = [];
   const fragments = [];
   const cssAssets = [];
   try {
-    for (const route of routes) {
+    for (const [routeIndex, route] of routes.entries()) {
       const url = `http://127.0.0.1:${ports[route.origin]}${route.path}`;
       for (const viewport of viewports) {
         await page.setViewportSize(viewport);
-        runtimeErrors.length = 0;
-        failedRequests.length = 0;
-        const badResponses = [];
-        const onResponse = (response) => { if (response.status() >= 400) badResponses.push(`${response.status()} ${response.url()}`); };
-        page.on("response", onResponse);
+        health.beginNavigation();
+        console.log(`Route audit ${routeIndex + 1}/${routes.length}: ${route.origin}${route.path} @ ${viewport.width}px`);
         try {
           const response = await page.goto(url, { waitUntil: "networkidle", timeout: 30_000 });
-          await page.evaluate(async () => {
-            for (const image of document.querySelectorAll('img[loading="lazy"]')) {
-              image.scrollIntoView({ block: "center" });
-              try { await image.decode(); } catch {}
-            }
-            window.scrollTo(0, 0);
-          });
+          const lazyImages = await decodeLazyImages(page);
           const result = await page.evaluate(() => {
             const visible = (element) => {
               const style = getComputedStyle(element);
@@ -163,39 +295,44 @@ async function main() {
               overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
               pageWidth: document.documentElement.scrollWidth,
               clientWidth: document.documentElement.clientWidth,
-              brokenImages: [...document.images].filter((image) => !image.complete || image.naturalWidth === 0).map((image) => image.currentSrc || image.src),
               clipped,
               smallControls,
               confirmedSmallControls: smallControls.filter((control) => !control.spacingExempt),
               smallInputs,
-              anchors: [...document.querySelectorAll("a[href]")].map((anchor) => anchor.getAttribute("href")).filter(Boolean),
-              stylesheets: [...document.styleSheets].flatMap((sheet) => {
-                try {
-                  return [...sheet.cssRules].flatMap((rule) => rule.cssText.match(/url\(["']?([^"')]+)["']?\)/g) || []).map((value) => value.slice(4, -1).replace(/^["']|["']$/g, ""));
-                } catch {
-                  return [];
-                }
-              })
+              anchors: [...document.querySelectorAll("a[href]")].map((anchor) => anchor.getAttribute("href")).filter(Boolean)
             };
           });
-          const state = { route: route.id, origin: route.origin, path: route.path, width: viewport.width, http: response?.status(), ...result, runtimeErrors: [...runtimeErrors], failedRequests: [...failedRequests], badResponses };
+          const stylesheets = await collectStylesheetReferences(page);
+          const browserHealth = health.snapshot();
+          const state = {
+            route: route.id,
+            origin: route.origin,
+            path: route.path,
+            width: viewport.width,
+            http: response?.status(),
+            ...result,
+            brokenImages: lazyImages.brokenImages,
+            lazyImages,
+            ...browserHealth
+          };
           if (response?.status() !== 200) issues.push({ type: "http", ...state });
           if (result.h1 !== 1 || result.main !== 1) issues.push({ type: "landmarks", ...state });
           if (result.overflow) issues.push({ type: "overflow", ...state });
-          if (result.brokenImages.length) issues.push({ type: "broken-image", ...state });
+          if (lazyImages.failures.length) issues.push({ type: "image-decode", ...state });
+          if (lazyImages.brokenImages.length) issues.push({ type: "broken-image", ...state });
           if (result.clipped.length) issues.push({ type: "clipped-text", ...state });
           if (result.confirmedSmallControls.length) issues.push({ type: "small-control", ...state });
           if (result.smallInputs.length) issues.push({ type: "small-input", ...state });
-          if (runtimeErrors.length || failedRequests.length || badResponses.length) issues.push({ type: "browser-health", ...state });
+          if (browserHealth.runtimeErrors.length || browserHealth.failedRequests.length || browserHealth.badResponses.length) issues.push({ type: "browser-health", ...state });
+          for (const error of stylesheets.errors) issues.push({ ...error, route: route.id, origin: route.origin, path: route.path, width: viewport.width });
           for (const href of result.anchors) links.push({ origin: route.origin, source: route.path, href });
-          for (const href of result.stylesheets) cssAssets.push({ origin: route.origin, source: route.path, href });
+          for (const href of stylesheets.urls) cssAssets.push({ origin: route.origin, source: route.path, href });
         } catch (error) {
-          issues.push({ type: "navigation", route: route.id, origin: route.origin, path: route.path, width: viewport.width, error: String(error), runtimeErrors: [...runtimeErrors] });
-        } finally {
-          page.off("response", onResponse);
+          issues.push({ type: "navigation", route: route.id, origin: route.origin, path: route.path, width: viewport.width, error: String(error), ...health.snapshot() });
         }
       }
     }
+    health.close();
 
     const brokenLinks = [];
     for (const link of links) {
@@ -211,19 +348,22 @@ async function main() {
 
     const fragmentFailures = [];
     const uniqueFragments = [...new Map(fragments.map((item) => [`${item.origin}|${item.pathname}|${item.fragment}`, item])).values()];
-    for (const item of uniqueFragments) {
+    for (const [fragmentIndex, item] of uniqueFragments.entries()) {
+      if (fragmentIndex % 25 === 0) console.log(`Fragment audit ${fragmentIndex + 1}/${uniqueFragments.length}`);
       if (item.fragment.startsWith("/")) continue;
-      await page.goto(`http://127.0.0.1:${ports[item.origin]}${item.pathname}${item.pathname.endsWith("/") ? "" : "/"}`, { waitUntil: "networkidle", timeout: 15_000 }).catch(() => {});
-      const found = await page.evaluate((id) => Boolean(document.getElementById(id) || document.querySelector(`[name="${CSS.escape(id)}"]`)), item.fragment);
-      if (!found) fragmentFailures.push(item);
+      const failure = await verifyFragment(page, item);
+      if (failure) fragmentFailures.push(failure);
     }
 
     const cssFailures = [];
     for (const asset of cssAssets) {
       if (!asset.href || asset.href.startsWith("data:") || asset.href.startsWith("#")) continue;
-      const target = new URL(asset.href, `http://127.0.0.1:${ports[asset.origin]}${asset.source}`);
+      const target = new URL(asset.href);
       if (!["http:", "https:"].includes(target.protocol) || !["127.0.0.1", ...Object.keys(publicHosts)].includes(target.hostname)) continue;
-      const origin = target.hostname === "127.0.0.1" ? asset.origin : publicHosts[target.hostname];
+      const origin = target.hostname === "127.0.0.1"
+        ? Object.keys(ports).find((candidate) => ports[candidate] === Number(target.port))
+        : publicHosts[target.hostname];
+      if (!origin) continue;
       const dist = path.join(root, "apps", origin, "dist");
       if (!resolveFile(dist, target.pathname)) cssFailures.push({ ...asset, resolvedOrigin: origin, resolvedPath: target.pathname });
     }
@@ -242,6 +382,9 @@ async function main() {
       method: {
         targetMinimum: "24x24 CSS px, with WCAG 2.2 spacing exception",
         inputMinimum: "16px to prevent mobile focus zoom",
+        lazyImageDecodeTimeoutMs: 3_000,
+        imageAuditScope: "rendered images only; responsive-hidden duplicates are excluded",
+        requestFailureScope: "requests started in the current document; previous-document aborts are excluded",
         hashRoutes: "validated by dedicated workspace tests"
       }
     };
@@ -264,4 +407,6 @@ async function main() {
   }
 }
 
-await main();
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  await main();
+}

@@ -1,4 +1,4 @@
-import { productRegistry } from "@digitracks/catalog";
+import { isDemoProduct, productRegistry } from "@digitracks/catalog";
 import { origins, routeRegistry } from "@digitracks/seo";
 
 const publicProducts = productRegistry.filter(
@@ -7,7 +7,7 @@ const publicProducts = productRegistry.filter(
 const productIds = new Set(publicProducts.map((product) => product.id));
 const demoProductIds = new Set(
   publicProducts
-    .filter((product) => product.requestable && product.availability !== "unknown")
+    .filter(isDemoProduct)
     .map((product) => product.id),
 );
 

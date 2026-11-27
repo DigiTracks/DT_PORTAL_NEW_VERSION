@@ -1,53 +1,47 @@
 # Digi Tracks next-generation estate — QA report
 
-**Report date:** 26 November 2026
-
-**Measured evidence date:** 26 November 2026 local run; artifact timestamps are preserved as recorded
+**Report date:** 27 November 2026
 
 **Project root:** `/data/HomeWorks/digitracks-nextgen-portal`
 
-**Reference repository:** `/data/HomeWorks/DT-Portal-main`
+**Release state:** final local automated verification and generated-output review complete; no deployment, DNS change, secret change or cutover
 
-**Release state:** local implementation and verification only; no deployment, DNS change, secret change or cutover
+## 1. Current evidence status
 
-## 1. Executive result
+The current replacement source and generated inventories were verified locally on 27 November 2026. The build, typecheck, unit/API tests, responsive crawl, estate validation, accessibility/browser-health audit, general browser journeys, configured enquiry-form journeys, analytics journeys and transfer budgets passed. The six-origin Lighthouse matrix is recorded separately in section 9.
 
-The replacement implements the complete six-origin public shell, the addendum portfolio hierarchy, official Digi Tracks identity, flagship/product/industry/service experiences, local-only child-site tools, durable lead acceptance, signed CRM delivery, qualified demo grants and privacy-safe first-party analytics.
+This report distinguishes:
 
-Final local evidence is green for typechecking, 123 unit/API tests, production builds, byte budgets, estate validation, a clean 86-route/344-state responsive crawl, 40 accessibility/browser-health checks, 25 estate Playwright regressions, 15 enquiry-form journeys and two analytics journeys. The rebuilt six-origin Lighthouse matrix scores 98–100 for performance.
+- **Current measured local evidence**, which verifies the implemented replacement within the stated automated scope.
+- **Owner-blocked production evidence**, including real delivery, application parity, editorial permission, commercial entitlement, external dashboards, field performance and deployment approval.
 
-These results establish local implementation quality. They do **not** prove production delivery, WCAG conformance, field Core Web Vitals, Lighthouse INP, search-engine acceptance, inbox/CRM receipt or application parity.
+No deployed production result, delivery, indexing, ranking, deployment or cutover result is claimed. Automated evidence does not prove WCAG conformance, field Core Web Vitals, measured INP, production behavior, customer outcomes, commercial entitlement, inbox/CRM receipt or search-engine acceptance.
 
-Production release remains blocked by owner-supplied infrastructure, credentials, editorial permission, application source/data, demo destinations and privacy/retention approval. The old production estate was not changed.
+## 2. Current scope and inventory
 
-## 2. Scope and preservation
-
-| Item | Result |
+| Item | Current source/inventory fact |
 |---|---|
 | Public origins | Portal, Learn, SourceCraft, ProcureSherpa, LearnPMO and HCM Fusion |
-| Baseline sitemap mappings audited | 384 |
-| Historical route inventory | 1,443 records |
-| Generated replacement route registry | 2,330 records, including aliases, redirects, utility/private boundaries and hash routes |
-| Built HTML files | 869 |
+| Catalogue entries | 37 |
+| Source products | 27 |
+| Source flagships | 13 |
+| Request-only routes | 10 |
+| Pre-launch routes | 2 |
+| Nested products | 20 |
+| Generated route records | 2,330 |
+| Preserved baseline sitemap mappings | 384 |
 | Indexable pages | 86 |
-| Noindex pages | 782 |
-| Redirect documents | 1 |
-| Redirect records | 893 |
-| Catalogue | 35 source-defined products + two request-only MIND ONE edition routes = 37 entries |
-| Approved identity inventory | 40 supplied assets + two documented derivatives = 42 identity records |
-| Governed asset registry | 130 records: 42 identity, 86 social cards and two font records |
-| Reference HEAD | `9a4a9af84a0447926aa96f1cc4b2210232f44ffb` |
-| Reference tracked files | 297/297 SHA-256 hashes matched; Git working tree clean |
+| Governed content records | 1,246 |
+| Approved identity inventory | 40 owner-supplied assets plus two documented derivatives |
+| Social-card asset inventory | 86 cards, 42 source assets and two font records: 130 governed asset records |
 
-Evidence: `inventories/routes.json`, `inventories/generated-registry-summary.json`, `inventories/source-assets.json`, `inventories/old-repo-tracked-hashes.json`, `artifacts/preservation-verification.json` and `artifacts/estate-verification.json`.
+Source: `inventories/generated-registry-summary.json`, `inventories/social-cards.json` and `inventories/source-assets.json`.
 
-**Preservation caveat:** an early command mistakenly invoked pnpm from the reference working directory. It created an untracked lockfile, which was removed, and reported synchronizing ignored dependencies. The tracked Git tree and all 297 tracked-file hashes are proven unchanged. Whole-directory byte preservation, including pre-existing ignored `node_modules`, is not proven; no unknown dependency state was deleted or reset.
+The categories overlap and must not be added together. Route records include utility/private boundaries, aliases, redirects and hash routes; they are not emitted HTML pages. Governed content records are distinct from governed asset records. The `available` catalogue label is not independent evidence of production readiness or commercial entitlement.
 
-Normal replacement builds use local copied assets. They do not import, symlink or otherwise depend on the old repository. `pnpm verify:preservation` and operator-only regeneration commands are the exceptions and are machine-specific.
+## 3. Route and indexing model
 
-## 3. Route and indexing outcome
-
-| Origin | Canonical base | Registry records | Baseline mappings | Indexable | Redirects |
+| Origin | Canonical base | Registry records | Baseline mappings | Indexable records | Recorded redirect records |
 |---|---|---:|---:|---:|---:|
 | Portal | `https://digitracks.net` | 129 | 58 | 59 | 64 |
 | Learn | `https://learn.digitracks.net` | 15 | 6 | 6 | 7 |
@@ -57,72 +51,84 @@ Normal replacement builds use local copied assets. They do not import, symlink o
 | HCM Fusion | `https://hcmfusion.digitracks.net` | 1,273 | 168 | 3 | 636 |
 | **Total** | | **2,330** | **384** | **86** | **893** |
 
-The difference between 384 preserved baseline mappings and 86 indexable pages is intentional. Rights-reserved, editorially unapproved, blocked, private, retired and hash-only routes are not promoted into search merely because a URL existed before.
+The current estate verification confirms 893 redirect records and 869 emitted HTML files: 86 indexable pages, 782 noindex pages and one redirect document. It also validates all 86 local social images and 130 governed asset records with zero errors or warnings.
 
-Verified behavior includes:
+The gap between 384 preserved baseline mappings and 86 indexable pages is intentional. Rights-reserved, editorially unapproved, blocked, private, retired and hash-only routes are not promoted into search merely because a URL existed before. Indexability requires an approved `public-seo` route. SourceCraft in-review content and rights-reserved HCM Fusion content remain governed/noindex records.
 
-- One canonical host, trailing-slash policy, robots declaration and sitemap per origin.
-- Permanent, same-origin, one-hop redirect manifests.
-- Real static noindex 404 documents; no SPA fallback for unknown public paths.
-- SourceCraft term routes remain noindex/in-review; regional packs remain blocked except the regional index.
-- HCM Fusion publishes only three independently authored indexable evidence surfaces.
-- ProcureSherpa hash routes remain non-indexable.
-- SourceCraft and LearnPMO have install manifests; only SourceCraft registers a service worker.
-- Verification ran before the initial content commit, so those recorded sitemaps omit `lastmod` rather than inventing build-date freshness. Subsequent builds from a full-history checkout must derive it from Git.
+Each origin owns its canonical host, trailing-slash policy, robots declaration, sitemap and real static 404. Redirects are permanent, same-origin and one-hop. ProcureSherpa hash routes remain non-indexable. SourceCraft and LearnPMO have origin-aware install manifests; only SourceCraft registers a service worker. Sitemap `lastmod` values must come from defensible content history, not a uniform build date.
 
-The full 37-entry product list and availability labels are in `IMPLEMENTATION_NOTES.md` section 4. Exact machine-readable route records are in `inventories/routes.json`; generated runtime records are in `packages/seo/src/route-registry.generated.ts`.
+`stats.digitracks.net` remains outside the replacement scope and non-indexable.
 
-## 4. Addendum delivery
+## 4. Current implementation baseline
 
-The strategic addendum is implemented locally:
+The reviewed implementation includes:
 
-- MIND ONE is the primary homepage flagship with a dedicated landing page, navigation position, practice instrument and product-bound CTA.
-- MIND ONE Pro has a separate request-only route and an evidence-bounded comparison.
-- Vedik and Nipuna have distinct positioning, audiences, capability boundaries and visual treatments.
-- Procurement is a first-class ecosystem containing Vertex, Vantor, Procure Sherpa and ProcureSherpa Learning.
-- Construction and Transportation remain reachable but are no longer primary homepage categories.
-- Desktop/mobile navigation and the footer expose the portfolio hierarchically.
-- Six industry pages contain specific challenges, workflows, product relationships, qualitative outcomes and CTAs.
-- Visible industry/category “Estate” terminology is removed.
-- Public product naming is **MIND ONE**, not `MINDONE`.
-- Remote public GitHub research and the product-intelligence inventory are complete without cloning, ZIP downloads, repository modification or private-data exposure.
+- Six independently buildable Astro shells with selective React islands.
+- Registry-driven navigation, metadata, schema, redirects, CTAs, social cards and tests.
+- One unified MIND ONE family block containing **MIND ONE Basic** and **MIND ONE Complete**.
+- Stable internal IDs and URLs: `mindone` and `mindone-pro`, including `/products/mindone-pro/`.
+- A registry-driven three-tier rotating orbit containing all 37 catalogue entries at regular angular intervals within each tier, plus a static featured product-deck fallback for ineligible sessions.
+- A four-column footer and origin-aware header, footer, closing-section colors and lockup contrast.
+- Distinct palettes and compositions for all six origins, plus origin-aware social cards and install manifests.
+- SourceCraft local study/export tools and governed BATNA, Incoterms and total-cost-of-ownership reference cards.
+- ProcureSherpa local-first hash workspace, LearnPMO public guides and HCM Fusion approved evidence pages.
+- An API-only Cloudflare Worker for durable lead intake, asynchronous delivery and operator-controlled signed demo grants.
 
-See `docs/ADDENDUM_GAP_ANALYSIS.md` and `docs/PRODUCT_INTELLIGENCE.md` for evidence boundaries and remaining owner blockers.
+MIND ONE Basic and Complete are request-only and pre-launch. Complete's reviewed implemented scope includes durable local profiles and sessions, saved practice history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed remote opportunity listings, app lock and diagnostics. This does not establish commercial entitlement, quotas, provider terms, billing, integrations, unmetered hosted use, production deployment or launch timing. No official edition marks were supplied.
 
-## 5. Automated verification
+UNIFY was rejected as the Complete-edition name because Unify is a separate nine-app ERP. Vedik comprises Vedik School, Unnati College, Vedik University, Vedik Social Community and Campus Grid; Campus Grid does not replace Vertex. Shared identity, SSO, deployment, schema or integration across those products has not been verified. Orion, Orion Hunter, Recon and OpsPilot are four distinct prime developer/security products.
 
-| Gate | Recorded result |
+### Current visual-system review
+
+A dedicated Playwright review passed 33 route/viewport cases across 11 representative routes: Portal home, MIND ONE Basic, MIND ONE Complete, Orion, Procurement ecosystem, Services, Learn, SourceCraft, ProcureSherpa, LearnPMO Plan and HCM Fusion evidence gaps. Each case used reduced motion, waited for document fonts, captured the full page and viewport, sampled every visible HTML element with a direct text node, checked font usage and shell width, and asserted the Portal color, naming and résumé invariants. Full-page and viewport captures were also inspected manually; this is representative visual evidence, not a claim that every one of the 869 emitted documents was manually reviewed.
+
+Measured Portal home results:
+
+| Viewport | Shell | Body | Smallest visible functional text | Résumé label | Hero background |
+|---|---:|---:|---:|---|---|
+| 1920×1080 | 1,888px | 17px | 12.8px | Instrument Serif italic, 19.2px | `rgb(23, 63, 122)` |
+| 1366×768 | 1,334px | 17px | 12.8px | Instrument Serif italic, 19.2px | `rgb(23, 63, 122)` |
+| 390×844 | 366px | 16px | 12.8px | Instrument Serif where used | `rgb(23, 63, 122)` |
+
+Across all 33 cases, the smallest functional text was 12.8px, the laptop body minimum was 17px, no undersized functional-text samples remained, and no document exceeded its viewport width. Active origin/Portal stylesheet declarations also maintain a `0.8rem` functional-type floor. Host Grotesk Variable and each used Instrument Serif face loaded in Chromium. The audit excludes `aria-hidden` decorative text, SVG, screen-reader-only text and hidden elements; the résumé-font check applies only to actual display labels. These measurements verify the implemented visual system, not field usability, complete zoom/reflow behavior or WCAG conformance.
+
+Evidence: `artifacts/visual-review/metrics.json` and `artifacts/visual-review/`.
+
+## 5. Current automated verification
+
+The following table records the current local gate results. The final build, byte budgets, responsive crawl, estate validation, accessibility audit, browser journeys, form journeys and analytics journeys all passed. Lighthouse is recorded separately in section 9.
+
+| Gate | Current result |
 |---|---|
-| Reference preservation | Pass; 297 tracked files unchanged and clean |
-| Workspace typecheck | Pass; shared packages, Worker and all six Astro apps |
+| Reference preservation | 297 tracked files unchanged and clean at reference HEAD `9a4a9af84a0447926aa96f1cc4b2210232f44ffb` |
+| Workspace typecheck | Pass across shared packages, Worker and six Astro apps |
 | Astro diagnostics | 0 errors, 0 warnings, 0 hints |
-| Root unit tests | 19/19 passed across 3 files |
-| Lead API tests | 104/104 passed across 7 files |
+| Root unit tests | 28/28 passed across four files |
+| Lead API tests | 104/104 passed across seven files |
 | Worker production dry-run build | Pass |
 | Six public production builds | Pass; 869 HTML files |
 | Security-header generation | Pass; six `_headers` files with exact inline-script hashes |
 | Byte budgets | Pass; no failures |
 | Estate verification | Pass; 2,330 routes, 86 indexable pages, 893 redirects, 130 governed assets |
-| Full responsive route crawl | Pass; 86 routes, 344 states, 30,900 link references, 684 fragment references, zero issue groups |
-| General estate browser suite | 25/25 passed |
-| Configured enquiry-form suite | 15/15 passed |
+| Full responsive route crawl | Pass; 86 routes, 344 states, 32,656 link references, 688 fragment references, 2,064 CSS references, zero issue groups |
+| General estate browser suite | 39/39 passed, including the full-page visual-system review |
+| Configured enquiry-form suite | 19 passed; one environment-specific case skipped in the safe configuration |
+| Local fail-closed delivery guard | 1/1 passed with a production endpoint configured and external requests blocked |
 | Resource-export analytics suite | 2/2 passed |
-| Accessibility/browser audit | 40 checks; 0 axe violations; 0 browser-health failures |
+| Accessibility/browser audit | 40 checks; 968 axe passed rules, 36 incomplete checks, zero violations and zero browser-health failures |
 
-Browser journeys cover CTA intent/product propagation, durable-receipt wording, validation focus, network uncertainty, abort behavior, bot-check failure/retry, analytics failure isolation, URL/history state, clear/undo, independent local storage, service-worker scope, private-route boundaries, real 404s, reduced motion, WebGL fallback, long product titles, flagship hierarchy, edition comparison, Procurement relationships, industry content and hierarchical navigation.
+Historical preservation caveat: an early command invoked pnpm from the reference working directory and created an untracked lockfile, which was removed. The tracked Git tree and all 297 tracked-file hashes were recorded as unchanged. Whole-directory byte preservation, including pre-existing ignored dependencies, was not proven.
 
-No names, emails, organisations, messages, tokens, credentials, URLs, query strings or free-text form content were found in browser analytics payloads. Analytics requests omit cookies, referer and authorization. An absent `PUBLIC_LEAD_ENDPOINT` sends no browser events.
+## 6. Current accessibility and browser health
 
-## 6. Accessibility and browser health
+The current audit covered 20 representative templates at 1440×900 and 390×844. Each check included axe WCAG 2.2 AA rules, skip-link/focus behavior, one H1, one main landmark, horizontal-overflow measurement, security headers and browser health.
 
-The final audit covers 20 representative templates at 1440×900 and 390×844. Each check includes axe WCAG 2.2 AA rules, skip-link/focus behavior, one H1, one main landmark, horizontal-overflow measurement, security headers and browser health.
-
-| Metric | Result |
+| Metric | Current result |
 |---|---:|
 | Templates | 20 |
 | Route/viewport checks | 40 |
-| axe passed rules | 964 |
-| axe incomplete checks | 30 |
+| axe passed rules | 968 |
+| axe incomplete checks | 36 |
 | axe violations | 0 |
 | Page errors | 0 |
 | Console errors | 0 |
@@ -130,293 +136,148 @@ The final audit covers 20 representative templates at 1440×900 and 390×844. Ea
 | HTTP 400+ responses | 0 |
 | Horizontal overflow | 0 |
 
-The 30 incomplete axe results require manual review; they are not counted as passes. Automated checks do not prove WCAG 2.2 AA conformance, screen-reader behavior, zoom/reflow across all content, cognitive accessibility or real-device usability.
+The 36 incomplete axe results require manual review and are not passes. These results do not establish WCAG conformance, screen-reader behavior, complete zoom/reflow coverage, cognitive accessibility or real-device usability.
 
 Evidence: `artifacts/browser-audit.json`.
 
-## 7. Responsive route crawl
+## 7. Current responsive route crawl
 
-The final crawl visits every approved indexable route at 1440×900, 1024×768, 768×1024 and 390×844.
-
-| Metric | Result |
+| Metric | Current result |
 |---|---:|
 | Routes | 86 |
 | Page states | 344 |
-| Link references | 30,900 |
-| Fragment references | 684 |
+| Link references | 32,656 |
+| Fragment references | 688 |
 | CSS references | 2,064 |
 | Issue groups | 0 |
 | Broken internal links | 0 |
 | Fragment failures | 0 |
 | CSS asset failures | 0 |
 
-The crawler checks status, one H1/main, page-level overflow, broken/lazy images, clipped-text candidates, 24×24 controls with the WCAG spacing exception, 16px inputs, browser errors, failed requests, HTTP ≥400 responses, internal links and fragments. ProcureSherpa hash routes are covered by dedicated workspace tests.
+The crawler checks status, one H1/main, page overflow, broken/lazy images, clipped-text candidates, control sizing with the WCAG spacing exception, 16px inputs, browser errors, failed requests, internal links and fragments. Each rendered lazy-image decode has a three-second bound; timeouts and decode failures are explicit issue groups rather than silent skips, so one pending image cannot freeze the crawl or create a false pass. Responsive-hidden duplicate images are excluded because the browser intentionally does not render or load them; visible broken images still fail. Request failures and HTTP 400+ responses are attributed to the document navigation that started the request, so an abort left by the previous page cannot fail the next page while current-page failures still block it. ProcureSherpa hash routes have dedicated workspace tests.
 
 Evidence: `artifacts/full-route-qa.json`.
 
-## 8. Transfer budgets
+## 8. Current transfer budgets
 
-Method: gzip level 9 for HTML, CSS and JavaScript; real Chromium font requests at 390px and 1440px for every body-class template. Route-specific CSS is inlined into HTML; the table reports the remaining external common CSS request.
+Method: gzip level 9 for HTML, CSS and JavaScript; real Chromium font requests at 390px and 1440px for every body-class template. The local audit server intentionally sends uncompressed responses; reported gzip figures are offline measurements, not confirmed deployment compression. Route/origin-specific CSS is inlined where configured; shared layout/component CSS remains external.
 
 | Origin | HTML files | Max HTML gzip | Max initial JS gzip | Max external CSS gzip | Max font transfer |
 |---|---:|---:|---:|---:|---:|
-| Portal | 62 | 43,035 B | 2,708 B | 4,110 B | 42,424 B |
-| Learn | 7 | 8,020 B | 326 B | 4,110 B | 42,424 B |
-| SourceCraft | 142 | 18,002 B | 2,637 B | 4,110 B | 42,424 B |
-| ProcureSherpa | 2 | 20,176 B | 2,483 B | 4,110 B | 42,424 B |
-| LearnPMO | 30 | 4,905 B | 326 B | 4,110 B | 42,424 B |
-| HCM Fusion | 626 | 5,999 B | 326 B | 4,110 B | 42,424 B |
+| Portal | 62 | 38,099 B | 4,053 B | 6,458 B | 42,424 B |
+| Learn | 7 | 11,221 B | 3,195 B | 5,162 B | 42,424 B |
+| SourceCraft | 142 | 21,435 B | 5,507 B | 5,162 B | 42,424 B |
+| ProcureSherpa | 2 | 24,355 B | 5,353 B | 5,162 B | 42,424 B |
+| LearnPMO | 30 | 7,917 B | 3,195 B | 5,162 B | 42,424 B |
+| HCM Fusion | 626 | 8,857 B | 3,195 B | 5,162 B | 42,424 B |
 | **Limit** | | **100,000 B** | **75,000 B** | **60,000 B** | **80,000 B** |
 
-The heavy Three.js chunk is lazy-loaded and is not part of the initial JavaScript budget. The global analytics bridge is included in the measured initial payload.
+The lazy Three.js chunk is excluded from initial JavaScript. The global analytics bridge is included. All six origins pass every budget.
 
 Evidence: `artifacts/budgets.json`.
 
-## 9. Lighthouse performance
-
-The final matrix was measured after rebuilding all six origins from the route/origin CSS partition.
+## 9. Current Lighthouse performance
 
 | Origin | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT | Transfer |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Portal | 98 | 100 | 100 | 100 | 2,013.7 ms | 0 | 0 ms | 371,415 B |
-| Learn | 100 | 100 | 100 | 100 | 935.8 ms | 0.001305 | 0 ms | 114,506 B |
-| SourceCraft | 99 | 100 | 100 | 100 | 1,736.9 ms | 0.000779 | 0 ms | 246,053 B |
-| ProcureSherpa | 98 | 100 | 100 | 100 | 1,802.4 ms | 0.000748 | 7 ms | 516,944 B |
-| LearnPMO | 100 | 100 | 100 | 100 | 916.5 ms | 0 | 0 ms | 156,579 B |
-| HCM Fusion | 100 | 100 | 100 | 100 | 1,501.9 ms | 0.001346 | 60.4 ms | 106,193 B |
+| Portal | 98 | 100 | 100 | 100 | 1,952.9 ms | 0.005211 | 0 ms | 397,892 B |
+| Learn | 100 | 100 | 100 | 100 | 1,004.8 ms | 0.000411 | 0 ms | 129,960 B |
+| SourceCraft | 99 | 100 | 100 | 100 | 1,719.8 ms | 0.004510 | 40 ms | 323,598 B |
+| ProcureSherpa | 98 | 100 | 100 | 100 | 1,801.1 ms | 0 | 30 ms | 539,686 B |
+| LearnPMO | 98 | 100 | 100 | 100 | 2,026.7 ms | 0 | 111 ms | 183,219 B |
+| HCM Fusion | 99 | 100 | 100 | 100 | 1,652.4 ms | 0.000717 | 134 ms | 120,535 B |
 
-Recorded method: local static preview, simulated mobile throttling, 412×823 viewport and DPR 1.75. Gates are performance ≥95, LCP ≤2,500 ms, CLS ≤0.1 and INP ≤200 ms when present. Lighthouse INP is `null` for all six reports and remains unmeasured. These are local simulated results, not field or production evidence.
+Method: local static preview, simulated mobile throttling, 412×823 viewport and DPR 1.75. The unchanged gates are performance ≥95, LCP ≤2,500 ms, CLS ≤0.1 and INP ≤200 ms when present. Lighthouse INP was `null` for all six reports and remains unmeasured. These are current local simulated results, not field or production evidence.
 
-Evidence: `artifacts/lighthouse-portal.json`, `artifacts/lighthouse-learn.json`, `artifacts/lighthouse-sourcecraft.json`, `artifacts/lighthouse-procuresherpa.json`, `artifacts/lighthouse-learnpmo.json`, `artifacts/lighthouse-hcmfusion.json` and `artifacts/browser-audit.json`.
+The Portal home previously serialized the full public catalogue into both the sculpture and atlas islands. Narrowing those payloads reduced the home document from 288,637 to 191,068 uncompressed bytes and combined island props from 137,218 to 39,648 bytes; the final Portal Lighthouse run passed at performance 98 with LCP 1,952.9ms. Per-origin Lighthouse exceptions are now recorded explicitly in the combined artifact while the remaining origins continue, and the command exits nonzero instead of leaving a stale success report.
 
-## 10. Stylesheet architecture correction
+Evidence: `artifacts/lighthouse-*.json`.
 
-Before the final partition, Portal transferred approximately 149 KB of CSS per template and Lighthouse reported approximately 70% unused CSS on the homepage. Child origins also downloaded styles for unrelated applications.
+## 10. Security, lead and delivery semantics
 
-The delivered architecture:
-
-- Keeps shared shell/design-system rules in `base.css`.
-- Removes exact duplicate shared rules from page-family and origin files.
-- Partitions Portal CSS into common, home, flagship, procurement, industry, services, catalogue, product and contact families.
-- Partitions child CSS by origin.
-- Inlines route/origin-specific CSS through `SiteLayout`.
-- Retains only the small cacheable common stylesheet as an external CSS request.
-
-This improved Portal LCP from 3,230.1ms to 2,013.7ms and SourceCraft LCP from 2,702.0ms to 1,736.9ms in the recorded local runs. The superseded `global.css` and `origins.css` are not imported by runtime layouts.
-
-## 11. Visual and responsive evidence
-
-The final visual pass uses the official Digi Tracks lockup, favicon, install icons and 33 unique official product marks. The rejected paper-only layout and radial orbital web are absent. The homepage carries the original **DT—01 / Systems Engine / Exploded Architecture** sculpture.
-
-Measured visual evidence:
-
-- MIND ONE at 1536×864: 1,488px shell width, 24px side insets, 110.592px H1, zero horizontal overflow and zero page errors.
-- MIND ONE full-page captures reviewed at 1536px and 390px after the final CSS partition.
-- Homepage at 1440×900, 1024×768 and 768×1024: one ready WebGL canvas.
-- Homepage at 390×844 and under reduced motion: static fallback, zero canvases.
-- All 86 indexable routes pass the four-width responsive crawl.
-- Long product titles wrap rather than ellipsise; capability icons follow semantic meaning.
-- Shared navigation/footer controls meet the 24px minimum with the WCAG spacing exception.
-- Inputs use at least 16px type to avoid mobile focus zoom.
-- Learn utility routes are excluded from learning-product navigation.
-
-Evidence: `artifacts/mindone-final-1536.png`, `artifacts/mindone-final-390.png`, `artifacts/visual-identity/refined-visual-measurements.json`, `artifacts/visual-identity/refined-*.png` and `artifacts/full-route-qa.json`.
-
-## 12. Security, lead and delivery semantics
-
-Verified implementation boundaries include:
+The reviewed implementation defines:
 
 - Exact-origin checks, approximate per-isolate abuse limits, declared/streamed body caps and schema validation.
 - A 20,000-byte lead body cap and a 2,000-byte browser-event cap.
-- Fail-closed missing/incoherent Turnstile configuration.
+- Fail-closed missing or incoherent Turnstile configuration.
 - Durable D1 lead/idempotency/outbox commit before HTTP 202 `received`.
-- Queue-based Resend and signed HTTPS CRM delivery with bounded retry, permanent-failure and dead-letter states.
-- HMAC-SHA-256 over timestamp plus raw body, stable delivery IDs, replay window and receiver deduplication contract.
+- Queue-based Resend and signed HTTPS CRM delivery with bounded retries, permanent-failure classification and dead-letter state.
+- HMAC-SHA-256 over timestamp plus raw body, stable delivery IDs, replay windows and receiver deduplication.
 - Stable 24-hour Resend idempotency keys.
-- Operator-only, product-bound, expiring, revocable, single-use demo grants with server-configured destinations.
+- Product-bound, expiring, revocable, single-use demo grants with server-configured destinations.
+- One catalogue-derived demo-eligibility rule across static/hydrated CTAs, contact URL and manual state, client validation, lead API validation and operator issuance: public, requestable and `available` products only.
 - No client-selected recipient or arbitrary redirect.
-- CSP, `nosniff`, strict referrer policy, frame denial, same-origin opener/resource policy and HSTS in generated headers.
-- Contextual `mailto:contact@digitracks.net` fallback when durable form configuration is absent; no form data is collected in that state.
+- Privacy-safe allowlisted browser events without form text, cookies, local-storage values, tokens or personal data.
+- A contextual `mailto:contact@digitracks.net` fallback when durable form configuration is absent; the page collects no form details in that state.
+- Loopback-only navigation from all six local origins, including normal, Control-click, middle-click, keyboard and dynamically inserted links, without production requests. Double-slash pathnames are assigned onto the loopback URL rather than reparsed as network-path references, so they cannot replace the local authority.
+- A shared endpoint resolver that permits loopback HTTP(S) delivery only from loopback pages and non-loopback HTTPS delivery only from published pages. A local preview configured with a production endpoint renders no form, loads no Turnstile script and contacts neither production nor the bot-verification provider.
 
-Provider acceptance is never described as inbox or CRM receipt. `/api/lead/health` proves D1/Queue/Turnstile readiness only. Real Resend delivery, CRM acknowledgement and demo destinations remain untested because credentials and receivers were not supplied.
+Provider acceptance is not inbox or CRM receipt. `/api/lead/health` reports D1/Queue/Turnstile readiness only. Real Resend delivery, CRM acknowledgement and demo destinations remain untested because production credentials and receivers were not supplied. An enquiry is not product access, billing, a demo grant or commercial entitlement.
 
-Evidence: `artifacts/security-headers.json`, `apps/lead-api/tests/` and `tests/e2e/lead-form.spec.ts`.
+Evidence: `apps/lead-api/tests/`, `tests/e2e/lead-form.spec.ts` and `artifacts/security-headers.json`. The current API, form, local fail-closed guard and analytics results are recorded in section 5.
 
-## 13. Historical audit and competitor research
-
-The historical estate audit records 41 claims and 38 defects/evidence gaps. It found material issues including pre-submission HCM answer exposure, contradictory indexing policy, rights-reserved editorial content, soft 404 application shells, duplicate canonical forms, missing CSPs and unproven durable lead/CRM delivery.
-
-The replacement avoids republishing affected answer keys and unapproved editorial records, establishes real 404s and coherent indexing, and implements durable delivery contracts. It does not modify or claim to repair the old production source.
-
-Competitor research covers eight official public products/adjacent services with 54 dated sources: Odoo, ERPNext, Procurify, Oracle University, Superset, Semgrep, Cliniko and Fresha. It informs workflow-led IA, transparent scoping, docs-led adoption and qualified demos without copying proprietary assets or inventing proof.
-
-Evidence: `docs/WEBSITE_AUDIT.md`, `inventories/claims.json`, `inventories/defects.json` and `docs/COMPETITOR_ANALYSIS.md`.
-
-## 14. Production blockers and unknowns
+## 11. Production blockers and unknowns
 
 | Area | Status / required owner action |
 |---|---|
+| Local verification | Current matrix and measured results are recorded in sections 5–9; they do not establish production readiness |
 | Cloudflare resources | Provision D1, delivery Queue, dead-letter Queue, Analytics Engine and API-only Worker routing; replace `REPLACE_WITH_D1_DATABASE_ID` |
 | Email | Supply Resend account/key, verified From/Reply-To/destination addresses and test inbox evidence |
-| CRM | Supply staging HTTPS URL, auth/signing secret, mapping, idempotency, timeout and receiver test evidence |
+| CRM | Supply staging HTTPS URL, signing secret, mapping, idempotency, timeout and receiver test evidence |
 | Turnstile | Supply coherent site/secret keys, hostnames, action and approved privacy wording |
-| Demo access | Supply real product destinations, qualification policy and issuance/revocation operating procedure |
+| Demo access | Supply real destinations, qualification policy and issuance/revocation procedure |
+| MIND ONE commercial scope | Resolve Basic/Complete entitlement, quotas, provider terms, billing, integrations, deployment and launch policy |
+| MIND ONE identity | Supply approved edition marks or retain neutral identifiers |
 | Editorial rights | Approve SourceCraft/HCM Fusion content or keep it blocked/noindex |
 | Application parity | Supply authorised ProcureSherpa/LearnPMO/HCM Fusion source, schemas, fixtures and rules |
-| MIND ONE identity | Supply approved MIND ONE/MIND ONE Pro marks or retain the neutral identifier |
-| Asset provenance | Approve any visual asset beyond the supplied Digi Tracks identity set |
-| Business proof | Supply genuine identity/customer/security proof before publishing it; none is invented |
+| Vedik boundaries | Supply evidence before claiming shared identity, SSO, deployment, schema or integration across the five-product ecosystem |
+| Business proof | Supply genuine identity/customer/security proof before publishing it |
 | Analytics governance | Approve consent/retention policy, production dataset, dashboards and access; volumes remain `UNKNOWN` |
 | SEO operations | Verify Search Console properties and submit sitemaps; local generation does not prove acceptance |
-| Hosting/release | Approve per-origin hosting, redirects, monitoring, backups, rollback and cutover |
 | Field quality | Measure real-user Core Web Vitals, INP, device/browser coverage and assistive-technology behavior |
+| Hosting/release | Approve per-origin hosting, redirects, monitoring, backups, rollback and cutover |
 | CI/deployment | No CI workflow, Pages project manifest or deploy script is included |
 
-Legacy portal `/api/lead` and `/api/send-email` redirect records are not evidence of same-host API routing. Production must explicitly route the approved API origin.
+## 12. Verification execution
 
-## 15. Reproduce the checks
-
-Use Node 24.x and pnpm 12.16.1 from the project root.
+The final matrix ran from the project root with Node 24.22.3 and pnpm 12.16.1. The complete `pnpm verify` command exceeds the command runner's ten-minute limit, so it was executed as equivalent bounded groups without omitting or weakening a gate:
 
 ```bash
-pnpm install --frozen-lockfile
-pnpm verify
+pnpm verify:preservation
+pnpm typecheck
+pnpm test
+pnpm test:api
+pnpm build
+pnpm budget
 pnpm audit:routes
+pnpm verify:estate
+pnpm audit:a11y
+pnpm exec playwright test
+pnpm test:lead-form
+pnpm test:analytics
 pnpm audit:performance
+pnpm verify:estate
 ```
 
-`pnpm verify` runs preservation, typecheck, unit/API tests, production builds, budgets, estate validation, accessibility, estate browser journeys, enquiry-form journeys, resource-export analytics and a final estate verification. The full-route crawl and Lighthouse matrix are explicit separate commands.
+The direct Playwright invocation used the completed build and generated headers, so it is equivalent to the browser portion of `test:e2e` without rebuilding the estate again. The Lighthouse matrix ran separately. Preservation verification reads the reference repository and is machine-specific; normal builds use local assets.
 
-To run the public shells:
+The executed matrix covered the MIND ONE names/routes, 37-product orbit placement and fallback, unified family block, four-column footer, six origin palettes, origin-aware header/footer/close/lockup contrast, origin-aware social cards/manifests and current generated registries. Manual keyboard, zoom/reflow, reduced-motion and assistive-technology review remains separate from automated gates; the representative visual captures and reduced-motion browser journeys are recorded in sections 4 and 5.
 
-```bash
-pnpm --filter './apps/*' --filter '!@digitracks/lead-api' --parallel dev
-```
-
-Local origins are ports 4321–4326 in the order Portal, Learn, SourceCraft, ProcureSherpa, LearnPMO and HCM Fusion. The enquiry form remains disabled until a lead endpoint and Turnstile site key are configured; an email fallback remains available.
-
-## 16. Artifact index
+## 13. Artifact index
 
 | Artifact | Purpose |
 |---|---|
-| `artifacts/preservation-verification.json` | Reference HEAD, clean tree and tracked-hash result |
-| `artifacts/estate-verification.json` | Route, HTML, indexing, redirect, social-image and asset counts |
-| `artifacts/full-route-qa.json` | Final 86-route/344-state responsive/link crawl |
-| `artifacts/budgets.json` | Per-origin/per-template transfer measurements |
-| `artifacts/browser-audit.json` | Accessibility, browser-health and Lighthouse summaries |
-| `artifacts/lighthouse-*.json` | Full six-origin Lighthouse reports |
+| `artifacts/preservation-verification.json` | Current reference HEAD, clean-tree and tracked-hash result |
+| `artifacts/estate-verification.json` | Current route, HTML, indexing, redirect, social-image and asset counts |
+| `artifacts/full-route-qa.json` | Current 86-route/344-state responsive/link crawl |
+| `artifacts/budgets.json` | Current per-origin/per-template transfer measurements |
+| `artifacts/browser-audit.json` | Current accessibility, browser-health and Lighthouse summaries |
+| `artifacts/lighthouse-*.json` | Current six-origin Lighthouse reports |
 | `artifacts/security-headers.json` | Generated CSP/hash counts per origin |
-| `artifacts/mindone-final-1536.png` | Final full-page MIND ONE desktop capture |
-| `artifacts/mindone-final-390.png` | Final full-page MIND ONE mobile capture |
-| `artifacts/visual-identity/refined-visual-measurements.json` | Responsive sculpture and product-title measurements |
-| `inventories/routes.json` | Exact historical route inventory |
+| `artifacts/visual-review/metrics.json` | Current 33-case typography, font, shell, color and visible-text measurements |
+| `artifacts/visual-review/` | Current full-page and viewport captures for 11 representative routes at three sizes |
+| `inventories/generated-registry-summary.json` | Current generated registry counts |
+| `inventories/social-cards.json` | Current origin-aware social-card and governed-asset inventory |
 | `inventories/source-assets.json` | Approved identity provenance and hashes |
-| `inventories/generated-registry-summary.json` | Generated registry counts |
 | `inventories/claims.json` | Claim/evidence register |
 | `inventories/defects.json` | Prioritized historical defect register |
-
-## Appendix A — exact indexable routes
-
-### Portal — 59
-
-- `/`
-- `/about/`
-- `/contact/`
-- `/developer-tools/`
-- `/engineering/`
-- `/faq/`
-- `/field-operations/`
-- `/industries/`
-- `/offline-first-software/`
-- `/pricing/`
-- `/procurement-software/`
-- `/products/`
-- `/products/campus-grid/`
-- `/products/chronos/`
-- `/products/construction-management/`
-- `/products/glowra/`
-- `/products/mindone-pro/`
-- `/products/mindone/`
-- `/products/mindone/compare/`
-- `/products/nipuna/`
-- `/products/opspilot/`
-- `/products/orion-hunter/`
-- `/products/orion/`
-- `/products/procure5/`
-- `/products/procure5/contractleak/`
-- `/products/procure5/procuredecision/`
-- `/products/procure5/procureleak/`
-- `/products/procure5/procureoutcomes/`
-- `/products/procure5/tenderguard/`
-- `/products/quote-simulator/`
-- `/products/recon/`
-- `/products/sherpa-toolkit/`
-- `/products/transportation-management/`
-- `/products/unify/`
-- `/products/unify/arventa/`
-- `/products/unify/connexa/`
-- `/products/unify/logistra/`
-- `/products/unify/monexa/`
-- `/products/unify/nexora/`
-- `/products/unify/orbitra/`
-- `/products/unify/planora/`
-- `/products/unify/procura/`
-- `/products/unify/workzen/`
-- `/products/vantor/`
-- `/products/vedik/`
-- `/products/vedik/school-erp/`
-- `/products/vedik/social-community/`
-- `/products/vedik/university/`
-- `/products/vedik/unnati/`
-- `/products/vertex/`
-- `/services/`
-- `/solutions/`
-- `/solutions/beauty-wellness/`
-- `/solutions/business-operations/`
-- `/solutions/education/`
-- `/solutions/healthcare/`
-- `/solutions/procurement/`
-- `/solutions/recruitment/`
-- `/trust/`
-
-### Learn — 6
-
-- `/`
-- `/contact/`
-- `/hcmfusion/`
-- `/learnpmo/`
-- `/procuresherpa/`
-- `/sourcecraft/`
-
-### SourceCraft — 5
-
-- `/`
-- `/about/`
-- `/explore/`
-- `/regions/`
-- `/sources/`
-
-### ProcureSherpa — 1
-
-- `/`
-
-### LearnPMO — 12
-
-- `/assessments/`
-- `/cohort/`
-- `/controls/`
-- `/dashboard/`
-- `/documents/`
-- `/exams/`
-- `/industries/`
-- `/lessons/`
-- `/plan/`
-- `/pmo/`
-- `/portfolio/`
-- `/programme/`
-
-### HCM Fusion — 3
-
-- `/`
-- `/sources/gaps/`
-- `/sources/releases/`

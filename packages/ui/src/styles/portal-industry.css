@@ -83,7 +83,7 @@
   padding: 0.9rem 1rem;
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -124,7 +124,7 @@
 .recruitment-model__lane small {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -162,7 +162,7 @@
 .studio-model__time strong {
   color: var(--signal);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
@@ -216,7 +216,7 @@
 .industry-hero__audience span {
   color: var(--signal);
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -277,7 +277,7 @@
 .industry-sequence li > span {
   color: var(--signal-deep);
   font-family: var(--font-mono);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
 }
 
 .industry-sequence h3 {
@@ -335,7 +335,7 @@
 .industry-product-card__head a {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -367,7 +367,7 @@
   margin-bottom: 0.35rem;
   color: var(--p-ink);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -407,7 +407,7 @@
 .industry-questions li span {
   color: var(--signal-deep);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
 }
 
 .industry-questions li p {
@@ -520,7 +520,7 @@
   .industry-model__head,
 .industry-model figcaption {
     padding-inline: 0.75rem;
-    font-size: 0.57rem;
+    font-size: 0.8rem;
   }
 
   .education-model__lanes {
@@ -549,7 +549,7 @@
   }
 
   .studio-model__time span {
-    font-size: 0.55rem;
+    font-size: 0.8rem;
   }
 
   .recruitment-model {

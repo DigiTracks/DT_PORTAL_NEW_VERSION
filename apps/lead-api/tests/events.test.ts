@@ -41,8 +41,8 @@ describe("first-party browser events", () => {
     const analytics = captureAnalytics();
     const env = { ...testEnv(), ANALYTICS: analytics.dataset, DB: undefined, LEAD_QUEUE: undefined };
     const cases = [
-      { event: "cta_click", ctaId: "request-product-demo", intent: "demo", productId: "vedik" },
-      { event: "demo_open", ctaId: "request-product-demo", intent: "demo", productId: "vedik" },
+      { event: "cta_click", ctaId: "request-product-demo", intent: "demo", productId: "unify" },
+      { event: "demo_open", ctaId: "request-product-demo", intent: "demo", productId: "unify" },
       { event: "resource_export", resourceId: "sourcecraft-favourites" },
       { event: "lead_start", intent: "migration", productId: "unify" },
       { event: "lead_submit", intent: "migration", productId: "unify" },
@@ -54,7 +54,7 @@ describe("first-party browser events", () => {
       expect(response.headers.get("Cache-Control")).toBe("no-store");
     }
     expect(analytics.points.map((point) => point.indexes)).toEqual(cases.map((item) => [item.event]));
-    expect(analytics.points[0].blobs).toEqual(["demo", "vedik", "none", "none", "request-product-demo", "none"]);
+    expect(analytics.points[0].blobs).toEqual(["demo", "unify", "none", "none", "request-product-demo", "none"]);
     expect(analytics.points[2].blobs).toEqual(["none", "none", "none", "none", "none", "sourcecraft-favourites"]);
   });
 

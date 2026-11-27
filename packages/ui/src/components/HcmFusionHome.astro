@@ -8,6 +8,12 @@ interface Props {
 
 const { baselineCount, blockedCount } = Astro.props;
 const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=hcmfusion";
+const evidenceItems = [
+  { path: "/sources/gaps/", label: "Evidence register", title: "What remains unknown.", copy: "Source ownership, application parity, assessment policy and migration permission are recorded as gaps, not guessed.", action: "Open gap register" },
+  { path: "/sources/releases/", label: "Release method", title: "What a release claim must prove.", copy: "Read the evidence required before release notes, concept pages or assessment material can be approved.", action: "Open release method" },
+  { path: requestHref, label: "Authorised access", title: "Keep tenant data separate.", copy: "Account access, protected assessment content and progress require an authenticated, tenant-aware service that is not configured here.", action: "Discuss authorised access" }
+] as const;
+const publicEvidenceCount = evidenceItems.filter((item) => item.path.startsWith("/")).length;
 ---
 
 <section class="hcm-hero" aria-labelledby="hcm-title">
@@ -24,12 +30,12 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
     <div class="hcm-monolith" aria-hidden="true">
       <div class="hcm-monolith__face hcm-monolith__face--back">HCM</div>
       <div class="hcm-monolith__face hcm-monolith__face--mid">FUSION</div>
-      <div class="hcm-monolith__face hcm-monolith__face--front"><span>EVIDENCE<br>BOUNDARY</span><small>01 / PUBLIC</small></div>
+      <div class="hcm-monolith__face hcm-monolith__face--front"><span>EVIDENCE<br>BOUNDARY</span><small>PUBLIC / VERIFIED SCOPE</small></div>
     </div>
   </div>
   <div class="shell hcm-hero__ledger">
     <div><strong>{String(baselineCount).padStart(3, "0")}</strong><span>baseline identifiers</span></div>
-    <div><strong>003</strong><span>public evidence pages</span></div>
+    <div><strong>{String(publicEvidenceCount).padStart(2, "0")}</strong><span>public evidence pages</span></div>
     <div><strong>{String(blockedCount).padStart(3, "0")}</strong><span>withheld from indexing</span></div>
   </div>
 </section>
@@ -41,9 +47,15 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
       <p>The build separates independently authored evidence pages from rights-reserved concept, certification and assessment material.</p>
     </div>
     <div class="hcm-evidence-grid">
-      <a href="/sources/gaps/"><span>01</span><p class="t-label">Evidence register</p><h3>What remains unknown.</h3><p>Source ownership, application parity, assessment policy and migration permission are recorded as gaps, not guessed.</p><small>Open gap register ↗</small></a>
-      <a href="/sources/releases/"><span>02</span><p class="t-label">Release method</p><h3>What a release claim must prove.</h3><p>Read the evidence required before release notes, concept pages or assessment material can be approved.</p><small>Open release method ↗</small></a>
-      <a href="https://digitracks.net/contact/?intent=demo&origin=hcmfusion"><span>03</span><p class="t-label">Authorised access</p><h3>Keep tenant data separate.</h3><p>Account access, protected assessment content and progress require an authenticated, tenant-aware service that is not configured here.</p><small>Discuss authorised access ↗</small></a>
+      {evidenceItems.map((item, index) => (
+        <a key={item.path} href={item.path}>
+          <span>{String(index + 1).padStart(2, "0")}</span>
+          <p class="t-label">{item.label}</p>
+          <h3>{item.title}</h3>
+          <p>{item.copy}</p>
+          <small>{item.action} ↗</small>
+        </a>
+      ))}
     </div>
   </div>
 </section>

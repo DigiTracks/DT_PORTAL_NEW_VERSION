@@ -7,59 +7,59 @@ interface Props {
 }
 
 const { product } = Astro.props;
-const isPro = product.id === "mindone-pro";
+const isComplete = product.id === "mindone-pro";
 const requestHref = `/contact/?intent=product-enquiry&product=${encodeURIComponent(product.id)}`;
 const compareHref = "/products/mindone/compare/";
+const requestLabel = isComplete ? "Request Complete access" : "Request Basic access";
 const practiceSteps = [
   { number: "01", title: "Ground the session", label: "Résumé + role brief", copy: "Start with the candidate’s experience and the requirements of the role." },
-  { number: "02", title: "Ask the question", label: "Role-specific practice", copy: "Use the published résumé- and job-description-grounded question scope." },
+  { number: "02", title: "Ask the question", label: "Role-specific practice", copy: "Use résumé- and job-description-grounded questions for the role being practised." },
   { number: "03", title: "Take the answer", label: "Speak or type", copy: "Practise with browser speech input or use the typed fallback." },
   { number: "04", title: "Coach the response", label: "Answer-specific guidance", copy: "Review coaching and model-answer rewriting against the answer given." },
   { number: "05", title: "Keep the debrief", label: "Priorities + drill sheet", copy: "Finish with prioritised tips and a focused practice sheet." }
 ] as const;
 const unknowns = [
-  ["Feature entitlements", "No approved Pro-only feature list is published."],
-  ["Price and licence", "Commercial terms require owner confirmation."],
-  ["Usage limits", "Quotas and session limits are not published."],
-  ["Integrations", "No ATS, MCP or other integration is verified."],
-  ["Deployment and providers", "Production deployment and hosted AI providers require confirmation."],
-  ["Release timing", "No approved launch date is published."]
+  ["Price and licence", "Final commercial terms for each edition require owner confirmation."],
+  ["Usage limits", "Released quotas and session limits are not published. Provider and technical limits still apply."],
+  ["Integrations", "No ATS, MCP or other integration has been verified."],
+  ["Deployment and providers", "Production deployment, hosted AI providers and retention details require confirmation."],
+  ["Release timing", "No approved public launch date is published."]
 ] as const;
 ---
 
 <section class="flagship-hero" aria-labelledby="flagship-title">
-  <div class="flagship-hero__word" aria-hidden="true">{isPro ? "PRO" : "M/01"}</div>
+  <div class="flagship-hero__word" aria-hidden="true">{isComplete ? "COMPLETE" : "M/01"}</div>
   <div class="shell flagship-hero__grid">
     <div class="flagship-hero__copy">
-      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>Digi Tracks flagship / {product.edition}</p>
-      <h1 id="flagship-title"><span>{product.name}</span><em>{isPro ? "Complete, once the details are clear." : "Your experience should shape the rehearsal."}</em></h1>
-      <p class="flagship-hero__lede">{product.summary}. {isPro ? "Register qualified interest while the complete edition’s entitlements, price and release timing remain unconfirmed." : "A pre-launch practice product for candidates and career changers preparing for competency-based interviews."}</p>
+      <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>MIND ONE family / {product.edition}</p>
+      <h1 id="flagship-title"><span class={isComplete ? "flagship-hero__title--complete" : undefined}>{product.name}</span><em>{isComplete ? "The full MIND ONE experience." : "Your experience should shape the rehearsal."}</em></h1>
+      <p class="flagship-hero__lede">{product.summary}. {isComplete ? "The implemented Complete scope adds durable local history, progress and role-development tools to the shared practice model." : "A free, focused pre-launch practice position for candidates preparing for competency-based interviews."}</p>
       <div class="button-row">
-        <Button href={requestHref} ctaId="request-mindone-access">{isPro ? "Register Pro interest" : "Register MIND ONE interest"}</Button>
-        <Button href={compareHref} variant="secondary" ctaId="compare-mindone-editions">Compare the editions</Button>
+        <Button href={requestHref} ctaId="request-mindone-access">{requestLabel}</Button>
+        <Button href={compareHref} variant="secondary" ctaId="compare-mindone-editions">Compare Basic and Complete</Button>
       </div>
-      <p class="flagship-hero__request-note">Request only. An enquiry does not grant product access or reserve a release date.</p>
+      <p class="flagship-hero__request-note">Request only. An enquiry does not grant product access, activate billing or reserve a release date.</p>
       <dl class="flagship-hero__facts">
         <div><dt>Availability</dt><dd>{product.status}</dd></div>
-        <div><dt>Evidence</dt><dd>{isPro ? "Edition positioning only" : "Vendor-published scope"}</dd></div>
+        <div><dt>Evidence</dt><dd>{isComplete ? "Implemented Complete scope reviewed" : "Core practice scope reviewed"}</dd></div>
       </dl>
     </div>
 
-    {isPro ? (
+    {isComplete ? (
       <figure class="edition-instrument">
-        <div class="edition-instrument__head"><span>DT / MIND ONE—PRO</span><span>Entitlement review</span></div>
+        <div class="edition-instrument__head"><span>DT / MIND ONE—COMPLETE</span><span>Implemented scope</span></div>
         <div class="edition-instrument__body">
-          <p class="t-label">Planned complete edition</p>
-          <strong>PRO</strong>
+          <p class="t-label">Full feature position</p>
+          <strong>COMPLETE</strong>
           <ol>
             {product.capabilities.map((capability, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><p>{capability}</p></li>)}
           </ol>
         </div>
-        <figcaption>Edition model · not an application screenshot</figcaption>
+        <figcaption>Reviewed product model · not an application screenshot</figcaption>
       </figure>
     ) : (
       <figure class="practice-instrument">
-        <div class="practice-instrument__head"><span>DT / MIND ONE</span><span>Practice sequence</span></div>
+        <div class="practice-instrument__head"><span>DT / MIND ONE—BASIC</span><span>Practice sequence</span></div>
         <div class="practice-instrument__source">
           <span>Input 01</span><strong>Candidate experience</strong><small>Résumé evidence</small>
           <i aria-hidden="true"></i>
@@ -69,7 +69,7 @@ const unknowns = [
           {practiceSteps.map((step) => <li><span>{step.number}</span><div><strong>{step.title}</strong><small>{step.label}</small></div></li>)}
         </ol>
         <div class="practice-instrument__output"><span>Output</span><strong>Structured debrief</strong><small>Tips · readouts · drill sheet</small></div>
-        <figcaption>Published product model · not an application screenshot</figcaption>
+        <figcaption>Reviewed product model · not an application screenshot</figcaption>
       </figure>
     )}
   </div>
@@ -78,73 +78,69 @@ const unknowns = [
 
 <section class="flagship-brief section" aria-labelledby="flagship-brief-title">
   <div class="shell flagship-brief__grid">
-    <div><p class="t-label">01 / The brief</p><h2 id="flagship-brief-title">{isPro ? "Complete is a promise that needs a definition." : "Practice should begin with what you have actually done."}</h2></div>
+    <div><p class="t-label">The MIND ONE family</p><h2 id="flagship-brief-title">{isComplete ? "One practice model. A complete workspace." : "Practice should begin with what you have actually done."}</h2></div>
     <div class="prose">
-      <p>{isPro ? "MIND ONE Pro is positioned as the complete MIND ONE variant. That positioning is published; a defensible list of Pro-only features is not. This page keeps those two facts separate so qualified interest does not become an implied entitlement." : "Generic interview questions cannot show how a candidate’s experience meets a role’s demands. MIND ONE’s published approach connects the résumé and job description to practice questions, then uses the answer itself to shape coaching and debrief."}</p>
+      <p>{isComplete ? "MIND ONE Complete carries the shared résumé- and role-grounded practice model into a fuller local workspace. Its implemented scope includes durable profiles and history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity research, app lock and diagnostics." : "Generic interview questions cannot show how a candidate’s experience meets a role’s demands. MIND ONE Basic connects the résumé and job description to practice questions, then uses the answer itself to shape coaching and debrief."}</p>
       <p><strong>Who it is for.</strong> {product.audience}.</p>
-      <p>{isPro ? "Use the comparison to see what is known, then tell us which complete-edition requirements matter to your evaluation." : "The intended outcome is focused preparation—not a guaranteed score, job offer or assessment result. No measured outcome has been published."}</p>
+      <p>{isComplete ? "Full feature access does not mean unmetered hosted AI. It does not establish released billing, licence activation or a public launch date." : "The intended outcome is focused preparation—not a guaranteed score, job offer or assessment result. No measured outcome has been published."}</p>
     </div>
   </div>
 </section>
 
-{isPro ? (
-  <section class="flagship-unknowns section" aria-labelledby="flagship-unknowns-title">
-    <div class="shell flagship-unknowns__grid">
-      <div class="section-head section-head--inverse">
-        <div><p class="t-label">02 / Entitlement boundary</p><h2 id="flagship-unknowns-title">What is still unknown.</h2></div>
-        <p>These are evaluation questions, not hidden features waiting to be inferred.</p>
-      </div>
-      <dl class="unknown-register">
-        {unknowns.map(([term, detail]) => <div><dt>{term}</dt><dd><span>UNKNOWN</span>{detail}</dd></div>)}
-      </dl>
+<section class="flagship-sequence section" aria-labelledby="flagship-sequence-title">
+  <div class="shell">
+    <div class="section-head">
+      <div><p class="t-label">The shared practice sequence</p><h2 id="flagship-sequence-title">From evidence to a better rehearsal.</h2></div>
+      <p>A five-part product model showing the intended flow. It is not a captured screen and does not demonstrate a released build.</p>
     </div>
-  </section>
-) : (
-  <>
-    <section class="flagship-sequence section" aria-labelledby="flagship-sequence-title">
-      <div class="shell">
-        <div class="section-head">
-          <div><p class="t-label">02 / The published sequence</p><h2 id="flagship-sequence-title">From evidence to a better rehearsal.</h2></div>
-          <p>A five-part product model showing the intended flow. It is not a captured screen and does not demonstrate a released build.</p>
-        </div>
-        <ol class="sequence-register">
-          {practiceSteps.map((step) => <li><span>{step.number}</span><div><h3>{step.title}</h3><p>{step.copy}</p><small>{step.label}</small></div></li>)}
-        </ol>
-      </div>
-    </section>
+    <ol class="sequence-register">
+      {practiceSteps.map((step) => <li><span>{step.number}</span><div><h3>{step.title}</h3><p>{step.copy}</p><small>{step.label}</small></div></li>)}
+    </ol>
+  </div>
+</section>
 
-    <section class="flagship-scope section" aria-labelledby="flagship-scope-title">
-      <div class="shell flagship-scope__grid">
-        <div>
-          <p class="t-label">03 / Published scope</p>
-          <h2 id="flagship-scope-title">Focused practice.<br><em>Clear boundaries.</em></h2>
-          <ul class="index-list index-list--simple">
-            {product.capabilities.map((capability) => <li><strong>{capability}</strong></li>)}
-          </ul>
-        </div>
-        <aside class="privacy-note">
-          <p class="t-label">Data posture</p>
-          <h3>Local by default. Hosted only by choice.</h3>
-          <p>The published scope describes in-memory sessions without an account or telemetry. Optional hosted AI requires explicit consent. Provider, retention and production configuration details still require confirmation.</p>
-          <Button href="/contact/?intent=product-enquiry&product=mindone" variant="secondary" ctaId="request-mindone-access">Ask about data handling</Button>
-        </aside>
-      </div>
-    </section>
-  </>
-)}
+<section class="flagship-scope section" aria-labelledby="flagship-scope-title">
+  <div class="shell flagship-scope__grid">
+    <div>
+      <p class="t-label">{isComplete ? "Complete scope" : "Basic scope"}</p>
+      <h2 id="flagship-scope-title">{isComplete ? "The complete workspace." : "Focused practice. Clear boundaries."}</h2>
+      <ul class="index-list index-list--simple">
+        {product.capabilities.map((capability) => <li><strong>{capability}</strong></li>)}
+      </ul>
+    </div>
+    <aside class="privacy-note">
+      <p class="t-label">Data posture</p>
+      <h3>{isComplete ? "Local history. Explicit choices." : "Local by default. Hosted only by choice."}</h3>
+      <p>{isComplete ? "Complete adds durable local profiles and practice history. Hosted AI remains an explicit configuration choice; provider, retention, quota and production details still require confirmation." : "The published scope describes focused in-memory sessions. Optional hosted AI requires explicit consent. Provider, retention and production configuration details still require confirmation."}</p>
+      <Button href={requestHref} variant="secondary" ctaId="request-mindone-access">Ask about data handling</Button>
+    </aside>
+  </div>
+</section>
+
+<section class="flagship-unknowns section" aria-labelledby="flagship-unknowns-title">
+  <div class="shell flagship-unknowns__grid">
+    <div class="section-head section-head--inverse">
+      <div><p class="t-label">Commercial and deployment boundary</p><h2 id="flagship-unknowns-title">What still needs confirmation.</h2></div>
+      <p>Implemented capability and released commercial entitlement are different questions.</p>
+    </div>
+    <dl class="unknown-register">
+      {unknowns.map(([term, detail]) => <div><dt>{term}</dt><dd><span>UNKNOWN</span>{detail}</dd></div>)}
+    </dl>
+  </div>
+</section>
 
 <section class="flagship-editions section" aria-labelledby="flagship-editions-title">
   <div class="shell">
     <div class="section-head">
-      <div><p class="t-label">04 / The editions</p><h2 id="flagship-editions-title">One product direction.<br>Two published positions.</h2></div>
-      <p>MIND ONE is the free entry edition. MIND ONE Pro is the planned complete edition. The approved feature and commercial boundary between them is not yet published.</p>
+      <div><p class="t-label">Choose your edition</p><h2 id="flagship-editions-title">One family.<br>Two ways to practise.</h2></div>
+      <p>Basic is the free, focused position. Complete provides full MIND ONE feature access. Both remain request-only during pre-launch.</p>
     </div>
     <div class="flagship-editions__grid">
       <a class="edition-card edition-card--entry" href="/products/mindone/">
-        <span class="t-label">Flagship / Free entry edition</span><h3>MIND ONE</h3><p>Review the published résumé-grounded practice, coaching and debrief scope.</p><small>Explore MIND ONE <span aria-hidden="true">↗</span></small>
+        <span class="t-label">Free / focused practice</span><h3>MIND ONE Basic</h3><p>Grounded questions, spoken or typed answers, answer-specific coaching and a structured debrief.</p><small>Explore Basic <span aria-hidden="true">↗</span></small>
       </a>
       <a class="edition-card edition-card--complete" href="/products/mindone-pro/">
-        <span class="t-label">Planned complete edition</span><h3>MIND ONE Pro</h3><p>Register interest while entitlements, price and release timing remain unconfirmed.</p><small>Review MIND ONE Pro <span aria-hidden="true">↗</span></small>
+        <span class="t-label">Full feature access</span><h3>MIND ONE Complete</h3><p>The complete practice workspace with durable history, progress, comparison and role-development tools.</p><small>Explore Complete <span aria-hidden="true">↗</span></small>
       </a>
     </div>
   </div>
@@ -160,7 +156,7 @@ const unknowns = [
 
 <section class="flagship-close" aria-labelledby="flagship-close-title">
   <div class="shell flagship-close__grid">
-    <div><p class="t-label">Qualified interest</p><h2 id="flagship-close-title">{isPro ? "Define what complete needs to mean." : "Bring the role you are preparing for."}</h2></div>
-    <div><p>Tell us whether you are evaluating candidate practice or the planned complete edition. We will confirm what is available rather than imply access has been granted.</p><Button href={requestHref} ctaId="request-mindone-access">{isPro ? "Register Pro interest" : "Register MIND ONE interest"}</Button></div>
+    <div><p class="t-label">Qualified interest</p><h2 id="flagship-close-title">{isComplete ? "Evaluate the complete MIND ONE workspace." : "Bring the role you are preparing for."}</h2></div>
+    <div><p>Tell us which edition you are evaluating and which requirements matter most. We will confirm current scope and access rather than imply that a demo or licence has already been granted.</p><Button href={requestHref} ctaId="request-mindone-access">{requestLabel}</Button></div>
   </div>
 </section>

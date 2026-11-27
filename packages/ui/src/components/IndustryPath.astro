@@ -1,5 +1,5 @@
 ---
-import { productRegistry, type ProductRecord, type SolutionRecord } from "@digitracks/catalog";
+import { isDemoProduct, productRegistry, type ProductRecord, type SolutionRecord } from "@digitracks/catalog";
 import Button from "./Button.astro";
 import ProductMark from "./ProductMark";
 
@@ -15,7 +15,7 @@ const details = {
     discipline: "Education & Academics",
     headline: ["Run the institution.", "Prepare the candidate."],
     context: "One education conversation can contain two very different jobs: operating an institution and preparing an individual for a competency-based interview. This path keeps them separate.",
-    questions: ["Which institutional records and approvals need to move?", "Is the candidate evaluating practice, access or the planned Pro edition?", "What sample-data and production boundaries must be tested?"],
+    questions: ["Which institutional records and approvals need to move?", "Is the candidate evaluating MIND ONE Basic or MIND ONE Complete?", "What sample-data and production boundaries must be tested?"],
     model: "Two coordinated paths, with no implied integration"
   },
   healthcare: {
@@ -143,7 +143,8 @@ const contactHref = "/contact/?intent=consultation";
     <div class="industry-product-grid">
       {products.map((product) => {
         const requestOnly = product.availability === "request-only";
-        const href = `/contact/?intent=${requestOnly ? "product-enquiry" : "demo"}&product=${encodeURIComponent(product.id)}`;
+        const demoEligible = isDemoProduct(product);
+        const href = `/contact/?intent=${demoEligible ? "demo" : "product-enquiry"}&product=${encodeURIComponent(product.id)}`;
         return <article class="industry-product-card">
           <div class="industry-product-card__head"><ProductMark product={product} size={58} /><a href={`${product.route}/`} aria-label={`Inspect product: ${product.name}`}>Inspect product <span aria-hidden="true">↗</span></a></div>
           <p class="t-label">{product.category} / {requestOnly ? "Request only" : product.status}</p>
@@ -151,7 +152,7 @@ const contactHref = "/contact/?intent=consultation";
           <p>{product.summary}.</p>
           <p class="industry-product-card__audience"><strong>Who benefits</strong>{product.audience}.</p>
           <p class="industry-product-card__evidence"><strong>Evidence boundary</strong>{product.evidenceNote ?? "Published product scope; production evaluation remains required."}</p>
-          <Button href={href} variant="secondary" ctaId={requestOnly ? "request-product-consultation" : "request-product-demo"}>{requestOnly ? "Register product interest" : "Request a product evaluation"}</Button>
+          <Button href={href} variant="secondary" ctaId={demoEligible ? "request-product-demo" : "request-product-interest"}>{demoEligible ? "Request a product evaluation" : "Register product interest"}</Button>
         </article>;
       })}
     </div>

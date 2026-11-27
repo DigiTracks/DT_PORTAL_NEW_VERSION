@@ -1,10 +1,10 @@
 .brand__suffix {
   margin-left: 0.55rem;
   padding-left: 0.55rem;
-  border-left: 1px solid rgb(252 251 248 / 28%);
-  color: var(--steel);
+  border-left: 1px solid var(--header-border);
+  color: var(--header-muted);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -12,9 +12,10 @@
 
 .origin-breadcrumbs {
   padding-block: 1rem;
-  color: var(--steel);
-  background: var(--night);
-  --p-focus: var(--signal);
+  border-bottom: 1px solid var(--header-border);
+  color: var(--header-muted);
+  background: var(--header-panel);
+  --p-focus: var(--header-accent);
 }
 
 .origin-breadcrumbs ol {
@@ -23,10 +24,10 @@
   gap: 0.5rem;
   margin: 0;
   padding: 0;
-  color: var(--steel);
+  color: var(--header-muted);
   list-style: none;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -34,11 +35,11 @@
 .origin-breadcrumbs li + li::before {
   content: "/";
   margin-right: 0.5rem;
-  color: rgb(154 162 171 / 78%);
+  color: color-mix(in srgb, var(--header-muted) 72%, transparent);
 }
 
 .origin-breadcrumbs a:hover {
-  color: var(--signal);
+  color: var(--header-accent);
 }
 
 .field-label {
@@ -46,7 +47,7 @@
   margin-bottom: 0.5rem;
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -75,7 +76,7 @@
 .filter-toggle span,
 .favourite-button {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .filter-toggle[aria-pressed="true"] {
@@ -137,16 +138,16 @@
 }
 
 .origin-boundary {
-  --p-bg: var(--night);
-  --p-surface: var(--night-raised);
-  --p-ink: var(--paper-bright);
-  --p-muted: var(--steel);
-  --p-border: rgb(252 251 248 / 13%);
-  --p-border-strong: rgb(252 251 248 / 24%);
-  --p-action: var(--signal);
-  --p-action-ink: var(--night);
-  --p-focus: var(--signal);
-  color: var(--paper-bright);
+  --p-bg: var(--close-bg);
+  --p-surface: var(--close-bg);
+  --p-ink: var(--close-ink);
+  --p-muted: var(--close-muted);
+  --p-border: var(--close-border);
+  --p-border-strong: color-mix(in srgb, var(--close-ink) 26%, var(--close-bg));
+  --p-action: var(--close-action);
+  --p-action-ink: var(--close-action-ink);
+  --p-focus: var(--close-action);
+  color: var(--close-ink);
   color-scheme: dark;
 }
 
@@ -173,8 +174,8 @@
   min-height: calc(100svh - 8.5rem);
   align-items: center;
   padding-block: 5rem;
-  background: var(--night);
-  color: var(--paper-bright);
+  background: var(--close-bg);
+  color: var(--close-ink);
 }
 
 .origin-boundary__grid {
@@ -191,8 +192,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem;
-  border: 1px solid rgb(108 229 232 / 45%);
-  background: linear-gradient(135deg, rgb(108 229 232 / 7%), transparent 60%);
+  border: 1px solid color-mix(in srgb, var(--close-action) 58%, transparent);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--close-action) 10%, transparent), transparent 60%);
 }
 
 .origin-boundary__index::after {
@@ -201,24 +202,24 @@
   bottom: 1.5rem;
   left: 1.5rem;
   height: 1px;
-  background: rgb(108 229 232 / 30%);
+  background: color-mix(in srgb, var(--close-action) 38%, transparent);
   content: "";
 }
 
 .origin-boundary__index span,
 .origin-boundary__index small {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
 }
 
 .origin-boundary__index span {
-  color: var(--signal);
+  color: var(--close-action);
 }
 
 .origin-boundary__index strong {
   max-width: 8ch;
-  color: rgb(252 251 248 / 12%);
+  color: color-mix(in srgb, var(--close-ink) 12%, transparent);
   font-family: var(--font-display);
   font-size: clamp(3rem, 7vw, 7rem);
   font-weight: 500;
@@ -229,7 +230,7 @@
 }
 
 .origin-boundary__index small {
-  color: var(--steel);
+  color: var(--close-muted);
   overflow-wrap: anywhere;
 }
 
@@ -240,12 +241,12 @@
 
 .origin-boundary__lede {
   max-width: 42rem;
-  color: var(--paper-bright);
+  color: var(--close-ink);
   font-size: 1.2rem;
 }
 
 .origin-boundary__copy > p:not(.t-label, .origin-boundary__lede) {
-  color: var(--steel);
+  color: var(--close-muted);
 }
 
 .origin-boundary .button-row {

@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState, type MouseEvent } from "react";
-import type { ProductRecord } from "@digitracks/catalog";
+import type { PublicProductRecord } from "@digitracks/catalog";
 import Icon, { type IconName } from "./Icon";
 import ProductMark from "./ProductMark";
 import ProductSignal from "./ProductSignal";
 
 interface ProductCatalogueProps {
-  products: readonly ProductRecord[];
+  products: readonly PublicProductRecord[];
+  demoEligibleProductIds: readonly string[];
   contactHref: string;
 }
 
@@ -74,7 +75,7 @@ const viewLabels: Record<CatalogueView, string> = {
   prelaunch: "Request-only routes",
 };
 
-const buyingLabels: Record<ProductRecord["buyingModel"], string> = {
+const buyingLabels: Record<PublicProductRecord["buyingModel"], string> = {
   free: "Free to use",
   "quote-led": "Quote-led",
   subscription: "Subscription",
@@ -93,7 +94,7 @@ interface CatalogueState {
   activeProductId: string;
 }
 
-function filterCatalogueProducts(products: readonly ProductRecord[], state: CatalogueState) {
+function filterCatalogueProducts(products: readonly PublicProductRecord[], state: CatalogueState) {
   const normalizedQuery = state.query.trim().toLowerCase();
   return products.filter((product) => {
     const inDiscipline = state.disciplineId === "all" || disciplines.find((discipline) => discipline.id === state.disciplineId)?.productIds.includes(product.id);
@@ -109,12 +110,12 @@ function filterCatalogueProducts(products: readonly ProductRecord[], state: Cata
   });
 }
 
-function resolveActiveProduct(products: readonly ProductRecord[], state: CatalogueState) {
+function resolveActiveProduct(products: readonly PublicProductRecord[], state: CatalogueState) {
   const visibleProducts = filterCatalogueProducts(products, state);
   return visibleProducts.find((product) => product.id === state.activeProductId) ?? visibleProducts[0];
 }
 
-function readCatalogueState(params: URLSearchParams, products: readonly ProductRecord[]): CatalogueState {
+function readCatalogueState(params: URLSearchParams, products: readonly PublicProductRecord[]): CatalogueState {
   const requestedDiscipline = params.get("discipline");
   const requestedView = params.get("view");
   const requestedProduct = params.get("product");
@@ -130,7 +131,7 @@ function readCatalogueState(params: URLSearchParams, products: readonly ProductR
   return { ...state, activeProductId: resolveActiveProduct(products, state)?.id ?? state.activeProductId };
 }
 
-function writeCatalogueUrl(state: CatalogueState, products: readonly ProductRecord[], mode: "push" | "replace") {
+function writeCatalogueUrl(state: CatalogueState, products: readonly PublicProductRecord[], mode: "push" | "replace") {
   const activeProduct = resolveActiveProduct(products, state);
   const url = new URL(window.location.href);
   const params = url.searchParams;
@@ -153,7 +154,7 @@ function Arrow() {
   return <Icon name="arrow" size={16} weight="bold" className="button__arrow" />;
 }
 
-export default function ProductCatalogue({ products, contactHref }: ProductCatalogueProps) {
+export default function ProductCatalogue({ products, demoEligibleProductIds, contactHref }: ProductCatalogueProps) {
   const [query, setQuery] = useState("");
   const [disciplineId, setDisciplineId] = useState("all");
   const [view, setView] = useState<CatalogueView>("all");
@@ -164,10 +165,11 @@ export default function ProductCatalogue({ products, contactHref }: ProductCatal
   const flagshipCount = products.filter((product) => !product.parentId).length;
   const familyCount = products.filter((product) => product.parentId).length;
   const requestOnlyCount = products.filter((product) => product.availability === "request-only").length;
+  const demoProductIds = useMemo(() => new Set(demoEligibleProductIds), [demoEligibleProductIds]);
 
   const orderedProducts = useMemo(() => disciplines.flatMap((discipline) => discipline.productIds
     .map((id) => products.find((product) => product.id === id))
-    .filter((product): product is ProductRecord => Boolean(product))), [products]);
+    .filter((product): product is PublicProductRecord => Boolean(product))), [products]);
 
   const visibleProducts = useMemo(() => filterCatalogueProducts(orderedProducts, { query, disciplineId, view, activeProductId }), [activeProductId, disciplineId, orderedProducts, query, view]);
 
@@ -176,14 +178,14 @@ export default function ProductCatalogue({ products, contactHref }: ProductCatal
   const activeDiscipline = disciplines.find((discipline) => discipline.productIds.includes(activeProduct?.id ?? ""));
   const hasFilters = query.trim() !== "" || disciplineId !== "all" || view !== "all";
   const productIndex = activeProduct ? orderedProducts.findIndex((product) => product.id === activeProduct.id) + 1 : 0;
-  const isRequestOnly = activeProduct?.availability === "request-only";
+  const productSupportsDemo = Boolean(activeProduct && demoProductIds.has(activeProduct.id));
   const productRequestHref = activeProduct
-    ? `/contact/?intent=${isRequestOnly ? "product-enquiry" : "demo"}&product=${encodeURIComponent(activeProduct.id)}`
+    ? `/contact/?intent=${productSupportsDemo ? "demo" : "product-enquiry"}&product=${encodeURIComponent(activeProduct.id)}`
     : contactHref;
-  const productRequestLabel = isRequestOnly ? "Register product interest" : "Request full demo access";
-  const productRequestNote = isRequestOnly
-    ? "An enquiry records interest only; product access is issued separately."
-    : "Demo access is issued separately after qualification.";
+  const productRequestLabel = productSupportsDemo ? "Request full demo access" : "Register product interest";
+  const productRequestNote = productSupportsDemo
+    ? "Demo access is issued separately after qualification."
+    : "An enquiry records interest only; product access is issued separately.";
 
   const applyUrlState = useCallback((params: URLSearchParams) => {
     const next = readCatalogueState(params, orderedProducts);
@@ -239,7 +241,7 @@ export default function ProductCatalogue({ products, contactHref }: ProductCatal
     commitFilters({ query: "", disciplineId: "all", view: "all", activeProductId: "vertex" }, "push");
   }
 
-  function selectProduct(event: MouseEvent<HTMLAnchorElement>, product: ProductRecord) {
+  function selectProduct(event: MouseEvent<HTMLAnchorElement>, product: PublicProductRecord) {
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     if (!window.matchMedia("(min-width: 64rem)").matches) return;
     event.preventDefault();
@@ -400,7 +402,7 @@ export default function ProductCatalogue({ products, contactHref }: ProductCatal
                   )}
                   <div className="catalogue-inspector__actions">
                     <a className="button button--primary" href={`${activeProduct.route}/`} data-cta="inspect-product">Inspect {activeProduct.name}<Arrow /></a>
-                    <a className="text-link" href={productRequestHref} data-cta={isRequestOnly ? "request-product-interest" : "request-product-demo"}>{productRequestLabel}<span aria-hidden="true">↗</span></a>
+                    <a className="text-link" href={productRequestHref} data-cta={productSupportsDemo ? "request-product-demo" : "request-product-interest"}>{productRequestLabel}<span aria-hidden="true">↗</span></a>
                   </div>
                   <p className="catalogue-inspector__note">{productRequestNote}</p>
                   <span className="sr-only" aria-live="polite" aria-atomic="true">{activeProduct.name} selected.</span>

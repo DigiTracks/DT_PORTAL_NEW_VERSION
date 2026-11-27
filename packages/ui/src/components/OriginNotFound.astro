@@ -11,6 +11,8 @@ interface Props {
 }
 
 const { origin, brandSuffix, navItems } = Astro.props;
+const originId = new URL(origin).hostname.split(".")[0];
+const requestHref = `https://digitracks.net/contact/?intent=consultation&origin=${encodeURIComponent(originId)}`;
 ---
 
 <SiteLayout
@@ -20,9 +22,9 @@ const { origin, brandSuffix, navItems } = Astro.props;
   indexable={false}
   pageStyles={commonStyles}
   brandSuffix={brandSuffix}
-  originId={new URL(origin).hostname.split(".")[0]}
+  originId={originId}
   navItems={navItems}
-  requestHref="https://digitracks.net/contact/"
+  requestHref={requestHref}
 >
   <section class="origin-boundary" aria-labelledby="not-found-title">
     <div class="shell origin-boundary__grid">

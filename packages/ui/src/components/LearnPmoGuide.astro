@@ -23,8 +23,10 @@ const guides: Readonly<Record<string, { kicker: string; intro: string; topics: r
   programme: { kicker: "Connect outcomes", intro: "A programme coordinates related projects around an outcome no single project can deliver. Its public guide explains the relationship between benefits, dependencies and governance.", topics: ["Define the outcome across projects", "Manage dependencies between teams", "Track benefits beyond project closure"] }
 };
 const guide = guides[slug] ?? { kicker: "Project delivery", intro: route.description, topics: ["Clarify the outcome", "Make ownership visible", "Record the evidence"] };
+const guideIndex = Object.keys(guides).indexOf(slug);
+const guideCode = guideIndex >= 0 ? String(guideIndex + 1).padStart(2, "0") : "REF";
 const related = ["plan", "pmo", "portfolio", "programme", "controls", "dashboard"].filter((item) => item !== slug).slice(0, 3);
-const requestHref = `https://digitracks.net/contact/?intent=demo&origin=learnpmo&route=${encodeURIComponent(route.path)}`;
+const requestHref = `https://digitracks.net/contact/?intent=consultation&origin=learnpmo&route=${encodeURIComponent(route.path)}`;
 ---
 
 <section class="pmo-guide" aria-labelledby="pmo-title">
@@ -35,7 +37,7 @@ const requestHref = `https://digitracks.net/contact/?intent=demo&origin=learnpmo
       <p class="pmo-guide__lede">{guide.intro}</p>
       <div class="button-row"><Button href="#pmo-method" ctaId="read-pmo-guide">Read the working method</Button><Button href={requestHref} variant="secondary">Ask about workspace access</Button></div>
     </div>
-    <div class="pmo-guide__plate" aria-hidden="true"><span>{guide.kicker}</span><strong>{slug.slice(0, 3).toUpperCase()}</strong><small>PUBLIC GUIDE / {String(Object.keys(guides).indexOf(slug) + 1).padStart(2, "0")}</small></div>
+    <div class="pmo-guide__plate" aria-hidden="true"><span>{guide.kicker}</span><strong>{slug.slice(0, 3).toUpperCase()}</strong><small>PUBLIC GUIDE / {guideCode}</small></div>
   </div>
 </section>
 

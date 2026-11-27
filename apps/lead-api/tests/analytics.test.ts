@@ -8,7 +8,7 @@ describe("privacy-safe analytics", () => {
     const { dataset, points } = captureAnalytics();
     await trackEvent(dataset, "lead_delivery_webhook", {
       intent: "demo",
-      productId: "vedik",
+      productId: "unify",
       correlationId: "lead_0123456789abcdef0123456789abcdef",
       destination: "webhook",
       errorCategory: "acknowledged",
@@ -17,7 +17,7 @@ describe("privacy-safe analytics", () => {
       indexes: ["lead_delivery_webhook"],
       blobs: [
         "demo",
-        "vedik",
+        "unify",
         createHash("sha256").update("lead_0123456789abcdef0123456789abcdef").digest("hex").slice(0, 32),
         "webhook",
         "acknowledged",
@@ -60,12 +60,12 @@ describe("privacy-safe analytics", () => {
     const { dataset, points } = captureAnalytics();
     await trackBrowserEvent(dataset, "demo_open", {
       intent: "demo",
-      productId: "vedik",
+      productId: "unify",
       ctaId: "request-product-demo",
     });
     expect(points).toEqual([{
       indexes: ["demo_open"],
-      blobs: ["demo", "vedik", "none", "none", "request-product-demo", "none"],
+      blobs: ["demo", "unify", "none", "none", "request-product-demo", "none"],
       doubles: [1],
     }]);
   });

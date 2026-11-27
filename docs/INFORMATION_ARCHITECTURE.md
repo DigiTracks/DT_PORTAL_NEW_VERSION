@@ -17,21 +17,23 @@ A visitor should be able to answer four questions quickly:
 3. What can I safely inspect without an account?
 4. How do I request the right next step?
 
-The estate uses a shared navigation and visual language, but each origin retains a clear job. The portal is the front door. Learning, study, procurement, project and people applications remain distinct destinations rather than being disguised as sections of one SPA.
+The estate uses shared navigation contracts and components, but each origin has a distinct visual system and clear job. The portal is the front door. Learning, study, procurement, project and people applications remain distinct destinations rather than being disguised as sections of one SPA.
 
 ## 2. Estate map
 
 | Origin | Role | Preserved sitemap mappings | Currently indexable | Additional surface |
 |---|---|---:|---:|---|
-| `https://digitracks.net` | Product-led front door, flagship, procurement, solutions, industries, services and contact | 58 | 59 | MIND ONE Pro, edition comparison and Services added beyond the baseline |
+| `https://digitracks.net` | Product-led front door, flagship, procurement, solutions, industries, services and contact | 58 | 59 | MIND ONE Complete, edition comparison and Services added beyond the baseline |
 | `https://learn.digitracks.net` | Learning hub and product-learning entry points | 6 | 6 | Learning application routes when authorised |
 | `https://sourcecraft.digitracks.net` | Procurement/supply-chain term study and reference tools | 139 | 5 | Favourites, offline/PWA endpoints and public library JSON |
-| `https://procuresherpa.digitracks.net` | Local-first procurement tool and deterministic content routes | 1 | 1 | Approximately 506 hash-routed detail routes plus application screens |
-| `https://learnpmo.digitracks.net` | Project-management learning and workspaces | 12 | 12 | Approximately 30 application/workspace routes and query variants |
-| `https://hcmfusion.digitracks.net` | HCM learning library, evidence, assessments and authorised application behavior | 168 | 3 | 467 additional registry paths: 462 public links, `/profile`, `/progress`, `/admin/`, `/robots.txt/` and `/sitemap.xml/` |
+| `https://procuresherpa.digitracks.net` | Local-first procurement tool and deterministic content routes | 1 | 1 | Governed hash-routed detail routes and local workspace controls |
+| `https://learnpmo.digitracks.net` | Project-management learning and authored public guides | 12 | 12 | Classified application/workspace boundaries pending authorised source |
+| `https://hcmfusion.digitracks.net` | HCM learning library, evidence, assessments and authorised application behavior | 168 | 3 | Governed application, evidence and utility route classes pending permission |
 | **Total** | | **384** | **86** | |
 
 `stats.digitracks.net` is non-indexable, was unavailable during research and is not a public replacement target.
+
+The current generated summary records 37 catalogue entries, 27 source products, 13 source flagships, 10 request-only routes, two pre-launch routes, 20 nested products, 2,330 route records, 384 baseline sitemap mappings, 86 indexable pages and 1,246 governed content records. These categories overlap. Governed content records are not emitted pages and are distinct from the 130 governed asset records.
 
 The network preserves all **384 baseline sitemap mappings** as reachable URLs, but only **86 routes are currently indexable**. A preserved mapping is not an indexing commitment: a route must be `public-seo` and have `contentStatus: "approved"`. Rights-blocked and in-review content remains reachable with `noindex, follow`; it omits canonical, `og:url` and social images but retains basic social title, description, site-name and card-type metadata. Additional routes are classified before indexing; they are not automatically added to sitemaps.
 
@@ -42,7 +44,7 @@ The network preserves all **384 baseline sitemap mappings** as reachable URLs, b
 | Operations/procurement leader | Portal, solution or industry page | Understand fit and scope | Request a solution review or product demo |
 | Project/programme lead | Portal or LearnPMO | Find a relevant learning/workflow path | Start public/local content or request team access |
 | People/HR leader | Portal or HCM Fusion | Find role-relevant learning and evidence | Explore approved library or request course access |
-| Learner | Learn, Source Craft or product-learning page | Find the right material and continue work | Start/resume a real path or save study state locally |
+| Learner | Learn, SourceCraft or product-learning page | Find the right material and continue work | Start/resume a real path or save study state locally |
 | Developer/technical evaluator | Portal or developer-tool page | Verify licence, install/use model and boundaries | Inspect verified documentation or request access |
 | Existing user | Product origin | Continue real work | Use the application task, not a marketing CTA |
 | Partner/integrator | Portal contact | Discuss a scoped relationship | Submit a partnership enquiry |
@@ -66,17 +68,18 @@ The Network switcher lists Portal, Learn, SourceCraft, ProcureSherpa, LearnPMO a
 ### Portal primary navigation
 
 - **Products** opens a grouped mega menu:
-  - Flagship & core: MIND ONE, MIND ONE Pro, Vedik, Nipuna and the edition comparison.
+  - Flagship & core: MIND ONE Basic, MIND ONE Complete, Vedik, Nipuna and the edition comparison.
   - Procurement: ecosystem, Vertex, Vantor, Procure5, Procure Sherpa and ProcureSherpa Learning.
+  - Developer/security products remain distinct: Orion, Orion Hunter, Recon and OpsPilot.
   - Browse all products.
 - Industries.
 - Solutions.
 - Services.
-- **Resources** groups Learn, Source Craft, LearnPMO, HCM Fusion and ProcureSherpa Learning.
+- **Resources** groups Learn, SourceCraft, LearnPMO, HCM Fusion and ProcureSherpa Learning.
 - About.
 - Contact through the contextual request action.
 
-Mobile navigation mirrors the same hierarchy with grouped labels rather than flattening every product into one long list. The six-column footer uses Products, Procurement, Company, Resources and Network groups. Navigation must not contain pipeline-only concepts CostPilot, VendorIQ, TalentMap or ComplyFlow.
+Mobile navigation mirrors the same hierarchy with grouped labels rather than flattening every product into one long list. The four-column footer contains brand/introduction, Products, Explore and Learning groups; Network links sit in the footer/legal row. Navigation must not contain pipeline-only concepts CostPilot, VendorIQ, TalentMap or ComplyFlow.
 
 ### Contextual navigation
 
@@ -86,20 +89,20 @@ Mobile navigation mirrors the same hierarchy with grouped labels rather than fla
   - ProcureSherpa → `sherpa-toolkit`.
   - LearnPMO → `learnpmo`.
   - HCM Fusion → `hcmfusion`.
-  - Source Craft → `sourcecraft`.
+  - SourceCraft → `sourcecraft`.
 - Utility links in the footer rather than competing with primary navigation.
 
 ## 5. Portal IA
 
-The portal preserves all 58 baseline mappings and adds three approved indexable pages, for 59 indexable portal routes. Its catalogue contains **35 source-defined products plus two request-only MIND ONE edition routes**. MIND ONE and MIND ONE Pro are request-only, so the 37 catalogue entries are not 37 generally available products.
+The portal preserves all 58 baseline mappings and has 59 indexable portal routes. The overall catalogue contains 37 entries, including 10 request-only routes and two pre-launch routes. MIND ONE Basic and MIND ONE Complete are request-only, so the 37 entries are not 37 generally available products. `available` remains a registry label, not independent production-readiness evidence.
 
 ### Route groups
 
 | Group | Purpose | Content model |
 |---|---|---|
-| Home | Lead with product-led positioning and the flagship portfolio hierarchy | Editorial sections plus registry-derived product index |
-| Flagship products | Explain MIND ONE's audience, practice model, access boundary and evidence status | Dedicated flagship composition plus approved evidence |
-| Edition guidance | Differentiate MIND ONE and MIND ONE Pro without inventing entitlements | Product registry, comparison contract and explicit unknowns |
+| Home | Lead with product-led positioning, one unified MIND ONE family block and the flagship portfolio hierarchy | Editorial sections, registry-derived three-tier product orbit and product index |
+| Flagship products | Explain the MIND ONE family, Basic/Complete practice scope, access boundary and evidence status | Dedicated flagship composition plus approved evidence |
+| Edition guidance | Differentiate MIND ONE Basic and MIND ONE Complete without inventing entitlements | Product registry, comparison contract and explicit unknowns |
 | Procurement ecosystem | Explain Vertex, Vantor, Procure5, Procure Sherpa and ProcureSherpa Learning relationships | Procurement role registry and verified product boundaries |
 | Nested products/modules | Explain a product-specific capability or module | Parent/child product relationship |
 | Solutions | Connect verified products to industry challenges and workflows | Solution registry, workflow stages and related-product links |
@@ -127,7 +130,15 @@ The exact baseline paths and approved addendum routes are generated from the aud
 9. Related products or solution.
 10. Request CTA and clear demo-access boundary.
 
-A product page must not repeat the same screenshot in the hero and immediately below. If no approved capture exists, use registry-driven structure or a clearly non-fabricated technical diagram. MIND ONE, MIND ONE Pro, the edition comparison and Procurement ecosystem use dedicated compositions while preserving the same breadcrumb, metadata, CTA and evidence contracts.
+A product page must not repeat the same screenshot in the hero and immediately below. If no approved capture exists, use registry-driven structure or a clearly non-fabricated technical diagram. The MIND ONE family, Basic/Complete routes, edition comparison and Procurement ecosystem use dedicated compositions while preserving the same breadcrumb, metadata, CTA and evidence contracts.
+
+### Portfolio boundaries
+
+- **MIND ONE Basic** (`mindone`, `/products/mindone/`) and **MIND ONE Complete** (`mindone-pro`, `/products/mindone-pro/`) are public display names; the internal identifiers and URLs do not change. Both are request-only and pre-launch.
+- Complete's reviewed implementation scope does not establish released commercial entitlement, quotas, provider terms, billing, integrations, deployment or launch timing.
+- **UNIFY** was rejected as the Complete-edition name because **Unify** is a separate nine-app ERP: Nexora, Arventa, Monexa, Planora, Logistra, Procura, Orbitra, Workzen and Connexa.
+- **Vedik** contains Vedik School, Unnati College, Vedik University, Vedik Social Community and Campus Grid. Campus Grid does not replace Vertex. No shared identity, SSO, deployment, schema or integration is implied.
+- **Orion, Orion Hunter, Recon and OpsPilot** are four distinct prime developer/security products. Orion Hunter is not an Orion edition, and no shared runtime or integration is implied.
 
 ## 6. Learning origin IA
 
@@ -142,13 +153,13 @@ Learn is the learning front door, not a duplicate product catalogue.
 
 Public syllabus, prerequisites, format and access boundaries should be visible before any account request. Certification or credential claims appear only when verified.
 
-## 7. Source Craft IA
+## 7. SourceCraft IA
 
 Preserve:
 
 - Index and utility pages.
-- 122 term routes.
-- Nine regional packs.
+- Governed term routes and regional packs with explicit editorial status.
+- Real BATNA, Incoterms and total-cost-of-ownership reference cards where approved.
 - Search/filter.
 - Compare.
 - Flashcards.
@@ -189,19 +200,7 @@ Assessment answers, scoring, scenario branches, progress schemas, authentication
 
 ## 10. HCM Fusion IA
 
-Preserve stable identifiers and relationships across:
-
-- Nine sitemapped courses plus three valid unsitemapped courses observed during research.
-- 47 lessons.
-- 70 concepts.
-- 26 glossary entries.
-- 371 evidence claims.
-- 47 assessments.
-- Four certification papers.
-- Three SOPs.
-- Two scenarios.
-- 27 exports.
-- Application/utility routes.
+Preserve stable identifiers and relationships across governed courses, lessons, concepts, glossary entries, evidence claims, assessments, certification papers, SOPs, scenarios, exports and application/utility routes. The current generated summary records 1,246 governed content records across the replacement; individual collection counts must be read from the generated content registries rather than carried as static totals in this document.
 
 Public reading, exports, assessments and authenticated progress are separate route classes. Assessment answers, scoring keys, rationales, misconception mappings, scenario branches and recall rules are not exposed before authorised submission.
 
@@ -259,7 +258,7 @@ The redirect register is versioned and tested independently of page templates.
 ## 14. Search and discovery
 
 - Portal product search filters the real product registry.
-- Source Craft search/filter uses approved term content.
+- SourceCraft search/filter uses approved term content.
 - HCM search uses approved course/lesson/concept/evidence identifiers.
 - LearnPMO/ProcureSherpa search follows authorised application data.
 - Search works with keyboard and screen readers.
@@ -270,6 +269,7 @@ The redirect register is versioned and tested independently of page templates.
 
 - Contact is a shared intent-driven journey, not separate inconsistent forms per page.
 - Product/solution context is carried into the form.
+- Demo intent is derived from the shared catalogue rule: public, requestable and `available`; request-only products use evaluation or product-enquiry paths.
 - Full-play demos are gated behind request and qualification.
 - Confirmation distinguishes durable receipt from delivery and access issuance.
 - Operator/debug routes are administrative and never publicly indexed.
@@ -281,7 +281,7 @@ See `CONVERSION_STRATEGY.md` for the delivery and access model.
 - Each origin owns its localStorage keys, IndexedDB databases and any implemented service-worker cache names or PWA manifest.
 - Migrations are versioned and tested against prior-state fixtures.
 - Corrupt state fails clearly; it is not silently reset.
-- Source Craft favourites and recents use the origin-bound keys `digitracks:sourcecraft:favourites:v1` and `digitracks:sourcecraft:recent:v1`.
+- SourceCraft favourites and recents use the origin-bound keys `digitracks:sourcecraft:favourites:v1` and `digitracks:sourcecraft:recent:v1`.
 - ProcureSherpa remains local-first initially.
 - SourceCraft has the only service worker; SourceCraft and LearnPMO have install manifests.
 - LearnPMO workspace state and backup/import remain unimplemented pending authorised source and schemas.
@@ -325,6 +325,6 @@ See `CONVERSION_STRATEGY.md` for the delivery and access model.
 
 ## 20. Evidence dependencies
 
-The generated route registry is the routing source of truth; final labels and indexing decisions remain subject to owner approvals. Application parity requires authorised source/data. Rights-reserved Source Craft/HCM content requires permission. Signed demo grants are implemented, but production issuance still requires the owner's destination inventory, qualification policy and operator configuration.
+The generated route registry is the routing source of truth; final labels and indexing decisions remain subject to owner approvals. Application parity requires authorised source/data. Rights-reserved SourceCraft/HCM content requires permission. Signed demo grants are implemented, but production issuance still requires the owner's destination inventory, qualification policy and operator configuration.
 
 Where evidence is absent, the implementation records the gap rather than guessing.

@@ -1,0 +1,123 @@
+---
+import type { ProductRecord } from "@digitracks/catalog";
+import { productRegistry } from "@digitracks/catalog";
+import Button from "./Button.astro";
+import ProductInstrument from "./ProductInstrument.astro";
+import ProductMark from "./ProductMark.tsx";
+
+interface Props {
+  product: ProductRecord;
+}
+
+const { product } = Astro.props;
+const requestHref = `/contact/?intent=product-enquiry&product=${encodeURIComponent(product.id)}`;
+const roles: Record<string, string> = {
+  "vedik-school-erp": "School operations",
+  unnati: "College management",
+  "vedik-university": "University administration",
+  "vedik-social": "Campus community",
+  "campus-grid": "Placement and careers"
+};
+const ecosystemProducts = ["vedik-school-erp", "unnati", "vedik-university", "vedik-social", "campus-grid"].flatMap((id) => {
+  const item = productRegistry.find((entry) => entry.id === id);
+  return item ? [item] : [];
+});
+const campusGrid = ecosystemProducts.find((item) => item.id === "campus-grid");
+---
+
+<section class="hero hero--product" aria-labelledby="vedik-title">
+  <div class="shell hero-product__grid">
+    <div class="hero-product__copy">
+      <p class="t-label">Education ecosystem / request-only evaluation</p>
+      <h1 id="vedik-title">{product.name}</h1>
+      <p class="hero-product__lede">{product.summary}. One education mission, with each product’s deployment, identity, integration and readiness kept explicit.</p>
+      <div class="button-row">
+        <Button href={requestHref} ctaId="request-vedik-evaluation">Request a Vedik evaluation</Button>
+        <Button href="#vedik-products" variant="secondary" ctaId="inspect-vedik-products">Explore the ecosystem</Button>
+      </div>
+      <dl class="hero-product__facts">
+        <div><dt>Portfolio model</dt><dd>Independent products / shared education mission</dd></div>
+        <div><dt>Readiness</dt><dd>Varies by product; evaluate before deployment</dd></div>
+      </dl>
+    </div>
+    <ProductInstrument product={product} nestedProducts={ecosystemProducts} />
+  </div>
+</section>
+
+<section class="section" aria-labelledby="vedik-boundary-title">
+  <div class="shell product-layout">
+    <div class="prose">
+      <p class="t-label">The ecosystem boundary</p>
+      <h2 id="vedik-boundary-title">One portfolio.<br>Not one assumed platform.</h2>
+      <p>{product.description}</p>
+      <p>Vedik School and its Android application share documented data and licensing foundations, but their schemas have drifted. Unnati College, Vedik University, Vedik Social Community and Campus Grid retain independent application boundaries.</p>
+    </div>
+    <aside class="panel panel__body">
+      <p class="t-label">What is connected</p>
+      <h3>A common education mission.</h3>
+      <p>School, college, university, community and placement workflows belong to the same Vedik portfolio and can be evaluated together.</p>
+      <p class="t-label">What remains distinct</p>
+      <h3>Identity, deployment and readiness.</h3>
+      <p>No common SSO, universal person ID, shared event bus or common production deployment was verified. Related Android and community initiatives require their own evaluation.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section product-showcase" id="vedik-products" aria-labelledby="vedik-products-title">
+  <div class="shell">
+    <div class="section-head section-head--inverse">
+      <div><p class="t-label">The Vedik product register</p><h2 id="vedik-products-title">Built around the education journey.</h2></div>
+      <p>Inspect each product on its own evidence. A portfolio relationship does not imply a shared runtime, completed integration or uniform release status.</p>
+    </div>
+    <div class="vedik-products">
+      {ecosystemProducts.map((item) => (
+        <a class={`vedik-product${item.id === "campus-grid" ? " vedik-product--campus" : ""}`} href={`${item.route}/`}>
+          <div class="vedik-product__head">
+            <ProductMark product={item} size={48} />
+            <span>{roles[item.id]}</span>
+          </div>
+          <h3>{item.name}</h3>
+          <p>{item.summary}</p>
+          <dl>
+            <div><dt>Deployment</dt><dd>{item.deployment}</dd></div>
+            <div><dt>Readiness</dt><dd>{item.status}</dd></div>
+          </dl>
+          <small>Inspect {item.name}<span aria-hidden="true">↗</span></small>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+{campusGrid && (
+  <section class="section section--ruled" aria-labelledby="campus-grid-title">
+    <div class="shell campus-grid__grid">
+      <div class="prose">
+        <p class="t-label">Placement within the Vedik portfolio</p>
+        <h2 id="campus-grid-title">Campus Grid connects institutional placement work.</h2>
+        <p>{campusGrid.description}</p>
+        <p>Campus Grid is a Vedik portfolio sibling. It does not replace Vertex, and it is not presented as an already-integrated module inside School, Unnati or University.</p>
+        <Button href={`${campusGrid.route}/`} variant="secondary" ctaId="inspect-campus-grid">Inspect Campus Grid</Button>
+      </div>
+      <dl class="fact-list">
+        <div><dt>Implemented exchange</dt><dd>CSV V1 ERP import and export</dd></div>
+        <div><dt>Planned exchange</dt><dd>REST, webhook and scheduled synchronization; not verified as complete</dd></div>
+        <div><dt>Eligibility model</dt><dd>Deterministic, fail-closed rules</dd></div>
+        <div><dt>Readiness</dt><dd>{campusGrid.status}</dd></div>
+      </dl>
+    </div>
+  </section>
+)}
+
+<section class="section vedik-close" aria-labelledby="vedik-close-title">
+  <div class="shell vedik-close__grid">
+    <div>
+      <p class="t-label">Start with the institution</p>
+      <h2 id="vedik-close-title">Map the right Vedik product before choosing a deployment.</h2>
+    </div>
+    <div>
+      <p>Tell us whether the need is school operations, college administration, university workflows, community or campus placement. We will route the evaluation to the relevant product and confirm its current readiness.</p>
+      <Button href={requestHref} ctaId="request-vedik-evaluation">Request a Vedik evaluation</Button>
+    </div>
+  </div>
+</section>

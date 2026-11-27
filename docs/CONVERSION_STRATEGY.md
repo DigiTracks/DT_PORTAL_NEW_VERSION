@@ -6,7 +6,7 @@
 
 **Primary outcome:** qualified product, demo, migration and support enquiries with durable receipt evidence and separately tracked delivery
 
-**Access policy:** public explanation; gated full-play demos
+**Access policy:** public explanation; request-only MIND ONE access; separately qualified demo grants
 
 ## 1. Business model and conversion principle
 
@@ -27,9 +27,9 @@ Each page has one primary action. Secondary actions are quieter and must not com
 
 | Route class | Primary action | Secondary action | Prohibited public action |
 |---|---|---|---|
-| Portal home | Explore MIND ONE | Start a conversation or find a product | Open unrestricted full demo |
-| MIND ONE / MIND ONE Pro | Register product interest | Compare editions or discuss data handling | Implied release, instant access or invented Pro features |
-| Edition comparison | Ask about edition access | Review each product page | Fabricated entitlement, price or launch-date comparison |
+| Portal home | Explore all products | Start a conversation or find a product | Open unrestricted full demo |
+| MIND ONE Basic / MIND ONE Complete | Request the relevant edition access | Compare Basic and Complete or discuss data handling | Implied release, instant access or invented edition features |
+| Edition comparison | Ask about edition access | Review each product page | Fabricated entitlement, quota, price, provider or launch comparison |
 | Product page | Request a product demo or evaluation | Discuss a buying or migration need | Public checkout or invented price |
 | Procurement ecosystem | Explore the right procurement system | Ask for guidance or learning access | Implied shared backend, MCP or unverified integration |
 | Solution/industry page | Discuss the workflow | Explore related products | Unsupported outcome or customer proof |
@@ -38,23 +38,26 @@ Each page has one primary action. Secondary actions are quieter and must not com
 | Contact | Send your requirement | Choose a different intent or continue by email | Arbitrary email destination |
 | Learn home | Choose a learning path | Ask about team learning | Claiming certification not verified |
 | Product-learning page | Start the relevant path | Ask about the product | Duplicating product sales copy |
-| Source Craft | Use the study tool locally | Request content/support help | Public full-product access not in scope |
+| SourceCraft | Use the study tool locally | Request content/support help | Public full-product access not in scope |
 | ProcureSherpa | Request guided access | Review verified capabilities | Public full-play URL |
 | LearnPMO | Start an available local/public path | Request team access | Fake progress or simulated scoring |
 | HCM Fusion | Explore the approved library | Request course/team access | Exposing assessment answers or private progress |
 
-Button labels use a verb and an object: **Explore MIND ONE**, **Request a product demo**, **Discuss your workflow**, **Start a learning path**, **Register Pro interest**. Avoid “Submit”, “Click here” and “Learn more” as primary labels.
+Button labels use a verb and an object: **Explore all products**, **Request Basic access**, **Request Complete access**, **Request a product demo**, **Discuss your workflow**, **Start a learning path**. Avoid “Submit”, “Click here”, “Learn more” and ambiguous edition shorthand as primary labels.
+
+For MIND ONE, the enquiry is an access request only. It does not take payment, issue a demo link, activate billing, grant commercial entitlement or confirm launch availability. Implemented Complete-edition scope is not a released entitlement table.
 
 ## 3. Page-level CTA map
 
 ### Portal
 
-- Hero: `Explore MIND ONE` → flagship; `Start a conversation` → enquiry.
-- Homepage flagship: `Request MIND ONE access` → `product-enquiry` with `product=mindone`.
-- MIND ONE Pro: `Register Pro interest` → `product-enquiry` with `product=mindone-pro`.
-- Edition comparison: edition-access CTA and direct routes back to each product; no unsupported feature split.
+- Hero: `Explore all products` → catalogue; `Start a conversation` → consultation.
+- Homepage family block: `Request MIND ONE access` → `product-enquiry` with `product=mindone`, plus `Compare Basic and Complete`.
+- MIND ONE Basic: `Request Basic access` → `product-enquiry` with `product=mindone`.
+- MIND ONE Complete: `Request Complete access` → `product-enquiry` with `product=mindone-pro`; the stable route remains `/products/mindone-pro/`.
+- Edition comparison: edition-access CTAs and direct routes back to each product; reviewed implementation is separated from unknown commercial terms.
 - Procurement ecosystem: product-specific demo/evaluation CTAs plus `learning` with `product=sherpa` for ProcureSherpa Learning.
-- Product index: contextual demo/evaluation controls preserve the selected product; request-only editions never use `demo`.
+- Product index: contextual demo/evaluation controls preserve the selected product; `demo` is offered only when the catalogue marks the product requestable and `available`.
 - Product page: product-specific demo or evaluation plus buying/migration discussion.
 - Solution/industry page: request review with relevant product/solution context already attached.
 - Services: `consultation`, `migration` or `support` selected by engagement.
@@ -67,7 +70,7 @@ Button labels use a verb and an object: **Explore MIND ONE**, **Request a produc
 - ProcureSherpa Learning: explore the Academy/learning component or ask about learning access with `intent=learning&product=sherpa`; it is not presented as a separate verified SKU.
 - Product-learning page: start the path if real public content exists; otherwise explain the access boundary and request guidance.
 - Learning content: next lesson/path action; product enquiry only at a relevant decision point.
-- Source Craft: local study actions such as save, compare or export; support enquiry is secondary.
+- SourceCraft: local study actions such as save, compare or export; support enquiry is secondary.
 - LearnPMO/HCM Fusion: preserve real public/local functionality; request team access where protected content begins.
 
 ### Application origins
@@ -81,14 +84,14 @@ The shared form and API use the same fixed seven-value intent registry:
 | Intent | Visitor need | Product rule |
 |---|---|---|
 | `product-enquiry` | Explore a product for a requirement | Optional |
-| `demo` | See a product working with their use case | Required |
+| `demo` | See a product working with their use case | Required; must be public, requestable and marked `available` |
 | `consultation` | Discuss a workflow, architecture or buying need | Optional |
 | `migration` | Move from an existing tool/process | Optional |
 | `support` | Get help with an existing product | Optional |
 | `partnership` | Explore a business relationship | Optional |
 | `learning` | Discuss team or product learning | Optional |
 
-All intents require name, email, message, consent, an empty honeypot and a Turnstile token. The client also sends browser-normalised locale and same-origin page context; the server may default locale to `en`. Organisation and product are optional except that `demo` requires a product. The visitor never chooses an email recipient. Intent, product and page context are validated on the server.
+All intents require name, email, message, consent, an empty honeypot and a Turnstile token. The client also sends browser-normalised locale and same-origin page context; the server may default locale to `en`. Organisation and product are optional except that `demo` requires a demo-eligible product. The visitor never chooses an email recipient. Intent, product and page context are validated on the server. The same catalogue-derived eligibility set controls static and hydrated CTAs, contact URL normalization, manual selection, client validation, Worker lead validation and operator issuance.
 
 ## 5. Form design
 
@@ -97,23 +100,24 @@ The implementation is one shared form, not a multi-step qualification flow. Its 
 - Intent.
 - Name, 1–120 characters, and a valid email of at most 254 characters.
 - Optional organisation, maximum 160 characters.
-- Optional product, except that `demo` requires a product.
+- Optional product, except that `demo` requires a public, requestable product marked `available`.
 - Required message, maximum 4,000 characters.
 - Required enquiry/privacy consent.
 - Hidden honeypot, which must remain empty.
 - Browser-normalised locale and same-origin page context with the hash removed.
 - Turnstile token from the widget.
 
-There are no role, team, timeline, phone or preferred-contact fields. The form renders only when both `PUBLIC_LEAD_ENDPOINT` and `PUBLIC_TURNSTILE_SITE_KEY` are configured; otherwise it collects no details and offers **Continue by email**, opening `mailto:contact@digitracks.net` with the selected intent/product and a safe prompt. Nothing is sent from the page.
+There are no role, team, timeline, phone or preferred-contact fields. The form renders only when both `PUBLIC_LEAD_ENDPOINT` and `PUBLIC_TURNSTILE_SITE_KEY` are configured and the endpoint passes the environment policy; otherwise it collects no details and offers **Continue by email**, opening `mailto:contact@digitracks.net` with the selected intent/product and a safe prompt. A policy-blocked local endpoint instead renders the explicit local-delivery-blocked state. Nothing is sent from the page in either state.
 
 ### Form states
 
 1. **Idle:** labels and requirements visible.
-2. **Submitting:** controls disabled without losing entered data.
-3. **Received:** only HTTP `202` with `status: "received"` confirms durable storage. Copy says email/CRM delivery is pending and does not promise delivery or demo access.
-4. **Validation error:** field-level messages with `aria-describedby`, focus moved to the first invalid field.
-5. **Request failed:** an explicit HTTP rejection has no confirmed receipt; preserve the form and allow retry. After a network failure or timeout, receipt is uncertain and the copy must not claim the enquiry was not saved.
-6. **Access issued:** a separate operator action; never implied by form receipt.
+2. **Local delivery blocked:** a loopback page configured with a non-loopback endpoint renders no form, loads no Turnstile script and explains that production delivery is never contacted from localhost.
+3. **Submitting:** controls disabled without losing entered data.
+4. **Received:** only HTTP `202` with `status: "received"` confirms durable storage. Copy says email/CRM delivery is pending and does not promise delivery or demo access.
+5. **Validation error:** field-level messages with `aria-describedby`, focus moved to the first invalid field.
+6. **Request failed:** an explicit HTTP rejection has no confirmed receipt; preserve the form and allow retry. After a network failure or timeout, receipt is uncertain and the copy must not claim the enquiry was not saved.
+7. **Access issued:** a separate operator action; never implied by form receipt.
 
 No success animation or confirmation page may run before the API confirms durable receipt.
 
@@ -128,7 +132,7 @@ The product page contains:
 - Relevant workflows stated without protected implementation detail.
 - Buying/access model.
 - Known boundaries and dependencies.
-- **Request full demo access**.
+- **Request full demo access** only for demo-eligible products; request-only or otherwise ineligible products use **Request product evaluation** or **Register product interest** and never imply a demo grant.
 
 It does not contain:
 
@@ -151,7 +155,7 @@ No undocumented scoring rule is presented to visitors.
 
 ### Issuance stage
 
-The operator-authenticated issuance flow is implemented. Each issued link has:
+The operator-authenticated issuance flow is implemented. It rejects products outside the shared demo-eligibility set before creating a grant. Each issued link has:
 
 - A random, high-entropy token; only its hash is stored.
 - Product/scope and optional lead binding.
@@ -168,7 +172,7 @@ Operators must be able to revoke an individual access record. Revoked or expired
 
 ## 7. Lead API request flow
 
-All six public origins route enquiry CTAs to the shared portal contact form. Only that form submits to the owner-approved API endpoint through `PUBLIC_LEAD_ENDPOINT`, and it renders only when both the endpoint and Turnstile site key are configured. When unconfigured, the shared surface collects nothing and provides the contextual email fallback instead.
+All six public origins route enquiry CTAs to the shared portal contact form. Only that form submits to the owner-approved API endpoint through `PUBLIC_LEAD_ENDPOINT`, and it renders only when both the endpoint and Turnstile site key are configured and the endpoint passes the shared environment policy. Loopback pages (`localhost`, `127.0.0.0/8`, `::1` and IPv4-mapped loopback IPv6) accept loopback endpoints only; published pages accept non-loopback HTTPS endpoints only. A local preview configured with a production endpoint is blocked before the form or bot-verification script loads. When unconfigured, the shared surface collects nothing and provides the contextual email fallback instead.
 
 1. Allow only `POST`.
 2. Validate the exact allowed origin against the origin registry.
@@ -270,7 +274,7 @@ The staging receiver must prove signature acceptance/rejection, duplicate suppre
 
 ### Browser events
 
-When `PUBLIC_LEAD_ENDPOINT` is configured, a small first-party bridge sends allowlisted `POST /api/events` requests. Without that variable it sends nothing.
+When `PUBLIC_LEAD_ENDPOINT` is configured and passes the shared environment policy, a small first-party bridge sends allowlisted `POST /api/events` requests. Without a compatible endpoint it sends nothing; a loopback page never sends analytics to a production endpoint.
 
 | Event | Implemented trigger |
 |---|---|
@@ -319,7 +323,7 @@ The privacy notice must describe:
 - How access requests are handled.
 - Whether analytics is enabled and what it does not collect.
 
-Turnstile is required, not an optional runtime enhancement. If the lead endpoint or site key is missing, the form does not render or collect details; the contextual email fallback opens the visitor's mail client and sends nothing from the page. If server configuration is missing or incoherent, the API returns `503` and fails closed.
+Turnstile is required, not an optional runtime enhancement. If the lead endpoint or site key is missing, the form does not render or collect details; the contextual email fallback opens the visitor's mail client and sends nothing from the page. If a loopback page is configured with a non-loopback endpoint, delivery and bot verification are disabled before any external request. If server configuration is missing or incoherent, the API returns `503` and fails closed.
 
 The implemented form has one required, unticked enquiry/privacy consent. It does not implement a separate marketing opt-in; any future marketing consent must remain distinct and optional.
 
@@ -375,7 +379,7 @@ Before any delivery claim, prove:
 
 Useful confirmation copy after HTTP `202` with `status: "received"`:
 
-> Request received; email/CRM delivery is pending. This does not confirm delivery or demo access.
+> Request received; email/CRM delivery is pending. This does not confirm delivery, product access, billing, a demo grant or commercial entitlement.
 
 Useful network-failure or timeout copy:
 
@@ -403,6 +407,7 @@ The shared UI, validation, Worker, D1/outbox flow and signed demo-grant flow are
 - CRM HTTPS receiver, authentication/signing contract and field mapping.
 - Turnstile keys and final privacy/retention wording.
 - Demo destination inventory, qualification policy and operator credentials.
+- MIND ONE Basic/Complete commercial entitlement, quotas, provider terms, billing, integrations, deployment and launch policy.
 - Operator authentication configuration and retention policy.
 
 Until these exist, local test doubles must be labelled as tests and the handoff must report the affected production behavior as blocked or `UNKNOWN`.

@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-11-26T01:01:09.160Z",
+  "generatedAt": "2026-11-27T00:58:54.184Z",
   "origins": [
     {
       "origin": "portal",
       "htmlFiles": 62,
-      "inlineScriptHashes": 65,
-      "cspBytes": 3947
+      "inlineScriptHashes": 67,
+      "cspBytes": 4055
     },
     {
       "origin": "learn",
       "htmlFiles": 7,
-      "inlineScriptHashes": 8,
-      "cspBytes": 869
-    },
-    {
-      "origin": "sourcecraft",
-      "htmlFiles": 142,
       "inlineScriptHashes": 10,
       "cspBytes": 977
     },
     {
+      "origin": "sourcecraft",
+      "htmlFiles": 142,
+      "inlineScriptHashes": 12,
+      "cspBytes": 1085
+    },
+    {
       "origin": "procuresherpa",
       "htmlFiles": 2,
-      "inlineScriptHashes": 5,
-      "cspBytes": 707
+      "inlineScriptHashes": 7,
+      "cspBytes": 815
     },
     {
       "origin": "learnpmo",
       "htmlFiles": 30,
-      "inlineScriptHashes": 14,
-      "cspBytes": 1193
+      "inlineScriptHashes": 16,
+      "cspBytes": 1301
     },
     {
       "origin": "hcmfusion",
       "htmlFiles": 626,
-      "inlineScriptHashes": 5,
-      "cspBytes": 707
+      "inlineScriptHashes": 7,
+      "cspBytes": 815
     }
   ]
 }

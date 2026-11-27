@@ -36,7 +36,7 @@
 .lead-form__requirement {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.61rem;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -47,7 +47,7 @@
 .lead-form__action-note {
   margin: 0;
   color: var(--p-muted);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   line-height: 1.55;
 }
 
@@ -143,7 +143,7 @@
 .lead-form__receipt {
   margin: 0;
   font-family: var(--font-mono);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   overflow-wrap: anywhere;
 }
 

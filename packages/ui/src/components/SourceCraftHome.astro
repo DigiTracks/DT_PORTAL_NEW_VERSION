@@ -10,6 +10,14 @@ interface Props {
 const { routes } = Astro.props;
 const terms = routes.filter((route) => route.path.startsWith("/terms/"));
 const regions = routes.filter((route) => route.path.startsWith("/regions/") && route.path !== "/regions/");
+const featuredTerms = [
+  "/terms/batna/",
+  "/terms/incoterms/",
+  "/terms/total-cost-of-ownership/"
+].flatMap((path) => {
+  const route = terms.find((item) => item.path === path);
+  return route ? [route] : [];
+});
 const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=sourcecraft";
 const indexRecords = routes.map(({ path, title, description, contentStatus }) => ({ path, title, description, contentStatus }));
 ---
@@ -25,15 +33,18 @@ const indexRecords = routes.map(({ path, title, description, contentStatus }) =>
         <Button href="/about/" variant="secondary">Read the licensing boundary</Button>
       </div>
     </div>
-    <div class="source-dial" aria-hidden="true">
-      <div class="source-dial__ring source-dial__ring--outer"></div>
-      <div class="source-dial__ring source-dial__ring--inner"></div>
-      <div class="source-dial__axis source-dial__axis--x"></div>
-      <div class="source-dial__axis source-dial__axis--y"></div>
-      <div class="source-dial__core"><strong>{terms.length}</strong><span>term records</span></div>
-      <span class="source-dial__label source-dial__label--top">PUBLIC INDEX</span>
-      <span class="source-dial__label source-dial__label--bottom">RIGHTS-AWARE</span>
-    </div>
+    <nav class="source-reference-stack" aria-label="Featured procurement references">
+      <span class="source-reference-stack__note" aria-hidden="true">REFERENCE DESK / {String(featuredTerms.length).padStart(2, "0")}</span>
+      {featuredTerms.map((route, index) => (
+        <a key={route.id} class={`source-reference-card source-reference-card--${index + 1}`} href={route.path}>
+          <span>REFERENCE / {String(index + 1).padStart(2, "0")}</span>
+          <strong>{route.title.replace(" | Source Craft", "").replace(" | SourceCraft", "")}</strong>
+          <small>{route.contentStatus === "approved" ? "Approved for publication" : "Editorial review pending"}</small>
+          <i aria-hidden="true">↗</i>
+        </a>
+      ))}
+      <span class="source-reference-stack__caption">Identifiers first. Definitions only after editorial review.</span>
+    </nav>
   </div>
   <div class="shell source-hero__ledger">
     <div><strong>{String(terms.length).padStart(3, "0")}</strong><span>term identifiers</span></div>

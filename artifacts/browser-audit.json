@@ -1,7 +1,10 @@
 {
-  "generatedAt": "2026-11-26T00:59:53.641Z",
-  "mode": "accessibility",
-  "failures": [],
+  "generatedAt": "2026-11-27T00:52:23.331Z",
+  "mode": "performance",
+  "failures": [
+    "procuresherpa: Lighthouse performance 88 < 95",
+    "procuresherpa: LCP 3751.5173999999997 > 2500ms"
+  ],
   "performance": [
     {
       "app": "portal",
@@ -14,19 +17,19 @@
         "seo": 100
       },
       "metrics": {
-        "lcpMs": 2013.70755,
+        "lcpMs": 1955.44,
         "inpMs": null,
-        "cls": 0,
-        "totalBlockingTimeMs": 0,
-        "firstContentfulPaintMs": 2013.70755,
-        "speedIndexMs": 2013.70755,
-        "transferBytes": 371415,
-        "javascriptBytes": 1155.584
+        "cls": 0.007338784910523828,
+        "totalBlockingTimeMs": 3.5,
+        "firstContentfulPaintMs": 1955.44,
+        "speedIndexMs": 1955.44,
+        "transferBytes": 393446,
+        "javascriptBytes": 1145.6280000000004
       },
       "failedAudits": [
         {
           "id": "first-contentful-paint",
-          "score": 0.84,
+          "score": 0.85,
           "title": "First Contentful Paint",
           "displayValue": "2.0 s"
         },
@@ -55,14 +58,14 @@
         "seo": 100
       },
       "metrics": {
-        "lcpMs": 935.77865,
+        "lcpMs": 989.58545,
         "inpMs": null,
-        "cls": 0.001305126459962588,
+        "cls": 0.0004107510415662251,
         "totalBlockingTimeMs": 0,
-        "firstContentfulPaintMs": 935.77865,
-        "speedIndexMs": 935.77865,
-        "transferBytes": 114506,
-        "javascriptBytes": 558.4559999999999
+        "firstContentfulPaintMs": 989.58545,
+        "speedIndexMs": 989.58545,
+        "transferBytes": 129960,
+        "javascriptBytes": 604.284
       },
       "failedAudits": []
     },
@@ -77,19 +80,19 @@
         "seo": 100
       },
       "metrics": {
-        "lcpMs": 1736.9395,
+        "lcpMs": 1716.5650500000002,
         "inpMs": null,
-        "cls": 0.000778615179294994,
-        "totalBlockingTimeMs": 0,
-        "firstContentfulPaintMs": 1736.9395,
-        "speedIndexMs": 1736.9395,
-        "transferBytes": 246053,
-        "javascriptBytes": 796.848
+        "cls": 0.004510499672994525,
+        "totalBlockingTimeMs": 36,
+        "firstContentfulPaintMs": 1716.5650500000002,
+        "speedIndexMs": 1716.5650500000002,
+        "transferBytes": 323598,
+        "javascriptBytes": 988.7959999999999
       },
       "failedAudits": [
         {
           "id": "first-contentful-paint",
-          "score": 0.91,
+          "score": 0.92,
           "title": "First Contentful Paint",
           "displayValue": "1.7 s"
         },
@@ -106,20 +109,20 @@
       "url": "http://127.0.0.1:4344/",
       "finalDisplayedUrl": "http://127.0.0.1:4344/",
       "scores": {
-        "performance": 98,
+        "performance": 88,
         "accessibility": 100,
         "bestPractices": 100,
         "seo": 100
       },
       "metrics": {
-        "lcpMs": 1802.364,
+        "lcpMs": 3751.5173999999997,
         "inpMs": null,
-        "cls": 0.0007475702820245375,
-        "totalBlockingTimeMs": 7,
-        "firstContentfulPaintMs": 1802.364,
-        "speedIndexMs": 1802.364,
-        "transferBytes": 516944,
-        "javascriptBytes": 611.0960000000002
+        "cls": 0,
+        "totalBlockingTimeMs": 14.74129999999991,
+        "firstContentfulPaintMs": 1801.5174,
+        "speedIndexMs": 1801.5174,
+        "transferBytes": 539686,
+        "javascriptBytes": 767.696
       },
       "failedAudits": [
         {
@@ -130,9 +133,9 @@
         },
         {
           "id": "largest-contentful-paint",
-          "score": 0.98,
+          "score": 0.56,
           "title": "Largest Contentful Paint",
-          "displayValue": "1.8 s"
+          "displayValue": "3.8 s"
         }
       ]
     },
@@ -141,22 +144,35 @@
       "url": "http://127.0.0.1:4345/dashboard/",
       "finalDisplayedUrl": "http://127.0.0.1:4345/dashboard/",
       "scores": {
-        "performance": 100,
+        "performance": 99,
         "accessibility": 100,
         "bestPractices": 100,
         "seo": 100
       },
       "metrics": {
-        "lcpMs": 916.54735,
+        "lcpMs": 1952.2611,
         "inpMs": null,
         "cls": 0,
-        "totalBlockingTimeMs": 0,
-        "firstContentfulPaintMs": 916.54735,
-        "speedIndexMs": 916.54735,
-        "transferBytes": 156579,
-        "javascriptBytes": 483.64799999999997
+        "totalBlockingTimeMs": 74,
+        "firstContentfulPaintMs": 919.7537,
+        "speedIndexMs": 919.7537,
+        "transferBytes": 183219,
+        "javascriptBytes": 579.0959999999998
       },
-      "failedAudits": []
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.97,
+          "title": "Largest Contentful Paint",
+          "displayValue": "2.0 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.99,
+          "title": "Total Blocking Time",
+          "displayValue": "70 ms"
+        }
+      ]
     },
     {
       "app": "hcmfusion",
@@ -169,14 +185,14 @@
         "seo": 100
       },
       "metrics": {
-        "lcpMs": 1501.9074,
+        "lcpMs": 1001.79515,
         "inpMs": null,
-        "cls": 0.001346465307110725,
-        "totalBlockingTimeMs": 60.36419999999998,
-        "firstContentfulPaintMs": 901.2716,
-        "speedIndexMs": 901.2716,
-        "transferBytes": 106193,
-        "javascriptBytes": 531.9719999999999
+        "cls": 0.0007174382723503873,
+        "totalBlockingTimeMs": 0,
+        "firstContentfulPaintMs": 1001.79515,
+        "speedIndexMs": 1001.79515,
+        "transferBytes": 120535,
+        "javascriptBytes": 623.7080000000001
       },
       "failedAudits": []
     }
@@ -198,7 +214,7 @@
         "h1Count": 1,
         "landmarks": {
           "main": 1,
-          "nav": 2
+          "nav": 3
         }
       },
       "health": {
@@ -230,7 +246,7 @@
         "h1Count": 1,
         "landmarks": {
           "main": 1,
-          "nav": 2
+          "nav": 3
         }
       },
       "health": {
@@ -849,7 +865,7 @@
       },
       "axe": {
         "violations": [],
-        "passes": 23,
+        "passes": 24,
         "incomplete": 1
       },
       "failures": []
@@ -881,7 +897,7 @@
       },
       "axe": {
         "violations": [],
-        "passes": 23,
+        "passes": 24,
         "incomplete": 1
       },
       "failures": []
@@ -902,7 +918,7 @@
         "h1Count": 1,
         "landmarks": {
           "main": 1,
-          "nav": 2
+          "nav": 3
         }
       },
       "health": {
@@ -914,7 +930,7 @@
       "axe": {
         "violations": [],
         "passes": 22,
-        "incomplete": 0
+        "incomplete": 1
       },
       "failures": []
     },
@@ -934,7 +950,7 @@
         "h1Count": 1,
         "landmarks": {
           "main": 1,
-          "nav": 2
+          "nav": 3
         }
       },
       "health": {
@@ -946,7 +962,7 @@
       "axe": {
         "violations": [],
         "passes": 22,
-        "incomplete": 0
+        "incomplete": 1
       },
       "failures": []
     },
@@ -1030,7 +1046,7 @@
         "h1Count": 1,
         "landmarks": {
           "main": 1,
-          "nav": 2
+          "nav": 3
         }
       },
       "health": {
@@ -1042,7 +1058,7 @@
       "axe": {
         "violations": [],
         "passes": 29,
-        "incomplete": 0
+        "incomplete": 1
       },
       "failures": []
     },
@@ -1062,7 +1078,7 @@
         "h1Count": 1,
         "landmarks": {
           "main": 1,
-          "nav": 2
+          "nav": 3
         }
       },
       "health": {
@@ -1074,7 +1090,7 @@
       "axe": {
         "violations": [],
         "passes": 29,
-        "incomplete": 0
+        "incomplete": 1
       },
       "failures": []
     },
@@ -1169,7 +1185,7 @@
       },
       "axe": {
         "violations": [],
-        "passes": 25,
+        "passes": 26,
         "incomplete": 0
       },
       "failures": []
@@ -1201,7 +1217,7 @@
       },
       "axe": {
         "violations": [],
-        "passes": 25,
+        "passes": 26,
         "incomplete": 0
       },
       "failures": []
@@ -1266,7 +1282,7 @@
       "axe": {
         "violations": [],
         "passes": 22,
-        "incomplete": 0
+        "incomplete": 1
       },
       "failures": []
     },
@@ -1330,7 +1346,7 @@
       "axe": {
         "violations": [],
         "passes": 22,
-        "incomplete": 0
+        "incomplete": 1
       },
       "failures": []
     },
@@ -1462,5 +1478,7 @@
       },
       "failures": []
     }
-  ]
+  ],
+  "accessibilityGeneratedAt": "2026-11-26T22:49:53.652Z",
+  "performanceGeneratedAt": "2026-11-27T00:53:06.649Z"
 }

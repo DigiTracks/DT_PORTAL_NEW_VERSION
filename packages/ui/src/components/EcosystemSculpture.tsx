@@ -1,100 +1,68 @@
 import { useEffect, useId, useRef, useState } from "react";
+import type { PublicProductRecord } from "@digitracks/catalog";
 import type {
   BufferGeometry,
-  Curve,
+  CanvasTexture,
   Group,
-  Line,
-  LineBasicMaterial,
   Material,
   Mesh,
+  MeshBasicMaterial,
   MeshStandardMaterial,
   PerspectiveCamera,
   Scene,
+  Texture,
   Vector3,
   WebGLCubeRenderTarget,
   WebGLRenderer,
 } from "three";
+import ProductMark from "./ProductMark";
 import "../styles/sculpture.css";
 
-interface EcosystemSculptureProps {
-  className?: string;
-}
-
-type PointTuple = readonly [number, number, number];
 type ThreeModule = typeof import("three");
+type RoomEnvironmentConstructor = typeof import("three/addons/environments/RoomEnvironment.js").RoomEnvironment;
 type SculptureState = "ready" | "fallback";
+type SculptureProduct = Pick<PublicProductRecord, "id" | "name" | "category" | "logo">;
 
-interface FlowPath {
-  start: PointTuple;
-  first: PointTuple;
-  second: PointTuple;
-  end: PointTuple;
-}
-
-interface RibbonAssembly {
-  body: Mesh<BufferGeometry, MeshStandardMaterial>;
-  edge: Line<BufferGeometry, LineBasicMaterial>;
-  highlight: Line<BufferGeometry, LineBasicMaterial>;
-  filament: Line<BufferGeometry, LineBasicMaterial>;
-  node: Group;
-  clamp: Mesh<BufferGeometry, MeshStandardMaterial>;
-  segments: number;
-  indexCount: number;
-  pointCount: number;
-}
-
-interface LayerAssembly {
+interface ProductCard {
   group: Group;
-  home: Vector3;
-  tilt: number;
+  productIndex: number;
+  homeY: number;
+  texture: CanvasTexture;
 }
 
 interface SculptureBuild {
   group: Group;
   core: Group;
-  base: Group;
-  cap: Group;
-  layers: LayerAssembly[];
-  ribbons: RibbonAssembly[];
-  coreEdgeMaterial: LineBasicMaterial;
+  rings: Group[];
+  cards: ProductCard[];
+  geometries: Set<BufferGeometry>;
+  materials: Set<Material>;
+  textures: Set<Texture>;
+  images: HTMLImageElement[];
   dispose: () => void;
 }
 
 const WARM_WHITE = "#fcfbf8";
 const STEEL = "#9aa2ab";
 const CYAN = "#6ce5e8";
-const DEEP_BLUE = "#477bff";
-const ASSEMBLY_SECONDS = 1.2;
-const TURN_SECONDS = 72;
+const BLUE = "#477bff";
+const CORAL = "#ff7657";
+const YELLOW = "#ffc857";
+const GREEN = "#79d6a2";
+const ASSEMBLY_SECONDS = 1.15;
+const TURN_SECONDS = 54;
 const TURN_SPEED = Math.PI * 2 / TURN_SECONDS;
-const BASE_Y = -2.42;
-const CAP_Y = 2.42;
-const BASE_ROTATION = { x: 0.2, y: -0.46, z: -0.055 } as const;
+const CARD_WIDTH = 1.28;
+const CARD_HEIGHT = 1.6;
+const ORBIT_RADIUS = 3.65;
+const TIER_HEIGHT = 1.82;
+const BASE_ROTATION = { x: 0.075, y: -0.18, z: -0.025 } as const;
+const FALLBACK_PRODUCT_IDS = ["mindone-pro", "vedik", "vertex", "orion", "vantor", "nipuna", "campus-grid"];
 
-const LAYER_SPECS = [
-  { y: -1.7, width: 2.65, depth: 1.72, x: -0.1, z: 0.03, rotation: -0.05, pitch: 0.06, yaw: -0.12 },
-  { y: -0.85, width: 3.35, depth: 1.95, x: 0.14, z: 0.08, rotation: 0.025, pitch: -0.08, yaw: 0.16 },
-  { y: 0, width: 2.75, depth: 1.52, x: -0.12, z: -0.08, rotation: -0.025, pitch: 0.04, yaw: -0.2 },
-  { y: 0.85, width: 3.6, depth: 1.85, x: 0.18, z: 0.05, rotation: 0.04, pitch: -0.06, yaw: 0.12 },
-  { y: 1.7, width: 2.45, depth: 1.55, x: -0.08, z: -0.06, rotation: -0.055, pitch: 0.08, yaw: -0.08 },
-] as const;
-
-const FLOW_PATHS: readonly FlowPath[] = [
-  { start: [-1.28, -2.24, 0.38], first: [-1.18, -1.2, 0.7], second: [-0.62, 1.18, 0.42], end: [-0.46, 2.18, 0.12] },
-  { start: [-0.76, -2.2, -0.48], first: [-0.86, -1.08, -0.78], second: [-0.36, 1.02, -0.62], end: [-0.2, 2.3, -0.2] },
-  { start: [0.02, -2.24, 0.18], first: [0.2, -1.22, 0.34], second: [0.04, 0.92, 0.2], end: [0.2, 2.28, 0.1] },
-  { start: [0.82, -2.18, -0.36], first: [1.02, -0.98, -0.64], second: [0.46, 1.14, -0.42], end: [0.4, 2.2, -0.14] },
-  { start: [1.34, -2.02, 0.48], first: [1.48, -0.84, 0.66], second: [0.84, 1.16, 0.4], end: [0.62, 2.12, 0.14] },
-  { start: [-1.44, -1.62, -0.18], first: [-1.52, -0.68, -0.34], second: [-0.9, 1.2, -0.18], end: [-0.54, 2.16, -0.08] },
-];
-
-const FALLBACK_LAYERS = [
-  { y: 232, width: 142, depth: 74, x: 386, tilt: -2 },
-  { y: 326, width: 194, depth: 88, x: 414, tilt: 1 },
-  { y: 420, width: 158, depth: 72, x: 382, tilt: -1 },
-  { y: 514, width: 208, depth: 90, x: 418, tilt: 2 },
-  { y: 608, width: 138, depth: 70, x: 390, tilt: -2 },
-] as const;
+interface EcosystemSculptureProps {
+  products: readonly SculptureProduct[];
+  className?: string;
+}
 
 function clamp(value: number, min = 0, max = 1) {
   return Math.min(max, Math.max(min, value));
@@ -117,10 +85,6 @@ function easeOut(value: number) {
   return 3 * inverse * inverse * x + 3 * inverse * x * x + x * x * x;
 }
 
-function vector(THREE: ThreeModule, point: PointTuple) {
-  return new THREE.Vector3(point[0], point[1], point[2]);
-}
-
 function stepSpring(position: number, velocity: number, target: number, delta: number) {
   const displacement = position - target;
   const damping = 5;
@@ -134,65 +98,110 @@ function stepSpring(position: number, velocity: number, target: number, delta: n
   };
 }
 
-function createRibbonGeometry(THREE: ThreeModule, curve: Curve<Vector3>, width: number, thickness: number, segments: number) {
-  const frames = curve.computeFrenetFrames(segments, false);
-  const positions: number[] = [];
-  const edgePoints: Vector3[] = [];
-  const highlightPoints: Vector3[] = [];
-  const indices: number[] = [];
-
-  for (let index = 0; index <= segments; index += 1) {
-    const point = curve.getPointAt(index / segments);
-    const normal = frames.normals[index];
-    const binormal = frames.binormals[index];
-    const corners = [
-      point.clone().addScaledVector(binormal, width / 2).addScaledVector(normal, thickness / 2),
-      point.clone().addScaledVector(binormal, -width / 2).addScaledVector(normal, thickness / 2),
-      point.clone().addScaledVector(binormal, -width / 2).addScaledVector(normal, -thickness / 2),
-      point.clone().addScaledVector(binormal, width / 2).addScaledVector(normal, -thickness / 2),
-    ];
-    for (const corner of corners) positions.push(corner.x, corner.y, corner.z);
-    edgePoints.push(point.clone().addScaledVector(normal, thickness * 0.58).addScaledVector(binormal, -width * 0.16));
-    highlightPoints.push(point.clone().addScaledVector(normal, thickness * 0.58).addScaledVector(binormal, width * 0.48));
-  }
-
-  for (let index = 0; index < segments; index += 1) {
-    for (let side = 0; side < 4; side += 1) {
-      const nextSide = (side + 1) % 4;
-      const a = index * 4 + side;
-      const b = (index + 1) * 4 + side;
-      const c = (index + 1) * 4 + nextSide;
-      const d = index * 4 + nextSide;
-      indices.push(a, b, d, b, c, d);
-    }
-  }
-
-  indices.push(0, 2, 1, 0, 3, 2);
-  const last = segments * 4;
-  indices.push(last, last + 1, last + 2, last, last + 2, last + 3);
-
-  const geometry = new THREE.BufferGeometry();
-  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
-  geometry.setIndex(indices);
-  geometry.computeVertexNormals();
-  geometry.computeBoundingSphere();
-
-  return { geometry, edgePoints, highlightPoints };
+function accentFor(category: string) {
+  const normalized = category.toLowerCase();
+  if (normalized.includes("education")) return YELLOW;
+  if (normalized.includes("procure") || normalized.includes("supply")) return CORAL;
+  if (normalized.includes("developer") || normalized.includes("cyber")) return CYAN;
+  if (normalized.includes("health") || normalized.includes("beauty") || normalized.includes("hr")) return GREEN;
+  return BLUE;
 }
 
-function createSculpture(THREE: ThreeModule): SculptureBuild {
+function wrapText(context: CanvasRenderingContext2D, text: string, maxWidth: number, maxLines = 3) {
+  const words = text.split(/\s+/);
+  const lines: string[] = [];
+  let line = "";
+  for (const word of words) {
+    const candidate = line ? `${line} ${word}` : word;
+    if (context.measureText(candidate).width <= maxWidth || !line) {
+      line = candidate;
+      continue;
+    }
+    lines.push(line);
+    line = word;
+  }
+  if (line) lines.push(line);
+  if (lines.length <= maxLines) return lines;
+  const visible = lines.slice(0, maxLines);
+  let last = visible[maxLines - 1];
+  while (context.measureText(`${last}…`).width > maxWidth && last.includes(" ")) last = last.slice(0, last.lastIndexOf(" "));
+  visible[maxLines - 1] = `${last}…`;
+  return visible;
+}
+
+function drawPlaceholderMark(context: CanvasRenderingContext2D, product: SculptureProduct, x: number, y: number, size: number) {
+  const initials = product.name.split(/\s+/).slice(0, 2).map((word) => word[0]).join("");
+  context.save();
+  context.fillStyle = "#f7f8f3";
+  context.beginPath();
+  context.roundRect(x, y, size, size, 18);
+  context.fill();
+  context.fillStyle = "#10202d";
+  context.font = "700 58px Arial, sans-serif";
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillText(initials, x + size / 2, y + size / 2 + 2);
+  context.restore();
+}
+
+function drawCard(context: CanvasRenderingContext2D, product: SculptureProduct) {
+  const accent = accentFor(product.category);
+  const gradient = context.createLinearGradient(0, 0, 512, 640);
+  gradient.addColorStop(0, "#183342");
+  gradient.addColorStop(0.55, "#101f2c");
+  gradient.addColorStop(1, "#09141e");
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, 512, 640);
+  context.fillStyle = accent;
+  context.fillRect(0, 0, 512, 12);
+  context.strokeStyle = "rgba(252,251,248,0.2)";
+  context.lineWidth = 3;
+  context.strokeRect(1.5, 1.5, 509, 637);
+
+  context.fillStyle = "rgba(252,251,248,0.52)";
+  context.font = "500 20px Arial, sans-serif";
+  context.textAlign = "left";
+  context.textBaseline = "alphabetic";
+  context.fillText("DIGI TRACKS / PRODUCT", 42, 58);
+  context.fillStyle = accent;
+  context.textAlign = "right";
+  context.fillText(product.category.toUpperCase(), 470, 58);
+
+  context.fillStyle = "rgba(252,251,248,0.04)";
+  for (let x = 42; x < 512; x += 42) context.fillRect(x, 92, 1, 356);
+  for (let y = 92; y < 448; y += 42) context.fillRect(42, y, 428, 1);
+
+  context.fillStyle = "#f7f8f3";
+  context.beginPath();
+  context.roundRect(166, 120, 180, 180, 24);
+  context.fill();
+  context.strokeStyle = "rgba(16,32,45,0.16)";
+  context.lineWidth = 2;
+  context.stroke();
+  context.fillStyle = "rgba(252,251,248,0.35)";
+  context.font = "500 18px Arial, sans-serif";
+  context.textAlign = "left";
+  context.fillText("APPLICATION", 42, 494);
+  context.fillStyle = WARM_WHITE;
+  context.font = "600 42px Arial, sans-serif";
+  const lines = wrapText(context, product.name, 428, 3);
+  lines.forEach((line, index) => context.fillText(line, 42, 548 + index * 46));
+  context.fillStyle = accent;
+  context.fillRect(42, 610, 74, 4);
+  context.fillStyle = "rgba(252,251,248,0.32)";
+  context.fillRect(126, 610, 344, 1);
+}
+
+function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct[]): SculptureBuild {
   const {
     AdditiveBlending,
     BoxGeometry,
     BufferGeometry,
-    CubicBezierCurve3,
+    CanvasTexture,
     CylinderGeometry,
-    DodecahedronGeometry,
     DoubleSide,
-    EdgesGeometry,
-    ExtrudeGeometry,
-    Float32BufferAttribute,
     Group,
+    LinearFilter,
     Line,
     LineBasicMaterial,
     LineSegments,
@@ -200,13 +209,16 @@ function createSculpture(THREE: ThreeModule): SculptureBuild {
     MeshBasicMaterial,
     MeshPhysicalMaterial,
     MeshStandardMaterial,
-    OctahedronGeometry,
-    Shape,
+    PlaneGeometry,
+    SRGBColorSpace,
     TorusGeometry,
     Vector3,
   } = THREE;
   const geometries = new Set<BufferGeometry>();
   const materials = new Set<Material>();
+  const textures = new Set<Texture>();
+  const images: HTMLImageElement[] = [];
+  let isDisposed = false;
   const ownGeometry = <T extends BufferGeometry>(geometry: T) => {
     geometries.add(geometry);
     return geometry;
@@ -218,406 +230,189 @@ function createSculpture(THREE: ThreeModule): SculptureBuild {
 
   const group = new Group();
   const core = new Group();
-  const base = new Group();
-  const cap = new Group();
-  const layers: LayerAssembly[] = [];
-  const ribbons: RibbonAssembly[] = [];
-  group.add(base, core, cap);
+  const rings: Group[] = [];
+  const cards: ProductCard[] = [];
+  group.add(core);
 
   const darkMetal = ownMaterial(new MeshPhysicalMaterial({
     color: "#132630",
-    metalness: 0.9,
-    roughness: 0.28,
-    clearcoat: 0.42,
+    metalness: 0.88,
+    roughness: 0.26,
+    clearcoat: 0.45,
     clearcoatRoughness: 0.2,
     flatShading: true,
-    side: DoubleSide,
   }));
   const midMetal = ownMaterial(new MeshPhysicalMaterial({
-    color: "#435863",
-    metalness: 0.86,
-    roughness: 0.24,
-    clearcoat: 0.5,
-    clearcoatRoughness: 0.18,
-    flatShading: true,
-    side: DoubleSide,
-  }));
-  const steelMaterial = ownMaterial(new MeshPhysicalMaterial({
-    color: STEEL,
+    color: "#3c5562",
     metalness: 0.82,
-    roughness: 0.25,
-    clearcoat: 0.25,
+    roughness: 0.24,
+    clearcoat: 0.4,
   }));
-  const panelMaterial = ownMaterial(new MeshPhysicalMaterial({
-    color: "#081720",
-    metalness: 0.7,
-    roughness: 0.32,
-    clearcoat: 0.55,
-    clearcoatRoughness: 0.16,
-    flatShading: true,
-    side: DoubleSide,
+  const steelMaterial = ownMaterial(new MeshStandardMaterial({
+    color: STEEL,
+    metalness: 0.8,
+    roughness: 0.28,
   }));
-  const ceramicMaterial = ownMaterial(new MeshStandardMaterial({
-    color: "#c4cfcc",
-    metalness: 0.38,
-    roughness: 0.34,
-  }));
-  const seamMaterial = ownMaterial(new MeshStandardMaterial({
-    color: CYAN,
-    emissive: CYAN,
-    emissiveIntensity: 1.4,
-    metalness: 0.25,
-    roughness: 0.3,
-  }));
-  const coreChannelMaterial = ownMaterial(new MeshStandardMaterial({
-    color: "#4bc4c9",
-    emissive: CYAN,
-    emissiveIntensity: 0.48,
-    metalness: 0.55,
-    roughness: 0.32,
-  }));
-  const coreGlassMaterial = ownMaterial(new MeshPhysicalMaterial({
-    color: "#77dfe3",
-    metalness: 0.1,
-    roughness: 0.16,
-    transparent: true,
-    opacity: 0.09,
-    depthWrite: false,
-    side: DoubleSide,
-  }));
-  const coreEdgeMaterial = ownMaterial(new LineBasicMaterial({
+  const cyanMaterial = ownMaterial(new MeshBasicMaterial({
     color: CYAN,
     transparent: true,
-    opacity: 0.52,
+    opacity: 0.62,
     toneMapped: false,
   }));
-  const edgeMaterial = ownMaterial(new LineBasicMaterial({
-    color: CYAN,
+  const blueMaterial = ownMaterial(new MeshBasicMaterial({
+    color: BLUE,
     transparent: true,
-    opacity: 0.8,
+    opacity: 0.32,
     toneMapped: false,
     blending: AdditiveBlending,
     depthWrite: false,
+    side: DoubleSide,
   }));
-  const highlightMaterial = ownMaterial(new LineBasicMaterial({
-    color: WARM_WHITE,
-    transparent: true,
-    opacity: 0.3,
-    toneMapped: false,
-    depthWrite: false,
-  }));
-  const filamentMaterial = ownMaterial(new LineBasicMaterial({
+  const frameLineMaterial = ownMaterial(new LineBasicMaterial({
     color: CYAN,
     transparent: true,
     opacity: 0.22,
     toneMapped: false,
-    depthWrite: false,
-  }));
-  const traceMaterial = ownMaterial(new LineBasicMaterial({
-    color: CYAN,
-    transparent: true,
-    opacity: 0.34,
-    toneMapped: false,
-    depthWrite: false,
-  }));
-  const frameMaterial = ownMaterial(new LineBasicMaterial({
-    color: STEEL,
-    transparent: true,
-    opacity: 0.2,
-    toneMapped: false,
-    depthWrite: false,
-  }));
-  const nodeMaterial = ownMaterial(new MeshStandardMaterial({
-    color: CYAN,
-    emissive: CYAN,
-    emissiveIntensity: 1.15,
-    metalness: 0.2,
-    roughness: 0.24,
-  }));
-  const blueNodeMaterial = ownMaterial(new MeshStandardMaterial({
-    color: DEEP_BLUE,
-    emissive: DEEP_BLUE,
-    emissiveIntensity: 0.75,
-    metalness: 0.25,
-    roughness: 0.3,
-  }));
-  const glowMaterial = ownMaterial(new MeshBasicMaterial({
-    color: CYAN,
-    transparent: true,
-    opacity: 0.16,
-    toneMapped: false,
-    blending: AdditiveBlending,
-    depthWrite: false,
-    side: DoubleSide,
-  }));
-  const spineMaterial = ownMaterial(new MeshBasicMaterial({
-    color: CYAN,
-    transparent: true,
-    opacity: 0.88,
-    toneMapped: false,
   }));
 
-  const statusGeometry = ownGeometry(new BoxGeometry(0.095, 0.045, 0.035));
-  const portGeometry = ownGeometry(new BoxGeometry(0.04, 0.085, 0.12));
-  const insetGeometry = ownGeometry(new BoxGeometry(0.5, 0.024, 0.065));
-  const ventGeometry = ownGeometry(new BoxGeometry(0.026, 0.022, 0.14));
-  const boltGeometry = ownGeometry(new CylinderGeometry(0.024, 0.024, 0.024, 6));
-  const labelGeometry = ownGeometry(new BoxGeometry(0.34, 0.052, 0.018));
+  const cardGeometry = ownGeometry(new PlaneGeometry(CARD_WIDTH, CARD_HEIGHT));
+  const frameGeometry = ownGeometry(new BoxGeometry(CARD_WIDTH + 0.11, CARD_HEIGHT + 0.11, 0.075));
+  const ringGeometry = ownGeometry(new TorusGeometry(ORBIT_RADIUS + 0.12, 0.018, 5, 112));
+  const outerRingGeometry = ownGeometry(new TorusGeometry(ORBIT_RADIUS + 0.48, 0.009, 4, 112));
+  const coreGeometry = ownGeometry(new CylinderGeometry(0.22, 0.34, 5.72, 6));
+  const coreChannelGeometry = ownGeometry(new CylinderGeometry(0.045, 0.045, 5.25, 6));
+  const hubGeometry = ownGeometry(new CylinderGeometry(0.62, 0.76, 0.17, 6));
+  const rodGeometry = ownGeometry(new CylinderGeometry(0.018, 0.018, 5.7, 5));
 
-  const plateGeometry = (width: number, depth: number, thickness: number, chamfer = 0.12) => {
-    const halfWidth = width / 2;
-    const halfDepth = depth / 2;
-    const shape = new Shape();
-    shape.moveTo(-halfWidth + chamfer, -halfDepth);
-    shape.lineTo(halfWidth - chamfer, -halfDepth);
-    shape.lineTo(halfWidth, -halfDepth + chamfer);
-    shape.lineTo(halfWidth, halfDepth - chamfer);
-    shape.lineTo(halfWidth - chamfer, halfDepth);
-    shape.lineTo(-halfWidth + chamfer, halfDepth);
-    shape.lineTo(-halfWidth, halfDepth - chamfer);
-    shape.lineTo(-halfWidth, -halfDepth + chamfer);
-    shape.closePath();
-    const geometry = ownGeometry(new ExtrudeGeometry(shape, {
-      depth: thickness,
-      steps: 1,
-      bevelEnabled: true,
-      bevelThickness: 0.018,
-      bevelSize: 0.024,
-      bevelSegments: 1,
-    }));
-    geometry.center();
-    geometry.rotateX(Math.PI / 2);
-    geometry.computeVertexNormals();
-    return geometry;
-  };
-
-  const makePlate = (
-    width: number,
-    depth: number,
-    thickness: number,
-    position: PointTuple,
-    rotation: number,
-    bodyMaterial: MeshStandardMaterial,
-    instrumented: boolean,
-  ) => {
-    const plate = new Group();
-    const bodyGeometry = plateGeometry(width, depth, thickness);
-    const body = new Mesh(bodyGeometry, bodyMaterial);
-    const panel = new Mesh(plateGeometry(width - 0.28, depth - 0.26, 0.026, 0.09), panelMaterial);
-    panel.position.y = thickness / 2 + 0.03;
-    const seam = new Mesh(plateGeometry(width + 0.025, depth + 0.025, 0.024, 0.12), seamMaterial);
-    seam.position.y = -thickness / 2 - 0.01;
-    const edge = new LineSegments(ownGeometry(new EdgesGeometry(bodyGeometry, 24)), coreEdgeMaterial);
-    plate.add(body, panel, seam, edge);
-
-    const top = thickness / 2 + 0.054;
-    [-1, 1].forEach((xDirection) => {
-      [-1, 1].forEach((zDirection) => {
-        const bolt = new Mesh(boltGeometry, steelMaterial);
-        bolt.position.set(xDirection * (width / 2 - 0.15), top, zDirection * (depth / 2 - 0.14));
-        plate.add(bolt);
-      });
-    });
-
-    if (instrumented) {
-      const inset = new Mesh(insetGeometry, ceramicMaterial);
-      inset.scale.x = width / 2.65;
-      inset.position.set(-width * 0.24, top, depth * 0.26);
-      const label = new Mesh(labelGeometry, ceramicMaterial);
-      label.position.set(width * 0.27, 0, depth / 2 + 0.026);
-      plate.add(inset, label);
-
-      for (let index = 0; index < 5; index += 1) {
-        const vent = new Mesh(ventGeometry, darkMetal);
-        vent.position.set(width * 0.08 + index * 0.048, top, depth * 0.27);
-        plate.add(vent);
-      }
-      const tracePositions = [
-        -width * 0.34, top, -depth * 0.26, width * 0.28, top, -depth * 0.26,
-        width * 0.28, top, -depth * 0.26, width * 0.28, top, depth * 0.19,
-        -width * 0.18, top, depth * 0.28, width * 0.08, top, depth * 0.28,
-        width * 0.08, top, depth * 0.28, width * 0.08, top, -depth * 0.05,
-        -width * 0.34, top, -depth * 0.05, -width * 0.18, top, -depth * 0.05,
-      ];
-      const traceGeometry = ownGeometry(new BufferGeometry());
-      traceGeometry.setAttribute("position", new Float32BufferAttribute(tracePositions, 3));
-      plate.add(new LineSegments(traceGeometry, traceMaterial));
-
-      [-0.27, 0, 0.27].forEach((offset, index) => {
-        const status = new Mesh(statusGeometry, index === 1 ? blueNodeMaterial : nodeMaterial);
-        status.position.set(width * offset, 0, depth / 2 + 0.035);
-        plate.add(status);
-      });
-      [-0.24, 0.24].forEach((offset) => {
-        const port = new Mesh(portGeometry, steelMaterial);
-        port.position.set(width / 2 + 0.025, 0, depth * offset);
-        plate.add(port);
-      });
-    }
-
-    plate.position.set(position[0], position[1], position[2]);
-    plate.rotation.z = rotation;
-    return plate;
-  };
-
-  LAYER_SPECS.forEach((spec, index) => {
-    const layer = makePlate(
-      spec.width,
-      spec.depth,
-      0.19,
-      [spec.x, spec.y, spec.z],
-      spec.rotation,
-      index % 2 === 0 ? darkMetal : midMetal,
-      true,
-    );
-    layer.rotation.x = spec.pitch;
-    layer.rotation.y = spec.yaw;
-    group.add(layer);
-    layers.push({ group: layer, home: layer.position.clone(), tilt: spec.rotation });
+  const coreMesh = new Mesh(coreGeometry, darkMetal);
+  const coreChannel = new Mesh(coreChannelGeometry, cyanMaterial);
+  core.add(coreMesh, coreChannel);
+  [-2.82, 2.82].forEach((y) => {
+    const hub = new Mesh(hubGeometry, midMetal);
+    hub.position.y = y;
+    core.add(hub);
+    const halo = new Mesh(ringGeometry, cyanMaterial);
+    halo.rotation.x = Math.PI / 2;
+    halo.scale.setScalar(0.2);
+    halo.position.y = y;
+    core.add(halo);
   });
-
-  const basePlate = makePlate(2.72, 1.94, 0.22, [0, BASE_Y, 0], 0, darkMetal, false);
-  const capPlate = makePlate(1.72, 1.34, 0.18, [0, CAP_Y, 0], 0, midMetal, false);
-  base.add(basePlate);
-  cap.add(capPlate);
-
-  const footGeometry = ownGeometry(new BoxGeometry(0.28, 0.18, 0.28));
-  [-0.96, 0.96].forEach((x) => {
-    [-0.58, 0.58].forEach((z) => {
-      const foot = new Mesh(footGeometry, steelMaterial);
-      foot.position.set(x, -0.18, z);
-      base.add(foot);
-    });
-  });
-
-  const coreGeometry = ownGeometry(new CylinderGeometry(0.43, 0.56, 3.66, 6, 1, false));
-  const corePrism = new Mesh(coreGeometry, darkMetal);
-  const coreEdges = new LineSegments(ownGeometry(new EdgesGeometry(coreGeometry, 20)), coreEdgeMaterial);
-  const coreChannel = new Mesh(ownGeometry(new CylinderGeometry(0.19, 0.25, 3.38, 6, 1, false)), coreChannelMaterial);
-  const coreGlass = new Mesh(ownGeometry(new CylinderGeometry(0.49, 0.61, 3.5, 6, 1, true)), coreGlassMaterial);
-  const coreGlow = new Mesh(ownGeometry(new CylinderGeometry(0.48, 0.6, 3.5, 6, 1, true)), glowMaterial);
-  const spine = new Mesh(ownGeometry(new BoxGeometry(0.085, 2.92, 0.035)), spineMaterial);
-  spine.position.set(0, 0, 0.53);
-  core.add(corePrism, coreChannel, coreGlass, coreEdges, coreGlow, spine);
-
-  const coreRingGeometry = ownGeometry(new TorusGeometry(0.5, 0.016, 4, 6));
-  [-1.55, -0.78, 0, 0.78, 1.55].forEach((y, index) => {
-    const ring = new Mesh(coreRingGeometry, index === 2 ? nodeMaterial : steelMaterial);
-    ring.rotation.x = Math.PI / 2;
-    ring.rotation.z = Math.PI / 6;
-    ring.position.y = y;
-    core.add(ring);
-  });
-
-  const coreRodGeometry = ownGeometry(new CylinderGeometry(0.014, 0.014, 3.2, 5));
   for (let index = 0; index < 6; index += 1) {
     const angle = (index / 6) * Math.PI * 2;
-    const rod = new Mesh(coreRodGeometry, index % 2 === 0 ? coreChannelMaterial : steelMaterial);
-    rod.position.set(Math.cos(angle) * 0.47, 0, Math.sin(angle) * 0.47);
+    const rod = new Mesh(rodGeometry, index % 2 === 0 ? steelMaterial : cyanMaterial);
+    rod.position.set(Math.cos(angle) * 0.43, 0, Math.sin(angle) * 0.43);
     core.add(rod);
   }
 
-  const railGeometry = ownGeometry(new BoxGeometry(0.044, 4.02, 0.044));
-  for (let index = 0; index < 6; index += 1) {
-    const angle = Math.PI / 6 + (index / 6) * Math.PI * 2;
-    const rail = new Mesh(railGeometry, index % 2 === 0 ? steelMaterial : nodeMaterial);
-    rail.position.set(Math.cos(angle) * 0.68, 0, Math.sin(angle) * 0.68);
-    core.add(rail);
+  const tierCount = 3;
+  for (let tier = 0; tier < tierCount; tier += 1) {
+    const ringGroup = new Group();
+    const y = (tier - 1) * TIER_HEIGHT;
+    const ring = new Mesh(ringGeometry, tier === 1 ? cyanMaterial : blueMaterial);
+    ring.rotation.x = Math.PI / 2;
+    ring.position.y = y - CARD_HEIGHT / 2 - 0.18;
+    ringGroup.add(ring);
+    const outerRing = new Mesh(outerRingGeometry, blueMaterial);
+    outerRing.rotation.x = Math.PI / 2;
+    outerRing.position.y = y + CARD_HEIGHT / 2 + 0.2;
+    ringGroup.add(outerRing);
+    group.add(ringGroup);
+    rings.push(ringGroup);
   }
 
-  const crossbarGeometry = ownGeometry(new BoxGeometry(1.22, 0.026, 0.026));
-  [-1.55, -0.78, 0, 0.78, 1.55].forEach((y, index) => {
-    const crossbar = new Mesh(crossbarGeometry, index === 2 ? nodeMaterial : steelMaterial);
-    crossbar.position.y = y;
-    crossbar.rotation.y = index % 2 === 0 ? 0.12 : -0.12;
-    core.add(crossbar);
+  products.forEach((product, productIndex) => {
+    const tier = productIndex % tierCount;
+    const slot = Math.floor(productIndex / tierCount);
+    const tierProducts = products.filter((_, index) => index % tierCount === tier);
+    const angle = (slot / tierProducts.length) * Math.PI * 2 + tier * 0.19;
+    const homeY = (tier - 1) * TIER_HEIGHT;
+    const cardGroup = new Group();
+    cardGroup.position.set(Math.sin(angle) * ORBIT_RADIUS, homeY, Math.cos(angle) * ORBIT_RADIUS);
+    cardGroup.rotation.y = angle;
+
+    const frame = new Mesh(frameGeometry, tier === 1 ? midMetal : darkMetal);
+    const canvas = document.createElement("canvas");
+    canvas.width = 512;
+    canvas.height = 640;
+    const context = canvas.getContext("2d");
+    if (!context) return;
+    drawCard(context, product);
+    const texture = new CanvasTexture(canvas);
+    texture.colorSpace = SRGBColorSpace;
+    texture.minFilter = LinearFilter;
+    texture.generateMipmaps = false;
+    textures.add(texture);
+    const cardMaterial = ownMaterial(new MeshBasicMaterial({
+      map: texture,
+      transparent: false,
+      toneMapped: false,
+    }));
+    const face = new Mesh(cardGeometry, cardMaterial);
+    face.position.z = 0.044;
+    cardGroup.add(frame, face);
+
+    if (product.logo) {
+      const image = new Image();
+      image.decoding = "async";
+      image.onload = () => {
+        if (isDisposed) return;
+        drawCard(context, product);
+        const size = 142;
+        context.save();
+        context.beginPath();
+        context.roundRect(185, 139, size, size, 18);
+        context.clip();
+        context.drawImage(image, 185, 139, size, size);
+        context.restore();
+        texture.needsUpdate = true;
+      };
+      image.src = product.logo;
+      images.push(image);
+    } else {
+      drawPlaceholderMark(context, product, 185, 139, 142);
+      texture.needsUpdate = true;
+    }
+
+    group.add(cardGroup);
+    cards.push({ group: cardGroup, productIndex, homeY, texture });
   });
 
-  const capNode = new Mesh(ownGeometry(new OctahedronGeometry(0.17, 0)), nodeMaterial);
-  capNode.position.y = 0.25;
-  cap.add(capNode);
-  [-0.48, 0.48].forEach((x) => {
-    const capPort = new Mesh(ownGeometry(new CylinderGeometry(0.045, 0.06, 0.16, 6)), steelMaterial);
-    capPort.position.set(x, 0.15, 0.22);
-    cap.add(capPort);
-  });
-  const baseNode = new Mesh(ownGeometry(new DodecahedronGeometry(0.14, 0)), blueNodeMaterial);
-  baseNode.position.y = 0.2;
-  base.add(baseNode);
-  const baseSeam = new Mesh(ownGeometry(new TorusGeometry(0.78, 0.018, 4, 6)), seamMaterial);
-  baseSeam.rotation.x = Math.PI / 2;
-  baseSeam.position.y = 0.14;
-  base.add(baseSeam);
-
-  const nodeGeometry = ownGeometry(new OctahedronGeometry(0.085, 0));
-  const clampGeometry = ownGeometry(new BoxGeometry(0.12, 0.07, 0.07));
-
-  FLOW_PATHS.forEach((path, index) => {
-    const curve = new CubicBezierCurve3(
-      vector(THREE, path.start),
-      vector(THREE, path.first),
-      vector(THREE, path.second),
-      vector(THREE, path.end),
-    );
-    const segments = 76;
-    const ribbon = createRibbonGeometry(THREE, curve, 0.042 + (index % 3) * 0.006, 0.016, segments);
-    const bodyGeometry = ownGeometry(ribbon.geometry);
-    const body = new Mesh(bodyGeometry, index % 2 === 0 ? midMetal : steelMaterial);
-    const edge = new Line(ownGeometry(new BufferGeometry().setFromPoints(ribbon.edgePoints)), edgeMaterial);
-    const highlight = new Line(ownGeometry(new BufferGeometry().setFromPoints(ribbon.highlightPoints)), highlightMaterial);
-    const filamentCurve = new CubicBezierCurve3(
-      vector(THREE, path.start),
-      vector(THREE, path.start).multiplyScalar(0.72).add(new Vector3(0.08, 0.3, 0.16)),
-      vector(THREE, path.end).multiplyScalar(0.74).add(new Vector3(-0.06, -0.28, 0.12)),
-      vector(THREE, path.end),
-    );
-    const filament = new Line(ownGeometry(new BufferGeometry().setFromPoints(filamentCurve.getPoints(58))), filamentMaterial);
-
-    const node = new Group();
-    node.position.copy(curve.getPointAt(0));
-    node.add(new Mesh(nodeGeometry, index % 2 === 0 ? nodeMaterial : blueNodeMaterial));
-    const clampMesh = new Mesh(clampGeometry, steelMaterial);
-    clampMesh.position.copy(curve.getPointAt(1));
-    clampMesh.quaternion.setFromUnitVectors(new Vector3(0, 0, 1), curve.getTangentAt(1).normalize());
-
-    group.add(body, edge, highlight, filament, node, clampMesh);
-    ribbons.push({
-      body,
-      edge,
-      highlight,
-      filament,
-      node,
-      clamp: clampMesh,
-      segments,
-      indexCount: bodyGeometry.index?.count ?? 0,
-      pointCount: segments + 1,
-    });
-  });
-
-  const framePositions: number[] = [];
+  const framePoints: number[] = [];
   [-1, 1].forEach((xDirection) => {
     [-1, 1].forEach((yDirection) => {
-      const x = xDirection * 2.12;
-      const y = yDirection * 2.64;
-      framePositions.push(
-        x, y, -0.92, x - xDirection * 0.34, y, -0.92,
-        x, y, -0.92, x, y - yDirection * 0.34, -0.92,
-      );
+      const x = xDirection * 4.35;
+      const y = yDirection * 3.15;
+      framePoints.push(x, y, -1.2, x - xDirection * 0.34, y, -1.2, x, y, -1.2, x, y - yDirection * 0.34, -1.2);
     });
   });
-  const frameGeometry = ownGeometry(new BufferGeometry());
-  frameGeometry.setAttribute("position", new Float32BufferAttribute(framePositions, 3));
-  group.add(new LineSegments(frameGeometry, frameMaterial));
+  const registrationFrameGeometry = ownGeometry(new BufferGeometry());
+  registrationFrameGeometry.setAttribute("position", new THREE.Float32BufferAttribute(framePoints, 3));
+  group.add(new LineSegments(registrationFrameGeometry, frameLineMaterial));
+
+  const orbitCurve = new THREE.EllipseCurve(0, 0, 4.48, 1.38, 0, Math.PI * 2, false, 0);
+  const orbitPoints = orbitCurve.getPoints(120).map((point) => new Vector3(point.x, point.y, 0));
+  const orbitGeometry = ownGeometry(new BufferGeometry().setFromPoints(orbitPoints));
+  const orbit = new Line(orbitGeometry, frameLineMaterial);
+  orbit.rotation.x = 1.12;
+  orbit.rotation.z = -0.28;
+  group.add(orbit);
 
   return {
     group,
     core,
-    base,
-    cap,
-    layers,
-    ribbons,
-    coreEdgeMaterial,
+    rings,
+    cards,
+    geometries,
+    materials,
+    textures,
+    images,
     dispose: () => {
+      isDisposed = true;
+      for (const image of images) {
+        image.onload = null;
+        image.src = "";
+      }
+      for (const texture of textures) texture.dispose();
       for (const geometry of geometries) geometry.dispose();
       for (const material of materials) material.dispose();
     },
@@ -625,165 +420,62 @@ function createSculpture(THREE: ThreeModule): SculptureBuild {
 }
 
 function applyAssembly(build: SculptureBuild, elapsed: number) {
-  const coreProgress = easeOut(elapsed / 0.96);
-  build.core.scale.setScalar(0.84 + coreProgress * 0.16);
-  build.core.position.y = -(1 - coreProgress) * 0.34;
-  build.coreEdgeMaterial.opacity = 0.18 + coreProgress * 0.34;
-
-  const baseProgress = easeOut(elapsed / 0.7);
-  build.base.visible = elapsed > 0.02;
-  build.base.scale.setScalar(0.9 + baseProgress * 0.1);
-  build.base.position.y = -(1 - baseProgress) * 0.28;
-
-  const capProgress = easeOut((elapsed - 0.42) / 0.7);
-  build.cap.visible = elapsed > 0.42;
-  build.cap.position.y = (1 - capProgress) * 0.58;
-  build.cap.scale.setScalar(0.88 + capProgress * 0.12);
-
-  build.layers.forEach((layer, index) => {
-    const local = clamp((elapsed - 0.08 - index * 0.075) / 0.76);
-    const progress = easeOut(local);
-    layer.group.visible = local > 0;
-    layer.group.position.y = layer.home.y - (1 - progress) * 0.62;
-    layer.group.position.x = layer.home.x + (1 - progress) * 0.12;
-    layer.group.scale.setScalar(0.88 + progress * 0.12);
-    layer.group.rotation.z = layer.tilt + (1 - progress) * 0.035;
+  const coreProgress = easeOut(elapsed / 0.9);
+  build.core.scale.setScalar(0.86 + coreProgress * 0.14);
+  build.core.position.y = -(1 - coreProgress) * 0.35;
+  build.rings.forEach((ring, index) => {
+    const progress = easeOut((elapsed - index * 0.08) / 0.8);
+    ring.scale.setScalar(0.9 + progress * 0.1);
+    ring.rotation.y = (1 - progress) * 0.16;
   });
-
-  build.ribbons.forEach((ribbon, index) => {
-    const local = clamp((elapsed - 0.2 - index * 0.045) / 0.88);
+  build.cards.forEach((card, index) => {
+    const local = clamp((elapsed - 0.06 - index * 0.012) / 0.72);
     const progress = easeOut(local);
-    const drawnSegments = Math.min(ribbon.segments, Math.floor(progress * ribbon.segments));
-    const drawCount = drawnSegments * 24 + (progress === 1 ? 12 : 0);
-    ribbon.body.geometry.setDrawRange(0, Math.min(ribbon.indexCount, drawCount));
-    ribbon.edge.geometry.setDrawRange(0, Math.min(ribbon.pointCount, Math.ceil(progress * ribbon.pointCount)));
-    ribbon.highlight.geometry.setDrawRange(0, Math.min(ribbon.pointCount, Math.ceil(progress * ribbon.pointCount)));
-    ribbon.filament.geometry.setDrawRange(0, Math.min(59, Math.ceil(progress * 59)));
-    ribbon.node.visible = local > 0;
-    ribbon.node.scale.setScalar(0.82 + easeOut(local * 4) * 0.18);
-    ribbon.clamp.visible = progress > 0.82;
-    ribbon.clamp.scale.setScalar(0.8 + easeOut((progress - 0.82) / 0.18) * 0.2);
+    card.group.visible = local > 0;
+    card.group.position.y = card.homeY - (1 - progress) * 0.52;
+    card.group.scale.setScalar(0.84 + progress * 0.16);
   });
 }
 
-function platePoints(x: number, y: number, width: number, depth: number) {
-  return `${x},${y - depth / 2} ${x + width},${y} ${x},${y + depth / 2} ${x - width},${y}`;
-}
-
-function SculptureFallback() {
+function SculptureFallback({ products }: { products: readonly SculptureProduct[] }) {
   const id = useId().replace(/:/g, "");
-  const flowPaths = [
-    "M 258 654 C 246 548 292 474 324 386 S 314 232 360 154",
-    "M 322 658 C 310 552 340 472 352 390 S 342 232 382 148",
-    "M 398 662 C 410 548 396 468 402 388 S 408 230 402 146",
-    "M 472 650 C 492 548 448 470 448 390 S 462 234 426 154",
-    "M 536 630 C 552 532 492 458 474 384 S 474 238 438 164",
-    "M 244 574 C 236 480 280 420 326 350 S 330 238 366 174",
-  ];
-
+  const fallbackProducts = FALLBACK_PRODUCT_IDS
+    .map((id) => products.find((product) => product.id === id))
+    .filter((product): product is SculptureProduct => Boolean(product));
   return (
-    <svg
-      className="ecosystem-sculpture__fallback"
-      viewBox="0 0 800 800"
-      preserveAspectRatio="xMidYMid meet"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <defs>
-        <radialGradient id={`${id}-halo`}>
-          <stop offset="0" stopColor="#173743" stopOpacity="0.68" />
-          <stop offset="0.62" stopColor="#09151e" stopOpacity="0.16" />
-          <stop offset="1" stopColor="#09151e" stopOpacity="0" />
-        </radialGradient>
-        <linearGradient id={`${id}-metal`} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor={STEEL} />
-          <stop offset="0.42" stopColor="#314852" />
-          <stop offset="1" stopColor="#788a93" />
-        </linearGradient>
-        <linearGradient id={`${id}-top`} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#29434e" />
-          <stop offset="0.5" stopColor="#10232e" />
-          <stop offset="1" stopColor="#07141d" />
-        </linearGradient>
-        <linearGradient id={`${id}-core`} x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#0b1b25" />
-          <stop offset="0.48" stopColor="#2d5961" />
-          <stop offset="0.52" stopColor="#0d202a" />
-          <stop offset="1" stopColor="#07131c" />
-        </linearGradient>
-        <linearGradient id={`${id}-spine`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor={WARM_WHITE} />
-          <stop offset="0.45" stopColor={CYAN} />
-          <stop offset="1" stopColor={DEEP_BLUE} />
-        </linearGradient>
-      </defs>
-
-      <ellipse cx="400" cy="402" rx="330" ry="344" fill={`url(#${id}-halo)`} />
-      <g fill="none" stroke={STEEL} strokeOpacity="0.24" strokeWidth="1">
-        <path d="M174 196h-28v28M626 196h28v28M174 644h-28v-28M626 644h28v-28" />
-        <path d="M174 236h-12M174 276h-7M626 236h12M626 276h7" />
-      </g>
-
-      <g fill="none" strokeLinecap="round">
-        {flowPaths.map((path, index) => (
-          <g key={`flow-${index}`}>
-            <path d={path} stroke={`url(#${id}-metal)`} strokeWidth="8" strokeOpacity="0.92" />
-            <path d={path} stroke={index % 2 === 0 ? CYAN : DEEP_BLUE} strokeWidth="2" strokeOpacity="0.88" />
-            <path d={path} stroke={WARM_WHITE} strokeWidth="0.7" strokeOpacity="0.32" transform="translate(-2 -1)" />
-          </g>
-        ))}
-      </g>
-
-      <g>
-        <polygon points="386,174 418,190 426,224 418,626 386,644 354,626 346,224 354,190" fill={`url(#${id}-core)`} stroke={STEEL} strokeOpacity="0.72" strokeWidth="1.4" />
-        <polygon points="386,188 418,204 418,610 386,626 354,610 354,204" fill="none" stroke={CYAN} strokeOpacity="0.42" strokeWidth="1" />
-        <path d="M386 202v404" stroke={`url(#${id}-spine)`} strokeWidth="5" strokeLinecap="round" />
-        <path d="M365 216v382M407 216v382" stroke={STEEL} strokeOpacity="0.62" strokeWidth="2" />
-        {[242, 326, 410, 494, 578].map((y) => <path key={`cross-${y}`} d={`M354 ${y}l32 12 32-12`} fill="none" stroke={CYAN} strokeOpacity="0.48" strokeWidth="1.5" />)}
-      </g>
-
-      <g transform="translate(0 8)">
-        {FALLBACK_LAYERS.map((layer, index) => {
-          const top = platePoints(layer.x, layer.y, layer.width, layer.depth);
-          const left = `${layer.x - layer.width},${layer.y} ${layer.x},${layer.y + layer.depth / 2} ${layer.x},${layer.y + layer.depth / 2 + 20} ${layer.x - layer.width},${layer.y + 20}`;
-          const right = `${layer.x + layer.width},${layer.y} ${layer.x},${layer.y + layer.depth / 2} ${layer.x},${layer.y + layer.depth / 2 + 20} ${layer.x + layer.width},${layer.y + 20}`;
-          return (
-            <g key={`layer-${index}`} transform={`rotate(${layer.tilt} ${layer.x} ${layer.y})`}>
-              <polygon points={left} fill="#0a1821" stroke={STEEL} strokeOpacity="0.46" strokeWidth="1" />
-              <polygon points={right} fill="#132934" stroke={STEEL} strokeOpacity="0.58" strokeWidth="1" />
-              <polygon points={top} fill={`url(#${id}-top)`} stroke={`url(#${id}-metal)`} strokeWidth="2" />
-              <polygon points={platePoints(layer.x, layer.y - 2, layer.width - 22, layer.depth - 18)} fill="none" stroke={CYAN} strokeOpacity="0.28" strokeWidth="1" />
-              <path d={`M${layer.x - layer.width * 0.58} ${layer.y - layer.depth * 0.16}h${layer.width * 0.7}v${layer.depth * 0.34}`} fill="none" stroke={CYAN} strokeOpacity="0.42" strokeWidth="1" />
-              <path d={`M${layer.x - layer.width * 0.18} ${layer.y + layer.depth * 0.22}h${layer.width * 0.34}`} fill="none" stroke={CYAN} strokeOpacity="0.32" strokeWidth="1" />
-              {[-0.27, 0, 0.27].map((offset, nodeIndex) => (
-                <rect key={`status-${nodeIndex}`} x={layer.x + layer.width * offset - 4} y={layer.y + layer.depth / 2 + 6} width="8" height="4" rx="1" fill={nodeIndex === 1 ? DEEP_BLUE : CYAN} />
-              ))}
-            </g>
-          );
-        })}
-      </g>
-
-      <g>
-        <polygon points="264,672 400,608 536,672 536,692 400,756 264,692" fill="#0a1821" stroke={STEEL} strokeOpacity="0.58" strokeWidth="1.5" />
-        <polygon points="264,672 400,608 536,672 400,736" fill={`url(#${id}-top)`} stroke={`url(#${id}-metal)`} strokeWidth="2" />
-        <polygon points="324,140 400,104 476,140 476,158 400,194 324,158" fill="#132934" stroke={`url(#${id}-metal)`} strokeWidth="1.5" />
-        <polygon points="324,140 400,104 476,140 400,176" fill={`url(#${id}-top)`} stroke={CYAN} strokeOpacity="0.55" strokeWidth="1" />
-        <polygon points="400,88 414,104 400,120 386,104" fill={CYAN} />
-      </g>
-
-      <g fill={STEEL} fontFamily="var(--font-mono)" fontSize="10" letterSpacing="1.6" opacity="0.66">
-        <text x="176" y="176">DT—01</text>
-        <text x="176" y="192">SYSTEMS ENGINE</text>
-        <text x="624" y="674" textAnchor="end">EXPLODED ARCHITECTURE</text>
-      </g>
-    </svg>
+    <div className="ecosystem-sculpture__fallback" aria-hidden="true">
+      <svg className="ecosystem-sculpture__fallback-orbit" viewBox="0 0 800 800" focusable="false">
+        <defs>
+          <radialGradient id={`${id}-halo`}>
+            <stop offset="0" stopColor="#1c5260" stopOpacity="0.7" />
+            <stop offset="0.62" stopColor="#0b1b27" stopOpacity="0.16" />
+            <stop offset="1" stopColor="#09141e" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        <ellipse cx="400" cy="400" rx="350" ry="350" fill={`url(#${id}-halo)`} />
+        <ellipse cx="400" cy="400" rx="300" ry="300" fill="none" stroke={CYAN} strokeOpacity="0.28" />
+        <ellipse cx="400" cy="400" rx="238" ry="238" fill="none" stroke={BLUE} strokeOpacity="0.3" />
+        <ellipse cx="400" cy="400" rx="168" ry="168" fill="none" stroke={CYAN} strokeOpacity="0.22" />
+        <path d="M120 210h-28v28M680 210h28v28M120 590h-28v-28M680 590h28v-28" fill="none" stroke={STEEL} strokeOpacity="0.45" />
+      </svg>
+      <div className="ecosystem-sculpture__fallback-core"><span>DT</span><small>Product orbit</small></div>
+      {fallbackProducts.map((product, index) => (
+        <div className={`ecosystem-sculpture__fallback-card ecosystem-sculpture__fallback-card--${index + 1}`} key={product.id}>
+          <ProductMark product={product} size={82} />
+          <span>{product.name}</span>
+          <small>{product.category}</small>
+        </div>
+      ))}
+    </div>
   );
 }
 
-export default function EcosystemSculpture({ className }: EcosystemSculptureProps = {}) {
+export default function EcosystemSculpture({ products, className }: EcosystemSculptureProps) {
   const rootRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const [state, setState] = useState<SculptureState>("fallback");
+  const [activeProductIndex, setActiveProductIndex] = useState(0);
+  const activeProduct = products[activeProductIndex] ?? products[0];
 
   useEffect(() => {
     const root = rootRef.current;
@@ -793,8 +485,6 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
     let renderer: WebGLRenderer | null = null;
     let canvas: HTMLCanvasElement | null = null;
     let build: SculptureBuild | null = null;
-    let threeModule: ThreeModule | null = null;
-    let RoomEnvironment: typeof import("three/addons/environments/RoomEnvironment.js").RoomEnvironment | null = null;
     let environmentTarget: WebGLCubeRenderTarget | null = null;
     let resizeObserver: ResizeObserver | null = null;
     let intersectionObserver: IntersectionObserver | null = null;
@@ -821,6 +511,9 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
     let targetY = 0;
     let scene: Scene | null = null;
     let camera: PerspectiveCamera | null = null;
+    let activeIndex = 0;
+    let runtimeThree: ThreeModule | null = null;
+    let runtimeRoomEnvironment: RoomEnvironmentConstructor | null = null;
 
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     const pointerQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
@@ -835,25 +528,25 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
       lastDrawTime = 0;
     };
 
-    const ensureEnvironment = () => {
-      if (!renderer || !scene || !threeModule || !RoomEnvironment || environmentTarget) return;
+    const ensureEnvironment = (THREE: ThreeModule, RoomEnvironment: RoomEnvironmentConstructor) => {
+      if (!renderer || !scene || environmentTarget) return;
       const room = new RoomEnvironment();
-      const generator = new threeModule.PMREMGenerator(renderer);
+      const generator = new THREE.PMREMGenerator(renderer);
       try {
         environmentTarget = generator.fromScene(room, 0.04, 0.1, 100, { size: 128 });
         scene.environment = environmentTarget.texture;
-        scene.environmentIntensity = 0.85;
+        scene.environmentIntensity = 0.9;
       } finally {
         room.dispose();
         generator.dispose();
       }
     };
 
-    const renderFrame = (now: number) => {
+    const renderFrame = (now: number, THREE: ThreeModule, RoomEnvironment: RoomEnvironmentConstructor) => {
       frameId = 0;
       if (!canRender() || !renderer || !build || !scene || !camera) return;
       if (now - lastDrawTime < 1000 / 30) {
-        frameId = requestAnimationFrame(renderFrame);
+        frameId = requestAnimationFrame((time) => renderFrame(time, THREE, RoomEnvironment));
         return;
       }
       lastDrawTime = now;
@@ -862,7 +555,7 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
       let continuing = false;
 
       try {
-        ensureEnvironment();
+        ensureEnvironment(THREE, RoomEnvironment);
         if (!reducedMotion && !assembled) {
           if (assemblyStartedAt === null) assemblyStartedAt = now;
           elapsed = Math.min(ASSEMBLY_SECONDS, (now - assemblyStartedAt) / 1000);
@@ -871,7 +564,7 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
           if (!continuing) assembled = true;
         }
 
-        if (assembled && !reducedMotion && finePointer) {
+        if (assembled && !reducedMotion) {
           turntableAngle = (turntableAngle + delta * TURN_SPEED) % (Math.PI * 2);
           continuing = true;
           const springX = stepSpring(pointerX, velocityX, targetX, delta);
@@ -880,17 +573,13 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
           pointerY = springY.position;
           velocityX = springX.velocity;
           velocityY = springY.velocity;
-          const settled = Math.abs(targetX - pointerX) < 0.0002
-            && Math.abs(targetY - pointerY) < 0.0002
-            && Math.abs(velocityX) < 0.0004
-            && Math.abs(velocityY) < 0.0004;
-          if (settled) {
-            pointerX = targetX;
-            pointerY = targetY;
-            velocityX = 0;
-            velocityY = 0;
-          } else {
-            continuing = true;
+          const primaryCount = products.filter((_, index) => index % 3 === 0).length;
+          const step = Math.PI * 2 / primaryCount;
+          const slot = ((Math.round(-turntableAngle / step) % primaryCount) + primaryCount) % primaryCount;
+          const nextActiveIndex = slot * 3;
+          if (nextActiveIndex !== activeIndex) {
+            activeIndex = nextActiveIndex;
+            setActiveProductIndex(nextActiveIndex);
           }
         }
 
@@ -907,17 +596,17 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
         return;
       }
 
-      if (continuing) frameId = requestAnimationFrame(renderFrame);
+      if (continuing) frameId = requestAnimationFrame((time) => renderFrame(time, THREE, RoomEnvironment));
     };
 
-    const requestFrame = () => {
-      if (frameId || !canRender()) return;
+    const requestFrame = (THREE?: ThreeModule, RoomEnvironment?: RoomEnvironmentConstructor) => {
+      if (frameId || !canRender() || !THREE || !RoomEnvironment) return;
       previousTime = performance.now();
       lastDrawTime = 0;
-      frameId = requestAnimationFrame(renderFrame);
+      frameId = requestAnimationFrame((time) => renderFrame(time, THREE, RoomEnvironment));
     };
 
-    const resize = () => {
+    const resize = (THREE?: ThreeModule, RoomEnvironment?: RoomEnvironmentConstructor) => {
       if (disposed || !renderer || !canvas || !camera) return;
       const bounds = root.getBoundingClientRect();
       const canvasBounds = canvas.getBoundingClientRect();
@@ -939,36 +628,35 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
 
       const width = Math.max(1, Math.round(bounds.width));
       const height = Math.max(1, Math.round(bounds.height));
-      // The pixel budget, not device DPR, is the hard ceiling.
       const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5, Math.sqrt(1_500_000 / (width * height)));
       renderer.setPixelRatio(pixelRatio);
       renderer.setSize(width, height, false);
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
-      requestFrame();
+      requestFrame(THREE, RoomEnvironment);
     };
 
-    const onPointerMove = (event: PointerEvent) => {
+    const onPointerMove = (event: PointerEvent, THREE?: ThreeModule, RoomEnvironment?: RoomEnvironmentConstructor) => {
       if (!finePointer || reducedMotion || !assembled) return;
       const bounds = root.getBoundingClientRect();
-      targetY = ((event.clientX - bounds.left) / bounds.width - 0.5) * 0.14;
-      targetX = ((event.clientY - bounds.top) / bounds.height - 0.5) * 0.09;
-      requestFrame();
+      targetY = ((event.clientX - bounds.left) / bounds.width - 0.5) * 0.16;
+      targetX = ((event.clientY - bounds.top) / bounds.height - 0.5) * 0.1;
+      requestFrame(THREE, RoomEnvironment);
     };
 
-    const onPointerLeave = () => {
+    const onPointerLeave = (THREE?: ThreeModule, RoomEnvironment?: RoomEnvironmentConstructor) => {
       targetX = 0;
       targetY = 0;
-      requestFrame();
+      requestFrame(THREE, RoomEnvironment);
     };
 
-    const onVisibilityChange = () => {
+    const onVisibilityChange = (THREE?: ThreeModule, RoomEnvironment?: RoomEnvironmentConstructor) => {
       pageVisible = document.visibilityState !== "hidden";
-      if (pageVisible) requestFrame();
+      if (pageVisible) requestFrame(THREE, RoomEnvironment);
       else stopFrame();
     };
 
-    const onMotionChange = (event: MediaQueryListEvent) => {
+    const onMotionChange = (event: MediaQueryListEvent, THREE?: ThreeModule, RoomEnvironment?: RoomEnvironmentConstructor) => {
       reducedMotion = event.matches;
       if (reducedMotion && build) {
         assembled = true;
@@ -980,8 +668,9 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
         velocityX = 0;
         velocityY = 0;
         applyAssembly(build, ASSEMBLY_SECONDS);
+        setActiveProductIndex(0);
       }
-      requestFrame();
+      requestFrame(THREE, RoomEnvironment);
     };
 
     const onPointerCapabilityChange = (event: MediaQueryListEvent) => {
@@ -996,7 +685,7 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
         stopFrame();
         setState("fallback");
       } else {
-        requestFrame();
+        requestFrame(runtimeThree ?? undefined, runtimeRoomEnvironment ?? undefined);
       }
     };
 
@@ -1007,19 +696,26 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
       setState("fallback");
     };
 
+    const handlePointerMove = (event: PointerEvent) => onPointerMove(event, runtimeThree ?? undefined, runtimeRoomEnvironment ?? undefined);
+    const handlePointerLeave = () => onPointerLeave(runtimeThree ?? undefined, runtimeRoomEnvironment ?? undefined);
+    const handleVisibilityChange = () => onVisibilityChange(runtimeThree ?? undefined, runtimeRoomEnvironment ?? undefined);
+    const handleMotionChange = (event: MediaQueryListEvent) => onMotionChange(event, runtimeThree ?? undefined, runtimeRoomEnvironment ?? undefined);
+
     const dispose = () => {
       if (disposed) return;
       disposed = true;
       stopFrame();
       resizeObserver?.disconnect();
       intersectionObserver?.disconnect();
-      motionQuery.removeEventListener("change", onMotionChange);
+      motionQuery.removeEventListener("change", handleMotionChange);
       pointerQuery.removeEventListener("change", onPointerCapabilityChange);
-      document.removeEventListener("visibilitychange", onVisibilityChange);
-      root.removeEventListener("pointermove", onPointerMove);
-      root.removeEventListener("pointerleave", onPointerLeave);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      root.removeEventListener("pointermove", handlePointerMove);
+      root.removeEventListener("pointerleave", handlePointerLeave);
       canvas?.removeEventListener("webglcontextlost", onContextLost);
       canvas?.remove();
+      runtimeThree = null;
+      runtimeRoomEnvironment = null;
       build?.dispose();
       if (scene) scene.environment = null;
       environmentTarget?.dispose();
@@ -1036,7 +732,9 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
         import("three/addons/environments/RoomEnvironment.js"),
       ]);
       if (disposed) return;
-
+      const RoomEnvironment = roomEnvironmentModule.RoomEnvironment;
+      runtimeThree = THREE;
+      runtimeRoomEnvironment = RoomEnvironment;
       finePointer = pointerQuery.matches;
       reducedMotion = motionQuery.matches;
       assembled = reducedMotion;
@@ -1052,11 +750,9 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
         SRGBColorSpace,
         WebGLRenderer,
       } = THREE;
-      threeModule = THREE;
-      RoomEnvironment = roomEnvironmentModule.RoomEnvironment;
       scene = new Scene();
-      camera = new PerspectiveCamera(36, 1, 0.1, 50);
-      camera.position.set(0, 0.12, 9.2);
+      camera = new PerspectiveCamera(38, 1, 0.1, 50);
+      camera.position.set(0, 0.08, 10.2);
       camera.lookAt(0, 0, 0);
 
       try {
@@ -1074,48 +770,45 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
         renderer.setClearColor(0x000000, 0);
         renderer.outputColorSpace = SRGBColorSpace;
         renderer.toneMapping = ACESFilmicToneMapping;
-        renderer.toneMappingExposure = 1.08;
+        renderer.toneMappingExposure = 1.12;
         stage.appendChild(canvas);
 
-        build = createSculpture(THREE);
+        build = createSculpture(THREE, products);
         scene.add(build.group);
-        scene.add(new HemisphereLight(WARM_WHITE, "#06101b", 1.4));
+        scene.add(new HemisphereLight(WARM_WHITE, "#06101b", 1.55));
         const keyLight = new DirectionalLight(WARM_WHITE, 2.8);
         keyLight.position.set(3, 5, 6);
-        const rimLight = new DirectionalLight(CYAN, 2.4);
+        const rimLight = new DirectionalLight(CYAN, 2.2);
         rimLight.position.set(-4, 1, -3);
-        const fillLight = new DirectionalLight(STEEL, 0.8);
-        fillLight.position.set(-3, -2, 4);
-        const topLight = new DirectionalLight(WARM_WHITE, 1.1);
-        topLight.position.set(-1, 4, -5);
-        const blueLight = new PointLight(DEEP_BLUE, 5, 9, 2);
-        blueLight.position.set(1, -2, 3);
-        scene.add(keyLight, rimLight, fillLight, topLight, blueLight);
+        const fillLight = new DirectionalLight(BLUE, 1.2);
+        fillLight.position.set(4, -1, 2);
+        const warmLight = new PointLight(CORAL, 4, 10, 2);
+        warmLight.position.set(-2, -2, 4);
+        scene.add(keyLight, rimLight, fillLight, warmLight);
 
-        if (reducedMotion) applyAssembly(build, ASSEMBLY_SECONDS);
-        else applyAssembly(build, 0);
+        applyAssembly(build, reducedMotion ? ASSEMBLY_SECONDS : 0);
         build.group.rotation.set(BASE_ROTATION.x, BASE_ROTATION.y, BASE_ROTATION.z);
 
-        root.addEventListener("pointermove", onPointerMove);
-        root.addEventListener("pointerleave", onPointerLeave);
-        document.addEventListener("visibilitychange", onVisibilityChange);
-        motionQuery.addEventListener("change", onMotionChange);
+        root.addEventListener("pointermove", handlePointerMove);
+        root.addEventListener("pointerleave", handlePointerLeave);
+        document.addEventListener("visibilitychange", handleVisibilityChange);
+        motionQuery.addEventListener("change", handleMotionChange);
         pointerQuery.addEventListener("change", onPointerCapabilityChange);
 
-        resizeObserver = new ResizeObserver(resize);
+        resizeObserver = new ResizeObserver(() => resize(THREE, RoomEnvironment));
         resizeObserver.observe(root);
         resizeObserver.observe(canvas);
         if (typeof IntersectionObserver !== "undefined") {
           intersectionObserver = new IntersectionObserver((entries) => {
             intersecting = entries.some((entry) => entry.isIntersecting);
-            if (intersecting) requestFrame();
+            if (intersecting) requestFrame(THREE, RoomEnvironment);
             else stopFrame();
           });
           intersectionObserver.observe(root);
         } else {
           intersecting = true;
         }
-        resize();
+        resize(THREE, RoomEnvironment);
       } catch {
         failed = true;
         dispose();
@@ -1131,18 +824,24 @@ export default function EcosystemSculpture({ className }: EcosystemSculptureProp
     });
 
     return dispose;
-  }, []);
+  }, [products]);
 
   return (
     <div
       ref={rootRef}
       className={["ecosystem-sculpture", className].filter(Boolean).join(" ")}
-      data-sculpture="systems-engine"
+      data-sculpture="product-orbit"
       data-state={state}
+      data-product-count={products.length}
       aria-hidden="true"
     >
-      <SculptureFallback />
+      <SculptureFallback products={products} />
       <div ref={stageRef} className="ecosystem-sculpture__stage" aria-hidden="true" />
+      <div className="ecosystem-sculpture__readout" aria-hidden="true">
+        <span>{String(activeProductIndex + 1).padStart(2, "0")} / {String(products.length).padStart(2, "0")}</span>
+        <strong>{activeProduct?.name}</strong>
+        <small>{activeProduct?.category}</small>
+      </div>
     </div>
   );
 }

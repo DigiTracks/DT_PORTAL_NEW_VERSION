@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useState } from "react";
-import type { ProductRecord } from "@digitracks/catalog";
+import type { PublicProductRecord } from "@digitracks/catalog";
 import Icon, { type IconName } from "./Icon";
 import ProductMark from "./ProductMark";
 import ProductSignal from "./ProductSignal";
@@ -11,8 +11,13 @@ interface AtlasGroup {
   productIds: readonly string[];
 }
 
+type AtlasProduct = Pick<PublicProductRecord,
+  "id" | "name" | "summary" | "category" | "capabilities" | "platforms" |
+  "deployment" | "status" | "route" | "logo" | "installCommand"
+>;
+
 interface ProductAtlasProps {
-  products: readonly ProductRecord[];
+  products: readonly AtlasProduct[];
 }
 
 const groups: readonly AtlasGroup[] = [
@@ -20,19 +25,28 @@ const groups: readonly AtlasGroup[] = [
     id: "enterprise",
     label: "Enterprise",
     note: "Connected operations, modular by design",
-    productIds: ["unify"]
+    productIds: [
+      "unify", "nexora", "arventa", "monexa", "planora", "logistra",
+      "procura", "orbitra", "workzen", "connexa"
+    ]
   },
   {
     id: "procurement",
     label: "Procurement",
     note: "Source, control, verify and realise value",
-    productIds: ["vertex", "procure5", "vantor", "sherpa", "quote-simulator"]
+    productIds: [
+      "vertex", "procure5", "procureleak", "tenderguard", "contractleak",
+      "procuredecision", "procureoutcomes", "vantor", "sherpa", "quote-simulator"
+    ]
   },
   {
     id: "education",
     label: "Education",
     note: "Campus life, academics and placement",
-    productIds: ["vedik", "campus-grid", "mindone", "mindone-pro"]
+    productIds: [
+      "vedik", "vedik-school-erp", "unnati", "vedik-university", "vedik-social",
+      "campus-grid", "mindone", "mindone-pro"
+    ]
   },
   {
     id: "people",
@@ -68,13 +82,13 @@ const groupIcons: Record<string, IconName> = {
   field: "map"
 };
 
-function groupProducts(group: AtlasGroup, products: readonly ProductRecord[]) {
+function groupProducts(group: AtlasGroup, products: readonly AtlasProduct[]) {
   return group.productIds
     .map((id) => products.find((product) => product.id === id))
-    .filter((product): product is ProductRecord => Boolean(product));
+    .filter((product): product is AtlasProduct => Boolean(product));
 }
 
-function readAtlasState(params: URLSearchParams, products: readonly ProductRecord[]): AtlasState {
+function readAtlasState(params: URLSearchParams, products: readonly AtlasProduct[]): AtlasState {
   const requestedGroupId = params.get("atlas");
   const requestedProductId = params.get("atlas-product");
   const productGroup = requestedProductId

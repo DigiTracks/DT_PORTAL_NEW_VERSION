@@ -7,7 +7,7 @@ import { captureAnalytics, createTestDatabase, jsonBody, seedLead, testContext, 
 
 const baseTime = Date.parse("2026-11-25T12:00:00.500Z");
 const operatorToken = "operator-token-000000000000000000000000";
-const destination = "https://demo.example.test/vedik?access=server-configured";
+const destination = "https://demo.example.test/unify?access=server-configured";
 
 function request(path: string, method: string, body?: unknown, authorized = true): Request {
   const headers = new Headers();
@@ -25,7 +25,7 @@ async function call(path: string, method: string, env: Env, body?: unknown, now 
 }
 
 async function issue(env: Env, overrides: Record<string, unknown> = {}, now = baseTime) {
-  const response = await call("/api/demo/issue", "POST", env, { productId: "vedik", ...overrides }, now);
+  const response = await call("/api/demo/issue", "POST", env, { productId: "unify", ...overrides }, now);
   expect(response.status).toBe(201);
   return await jsonBody(response) as { grantId: string; expiresAt: string; redeemPath: string; status: string };
 }
@@ -39,7 +39,7 @@ describe("operator demo grant issuance", () => {
   it("requires operator authorization and POST", async () => {
     const database = createTestDatabase();
     const env = testEnv(database.db);
-    const unauthorized = await call("/api/demo/issue", "POST", env, { productId: "vedik" }, baseTime, false);
+    const unauthorized = await call("/api/demo/issue", "POST", env, { productId: "unify" }, baseTime, false);
     expect(unauthorized.status).toBe(401);
     expect(unauthorized.headers.get("WWW-Authenticate")).toBe("Bearer");
     const wrongMethod = await call("/api/demo/issue", "GET", env);
@@ -60,7 +60,7 @@ describe("operator demo grant issuance", () => {
     const token = new URL(`https://api.example.test${grant.redeemPath}`).searchParams.get("token")!.split(".")[0];
     const row = database.sqlite.prepare("SELECT * FROM demo_grants WHERE id = ?").get(grant.grantId) as Record<string, unknown>;
     expect(row.token_hash).toBe(createHash("sha256").update(token).digest("hex"));
-    expect(row.product_id).toBe("vedik");
+    expect(row.product_id).toBe("unify");
     expect(row.expires_at).toBe(grant.expiresAt);
     expect(row.single_use).toBe(1);
     expect(JSON.stringify(row)).not.toContain(token);
@@ -73,12 +73,15 @@ describe("operator demo grant issuance", () => {
   it("rejects client-supplied destinations, unknown products and unconfigured products", async () => {
     const database = createTestDatabase();
     const env = testEnv(database.db);
-    const destinationOverride = await call("/api/demo/issue", "POST", env, { productId: "vedik", destination: "https://evil.example" });
+    const destinationOverride = await call("/api/demo/issue", "POST", env, { productId: "unify", destination: "https://evil.example" });
     expect(destinationOverride.status).toBe(400);
     expect((await jsonBody(destinationOverride)).error.code).toBe("invalid_request");
     const unknown = await call("/api/demo/issue", "POST", env, { productId: "unknown-product" });
     expect(unknown.status).toBe(400);
     expect((await jsonBody(unknown)).error.code).toBe("invalid_product");
+    const requestOnly = await call("/api/demo/issue", "POST", env, { productId: "mindone" });
+    expect(requestOnly.status).toBe(400);
+    expect((await jsonBody(requestOnly)).error.code).toBe("invalid_product");
     const unconfigured = await call("/api/demo/issue", "POST", env, { productId: "chronos" });
     expect(unconfigured.status).toBe(400);
     expect((await jsonBody(unconfigured)).error.code).toBe("demo_destination_unconfigured");
@@ -87,7 +90,7 @@ describe("operator demo grant issuance", () => {
 
   it.each([0, 1.5, 721, "24"])("rejects invalid expiry %s", async (expiresInHours) => {
     const database = createTestDatabase();
-    const response = await call("/api/demo/issue", "POST", testEnv(database.db), { productId: "vedik", expiresInHours });
+    const response = await call("/api/demo/issue", "POST", testEnv(database.db), { productId: "unify", expiresInHours });
     expect(response.status).toBe(400);
     expect((await jsonBody(response)).error.code).toBe("invalid_expiry");
   });
@@ -97,11 +100,11 @@ describe("operator demo grant issuance", () => {
     const stored = await seedLead(database);
     if ("conflict" in stored) throw new Error("seed conflict");
     const env = testEnv(database.db);
-    const badLead = await call("/api/demo/issue", "POST", env, { productId: "vedik", leadId: "lead_00000000000000000000000000000000" });
+    const badLead = await call("/api/demo/issue", "POST", env, { productId: "unify", leadId: "lead_00000000000000000000000000000000" });
     expect(badLead.status).toBe(400);
     await issue(env, { leadId: stored.leadId });
     expect(database.sqlite.prepare("SELECT lead_id FROM demo_grants").get()).toEqual({ lead_id: stored.leadId });
-    const incoherent = await call("/api/demo/issue", "POST", { ...env, DEMO_GRANT_PREVIOUS_SECRET: "short" }, { productId: "vedik" });
+    const incoherent = await call("/api/demo/issue", "POST", { ...env, DEMO_GRANT_PREVIOUS_SECRET: "short" }, { productId: "unify" });
     expect(incoherent.status).toBe(503);
     expect((await jsonBody(incoherent)).error.code).toBe("operator_access_unconfigured");
   });
@@ -193,7 +196,7 @@ describe("demo grant redemption, revocation and expiry", () => {
     const hash = await generated.hashPromise;
     database.sqlite.prepare(`
       INSERT INTO demo_grants (id, token_hash, product_id, expires_at, single_use, created_at, updated_at)
-      VALUES (?, ?, 'vedik', ?, 1, ?, ?)
+      VALUES (?, ?, 'unify', ?, 1, ?, ?)
     `).run(
       "grant_00000000000000000000000000000000",
       hash,

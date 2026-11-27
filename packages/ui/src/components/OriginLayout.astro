@@ -25,7 +25,8 @@ const breadcrumbs = route.breadcrumbs.map((item) => ({ name: item.label, item: r
 const structuredData = route.indexable && breadcrumbs.length
   ? JSON.stringify([breadcrumbSchema(breadcrumbs)]).replace(/</g, "\\u003c")
   : undefined;
-const resolvedRequestHref = requestHref ?? `https://digitracks.net/contact/?intent=demo&origin=${route.origin}`;
+const resolvedRequestHref = requestHref ?? `https://digitracks.net/contact/?intent=consultation&origin=${route.origin}`;
+const resolvedRequestLabel = requestLabel ?? "Ask about access";
 const originStyles: Record<string, string> = {
   learn: learnStyles,
   sourcecraft: sourcecraftStyles,
@@ -48,7 +49,7 @@ const pageStyles = [commonStyles, originStyles[route.origin]].filter(Boolean).jo
   pageStyles={pageStyles}
   navItems={navItems}
   requestHref={resolvedRequestHref}
-  requestLabel={requestLabel}
+  requestLabel={resolvedRequestLabel}
   brandSuffix={brandSuffix}
   originId={route.origin}
   bodyClass={bodyClass}

@@ -42930,7 +42930,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Campus Grid | Digi Tracks",
-    "description": "Placement Drives, Eligibility Rules and Offer Tracking for Campuses",
+    "description": "Placement drives, eligibility rules and offer tracking for campuses",
     "template": "product-detail",
     "contentKey": "campus-grid",
     "breadcrumbs": [
@@ -43214,8 +43214,8 @@ export const routeRegistry = [
     "path": "/products/mindone-pro/",
     "routeClass": "public-seo",
     "indexable": true,
-    "title": "MIND ONE Pro | Digi Tracks",
-    "description": "Review the planned complete MIND ONE edition and register qualified interest while entitlements, price and release timing remain unconfirmed.",
+    "title": "MIND ONE Complete | Full interview-practice experience | Digi Tracks",
+    "description": "Review MIND ONE Complete's implemented history, progress and role-development scope, then request pre-launch access while commercial terms and provider limits remain unconfirmed.",
     "template": "product-detail",
     "contentKey": "mindone-pro",
     "breadcrumbs": [
@@ -43232,7 +43232,7 @@ export const routeRegistry = [
         "path": "/products/mindone/"
       },
       {
-        "label": "MIND ONE Pro",
+        "label": "MIND ONE Complete",
         "path": "/products/mindone-pro/"
       }
     ],
@@ -43258,8 +43258,8 @@ export const routeRegistry = [
     "path": "/products/mindone/",
     "routeClass": "public-seo",
     "indexable": true,
-    "title": "MIND ONE | Résumé-grounded interview practice | Digi Tracks",
-    "description": "A pre-launch interview-practice product focused on résumé-grounded questions, answer-specific coaching and a structured debrief. Request current access and scope.",
+    "title": "MIND ONE Basic | Free focused interview practice | Digi Tracks",
+    "description": "MIND ONE Basic is the free, focused entry edition for résumé-grounded questions, spoken or typed answers, coaching and debriefs. Request pre-launch access and current scope.",
     "template": "product-detail",
     "contentKey": "mindone",
     "breadcrumbs": [
@@ -43272,7 +43272,7 @@ export const routeRegistry = [
         "path": "/products/"
       },
       {
-        "label": "MIND ONE",
+        "label": "MIND ONE Basic",
         "path": "/products/mindone/"
       }
     ],
@@ -43323,8 +43323,8 @@ export const routeRegistry = [
     "path": "/products/mindone/compare/",
     "routeClass": "public-seo",
     "indexable": true,
-    "title": "Compare MIND ONE and MIND ONE Pro | Digi Tracks",
-    "description": "Compare the published MIND ONE edition positioning and see which entitlements, prices, integrations and release details still require confirmation.",
+    "title": "Compare MIND ONE Basic and Complete | Digi Tracks",
+    "description": "Compare MIND ONE Basic's free focused workflow with Complete's implemented history, progress and role-development scope, with pricing, quotas and release status kept explicit.",
     "template": "edition-comparison",
     "contentKey": "mindone-editions",
     "breadcrumbs": [
@@ -43341,7 +43341,7 @@ export const routeRegistry = [
         "path": "/products/mindone/"
       },
       {
-        "label": "Compare editions",
+        "label": "Compare Basic and Complete",
         "path": "/products/mindone/compare/"
       }
     ],
@@ -43457,7 +43457,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "OpsPilot | Digi Tracks",
-    "description": "Open-Source Project Command Center: Desktop App & CLI",
+    "description": "Local project operations, process control and diagnostics",
     "template": "product-detail",
     "contentKey": "opspilot",
     "breadcrumbs": [
@@ -43547,7 +43547,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Orion Hunter | Digi Tracks",
-    "description": "In-House Security Reasoning Platform: Evidence-First, Airgap-Ready",
+    "description": "Evidence-first security reasoning and attack-path analysis",
     "template": "product-detail",
     "contentKey": "orion-hunter",
     "breadcrumbs": [
@@ -43587,7 +43587,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Orion | Digi Tracks",
-    "description": "In-House Code Intelligence & Bug Finder: 77 Engines, Zero Cloud",
+    "description": "Local-first code intelligence and static security analysis",
     "template": "product-detail",
     "contentKey": "orion",
     "breadcrumbs": [
@@ -44127,7 +44127,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Recon | Digi Tracks",
-    "description": "Local-First Agentic SDLC: 25 Agent Brains, Zero Code Egress",
+    "description": "Local-first agentic SDLC with evidence, approvals and rollback",
     "template": "product-detail",
     "contentKey": "recon",
     "breadcrumbs": [
@@ -45073,7 +45073,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Vedik | Digi Tracks",
-    "description": "Education operations for schools, colleges and universities",
+    "description": "One education ecosystem across school, college, university, community and placement",
     "template": "product-detail",
     "contentKey": "vedik",
     "breadcrumbs": [
@@ -45137,8 +45137,8 @@ export const routeRegistry = [
     "path": "/products/vedik/school-erp/",
     "routeClass": "public-seo",
     "indexable": true,
-    "title": "Vedik School Management ERP | Digi Tracks",
-    "description": "Comprehensive School ERP, Academics, Fee Collection & Administration",
+    "title": "Vedik School | Digi Tracks",
+    "description": "School operations, academics, fees and administration",
     "template": "product-detail",
     "contentKey": "vedik-school-erp",
     "breadcrumbs": [
@@ -45155,7 +45155,7 @@ export const routeRegistry = [
         "path": "/products/vedik/"
       },
       {
-        "label": "Vedik School Management ERP",
+        "label": "Vedik School",
         "path": "/products/vedik/school-erp/"
       }
     ],
@@ -45207,7 +45207,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Vedik Social Community | Digi Tracks",
-    "description": "Real-Time Campus Social Network, Clubs, Consent & Child-Safe Community",
+    "description": "Education-focused campus community, clubs, events and consent workflows",
     "template": "product-detail",
     "contentKey": "vedik-social",
     "breadcrumbs": [
@@ -45275,8 +45275,8 @@ export const routeRegistry = [
     "path": "/products/vedik/university/",
     "routeClass": "public-seo",
     "indexable": true,
-    "title": "Vedik University Management | Digi Tracks",
-    "description": "Higher-Education Platform: Admissions, Academics, Exams & Compliance",
+    "title": "Vedik University | Digi Tracks",
+    "description": "Higher-education administration across the institutional lifecycle",
     "template": "product-detail",
     "contentKey": "vedik-university",
     "breadcrumbs": [
@@ -45293,7 +45293,7 @@ export const routeRegistry = [
         "path": "/products/vedik/"
       },
       {
-        "label": "Vedik University Management",
+        "label": "Vedik University",
         "path": "/products/vedik/university/"
       }
     ],
@@ -45344,8 +45344,8 @@ export const routeRegistry = [
     "path": "/products/vedik/unnati/",
     "routeClass": "public-seo",
     "indexable": true,
-    "title": "Unnati | Digi Tracks",
-    "description": "College Management ERP, Admissions, Exams & Academic Intelligence",
+    "title": "Unnati College | Digi Tracks",
+    "description": "College admissions, academics, examinations and administration",
     "template": "product-detail",
     "contentKey": "unnati",
     "breadcrumbs": [
@@ -45362,7 +45362,7 @@ export const routeRegistry = [
         "path": "/products/vedik/"
       },
       {
-        "label": "Unnati",
+        "label": "Unnati College",
         "path": "/products/vedik/unnati/"
       }
     ],

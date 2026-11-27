@@ -1,7 +1,8 @@
-import type { ProductRecord } from "@digitracks/catalog";
+import type { CSSProperties } from "react";
+import type { PublicProductRecord } from "@digitracks/catalog";
 
 interface ProductMarkProps {
-  product: Pick<ProductRecord, "id" | "name" | "category" | "logo">;
+  product: Pick<PublicProductRecord, "id" | "name" | "category" | "logo">;
   size?: number;
   className?: string;
 }
@@ -21,17 +22,21 @@ function toneFor(category: string) {
 export default function ProductMark({ product, size = 42, className }: ProductMarkProps) {
   if (product.logo) {
     return (
-      <img
+      <span
         className={["product-mark", "product-mark--official", className].filter(Boolean).join(" ")}
-        src={product.logo}
-        alt=""
+        style={{ "--mark-size": `${size}px` } as CSSProperties}
         aria-hidden="true"
-        width={size}
-        height={size}
-        loading="lazy"
-        decoding="async"
-        draggable={false}
-      />
+      >
+        <img
+          src={product.logo}
+          alt=""
+          width={size}
+          height={size}
+          loading="lazy"
+          decoding="async"
+          draggable={false}
+        />
+      </span>
     );
   }
 

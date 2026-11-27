@@ -39,6 +39,29 @@ export interface ProductRecord {
   industryIds?: readonly string[];
 }
 
+export interface PublicProductRecord {
+  id: string;
+  name: string;
+  summary: string;
+  description: string;
+  audience: string;
+  category: string;
+  licenseModel: LicenseModel;
+  buyingModel: BuyingModel;
+  availability: Availability;
+  capabilities: readonly string[];
+  platforms: readonly string[];
+  deployment: string;
+  status: string;
+  route: string;
+  logo?: string;
+  installCommand?: string;
+  licenceNote?: string;
+  parentId?: string;
+  edition?: string;
+  evidenceNote?: string;
+}
+
 export interface SolutionRecord {
   id: string;
   name: string;
@@ -66,6 +89,39 @@ const pipelineOnlyIds = new Set(["costpilot", "vendoriq", "talentmap", "complyfl
 export const productRegistry = catalogData.products as readonly ProductRecord[];
 export const solutionRegistry = catalogData.solutions as readonly SolutionRecord[];
 export const hubRegistry = catalogData.hubs as readonly HubRecord[];
+
+export function toPublicProduct(product: ProductRecord): PublicProductRecord {
+  return {
+    id: product.id,
+    name: product.name,
+    summary: product.summary,
+    description: product.description,
+    audience: product.audience,
+    category: product.category,
+    licenseModel: product.licenseModel,
+    buyingModel: product.buyingModel,
+    availability: product.availability,
+    capabilities: product.capabilities,
+    platforms: product.platforms,
+    deployment: product.deployment,
+    status: product.status,
+    route: product.route,
+    logo: product.logo,
+    installCommand: product.installCommand,
+    licenceNote: product.licenceNote,
+    parentId: product.parentId,
+    edition: product.edition,
+    evidenceNote: product.evidenceNote
+  };
+}
+
+export function toPublicProducts(products: readonly ProductRecord[]): readonly PublicProductRecord[] {
+  return products.map(toPublicProduct);
+}
+
+export function isDemoProduct(product: Pick<ProductRecord, "availability" | "requestable">): boolean {
+  return product.requestable && product.availability === "available";
+}
 
 export function validateProductRegistry(products: readonly ProductRecord[]): string[] {
   const errors: string[] = [];

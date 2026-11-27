@@ -81,7 +81,7 @@
   padding: 0.9rem 1rem;
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -119,7 +119,7 @@
 .ecosystem-map li small {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -170,7 +170,7 @@
   border-top: 1px solid var(--p-border);
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -222,7 +222,7 @@
 .ecosystem-instrument-card__top > span {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -259,7 +259,7 @@
   margin-bottom: 0.3rem;
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -274,7 +274,7 @@
   width: 100%;
   margin-top: auto;
   padding-inline: 0.9rem;
-  font-size: 0.76rem;
+  font-size: 0.8rem;
 }
 
 .ecosystem-compare {
@@ -304,7 +304,7 @@
   border-bottom: 1px solid var(--p-border);
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-align: left;
   text-transform: uppercase;
@@ -327,7 +327,7 @@
   background: var(--night-raised);
   color: var(--paper-bright);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -368,7 +368,7 @@
   margin-top: 0.8rem;
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.8rem;
 }
 
 .ecosystem-conflicts {
@@ -423,7 +423,7 @@
 .conflict-register li > strong {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.06em;
 }
@@ -452,7 +452,7 @@
 .conflict-register small {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -510,7 +510,7 @@
 .integrity-register a > i {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   font-style: normal;
 }
 
@@ -549,7 +549,7 @@
 .ecosystem-learning__mark span {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.18em;
 }
 
@@ -740,7 +740,7 @@
   .ecosystem-map__head,
 .ecosystem-map figcaption {
     padding-inline: 0.75rem;
-    font-size: 0.58rem;
+    font-size: 0.8rem;
   }
 
   .ecosystem-hero__foot {
@@ -824,7 +824,7 @@
 .journey-model small {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -871,7 +871,7 @@
   background: var(--night-raised);
   color: var(--signal);
   font-family: var(--font-mono);
-  font-size: 0.58rem;
+  font-size: 0.8rem;
 }
 
 .journey-model strong {
@@ -898,7 +898,7 @@
   padding: 0.6rem;
   border: 1px solid var(--p-border-strong);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 
@@ -925,7 +925,7 @@
 .module-model__note small {
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 
@@ -949,7 +949,7 @@
   gap: 1rem;
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 
@@ -1032,4 +1032,28 @@
     padding-inline: 0.3rem;
     font-size: 0.82rem;
   }
+}
+
+.ecosystem-map__head,
+.ecosystem-map figcaption,
+.ecosystem-map li > span,
+.ecosystem-map li small,
+.ecosystem-hero__foot,
+.ecosystem-instrument-card__top > span,
+.ecosystem-instrument-card dt,
+.ecosystem-table caption,
+.ecosystem-table th:first-child,
+.ecosystem-table-hint,
+.conflict-register li > span,
+.conflict-register li > strong,
+.conflict-register small,
+.integrity-register a > span,
+.integrity-register a > i,
+.ecosystem-learning__mark span,
+.journey-model small,
+.journey-model li > span,
+.module-model span,
+.module-model__note small,
+.procurement-model li {
+  font-size: 0.8rem;
 }

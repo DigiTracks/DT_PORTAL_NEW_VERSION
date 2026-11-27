@@ -1,4 +1,5 @@
 import { expect, test, type Page } from "@playwright/test";
+import { productRegistry } from "../../packages/catalog/src/products";
 
 const viewports = [
   { width: 1440, height: 900 },
@@ -30,7 +31,7 @@ async function expectReadableLayout(page: Page, width: number) {
   expect(metrics.brokenImages, `${width}px broken images`).toEqual([]);
 }
 
-test("MIND ONE editions stay request-only and the comparison publishes no invented Pro entitlements", async ({ page }) => {
+test("MIND ONE editions stay request-only and the comparison publishes verified Complete scope", async ({ page }) => {
   for (const viewport of viewports) {
     await page.setViewportSize(viewport);
     const errors = watchHealth(page);
@@ -45,15 +46,15 @@ test("MIND ONE editions stay request-only and the comparison publishes no invent
   }
 
   await page.goto("http://127.0.0.1:4321/products/mindone-pro/");
-  await expect(page.locator("h1")).toContainText("MIND ONE Pro");
-  await expect(page.locator("body")).toContainText("No approved Pro-only feature list is published");
+  await expect(page.locator("h1")).toContainText("MIND ONE Complete");
+  await expect(page.locator("body")).toContainText("Full feature access does not mean unmetered hosted AI");
   await expect(page.locator(".site-header__actions [data-cta='request-demo']")).toHaveAttribute("href", /product=mindone-pro(?:&|$)/);
   await expectReadableLayout(page, 390);
 
   await page.goto("http://127.0.0.1:4321/products/mindone/compare/");
-  await expect(page.getByRole("table", { name: /Published MIND ONE and MIND ONE Pro positions/ })).toBeVisible();
+  await expect(page.getByRole("table", { name: /Published MIND ONE Basic and MIND ONE Complete positions/ })).toBeVisible();
   await expect(page.locator(".edition-table-wrap")).toHaveAttribute("tabindex", "0");
-  await expect(page.locator(".edition-table tbody tr")).toHaveCount(10);
+  await expect(page.locator(".edition-table tbody tr")).toHaveCount(13);
   await expect(page.locator("body")).toContainText("No ATS, MCP or other integration has been verified");
   await expectReadableLayout(page, 390);
 });
@@ -85,6 +86,10 @@ test("industry paths render distinct workflows, verified products and consultati
       await expect(page.locator(".industry-sequence > li")).toHaveCount(3);
       expect(await page.locator(".industry-product-card").count()).toBeGreaterThan(0);
       await expect(page.locator(".industry-questions li")).toHaveCount(3);
+      if (industry === "education") {
+        await expect(page.locator(".industry-questions")).toContainText("MIND ONE Basic or MIND ONE Complete");
+        await expect(page.locator(".industry-questions")).not.toContainText(/Pro edition/i);
+      }
       await expect(page.locator(".industry-close a")).toHaveAttribute("href", /intent=consultation(?:&|$)/);
       await expectReadableLayout(page, viewport.width);
       expect(errors, `${industry} ${viewport.width}`).toEqual([]);
@@ -134,14 +139,17 @@ test("homepage follows the flagship-first portfolio hierarchy at every breakpoin
     await page.goto("http://127.0.0.1:4321/");
     await expect(page.locator("h1")).toContainText("Complex work.");
     await expect(page.locator(".hero-home__eyebrow")).toContainText("Product-led technology");
-    await expect(page.locator(".home-flagship__edition-grid article")).toHaveCount(2);
-    await expect(page.locator(".home-flagship__edition-grid h3").nth(0)).toHaveText("MIND ONE");
-    await expect(page.locator(".home-flagship__edition-grid h3").nth(1)).toHaveText("MIND ONE Pro");
+    await expect(page.locator(".mindone-family__editions > a")).toHaveCount(2);
+    await expect(page.locator(".mindone-family__editions h3").nth(0)).toHaveText("MIND ONE Basic");
+    await expect(page.locator(".mindone-family__editions h3").nth(1)).toHaveText("MIND ONE Complete");
     await expect(page.locator("[data-cta='request-mindone-access']")).toHaveAttribute("href", /intent=product-enquiry(?:&|$)/);
-    await expect(page.locator(".home-flagship__note")).toContainText("does not grant product access");
+    await expect(page.locator(".home-flagship__note")).toContainText("does not mean unmetered hosted AI");
     await expect(page.locator(".duo-product")).toHaveCount(2);
-    await expect(page.locator(".duo-product h3").nth(0)).toHaveText("Run the institution.");
+    await expect(page.locator(".duo-product h3").nth(0)).toHaveText("Run the education ecosystem.");
     await expect(page.locator(".duo-product h3").nth(1)).toHaveText("Review the candidate.");
+    await expect(page.locator(".duo-product").first().locator("[data-cta='request-product-interest']"))
+      .toHaveAttribute("href", "/contact/?intent=product-enquiry&product=vedik");
+    await expect(page.locator(".duo-product").first().locator("[data-cta='request-product-demo']")).toHaveCount(0);
     await expect(page.locator(".home-procurement__grid > li")).toHaveCount(4);
     await expect(page.locator(".home-procurement__grid")).toContainText("Vertex");
     await expect(page.locator(".home-procurement__grid")).toContainText("Vantor");
@@ -160,6 +168,26 @@ test("homepage follows the flagship-first portfolio hierarchy at every breakpoin
     await expectReadableLayout(page, viewport.width);
     expect(errors, `Homepage ${viewport.width}`).toEqual([]);
   }
+});
+
+test("homepage product atlas exposes every catalogue product exactly once", async ({ page }) => {
+  test.setTimeout(60_000);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("http://127.0.0.1:4321/");
+  const atlas = page.locator(".product-atlas");
+  const categories = atlas.locator(".product-atlas__category");
+  await atlas.scrollIntoViewIfNeeded();
+  await expect(categories.first()).toBeEnabled();
+
+  const names: string[] = [];
+  for (const category of ["Enterprise", "Procurement", "Education", "People & care", "Engineering", "Field operations"]) {
+    await categories.filter({ hasText: category }).click();
+    names.push(...await atlas.locator(".product-atlas__product strong").allTextContents());
+  }
+
+  expect(new Set(names).size).toBe(names.length);
+  expect([...names].sort()).toEqual(productRegistry.map((product) => product.name).sort());
 });
 
 test("desktop mega menus support keyboard dismissal and mobile navigation stays within the viewport", async ({ page }) => {
@@ -215,7 +243,7 @@ test("desktop mega menus support keyboard dismissal and mobile navigation stays 
 
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("http://127.0.0.1:4321/");
-  expect(await page.locator(".site-footer__grid").evaluate((element) => getComputedStyle(element).gridTemplateColumns.split(" ").length)).toBe(6);
+  expect(await page.locator(".site-footer__grid").evaluate((element) => getComputedStyle(element).gridTemplateColumns.split(" ").length)).toBe(4);
   await page.setViewportSize({ width: 768, height: 1024 });
   expect(await page.locator(".site-footer__grid").evaluate((element) => getComputedStyle(element).gridTemplateColumns.split(" ").length)).toBe(2);
   await page.setViewportSize({ width: 390, height: 844 });
@@ -229,7 +257,7 @@ test("flagship catalogue includes MIND ONE and keeps request-only CTAs out of th
   await search.scrollIntoViewIfNeeded();
   await expect(search).toBeEnabled();
   await expect(page.getByLabel("Show")).toHaveValue("flagships");
-  await expect(page.locator("#inspector-title")).toHaveText("MIND ONE");
+  await expect(page.locator("#inspector-title")).toHaveText("MIND ONE Basic");
   await expect(page.locator(".catalogue-record").filter({ hasText: "MIND ONE" }).first()).toBeVisible();
   const request = page.locator("[data-cta='request-product-interest']");
   await expect(request).toContainText("Register product interest");
@@ -238,9 +266,9 @@ test("flagship catalogue includes MIND ONE and keeps request-only CTAs out of th
   await expect(page.locator(".catalogue-inspector__note")).toContainText("product access is issued separately");
 
   await page.getByLabel("Show").selectOption("family");
-  await expect(page.locator(".catalogue-record").filter({ hasText: "MIND ONE Pro" })).toBeVisible();
-  await page.locator(".catalogue-record").filter({ hasText: "MIND ONE Pro" }).click();
-  await expect(page.locator("#inspector-title")).toHaveText("MIND ONE Pro");
+  await expect(page.locator(".catalogue-record").filter({ hasText: "MIND ONE Complete" })).toBeVisible();
+  await page.locator(".catalogue-record").filter({ hasText: "MIND ONE Complete" }).click();
+  await expect(page.locator("#inspector-title")).toHaveText("MIND ONE Complete");
   await expect(request).toHaveAttribute("href", /product=mindone-pro(?:&|$)/);
   await expect(page).toHaveURL(/product=mindone-pro/);
 });

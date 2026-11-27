@@ -66,6 +66,10 @@ describe("lead validation", () => {
       .toContain("name");
     expect(validateLeadPayload(validLeadPayload({ intent: "demo", productId: null }), portal, config.allowedOrigins).fields)
       .toContain("productId");
+    expect(validateLeadPayload(validLeadPayload({ intent: "demo", productId: "mindone" }), portal, config.allowedOrigins).fields)
+      .toContain("productId");
+    expect(validateLeadPayload(validLeadPayload({ intent: "demo", productId: "unify" }), portal, config.allowedOrigins).ok)
+      .toBe(true);
   });
 
   it("validates idempotency key syntax and length", () => {

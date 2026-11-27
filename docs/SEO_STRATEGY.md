@@ -2,11 +2,13 @@
 
 **Status:** implementation baseline
 
-**Date:** 2026-11-26
+**Date:** 2026-11-27
 
 **Scope:** six public origins and all classified additional routes
 
 **Principle:** preserve proven URLs, make every indexable page independently useful, and emit metadata from one route registry
+
+**Evidence status:** current local SEO, route, social-image, manifest, browser and performance checks passed; production indexing and field performance remain unproven
 
 ## 1. Objectives
 
@@ -22,7 +24,7 @@
 
 | Origin | Preserved sitemap mappings | Currently indexable | Known issue to address |
 |---|---:|---:|---|
-| `digitracks.net` | 58 | 59 | Three approved addendum pages: MIND ONE Pro, edition comparison and Services |
+| `digitracks.net` | 58 | 59 | MIND ONE Complete, edition comparison and Services beyond the baseline |
 | `learn.digitracks.net` | 6 | 6 | Cross-origin handoffs and ProcureSherpa Learning identity |
 | `sourcecraft.digitracks.net` | 139 | 5 | Slash/no-slash duplicates and generic social metadata; preserve the working noindex favourites route |
 | `procuresherpa.digitracks.net` | 1 | 1 | Approximately 506 deterministic hash routes outside sitemap |
@@ -31,6 +33,8 @@
 | **Total** | **384** | **86** | Preserve mappings; gate indexing |
 
 All 384 advertised URLs were observed returning 200 with self-canonical HTML during the research baseline. That observation does not prove current or future indexing. The generated registry currently marks **86 pages indexable**.
+
+The current generated summary records 37 catalogue entries, 27 source products, 13 source flagships, 10 request-only routes, two pre-launch routes, 20 nested products, 2,330 route records and 1,246 governed content records. Content records are not indexable-page counts and are distinct from the 130 governed asset records.
 
 A route is indexable only when it is `public-seo` and `contentStatus: "approved"`. Rights-blocked HCM content and in-review SourceCraft content remain reachable but emit `noindex, follow`; they are omitted from sitemaps and omit canonical, `og:url` and social images while retaining basic social metadata. Additional routes are classified as `public-seo`, `public-utility`, `private`, `administrative` or `retired` and do not enter a sitemap automatically.
 
@@ -48,6 +52,8 @@ A route is indexable only when it is `public-seo` and `contentStatus: "approved"
 - No SPA fallback turns an unknown public URL into HTTP 200.
 
 Noindex utility/application routes do not enter sitemaps. Their canonical/og:url policy follows the shared head model: indexable pages emit canonical and social URL; noindex pages omit fields that would vote for indexing.
+
+Published HTML intentionally retains production canonicals and cross-origin links. When that HTML is opened on `localhost`, any `127.0.0.0/8` address, `::1` or an IPv4-mapped loopback IPv6 address, a browser-only bridge rewrites HTTP, HTTPS and protocol-relative links to the six known Digi Tracks origins to their configured loopback preview origins while preserving path, query and fragment. The bridge assigns those components onto the loopback URL so a double-slash pathname cannot replace its authority. This is a local navigation safeguard, not a canonical, sitemap or indexing change, and it never runs on a published host.
 
 ## 4. Single route registry
 
@@ -95,7 +101,7 @@ Utility/noindex pages still receive accurate titles and descriptions where usefu
 - Provide meaningful alt text describing the card's actual content.
 - No external image dependency is required at crawl time.
 
-The generated estate has **86 local 1200×630 social cards for its 86 indexable pages**. Cards are deterministic, use the official lockup, local fonts and verified labels, and are generated without external network requests. The social-card inventory records per-card hashes and generator/registry hashes.
+The generated estate has **86 local 1200×630 social cards for its 86 indexable pages**. Cards are deterministic, use owner-supplied lockups, local fonts, verified labels and origin-specific themes, and are generated without external network requests. Portal, Learn, SourceCraft, ProcureSherpa, LearnPMO and HCM Fusion have distinct card compositions. The social-card inventory records per-card hashes and generator/registry hashes; its 130 governed asset records comprise 86 cards, 42 source assets and two font records.
 
 ## 7. Structured data
 
@@ -106,7 +112,7 @@ Allowed types include:
 - `Organization` and `WebSite` after business identity is verified.
 - `SoftwareApplication` for verified software products.
 - `Course` for approved courses with real provider/context.
-- `DefinedTerm` for approved Source Craft terms.
+- `DefinedTerm` for approved SourceCraft terms.
 - `Article` for approved editorial content.
 - `BreadcrumbList` for real breadcrumb trails.
 - `FAQPage` only when visible, approved FAQ content exists.
@@ -126,8 +132,13 @@ Structured data is generated in shared Astro components from route and product r
 
 ### Addendum routes and naming
 
-- `/products/mindone/`, `/products/mindone-pro/` and `/products/mindone/compare/` use the visible names **MIND ONE**, **MIND ONE Pro** and **Compare MIND ONE editions** in titles, descriptions, breadcrumbs and social cards.
-- The comparison describes published positioning and unresolved entitlements; it does not create offers, prices, ratings or unsupported Pro capabilities.
+- `/products/mindone/`, `/products/mindone-pro/` and `/products/mindone/compare/` use the visible names **MIND ONE Basic**, **MIND ONE Complete** and **Compare MIND ONE editions** in titles, descriptions, breadcrumbs and social cards.
+- Internal IDs and URLs remain `mindone` and `mindone-pro`; public renaming does not change `/products/mindone-pro/`.
+- The comparison describes reviewed implementation and unresolved commercial entitlements; it does not create offers, prices, ratings, quotas, billing, provider terms or unsupported edition capabilities.
+- Both editions are described as request-only and pre-launch. No official edition mark is presented because none was supplied.
+- Unify has its own nine-app ERP metadata and hierarchy. UNIFY is not used as an edition name because that would collide with the separate ERP.
+- Vedik metadata covers the five-product education ecosystem without implying shared identity, SSO, deployment, schema or integration. Campus Grid does not replace Vertex.
+- Orion, Orion Hunter, Recon and OpsPilot retain distinct titles, descriptions and schema records as four prime developer/security products.
 - `/procurement-software/` uses a dedicated ecosystem title/description and breadcrumb while preserving its established URL.
 - `/services/` has its own metadata and breadcrumb; it is not folded into product or solution copy.
 - ProcureSherpa Learning retains its Learn-origin canonical and distinct learning metadata.
@@ -145,7 +156,7 @@ Structured data is generated in shared Astro components from route and product r
 - Valid XML, escaped URLs and stable ordering.
 - An implemented cross-host sitemap index at the portal's `/sitemap-index.xml` lists all six `/sitemap.xml` URLs; each host's robots declaration still names its own same-origin sitemap.
 
-Verification was performed before the first content commit, so the recorded sitemaps omit `lastmod` rather than inventing dates. A post-publication build must derive git-based `lastmod` from full history; a shallow checkout must fail rather than fabricate dates. Verified substantive content dates can be used independently when available.
+Current generated sitemaps omit `lastmod` because no defensible date map is supplied to `buildSitemapXml`. A post-publication build must derive git-based `lastmod` from full history; a shallow checkout must fail rather than fabricate dates. Verified substantive content dates can be used independently when available.
 
 ### Robots
 
@@ -167,7 +178,7 @@ Verification was performed before the first content commit, so the recorded site
 - Do not change ProcureSherpa hash routes without separate evidence and approval.
 - Preserve deep-link destinations before improving labels or grouping.
 
-## 10. Source Craft specifics
+## 10. SourceCraft specifics
 
 - Collapse slash/no-slash duplicates under one policy.
 - Preserve `/favourites/` as a working noindex utility route; do not add it to the sitemap.
@@ -176,7 +187,7 @@ Verification was performed before the first content commit, so the recorded site
 - Keep `in-review` editorial status visible in governance; do not describe all terms as approved or indexable.
 - Public library JSON and offline/PWA endpoints receive deliberate cache/index policy.
 
-Source Craft code licensing does not grant redistribution rights to its rights-reserved content.
+SourceCraft code licensing does not grant redistribution rights to its rights-reserved content.
 
 ## 11. HCM Fusion specifics
 
@@ -219,7 +230,7 @@ Do not use the build date as a substitute for a content update. Derived counts a
   - ProcureSherpa → `sherpa-toolkit`.
   - LearnPMO → `learnpmo`.
   - HCM Fusion → `hcmfusion`.
-  - Source Craft → `sourcecraft`.
+  - SourceCraft → `sourcecraft`.
 - Descriptive anchor text; no generic “click here”.
 - Footer links support utility access but do not replace contextual links.
 - Broken-link checks cover HTML, navigation, content collections, exports and generated sitemaps.
@@ -240,7 +251,7 @@ Do not use the build date as a substitute for a content update. Derived counts a
 - Astro static-first public pages.
 - Selective React islands for genuine interaction.
 - Core content and metadata present in initial HTML.
-- Shared base CSS plus inline route/origin partitions; only the small common stylesheet remains external.
+- Route/origin-specific CSS is emitted inline; Astro-generated shared layout/component CSS remains external.
 - No render-blocking third-party fonts or analytics.
 - Self-hosted OFL fonts with subsetting and licence files.
 - Target LCP ≤2.5s, INP ≤200ms and CLS ≤0.1 at p75 when field data exists.
@@ -251,7 +262,7 @@ Do not use the build date as a substitute for a content update. Derived counts a
 ## 17. Analytics and privacy
 
 - First-party minimal events only: registered CTA clicks, demo opens, form start/submission attempts, local exports and server-side lead/delivery/demo transitions.
-- Browser events use an allowlisted `/api/events` schema, exact origin, a 2,000-byte cap and fixed dimensions; no endpoint configuration means no browser requests.
+- Browser events use an allowlisted `/api/events` schema, exact origin, a 2,000-byte cap and fixed dimensions; absent or policy-incompatible endpoint configuration means no browser requests. Loopback pages accept loopback endpoints only, and published pages accept non-loopback HTTPS endpoints only.
 - No emails, messages, tokens, credentials, cookies, local-storage values, URLs, query strings, correlation IDs or free-text form contents in browser analytics/logs.
 - Route/product/event IDs instead of personal context. Server lead events alone use a hashed correlation ID.
 - Analytics failures never change navigation, exports, enquiry receipt or delivery behavior.
@@ -287,9 +298,9 @@ No local script may claim that a host is accepted, indexed or ranking without ev
 | Performance | Template budgets and Lighthouse target investigated/met |
 | Privacy | No PII/secrets in analytics or logs |
 
-Final local evidence covers 2,330 route records, 384 baseline mappings, 86 indexable pages, 893 redirects, 869 HTML files and 86 social cards. The rebuilt Lighthouse matrix scored 98–100 across the six origins, and the responsive crawl found no broken internal links, fragment failures or CSS failures across 86 routes and 344 states.
+The current generated summary covers 2,330 route records, 384 baseline mappings, 86 indexable pages and 1,246 governed content records. The social-card inventory covers 86 origin-aware cards and 130 governed asset records. Final local estate verification passed with 893 redirects and 869 HTML files. The responsive crawl passed all 86 routes across 344 viewport states with zero broken links, fragment failures, stylesheet failures or issue groups. The general browser suite passed 39/39 tests, including the current visual-system review, and all six origins met the unchanged Lighthouse performance threshold at 98–100. LCP ranged from 1,004.8ms to 2,026.7ms and CLS from 0 to 0.004510.
 
-Automated SEO checks do not prove search-engine acceptance, rankings or content quality. Those remain separate evidence questions.
+These are current local automated results, not proof of search-engine acceptance, indexing, rankings, content quality, deployed production behavior, field Core Web Vitals or measured INP. The local audit server intentionally serves uncompressed responses; gzip budget values are offline measurements rather than confirmed production compression. Search Console verification, sitemap submission, indexing decisions and field-performance validation remain owner actions.
 
 ## 20. Implementation ownership
 

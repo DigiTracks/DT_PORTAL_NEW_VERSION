@@ -1,6 +1,7 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import { isDemoProduct, productRegistry } from "../packages/catalog/src/products.ts";
 import { assetRegistry, validateAssetRegistry } from "../packages/brand/src/assets.ts";
 import { origins, routeRegistry, routeUrl, validateRouteRegistry } from "../packages/seo/src/index.ts";
 import { validateRedirects } from "../packages/seo/src/redirects.ts";
@@ -70,6 +71,12 @@ for (const error of validateRedirects(redirectRules)) fail(`Redirect manifest: $
 counts.redirects = redirectRules.length;
 
 const prohibited = ["github.com/chandrahotha", "garage", "garix", "unsplash.com", "picsum.com", "placeholder.com", "lorem ipsum"];
+const publicDemoProductIds = new Set(
+  productRegistry
+    .filter((product) => product.availability !== "internal" && product.availability !== "retired")
+    .filter(isDemoProduct)
+    .map((product) => product.id)
+);
 for (const origin of origins) {
   const dist = path.join(root, "apps", origin.id, "dist");
   const publicDirectory = path.join(root, "apps", origin.id, "public");
@@ -163,6 +170,24 @@ for (const origin of origins) {
       const asset = path.join(dist, decodeURIComponent(match[1].replace(/^\//, "")));
       if (!fs.existsSync(asset)) fail(`${origin.id}/${relative}: missing built asset ${match[1]}`);
     }
+    for (const match of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+      const href = attributes(match[1]).href?.replaceAll("&amp;", "&");
+      if (!href) continue;
+      const target = new URL(href, origin.origin);
+      const text = match[2].replace(/<[^>]+>/g, " ").replaceAll("&amp;", "&").replace(/\s+/g, " ").trim();
+      const isDemoIntent = target.searchParams.get("intent") === "demo";
+      const isContactDemoLabel = target.origin === "https://digitracks.net"
+        && target.pathname.replace(/\/$/, "") === "/contact"
+        && /\bdemo\b/i.test(text);
+      if (!isDemoIntent && !isContactDemoLabel) continue;
+      const productId = target.searchParams.get("product") ?? "";
+      if (!publicDemoProductIds.has(productId)) {
+        fail(`${origin.id}/${relative}: demo CTA lacks a valid catalogue product: ${text || href}`);
+      }
+    }
+    if (/\bMINDONE\b/u.test(html)) fail(`${origin.id}/${relative}: stale product naming "MINDONE"`);
+    if (html.includes("Résumé-général")) fail(`${origin.id}/${relative}: stale résumé label "Résumé-général"`);
+    if (/\bPro edition\b/iu.test(html)) fail(`${origin.id}/${relative}: stale edition label "Pro edition"`);
     const lower = html.toLowerCase();
     for (const term of prohibited) {
       if (lower.includes(term)) fail(`${origin.id}/${relative}: prohibited reference "${term}"`);

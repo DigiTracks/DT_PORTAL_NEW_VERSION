@@ -14,11 +14,13 @@
   padding-block: clamp(4rem, 7vw, 7.5rem) 1.5rem;
   border-bottom: 1px solid var(--p-border);
   background:
-    radial-gradient(circle at 82% 35%, rgb(38 107 117 / 22%), transparent 32%),
-    linear-gradient(rgb(252 251 248 / 3%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(252 251 248 / 3%) 1px, transparent 1px),
+    radial-gradient(circle at 84% 16%, rgb(239 120 93 / 24%), transparent 28%),
+    radial-gradient(circle at 70% 92%, rgb(245 207 101 / 16%), transparent 30%),
+    radial-gradient(circle at 82% 35%, rgb(108 229 232 / 20%), transparent 32%),
+    linear-gradient(rgb(252 251 248 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(252 251 248 / 4%) 1px, transparent 1px),
     var(--night);
-  background-size: auto, 4rem 4rem, 4rem 4rem, auto;
+  background-size: auto, auto, auto, 4rem 4rem, 4rem 4rem, auto;
   color: var(--paper-bright);
 }
 
@@ -62,7 +64,13 @@
   font-weight: 550;
   letter-spacing: -0.075em;
   line-height: 0.82;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.flagship-hero__copy h1 > .flagship-hero__title--complete {
+  max-width: 10ch;
+  font-size: clamp(4rem, 6.6vw, 7.4rem);
 }
 
 .flagship-hero__copy h1 em {
@@ -95,7 +103,7 @@
   max-width: 52ch;
   margin: 1rem 0 0;
   color: rgb(252 251 248 / 72%);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   line-height: 1.5;
 }
 
@@ -112,7 +120,7 @@
   margin-bottom: 0.35rem;
   color: var(--steel);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -120,7 +128,7 @@
 .flagship-hero__facts dd {
   margin: 0;
   color: rgb(252 251 248 / 86%);
-  font-size: 0.95rem;
+  font-size: 1.02rem;
 }
 
 .practice-instrument,
@@ -128,7 +136,7 @@
   min-width: 0;
   margin: 0;
   border: 1px solid rgb(252 251 248 / 22%);
-  background: rgb(16 28 41 / 82%);
+  background: rgb(36 83 155 / 82%);
   box-shadow: 0 2.5rem 6rem rgb(0 0 0 / 20%);
 }
 
@@ -141,7 +149,7 @@
   border-bottom: 1px solid var(--p-border);
   color: rgb(252 251 248 / 78%);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -157,7 +165,7 @@
   gap: 0.35rem 1.4rem;
   padding: 1.4rem;
   border-bottom: 1px solid var(--p-border);
-  background: rgb(108 229 232 / 4%);
+  background: rgb(245 207 101 / 7%);
 }
 
 .practice-instrument__source span,
@@ -165,24 +173,26 @@
   grid-column: 1 / -1;
   color: var(--signal);
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .practice-instrument__source strong,
 .practice-instrument__output strong {
-  font-size: 1rem;
+  font-size: 1.06rem;
   font-weight: 500;
 }
 
 .practice-instrument__source small,
 .practice-instrument__output small {
   grid-column: 1 / -1;
-  color: rgb(252 251 248 / 82%);
-  font-family: var(--font-text);
-  font-size: 0.82rem;
-  letter-spacing: 0.005em;
+  color: var(--paper-bright);
+  font-family: var(--font-editorial);
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
 }
 
 .practice-instrument__source i {
@@ -208,7 +218,7 @@
 .practice-instrument__sequence li > span {
   color: var(--signal);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 
 .practice-instrument__sequence strong,
@@ -217,16 +227,18 @@
 }
 
 .practice-instrument__sequence strong {
-  font-size: 1rem;
+  font-size: 1.06rem;
   font-weight: 500;
 }
 
 .practice-instrument__sequence small {
   margin-top: 0.18rem;
-  color: rgb(252 251 248 / 82%);
-  font-family: var(--font-text);
-  font-size: 0.82rem;
-  letter-spacing: 0.005em;
+  color: var(--paper-bright);
+  font-family: var(--font-editorial);
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
 }
 
 .practice-instrument__output {
@@ -241,7 +253,7 @@
   border-top: 1px solid var(--p-border);
   color: rgb(252 251 248 / 72%);
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -255,10 +267,11 @@
   margin-block: 0.5rem 1.5rem;
   color: var(--signal);
   font-family: var(--font-display);
-  font-size: clamp(6rem, 10vw, 10rem);
+  font-size: clamp(4rem, 7.4vw, 7.5rem);
   font-weight: 500;
-  letter-spacing: -0.08em;
-  line-height: 0.85;
+  letter-spacing: -0.075em;
+  line-height: 0.9;
+  overflow-wrap: anywhere;
 }
 
 .edition-instrument ol {
@@ -279,13 +292,13 @@
 .edition-instrument li span {
   color: var(--signal);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 
 .edition-instrument li p {
   margin: 0;
   color: rgb(252 251 248 / 86%);
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   line-height: 1.45;
 }
 
@@ -300,7 +313,7 @@
   border-top: 1px solid var(--p-border);
   color: var(--steel);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -345,7 +358,7 @@
 .sequence-register li > span {
   color: var(--signal-deep);
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.8rem;
 }
 
 .sequence-register h3 {
@@ -365,11 +378,11 @@
   display: block;
   margin-top: 1.2rem;
   color: var(--signal-deep);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  text-transform: uppercase;
+  font-family: var(--font-editorial);
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
 }
 
 .flagship-scope {
@@ -422,7 +435,7 @@
   margin-bottom: 0.3rem;
   color: var(--signal);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
 }
 
@@ -447,7 +460,7 @@
 .edition-card--entry {
   background: var(--paper);
   color: var(--ink);
-  --p-muted: color-mix(in srgb, var(--ink) 68%, transparent);
+  --p-muted: #53657a;
 }
 
 .edition-card--complete {
@@ -472,7 +485,7 @@
 .edition-card small {
   margin-top: 1.5rem;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -602,7 +615,7 @@
   border-bottom: 1px solid var(--p-border);
   color: var(--p-muted);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 0.07em;
   text-align: left;
   text-transform: uppercase;
@@ -674,7 +687,7 @@
 .edition-decisions__cards article > span {
   color: var(--signal-deep);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -840,4 +853,21 @@
   .edition-card h3 {
     font-size: clamp(3rem, 15vw, 4.8rem);
   }
+}
+
+.sequence-register li > span,
+.unknown-register dd span,
+.edition-card small,
+.edition-table caption,
+.edition-decisions__cards article > span,
+.edition-table-hint {
+  font-size: 0.8rem;
+}
+
+.sequence-register p,
+.unknown-register dd,
+.edition-hero__copy > p + p,
+.edition-table tbody th,
+.edition-table td {
+  font-size: 1rem;
 }

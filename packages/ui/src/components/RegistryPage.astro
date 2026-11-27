@@ -1,6 +1,6 @@
 ---
 import type { ProductRecord } from "@digitracks/catalog";
-import { hubRegistry, productRegistry, solutionRegistry } from "@digitracks/catalog";
+import { hubRegistry, isDemoProduct, productRegistry, solutionRegistry, toPublicProducts } from "@digitracks/catalog";
 import { breadcrumbSchema, routeUrl, type RouteRecord } from "@digitracks/seo";
 import Button from "./Button.astro";
 import EditionComparison from "./EditionComparison.astro";
@@ -14,6 +14,7 @@ import ProductCatalogue from "./ProductCatalogue.tsx";
 import ProductInstrument from "./ProductInstrument.astro";
 import ServicesPage from "./ServicesPage.astro";
 import SiteLayout from "./SiteLayout.astro";
+import VedikEcosystem from "./VedikEcosystem.astro";
 import "../styles/base.css";
 import commonStyles from "../styles/portal-common.css?inline";
 import catalogueStyles from "../styles/portal-catalogue.css?inline";
@@ -50,17 +51,22 @@ const schema = route.indexable
   : [];
 const structuredData = schema.length ? JSON.stringify(schema).replace(/</g, "\\u003c") : undefined;
 const products = productRegistry;
-const mindonePro = products.find((item) => item.id === "mindone-pro");
-const isRequestOnlyProduct = product?.availability === "request-only";
+const publicProducts = toPublicProducts(products);
+const demoEligibleProductIds = products.filter(isDemoProduct).map((item) => item.id);
+const leadProductOptions = publicProducts
+  .filter((item) => item.availability !== "internal" && item.availability !== "retired")
+  .map(({ id, name }) => ({ id, name, demoEligible: demoEligibleProductIds.includes(id) }));
+const mindoneComplete = products.find((item) => item.id === "mindone-pro");
+const productSupportsDemo = product ? isDemoProduct(product) : false;
 const isFlagship = product?.id === "mindone" || product?.id === "mindone-pro";
 const contactHref = product
-  ? `/contact/?intent=${isRequestOnlyProduct ? "product-enquiry" : "demo"}&product=${encodeURIComponent(product.id)}`
+  ? `/contact/?intent=${productSupportsDemo ? "demo" : "product-enquiry"}&product=${encodeURIComponent(product.id)}`
   : route.template === "edition-comparison"
     ? "/contact/?intent=product-enquiry&product=mindone"
     : route.template === "services" || route.template === "procurement-ecosystem"
       ? "/contact/?intent=consultation"
       : "/contact/?intent=consultation";
-const requestLabel = isRequestOnlyProduct
+const requestLabel = product && !productSupportsDemo
   ? "Register product interest"
   : route.template === "procurement-ecosystem"
     ? "Discuss procurement"
@@ -79,7 +85,8 @@ const solutions = solutionRegistry;
 const hubs = hubRegistry;
 const isHome = route.template === "home";
 const isContact = route.path === "/contact/";
-const isFlagshipPage = isFlagship && Boolean(mindonePro);
+const isFlagshipPage = isFlagship && Boolean(mindoneComplete);
+const isVedikEcosystem = product?.id === "vedik";
 const isEditionComparison = route.template === "edition-comparison";
 const isProcurementEcosystem = route.template === "procurement-ecosystem";
 const isServices = route.template === "services";
@@ -136,7 +143,7 @@ const pageStyles = [
   pageStyles={pageStyles}
   requestHref={contactHref}
   requestLabel={requestLabel}
-  bodyClass={`page-${route.template}${isFlagshipPage ? " page-flagship-product" : ""}`}
+  bodyClass={`page-${route.template}${isFlagshipPage ? " page-flagship-product" : ""}${isVedikEcosystem ? " page-vedik-ecosystem" : ""}`}
   mainClass="site-main"
 >
   {!isHome && <nav class="breadcrumbs shell" aria-label="Breadcrumb">
@@ -147,8 +154,10 @@ const pageStyles = [
 
   {isHome ? (
     <HomeExperience contactHref={contactHref} />
-  ) : isFlagshipPage && product && mindonePro ? (
+  ) : isFlagshipPage && product && mindoneComplete ? (
     <FlagshipProduct product={product} />
+  ) : isVedikEcosystem && product ? (
+    <VedikEcosystem product={product} />
   ) : isEditionComparison ? (
     <EditionComparison route={route} />
   ) : isProcurementEcosystem ? (
@@ -164,7 +173,7 @@ const pageStyles = [
             <h1 id="product-title" class={compactProductTitle ? "hero-product__title--compact" : undefined}>{product.name}</h1>
             <p class="hero-product__lede">{product.summary}</p>
             <div class="button-row">
-              <Button href={contactHref} ctaId="request-product-demo">Request full demo access</Button>
+              <Button href={contactHref} ctaId={productSupportsDemo ? "request-product-demo" : "request-product-interest"}>{productSupportsDemo ? "Request full demo access" : "Request product evaluation"}</Button>
               <Button href={licensingHref} variant="secondary" ctaId="request-quote">Discuss licensing</Button>
             </div>
             <dl class="hero-product__facts">
@@ -194,7 +203,7 @@ const pageStyles = [
       {relatedProducts.length > 0 && <section class="section section--ruled" aria-labelledby="related-title"><div class="shell"><div class="section-head"><div><p class="t-label">Related</p><h2 id="related-title">Compare nearby tools.</h2></div></div><ul class="index-list">{relatedProducts.map((item) => <li><a href={`${item.route}/`}><strong>{item.name}</strong><span>{item.summary}</span><small>View</small></a></li>)}</ul></div></section>}
     </>
   ) : isProductIndex ? (
-    <ProductCatalogue products={products} contactHref={contactHref} client:visible />
+    <ProductCatalogue products={publicProducts} demoEligibleProductIds={demoEligibleProductIds} contactHref={contactHref} client:visible />
   ) : isSolutionIndex ? (
     <>
       <PageHero id="page-title" title={route.template === "industry-index" ? "Software by industry" : "Solutions by the work you do"} eyebrow={route.template === "industry-index" ? "Industry paths" : "Operational solutions"} lede={route.description} />
@@ -210,7 +219,7 @@ const pageStyles = [
   ) : isContact ? (
     <>
       <PageHero id="page-title" title="Start a useful conversation" eyebrow="Product, demo, migration or support" lede="Tell us what you are trying to change. We will route the enquiry to the right product and confirm the next step." compact />
-      <section class="section" aria-labelledby="enquiry-title"><div class="shell contact-layout"><div class="prose"><p class="t-label">Before you enquire</p><h2 id="enquiry-title">A few details make the first reply better.</h2><p>Include the workflow, current tools, deployment constraints and who needs to be involved. Please do not send passwords, confidential records or personal data you do not need to share.</p><p>When delivery is configured, submitting this form records an enquiry only. Demo access is issued separately after qualification.</p></div><div class="panel panel__body"><LeadForm client:load /></div></div></section>
+      <section class="section" aria-labelledby="enquiry-title"><div class="shell contact-layout"><div class="prose"><p class="t-label">Before you enquire</p><h2 id="enquiry-title">A few details make the first reply better.</h2><p>Include the workflow, current tools, deployment constraints and who needs to be involved. Please do not send passwords, confidential records or personal data you do not need to share.</p><p>When delivery is configured, submitting this form records an enquiry only. Demo access is issued separately after qualification.</p></div><div class="panel panel__body"><LeadForm products={leadProductOptions} client:load /></div></div></section>
     </>
   ) : route.contentStatus && route.contentStatus !== "approved" ? (
     <>

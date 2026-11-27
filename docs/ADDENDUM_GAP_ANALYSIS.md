@@ -1,153 +1,87 @@
-# Strategic Addendum Delivery Report
+# Strategic Addendum — Closure and Gap Analysis
 
-**Assessment date:** 26 November 2026
+**Assessment date:** 27 November 2026
 
 **Project:** `/data/HomeWorks/digitracks-nextgen-portal`
 
-**Baseline:** independent six-origin replacement completed before the addendum
-
-**Delivery state:** addendum implementation and local verification complete; production release remains externally blocked
+**Delivery state:** current local automated verification complete; production, field-data and owner-controlled acceptance remain separately blocked
 
 ## Purpose
 
-This document closes the mandatory strategic addendum against the delivered implementation. It records what changed, where the evidence came from, what was deliberately not claimed, and which owner decisions still prevent production release.
+This document records the implemented portfolio hierarchy, the boundaries applied to product claims, and the owner decisions that still prevent production release. It does not authorize or report deployment, DNS changes, secrets, dependency changes, commits, pushes or changes to any reference repository.
 
-The addendum did not authorise changes to the old portal, production deployment, DNS, secrets, dependencies, reference repositories or proprietary source material.
+## Current baseline
 
-## Final status
+| Measure | Count |
+|---|---:|
+| Catalogue entries | 37 |
+| Source products | 27 |
+| Source flagships | 13 |
+| Request-only routes | 10 |
+| Pre-launch routes | 2 |
+| Nested products | 20 |
+| Route records | 2,330 |
+| Baseline sitemap mappings | 384 |
+| Indexable pages | 86 |
+| Governed content records | 1,246 |
+| Governed asset records | 130 |
 
-| Status | Requirement groups |
-|---|---|
-| Completed | Product-led positioning, MIND ONE flagship hierarchy, MIND ONE Pro boundary, verified edition comparison, Vedik/Nipuna elevation, Procurement ecosystem, ProcureSherpa Learning identity, preserved Construction/Transport routes, hierarchical navigation, terminology correction, homepage reorder, industry/service/procurement/flagship templates, product intelligence, addendum tests and final QA |
-| Completed with explicit evidence limits | ProcureSherpa enterprise/customisation claims, Vertex/Vantor differentiation, MCP/integration statements, product audiences and outcomes |
-| Externally blocked | Official MIND ONE/MIND ONE Pro marks, production/demo destinations, application parity, rights-reserved editorial migration, customer proof, production credentials/infrastructure, privacy/retention approval and cutover |
+The generated summary supplies the first ten values. The social-card inventory supplies the 130 asset records: 86 cards, 42 source assets and two font records. Content records and asset records are separate measures. Route records are not emitted HTML pages.
 
-No core addendum requirement remains unimplemented. Unknown product behavior is omitted or labelled rather than inferred.
-
-## Evidence baseline
-
-The final generated estate contains:
-
-- 2,330 route records across six origins.
-- 384 preserved baseline sitemap mappings.
-- 86 approved indexable pages.
-- 893 permanent redirect records.
-- 869 built HTML files.
-- 37 catalogue entries: 35 source-defined products plus two request-only MIND ONE edition routes.
-- 130 governed assets: 42 identity records, 86 social cards and two font records.
-
-Final verification includes a clean 86-route/344-state responsive crawl, 40 accessibility/browser-health checks, 25 estate Playwright regressions, 15 enquiry-form journeys, two analytics journeys, 19 unit tests, 104 API tests and a rebuilt six-origin Lighthouse matrix. See [QA_REPORT.md](../QA_REPORT.md) for measured values and limitations.
+Current local artifacts record 869 HTML files, 893 redirects, a clean 86-route/344-state responsive crawl, 40 accessibility/browser-health checks with zero axe violations, a 39/39 general browser suite and a six-origin Lighthouse performance range of 98–100. Final LCP values range from 1,004.8ms to 2,026.7ms and CLS from 0 to 0.004510; INP remains unmeasured. See [QA_REPORT.md](../QA_REPORT.md) for exact values and limitations.
 
 ## Requirement closure
 
-### Portfolio and flagship positioning
-
-| Requirement | Delivered result | Evidence boundary |
+| Requirement | Current implementation | Evidence boundary |
 |---|---|---|
-| Product-led enterprise technology positioning | Homepage, navigation, footer and product copy lead with owned products and operational systems; services are secondary | No customer, market-share or business-scale claim is made |
-| MIND ONE as primary flagship | Dedicated homepage flagship section, primary CTA, dedicated landing page, first Products navigation placement and product-specific enquiry path | Pre-launch/request-only wording remains explicit |
-| MIND ONE visual identity | Distinct practice-sequence instrument, editorial hero and neutral identifier | No official MIND ONE mark was supplied; none is presented as official |
-| MIND ONE industry associations | Education, recruitment and interview-practice context tied to verified workflow language | No enterprise adoption or customer association is implied |
-| MIND ONE and MIND ONE Pro differentiation | Separate routes and a comparison limited to published positioning, workflow, data posture and unresolved entitlements | No Pro-only features, price or launch date are invented |
-| MIND ONE-specific enquiry/demo journey | Product-bound CTA and qualified request form with honest receipt/access language | An enquiry never implies access was issued |
-| Vedik elevation | Education-platform positioning, verified School ERP demonstration boundary, audience, capabilities, visual character and CTA | Mock-data demonstration is not described as production parity |
-| Nipuna elevation | Local-first recruiting positioning, OCR/rule-based matching boundary, audience, workflow visual and CTA | No accuracy, generative-AI or ATS integration claim is made |
-| Existing offerings preserved | Construction and Transportation retain working product routes while moving behind flagship/core homepage storytelling | No established offering was removed |
+| Product-led positioning | Portal homepage, grouped Products navigation, product atlas and product-specific enquiries | No market-share, customer-scale or outcome claim is made |
+| MIND ONE flagship | One unified family block and dedicated Basic/Complete routes | Both editions are request-only and pre-launch |
+| Public edition naming | MIND ONE Basic and MIND ONE Complete | Internal IDs/routes remain `mindone` and `mindone-pro`; `/products/mindone-pro/` is unchanged |
+| Edition differentiation | Comparison separates reviewed implemented scope from unresolved entitlements | No invented price, quota, billing, provider, integration or launch term |
+| MIND ONE access | Product-bound `product-enquiry` journey | An enquiry is not access, a demo grant, billing or commercial entitlement |
+| MIND ONE identity | Neutral catalogue identifiers | No official Basic/Complete marks were supplied |
+| Portfolio preservation | Existing product IDs and URLs remain in the generated catalogue | `available` is not independent production-readiness evidence |
+| Vedik positioning | Five-product education ecosystem: Vedik School, Unnati College, Vedik University, Vedik Social Community and Campus Grid | No shared identity, SSO, deployment, schema or integration is implied |
+| Campus Grid boundary | Vedik portfolio sibling with its own route | It does not replace Vertex or imply an already-integrated Vedik module |
+| Unify boundary | Separate modular ERP with nine nested apps | UNIFY was rejected as the Complete-edition name because of the collision |
+| Developer/security portfolio | Orion, Orion Hunter, Recon and OpsPilot are four distinct prime products | Orion Hunter is not an Orion edition; no shared runtime or integration is implied |
+| Procurement ecosystem | Dedicated homepage/landing treatment for Vertex, Vantor, Procure5, Procure Sherpa and ProcureSherpa Learning | Relationships do not imply a shared backend, MCP or connector |
+| Homepage motion | Registry-driven three-tier orbit containing all 37 catalogue entries at regular tier intervals | Static featured product deck is the fallback; it does not contain all 37 |
+| Navigation and footer | Grouped desktop/mobile Products navigation and a four-column footer | Network links do not imply shared login, progress or cookies |
+| Local-first navigation and delivery | Loopback pages rewrite HTTP, HTTPS and protocol-relative links to known Digi Tracks previews and reject non-loopback delivery endpoints; the guard covers localhost, `127.0.0.0/8`, `::1` and mapped loopback IPv6, and double-slash paths cannot replace the local authority | Published canonicals and cross-origin links remain unchanged; production deployment is not authorized |
+| Origin design | Distinct palettes/compositions for all six origins, with origin-aware shell colors and lockup contrast | Design implementation is not accessibility or performance conformance |
+| Social and install identity | Origin-aware social cards and manifests | Generated assets do not establish indexing acceptance or install usage |
+| SourceCraft references | Governed BATNA, Incoterms and TCO cards linked to real routes | Publication/review status remains explicit; unreviewed definitions are not republished |
+| Services and solutions | Purpose-built service, procurement, flagship, edition, solution and industry compositions | Qualitative workflow relevance is not measured customer outcome |
 
-Implementation references: [HomeExperience.astro](../packages/ui/src/components/HomeExperience.astro#L115), [FlagshipProduct.astro](../packages/ui/src/components/FlagshipProduct.astro), [EditionComparison.astro](../packages/ui/src/components/EditionComparison.astro), [SiteLayout.astro](../packages/ui/src/components/SiteLayout.astro#L56).
+## Homepage and shell outcome
 
-### Procurement ecosystem
+The current homepage leads with the product portfolio and one unified MIND ONE family block rather than two disconnected edition hierarchies. Decorative section numbering has been removed where it interrupted the narrative. A registry-derived orbit provides the portfolio-wide motion layer, while text, navigation and product records remain usable without WebGL.
 
-| Requirement | Delivered result | Evidence boundary |
-|---|---|---|
-| Procurement as a major category | Dedicated homepage section, Products navigation group, Procurement footer group and ecosystem landing page | Relationships are described without implying unverified integration |
-| Ecosystem membership | Vertex, Vantor, Procure Sherpa and ProcureSherpa Learning have distinct roles and CTAs | No shared backend, connector or data synchronisation is claimed |
-| Vertex/Vantor differentiation | Separate audiences, workflow positions, deployment/licensing boundaries and product instruments | Showcase behavior is not treated as production evidence |
-| ProcureSherpa enterprise scope | Customisation, extensibility, workflow and reporting statements are limited to verified first-party evidence | Unverified enterprise, AI, MCP and integration behavior remains omitted |
-| Procurement MCP | Research outcome and negative finding are recorded | No first-party procurement MCP implementation is claimed |
-| ProcureSherpa Learning | Dedicated Learn route and homepage ecosystem component with learning intent | It is not presented as an independently verified commercial product |
-| Learning CTA correction | Uses the supported `learning` intent and valid product IDs | Removed unsupported `learning-access`/`application-access` intents |
+The shared shell responds to the active origin and uses a viewport-wide `min(100% - 2rem, 120rem)` desktop container with 2.5rem tablet and 1.5rem mobile gutters. Portal uses a brighter cobalt/navy ground with yellow, coral, mint, cream and paper bands, a warm paper header and yellow footer; Learn uses cobalt/yellow/coral/mint/cream; SourceCraft uses paper/cobalt/yellow/coral/mint; ProcureSherpa uses forest/mint/orange/cream; LearnPMO uses terracotta/mustard/sky/cream; HCM Fusion uses blush/oxblood/gold/cream. Host Grotesk carries interface and body text; Instrument Serif italic is reserved for editorial display labels such as “Résumé + role brief.” Functional visible text is at least 12.8px and laptop body text is at least 17px. Header, footer and closing-section colors and lockup contrast follow the same origin contract.
 
-Implementation references: [HomeExperience.astro](../packages/ui/src/components/HomeExperience.astro#L186), [ProcurementEcosystem.astro](../packages/ui/src/components/ProcurementEcosystem.astro), [LearningPage.astro](../packages/ui/src/components/LearningPage.astro), [PRODUCT_INTELLIGENCE.md](PRODUCT_INTELLIGENCE.md).
+Construction and Transportation remain reachable catalogue records but do not lead the homepage hierarchy. Services remain secondary to products. Website-facing “Estate” labels are replaced by context-accurate Network, Products, Platforms or Procurement wording.
 
-### Homepage and content hierarchy
+## Research and evidence governance
 
-The delivered homepage follows the required sequence:
+The public research in [PRODUCT_INTELLIGENCE.md](PRODUCT_INTELLIGENCE.md) remains dated 2026-11-25. Owner corrections and authorized read-only implementation review on 2026-11-26 form a later evidence layer. The earlier public search is not retroactively credited with proving private implementation, naming decisions or portfolio boundaries.
 
-1. Product-led brand positioning and systems-engine hero.
-2. MIND ONE flagship with request-only access.
-3. MIND ONE and MIND ONE Pro edition positions.
-4. Vedik and Nipuna paired core-product narratives.
-5. Procurement ecosystem and ProcureSherpa Learning.
-6. Industry-specific solutions.
-7. Registry-derived product atlas and enterprise technology capabilities.
-8. Specialised implementations/services.
-9. Verified evidence boundary.
-10. Conversion-focused close.
+Complete-edition implementation has been reviewed for durable local profiles/sessions, saved practice history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed remote opportunity listings, app lock and diagnostics. This is implementation evidence only. It does not establish released commercial entitlement, quotas, provider terms, billing, integrations, unmetered hosted use, deployment or launch availability.
 
-Customer proof is absent because none was supplied. Product copy explains purpose, audience, workflow and reason to evaluate without invented outcomes.
+## Remaining owner and evidence blockers
 
-### Navigation, terminology and supporting pages
+- Approve production hosting, response compression, DNS, CI, deployment and cutover; this work generates redirect manifests but configures none of those production controls.
+- Resolve MIND ONE Basic/Complete commercial entitlement, quotas, provider terms, billing, integrations, deployment and launch policy.
+- Supply approved MIND ONE edition marks or retain neutral identifiers.
+- Supply production/demo destinations and qualification/issuance policy.
+- Supply authorised application source, schemas, fixtures and rules for ProcureSherpa, LearnPMO and HCM Fusion parity.
+- Approve rights-reserved SourceCraft and HCM Fusion editorial migration or keep it governed/noindex.
+- Supply genuine customer, security, certification and outcome evidence before publishing it.
+- Provision Cloudflare resources, API routing, Resend/CRM/Turnstile credentials and staging delivery evidence.
+- Approve analytics consent, retention, dashboards and access; production volumes remain `UNKNOWN`.
+- Verify Search Console properties and submit sitemaps; local generation does not prove acceptance.
+- Approve per-origin hosting, monitoring, backups, rollback, deployment and cutover.
 
-- Desktop and mobile Products navigation expose MIND ONE, MIND ONE Pro, Vedik, Nipuna, Procurement, Vertex, Vantor, Procure Sherpa and ProcureSherpa Learning in a grouped hierarchy.
-- Industries, Solutions, Services, Resources, About and Contact remain available without flattening the portfolio.
-- Website-facing “Estate” labels were replaced with context-accurate terms such as Platforms, Network, Products and Procurement.
-- The six-column footer follows the same hierarchy.
-- Six solution pages now contain industry-specific challenges, workflows, product relationships, qualitative outcomes and CTAs.
-- Services, Procurement, flagship, edition comparison and learning routes use purpose-built compositions while retaining shared primitives.
-- The public product name is consistently **MIND ONE**, never `MINDONE`; identifiers and URLs remain lowercase for compatibility.
+## Acceptance position
 
-### Research and evidence governance
-
-Remote public GitHub research was completed for `chandrahotha` and `DigiTracks` without cloning, ZIP downloads, full-repository downloads, modification, commit or push. The inventory records repository names, descriptions, READMEs, manifests, architecture evidence, recent implementation evidence, integrations and unresolved questions.
-
-Public marketing copy uses only approved conclusions. Proprietary source, internal architecture, private information and unverified technical claims are not exposed. See [PRODUCT_INTELLIGENCE.md](PRODUCT_INTELLIGENCE.md).
-
-## Responsive and visual corrections
-
-The final MIND ONE pass addressed the owner's visual feedback directly:
-
-- Visible naming normalised to **MIND ONE** and **MIND ONE Pro**.
-- Shared shell widened to `112rem`; at 1536px the measured content width is 1,488px with 24px side insets.
-- MIND ONE H1 measured 110.592px at 1536px.
-- Résumé/supporting labels use the body face at a readable 0.82rem scale rather than decorative microtype.
-- Supporting flagship typography and spacing were increased.
-- Playwright full-page captures were reviewed at 1536px and 390px with zero horizontal overflow and zero page errors.
-- The 86-route crawl verifies 1440, 1024, 768 and 390px layouts after the changes.
-
-Evidence: `artifacts/mindone-final-1536.png`, `artifacts/mindone-final-390.png` and `artifacts/full-route-qa.json`.
-
-## Stylesheet and performance correction
-
-The final performance pass removed a render-blocking estate-wide stylesheet from every template:
-
-- `base.css` holds only shared shell/design-system rules.
-- Portal CSS is partitioned into common, home, flagship, procurement, industry, services, catalogue, product and contact families.
-- Child-origin CSS is partitioned by origin.
-- Route/origin-specific CSS is inlined through `SiteLayout`; only the small common stylesheet remains external.
-- Exact shared-rule duplicates were removed.
-- Superseded `global.css` and `origins.css` remain unused historical files and receive no further visual edits.
-
-Fresh rebuilt Lighthouse results pass all six origins: performance 98–100, LCP 916.5–2,013.7ms and CLS 0–0.001346. Lighthouse INP remains unmeasured.
-
-## Owner/evidence blockers
-
-These remain `UNKNOWN` or omitted until resolved:
-
-- approved MIND ONE/MIND ONE Pro visual identities;
-- production availability and real demo destination URLs;
-- approval to publish proprietary technical details;
-- customer evidence, certifications, quantified outcomes and performance claims;
-- authorised ProcureSherpa/LearnPMO/HCM Fusion application source, schemas and rules;
-- editorial permission for rights-reserved SourceCraft and HCM Fusion material;
-- final controller, retention and legal wording;
-- Cloudflare resources, API routing, Resend/CRM/Turnstile credentials and staging delivery evidence;
-- production analytics consent, retention, dashboards and access;
-- Search Console verification and sitemap acceptance;
-- production deployment and cutover approval.
-
-## Acceptance result
-
-The addendum's implementation acceptance criteria are met locally. The replacement preserves established URLs, implements the required portfolio hierarchy and page types, removes visible industry/category “Estate” terminology, passes responsive/keyboard/browser regressions, traces new product claims to evidence, and leaves the old repository unchanged.
-
-The only remaining release steps are the external owner actions above, followed by an explicitly approved production deployment. Committing and pushing this new repository does not authorise deployment or cutover.
+The source-level implementation and generated inventories reflect the requested product boundaries and design direction, and the current local automated acceptance matrix passed. Production release remains separately blocked by the owner actions above, including real delivery, editorial and commercial approval, deployment controls and field-performance evidence.

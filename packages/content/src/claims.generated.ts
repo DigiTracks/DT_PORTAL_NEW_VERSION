@@ -2,326 +2,374 @@
 export const auditedClaims = [
   {
     "id": "CLM-001",
-    "statement": "The six live sitemaps contain 384 unique URLs: portal 58, Learn 6, SourceCraft 139, ProcureSherpa 1, LearnPMO 12 and HCM Fusion 168.",
+    "statement": "As measured on 25 November 2026, the six public sitemaps contained 384 URLs and every sitemap document returned HTTP 200.",
     "status": "verified",
-    "source": "https://digitracks.net/sitemap.xml; https://learn.digitracks.net/sitemap.xml; https://sourcecraft.digitracks.net/sitemap.xml; https://procuresherpa.digitracks.net/sitemap.xml; https://learnpmo.digitracks.net/sitemap.xml; https://hcmfusion.digitracks.net/sitemap.xml",
+    "source": "inventories/claims.json#CLM-001",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-002",
-    "statement": "The portal catalogue contains 17 flagship products and 18 nested products, 35 in total.",
+    "statement": "The replacement catalogue contains 37 entries: 17 top-level products and 20 products nested within families.",
     "status": "verified",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/products.ts; /data/HomeWorks/DT-Portal-main/src/data/seo.ts",
-    "verifiedAt": "2026-11-25T00:31:19Z",
+    "source": "inventories/claims.json#CLM-002",
+    "verifiedAt": "2026-11-26T10:32:26Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-003",
-    "statement": "The portal defines six solution areas and two capability hubs.",
+    "statement": "The current portal organises solutions into six areas and two capability hubs.",
     "status": "verified",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/solutions.ts; /data/HomeWorks/DT-Portal-main/src/data/toolHubs.ts",
+    "source": "inventories/claims.json#CLM-003",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-004",
-    "statement": "MIND ONE is presented as pre-launch rather than a generally available proven product.",
+    "statement": "MIND ONE is currently presented as a pre-launch product with a wait-state journey.",
     "status": "site-stated",
-    "source": "/data/HomeWorks/DT-Portal-main/src/pages/MindOne.tsx",
+    "source": "inventories/claims.json#CLM-004",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-005",
-    "statement": "Buying models are quote-led and no public numeric prices or payment links are configured in the portal source.",
+    "statement": "Pricing is quote-led. No public numeric price list or checkout is published in the current source.",
     "status": "verified",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/licensing.ts",
+    "source": "inventories/claims.json#CLM-005",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-006",
-    "statement": "No genuine testimonials or customer case studies are present in the inspected portal source.",
+    "statement": "No customer testimonials or case studies are published in the current portal source.",
     "status": "verified",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/studio.ts",
+    "source": "inventories/claims.json#CLM-006",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-007",
-    "statement": "Founder, legal entity, city/country, phone and studio-owned social profile are not established by the inspected source.",
+    "statement": "The studio name and contact email are published; legal-entity, founder, location, phone and owned social-profile details remain unverified.",
     "status": "unknown",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/studio.ts",
+    "source": "inventories/claims.json#CLM-007",
     "owner": "UNKNOWN — owner input required"
   },
   {
     "id": "CLM-008",
-    "statement": "The OpsPilot CLI package metadata identifies @ops_pilot/cli version 0.1.6 as Apache-2.0.",
+    "statement": "The published OpsPilot CLI package is licensed under Apache-2.0. Licensing for the desktop components remains unconfirmed.",
     "status": "verified",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/products.ts; https://registry.npmjs.org/@ops_pilot%2fcli; https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "source": "inventories/claims.json#CLM-008",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-009",
-    "statement": "Recon is proprietary/freeware, free to install for permitted internal executable use, and is not open source.",
+    "statement": "Recon is free to install under a proprietary licence. It is not open source.",
     "status": "verified",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/licensing.ts; /data/HomeWorks/DT-Portal-main/src/data/products.ts; https://registry.npmjs.org/@reconscanner%2frecon; https://unpkg.com/@reconscanner/recon/LICENSE",
+    "source": "inventories/claims.json#CLM-009",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-010",
-    "statement": "Public Vantor sources conflict with the official product page on licence, production readiness and AI citations.",
+    "statement": "Vantor is a public evaluation release. Published sources conflict on its licence, production readiness and AI citation behavior; owner confirmation is required before production use.",
     "status": "contradicted",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/products.ts; https://digitracks.net/products/vantor; https://github.com/chandrahotha/Vantor/blob/e801781dda983b327c782f26a2e44adbe535ba1a/README.md; https://github.com/chandrahotha/Vantor/blob/306fa472025c85f01a225fae58476c5578555134/LICENSE; https://github.com/chandrahotha/Vantor",
+    "source": "inventories/claims.json#CLM-010",
     "verifiedAt": "2026-11-25",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-011",
-    "statement": "Orion is presented as a proprietary public preview.",
+    "statement": "Orion is currently described as a proprietary public preview.",
     "status": "site-stated",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/products.ts",
+    "source": "inventories/claims.json#CLM-011",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-012",
-    "statement": "Chronos and Unify demo access is gated in the current portal source.",
+    "statement": "Chronos and Unify demos are request-gated.",
     "status": "site-stated",
-    "source": "/data/HomeWorks/DT-Portal-main/src/data/products.ts",
+    "source": "inventories/claims.json#CLM-012",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-013",
-    "statement": "SourceCraft states that application code is MIT-licensed while term text, editorial notes and regional notes are all rights reserved.",
+    "statement": "SourceCraft's application code is described as MIT-licensed. Its term text and editorial/regional notes are all rights reserved and are not cleared for migration.",
     "status": "verified",
-    "source": "https://sourcecraft.digitracks.net/about/#licensing",
+    "source": "inventories/claims.json#CLM-013",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-014",
-    "statement": "SourceCraft has 122 term pages and nine regional packs in its sitemap; the public Explore payload contains 122 records with status in_review and null reviewedAt values in the inspected records.",
+    "statement": "The 25 November 2026 snapshot contained 122 SourceCraft terms and nine regional packs; all inspected term records remained in editorial review.",
     "status": "verified",
-    "source": "https://sourcecraft.digitracks.net/sitemap.xml; https://sourcecraft.digitracks.net/explore/",
+    "source": "inventories/claims.json#CLM-014",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-015",
-    "statement": "The previously reported broken /favourites/ route returned HTTP 200 and noindex on 25 November 2026.",
+    "statement": "The saved-terms route responded successfully during the 25 November 2026 audit.",
     "status": "verified",
-    "source": "https://sourcecraft.digitracks.net/favourites/; https://sourcecraft.digitracks.net/favourites",
+    "source": "inventories/claims.json#CLM-015",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-016",
-    "statement": "ProcureSherpa states that it has no accounts, no server-side storage and no telemetry, and keeps state in browser localStorage.",
+    "statement": "ProcureSherpa is presented as a local-first browser application with browser-stored state and no account or telemetry requirement.",
     "status": "site-stated",
-    "source": "https://procuresherpa.digitracks.net/",
+    "source": "inventories/claims.json#CLM-016",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-017",
-    "statement": "Public source defines 506 unique typed hash-content routes: 393 library records, 94 academy functions and 19 calculators.",
+    "statement": "The inspected public source defines 506 typed client-side content routes. The document shell returned 200; individual fragment rendering was not executed.",
     "status": "verified",
-    "source": "https://procuresherpa.digitracks.net/content.js; https://procuresherpa.digitracks.net/; https://procuresherpa.digitracks.net/content.js",
+    "source": "inventories/claims.json#CLM-017",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-018",
-    "statement": "LearnPMO has 12 sitemap pages, 20 additional linked application/workspace paths and a root redirect to /dashboard, giving 33 known page paths including root.",
+    "statement": "The audit identified 33 LearnPMO page paths including the root redirect; the 12 sitemap pages all returned 200.",
     "status": "verified",
-    "source": "https://learnpmo.digitracks.net/sitemap.xml; https://learnpmo.digitracks.net/; https://learnpmo.digitracks.net/",
+    "source": "inventories/claims.json#CLM-018",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-019",
-    "statement": "The HCM Fusion sitemap contains 47 lesson pages, 70 concept pages and 26 glossary pages.",
+    "statement": "The 25 November 2026 sitemap contained 47 lessons, 70 concepts and 26 glossary entries.",
     "status": "verified",
-    "source": "https://hcmfusion.digitracks.net/sitemap.xml",
+    "source": "inventories/claims.json#CLM-019",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-020",
-    "statement": "There are 371 publicly linked evidence-claim pages; the site's source register separately states 446 claims, 441 verified claims and five open gaps.",
+    "statement": "The public crawl exposed 371 evidence pages. The site's internal register states 446 claims; the two totals have different scopes and require owner reconciliation.",
     "status": "verified",
-    "source": "https://hcmfusion.digitracks.net/sources; https://hcmfusion.digitracks.net/sources",
+    "source": "inventories/claims.json#CLM-020",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-021",
-    "statement": "Beyond the sitemap, HCM Fusion exposes 464 known paths: 371 evidence claims, 47 assessments, four certification papers, three SOPs, two scenarios, 27 exports, three unsitemapped courses and seven application/user paths.",
+    "statement": "The audit identified 464 additional HCM Fusion paths outside the sitemap; their current indexability policy is inconsistent and is not automatically approved for the replacement.",
     "status": "verified",
-    "source": "https://hcmfusion.digitracks.net/sitemap.xml; https://hcmfusion.digitracks.net/profile",
+    "source": "inventories/claims.json#CLM-021",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-022",
-    "statement": "The course catalogue states 12 modules, 47 of 156 lessons published, five published modules, four in production and three planned, while only nine course pages are in the sitemap.",
+    "statement": "The current catalogue describes partial coverage: 47 of 156 planned lessons. Module-status totals require owner reconciliation.",
     "status": "site-stated",
-    "source": "https://hcmfusion.digitracks.net/learn/courses; https://hcmfusion.digitracks.net/sitemap.xml",
+    "source": "inventories/claims.json#CLM-022",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-023",
-    "statement": "The lesson and exports say seven setup steps but enumerate six configuration actions; decision nodes and the terminal route are separate displayed items.",
+    "statement": "The inspected configuration-order content contains six configuration actions and additional decision/terminal nodes; its seven-step label is inconsistent.",
     "status": "contradicted",
-    "source": "https://hcmfusion.digitracks.net/learn/lessons/core-hr-configuration-order; https://hcmfusion.digitracks.net/export/module/core-hr.md",
+    "source": "inventories/claims.json#CLM-023",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-024",
-    "statement": "At least one assessment's serialized public payload exposes correct-answer keys, correctness flags, rationales and correct ordering before submission.",
+    "statement": "The inspected assessment payload exposes answer material before submission and requires remediation before reuse.",
     "status": "verified",
-    "source": "https://hcmfusion.digitracks.net/practice/quizzes/assessment-core-hr-configuration-order",
+    "source": "inventories/claims.json#CLM-024",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-025",
-    "statement": "All nine Markdown module exports state that 53 diagrams are included, while the 27 exports contain 51 diagram/figure descriptions per format across nine modules.",
+    "statement": "The export set currently contains 51 diagram descriptions, not the 53 stated in each Markdown export.",
     "status": "contradicted",
-    "source": "https://hcmfusion.digitracks.net/export/module/; https://hcmfusion.digitracks.net/export/module/core-hr.md",
+    "source": "inventories/claims.json#CLM-025",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-026",
-    "statement": "The current portal/Learn worker sends email directly and does not implement durable D1/outbox/queue/CRM-webhook delivery semantics.",
+    "statement": "The current source notifies the studio inbox by email. Durable queued delivery and CRM webhook receipt have not been demonstrated.",
     "status": "verified",
-    "source": "/data/HomeWorks/DT-Portal-main/worker/index.ts; /data/HomeWorks/DT-Portal-main/src/data/legal.ts",
+    "source": "inventories/claims.json#CLM-026",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-027",
-    "statement": "Turnstile is optional and was not active in the inspected live CSP; source notes that the Cloudflare Rate Limiting binding did not enforce in live testing.",
+    "statement": "Bot verification is configurable but was not active in the inspected live configuration. Rate limiting relies on compensating controls whose production enforcement is not proven.",
     "status": "verified",
-    "source": "/data/HomeWorks/DT-Portal-main/worker/index.ts; /data/HomeWorks/DT-Portal-main/lib/csp.mjs; https://digitracks.net/",
+    "source": "inventories/claims.json#CLM-027",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-028",
-    "statement": "Portal and Learn are served through Cloudflare; SourceCraft, ProcureSherpa, LearnPMO and HCM Fusion report Vercel.",
+    "statement": "The current estate spans two hosting platforms: Cloudflare for portal/Learn and Vercel for the four application hosts.",
     "status": "verified",
-    "source": "Six-origin root header capture",
+    "source": "inventories/claims.json#CLM-028",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-029",
-    "statement": "Across 384 sitemap URLs, 65 have JSON-LD and 181 lack OG/Twitter images; all have canonicals and exactly one H1 except ProcureSherpa's initial shell.",
+    "statement": "The 25 November 2026 crawl found complete canonical coverage, partial structured-data coverage and missing social imagery on 181 sitemap URLs.",
     "status": "verified",
-    "source": "All six live sitemaps",
+    "source": "inventories/claims.json#CLM-029",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-030",
-    "statement": "The replacement uses self-hosted Host Grotesk Variable and Instrument Serif under SIL OFL 1.1, plus a system monospace stack; Inter is not used.",
+    "statement": "The replacement self-hosts Host Grotesk and Instrument Serif under their open-font licences and uses a system monospace stack; Inter is not used.",
     "status": "verified",
-    "source": "/data/HomeWorks/digitracks-nextgen-portal/packages/ui/package.json; /data/HomeWorks/digitracks-nextgen-portal/inventories/source-assets.json; /data/HomeWorks/digitracks-nextgen-portal/artifacts/budgets.json",
+    "source": "inventories/claims.json#CLM-030",
     "verifiedAt": "2026-11-26",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-031",
-    "statement": "The replacement uses 40 owner-supplied identity assets plus two documented 320px lockup derivatives, including 33 unique official product marks; no official MIND ONE or MIND ONE Pro mark was supplied.",
+    "statement": "The replacement uses the supplied Digi Tracks identity and official product marks with recorded provenance. MIND ONE retains a neutral identifier because no official mark was supplied.",
     "status": "verified",
-    "source": "/data/HomeWorks/digitracks-nextgen-portal/inventories/source-assets.json; /data/HomeWorks/DT-Portal-main/public/; /data/HomeWorks/digitracks-nextgen-portal/artifacts/visual-identity/",
+    "source": "inventories/claims.json#CLM-031",
     "verifiedAt": "2026-11-26",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-032",
-    "statement": "The stats origin is non-indexable and returned HTTP 520 during the audit.",
+    "statement": "The non-indexable stats origin was unavailable with HTTP 520 and is excluded from the replacement scope.",
     "status": "verified",
-    "source": "https://stats.digitracks.net/",
+    "source": "inventories/claims.json#CLM-032",
     "verifiedAt": "2026-11-25T00:31:19Z",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-033",
-    "statement": "Search Console acceptance, IndexNow submission, analytics property access and production WAF configuration are not established by the evidence.",
+    "statement": "Search Console, IndexNow, analytics access and WAF controls remain owner-verification items.",
     "status": "unknown",
-    "source": "Approved audit brief and local source comments",
+    "source": "inventories/claims.json#CLM-033",
     "owner": "UNKNOWN — owner input required"
   },
   {
     "id": "CLM-034",
-    "statement": "The final replacement has local automated accessibility, responsive and Lighthouse evidence, but WCAG conformance, field Core Web Vitals, Lighthouse INP and full device/assistive-technology behavior remain unproven.",
+    "statement": "The replacement passes the recorded local automated accessibility and performance gates. These results do not prove WCAG conformance, field Core Web Vitals or production behavior.",
     "status": "verified",
-    "source": "/data/HomeWorks/digitracks-nextgen-portal/artifacts/browser-audit.json; /data/HomeWorks/digitracks-nextgen-portal/artifacts/full-route-qa.json; /data/HomeWorks/digitracks-nextgen-portal/artifacts/lighthouse-*.json",
+    "source": "inventories/claims.json#CLM-034",
     "verifiedAt": "2026-11-26",
     "owner": "Digi Tracks QA owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-035",
-    "statement": "No owner permission was supplied to migrate SourceCraft terms/notes or HCM Fusion lessons, concepts, glossary, evidence, assessments, procedures, scenarios or diagrams.",
+    "statement": "Rights-reserved content migration is blocked pending written owner permission and editorial approval.",
     "status": "unknown",
-    "source": "https://sourcecraft.digitracks.net/about/#licensing; Approved plan",
+    "source": "inventories/claims.json#CLM-035",
     "owner": "UNKNOWN — owner permission required"
   },
   {
     "id": "CLM-036",
-    "statement": "Authorized source/data for ProcureSherpa, LearnPMO and HCM Fusion application behavior, state schemas, roles and scoring rules were not supplied.",
+    "statement": "Authenticated/application parity remains blocked until authorized source, schemas and rules are supplied and tested.",
     "status": "unknown",
-    "source": "Approved plan",
+    "source": "inventories/claims.json#CLM-036",
     "owner": "UNKNOWN — owner input required"
   },
   {
     "id": "CLM-037",
-    "statement": "MIND ONE is vendor-stated as a pre-launch interview-practice product, with Free entry and complete Pro positioning but no approved edition entitlement table.",
+    "statement": "MIND ONE Basic is the free, focused entry position. MIND ONE Complete provides the full MIND ONE feature set. Access remains request-only during pre-launch while commercial terms and quotas are confirmed.",
     "status": "site-stated",
-    "source": "https://digitracks.net/products/mindone; https://github.com/chandrahotha/chandrahotha/blob/2be5ec964873f51e27f487ebe377487ee497115f/README.md",
-    "verifiedAt": "2026-11-25",
+    "source": "inventories/claims.json#CLM-037",
+    "verifiedAt": "2026-11-26",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-038",
-    "statement": "Vedik's public School ERP demo is code-backed and uses mock data; production backend, wider application behavior and a settled module count are unverified.",
+    "statement": "Vedik is one education portfolio with products for school, college, university, community and placement workflows. Each product has its own deployment and readiness boundary; the portfolio does not imply one shared production platform.",
     "status": "verified",
-    "source": "https://github.com/Digi Tracks/Vedik-Demo/blob/eafaa5b881d2461ba41908d122b469b0fcbc3786/src/lib/site.ts; https://vedik-demo.netlify.app/; https://digitracks.net/products/vedik",
-    "verifiedAt": "2026-11-25",
+    "source": "inventories/claims.json#CLM-038",
+    "verifiedAt": "2026-11-26",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-039",
-    "statement": "Nipuna's public description covers local-first résumé intake, OCR, deterministic rule-based matching and hiring pipelines; implementation and accuracy are unverified.",
+    "statement": "Nipuna is presented as a local-first recruiting toolkit with deterministic candidate matching. Request a deployment assessment.",
     "status": "site-stated",
-    "source": "https://digitracks.net/products/nipuna",
+    "source": "inventories/claims.json#CLM-039",
     "verifiedAt": "2026-11-25",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-040",
-    "statement": "Vertex's public showcase demonstrates procurement and project workflows with fictional data; production implementation and edition entitlements remain unverified.",
+    "statement": "Vertex's public showcase demonstrates procurement and project workflows with fictional data. Request a production evaluation.",
     "status": "verified",
-    "source": "https://vertexdemo.vercel.app/; https://digitracks.net/products/vertex",
+    "source": "inventories/claims.json#CLM-040",
     "verifiedAt": "2026-11-25",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   },
   {
     "id": "CLM-041",
-    "statement": "Procure Sherpa is a free browser-based learning and decision-support toolkit; ProcureSherpa Learning is its Academy component, not a verified separate product.",
+    "statement": "Procure Sherpa is a free browser-based procurement learning and decision-support toolkit. ProcureSherpa Learning names its Academy component.",
     "status": "verified",
-    "source": "https://procuresherpa.digitracks.net/; https://procuresherpa.digitracks.net/content.js; https://github.com/chandrahotha/Procure-Sherpa_Portal/blob/66b514ff8bb587be1138a7cc5cbf9b5494877f8a/README.md",
+    "source": "inventories/claims.json#CLM-041",
     "verifiedAt": "2026-11-25",
+    "owner": "Digi Tracks owner (individual UNKNOWN)"
+  },
+  {
+    "id": "CLM-042",
+    "statement": "MIND ONE is presented as one family with Basic and Complete editions. UNIFY remains a separate product.",
+    "status": "site-stated",
+    "source": "inventories/claims.json#CLM-042",
+    "verifiedAt": "2026-11-26",
+    "owner": "Digi Tracks owner (individual UNKNOWN)"
+  },
+  {
+    "id": "CLM-043",
+    "statement": "MIND ONE Complete adds durable practice history, resume and job-description comparison, learning goals, progress tracking, role-development maps and source-linked opportunity research to the MIND ONE workflow.",
+    "status": "verified",
+    "source": "inventories/claims.json#CLM-043",
+    "verifiedAt": "2026-11-26",
+    "owner": "Digi Tracks owner (individual UNKNOWN)"
+  },
+  {
+    "id": "CLM-044",
+    "statement": "Vedik products share an education mission and portfolio identity. School has documented web/mobile foundations, while each product's deployment, identity and integration requirements must be evaluated separately.",
+    "status": "verified",
+    "source": "inventories/claims.json#CLM-044",
+    "verifiedAt": "2026-11-26",
+    "owner": "Digi Tracks owner (individual UNKNOWN)"
+  },
+  {
+    "id": "CLM-045",
+    "statement": "Campus Grid manages campus placement drives, eligibility, applications, assessments, interviews, offers and joining records. Production deployment and integrations require evaluation.",
+    "status": "verified",
+    "source": "inventories/claims.json#CLM-045",
+    "verifiedAt": "2026-11-26",
+    "owner": "Digi Tracks owner (individual UNKNOWN)"
+  },
+  {
+    "id": "CLM-046",
+    "statement": "Orion, Orion Hunter, Recon and OpsPilot form a developer and security portfolio of independent tools. Each can be evaluated on its own workflow and deployment boundary.",
+    "status": "verified",
+    "source": "inventories/claims.json#CLM-046",
+    "verifiedAt": "2026-11-26",
+    "owner": "Digi Tracks owner (individual UNKNOWN)"
+  },
+  {
+    "id": "CLM-047",
+    "statement": "Recon keeps engineering evidence and approvals under user control. Source can remain local when local models are used; configured hosted models may receive the context sent to them.",
+    "status": "verified",
+    "source": "inventories/claims.json#CLM-047",
+    "verifiedAt": "2026-11-26",
     "owner": "Digi Tracks owner (individual UNKNOWN)"
   }
 ] as const;

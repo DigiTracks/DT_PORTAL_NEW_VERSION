@@ -265,23 +265,32 @@ async function runPerformanceAudit(servers) {
   for (const app of apps) {
     const url = `${servers[app.id].origin}${app.home}`;
     console.log(`Lighthouse ${app.id}…`);
-    const runner = await runLighthouse(url, {
-      hostname: "127.0.0.1",
-      logLevel: "silent",
-      output: ["json"],
-      outputPath: path.join(root, "artifacts", `lighthouse-${app.id}.json`),
-      chromeFlags: ["--headless=new", "--no-sandbox", "--disable-dev-shm-usage"],
-      enableErrorReporting: false
-    }, {
-      extends: "lighthouse:default",
-      settings: {
-        onlyCategories: ["performance", "accessibility", "best-practices", "seo"],
-        formFactor: "mobile",
-        throttlingMethod: "simulate",
-        screenEmulation: { mobile: true, width: 412, height: 823, deviceScaleFactor: 1.75, disabled: false },
-        throttling: { rttMs: 150, throughputKbps: 1638.4, cpuSlowdownMultiplier: 4, requestLatencyMs: 150, downloadThroughputKbps: 1638.4, uploadThroughputKbps: 675 }
-      }
-    });
+    let runner;
+    try {
+      runner = await runLighthouse(url, {
+        hostname: "127.0.0.1",
+        logLevel: "silent",
+        output: ["json"],
+        outputPath: path.join(root, "artifacts", `lighthouse-${app.id}.json`),
+        chromeFlags: ["--headless=new", "--no-sandbox", "--disable-dev-shm-usage"],
+        enableErrorReporting: false
+      }, {
+        extends: "lighthouse:default",
+        settings: {
+          onlyCategories: ["performance", "accessibility", "best-practices", "seo"],
+          formFactor: "mobile",
+          throttlingMethod: "simulate",
+          screenEmulation: { mobile: true, width: 412, height: 823, deviceScaleFactor: 1.75, disabled: false },
+          throttling: { rttMs: 150, throughputKbps: 1638.4, cpuSlowdownMultiplier: 4, requestLatencyMs: 150, downloadThroughputKbps: 1638.4, uploadThroughputKbps: 675 }
+        }
+      });
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      results.push({ app: app.id, url, scores: null, metrics: null, failedAudits: [], error: message });
+      failures.push(`${app.id}: Lighthouse did not complete: ${message}`);
+      console.error(`FAIL ${app.id}: Lighthouse did not complete: ${message}`);
+      continue;
+    }
     const report = runner.lhr;
     const score = (key) => Math.round((report.categories[key]?.score ?? 0) * 100);
     const metric = (id) => report.audits[id]?.numericValue ?? null;
@@ -328,6 +337,7 @@ try {
     browser = await chromium.launch({ executablePath: chromePath, headless: true, args: ["--no-sandbox", "--disable-dev-shm-usage"] });
     const accessibility = await runAccessibilityAudit(browser, servers);
     report.accessibility = accessibility.results;
+    report.accessibilityGeneratedAt = new Date().toISOString();
     report.failures.push(...accessibility.failures);
     await browser.close();
     browser = undefined;
@@ -335,6 +345,7 @@ try {
   if (mode !== "accessibility") {
     const performance = await runPerformanceAudit(servers);
     report.performance = performance.results;
+    report.performanceGeneratedAt = new Date().toISOString();
     report.failures.push(...performance.failures);
   }
   const output = path.join(root, "artifacts", "browser-audit.json");

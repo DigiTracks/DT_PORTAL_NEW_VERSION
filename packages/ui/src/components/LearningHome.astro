@@ -1,5 +1,5 @@
 ---
-import type { RouteRecord } from "@digitracks/seo";
+import { routeRegistry, type RouteRecord } from "@digitracks/seo";
 import Button from "./Button.astro";
 
 interface Props {
@@ -8,13 +8,20 @@ interface Props {
 
 const { routes } = Astro.props;
 const learningRoutes = routes.filter((route) => route.path !== "/" && route.path !== "/contact/");
-const requestHref = "https://digitracks.net/contact/?intent=demo&origin=learn";
+const publicOriginCount = new Set(routeRegistry.map((route) => route.origin)).size;
+const learningThemes: Record<string, { label: string; mark: string }> = {
+  "/hcmfusion/": { label: "People operations", mark: "HC" },
+  "/learnpmo/": { label: "Project delivery", mark: "PM" },
+  "/procuresherpa/": { label: "Procurement", mark: "PS" },
+  "/sourcecraft/": { label: "Contract language", mark: "SC" }
+};
+const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=learn";
 ---
 
 <section class="learning-hero" aria-labelledby="learning-title">
   <div class="shell learning-hero__grid">
     <div class="learning-hero__copy">
-      <p class="t-label">Digi Tracks learning / six public origins</p>
+      <p class="t-label">Digi Tracks learning / public practice origins</p>
       <h1 id="learning-title">Learn the work.<br><em>Then do the work.</em></h1>
       <p class="learning-hero__lede">A direct route into procurement, project delivery, people operations and the wider Digi Tracks software ecosystem.</p>
       <div class="button-row">
@@ -22,16 +29,21 @@ const requestHref = "https://digitracks.net/contact/?intent=demo&origin=learn";
         <Button href={requestHref} variant="secondary">Ask about access</Button>
       </div>
     </div>
-    <div class="learning-orbit" aria-hidden="true">
-      <div class="learning-orbit__ring learning-orbit__ring--one"></div>
-      <div class="learning-orbit__ring learning-orbit__ring--two"></div>
-      <div class="learning-orbit__ring learning-orbit__ring--three"></div>
-      <div class="learning-orbit__core">D</div>
-      {learningRoutes.map((route, index) => <a key={route.id} href={route.path} tabIndex={-1} style={`--orbit-index:${index}`}><span>{String(index + 1).padStart(2, "0")}</span></a>)}
-    </div>
+    <nav class="learning-orbit" aria-label="Featured learning paths">
+      <span class="learning-orbit__rule" aria-hidden="true"></span>
+      <span class="learning-orbit__core" aria-hidden="true"><small>DT / LEARN</small><strong>Choose<br>a direction</strong></span>
+      {learningRoutes.map((route, index) => {
+        const theme = learningThemes[route.path] ?? { label: "Learning path", mark: "DT" };
+        return <a key={route.id} class={`learning-orbit__card learning-orbit__card--${index + 1}`} href={route.path}>
+          <span>{String(index + 1).padStart(2, "0")} / {theme.mark}</span>
+          <strong>{theme.label}</strong>
+          <small>{route.title.replace(" | Digi Tracks", "").split(" — ")[0]}</small>
+        </a>;
+      })}
+    </nav>
   </div>
   <div class="shell learning-hero__ledger">
-    <span>06 public origins</span><span>Direct product context</span><span>Access stated before enrolment</span>
+    <span>{String(publicOriginCount).padStart(2, "0")} public origins</span><span>Direct product context</span><span>Access stated before enrolment</span>
   </div>
 </section>
 

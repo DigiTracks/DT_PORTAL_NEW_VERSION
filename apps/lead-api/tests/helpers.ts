@@ -170,7 +170,7 @@ export function testEnv(db?: D1Database): Env {
     CRM_FIELD_MAPPING_JSON: JSON.stringify({ intent: "intent", email: "email", message: "requirement" }),
     ADMIN_TOKEN: "operator-token-000000000000000000000000",
     DEMO_GRANT_SECRET: "demo-signing-secret-0000000000000000",
-    DEMO_DESTINATIONS_JSON: JSON.stringify({ vedik: "https://demo.example.test/vedik?access=server-configured" }),
+    DEMO_DESTINATIONS_JSON: JSON.stringify({ unify: "https://demo.example.test/unify?access=server-configured" }),
     DEMO_GRANT_TTL_HOURS: "168",
     DB: db,
     LEAD_QUEUE: { send: vi.fn(async () => undefined) },

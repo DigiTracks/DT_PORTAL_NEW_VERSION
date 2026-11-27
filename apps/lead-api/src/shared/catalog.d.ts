@@ -6,3 +6,4 @@ export interface ProductRecord {
 }
 
 export const productRegistry: readonly ProductRecord[];
+export function isDemoProduct(product: Pick<ProductRecord, "availability" | "requestable">): boolean;

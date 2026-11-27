@@ -1,4 +1,4 @@
-const CACHE = "sourcecraft-shell-v1";
+const CACHE = "sourcecraft-shell-v2";
 const SHELL = ["/", "/explore/", "/data/library.json", "/manifest.webmanifest"];
 
 export function GET() {
