@@ -3,15 +3,20 @@ import LegalPage from "@digitracks/ui/components/LegalPage.astro";
 import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
 import type { RouteRecord } from "@digitracks/seo";
 
-const route = {
-  path: "/privacy/",
-  title: "Privacy notice | Digi Tracks Learning",
-  description: "What the free learning platforms store in your browser, what they never collect, and how to remove it.",
+const route: RouteRecord = {
+  id: "learn:/privacy/",
   origin: "learn",
-  breadcrumbs: [{ label: "Home", path: "/" }, { label: "Privacy Policy", path: "/privacy/" }],
+  path: "/privacy/",
+  routeClass: "public-utility",
+  indexable: true,
+  title: "Privacy | Digi Tracks Learning",
+  description: "How the free Digi Tracks learning material handles saved work and browser storage.",
+  template: "legal",
+  breadcrumbs: [{ label: "Home", path: "/" }, { label: "Privacy", path: "/privacy/" }],
+  ctaIds: [],
+  analyticsId: "route:learn:privacy",
   canonicalOrigin: "https://learn.digitracks.net",
-  indexable: true
-} as unknown as RouteRecord;
+};
 const navItems = [
   { label: "Learning paths", href: "/#learning-paths" },
   { label: "SourceCraft", href: "https://sourcecraft.digitracks.net/" },

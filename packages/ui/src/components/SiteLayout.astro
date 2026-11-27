@@ -18,6 +18,7 @@ interface Props {
   navItems?: Array<{ label: string; href: string }>;
   requestLabel?: string;
   requestHref?: string;
+  requestCtaId?: string;
   brandSuffix?: string;
   originId?: string;
   mainClass?: string;
@@ -37,11 +38,29 @@ const {
   navItems = [{ label: "Products", href: "/products/" }, { label: "Solutions", href: "/solutions/" }, { label: "Industries", href: "/industries/" }, { label: "Learning", href: "https://learn.digitracks.net/" }],
   requestLabel = "Start a conversation",
   requestHref = `${origin}contact/?intent=consultation`,
+  requestCtaId,
   brandSuffix,
   originId = "portal",
   mainClass,
   bodyClass
 } = Astro.props;
+
+const requestIntent = (() => {
+  try {
+    return new URL(requestHref, "https://digitracks.net").searchParams.get("intent");
+  } catch {
+    return null;
+  }
+})();
+const headerCtaId =
+  requestCtaId ??
+  (requestIntent === "demo"
+    ? "request-demo"
+    : requestIntent === "security"
+      ? "request-security-pack"
+      : requestIntent === "product-enquiry"
+        ? "request-product-interest"
+        : "request-conversation");
 
 const isPortal = originId === "portal";
 const headerOnDark = originId === "procuresherpa";
@@ -299,7 +318,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
               {estateLinks.map((item) => <a href={item.href}>{item.label}</a>)}
             </div>
           </details>
-          <a class="button button--primary button--small" href={requestHref} data-cta="request-demo">{requestLabel}</a>
+          <a class="button button--primary button--small" href={requestHref} data-cta={headerCtaId}>{requestLabel}</a>
         </div>
         <details class="mobile-nav">
           <summary>Menu</summary>
@@ -336,7 +355,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
             ) : (
               navItems.map((item) => <a href={item.href}>{item.label}</a>)
             )}
-            <a class="button button--primary mobile-nav__request" href={requestHref}>{requestLabel}</a>
+            <a class="button button--primary mobile-nav__request" href={requestHref} data-cta={headerCtaId}>{requestLabel}</a>
             <p class="t-label">Network</p>
             {estateLinks.map((item) => <a href={item.href}>{item.label}</a>)}
           </nav>

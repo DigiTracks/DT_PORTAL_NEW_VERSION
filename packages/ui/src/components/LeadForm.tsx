@@ -20,6 +20,7 @@ export const LEAD_INTENTS = [
   "support",
   "partnership",
   "learning",
+  "security",
 ] as const;
 
 export type LeadIntent = (typeof LEAD_INTENTS)[number];
@@ -97,6 +98,7 @@ const intentOptions: readonly { value: LeadIntent; label: string }[] = [
   { value: "support", label: "Product support" },
   { value: "partnership", label: "Partnership" },
   { value: "learning", label: "Learning enquiry" },
+  { value: "security", label: "Security review" },
 ];
 
 const serverFieldErrors: Record<string, string> = {

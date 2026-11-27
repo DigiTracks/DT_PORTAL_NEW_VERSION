@@ -36,7 +36,7 @@ const indexRecords = routes.map(({ path, title, description, contentStatus }) =>
     <nav class="source-reference-stack" aria-label="Featured procurement references">
       <span class="source-reference-stack__note" aria-hidden="true">REFERENCE DESK / {String(featuredTerms.length).padStart(2, "0")}</span>
       {featuredTerms.map((route, index) => (
-        <a key={route.id} class={`source-reference-card source-reference-card--${index + 1}`} href={route.path}>
+        <a class={`source-reference-card source-reference-card--${index + 1}`} href={route.path}>
           <span>REFERENCE / {String(index + 1).padStart(2, "0")}</span>
           <strong>{route.title.replace(" | Source Craft", "").replace(" | SourceCraft", "")}</strong>
           <small>{route.contentStatus === "approved" ? "Approved for publication" : "Editorial review pending"}</small>

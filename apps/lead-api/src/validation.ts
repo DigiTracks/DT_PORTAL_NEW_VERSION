@@ -9,6 +9,7 @@ export const LEAD_INTENTS = [
   "support",
   "partnership",
   "learning",
+  "security",
 ] as const;
 
 export type LeadIntent = (typeof LEAD_INTENTS)[number];

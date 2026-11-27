@@ -48,7 +48,7 @@ const publicEvidenceCount = evidenceItems.filter((item) => item.path.startsWith(
     </div>
     <div class="hcm-evidence-grid">
       {evidenceItems.map((item, index) => (
-        <a key={item.path} href={item.path}>
+        <a href={item.path}>
           <span>{String(index + 1).padStart(2, "0")}</span>
           <p class="t-label">{item.label}</p>
           <h3>{item.title}</h3>

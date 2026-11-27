@@ -36,7 +36,7 @@ const title = route.title.replace(" | Digi Tracks", "");
     <div class="shell">
       <p class="t-label">Regional index</p><h1 id="source-regions-title">Context changes by place.</h1>
       <p class="source-regions__lede">{regions.length} regional identifiers are preserved from the audited catalogue. Detailed notes remain withheld until migration permission and editorial review are recorded.</p>
-      <ol class="source-region-grid">{regions.map((region, index) => <li key={region.id}><a href={region.path}><span>{String(index + 1).padStart(2, "0")}</span><h2>{region.title.replace(" · SourceCraft", "").replace(" | Digi Tracks", "")}</h2><p>{region.description}</p><small>Permission required / noindex</small></a></li>)}</ol>
+      <ol class="source-region-grid">{regions.map((region, index) => <li><a href={region.path}><span>{String(index + 1).padStart(2, "0")}</span><h2>{region.title.replace(" · SourceCraft", "").replace(" | Digi Tracks", "")}</h2><p>{region.description}</p><small>Permission required / noindex</small></a></li>)}</ol>
     </div>
   </section>
 ) : route.path === "/offline/" ? (

@@ -44,7 +44,7 @@ const requestHref = `https://digitracks.net/contact/?intent=consultation&origin=
 <section class="section pmo-method" id="pmo-method" aria-labelledby="pmo-method-title">
   <div class="shell pmo-method__grid">
     <div><p class="t-label">The working method</p><h2 id="pmo-method-title">Three moves that make the work easier to govern.</h2></div>
-    <ol>{guide.topics.map((topic, index) => <li key={topic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{topic}</h3><p>{index === 0 ? "Begin with a precise statement of what is being governed, delivered or learned. Ambiguity at the start becomes rework later." : index === 1 ? "Make the responsible person, supporting evidence and decision point visible to the people doing the work." : "Treat the record as a living project artefact. Update it when assumptions, scope or delivery evidence changes."}</p></li>)}</ol>
+    <ol>{guide.topics.map((topic, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><h3>{topic}</h3><p>{index === 0 ? "Begin with a precise statement of what is being governed, delivered or learned. Ambiguity at the start becomes rework later." : index === 1 ? "Make the responsible person, supporting evidence and decision point visible to the people doing the work." : "Treat the record as a living project artefact. Update it when assumptions, scope or delivery evidence changes."}</p></li>)}</ol>
   </div>
 </section>
 

@@ -97,7 +97,13 @@ const licensingHref = product
   ? `/contact/?intent=product-enquiry&product=${encodeURIComponent(product.id)}`
   : "/contact/?intent=product-enquiry";
 const relatedProducts = product
-  ? products.filter((item) => item.id !== product.id && (item.parentId === product.parentId || item.category === product.category)).slice(0, 4)
+  ? products
+      .filter((item) => {
+        if (item.id === product.id) return false;
+        if (product.parentId) return item.parentId === product.parentId || item.category === product.category;
+        return Boolean(product.category) && item.category === product.category;
+      })
+      .slice(0, 4)
   : [];
 const nestedProducts = product ? products.filter((item) => item.parentId === product.id) : [];
 const compactProductTitle = product ? !product.name.includes(" ") && product.name.length > 12 : false;

@@ -29,6 +29,14 @@ export const ANALYTICS_CTA_IDS = [
   "compare-mindone-editions",
   "explore-procurement",
   "request-procurement-demo",
+  "request-security-pack",
+  "open-live-platform",
+  "all-platforms",
+  "learning-contact",
+  "explore-products",
+  "request-vedik-demo",
+  "inspect-vedik-products",
+  "inspect-campus-grid",
 ] as const;
 
 export const ANALYTICS_RESOURCE_IDS = [
@@ -44,4 +52,5 @@ export const ANALYTICS_INTENTS = [
   "support",
   "partnership",
   "learning",
+  "security",
 ] as const;

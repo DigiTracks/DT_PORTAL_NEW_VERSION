@@ -25,7 +25,7 @@ const gaps = [
   </div>
   <div class="shell hcm-evidence-page__body">
     {isGaps ? (
-      <div class="hcm-gap-list">{gaps.map((gap) => <article key={gap.id}><span>{gap.id}</span><div><h2>{gap.title}</h2><p>{gap.detail}</p></div><strong>{gap.status}</strong></article>)}</div>
+      <div class="hcm-gap-list">{gaps.map((gap) => <article><span>{gap.id}</span><div><h2>{gap.title}</h2><p>{gap.detail}</p></div><strong>{gap.status}</strong></article>)}</div>
     ) : (
       <div class="hcm-release-method">
         <article><span>01</span><h2>Identify the source.</h2><p>Record the authorised repository, document or export, its version and the date it was read. A live page alone is not a migration licence.</p></article>

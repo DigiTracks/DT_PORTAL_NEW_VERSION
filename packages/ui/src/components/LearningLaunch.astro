@@ -31,8 +31,8 @@ const platforms: Record<string, PlatformEntry> = {
     icon: "/brand/platform-sourcecraft.webp",
     lede: "Procurement and contract language explained plainly, with the same term read across regions.",
     about: [
-      "SourceCraft is a reference for the words that decide commercial outcomes: what a term means, where the meaning shifts by region, and how two similar terms differ before either is used in a contract.",
-      "It is written for the people who draft, negotiate or review procurement documents, so each entry stays close to the clause rather than the dictionary."
+      "SourceCraft covers the language of procurement and contracts: what a term means, where its meaning shifts by region, and how two similar terms differ before either is used in a contract.",
+      "Each entry sits beside the clause it comes from, with a worked comparison and regional notes instead of a dictionary definition."
     ],
     facts: ["Live site", "Direct link", "Reference in the browser"],
     links: [
@@ -131,7 +131,7 @@ if (!platform) throw new Error(`No launch entry for ${route.path}`);
     <div class="ll-address">
       <p class="t-label">Live site</p>
       <a href={platform.href} rel="noreferrer" target="_blank" data-live>{platform.domain}<span aria-hidden="true">↗</span></a>
-      <p>This page explains the platform. The link opens the real application, free, with no account in between.</p>
+      <p>The link opens the live application. Free to open, no account.</p>
     </div>
   </div>
 </section>
@@ -154,7 +154,7 @@ if (!platform) throw new Error(`No launch entry for ${route.path}`);
       <strong>{platform.domain}</strong>
       <span class="ll-free__cta">Open {platform.name}<span aria-hidden="true">↗</span></span>
     </a>
-    <p class="ll-free__note">Free to open. No account, no payment, no approval — the link above is the whole door.</p>
+    <p class="ll-free__note">Free to open. No account, no payment, no approval.</p>
   </div>
 </section>
 
@@ -162,7 +162,7 @@ if (!platform) throw new Error(`No launch entry for ${route.path}`);
   <div class="shell">
     <div class="ll-inside__head">
       <div><p class="t-label">Straight in</p><h2 id="ll-inside-title">Where to start inside {platform.name}.</h2></div>
-      <p>Each link opens the live platform at that page. Nothing here is a preview or a sample.</p>
+      <p>Each link opens that page inside the live platform.</p>
     </div>
     <ol class="ll-links">
       {platform.links.map((link, index) => (
@@ -182,7 +182,7 @@ if (!platform) throw new Error(`No launch entry for ${route.path}`);
   <div class="shell ll-boundary__grid">
     <div><p class="t-label">Boundary</p><h2 id="ll-boundary-title">The platform does the work.</h2></div>
     <div class="ll-boundary__body">
-      <p>{platform.name} runs at its own address with its own navigation, search and lessons. This page links to it; it does not copy it.</p>
+      <p>{platform.name} runs at its own address, with its own navigation, search and lessons.</p>
       <p>Work you save in {platform.name} — progress, notes, calculations — is kept in your browser on this device.</p>
       <Button href={platform.href} external ctaId="open-live-platform">Open {platform.name}</Button>
     </div>

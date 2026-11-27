@@ -56,7 +56,7 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
     <div class="learning-hero__copy">
       <p class="t-label">Digi Tracks learning / four live platforms</p>
       <h1 id="learning-title">Four platforms.<br><em>One click each.</em></h1>
-      <p class="learning-hero__lede">Four learning platforms, all live and free to open. Open a card to see what the platform is, then step straight into the running site.</p>
+      <p class="learning-hero__lede">Four live learning platforms: contract language, project delivery, procurement and Oracle HCM. Every card opens its page; every page opens the running site.</p>
       <div class="button-row">
         <Button href="#learning-paths" ctaId="explore-learning-paths">Choose a platform</Button>
         <Button href={requestHref} variant="secondary">Talk to the studio</Button>
@@ -84,10 +84,10 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">The four platforms</p><h2 id="paths-title">Open the one you need.</h2></div>
-      <p>Every row opens that platform's page here, with the live link ready to go. Nothing is rebuilt or mirrored on this site.</p>
+      <p>Every row opens that platform's page, with the live link ready to go.</p>
     </div>
     <ol class="learning-path-grid">
-      {platforms.map((platform, index) => <li key={platform.key}>
+      {platforms.map((platform, index) => <li>
         <a href={platform.path} data-live>
           <span class="learning-path-grid__number">{String(index + 1).padStart(2, "0")}</span>
           <img class="learning-path-grid__icon" src={platform.icon} alt="" width="56" height="56" loading="lazy" />
@@ -110,7 +110,7 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
   <div class="shell learning-boundary__grid">
     <div><p class="t-label">One page, four addresses</p><h2 id="learning-boundary-title">The platforms are the destination.</h2></div>
     <div class="prose">
-      <p>SourceCraft, LearnPMO, ProcureSherpa Learning and HCM Fusion each run as their own application. This page links to them; it does not copy them, and it holds none of their content.</p>
+      <p>SourceCraft, LearnPMO, ProcureSherpa Learning and HCM Fusion each run as their own application, with their own content, progress and saved work.</p>
       <p>Each platform keeps its own saved work in your browser, on this device. If a guided walkthrough would help, the studio will run one against your own material.</p>
       <Button href={requestHref} variant="secondary">Talk to the studio</Button>
     </div>

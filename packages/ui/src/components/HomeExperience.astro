@@ -92,20 +92,20 @@ const practiceSteps = [
     <div class="home-flagship__copy">
       <p class="t-label">Flagship / MIND ONE family</p>
       <h2 id="home-flagship-title">One family.<br><em>Two ways to practise.</em></h2>
-      <p>MIND ONE grounds interview practice in the candidate’s résumé and the role brief. Basic is the free, focused edition; Complete adds durable history, progress and role-development tools to the full feature set.</p>
+      <p>MIND ONE grounds interview practice in the candidate’s résumé and the role brief. Basic is the focused edition, free by request; Complete adds durable history, progress and role-development tools.</p>
       <dl class="home-flagship__facts">
         <div><dt>MIND ONE Basic</dt><dd>Free / focused practice</dd></div>
         <div><dt>MIND ONE Complete</dt><dd>Full MIND ONE feature access</dd></div>
-        <div><dt>Availability</dt><dd>Available now</dd></div>
+        <div><dt>Availability</dt><dd>Request-only / pre-launch</dd></div>
       </dl>
       <div class="button-row">
         <Button href="/contact/?intent=product-enquiry&product=mindone" ctaId="request-mindone-access">Get MIND ONE access</Button>
         <Button href="/products/mindone/compare/" variant="secondary" ctaId="compare-mindone-editions">Compare Basic and Complete</Button>
       </div>
-      <p class="home-flagship__note">Complete unlocks the full feature set, hosted AI included, under your provider's fair-use terms.</p>
+      <p class="home-flagship__note">Commercial terms, quotas and availability for both editions are confirmed with you before any access is issued.</p>
     </div>
     <div class="mindone-family">
-      <div class="mindone-family__head"><span>MIND ONE / Shared practice model</span><span>Available now</span></div>
+      <div class="mindone-family__head"><span>MIND ONE / Shared practice model</span><span>Request-only</span></div>
       <ol class="mindone-family__sequence">
         {practiceSteps.map(([number, title, detail]) => <li><span>{number}</span><div><strong>{title}</strong><small>{detail}</small></div><i aria-hidden="true"></i></li>)}
       </ol>
@@ -148,7 +148,7 @@ const practiceSteps = [
           <p class="duo-product__name">{product.name}</p>
           <p>{copy}</p>
           <ol class="duo-product__map" aria-label={`${product.name} selected capabilities`}>
-            {product.capabilities.slice(0, capabilityLimit).map((capability) => <li key={capability}><strong>{capability}</strong></li>)}
+            {product.capabilities.slice(0, capabilityLimit).map((capability) => <li><strong>{capability}</strong></li>)}
           </ol>
           {product.id === "vedik" && (
             <nav class="duo-product__family" aria-label="Vedik education ecosystem">
