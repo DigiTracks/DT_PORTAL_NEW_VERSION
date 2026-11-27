@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T19:13:30.680Z",
-  "generatedDate": "2026-11-26",
+  "generatedAt": "2026-11-27T14:42:44.444Z",
+  "generatedDate": "2026-11-27",
   "generator": {
     "name": "generate-social-cards.mjs",
     "version": 4,
@@ -9,9 +9,9 @@
     "node": "v24.22.3",
     "renderer": "Playwright Chromium",
     "rendererVersion": "158.0.8127.88",
-    "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
+    "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
     "routeRegistry": "packages/seo/src/route-registry.generated.ts",
-    "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6",
+    "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9",
     "dimensions": {
       "width": 1200,
       "height": 630
@@ -81,15 +81,15 @@
     ]
   },
   "counts": {
-    "cards": 86,
+    "cards": 89,
     "sourceAssets": 42,
     "fonts": 2,
-    "assetRecords": 130,
+    "assetRecords": 133,
     "byOrigin": {
       "hcmfusion": 3,
-      "learn": 6,
+      "learn": 8,
       "learnpmo": 12,
-      "portal": 59,
+      "portal": 60,
       "procuresherpa": 1,
       "sourcecraft": 5
     }
@@ -106,13 +106,13 @@
         "height": 630
       },
       "sha256": "f21e688e9a49fb8c6f18b0d3a5118659fb4e5a265a1289e8b4053399a5dc3f23",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -126,13 +126,13 @@
         "height": 630
       },
       "sha256": "7d453beee3084f8deb3826747d34a8c7826ca0d9a7900ff65fe9e181b2ff4c03",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -146,13 +146,13 @@
         "height": 630
       },
       "sha256": "dc734b0d91c522faa76c1bdbc4aa8ec90d6e80dac4b7a8b3eff387a81abf4956",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -166,13 +166,13 @@
         "height": 630
       },
       "sha256": "3464d69ccc98e104db973efae5b86b6fc13b42cf3a753331f0ccd648fac41f13",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -186,13 +186,13 @@
         "height": 630
       },
       "sha256": "5f42153616a6702290fc32f5bd79ab83651722526b61b8d06d5e446a4b1e3de9",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -206,13 +206,13 @@
         "height": 630
       },
       "sha256": "55c9b36fde84bc36ed125b3b2289310519a0ba73c80479611ce1ae93f9ff15f5",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -226,13 +226,13 @@
         "height": 630
       },
       "sha256": "b0574767092aa1eeaa70f4b750afef3789bd95821a83757979b082cf7888b315",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -246,13 +246,13 @@
         "height": 630
       },
       "sha256": "202a770fe7d04af39829c7b87c20f89c1b44594a1a651e42f9787f9f177544ac",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -266,13 +266,13 @@
         "height": 630
       },
       "sha256": "88a89717dd68223092156a5e3af99b150d1e83300a5462987544e0653fd3a79f",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -286,13 +286,13 @@
         "height": 630
       },
       "sha256": "7196209158f022874a1d9124f498ffced51be8b6879b2d2616a143031634362f",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -306,13 +306,13 @@
         "height": 630
       },
       "sha256": "75f20ea548180f6d35fb124851fa46e5e54c20d19010ad44427684426fcb1b4d",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -326,13 +326,13 @@
         "height": 630
       },
       "sha256": "8b37da6bf119c871ec57c8c13f8cf0e693579eb87ad6b022892e4daeb5054981",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -346,13 +346,13 @@
         "height": 630
       },
       "sha256": "6d77531d670e13f4e64b9c7e2cf5fb13f79063d854ddc4abf18810246c512d82",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -366,13 +366,13 @@
         "height": 630
       },
       "sha256": "25eaab94cdedabd0c5b9cbd6fed0482b07b5c803dd674b57edc3c6b20d31a8de",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -386,13 +386,13 @@
         "height": 630
       },
       "sha256": "44e3562ba7e553a8a0019e15cebd81d6f2eccbc4bf4f599e642673557acb46ca",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -406,13 +406,13 @@
         "height": 630
       },
       "sha256": "e1b19c21a8d41b9f303207e8819b7345e88627c9cbaccafc0e531aa407c69fe1",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -426,13 +426,13 @@
         "height": 630
       },
       "sha256": "17475a8d6f92b290c543d2a8617f8ce6e9cc948e3970185f1cc1836097be2488",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -446,13 +446,13 @@
         "height": 630
       },
       "sha256": "7c0ead0687952318284f147ea6f8722b47d8ab3d4ca058c2dab08690dd58fe22",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -466,13 +466,13 @@
         "height": 630
       },
       "sha256": "d74b86496ddd6c57de61a1529abaf7c64c3f4edb93ee46f9d66673e90aec06e7",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -486,13 +486,13 @@
         "height": 630
       },
       "sha256": "c4b1b2084f4504bce06fc855593b86fa6bc7559a8de261d1bd25f8a6ce9ece86",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -506,13 +506,13 @@
         "height": 630
       },
       "sha256": "853040d3b822ec45b5a8f04d8ab32d11c7fe0c7dde962e1504b52e5c0dd862f4",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -526,13 +526,13 @@
         "height": 630
       },
       "sha256": "dda7594440d7ab28e907b3f60f82efcd6934fbafb486f9e7ae23266816d54bd4",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -546,13 +546,13 @@
         "height": 630
       },
       "sha256": "9a1d09511197ecef13308bf709b3d8acdf8b8642897d59f929a2fa59f4337965",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -566,13 +566,13 @@
         "height": 630
       },
       "sha256": "4f470035fc0a87fab518f4a67e3d0dd2a448080386c3ec12fc4175b5f1b5b321",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -586,13 +586,13 @@
         "height": 630
       },
       "sha256": "1a69c58705b277834d1e4cb00af52fd745d86cdf80a1f4e7e824987eab1cbb15",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -606,13 +606,13 @@
         "height": 630
       },
       "sha256": "bc9f128d3d211129de8b2afe84b6eed855714de4741515a1e730d09ee353ab22",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -626,13 +626,13 @@
         "height": 630
       },
       "sha256": "7a585bb6f3acd4354e7857e95f7e1f6da0f1aea9e04ff116824ff8362dc3fbb2",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -646,13 +646,13 @@
         "height": 630
       },
       "sha256": "44a31ee217b97cac2ae554c1c9aafdf2d12c3069badc85c7b29cd0ef52b929b3",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -666,13 +666,13 @@
         "height": 630
       },
       "sha256": "be594e5eb7c3eb42c9c9a3a5016a7bb096c18d8b0172871fea71f3e27a61169f",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -686,13 +686,13 @@
         "height": 630
       },
       "sha256": "c0188c63ed6429eaaa969c1ab8ed085a6e2e9207c258751bd09fb5284df7ffd8",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -706,13 +706,13 @@
         "height": 630
       },
       "sha256": "0d756bf20c833c1cfe4a2b5a9b87a0e0f64b7d6d92593eb01b36d9bcc3c0ee06",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -726,13 +726,13 @@
         "height": 630
       },
       "sha256": "945fba411242566993c8d07bfb4789aabc816bd88fcea3c54bdba8cde503d0a2",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -746,13 +746,13 @@
         "height": 630
       },
       "sha256": "1caefae5aa73a9a35232fb60b6d30c856c1fe8561b1b462ee2d3e2a6aeba04d4",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -766,13 +766,13 @@
         "height": 630
       },
       "sha256": "c7d7b8d27c60d6a987dc9872b6ff1560c422a038a028994d5f9bd8c17c93d3b1",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -786,13 +786,13 @@
         "height": 630
       },
       "sha256": "af85df3c8dbe71518347a98035d57d68a34d9392a191b7dc8a3c754a50899a3c",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -806,13 +806,13 @@
         "height": 630
       },
       "sha256": "b1b74b69d11bc7bd45dff3176b100d199a8618dea07a917d871203c9b6717072",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -826,13 +826,13 @@
         "height": 630
       },
       "sha256": "3aa5f8928afec33775a0bc3bc7b95efeb28fd14c19721ba6022b7d1cfc0d63f4",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -846,13 +846,13 @@
         "height": 630
       },
       "sha256": "3c0e65a0670741206d02164cd43647a4b8660c7a67d854c80d653a4982f73d01",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -866,13 +866,13 @@
         "height": 630
       },
       "sha256": "c7177868065903aeb147fcd9e279f7a3776a21ed4eb5b44651c2d3abab48e429",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -886,13 +886,13 @@
         "height": 630
       },
       "sha256": "ce50bf3bff66060c81a3c378805bf3c209be9108d4dfd0cbb482f683aed37216",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -906,13 +906,13 @@
         "height": 630
       },
       "sha256": "151cddb84812ab28a8aae5efb450687fc47e50ac09095e84719bb1dd6dd508dc",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -926,13 +926,13 @@
         "height": 630
       },
       "sha256": "368352d082498e23309bb7083a9423f610726cb3cbe8554c306c814990714673",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -946,13 +946,13 @@
         "height": 630
       },
       "sha256": "899759f10e598ad66604d7817e9e608465c70b3f76d1847fe67564d0f519765c",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -966,13 +966,13 @@
         "height": 630
       },
       "sha256": "ed31c68c71511d34b6a0856e31e94fe212873efd9b84dff01bd896397eda092e",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -986,13 +986,13 @@
         "height": 630
       },
       "sha256": "057e1ac6d34172e4a3e57e17c8c0da4b488ed72561b06f61328b645347fc4f92",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1006,13 +1006,13 @@
         "height": 630
       },
       "sha256": "68122a344fc53650f4ab824836b37798c4264463fa2fcebdaa86cd0f328269dd",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1026,13 +1026,13 @@
         "height": 630
       },
       "sha256": "10016d5d028b371f2e227f892e91a927b8a16a2ee8d44ceacf0fb7311950ba54",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1046,13 +1046,13 @@
         "height": 630
       },
       "sha256": "3a4915e4cd2f3d3fce12bdf4448d989e9b50057986486d77fa5be4bf345666a3",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1066,13 +1066,13 @@
         "height": 630
       },
       "sha256": "4ba1f053276cad4d8438a4c44311931c39bc4847936d97050099adc58fccdd97",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1086,13 +1086,13 @@
         "height": 630
       },
       "sha256": "2aa86fb19218b7d11f6de46f482229e5dd7f2caf325905d143d3a0091f2f5708",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1106,13 +1106,13 @@
         "height": 630
       },
       "sha256": "07ee069ab3f62fca356c474146b41e3204d1aaa58c51ff7397bd9fd81f3d97af",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1126,13 +1126,13 @@
         "height": 630
       },
       "sha256": "5bf684e935bf09dac7c335d04b9ed3d6ab4753d9a22f8fa40bfa546bbe204225",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1146,13 +1146,13 @@
         "height": 630
       },
       "sha256": "b4a7561a482bce241c5d51e79fb30d94f62569b7a83317d53c6fd543860006ec",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1166,13 +1166,13 @@
         "height": 630
       },
       "sha256": "f44f566c1652ef99d42a639037e5f5d6aeaf81beb1fe8bc8278646527da40a2e",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1186,13 +1186,13 @@
         "height": 630
       },
       "sha256": "abd49121719df164e7483f3ab14594c1914bc0ebd24c82f42d36f5ddb99a5227",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1206,13 +1206,13 @@
         "height": 630
       },
       "sha256": "0cd293173004834e753fde2f8a416703127872577d88fb5d842e12339b10f684",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1226,13 +1226,13 @@
         "height": 630
       },
       "sha256": "6eb63cb08a277c8cc79462855ca1762e985708cf7387ca7828691c39e7e80b68",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1246,13 +1246,13 @@
         "height": 630
       },
       "sha256": "4bad135520266934a452be116a93024abc638e438624482f0a0a836b4ba1958e",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1266,13 +1266,13 @@
         "height": 630
       },
       "sha256": "d23fec7ac228939adbca8f5d81f6b50dba0378bccae87f5faeda870aa5a20b7c",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1286,13 +1286,13 @@
         "height": 630
       },
       "sha256": "465a53fa9c399a4341beda762b6e860f338c2ad71b10148ec2fc232e6d047e88",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1306,13 +1306,13 @@
         "height": 630
       },
       "sha256": "626e7552adb6fd83a925bd3b444d0225500fcd74f0f5ccd015c175b8aa3a915d",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1326,13 +1326,13 @@
         "height": 630
       },
       "sha256": "c83221a298a82e57900d1f20f8987ab05d68df7ec9ec767d81df254f4acae72e",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1346,13 +1346,13 @@
         "height": 630
       },
       "sha256": "37232fe47086d71f09ee4addfb7141d3d2433867f5dc0afe33d159adfade00bc",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1366,13 +1366,13 @@
         "height": 630
       },
       "sha256": "e0831ad39fcd99588548a94df2ee9e1831be2ac0921c2fd65b475ce85de440c5",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1386,13 +1386,13 @@
         "height": 630
       },
       "sha256": "667ee20c2e86b46889996375e4c72fdb5307144e58d1d3952fbd7cb2524d9640",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1406,13 +1406,13 @@
         "height": 630
       },
       "sha256": "88a23874b2009a58cd372332197bf8d09ffdf6ee1c2de5a459fca9c54bf5b4cd",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1426,13 +1426,13 @@
         "height": 630
       },
       "sha256": "5acc6dcd14b93d03bfb3af31192df944b6b1884050d73ec38d584a5cde846e6c",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1446,13 +1446,13 @@
         "height": 630
       },
       "sha256": "bcb921847f518c1adb50d3a0520c3877fb97ca5f2ad0ffe4a65dc03ae19257a6",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1466,13 +1466,13 @@
         "height": 630
       },
       "sha256": "501090d22e459de322ee7d18d74c15ade8c96ab8278a3ab17b9476991a1f3455",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1486,13 +1486,13 @@
         "height": 630
       },
       "sha256": "e913d852a4419e238665cae60ee0684ff8f628f11ac57418f2d8ff6e294dc0ea",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1506,13 +1506,13 @@
         "height": 630
       },
       "sha256": "67368197e81ecc9a9af0efcd15d199b55a955fd3e0487312e79038a024df8ec9",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1526,13 +1526,13 @@
         "height": 630
       },
       "sha256": "bf33d1bfff85511b731c257d81ea93e51382f22af4fefaf15f78dc168d224b4b",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1546,13 +1546,13 @@
         "height": 630
       },
       "sha256": "ede1eed712dfbffe6dbed7623829dd2866d9be54325ebfae0fb590271dc5e56d",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1566,13 +1566,13 @@
         "height": 630
       },
       "sha256": "56ff7c6c5a4575d79dade3362fc5b038441f0ea47ee86348a9eb7b61b609f3b9",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1586,13 +1586,13 @@
         "height": 630
       },
       "sha256": "6aa57905f708e875bd607e1b8268b1c5c16f25f1ff9c20f48398264e13a44781",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1606,13 +1606,13 @@
         "height": 630
       },
       "sha256": "162e914de3c8624a3a0ac18aeb6a0f3cad89428dab2f932c717ac1bd58c9ef5e",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1626,13 +1626,13 @@
         "height": 630
       },
       "sha256": "64cf133f6a32c1bc1be63f3156e78acc28b5d18bf807a921a8d6041747fada96",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1646,13 +1646,13 @@
         "height": 630
       },
       "sha256": "93b48002dfbec48314e9a6f14540df32007af0c16743e44fe53b42decbf63170",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1666,13 +1666,13 @@
         "height": 630
       },
       "sha256": "b4c0f251a41e6c69d75ade4b314da39a61968d021e44d77f5ff5d2124b2ee5e5",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1686,13 +1686,13 @@
         "height": 630
       },
       "sha256": "494ed675825728fdd6b1501e51e485c9eac7961abd2faf056c89effd7fa3979f",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1706,13 +1706,13 @@
         "height": 630
       },
       "sha256": "fbc221d44dde497bab847002b1ac16083b1dc0715bbe4d49367afcbbf2b70aae",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1726,13 +1726,13 @@
         "height": 630
       },
       "sha256": "2bdef9de8cd20dcab6ee81b6e967014ce48e6faadeaf3e9ce1b342e1a3a37b98",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1746,13 +1746,13 @@
         "height": 630
       },
       "sha256": "084eda35c243965729c086f0e312a3f8b3e493668c09f016e6ce49af438beb2a",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1766,13 +1766,13 @@
         "height": 630
       },
       "sha256": "825c1300c865f9d2c7b07fade316716470d933f0930de79cb58eecb4762d9b88",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1786,13 +1786,13 @@
         "height": 630
       },
       "sha256": "9a5b7ed44fe812ee3fbe175fef303037cff119667d96ccf0bc2fb4a2b11385e5",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     },
     {
@@ -1806,13 +1806,73 @@
         "height": 630
       },
       "sha256": "79a5d9ee935e81809dd65ce773e011d94a706a413bbb7f4aa9333d5d958c39df",
-      "generatedAt": "2026-11-26T19:13:30.680Z",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
       "approval": "pending",
       "generator": {
         "name": "generate-social-cards.mjs",
         "version": 4,
-        "scriptSha256": "e4249786d6362bd45be899c5f8b5d9a2c226da644c74e7fedef2841c3cc9f9a5",
-        "routeRegistrySha256": "011141496f4667890d1517f7012af275eae0510c97d059243bb0c762807c58c6"
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
+      }
+    },
+    {
+      "routeId": "portal:static:/resources/",
+      "origin": "https://digitracks.net",
+      "originId": "portal",
+      "path": "/resources/",
+      "file": "apps/portal/public/social/resources-e3a887b5700969e0.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "d237e577122ef18e5c097b959e97296e5ef70e66170ba49adfa9ddcd8981669b",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
+      "approval": "pending",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 4,
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
+      }
+    },
+    {
+      "routeId": "learn:static:/privacy/",
+      "origin": "https://learn.digitracks.net",
+      "originId": "learn",
+      "path": "/privacy/",
+      "file": "apps/learn/public/social/privacy-45885cca71b38391.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "e7b0c4d237ec206e56f6e0e182bf59fc6a215a5aa0990ea50e4d27fec3d3ac14",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
+      "approval": "pending",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 4,
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
+      }
+    },
+    {
+      "routeId": "learn:static:/terms/",
+      "origin": "https://learn.digitracks.net",
+      "originId": "learn",
+      "path": "/terms/",
+      "file": "apps/learn/public/social/terms-d1a1fe7fe60eaf90.png",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      },
+      "sha256": "c2ba50c4945a116db1d49ed1b2e6f3c6bd34c1199e5b4a2307ada21eb8bfa355",
+      "generatedAt": "2026-11-27T14:42:44.444Z",
+      "approval": "pending",
+      "generator": {
+        "name": "generate-social-cards.mjs",
+        "version": 4,
+        "scriptSha256": "1443fce1ddf0d6060efddd7c1f26bc32e8acffca1654c9ea5c1904ab71679f3a",
+        "routeRegistrySha256": "dc2674e700c6702d6eb6747e44b9b75ce5085c98475cc6f59a3dab619038c2f9"
       }
     }
   ]

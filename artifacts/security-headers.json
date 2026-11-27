@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-27T13:19:15.026Z",
+  "generatedAt": "2026-11-27T14:56:49.773Z",
   "origins": [
     {
       "origin": "portal",
-      "htmlFiles": 62,
+      "htmlFiles": 63,
       "inlineScriptHashes": 67,
       "cspBytes": 4055
     },
     {
       "origin": "learn",
-      "htmlFiles": 7,
-      "inlineScriptHashes": 10,
-      "cspBytes": 977
+      "htmlFiles": 9,
+      "inlineScriptHashes": 12,
+      "cspBytes": 1085
     },
     {
       "origin": "sourcecraft",

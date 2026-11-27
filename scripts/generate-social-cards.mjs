@@ -113,6 +113,66 @@ const registryErrors = validateRouteRegistry(routeRegistry);
 if (registryErrors.length) throw new Error(`Invalid route registry:\n${registryErrors.join("\n")}`);
 
 const routes = routeRegistry.filter((route) => route.indexable && route.routeClass === "public-seo" && !route.redirectTo && !route.hashRoute);
+
+// Pages built outside the route registry still need a card, because the layout
+// derives their og:image from the same path.
+const staticRoutes = [
+  {
+    id: "portal:static:/resources/",
+    origin: "portal",
+    path: "/resources/",
+    routeClass: "public-seo",
+    indexable: true,
+    title: "Resources",
+    description: "Engineering notes, security material, buyer questions and the four free learning platforms.",
+    template: "marketing",
+    breadcrumbs: [],
+    schema: [],
+    ctaIds: [],
+    analyticsId: "static:resources",
+    canonicalOrigin: "https://digitracks.net",
+    baselineSitemap: false,
+    hashRoute: false,
+    contentStatus: "approved"
+  },
+  {
+    id: "learn:static:/privacy/",
+    origin: "learn",
+    path: "/privacy/",
+    routeClass: "public-seo",
+    indexable: true,
+    title: "Privacy notice",
+    description: "What the learning platform stores, where it stays and how to have it removed.",
+    template: "legal",
+    breadcrumbs: [],
+    schema: [],
+    ctaIds: [],
+    analyticsId: "static:learn-privacy",
+    canonicalOrigin: "https://learn.digitracks.net",
+    baselineSitemap: false,
+    hashRoute: false,
+    contentStatus: "approved"
+  },
+  {
+    id: "learn:static:/terms/",
+    origin: "learn",
+    path: "/terms/",
+    routeClass: "public-seo",
+    indexable: true,
+    title: "Terms of use",
+    description: "The terms that apply to the free learning material and practice tools.",
+    template: "legal",
+    breadcrumbs: [],
+    schema: [],
+    ctaIds: [],
+    analyticsId: "static:learn-terms",
+    canonicalOrigin: "https://learn.digitracks.net",
+    baselineSitemap: false,
+    hashRoute: false,
+    contentStatus: "approved"
+  }
+];
+routes.push(...staticRoutes);
 if (routes.length === 0) throw new Error("The route registry contains no indexable public pages.");
 
 const fontSpecs = [

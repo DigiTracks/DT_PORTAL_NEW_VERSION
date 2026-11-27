@@ -100,7 +100,7 @@ const constraints = isIndustry
   : [
       ["Audit trail", "Every change attributable, reviewable and exportable.", "/products/recon/"],
       ["Offline sites", "Local-first operation for sites with unreliable links.", "/products/opspilot/"],
-      ["Multi-entity structure", "One system, many legal entities and currencies.", "/products/nexora/"],
+      ["Multi-entity structure", "One system, many legal entities and currencies.", "/products/unify/nexora/"],
       ["Regulated records", "Healthcare, education and candidate data handled with care.", "/products/chronos/"]
     ];
 ---
@@ -160,7 +160,7 @@ const constraints = isIndustry
       {entries.map((item, index) => (
         <li class="sol-card">
           <a href={item.href}>
-            <span class="sol-card__ghost" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+            <span class="sol-card__bleed" aria-hidden="true"><span class="sol-card__ghost">{String(index + 1).padStart(2, "0")}</span></span>
             <span class="sol-card__index">{String(index + 1).padStart(2, "0")}</span>
             <h2>{item.name}</h2>
             <p>{item.summary}</p>
@@ -252,7 +252,7 @@ const constraints = isIndustry
 
   .sol-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin: 0; padding: 0; list-style: none; background: rgb(13 27 46 / 14%); }
   .sol-grid { background: rgb(13 27 46 / 12%); }
-  .sol-card { position: relative; background: linear-gradient(165deg, #fffdf6 0%, #f8f2e2 100%); overflow: hidden; }
+  .sol-card { position: relative; background: linear-gradient(165deg, #fffdf6 0%, #f8f2e2 100%); overflow: clip; }
   .sol-card a {
     position: relative;
     display: grid;
@@ -264,6 +264,7 @@ const constraints = isIndustry
     text-decoration: none;
     transition: background 220ms ease;
   }
+  .sol-card__bleed { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
   .sol-card__ghost {
     position: absolute;
     right: 0.9rem;

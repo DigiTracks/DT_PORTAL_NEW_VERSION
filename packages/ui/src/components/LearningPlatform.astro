@@ -272,7 +272,7 @@ const labs = [
   .lp-term dt span { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.14em; color: var(--lp-accent); }
   .lp-term dd { margin: 0.6rem 0 0; }
   .lp-term dd p { margin: 0 0 0.6rem; color: var(--ink-muted); font-size: 0.94rem; line-height: 1.6; }
-  .lp-term__watch { padding-top: 0.6rem; border-top: 1px solid rgb(13 27 46 / 10%); color: var(--ink) !important; font-size: 0.9rem !important; }
+  .lp-term__watch { max-width: none; padding-top: 0.6rem; border-top: 1px solid rgb(13 27 46 / 10%); color: var(--ink) !important; font-size: 0.9rem !important; }
   .lp-term__watch b { font-weight: 600; color: var(--lp-accent); }
 
   .lp-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin: 1.8rem 0 0; padding: 0; list-style: none; background: rgb(13 27 46 / 14%); counter-reset: none; }
@@ -318,7 +318,7 @@ const labs = [
   .lp-modules span { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--lp-accent); }
   .lp-modules h3 { margin: 0; font-family: var(--font-display); font-size: 1.18rem; font-weight: 560; letter-spacing: -0.02em; color: var(--ink); }
   .lp-modules p { margin: 0; color: var(--ink-muted); font-size: 0.92rem; line-height: 1.56; }
-  .lp-modules small { margin-top: 0.3rem; padding-top: 0.6rem; border-top: 1px solid rgb(13 27 46 / 10%); font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; color: #6c7a8c; }
+  .lp-modules small { display: block; max-width: none; margin-top: 0.3rem; padding-top: 0.6rem; border-top: 1px solid rgb(13 27 46 / 10%); font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; color: #6c7a8c; }
 
   .lp-sequence { margin: 1.8rem 0 0; padding: 0; list-style: none; border-top: 1px solid rgb(13 27 46 / 14%); }
   .lp-sequence li { display: grid; grid-template-columns: 3rem minmax(0, 1fr) minmax(0, 0.9fr); gap: clamp(1rem, 3vw, 3rem); padding: 1.15rem 0; border-bottom: 1px solid rgb(13 27 46 / 10%); align-items: start; }
@@ -333,7 +333,7 @@ const labs = [
   .lp-labs span { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--lp-accent); }
   .lp-labs h3 { margin: 0; font-family: var(--font-display); font-size: 1.18rem; font-weight: 560; letter-spacing: -0.02em; color: var(--ink); }
   .lp-labs p { margin: 0; color: var(--ink-muted); font-size: 0.92rem; line-height: 1.56; }
-  .lp-labs small { margin-top: 0.3rem; padding-top: 0.6rem; border-top: 1px solid rgb(13 27 46 / 10%); font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; color: #6c7a8c; }
+  .lp-labs small { display: block; max-width: none; margin-top: 0.3rem; padding-top: 0.6rem; border-top: 1px solid rgb(13 27 46 / 10%); font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; color: #6c7a8c; }
 
   .lp-boundary { padding-block: clamp(2.6rem, 4.4vw, 4rem); border-top: 1px solid rgb(13 27 46 / 12%); }
   .lp-boundary__grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }

@@ -278,6 +278,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
                     ))}
                   </div>
                 ))}
+                <a class="nav-menu__cta" href="/resources/">All resources<span aria-hidden="true">→</span></a>
                 <a class="nav-menu__cta" href="/products/mindone/compare/">Compare MIND ONE editions<span aria-hidden="true">→</span></a>
               </div>
             </details>
@@ -327,6 +328,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
                     ))}
                   </>
                 ))}
+                <a href="/resources/">All resources</a>
               </>
             ) : (
               navItems.map((item) => <a href={item.href}>{item.label}</a>)

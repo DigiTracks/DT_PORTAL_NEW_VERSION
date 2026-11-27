@@ -1196,19 +1196,12 @@ body.page-product-index {
   }
 
   .catalogue-disciplines {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    margin-inline: -1.25rem;
-    padding-inline: 1.25rem;
-    scrollbar-width: none;
-  }
-
-  .catalogue-disciplines::-webkit-scrollbar {
-    display: none;
+    flex-wrap: wrap;
+    overflow-x: visible;
   }
 
   .catalogue-disciplines button {
-    flex: none;
+    flex: 0 1 auto;
   }
 
   .catalogue-record {
@@ -1267,11 +1260,6 @@ body.page-product-index {
 }
 
 @media (max-width: 39.999rem) {
-  .catalogue-disciplines {
-    margin-inline: -0.75rem;
-    padding-inline: 0.75rem;
-  }
-
   .catalogue-hero {
     padding-top: 3.5rem;
   }
