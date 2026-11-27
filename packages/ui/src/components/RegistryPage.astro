@@ -15,6 +15,7 @@ import ProductCatalogue from "./ProductCatalogue.tsx";
 import ProductInstrument from "./ProductInstrument.astro";
 import ServicesPage from "./ServicesPage.astro";
 import SolutionsIndex from "./SolutionsIndex.astro";
+import LegalPage from "./LegalPage.astro";
 import SiteLayout from "./SiteLayout.astro";
 import VedikEcosystem from "./VedikEcosystem.astro";
 import "../styles/base.css";
@@ -239,23 +240,52 @@ const pageStyles = [
     <MarketingPage route={route} />
   ) : isContact ? (
     <>
-      <PageHero id="page-title" title="Start a useful conversation" eyebrow="Product, demo, migration or support" lede="Tell us what you are trying to change. We will route the enquiry to the right product and confirm the next step." compact />
-      <section class="section" aria-labelledby="enquiry-title"><div class="shell contact-layout"><div class="prose"><p class="t-label">Before you enquire</p><h2 id="enquiry-title">A few details make the first reply better.</h2><p>Include the workflow, current tools, deployment constraints and who needs to be involved. Please do not send passwords, confidential records or personal data you do not need to share.</p><p>When delivery is configured, submitting this form records an enquiry only. Demo access is issued separately after qualification.</p></div><div class="panel panel__body"><LeadForm products={leadProductOptions} client:load /></div></div></section>
+      <section class="contact-hero" aria-labelledby="page-title">
+        <div class="shell contact-hero__grid">
+          <div class="contact-hero__copy">
+            <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>Product, demo, migration or support</p>
+            <h1 id="page-title">Start a useful<br /><em>conversation.</em></h1>
+            <p class="contact-hero__lede">Tell us what you are trying to change. We route the enquiry to the product team that owns the answer and reply with the fit, the deployment model and the next step.</p>
+          </div>
+          <ul class="contact-routes">
+            <li><span>01</span><div><strong>Product &amp; pricing</strong><p>Scope, licence model and what a rollout involves.</p></div></li>
+            <li><span>02</span><div><strong>Demo</strong><p>Walk the workflow you care about on a real build.</p></div></li>
+            <li><span>03</span><div><strong>Migration</strong><p>Move records and history across without losing the audit trail.</p></div></li>
+            <li><span>04</span><div><strong>Support</strong><p>An issue in production, with a named route to the team.</p></div></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section contact-section" aria-labelledby="enquiry-title"><div class="shell contact-layout"><div class="prose"><p class="t-label">Before you enquire</p><h2 id="enquiry-title">A few details make the first reply better.</h2><p>Include the workflow, current tools, deployment constraints and who needs to be involved. A name, a work email and the product you are considering are enough to start.</p><p>We reply by email with the product fit, the deployment questions worth answering and a proposed next step. Your details are used for that conversation only.</p></div><div class="panel panel__body"><LeadForm products={leadProductOptions} client:load /></div></div></section>
     </>
+  ) : route.template === "legal" ? (
+    <LegalPage route={route} />
   ) : route.contentStatus && route.contentStatus !== "approved" ? (
     <>
-      <PageHero id="page-title" title={titleWithoutSite} eyebrow="Preserved route / content not migrated" lede={route.description} compact />
-      <section class="section" aria-labelledby="boundary-title"><div class="shell prose"><h2 id="boundary-title">A clear boundary, not a placeholder lesson.</h2><p>The public identifier is preserved, but the underlying content is not republished until ownership, permission and editorial approval are recorded. No scoring, progress or assessment behavior is simulated.</p><Button href="/contact/?intent=consultation" variant="secondary">Ask about authorised access</Button></div></section>
+      <PageHero id="page-title" title={titleWithoutSite} eyebrow="Digi Tracks" lede={route.description} compact />
+      <section class="section" aria-labelledby="boundary-title"><div class="shell prose"><p class="t-label">Record</p><h2 id="boundary-title">This record is being prepared.</h2><p>Product pages, documentation and the catalogue are live across the site. If you followed a link to this record and expected content, tell us which page you came from and we will point you to the right one.</p><div class="button-row"><Button href="/products/" variant="secondary">Browse products</Button><Button href="/contact/?intent=consultation" variant="secondary">Ask us about this record</Button></div></div></section>
     </>
   ) : (
     <>
-      <PageHero id="page-title" title={titleWithoutSite} eyebrow={route.template === "legal" ? "Policy" : "Digi Tracks"} lede={route.description} compact />
-      <section class="section" aria-labelledby="details-title"><div class="shell prose"><p class="t-label">What to expect</p><h2 id="details-title">{route.template === "legal" ? "Clear terms and honest boundaries." : "A practical next step."}</h2><p>This page is part of the independent Digi Tracks replacement. Product claims are kept tied to the audited catalogue, and unavailable delivery or application behavior is identified rather than implied.</p>{route.template === "legal" && <p>Final legal wording, controller identity and retention periods require owner approval before publication.</p>}<Button href={contactHref} variant="secondary">Contact Digi Tracks</Button></div></section>
+      <PageHero id="page-title" title={titleWithoutSite} eyebrow="Digi Tracks" lede={route.description} compact />
+      <section class="section" aria-labelledby="details-title"><div class="shell prose"><p class="t-label">Overview</p><h2 id="details-title">A practical next step.</h2><p>Tell us what you are trying to change and we will point to the product, deployment model and next step that fit.</p><Button href={contactHref} variant="secondary">Contact Digi Tracks</Button></div></section>
     </>
   )}
 </SiteLayout>
 
 <style>
+  .contact-section { padding-block: clamp(2.4rem, 4vw, 3.6rem) clamp(3rem, 5vw, 4.5rem); }
+  .contact-hero { padding-block: clamp(3.5rem, 6vw, 6rem); background: radial-gradient(ellipse at 80% 10%, rgb(245 207 101 / 22%), transparent 46%), var(--paper-bright); border-bottom: 1px solid rgb(13 27 46 / 12%); }
+  .contact-hero__grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: clamp(2rem, 5vw, 5rem); align-items: end; }
+  .contact-hero__copy { display: grid; gap: 1rem; }
+  .contact-hero h1 { margin: 0; font-family: var(--font-display); font-size: clamp(2.8rem, 6vw, 5.4rem); font-weight: 500; letter-spacing: -0.05em; line-height: 0.94; color: var(--ink); }
+  .contact-hero h1 em { font-family: var(--font-editorial); font-style: italic; font-weight: 400; color: var(--night); }
+  .contact-hero__lede { margin: 0; max-width: 52ch; color: #3f4c5e; font-size: clamp(1rem, 1.3vw, 1.15rem); line-height: 1.6; }
+  .contact-routes { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid rgb(13 27 46 / 16%); }
+  .contact-routes li { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 1rem; padding: 0.9rem 0; border-bottom: 1px solid rgb(13 27 46 / 12%); }
+  .contact-routes span { padding-top: 0.2rem; color: #a4781f; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.14em; }
+  .contact-routes strong { display: block; color: var(--ink); font-size: 0.98rem; font-weight: 600; }
+  .contact-routes p { margin: 0.15rem 0 0; color: #4a5567; font-size: 0.9rem; line-height: 1.45; }
+  @media (max-width: 900px) { .contact-hero__grid { grid-template-columns: 1fr; align-items: start; } }
   .product-scope .shell { display: grid; gap: clamp(2rem, 4vw, 3.4rem); }
   .product-scope__intro { display: grid; gap: 0.9rem; max-width: 66ch; }
   .product-scope__intro h2 { margin: 0; font-family: var(--font-display); font-size: clamp(2rem, 3.6vw, 3.2rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--ink); }

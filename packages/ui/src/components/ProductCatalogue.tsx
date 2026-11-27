@@ -184,8 +184,8 @@ export default function ProductCatalogue({ products, demoEligibleProductIds, con
     : contactHref;
   const productRequestLabel = productSupportsDemo ? "Request full demo access" : "Register product interest";
   const productRequestNote = productSupportsDemo
-    ? "Demo access is issued separately after qualification."
-    : "An enquiry records interest only; product access is issued separately.";
+    ? "We will confirm a demo slot and the workflow to walk through."
+    : "We will reply with the product fit and the next step.";
 
   const applyUrlState = useCallback((params: URLSearchParams) => {
     const next = readCatalogueState(params, orderedProducts);

@@ -548,9 +548,12 @@ export default function EcosystemSculpture({ products, className }: EcosystemScu
       renderer.setSize(width, height, false);
       camera.aspect = width / height;
       const vFov = (camera.fov * Math.PI) / 180;
-      const fitHeight = (TIER_HEIGHT + CARD_HEIGHT / 2 + 0.95) / Math.tan(vFov / 2);
-      const fitWidth = (ORBIT_RADIUS + CARD_WIDTH / 2 + 0.95) / (Math.tan(vFov / 2) * camera.aspect);
-      camera.position.z = Math.max(10.2, fitHeight, fitWidth) * 1.02;
+      const halfFov = Math.tan(vFov / 2);
+      const fitHeight = (TIER_HEIGHT + CARD_HEIGHT / 2 + 0.95) / halfFov;
+      // Cards on the near side of the ring sit closer to the camera and project wider
+      // than their 2D radius, so allow for the ring depth when fitting the frame.
+      const fitWidth = ORBIT_RADIUS * 0.5 + (ORBIT_RADIUS + CARD_WIDTH / 2 + 0.95) / (halfFov * camera.aspect);
+      camera.position.z = Math.max(10.2, fitHeight, fitWidth) * 1.03;
       camera.updateProjectionMatrix();
       requestFrame(THREE, RoomEnvironment);
     };

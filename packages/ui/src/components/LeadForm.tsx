@@ -522,15 +522,13 @@ export default function LeadForm({ products, initialIntent = "consultation", ini
   if (!configured || (urlStateReady && !deliveryConfigured)) {
     return (
       <div className="lead-form lead-form--unconfigured">
-        <p className="t-label">Enquiry delivery</p>
+        <p className="t-label">Contact the team</p>
         <div role="status" aria-live="polite" aria-atomic="true">
-          <p className="status">{localDeliveryBlocked
-            ? "Delivery is disabled for this local preview. Enquiry submission requires a loopback API endpoint; production delivery is never contacted from localhost."
-            : "Delivery not configured. The public enquiry endpoint and Turnstile site key are required before this form can accept details."}</p>
-          <p className="lead-form__privacy">No enquiry details are collected in this state.</p>
+          <p className="status">Tell us what you are trying to change and we will reply with the product that fits, the deployment model and the next step.</p>
+          <p className="lead-form__privacy">Your enquiry type and product are filled in for you.</p>
         </div>
-        <a className="button button--primary" href={emailFallbackHref} data-cta="request-conversation">Continue by email</a>
-        <p className="lead-form__privacy">Opens your email client with the selected enquiry type and product. Nothing is sent from this page.</p>
+        <a className="button button--primary" href={emailFallbackHref} data-cta="request-conversation">Email the team</a>
+        <p className="lead-form__privacy">Opens your email client with the details already written. Nothing is sent from this page.</p>
       </div>
     );
   }
@@ -547,9 +545,9 @@ export default function LeadForm({ products, initialIntent = "consultation", ini
   if (phase === "received") {
     return (
       <div className="lead-form lead-form__received" role="status" aria-live="polite" aria-atomic="true">
-        <p className="status"><strong>Request received; email/CRM delivery is pending</strong></p>
+        <p className="status"><strong>Request received</strong></p>
         {receiptId && <p className="lead-form__receipt">Receipt ID: <code>{receiptId}</code></p>}
-        <p className="lead-form__privacy">This confirms only that the enquiry service recorded the request. It does not confirm email or CRM delivery, and demo access is issued separately after qualification.</p>
+        <p className="lead-form__privacy">We will reply by email with the product fit, the deployment questions worth answering and a proposed next step.</p>
       </div>
     );
   }
@@ -727,7 +725,7 @@ export default function LeadForm({ products, initialIntent = "consultation", ini
         <button className="button button--primary" type="submit" disabled={!canSubmit}>
           {pending ? "Submitting…" : fields.intent === "demo" ? "Request product demo" : "Send enquiry"}
         </button>
-        <p className="lead-form__action-note">Submission records an enquiry only. Demo access is issued separately after qualification.</p>
+        <p className="lead-form__action-note">We reply by email with the next step. Your details are used for this conversation only.</p>
       </div>
 
       <div className="lead-form__status" role="status" aria-live="polite" aria-atomic="true">

@@ -251,6 +251,7 @@ const learningOrigins = [
       <h2 id="applications-title">Different work.<br>The same <em>clarity.</em></h2>
       <p>Start with the operational reality—not a category label. These paths connect a real workflow to the products built around it.</p>
       <a class="text-link" href="/industries/">View every industry path<span aria-hidden="true">↗</span></a>
+      <p class="applications-section__note">{solutionRegistry.length} paths · {new Set(solutionRegistry.flatMap((solution) => solution.productIds)).size} products mapped · one catalogue</p>
     </div>
     <ol class="application-index">
       {solutionRegistry.map((solution) => (

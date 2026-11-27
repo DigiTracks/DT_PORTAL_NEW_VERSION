@@ -1,0 +1,225 @@
+---
+import type { RouteRecord } from "@digitracks/seo";
+import Button from "./Button.astro";
+
+interface Props {
+  route: RouteRecord;
+}
+
+const { route } = Astro.props;
+const isPrivacy = route.path.startsWith("/privacy");
+const updated = "27 November 2026";
+
+const privacy = [
+  {
+    heading: "Who we are",
+    body: [
+      "Digi Tracks is a product studio that builds and licenses focused operational software. This policy explains how we handle personal information when you visit this site or contact us about a product.",
+      "For any question about this policy, or to exercise a right described below, use the contact page and mark the enquiry as a privacy request."
+    ]
+  },
+  {
+    heading: "Information we collect",
+    body: [
+      "Details you send us: your name, work email, organisation, the product or workflow you are asking about, and anything else you choose to include in an enquiry.",
+      "Technical information: the pages you visit, the browser and device you use, and the approximate region your request comes from. This is used in aggregate to keep the site working and to understand which pages are useful.",
+      "We do not ask for special category data, and we ask that you do not send passwords, access tokens or confidential records through the enquiry form."
+    ]
+  },
+  {
+    heading: "How we use it",
+    body: [
+      "To answer your enquiry, route it to the right product team and follow up on the conversation you started.",
+      "To operate and secure the site, including diagnosing faults and preventing abuse.",
+      "To improve the catalogue and the pages people actually use, using aggregated information rather than individual profiles.",
+      "We do not sell personal information, and we do not use enquiry details for advertising."
+    ]
+  },
+  {
+    heading: "Legal basis",
+    body: [
+      "Where UK or EU data protection law applies, we rely on legitimate interests to respond to business enquiries and to keep the site secure, on consent where you ask to receive something from us, and on contract where processing is needed to deliver a licensed product."
+    ]
+  },
+  {
+    heading: "Cookies and analytics",
+    body: [
+      "The site uses the cookies and local storage required to serve pages, remember interface preferences and keep forms working. These are not used to build advertising profiles.",
+      "If aggregate analytics are enabled, they record page views and referrers without identifying individual visitors. You can block cookies in your browser settings; essential functions will continue to work."
+    ]
+  },
+  {
+    heading: "Sharing",
+    body: [
+      "We share information with the service providers that host the site, deliver email and keep it secure. They act on our instructions and are bound by confidentiality.",
+      "We may disclose information where the law requires it, or to protect our rights in a dispute. We do not share enquiry details with other customers."
+    ]
+  },
+  {
+    heading: "Retention",
+    body: [
+      "Enquiry records are kept while the conversation is active and for a reasonable period afterwards so that we can pick the thread back up, then deleted or anonymised.",
+      "Site logs are kept for a short operational window and then removed."
+    ]
+  },
+  {
+    heading: "Your rights",
+    body: [
+      "You can ask for a copy of the information we hold about you, ask us to correct it, ask us to delete it, or object to how we use it. You can also ask us to restrict processing or to provide the information in a portable format.",
+      "Write to us through the contact page and we will respond within one month. If you are not satisfied, you can complain to your national data protection authority — in the UK, the Information Commissioner's Office."
+    ]
+  },
+  {
+    heading: "Security",
+    body: [
+      "Traffic to this site is encrypted in transit. Access to enquiry records is limited to the people who need to respond, and is reviewed as the team changes.",
+      "No online service can promise perfect security. If you believe a message you received from us is not genuine, contact us through the site before acting on it."
+    ]
+  },
+  {
+    heading: "International transfers",
+    body: [
+      "Some service providers process information outside the UK or EEA. Where that happens we rely on the standard contractual clauses or an equivalent safeguard, and we keep the list of providers under review."
+    ]
+  },
+  {
+    heading: "Changes to this policy",
+    body: [
+      "When the way we handle information changes, we update this page and the date at the top. Material changes are reflected in the enquiry flow as well."
+    ]
+  }
+];
+
+const terms = [
+  {
+    heading: "About these terms",
+    body: [
+      "These terms govern your use of this website. Products, implementations and support are provided under a separate signed order or licence agreement, which takes precedence over anything on this page."
+    ]
+  },
+  {
+    heading: "Using the site",
+    body: [
+      "You may browse the catalogue, read the documentation and contact us about a product. You may not attempt to disrupt the site, access areas you are not authorised to use, or extract content at scale. Any credentials issued to you are personal and must not be shared."
+    ]
+  },
+  {
+    heading: "Product information",
+    body: [
+      "The catalogue describes products, their capabilities and the platforms they run on. Deployment details, integrations, licence terms and delivery dates are confirmed in a written quote or order before any work begins.",
+      "We update product pages as the products change. If a page and a signed order disagree, the signed order governs."
+    ]
+  },
+  {
+    heading: "Intellectual property",
+    body: [
+      "The Digi Tracks name, product names, marks, page design and written content on this site are owned by Digi Tracks or used with permission. You may quote short passages with attribution. You may not reproduce the site, its design or its content for commercial use without written permission.",
+      "Product logos shown on this site belong to their respective owners."
+    ]
+  },
+  {
+    heading: "Licences and purchases",
+    body: [
+      "Software is licensed, not sold. The licence grant, permitted users, deployment model, support terms and fees are set out in the order signed by both parties. Nothing on this site is an offer capable of acceptance on its own."
+    ]
+  },
+  {
+    heading: "Acceptable use",
+    body: [
+      "Do not use this site or any product to break the law, to infringe someone else's rights, to distribute malware, or to probe systems you do not own. We may suspend access where use puts the service or other customers at risk."
+    ]
+  },
+  {
+    heading: "Third-party links",
+    body: [
+      "The site links to product sites, documentation and other resources we do not control. Those sites have their own terms and privacy practices, and we are not responsible for their content."
+    ]
+  },
+  {
+    heading: "Availability",
+    body: [
+      "We aim to keep the site available and accurate, but we may change, suspend or withdraw pages without notice. Uptime commitments for products are set out in the relevant licence or support agreement, not on this site."
+    ]
+  },
+  {
+    heading: "Liability",
+    body: [
+      "The site is provided as it is. To the extent the law allows, we are not liable for loss arising from reliance on general information published here. Nothing in these terms limits liability for death or personal injury caused by negligence, for fraud, or for any liability that cannot lawfully be excluded.",
+      "Liability for a licensed product is governed by the agreement covering that product."
+    ]
+  },
+  {
+    heading: "Governing law",
+    body: [
+      "These terms are governed by the laws of England and Wales. Disputes about the site are subject to the exclusive jurisdiction of the courts of England and Wales, without affecting any right you have to bring a claim in your country of residence."
+    ]
+  },
+  {
+    heading: "Contact",
+    body: [
+      "Questions about these terms, a licence or a purchase should go through the contact page so that they reach the right person."
+    ]
+  }
+];
+
+const sections = isPrivacy ? privacy : terms;
+const title = isPrivacy ? "Privacy Policy" : "Terms of Use";
+const lede = isPrivacy
+  ? "What we collect when you use this site, why we collect it, and the rights you have over it."
+  : "The rules for using this website, and how they relate to the licence you sign for a product.";
+---
+
+<article class="legal">
+  <header class="legal-hero">
+    <div class="shell legal-hero__inner">
+      <p class="t-label">Legal / {isPrivacy ? "Privacy" : "Terms"}</p>
+      <h1 id="page-title">{title}</h1>
+      <p class="legal-hero__lede">{lede}</p>
+      <p class="legal-hero__meta">Last updated {updated} · Applies to the Digi Tracks site and its product pages</p>
+    </div>
+  </header>
+  <div class="shell legal-body">
+    <nav class="legal-nav" aria-label="On this page">
+      <p class="t-label">On this page</p>
+      <ol>
+        {sections.map((section, index) => <li><a href={"#clause-" + (index + 1)}><span>{String(index + 1).padStart(2, "0")}</span>{section.heading}</a></li>)}
+      </ol>
+    </nav>
+    <div class="legal-content">
+      {sections.map((section, index) => (
+        <section id={"clause-" + (index + 1)} class="legal-clause">
+          <h2><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.heading}</h2>
+          {section.body.map((paragraph) => <p>{paragraph}</p>)}
+        </section>
+      ))}
+      <div class="legal-foot">
+        <p>Questions about this {isPrivacy ? "policy" : "agreement"}? The contact page reaches the team that can answer them.</p>
+        <Button href="/contact/?intent=consultation" variant="secondary">Contact Digi Tracks</Button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+  .legal-hero { padding-block: clamp(4rem, 7vw, 6.5rem) clamp(2.5rem, 4vw, 3.5rem); background: var(--paper-bright); border-bottom: 1px solid rgb(13 27 46 / 12%); }
+  .legal-hero__inner { display: grid; gap: 1rem; }
+  .legal-hero__inner > * { max-width: 60ch; }
+  .legal-hero h1 { max-width: none; margin: 0; font-family: var(--font-display); font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 500; letter-spacing: -0.05em; line-height: 0.95; color: var(--ink); }
+  .legal-hero__lede { margin: 0; max-width: 54ch; color: #3f4c5e; font-size: clamp(1.02rem, 1.3vw, 1.16rem); line-height: 1.6; }
+  .legal-hero__meta { margin: 0.4rem 0 0; color: #7b8698; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
+  .legal-body { display: grid; grid-template-columns: minmax(11rem, 0.3fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); padding-block: clamp(3rem, 5vw, 5rem); align-items: start; }
+  .legal-nav { position: sticky; top: 6.5rem; display: grid; gap: 0.8rem; }
+  .legal-nav ol { display: grid; gap: 0.1rem; margin: 0; padding: 0; list-style: none; border-top: 1px solid rgb(13 27 46 / 14%); }
+  .legal-nav a { display: flex; gap: 0.7rem; padding: 0.55rem 0; color: #4a5567; font-size: 0.88rem; line-height: 1.35; text-decoration: none; border-bottom: 1px solid rgb(13 27 46 / 8%); }
+  .legal-nav span { color: #a4781f; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.12em; padding-top: 0.15rem; }
+  .legal-nav a:hover { color: var(--ink); }
+  .legal-content { display: grid; gap: clamp(2rem, 3vw, 2.8rem); max-width: 68ch; }
+  .legal-clause { scroll-margin-top: 6rem; display: grid; gap: 0.75rem; }
+  .legal-clause h2 { display: flex; gap: 0.8rem; align-items: baseline; margin: 0; font-family: var(--font-display); font-size: clamp(1.25rem, 1.8vw, 1.55rem); font-weight: 600; letter-spacing: -0.02em; color: var(--ink); }
+  .legal-clause h2 span { color: #a4781f; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; }
+  .legal-clause p { margin: 0; color: #3f4c5e; line-height: 1.7; }
+  .legal-foot { display: grid; gap: 1rem; justify-items: start; margin-top: 1rem; padding-top: 1.6rem; border-top: 1px solid rgb(13 27 46 / 14%); }
+  .legal-foot p { margin: 0; color: #4a5567; }
+  @media (max-width: 900px) { .legal-body { grid-template-columns: 1fr; } .legal-nav { position: static; } .legal-nav ol { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .legal-nav ol { grid-template-columns: 1fr; } }
+</style>

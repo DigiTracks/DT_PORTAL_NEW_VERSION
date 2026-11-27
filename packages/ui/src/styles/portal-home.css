@@ -534,9 +534,18 @@ html.m-enter .hero-home__visual {
   --p-border-strong: rgb(9 15 23 / 42%);
   --p-action: var(--night);
   --p-action-ink: var(--paper-bright);
-  --p-focus: #173b98;
-  background: var(--p-bg);
+  --p-focus: var(--night);
+  background: linear-gradient(180deg, #f7da91 0%, #f2cb63 52%, #eec24f 100%);
   color: var(--p-ink);
+}
+
+.applications-section__note {
+  margin: 1.1rem 0 0;
+  color: rgb(13 27 46 / 62%);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 }
 
 .applications-section__grid {
@@ -558,7 +567,7 @@ html.m-enter .hero-home__visual {
 }
 
 .applications-section__intro h2 em {
-  color: #173b98;
+  color: var(--night);
 }
 
 .applications-section__intro > p:not(.t-label) {
