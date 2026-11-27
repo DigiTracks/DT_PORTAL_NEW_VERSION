@@ -84,6 +84,7 @@ const relatedProducts = product
   : [];
 const nestedProducts = product ? products.filter((item) => item.parentId === product.id) : [];
 const compactProductTitle = product ? !product.name.includes(" ") && product.name.length > 12 : false;
+const productTitleMarkup = product ? product.name.replace(/([a-z])([A-Z])/g, "$1<wbr>$2") : "";
 const solutions = solutionRegistry;
 const hubs = hubRegistry;
 const isHome = route.template === "home";
@@ -175,7 +176,7 @@ const pageStyles = [
         <div class="shell hero-product__grid">
           <div class="hero-product__copy">
             <p class="t-label">{product.category} / {salesStatus(product.status)}</p>
-            <h1 id="product-title" class={compactProductTitle ? "hero-product__title--compact" : undefined}>{product.name}</h1>
+            <h1 id="product-title" class={compactProductTitle ? "hero-product__title--compact" : undefined} set:html={productTitleMarkup} />
             <p class="hero-product__lede">{product.summary}</p>
             <div class="button-row">
               <Button href={contactHref} ctaId={productSupportsDemo ? "request-product-demo" : "request-product-interest"}>{productSupportsDemo ? "Book a full demo" : "Talk to the product team"}</Button>

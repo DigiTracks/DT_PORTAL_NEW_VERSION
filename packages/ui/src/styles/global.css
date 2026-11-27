@@ -2098,16 +2098,18 @@ em {
 }
 
 .hero-product__copy h1 {
-  max-width: 10ch;
+  max-width: 100%;
   margin-bottom: 1.5rem;
-  font-size: clamp(4.5rem, 8vw, 8.5rem);
-  line-height: 0.88;
-  overflow-wrap: anywhere;
+  font-size: clamp(3.2rem, 5.4vw, 6.2rem);
+  line-height: 0.94;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .hero-product__copy h1.hero-product__title--compact {
-  max-width: 12ch;
-  font-size: clamp(3.5rem, 5.5vw, 6.5rem);
+  max-width: 100%;
+  font-size: clamp(2.8rem, 4.4vw, 5.2rem);
   letter-spacing: -0.055em;
   line-height: 0.96;
 }
@@ -9205,4 +9207,11 @@ body.page-product-index {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
+}
+
+/* Breadcrumb band spans the viewport; its text stays on the content grid. */
+nav.breadcrumbs.shell {
+  width: 100%;
+  margin-inline: 0;
+  padding-inline: calc((100% - var(--shell)) / 2);
 }

@@ -1290,9 +1290,11 @@ h3 em,
     linear-gradient(180deg, #0e1e33 0%, #0a1524 100%);
 }
 
-.site-footer__top {
-  grid-template-columns: minmax(17rem, 1.5fr) repeat(3, minmax(8rem, 0.55fr));
-  gap: clamp(1.5rem, 2.4vw, 2.6rem);
+@media (min-width: 75rem) {
+  .site-footer__top {
+    grid-template-columns: minmax(17rem, 1.5fr) repeat(3, minmax(8rem, 0.55fr));
+    gap: clamp(1.5rem, 2.4vw, 2.6rem);
+  }
 }
 
 .site-footer__claim {
@@ -1373,9 +1375,11 @@ h3 em,
   color: #8a6114;
 }
 /* Balance the footer columns instead of one oversized brand well. */
-.site-footer__top {
-  grid-template-columns: minmax(15rem, 1.05fr) repeat(3, minmax(9rem, 0.75fr));
-  column-gap: clamp(1.6rem, 3.2vw, 3.4rem);
+@media (min-width: 75rem) {
+  .site-footer__top {
+    grid-template-columns: minmax(15rem, 1.05fr) repeat(3, minmax(9rem, 0.75fr));
+    column-gap: clamp(1.6rem, 3.2vw, 3.4rem);
+  }
 }
 
 .closing-section__word {
@@ -1417,4 +1421,11 @@ h3 em,
   font-family: var(--font-mono);
   font-size: 0.66rem;
   letter-spacing: 0.1em;
+}
+
+/* Breadcrumb band spans the viewport; its text stays on the content grid. */
+nav.breadcrumbs.shell {
+  width: 100%;
+  margin-inline: 0;
+  padding-inline: calc((100% - var(--shell)) / 2);
 }
