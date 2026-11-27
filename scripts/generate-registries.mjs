@@ -586,7 +586,8 @@ function breadcrumbsFor(origin, routePath, title) {
     current += `/${segment}`;
     items.push({ label: labels[segment] ?? humanize(segment), path: canonicalPath(origin, current) });
   }
-  if (items.length > 1) items[items.length - 1] = { label: title.split(" | ")[0], path: routePath };
+  const label = origin === "learn" ? title.split(" | ")[0].split(" — ")[0] : title.split(" | ")[0];
+  if (items.length > 1) items[items.length - 1] = { label, path: routePath };
   return items;
 }
 

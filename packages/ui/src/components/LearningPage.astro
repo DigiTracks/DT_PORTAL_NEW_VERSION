@@ -1,72 +1,22 @@
 ---
 import type { RouteRecord } from "@digitracks/seo";
 import Button from "./Button.astro";
-import ProcurementLearning from "./ProcurementLearning.astro";
-import LearningPlatform from "./LearningPlatform.astro";
+import LearningLaunch from "./LearningLaunch.astro";
 
 interface Props {
   route: RouteRecord;
 }
 
 const { route } = Astro.props;
+const launchRoutes = new Set(["/sourcecraft/", "/learnpmo/", "/procuresherpa/", "/hcmfusion/"]);
 const isContact = route.path === "/contact/";
-const isProcurementLearning = route.template === "procurement-learning";
+const isLaunch = launchRoutes.has(route.path);
 const name = route.title.replace(" | Digi Tracks", "");
-
-const platforms: Record<string, { label: string; href: string; access: string; blurb: string; points: string[] }> = {
-  "/sourcecraft/": {
-    label: "SourceCraft",
-    href: "https://sourcecraft.digitracks.net/",
-    access: "Free access — opens in the browser",
-    blurb: "A field guide to better buying: procurement and contract language explained plainly, with a regional lens for India, the United States, the United Kingdom and California.",
-    points: [
-      "Terms, clauses and comparisons explained in plain language",
-      "Regional reference lenses for India, the US, the UK and California",
-      "Saved terms so a working glossary follows you between pages"
-    ]
-  },
-  "/learnpmo/": {
-    label: "LearnPMO",
-    href: "https://learnpmo.digitracks.net/",
-    access: "Free access — modules, labs, saved progress",
-    blurb: "PM360 Academy: project, programme and portfolio delivery taught through lessons, mock exams and a practice simulator rather than slideware.",
-    points: [
-      "Academy lessons, study plans and mock exams",
-      "Practice simulator with projects, sprints and timesheets",
-      "PMO registers: charter, scope, decision log, risks and lessons learned"
-    ]
-  },
-  "/procuresherpa/": {
-    label: "ProcureSherpa Learning",
-    href: "https://procuresherpa.digitracks.net/",
-    access: "Free access — modules, calculators, templates",
-    blurb: "A procurement learning platform built around the work: academy modules, calculators, SOPs, checklists and scenarios you can apply the same week.",
-    points: [
-      "Academy modules across sourcing, contracts and spend",
-      "Calculators, checklists and SOPs for day-to-day buying",
-      "Scenario practice with locally saved work"
-    ]
-  },
-  "/hcmfusion/": {
-    label: "HCM Fusion",
-    href: "https://hcmfusion.digitracks.net/",
-    access: "Free access — every lesson open",
-    blurb: "HCM Studio for Oracle Fusion Cloud HCM: Core HR, absence, time and labour, payroll, recruiting and talent, taught in configuration order with practice labs.",
-    points: [
-      "Core HR, Absence, Time and Labor, Payroll and Recruiting",
-      "Talent, Learning, Compensation and Workforce Monitoring",
-      "Configuration order, the failures it prevents, and practice labs"
-    ]
-  }
-};
-
-const platform = platforms[route.path];
-const differentiated = new Set(["/sourcecraft/", "/learnpmo/", "/procuresherpa/", "/hcmfusion/"]);
 const contactHref = `https://digitracks.net/contact/?intent=consultation&origin=${route.origin}&route=${encodeURIComponent(route.path)}`;
 ---
 
-{isProcurementLearning ? (
-  <ProcurementLearning route={route} />
+{isLaunch ? (
+  <LearningLaunch route={route} />
 ) : isContact ? (
 <section class="learning-entry" aria-labelledby="learning-entry-title">
   <div class="shell learning-entry__hero">
@@ -79,34 +29,6 @@ const contactHref = `https://digitracks.net/contact/?intent=consultation&origin=
       <h2>One conversation, the right link.</h2>
       <p>Every public learning page is open. If you want a guided walkthrough, a team session or help choosing between platforms, tell us the workflow and we will point you to the exact page.</p>
       <Button href={contactHref} ctaId="learning-contact">Contact the studio</Button>
-    </div>
-  </div>
-</section>
-) : platform && differentiated.has(route.path) ? (
-<LearningPlatform route={route} />
-) : platform ? (
-<section class="learning-entry learning-entry--platform" aria-labelledby="learning-entry-title">
-  <div class="shell learning-entry__hero">
-    <div>
-      <p class="t-label">Digi Tracks learning / platform</p>
-      <h1 id="learning-entry-title">{platform.label}<em> is open.</em></h1>
-      <p class="learning-entry__lede">{platform.blurb}</p>
-      <div class="button-row">
-        <Button href={platform.href} external ctaId="open-learning-platform">Open {platform.label}</Button>
-        <Button href="https://digitracks.net/products/" variant="secondary">See related products</Button>
-      </div>
-    </div>
-    <div class="learning-entry__stamp"><span>{platform.label} / direct link</span><strong aria-hidden="true">↗</strong><a href={platform.href}>{platform.href.replace("https://", "").replace(/\/$/, "")}</a><small>{platform.access}</small></div>
-  </div>
-  <div class="shell learning-entry__body">
-    <aside><p class="t-label">On this page</p><a href="#learning-entry-next">What you will find</a><a href={platform.href}>Open the platform</a><a href="https://digitracks.net/products/">Product catalogue</a></aside>
-    <div class="prose">
-      <h2 id="learning-entry-next">Go straight in.</h2>
-      <p>Free to open. The link above goes straight to {platform.label} — the same material our team uses when scoping a piece of work.</p>
-      <ul>{platform.points.map((point) => <li>{point}</li>)}</ul>
-      <h2>Bring a real question.</h2>
-      <p>Pick a live clause, plan or process you are working on and follow it through the platform. If you want that walkthrough with our team, book a session and we will use your example, not a demo script.</p>
-      <Button href={platform.href} external ctaId="open-learning-platform">Open {platform.label} ↗</Button>
     </div>
   </div>
 </section>

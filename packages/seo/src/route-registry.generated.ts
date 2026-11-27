@@ -39654,7 +39654,7 @@ export const routeRegistry = [
         "path": "/"
       },
       {
-        "label": "HCM Fusion — Human Capital platform",
+        "label": "HCM Fusion",
         "path": "/hcmfusion/"
       }
     ],
@@ -39712,7 +39712,7 @@ export const routeRegistry = [
         "path": "/"
       },
       {
-        "label": "LearnPMO — Project & Portfolio platform",
+        "label": "LearnPMO",
         "path": "/learnpmo/"
       }
     ],
@@ -39940,7 +39940,7 @@ export const routeRegistry = [
         "path": "/"
       },
       {
-        "label": "SourceCraft — Procurement platform",
+        "label": "SourceCraft",
         "path": "/sourcecraft/"
       }
     ],

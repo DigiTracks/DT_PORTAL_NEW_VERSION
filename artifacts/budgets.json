@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T14:56:58.485Z",
+  "generatedAt": "2026-11-27T15:22:22.907Z",
   "method": "gzip level 9 for HTML, CSS and JavaScript; font transfer measured from real Chromium requests at 390px and 1440px for every body-class template",
   "limits": {
     "htmlGzipBytes": 100000,
@@ -154,20 +154,20 @@
     {
       "app": "learn",
       "htmlFiles": 9,
-      "totalBytes": 1934197,
-      "totalGzipBytes": 1353562,
+      "totalBytes": 1856965,
+      "totalGzipBytes": 1338551,
       "maxHtmlGzipBytes": {
         "app": "learn",
         "file": "apps/learn/dist/privacy.html",
         "bodyClass": "page-learning-entry",
-        "htmlRawBytes": 49295,
-        "htmlGzipBytes": 11988,
+        "htmlRawBytes": 41638,
+        "htmlGzipBytes": 10757,
         "initialJavaScriptRawBytes": 8558,
         "initialJavaScriptGzipBytes": 3229,
         "initialCssRawBytes": 24046,
         "initialCssGzipBytes": 6208,
         "fontTransferBytes": 42424,
-        "initialReadingTransferBytes": 63849,
+        "initialReadingTransferBytes": 62618,
         "assets": {
           "css": [
             "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
@@ -206,18 +206,18 @@
         "app": "learn",
         "file": "apps/learn/dist/contact.html",
         "bodyClass": "page-learning-entry",
-        "htmlRawBytes": 38599,
-        "htmlGzipBytes": 9551,
+        "htmlRawBytes": 30942,
+        "htmlGzipBytes": 8160,
         "initialJavaScriptRawBytes": 8558,
         "initialJavaScriptGzipBytes": 3229,
-        "initialCssRawBytes": 38556,
-        "initialCssGzipBytes": 8226,
+        "initialCssRawBytes": 30539,
+        "initialCssGzipBytes": 7528,
         "fontTransferBytes": 42424,
-        "initialReadingTransferBytes": 63430,
+        "initialReadingTransferBytes": 61341,
         "assets": {
           "css": [
-            "apps/learn/dist/_astro/origin-common.4nBLgFhg.css",
-            "apps/learn/dist/_astro/_..Cm2cSTuT.css"
+            "apps/learn/dist/_astro/_..Brcwyhbm.css",
+            "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
           ],
           "javascript": [],
           "fonts": [
@@ -2477,18 +2477,18 @@
       "app": "learn",
       "file": "apps/learn/dist/contact.html",
       "bodyClass": "page-learning-entry",
-      "htmlRawBytes": 38599,
-      "htmlGzipBytes": 9551,
+      "htmlRawBytes": 30942,
+      "htmlGzipBytes": 8160,
       "initialJavaScriptRawBytes": 8558,
       "initialJavaScriptGzipBytes": 3229,
-      "initialCssRawBytes": 38556,
-      "initialCssGzipBytes": 8226,
+      "initialCssRawBytes": 30539,
+      "initialCssGzipBytes": 7528,
       "fontTransferBytes": 42424,
-      "initialReadingTransferBytes": 63430,
+      "initialReadingTransferBytes": 61341,
       "assets": {
         "css": [
-          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css",
-          "apps/learn/dist/_astro/_..Cm2cSTuT.css"
+          "apps/learn/dist/_astro/_..Brcwyhbm.css",
+          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
         ],
         "javascript": [],
         "fonts": [
@@ -2501,18 +2501,18 @@
       "app": "learn",
       "file": "apps/learn/dist/hcmfusion.html",
       "bodyClass": "page-learning-entry",
-      "htmlRawBytes": 46331,
-      "htmlGzipBytes": 11096,
+      "htmlRawBytes": 37209,
+      "htmlGzipBytes": 9099,
       "initialJavaScriptRawBytes": 8558,
       "initialJavaScriptGzipBytes": 3229,
-      "initialCssRawBytes": 38556,
-      "initialCssGzipBytes": 8226,
+      "initialCssRawBytes": 30539,
+      "initialCssGzipBytes": 7528,
       "fontTransferBytes": 42424,
-      "initialReadingTransferBytes": 64975,
+      "initialReadingTransferBytes": 62280,
       "assets": {
         "css": [
-          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css",
-          "apps/learn/dist/_astro/_..Cm2cSTuT.css"
+          "apps/learn/dist/_astro/_..Brcwyhbm.css",
+          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
         ],
         "javascript": [],
         "fonts": [
@@ -2525,14 +2525,14 @@
       "app": "learn",
       "file": "apps/learn/dist/index.html",
       "bodyClass": "page-learning-home",
-      "htmlRawBytes": 42455,
-      "htmlGzipBytes": 10376,
+      "htmlRawBytes": 34716,
+      "htmlGzipBytes": 8947,
       "initialJavaScriptRawBytes": 8558,
       "initialJavaScriptGzipBytes": 3229,
       "initialCssRawBytes": 24046,
       "initialCssGzipBytes": 6208,
       "fontTransferBytes": 42424,
-      "initialReadingTransferBytes": 62237,
+      "initialReadingTransferBytes": 60808,
       "assets": {
         "css": [
           "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
@@ -2548,18 +2548,18 @@
       "app": "learn",
       "file": "apps/learn/dist/learnpmo.html",
       "bodyClass": "page-learning-entry",
-      "htmlRawBytes": 45550,
-      "htmlGzipBytes": 11071,
+      "htmlRawBytes": 36828,
+      "htmlGzipBytes": 8990,
       "initialJavaScriptRawBytes": 8558,
       "initialJavaScriptGzipBytes": 3229,
-      "initialCssRawBytes": 38556,
-      "initialCssGzipBytes": 8226,
+      "initialCssRawBytes": 30539,
+      "initialCssGzipBytes": 7528,
       "fontTransferBytes": 42424,
-      "initialReadingTransferBytes": 64950,
+      "initialReadingTransferBytes": 62171,
       "assets": {
         "css": [
-          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css",
-          "apps/learn/dist/_astro/_..Cm2cSTuT.css"
+          "apps/learn/dist/_astro/_..Brcwyhbm.css",
+          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
         ],
         "javascript": [],
         "fonts": [
@@ -2572,14 +2572,14 @@
       "app": "learn",
       "file": "apps/learn/dist/privacy.html",
       "bodyClass": "page-learning-entry",
-      "htmlRawBytes": 49295,
-      "htmlGzipBytes": 11988,
+      "htmlRawBytes": 41638,
+      "htmlGzipBytes": 10757,
       "initialJavaScriptRawBytes": 8558,
       "initialJavaScriptGzipBytes": 3229,
       "initialCssRawBytes": 24046,
       "initialCssGzipBytes": 6208,
       "fontTransferBytes": 42424,
-      "initialReadingTransferBytes": 63849,
+      "initialReadingTransferBytes": 62618,
       "assets": {
         "css": [
           "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
@@ -2595,18 +2595,18 @@
       "app": "learn",
       "file": "apps/learn/dist/procuresherpa.html",
       "bodyClass": "page-learning-entry",
-      "htmlRawBytes": 45443,
-      "htmlGzipBytes": 11308,
+      "htmlRawBytes": 35495,
+      "htmlGzipBytes": 8829,
       "initialJavaScriptRawBytes": 8558,
       "initialJavaScriptGzipBytes": 3229,
-      "initialCssRawBytes": 38556,
-      "initialCssGzipBytes": 8226,
+      "initialCssRawBytes": 30539,
+      "initialCssGzipBytes": 7528,
       "fontTransferBytes": 42424,
-      "initialReadingTransferBytes": 65187,
+      "initialReadingTransferBytes": 62010,
       "assets": {
         "css": [
-          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css",
-          "apps/learn/dist/_astro/_..Cm2cSTuT.css"
+          "apps/learn/dist/_astro/_..Brcwyhbm.css",
+          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
         ],
         "javascript": [],
         "fonts": [
@@ -2619,18 +2619,18 @@
       "app": "learn",
       "file": "apps/learn/dist/sourcecraft.html",
       "bodyClass": "page-learning-entry",
-      "htmlRawBytes": 47046,
-      "htmlGzipBytes": 11400,
+      "htmlRawBytes": 36333,
+      "htmlGzipBytes": 8918,
       "initialJavaScriptRawBytes": 8558,
       "initialJavaScriptGzipBytes": 3229,
-      "initialCssRawBytes": 38556,
-      "initialCssGzipBytes": 8226,
+      "initialCssRawBytes": 30539,
+      "initialCssGzipBytes": 7528,
       "fontTransferBytes": 42424,
-      "initialReadingTransferBytes": 65279,
+      "initialReadingTransferBytes": 62099,
       "assets": {
         "css": [
-          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css",
-          "apps/learn/dist/_astro/_..Cm2cSTuT.css"
+          "apps/learn/dist/_astro/_..Brcwyhbm.css",
+          "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
         ],
         "javascript": [],
         "fonts": [
@@ -2643,14 +2643,14 @@
       "app": "learn",
       "file": "apps/learn/dist/terms.html",
       "bodyClass": "page-learning-entry",
-      "htmlRawBytes": 48228,
-      "htmlGzipBytes": 11645,
+      "htmlRawBytes": 40571,
+      "htmlGzipBytes": 10421,
       "initialJavaScriptRawBytes": 8558,
       "initialJavaScriptGzipBytes": 3229,
       "initialCssRawBytes": 24046,
       "initialCssGzipBytes": 6208,
       "fontTransferBytes": 42424,
-      "initialReadingTransferBytes": 63506,
+      "initialReadingTransferBytes": 62282,
       "assets": {
         "css": [
           "apps/learn/dist/_astro/origin-common.4nBLgFhg.css"
