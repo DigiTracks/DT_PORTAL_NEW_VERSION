@@ -224,7 +224,7 @@ const content = pages[route.path];
           </div>
         </section>
       ) : block.kind === "steps" ? (
-        <section class="section mk-block">
+        <section class="section mk-block mk-block--warm">
           <div class="shell">
             <div class="mk-head">
               <p class="t-label">{block.label}</p>
@@ -315,6 +315,8 @@ const content = pages[route.path];
   .mk-fact span { color: rgb(198 212 230 / 78%); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }
 
   .mk-block { border-bottom: 1px solid rgb(13 27 46 / 10%); }
+  .mk-block--warm { background: linear-gradient(180deg, #f8f4e8 0%, #f2ecdb 100%); }
+  .mk-block--prose { background: #f3f6fa; }
   .mk-head { display: grid; gap: 0.9rem; max-width: 60rem; margin-bottom: clamp(2rem, 3vw, 3rem); }
   .mk-head h2 { margin: 0; font-family: var(--font-display); font-size: clamp(1.9rem, 3.4vw, 3rem); font-weight: 500; letter-spacing: -0.035em; line-height: 1.02; color: var(--ink); }
   .mk-head__lede { margin: 0; max-width: 52ch; color: #4a5567; line-height: 1.55; }

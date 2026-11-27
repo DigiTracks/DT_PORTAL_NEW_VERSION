@@ -83,12 +83,28 @@ const procurementLinks = [
   { label: "Procure Sherpa", href: "https://digitracks.net/products/sherpa-toolkit/" },
   { label: "ProcureSherpa Learning", href: "https://learn.digitracks.net/procuresherpa/" }
 ];
-const resourceLinks = [
-  { label: "Learn", href: "https://learn.digitracks.net/" },
-  { label: "Source Craft", href: "https://sourcecraft.digitracks.net/" },
-  { label: "LearnPMO", href: "https://learnpmo.digitracks.net/" },
-  { label: "HCM Fusion", href: "https://hcmfusion.digitracks.net/" },
-  { label: "ProcureSherpa Learning", href: "https://learn.digitracks.net/procuresherpa/" }
+type ResourceLink = { label: string; href: string; note: string; external: boolean };
+type ResourceGroup = { label: string; links: ResourceLink[] };
+const resourceGroups: ResourceGroup[] = [
+  {
+    label: "Learning & reference",
+    links: [
+      { label: "Learn", href: "https://learn.digitracks.net/", note: "Courses, lessons and reference notes", external: true },
+      { label: "Source Craft", href: "https://sourcecraft.digitracks.net/", note: "Engineering reading and worked patterns", external: true },
+      { label: "LearnPMO", href: "https://learnpmo.digitracks.net/", note: "Project delivery method", external: true },
+      { label: "HCM Fusion", href: "https://hcmfusion.digitracks.net/", note: "People and HR operations reference", external: true },
+      { label: "ProcureSherpa Learning", href: "https://learn.digitracks.net/procuresherpa/", note: "Sourcing and procurement practice", external: true }
+    ]
+  },
+  {
+    label: "Engineering & trust",
+    links: [
+      { label: "Engineering", href: "/engineering/", note: "How the products are built and run", external: false },
+      { label: "Offline-first software", href: "/offline-first-software/", note: "Why the systems work without a connection", external: false },
+      { label: "Trust", href: "/trust/", note: "Security, data handling and access", external: false },
+      { label: "FAQ", href: "/faq/", note: "The questions buyers ask first", external: false }
+    ]
+  }
 ];
 const companyLinks = [
   { label: "About Digi Tracks", href: "https://digitracks.net/about/" },
@@ -250,13 +266,21 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
             <a href="/industries/">Industries</a>
             <a href="/solutions/">Solutions</a>
             <a href="/services/">Services</a>
-            <details class="nav-menu nav-menu--compact">
+            <details class="nav-menu nav-menu--compact nav-menu--resources">
               <summary>Resources</summary>
               <div class="nav-menu__panel nav-menu__panel--compact">
-                <div class="nav-menu__group">
-                  <p class="t-label">Learning & reference</p>
-                  {resourceLinks.map((item) => <a href={item.href}>{item.label}</a>)}
-                </div>
+                {resourceGroups.map((group) => (
+                  <div class="nav-menu__group">
+                    <p class="t-label">{group.label}</p>
+                    {group.links.map((item) => (
+                      <a href={item.href} rel={item.external ? "noopener" : undefined}>
+                        <strong>{item.label}{item.external && <span class="nav-menu__ext" aria-hidden="true">↗</span>}</strong>
+                        <small>{item.note}</small>
+                      </a>
+                    ))}
+                  </div>
+                ))}
+                <a class="nav-menu__cta" href="/products/mindone/compare/">Compare MIND ONE editions<span aria-hidden="true">→</span></a>
               </div>
             </details>
             <a href="/about/">About</a>
@@ -294,7 +318,17 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
                 <a href="/services/">Services</a>
                 <a href="/about/">About Digi Tracks</a>
                 <p class="t-label">Resources</p>
-                {resourceLinks.map((item) => <a href={item.href}>{item.label}</a>)}
+                {resourceGroups.map((group) => (
+                  <>
+                    <p class="mobile-nav__sublabel">{group.label}</p>
+                    {group.links.map((item) => (
+                      <a href={item.href} rel={item.external ? "noopener" : undefined}>
+                        <strong>{item.label}{item.external && <span class="nav-menu__ext" aria-hidden="true">↗</span>}</strong>
+                        <small>{item.note}</small>
+                      </a>
+                    ))}
+                  </>
+                ))}
               </>
             ) : (
               navItems.map((item) => <a href={item.href}>{item.label}</a>)
@@ -334,8 +368,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
         </div>
         <div class="site-footer__col">
           <h2 class="t-label">Learning</h2>
-          {resourceLinks.filter((item) => item.label !== "ProcureSherpa Learning").map((item) => <a href={item.href}>{item.label}</a>)}
-          <a href="https://learn.digitracks.net/procuresherpa/">ProcureSherpa Learning</a>
+          {resourceGroups[0].links.map((item) => <a href={item.href}>{item.label}</a>)}
         </div>
       </div>
       <div class="shell site-footer__legal">
