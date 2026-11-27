@@ -4,6 +4,7 @@ import Button from "./Button.astro";
 const platforms = [
   {
     key: "sourcecraft",
+    path: "/sourcecraft/",
     mark: "SC",
     name: "SourceCraft",
     label: "Contract language",
@@ -14,6 +15,7 @@ const platforms = [
   },
   {
     key: "learnpmo",
+    path: "/learnpmo/",
     mark: "PM",
     name: "LearnPMO",
     label: "Project delivery",
@@ -24,6 +26,7 @@ const platforms = [
   },
   {
     key: "procuresherpa",
+    path: "/procuresherpa/",
     mark: "PS",
     name: "ProcureSherpa Learning",
     label: "Procurement",
@@ -34,6 +37,7 @@ const platforms = [
   },
   {
     key: "hcmfusion",
+    path: "/hcmfusion/",
     mark: "HC",
     name: "HCM Fusion",
     label: "People operations",
@@ -52,23 +56,24 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
     <div class="learning-hero__copy">
       <p class="t-label">Digi Tracks learning / four live platforms</p>
       <h1 id="learning-title">Four platforms.<br><em>One click each.</em></h1>
-      <p class="learning-hero__lede">Four learning platforms, all live. Each card below goes straight to the real application at its own address — this page is only the door.</p>
+      <p class="learning-hero__lede">Four learning platforms, all live and free to open. Open a card to see what the platform is, then step straight into the running site.</p>
       <div class="button-row">
         <Button href="#learning-paths" ctaId="explore-learning-paths">Choose a platform</Button>
         <Button href={requestHref} variant="secondary">Talk to the studio</Button>
       </div>
     </div>
-    <nav class="learning-orbit" aria-label="Learning platforms">
-      <span class="learning-orbit__rule" aria-hidden="true"></span>
-      <span class="learning-orbit__core" aria-hidden="true"><small>DT / LEARN</small><strong>Four<br>doors</strong></span>
+    <div class="learning-stage" aria-label="Learning platforms">
+      <span class="learning-stage__core" aria-hidden="true"><small>DT / LEARN</small><strong>Four doors</strong></span>
       {platforms.map((platform, index) => (
-        <a class={`learning-orbit__card learning-orbit__card--${index + 1}`} href={platform.href} rel="noreferrer" target="_blank" data-live>
-          <span>{String(index + 1).padStart(2, "0")} / {platform.mark}</span>
-          <strong>{platform.label}</strong>
-          <small>{platform.name}</small>
+        <a class={`learning-stage__card learning-stage__card--${index + 1}`} href={platform.path} data-live>
+          <span class="learning-stage__index">{String(index + 1).padStart(2, "0")} / {platform.mark}</span>
+          <img src={platform.icon} alt="" width="44" height="44" loading="lazy" />
+          <strong>{platform.name}</strong>
+          <small>{platform.label}</small>
+          <span class="learning-stage__go">Open<span aria-hidden="true">↗</span></span>
         </a>
       ))}
-    </nav>
+    </div>
   </div>
   <div class="shell learning-hero__ledger">
     <span>04 live platforms</span><span>Direct links</span><span>Opens the live site</span>
@@ -79,22 +84,25 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">The four platforms</p><h2 id="paths-title">Open the one you need.</h2></div>
-      <p>Every row is a working link to the live application. Nothing is rebuilt or mirrored here, and nothing stands between the link and the platform.</p>
+      <p>Every row opens that platform's page here, with the live link ready to go. Nothing is rebuilt or mirrored on this site.</p>
     </div>
     <ol class="learning-path-grid">
       {platforms.map((platform, index) => <li key={platform.key}>
-        <a href={platform.href} rel="noreferrer" target="_blank" data-live>
+        <a href={platform.path} data-live>
           <span class="learning-path-grid__number">{String(index + 1).padStart(2, "0")}</span>
           <img class="learning-path-grid__icon" src={platform.icon} alt="" width="56" height="56" loading="lazy" />
           <div class="learning-path-grid__copy">
             <p class="t-label">{platform.label}</p>
             <h3>{platform.name}</h3>
             <p>{platform.lede}</p>
-            <span class="learning-path-grid__open">{platform.domain}<span aria-hidden="true">Open live ↗</span></span>
+            <span class="learning-path-grid__open">{platform.domain}<span aria-hidden="true">View platform ↗</span></span>
           </div>
         </a>
       </li>)}
     </ol>
+    <p class="learning-paths__live">Already know where you are going? Open the live site directly: {
+      platforms.map((platform, index) => <span><a href={platform.href} rel="noreferrer" target="_blank" data-live>{platform.name}</a>{index < platforms.length - 1 ? " · " : ""}</span>)
+    }</p>
   </div>
 </section>
 

@@ -72,112 +72,146 @@ body.page-learning-entry {
   margin-top: 2.2rem;
 }
 
-.learning-orbit {
+.learning-stage {
   position: relative;
   display: grid;
   width: min(100%, 40rem);
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-content: center;
-  gap: 1rem;
+  gap: 1.1rem;
   justify-self: end;
-  padding: 2.2rem 1.4rem 1.4rem;
+  padding: 4rem 1.6rem 1.8rem;
   border: 1px solid var(--ink);
   background: rgb(255 250 240 / 58%);
   box-shadow: 1.2rem 1.2rem 0 #f3cf65;
+  perspective: 1200px;
 }
 
-.learning-orbit__rule {
+.learning-stage__core {
   position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, transparent 49.8%, rgb(20 33 63 / 12%) 50%, transparent 50.2%),
-    linear-gradient(transparent 49.8%, rgb(20 33 63 / 12%) 50%, transparent 50.2%);
-  pointer-events: none;
-}
-
-.learning-orbit__core {
-  position: relative;
+  top: 1.1rem;
+  left: 1.6rem;
   z-index: 2;
   display: flex;
-  grid-column: 1 / -1;
-  align-items: center;
-  justify-self: center;
-  gap: 1rem;
-  margin-bottom: 0.6rem;
-  padding: 0.7rem 1rem;
+  align-items: baseline;
+  gap: 0.55rem;
+  padding: 0.5rem 0.8rem;
   border: 1px solid var(--ink);
   background: #244bc5;
   color: #fffaf0;
   transform: rotate(-2deg);
 }
 
-.learning-orbit__core small {
+.learning-stage__core small {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
 }
 
-.learning-orbit__core strong {
-  font-size: 0.9rem;
+.learning-stage__core strong {
+  font-size: 0.82rem;
   font-weight: 550;
-  line-height: 1.1;
 }
 
-.learning-orbit__card {
+.learning-stage__card {
   position: relative;
   z-index: 1;
   display: flex;
   min-width: 0;
-  min-height: 11rem;
+  min-height: 11.5rem;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 0.7rem;
-  padding: 1.1rem;
+  gap: 0.45rem;
+  padding: 1rem;
   border: 1px solid var(--ink);
   color: var(--ink);
   text-decoration: none;
-  transition: transform 180ms var(--ease-out), box-shadow 180ms ease;
+  transform-style: preserve-3d;
+  transform: rotateX(6deg) rotateY(-9deg);
+  box-shadow: 0 0.35rem 0 rgb(20 33 63 / 12%), 0 1.6rem 2.2rem rgb(20 33 63 / 12%);
+  animation: stage-float 8s ease-in-out infinite;
+  transition: transform 260ms var(--ease-out), box-shadow 260ms ease;
 }
 
-.learning-orbit__card > span,
-.learning-orbit__card small {
+@keyframes stage-float {
+  0%, 100% { transform: rotateX(6deg) rotateY(-9deg) translate3d(0, 0, 0); }
+  50% { transform: rotateX(3deg) rotateY(-4deg) translate3d(0, -10px, 28px); }
+}
+
+.learning-stage__card--1 { background: #f3cf65; }
+.learning-stage__card--2 { background: #cfe5d7; animation-delay: -2s; }
+.learning-stage__card--3 { background: #f4b29c; animation-delay: -4s; }
+.learning-stage__card--4 { background: #244bc5; color: #fffaf0; animation-delay: -6s; }
+
+.learning-stage__index,
+.learning-stage__card small {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  line-height: 1.4;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.learning-orbit__card strong {
-  max-width: 12ch;
-  font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2vw, 1.9rem);
-  font-weight: 550;
-  letter-spacing: -0.04em;
-  line-height: 1;
+.learning-stage__card img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 0.35rem;
+  padding: 0.2rem;
+  background: rgb(255 250 240 / 72%);
+  border: 1px solid rgb(18 38 63 / 14%);
+  border-radius: 0.6rem;
+  object-fit: contain;
 }
 
-.learning-orbit__card--1 { background: #f3cf65; transform: rotate(-1.5deg); }
-.learning-orbit__card--2 { background: #cfe5d7; transform: rotate(1deg); }
-.learning-orbit__card--3 { background: #f4b29c; transform: rotate(1deg); }
-.learning-orbit__card--4 { background: #244bc5; color: #fffaf0; transform: rotate(-1.5deg); }
+.learning-stage__card strong {
+  margin-top: auto;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  font-weight: 550;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
 
-.learning-orbit__card:focus-visible {
+.learning-stage__go {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.55rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgb(18 38 63 / 22%);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.learning-stage__card--4 .learning-stage__go {
+  border-top-color: rgb(255 250 240 / 28%);
+}
+
+.learning-stage__card:focus-visible {
   outline: 3px solid #d95c43;
   outline-offset: 4px;
-  transform: translateY(-2px) rotate(0deg);
-}@media (hover: hover) and (pointer: fine){
-  .learning-orbit__card:hover {
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .learning-stage__card:hover {
     z-index: 3;
-    box-shadow: 0.55rem 0.55rem 0 rgb(20 33 63 / 16%);
-    transform: translateY(-4px) rotate(0deg);
+    animation-play-state: paused;
+    box-shadow: 0 1.4rem 2rem rgb(20 33 63 / 24%);
+    transform: rotateX(0deg) rotateY(0deg) translateZ(46px);
   }
 
-  .learning-orbit__card:hover small {
+  .learning-stage__card:hover .learning-stage__go {
     text-decoration: underline;
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.22em;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .learning-stage__card {
+    animation: none;
+  }
+}
+
 
 .learning-hero__ledger {
   display: flex;
@@ -292,6 +326,27 @@ body.page-learning-entry {
 .learning-path-grid a:hover .learning-path-grid__open span {
   color: var(--signal-deep);
 }
+
+.learning-paths__live {
+  margin: 1.6rem 0 0;
+  color: var(--p-muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  line-height: 1.9;
+}
+
+.learning-paths__live a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--signal-deep);
+  text-underline-offset: 0.22em;
+}
+
+.learning-paths__live a:hover {
+  color: var(--signal-deep);
+}
+
 
 
 
@@ -425,7 +480,7 @@ body.page-learning-entry {
     padding-block: 4rem 2rem;
   }
 
-  .learning-orbit {
+  .learning-stage {
     width: min(100%, 30rem);
     height: auto;
     justify-self: start;
@@ -463,20 +518,22 @@ body.page-learning-entry {
     font-size: clamp(3rem, 13vw, 4.8rem);
   }
 
-  .learning-orbit {
+  .learning-stage {
     grid-template-columns: 1fr;
     gap: 0.8rem;
-    padding: 1.5rem 1rem 1rem;
+    padding: 4.4rem 1rem 1rem;
     box-shadow: 0.65rem 0.65rem 0 #f3cf65;
   }
 
-  .learning-orbit__core {
+  .learning-stage__core {
+    top: 1rem;
+    left: 1rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25rem;
+    gap: 0.15rem;
   }
 
-  .learning-orbit__card {
+  .learning-stage__card {
     min-height: 8.5rem;
   }
 
