@@ -190,14 +190,14 @@ export default function ProcureSherpaShell({ records: routes }: ProcureSherpaShe
 
         <div className="sherpa-main">
           <div className="sherpa-main__toolbar">
-            <label className="field-label" htmlFor="sherpa-search">Search preserved routes</label>
+            <label className="field-label" htmlFor="sherpa-search">Search guides</label>
             <input ref={searchRef} id="sherpa-search" type="search" value={query} onChange={(event) => setQuery(event.target.value.slice(0, 160))} placeholder="Search Academy, contracts, templates…" maxLength={160} disabled={!urlStateReady} aria-keyshortcuts="Control+K Meta+K" />
           </div>
 
           {!routeStateReady || !urlStateReady ? (
             <div className="sherpa-route" role="status">
               <p className="t-label">Workspace route</p>
-              <h2>Opening the preserved route…</h2>
+              <h2>Opening the guide…</h2>
               <p>The route and search context are being restored from this address.</p>
             </div>
           ) : query.trim() ? (

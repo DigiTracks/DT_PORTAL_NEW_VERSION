@@ -7,7 +7,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "HCM Fusion | Human capital learning library",
-    "description": "HCM Fusion | Human capital learning library: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "HCM Fusion | Human capital learning library: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -61,7 +61,7 @@ export const routeRegistry = [
     "routeClass": "administrative",
     "indexable": false,
     "title": "Admin · HCM Fusion",
-    "description": "Admin · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Admin · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "administrative-probe",
     "breadcrumbs": [
       {
@@ -116,7 +116,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Your analytics · HCM Fusion",
-    "description": "Your analytics · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Your analytics · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "application-user-route",
     "breadcrumbs": [
       {
@@ -171,7 +171,7 @@ export const routeRegistry = [
     "routeClass": "retired",
     "indexable": false,
     "title": "404: This page could not be found.",
-    "description": "404: This page could not be found.: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "404: This page could not be found.: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "defect-probe",
     "breadcrumbs": [
       {
@@ -226,7 +226,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Certification practice · HCM Fusion",
-    "description": "Certification practice · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Certification practice · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -281,7 +281,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cross-module implementation paper · HCM Fusion",
-    "description": "Cross-module implementation paper · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Cross-module implementation paper · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "certification-paper",
     "breadcrumbs": [
       {
@@ -340,7 +340,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "HCM Foundations paper · HCM Fusion",
-    "description": "HCM Foundations paper · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "HCM Foundations paper · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "certification-paper",
     "breadcrumbs": [
       {
@@ -399,7 +399,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Recruiting paper · HCM Fusion",
-    "description": "Recruiting paper · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Recruiting paper · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "certification-paper",
     "breadcrumbs": [
       {
@@ -458,7 +458,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time and Labor paper · HCM Fusion",
-    "description": "Time and Labor paper · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time and Labor paper · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "certification-paper",
     "breadcrumbs": [
       {
@@ -517,7 +517,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Concepts · HCM Fusion",
-    "description": "Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -572,7 +572,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The accrual plan, configured — Concepts · HCM Fusion",
-    "description": "The accrual plan, configured — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The accrual plan, configured — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -631,7 +631,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence certifications — Concepts · HCM Fusion",
-    "description": "Absence certifications — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence certifications — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -690,7 +690,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Compensatory time plans — Concepts · HCM Fusion",
-    "description": "Compensatory time plans — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Compensatory time plans — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -749,7 +749,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The six absence components — Concepts · HCM Fusion",
-    "description": "The six absence components — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The six absence components — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -808,7 +808,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Concurrency vs concurrent entitlement vs plan priority — Concepts · HCM Fusion",
-    "description": "Concurrency vs concurrent entitlement vs plan priority — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Concurrency vs concurrent entitlement vs plan priority — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -867,7 +867,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Loading absence data (integrated workbooks and HCM Spreadsheet Data Loader) — Concepts · HCM Fusion",
-    "description": "Loading absence data (integrated workbooks and HCM Spreadsheet Data Loader) — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Loading absence data (integrated workbooks and HCM Spreadsheet Data Loader) — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -926,7 +926,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Date effectivity — update vs correct vs end-date — Concepts · HCM Fusion",
-    "description": "Date effectivity — update vs correct vs end-date — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Date effectivity — update vs correct vs end-date — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -985,7 +985,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Deep links — getting people straight to a page — Concepts · HCM Fusion",
-    "description": "Deep links — getting people straight to a page — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Deep links — getting people straight to a page — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1044,7 +1044,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Donation plans — Concepts · HCM Fusion",
-    "description": "Donation plans — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Donation plans — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1103,7 +1103,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Eligibility profiles and derived factors — Concepts · HCM Fusion",
-    "description": "Eligibility profiles and derived factors — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Eligibility profiles and derived factors — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1162,7 +1162,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "HCM Extracts — getting absence data out and reconciling it with payroll — Concepts · HCM Fusion",
-    "description": "HCM Extracts — getting absence data out and reconciling it with payroll — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "HCM Extracts — getting absence data out and reconciling it with payroll — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1221,7 +1221,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Fast formulas in Absence Management — Concepts · HCM Fusion",
-    "description": "Fast formulas in Absence Management — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Fast formulas in Absence Management — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1280,7 +1280,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Lookups, value sets, and flexfields — where lists and extra fields come from — Concepts · HCM Fusion",
-    "description": "Lookups, value sets, and flexfields — where lists and extra fields come from — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Lookups, value sets, and flexfields — where lists and extra fields come from — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1339,7 +1339,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payroll elements that pay and account for absences — Concepts · HCM Fusion",
-    "description": "Payroll elements that pay and account for absences — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll elements that pay and account for absences — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1398,7 +1398,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence plan — Concepts · HCM Fusion",
-    "description": "Absence plan — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence plan — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1457,7 +1457,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence processes — Concepts · HCM Fusion",
-    "description": "Absence processes — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence processes — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1516,7 +1516,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence approval and processing rules — Concepts · HCM Fusion",
-    "description": "Absence approval and processing rules — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence approval and processing rules — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1575,7 +1575,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Qualification plans and entitlement bands — Concepts · HCM Fusion",
-    "description": "Qualification plans and entitlement bands — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Qualification plans and entitlement bands — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1634,7 +1634,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Rate definitions for absence payments — Concepts · HCM Fusion",
-    "description": "Rate definitions for absence payments — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Rate definitions for absence payments — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1693,7 +1693,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence duration and the work schedule — Concepts · HCM Fusion",
-    "description": "Absence duration and the work schedule — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence duration and the work schedule — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1777,7 +1777,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Display features: what the recording pages show and enforce — Concepts · HCM Fusion",
-    "description": "Display features: what the recording pages show and enforce — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Display features: what the recording pages show and enforce — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1836,7 +1836,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence types, reasons, and categories — the record workers touch — Concepts · HCM Fusion",
-    "description": "Absence types, reasons, and categories — the record workers touch — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence types, reasons, and categories — the record workers touch — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1870,7 +1870,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence type — Concepts · HCM Fusion",
-    "description": "Absence type — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence type — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1929,7 +1929,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC to Core HR bridge — Concepts · HCM Fusion",
-    "description": "ORC to Core HR bridge — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC to Core HR bridge — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -1988,7 +1988,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL to Payroll bridge — Concepts · HCM Fusion",
-    "description": "OTL to Payroll bridge — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL to Payroll bridge — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2047,7 +2047,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL to Project Costing bridge — Concepts · HCM Fusion",
-    "description": "OTL to Project Costing bridge — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL to Project Costing bridge — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2106,7 +2106,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Assignment — Concepts · HCM Fusion",
-    "description": "Assignment — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Assignment — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2165,7 +2165,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Business unit — Concepts · HCM Fusion",
-    "description": "Business unit — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Business unit — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2224,7 +2224,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Department — Concepts · HCM Fusion",
-    "description": "Department — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Department — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2283,7 +2283,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The enterprise — Concepts · HCM Fusion",
-    "description": "The enterprise — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The enterprise — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2342,7 +2342,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Job — Concepts · HCM Fusion",
-    "description": "Job — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Job — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2401,7 +2401,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Legal entity and legal employer — Concepts · HCM Fusion",
-    "description": "Legal entity and legal employer — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Legal entity and legal employer — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2460,7 +2460,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payroll relationship — Concepts · HCM Fusion",
-    "description": "Payroll relationship — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll relationship — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2519,7 +2519,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Position — Concepts · HCM Fusion",
-    "description": "Position — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Position — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2578,7 +2578,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The security model — Concepts · HCM Fusion",
-    "description": "The security model — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The security model — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2637,7 +2637,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Legal, managerial and functional structures — Concepts · HCM Fusion",
-    "description": "Legal, managerial and functional structures — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Legal, managerial and functional structures — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2696,7 +2696,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Work relationship — Concepts · HCM Fusion",
-    "description": "Work relationship — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Work relationship — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2755,7 +2755,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Job application flow — Concepts · HCM Fusion",
-    "description": "Job application flow — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Job application flow — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2814,7 +2814,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Career site — Concepts · HCM Fusion",
-    "description": "Career site — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Career site — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2873,7 +2873,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Career site contextualization — Concepts · HCM Fusion",
-    "description": "Career site contextualization — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Career site contextualization — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2932,7 +2932,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Oracle Recruiting mental model — Concepts · HCM Fusion",
-    "description": "Oracle Recruiting mental model — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Oracle Recruiting mental model — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -2991,7 +2991,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Recruiting and Candidate Experience offering — Concepts · HCM Fusion",
-    "description": "Recruiting and Candidate Experience offering — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Recruiting and Candidate Experience offering — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3050,7 +3050,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Person ID on a recruiting user — Concepts · HCM Fusion",
-    "description": "Person ID on a recruiting user — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Person ID on a recruiting user — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3134,7 +3134,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Requisition REST grants — Concepts · HCM Fusion",
-    "description": "Requisition REST grants — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Requisition REST grants — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3168,7 +3168,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Job requisition — Concepts · HCM Fusion",
-    "description": "Job requisition — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Job requisition — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3227,7 +3227,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Candidate selection process — Concepts · HCM Fusion",
-    "description": "Candidate selection process — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Candidate selection process — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3286,7 +3286,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time calculation rules — Concepts · HCM Fusion",
-    "description": "Time calculation rules — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time calculation rules — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3345,7 +3345,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time consumer set — Concepts · HCM Fusion",
-    "description": "Time consumer set — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time consumer set — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3404,7 +3404,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Consumer validation — Concepts · HCM Fusion",
-    "description": "Consumer validation — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Consumer validation — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3463,7 +3463,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Worker time entry profile — Concepts · HCM Fusion",
-    "description": "Worker time entry profile — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Worker time entry profile — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3522,7 +3522,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time entry rules — Concepts · HCM Fusion",
-    "description": "Time entry rules — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time entry rules — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3581,7 +3581,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time entry exception — Concepts · HCM Fusion",
-    "description": "Time entry exception — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time entry exception — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3640,7 +3640,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "HCM group — Concepts · HCM Fusion",
-    "description": "HCM group — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "HCM group — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3699,7 +3699,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Repeating time period — Concepts · HCM Fusion",
-    "description": "Repeating time period — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Repeating time period — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3758,7 +3758,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The five-stage processing chain — Concepts · HCM Fusion",
-    "description": "The five-stage processing chain — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The five-stage processing chain — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3817,7 +3817,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Worker Time Processing Profile — Concepts · HCM Fusion",
-    "description": "Worker Time Processing Profile — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Worker Time Processing Profile — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3876,7 +3876,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time reporting channels — Concepts · HCM Fusion",
-    "description": "Time reporting channels — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time reporting channels — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3935,7 +3935,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Rule types — Concepts · HCM Fusion",
-    "description": "Rule types — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Rule types — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -3994,7 +3994,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time card actions — Concepts · HCM Fusion",
-    "description": "Time card actions — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time card actions — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4053,7 +4053,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time consumer — Concepts · HCM Fusion",
-    "description": "Time consumer — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time consumer — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4112,7 +4112,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The personal calculation card — Concepts · HCM Fusion",
-    "description": "The personal calculation card — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The personal calculation card — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4171,7 +4171,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The payroll cycle — Concepts · HCM Fusion",
-    "description": "The payroll cycle — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The payroll cycle — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4230,7 +4230,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The Earnings and Deductions page and what feeds it — Concepts · HCM Fusion",
-    "description": "The Earnings and Deductions page and what feeds it — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The Earnings and Deductions page and what feeds it — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4289,7 +4289,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Standard element entries: where pay inputs live — Concepts · HCM Fusion",
-    "description": "Standard element entries: where pay inputs live — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Standard element entries: where pay inputs live — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4348,7 +4348,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Personal payroll entries — Concepts · HCM Fusion",
-    "description": "Personal payroll entries — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Personal payroll entries — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4407,7 +4407,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payroll flows and flow patterns — Concepts · HCM Fusion",
-    "description": "Payroll flows and flow patterns — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll flows and flow patterns — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4466,7 +4466,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The personal payment method — Concepts · HCM Fusion",
-    "description": "The personal payment method — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The personal payment method — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4525,7 +4525,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The payroll relationship — Concepts · HCM Fusion",
-    "description": "The payroll relationship — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The payroll relationship — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4584,7 +4584,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Assigning and transferring a payroll — Concepts · HCM Fusion",
-    "description": "Assigning and transferring a payroll — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Assigning and transferring a payroll — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4643,7 +4643,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The tax reporting unit (TRU) — Concepts · HCM Fusion",
-    "description": "The tax reporting unit (TRU) — Concepts · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The tax reporting unit (TRU) — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
     "breadcrumbs": [
       {
@@ -4702,7 +4702,7 @@ export const routeRegistry = [
     "routeClass": "retired",
     "indexable": false,
     "title": "404: This page could not be found.",
-    "description": "404: This page could not be found.: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "404: This page could not be found.: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "defect-probe",
     "breadcrumbs": [
       {
@@ -4757,7 +4757,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-001 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -4820,7 +4820,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-002 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -4883,7 +4883,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-003 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -4946,7 +4946,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-004 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5009,7 +5009,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-006 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5072,7 +5072,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-007 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5135,7 +5135,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-008 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5198,7 +5198,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-009 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5261,7 +5261,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-010 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5324,7 +5324,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-011 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5387,7 +5387,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-012 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5450,7 +5450,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ACCRUAL-014 — evidence · HCM Fusion",
-    "description": "ABS-ACCRUAL-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ACCRUAL-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5513,7 +5513,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-001 — evidence · HCM Fusion",
-    "description": "ABS-CERT-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5576,7 +5576,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-002 — evidence · HCM Fusion",
-    "description": "ABS-CERT-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5639,7 +5639,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-003 — evidence · HCM Fusion",
-    "description": "ABS-CERT-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5702,7 +5702,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-004 — evidence · HCM Fusion",
-    "description": "ABS-CERT-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5765,7 +5765,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-005 — evidence · HCM Fusion",
-    "description": "ABS-CERT-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5828,7 +5828,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-006 — evidence · HCM Fusion",
-    "description": "ABS-CERT-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5891,7 +5891,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-007 — evidence · HCM Fusion",
-    "description": "ABS-CERT-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -5954,7 +5954,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-008 — evidence · HCM Fusion",
-    "description": "ABS-CERT-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6017,7 +6017,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-009 — evidence · HCM Fusion",
-    "description": "ABS-CERT-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6080,7 +6080,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CERT-010 — evidence · HCM Fusion",
-    "description": "ABS-CERT-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CERT-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6143,7 +6143,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-COMP-001 — evidence · HCM Fusion",
-    "description": "ABS-COMP-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-COMP-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6206,7 +6206,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-COMP-002 — evidence · HCM Fusion",
-    "description": "ABS-COMP-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-COMP-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6269,7 +6269,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-COMP-003 — evidence · HCM Fusion",
-    "description": "ABS-COMP-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-COMP-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6332,7 +6332,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-COMP-004 — evidence · HCM Fusion",
-    "description": "ABS-COMP-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-COMP-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6395,7 +6395,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-COMP-005 — evidence · HCM Fusion",
-    "description": "ABS-COMP-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-COMP-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6458,7 +6458,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-COMP-006 — evidence · HCM Fusion",
-    "description": "ABS-COMP-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-COMP-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6521,7 +6521,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-COMP-007 — evidence · HCM Fusion",
-    "description": "ABS-COMP-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-COMP-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6584,7 +6584,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-001 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6647,7 +6647,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-002 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6710,7 +6710,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-003 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6773,7 +6773,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-004 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6836,7 +6836,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-005 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6899,7 +6899,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-006 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -6962,7 +6962,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-007 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7025,7 +7025,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-008 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7088,7 +7088,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-009 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7151,7 +7151,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-CTIME-010 — evidence · HCM Fusion",
-    "description": "ABS-CTIME-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-CTIME-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7214,7 +7214,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-001 — evidence · HCM Fusion",
-    "description": "ABS-DATE-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7277,7 +7277,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-002 — evidence · HCM Fusion",
-    "description": "ABS-DATE-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7340,7 +7340,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-003 — evidence · HCM Fusion",
-    "description": "ABS-DATE-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7403,7 +7403,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-004 — evidence · HCM Fusion",
-    "description": "ABS-DATE-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7466,7 +7466,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-005 — evidence · HCM Fusion",
-    "description": "ABS-DATE-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7529,7 +7529,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-006 — evidence · HCM Fusion",
-    "description": "ABS-DATE-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7592,7 +7592,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-007 — evidence · HCM Fusion",
-    "description": "ABS-DATE-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7655,7 +7655,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-008 — evidence · HCM Fusion",
-    "description": "ABS-DATE-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7718,7 +7718,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DATE-009 — evidence · HCM Fusion",
-    "description": "ABS-DATE-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DATE-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7781,7 +7781,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-003 — evidence · HCM Fusion",
-    "description": "ABS-DON-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7844,7 +7844,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-004 — evidence · HCM Fusion",
-    "description": "ABS-DON-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7907,7 +7907,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-005 — evidence · HCM Fusion",
-    "description": "ABS-DON-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -7970,7 +7970,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-007 — evidence · HCM Fusion",
-    "description": "ABS-DON-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8033,7 +8033,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-008 — evidence · HCM Fusion",
-    "description": "ABS-DON-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8096,7 +8096,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-009 — evidence · HCM Fusion",
-    "description": "ABS-DON-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8159,7 +8159,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-010 — evidence · HCM Fusion",
-    "description": "ABS-DON-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8222,7 +8222,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-011 — evidence · HCM Fusion",
-    "description": "ABS-DON-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8285,7 +8285,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-DON-012 — evidence · HCM Fusion",
-    "description": "ABS-DON-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-DON-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8348,7 +8348,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELEM-001 — evidence · HCM Fusion",
-    "description": "ABS-ELEM-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELEM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8411,7 +8411,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELEM-002 — evidence · HCM Fusion",
-    "description": "ABS-ELEM-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELEM-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8474,7 +8474,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELEM-003 — evidence · HCM Fusion",
-    "description": "ABS-ELEM-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELEM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8537,7 +8537,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELEM-004 — evidence · HCM Fusion",
-    "description": "ABS-ELEM-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELEM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8600,7 +8600,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELEM-005 — evidence · HCM Fusion",
-    "description": "ABS-ELEM-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELEM-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8663,7 +8663,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELEM-006 — evidence · HCM Fusion",
-    "description": "ABS-ELEM-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELEM-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8726,7 +8726,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELEM-007 — evidence · HCM Fusion",
-    "description": "ABS-ELEM-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELEM-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8789,7 +8789,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELEM-008 — evidence · HCM Fusion",
-    "description": "ABS-ELEM-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELEM-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8852,7 +8852,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-001 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8915,7 +8915,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-002 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -8978,7 +8978,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-003 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9041,7 +9041,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-004 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9104,7 +9104,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-005 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9167,7 +9167,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-009 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9230,7 +9230,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-010 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9293,7 +9293,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-011 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9356,7 +9356,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-ELIG-012 — evidence · HCM Fusion",
-    "description": "ABS-ELIG-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-ELIG-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9419,7 +9419,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FLEX-001 — evidence · HCM Fusion",
-    "description": "ABS-FLEX-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FLEX-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9482,7 +9482,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FLEX-002 — evidence · HCM Fusion",
-    "description": "ABS-FLEX-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FLEX-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9545,7 +9545,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FLEX-003 — evidence · HCM Fusion",
-    "description": "ABS-FLEX-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FLEX-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9608,7 +9608,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FLEX-004 — evidence · HCM Fusion",
-    "description": "ABS-FLEX-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FLEX-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9671,7 +9671,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FLEX-005 — evidence · HCM Fusion",
-    "description": "ABS-FLEX-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FLEX-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9734,7 +9734,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FLEX-006 — evidence · HCM Fusion",
-    "description": "ABS-FLEX-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FLEX-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9797,7 +9797,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-001 — evidence · HCM Fusion",
-    "description": "ABS-FORM-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9860,7 +9860,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-003 — evidence · HCM Fusion",
-    "description": "ABS-FORM-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9923,7 +9923,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-004 — evidence · HCM Fusion",
-    "description": "ABS-FORM-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -9986,7 +9986,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-005 — evidence · HCM Fusion",
-    "description": "ABS-FORM-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10049,7 +10049,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-006 — evidence · HCM Fusion",
-    "description": "ABS-FORM-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10112,7 +10112,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-007 — evidence · HCM Fusion",
-    "description": "ABS-FORM-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10175,7 +10175,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-008 — evidence · HCM Fusion",
-    "description": "ABS-FORM-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10238,7 +10238,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-011 — evidence · HCM Fusion",
-    "description": "ABS-FORM-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10301,7 +10301,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-012 — evidence · HCM Fusion",
-    "description": "ABS-FORM-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10364,7 +10364,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-013 — evidence · HCM Fusion",
-    "description": "ABS-FORM-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10427,7 +10427,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-FORM-014 — evidence · HCM Fusion",
-    "description": "ABS-FORM-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-FORM-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10490,7 +10490,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LINK-001 — evidence · HCM Fusion",
-    "description": "ABS-LINK-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LINK-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10553,7 +10553,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOAD-001 — evidence · HCM Fusion",
-    "description": "ABS-LOAD-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOAD-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10616,7 +10616,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOAD-002 — evidence · HCM Fusion",
-    "description": "ABS-LOAD-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOAD-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10679,7 +10679,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOAD-003 — evidence · HCM Fusion",
-    "description": "ABS-LOAD-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOAD-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10742,7 +10742,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOAD-004 — evidence · HCM Fusion",
-    "description": "ABS-LOAD-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOAD-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10805,7 +10805,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOAD-005 — evidence · HCM Fusion",
-    "description": "ABS-LOAD-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOAD-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10868,7 +10868,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOAD-006 — evidence · HCM Fusion",
-    "description": "ABS-LOAD-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOAD-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10931,7 +10931,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOAD-007 — evidence · HCM Fusion",
-    "description": "ABS-LOAD-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOAD-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -10994,7 +10994,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOAD-008 — evidence · HCM Fusion",
-    "description": "ABS-LOAD-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOAD-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11057,7 +11057,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOOKUP-001 — evidence · HCM Fusion",
-    "description": "ABS-LOOKUP-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOOKUP-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11120,7 +11120,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOOKUP-002 — evidence · HCM Fusion",
-    "description": "ABS-LOOKUP-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOOKUP-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11183,7 +11183,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOOKUP-003 — evidence · HCM Fusion",
-    "description": "ABS-LOOKUP-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOOKUP-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11246,7 +11246,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOOKUP-004 — evidence · HCM Fusion",
-    "description": "ABS-LOOKUP-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOOKUP-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11309,7 +11309,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOOKUP-005 — evidence · HCM Fusion",
-    "description": "ABS-LOOKUP-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOOKUP-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11372,7 +11372,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOOKUP-006 — evidence · HCM Fusion",
-    "description": "ABS-LOOKUP-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOOKUP-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11435,7 +11435,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-LOOKUP-007 — evidence · HCM Fusion",
-    "description": "ABS-LOOKUP-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-LOOKUP-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11498,7 +11498,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PLAN-001 — evidence · HCM Fusion",
-    "description": "ABS-PLAN-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PLAN-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11561,7 +11561,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PLAN-002 — evidence · HCM Fusion",
-    "description": "ABS-PLAN-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PLAN-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11624,7 +11624,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PLAN-003 — evidence · HCM Fusion",
-    "description": "ABS-PLAN-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PLAN-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11687,7 +11687,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PLAN-004 — evidence · HCM Fusion",
-    "description": "ABS-PLAN-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PLAN-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11750,7 +11750,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PLAN-005 — evidence · HCM Fusion",
-    "description": "ABS-PLAN-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PLAN-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11813,7 +11813,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PLAN-006 — evidence · HCM Fusion",
-    "description": "ABS-PLAN-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PLAN-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11876,7 +11876,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PLAN-007 — evidence · HCM Fusion",
-    "description": "ABS-PLAN-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PLAN-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -11939,7 +11939,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-001 — evidence · HCM Fusion",
-    "description": "ABS-PROC-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12002,7 +12002,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-002 — evidence · HCM Fusion",
-    "description": "ABS-PROC-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12065,7 +12065,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-003 — evidence · HCM Fusion",
-    "description": "ABS-PROC-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12128,7 +12128,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-004 — evidence · HCM Fusion",
-    "description": "ABS-PROC-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12191,7 +12191,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-005 — evidence · HCM Fusion",
-    "description": "ABS-PROC-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12254,7 +12254,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-006 — evidence · HCM Fusion",
-    "description": "ABS-PROC-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12317,7 +12317,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-007 — evidence · HCM Fusion",
-    "description": "ABS-PROC-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12380,7 +12380,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-008 — evidence · HCM Fusion",
-    "description": "ABS-PROC-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12443,7 +12443,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-009 — evidence · HCM Fusion",
-    "description": "ABS-PROC-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12506,7 +12506,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-010 — evidence · HCM Fusion",
-    "description": "ABS-PROC-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12569,7 +12569,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-011 — evidence · HCM Fusion",
-    "description": "ABS-PROC-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12632,7 +12632,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-012 — evidence · HCM Fusion",
-    "description": "ABS-PROC-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12695,7 +12695,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-PROC-013 — evidence · HCM Fusion",
-    "description": "ABS-PROC-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-PROC-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12758,7 +12758,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-001 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12821,7 +12821,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-002 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12884,7 +12884,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-003 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -12947,7 +12947,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-004 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13010,7 +13010,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-005 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13073,7 +13073,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-006 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13136,7 +13136,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-008 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13199,7 +13199,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-009 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13262,7 +13262,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-010 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13325,7 +13325,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-011 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13388,7 +13388,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-QUAL-012 — evidence · HCM Fusion",
-    "description": "ABS-QUAL-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-QUAL-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13451,7 +13451,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-001 — evidence · HCM Fusion",
-    "description": "ABS-RATE-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13514,7 +13514,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-002 — evidence · HCM Fusion",
-    "description": "ABS-RATE-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13577,7 +13577,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-003 — evidence · HCM Fusion",
-    "description": "ABS-RATE-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13640,7 +13640,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-004 — evidence · HCM Fusion",
-    "description": "ABS-RATE-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13703,7 +13703,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-006 — evidence · HCM Fusion",
-    "description": "ABS-RATE-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13766,7 +13766,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-007 — evidence · HCM Fusion",
-    "description": "ABS-RATE-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13829,7 +13829,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-008 — evidence · HCM Fusion",
-    "description": "ABS-RATE-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13892,7 +13892,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-009 — evidence · HCM Fusion",
-    "description": "ABS-RATE-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -13955,7 +13955,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RATE-010 — evidence · HCM Fusion",
-    "description": "ABS-RATE-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RATE-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14018,7 +14018,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RULE-001 — evidence · HCM Fusion",
-    "description": "ABS-RULE-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RULE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14081,7 +14081,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RULE-002 — evidence · HCM Fusion",
-    "description": "ABS-RULE-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RULE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14144,7 +14144,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-RULE-003 — evidence · HCM Fusion",
-    "description": "ABS-RULE-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-RULE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14207,7 +14207,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-001 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14270,7 +14270,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-002 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14333,7 +14333,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-003 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14396,7 +14396,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-004 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14459,7 +14459,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-005 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14522,7 +14522,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-006 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14585,7 +14585,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-007 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14648,7 +14648,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-008 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14711,7 +14711,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SCHED-009 — evidence · HCM Fusion",
-    "description": "ABS-SCHED-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SCHED-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14774,7 +14774,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SETUP-001 — evidence · HCM Fusion",
-    "description": "ABS-SETUP-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SETUP-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14837,7 +14837,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-SETUP-002 — evidence · HCM Fusion",
-    "description": "ABS-SETUP-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-SETUP-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14900,7 +14900,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-001 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -14963,7 +14963,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-002 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15026,7 +15026,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-003 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15089,7 +15089,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-004 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15152,7 +15152,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-005 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15215,7 +15215,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-006 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15278,7 +15278,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-007 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15341,7 +15341,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-008 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15404,7 +15404,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-009 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15467,7 +15467,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-010 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15530,7 +15530,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-011 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15593,7 +15593,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-012 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15656,7 +15656,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-013 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15719,7 +15719,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-014 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15782,7 +15782,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-015 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-015 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15845,7 +15845,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-016 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-016 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-016 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15908,7 +15908,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-017 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-017 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-017 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -15971,7 +15971,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-018 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-018 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-018 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16034,7 +16034,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-019 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-019 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-019 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16097,7 +16097,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-020 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-020 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16160,7 +16160,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-021 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-021 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-021 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16223,7 +16223,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-TYPE-022 — evidence · HCM Fusion",
-    "description": "ABS-TYPE-022 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-TYPE-022 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16286,7 +16286,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-XTRACT-001 — evidence · HCM Fusion",
-    "description": "ABS-XTRACT-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-XTRACT-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16349,7 +16349,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-XTRACT-002 — evidence · HCM Fusion",
-    "description": "ABS-XTRACT-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-XTRACT-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16412,7 +16412,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-XTRACT-003 — evidence · HCM Fusion",
-    "description": "ABS-XTRACT-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-XTRACT-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16475,7 +16475,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ABS-XTRACT-004 — evidence · HCM Fusion",
-    "description": "ABS-XTRACT-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ABS-XTRACT-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16538,7 +16538,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ASG-009 — evidence · HCM Fusion",
-    "description": "COREHR-ASG-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ASG-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16601,7 +16601,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ASG-010 — evidence · HCM Fusion",
-    "description": "COREHR-ASG-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ASG-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16664,7 +16664,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ASG-011 — evidence · HCM Fusion",
-    "description": "COREHR-ASG-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ASG-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16727,7 +16727,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ASG-012 — evidence · HCM Fusion",
-    "description": "COREHR-ASG-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ASG-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16790,7 +16790,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ASG-029 — evidence · HCM Fusion",
-    "description": "COREHR-ASG-029 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ASG-029 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16853,7 +16853,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ASG-030 — evidence · HCM Fusion",
-    "description": "COREHR-ASG-030 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ASG-030 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16916,7 +16916,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ASG-031 — evidence · HCM Fusion",
-    "description": "COREHR-ASG-031 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ASG-031 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -16979,7 +16979,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ASG-034 — evidence · HCM Fusion",
-    "description": "COREHR-ASG-034 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ASG-034 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17042,7 +17042,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ENT-024 — evidence · HCM Fusion",
-    "description": "COREHR-ENT-024 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ENT-024 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17105,7 +17105,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ENT-025 — evidence · HCM Fusion",
-    "description": "COREHR-ENT-025 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ENT-025 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17168,7 +17168,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ENT-026 — evidence · HCM Fusion",
-    "description": "COREHR-ENT-026 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ENT-026 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17231,7 +17231,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ENT-027 — evidence · HCM Fusion",
-    "description": "COREHR-ENT-027 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ENT-027 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17294,7 +17294,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ENT-028 — evidence · HCM Fusion",
-    "description": "COREHR-ENT-028 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ENT-028 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17357,7 +17357,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-GRADE-008 — evidence · HCM Fusion",
-    "description": "COREHR-GRADE-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-GRADE-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17420,7 +17420,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-JOB-001 — evidence · HCM Fusion",
-    "description": "COREHR-JOB-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-JOB-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17483,7 +17483,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-JOB-002 — evidence · HCM Fusion",
-    "description": "COREHR-JOB-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-JOB-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17546,7 +17546,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-NWK-020 — evidence · HCM Fusion",
-    "description": "COREHR-NWK-020 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-NWK-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17609,7 +17609,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ORDER-001 — evidence · HCM Fusion",
-    "description": "COREHR-ORDER-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ORDER-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17672,7 +17672,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ORDER-002 — evidence · HCM Fusion",
-    "description": "COREHR-ORDER-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ORDER-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17735,7 +17735,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-ORDER-003 — evidence · HCM Fusion",
-    "description": "COREHR-ORDER-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-ORDER-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17798,7 +17798,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-POS-004 — evidence · HCM Fusion",
-    "description": "COREHR-POS-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-POS-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17861,7 +17861,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-POS-005 — evidence · HCM Fusion",
-    "description": "COREHR-POS-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-POS-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17924,7 +17924,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-POS-006 — evidence · HCM Fusion",
-    "description": "COREHR-POS-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-POS-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -17987,7 +17987,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-SYNC-014 — evidence · HCM Fusion",
-    "description": "COREHR-SYNC-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-SYNC-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18050,7 +18050,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-WR-013 — evidence · HCM Fusion",
-    "description": "COREHR-WR-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-WR-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18113,7 +18113,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-WR-016 — evidence · HCM Fusion",
-    "description": "COREHR-WR-016 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-WR-016 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18176,7 +18176,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-WR-017 — evidence · HCM Fusion",
-    "description": "COREHR-WR-017 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-WR-017 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18239,7 +18239,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-WR-018 — evidence · HCM Fusion",
-    "description": "COREHR-WR-018 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-WR-018 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18302,7 +18302,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-WR-019 — evidence · HCM Fusion",
-    "description": "COREHR-WR-019 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-WR-019 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18365,7 +18365,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-WR-021 — evidence · HCM Fusion",
-    "description": "COREHR-WR-021 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-WR-021 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18428,7 +18428,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "COREHR-WS-015 — evidence · HCM Fusion",
-    "description": "COREHR-WS-015 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "COREHR-WS-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18491,7 +18491,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-CAREERSITE-010 — evidence · HCM Fusion",
-    "description": "ORC-CAREERSITE-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-CAREERSITE-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18554,7 +18554,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-CAREERSITE-011 — evidence · HCM Fusion",
-    "description": "ORC-CAREERSITE-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-CAREERSITE-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18617,7 +18617,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-CAREERSITE-012 — evidence · HCM Fusion",
-    "description": "ORC-CAREERSITE-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-CAREERSITE-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18680,7 +18680,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-CAREERSITE-013 — evidence · HCM Fusion",
-    "description": "ORC-CAREERSITE-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-CAREERSITE-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18743,7 +18743,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-CAREERSITE-014 — evidence · HCM Fusion",
-    "description": "ORC-CAREERSITE-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-CAREERSITE-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18806,7 +18806,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-CSP-020 — evidence · HCM Fusion",
-    "description": "ORC-CSP-020 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-CSP-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18869,7 +18869,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-CSP-021 — evidence · HCM Fusion",
-    "description": "ORC-CSP-021 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-CSP-021 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18932,7 +18932,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-OFFERING-004 — evidence · HCM Fusion",
-    "description": "ORC-OFFERING-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-OFFERING-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -18995,7 +18995,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-OPTIN-001 — evidence · HCM Fusion",
-    "description": "ORC-OPTIN-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-OPTIN-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19058,7 +19058,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-PERSONID-003 — evidence · HCM Fusion",
-    "description": "ORC-PERSONID-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-PERSONID-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19121,7 +19121,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-PREREQ-002 — evidence · HCM Fusion",
-    "description": "ORC-PREREQ-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-PREREQ-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19184,7 +19184,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-REST-030 — evidence · HCM Fusion",
-    "description": "ORC-REST-030 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-REST-030 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19247,7 +19247,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-REST-031 — evidence · HCM Fusion",
-    "description": "ORC-REST-031 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-REST-031 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19310,7 +19310,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-REST-033 — evidence · HCM Fusion",
-    "description": "ORC-REST-033 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-REST-033 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19373,7 +19373,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-REST-034 — evidence · HCM Fusion",
-    "description": "ORC-REST-034 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-REST-034 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19436,7 +19436,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-REST-035 — evidence · HCM Fusion",
-    "description": "ORC-REST-035 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-REST-035 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19499,7 +19499,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "ORC-REST-036 — evidence · HCM Fusion",
-    "description": "ORC-REST-036 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "ORC-REST-036 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19562,7 +19562,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-ACTION-060 — evidence · HCM Fusion",
-    "description": "OTL-ACTION-060 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-ACTION-060 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19625,7 +19625,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-ACTION-061 — evidence · HCM Fusion",
-    "description": "OTL-ACTION-061 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-ACTION-061 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19688,7 +19688,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-ACTION-062 — evidence · HCM Fusion",
-    "description": "OTL-ACTION-062 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-ACTION-062 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19751,7 +19751,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHAIN-001 — evidence · HCM Fusion",
-    "description": "OTL-CHAIN-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHAIN-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19814,7 +19814,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHAIN-002 — evidence · HCM Fusion",
-    "description": "OTL-CHAIN-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHAIN-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19877,7 +19877,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHANNEL-003 — evidence · HCM Fusion",
-    "description": "OTL-CHANNEL-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHANNEL-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -19940,7 +19940,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHANNEL-004 — evidence · HCM Fusion",
-    "description": "OTL-CHANNEL-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHANNEL-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20003,7 +20003,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHANNEL-005 — evidence · HCM Fusion",
-    "description": "OTL-CHANNEL-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHANNEL-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20066,7 +20066,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHANNEL-006 — evidence · HCM Fusion",
-    "description": "OTL-CHANNEL-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHANNEL-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20129,7 +20129,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHANNEL-007 — evidence · HCM Fusion",
-    "description": "OTL-CHANNEL-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHANNEL-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20192,7 +20192,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHANNEL-008 — evidence · HCM Fusion",
-    "description": "OTL-CHANNEL-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHANNEL-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20255,7 +20255,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CHANNEL-009 — evidence · HCM Fusion",
-    "description": "OTL-CHANNEL-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CHANNEL-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20318,7 +20318,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CONSUMER-050 — evidence · HCM Fusion",
-    "description": "OTL-CONSUMER-050 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CONSUMER-050 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20381,7 +20381,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CONSUMER-051 — evidence · HCM Fusion",
-    "description": "OTL-CONSUMER-051 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CONSUMER-051 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20444,7 +20444,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CONSUMER-052 — evidence · HCM Fusion",
-    "description": "OTL-CONSUMER-052 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CONSUMER-052 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20507,7 +20507,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-CONSUMER-053 — evidence · HCM Fusion",
-    "description": "OTL-CONSUMER-053 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-CONSUMER-053 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20570,7 +20570,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-ENTRYPROFILE-020 — evidence · HCM Fusion",
-    "description": "OTL-ENTRYPROFILE-020 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-ENTRYPROFILE-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20633,7 +20633,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-ENTRYPROFILE-021 — evidence · HCM Fusion",
-    "description": "OTL-ENTRYPROFILE-021 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-ENTRYPROFILE-021 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20696,7 +20696,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-ENTRYPROFILE-022 — evidence · HCM Fusion",
-    "description": "OTL-ENTRYPROFILE-022 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-ENTRYPROFILE-022 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20759,7 +20759,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-ENTRYPROFILE-023 — evidence · HCM Fusion",
-    "description": "OTL-ENTRYPROFILE-023 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-ENTRYPROFILE-023 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20822,7 +20822,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-ENTRYPROFILE-024 — evidence · HCM Fusion",
-    "description": "OTL-ENTRYPROFILE-024 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-ENTRYPROFILE-024 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20885,7 +20885,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-PERIOD-040 — evidence · HCM Fusion",
-    "description": "OTL-PERIOD-040 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-PERIOD-040 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -20948,7 +20948,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-PERIOD-041 — evidence · HCM Fusion",
-    "description": "OTL-PERIOD-041 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-PERIOD-041 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21011,7 +21011,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-PERIOD-042 — evidence · HCM Fusion",
-    "description": "OTL-PERIOD-042 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-PERIOD-042 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21074,7 +21074,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-PERIOD-043 — evidence · HCM Fusion",
-    "description": "OTL-PERIOD-043 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-PERIOD-043 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21137,7 +21137,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-PROCPROFILE-030 — evidence · HCM Fusion",
-    "description": "OTL-PROCPROFILE-030 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-PROCPROFILE-030 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21200,7 +21200,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-PROCPROFILE-031 — evidence · HCM Fusion",
-    "description": "OTL-PROCPROFILE-031 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-PROCPROFILE-031 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21263,7 +21263,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-PROCPROFILE-032 — evidence · HCM Fusion",
-    "description": "OTL-PROCPROFILE-032 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-PROCPROFILE-032 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21326,7 +21326,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-RULES-010 — evidence · HCM Fusion",
-    "description": "OTL-RULES-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-RULES-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21389,7 +21389,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-RULES-011 — evidence · HCM Fusion",
-    "description": "OTL-RULES-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-RULES-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21452,7 +21452,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-RULES-012 — evidence · HCM Fusion",
-    "description": "OTL-RULES-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-RULES-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21515,7 +21515,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "OTL-SUBMIT-064 — evidence · HCM Fusion",
-    "description": "OTL-SUBMIT-064 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "OTL-SUBMIT-064 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21578,7 +21578,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-001 — evidence · HCM Fusion",
-    "description": "PAY-CARD-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21641,7 +21641,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-002 — evidence · HCM Fusion",
-    "description": "PAY-CARD-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21704,7 +21704,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-003 — evidence · HCM Fusion",
-    "description": "PAY-CARD-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21767,7 +21767,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-004 — evidence · HCM Fusion",
-    "description": "PAY-CARD-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21830,7 +21830,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-006 — evidence · HCM Fusion",
-    "description": "PAY-CARD-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21893,7 +21893,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-007 — evidence · HCM Fusion",
-    "description": "PAY-CARD-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -21956,7 +21956,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-008 — evidence · HCM Fusion",
-    "description": "PAY-CARD-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22019,7 +22019,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-009 — evidence · HCM Fusion",
-    "description": "PAY-CARD-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22082,7 +22082,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-010 — evidence · HCM Fusion",
-    "description": "PAY-CARD-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22145,7 +22145,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-011 — evidence · HCM Fusion",
-    "description": "PAY-CARD-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22208,7 +22208,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-012 — evidence · HCM Fusion",
-    "description": "PAY-CARD-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22271,7 +22271,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-013 — evidence · HCM Fusion",
-    "description": "PAY-CARD-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22334,7 +22334,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-014 — evidence · HCM Fusion",
-    "description": "PAY-CARD-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22397,7 +22397,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-015 — evidence · HCM Fusion",
-    "description": "PAY-CARD-015 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22460,7 +22460,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-016 — evidence · HCM Fusion",
-    "description": "PAY-CARD-016 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-016 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22523,7 +22523,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-018 — evidence · HCM Fusion",
-    "description": "PAY-CARD-018 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-018 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22586,7 +22586,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-019 — evidence · HCM Fusion",
-    "description": "PAY-CARD-019 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-019 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22649,7 +22649,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-020 — evidence · HCM Fusion",
-    "description": "PAY-CARD-020 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22712,7 +22712,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CARD-022 — evidence · HCM Fusion",
-    "description": "PAY-CARD-022 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CARD-022 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22775,7 +22775,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CYCLE-001 — evidence · HCM Fusion",
-    "description": "PAY-CYCLE-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CYCLE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22838,7 +22838,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CYCLE-002 — evidence · HCM Fusion",
-    "description": "PAY-CYCLE-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CYCLE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22901,7 +22901,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CYCLE-003 — evidence · HCM Fusion",
-    "description": "PAY-CYCLE-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CYCLE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -22964,7 +22964,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-CYCLE-005 — evidence · HCM Fusion",
-    "description": "PAY-CYCLE-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-CYCLE-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23027,7 +23027,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-001 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23090,7 +23090,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-002 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23153,7 +23153,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-003 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23216,7 +23216,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-004 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23279,7 +23279,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-005 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23342,7 +23342,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-006 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23405,7 +23405,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-007 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23468,7 +23468,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-008 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23531,7 +23531,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-010 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23594,7 +23594,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-011 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23657,7 +23657,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-012 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23720,7 +23720,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-013 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23783,7 +23783,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-014 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23846,7 +23846,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ELEM-015 — evidence · HCM Fusion",
-    "description": "PAY-ELEM-015 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ELEM-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23909,7 +23909,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-001 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -23972,7 +23972,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-002 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24035,7 +24035,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-003 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24098,7 +24098,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-004 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24161,7 +24161,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-005 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24224,7 +24224,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-006 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24287,7 +24287,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-007 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24350,7 +24350,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-008 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24413,7 +24413,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-009 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24476,7 +24476,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-010 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24539,7 +24539,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-ENTRY-011 — evidence · HCM Fusion",
-    "description": "PAY-ENTRY-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-ENTRY-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24602,7 +24602,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-FLOW-001 — evidence · HCM Fusion",
-    "description": "PAY-FLOW-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-FLOW-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24665,7 +24665,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-FLOW-002 — evidence · HCM Fusion",
-    "description": "PAY-FLOW-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-FLOW-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24728,7 +24728,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-FLOW-003 — evidence · HCM Fusion",
-    "description": "PAY-FLOW-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-FLOW-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24791,7 +24791,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-FLOW-004 — evidence · HCM Fusion",
-    "description": "PAY-FLOW-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-FLOW-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24854,7 +24854,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-001 — evidence · HCM Fusion",
-    "description": "PAY-PPM-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24917,7 +24917,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-002 — evidence · HCM Fusion",
-    "description": "PAY-PPM-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -24980,7 +24980,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-003 — evidence · HCM Fusion",
-    "description": "PAY-PPM-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25043,7 +25043,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-004 — evidence · HCM Fusion",
-    "description": "PAY-PPM-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25106,7 +25106,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-008 — evidence · HCM Fusion",
-    "description": "PAY-PPM-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25169,7 +25169,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-010 — evidence · HCM Fusion",
-    "description": "PAY-PPM-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25232,7 +25232,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-011 — evidence · HCM Fusion",
-    "description": "PAY-PPM-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25295,7 +25295,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-013 — evidence · HCM Fusion",
-    "description": "PAY-PPM-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25358,7 +25358,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-014 — evidence · HCM Fusion",
-    "description": "PAY-PPM-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25421,7 +25421,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-PPM-015 — evidence · HCM Fusion",
-    "description": "PAY-PPM-015 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-PPM-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25484,7 +25484,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-001 — evidence · HCM Fusion",
-    "description": "PAY-REL-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25547,7 +25547,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-004 — evidence · HCM Fusion",
-    "description": "PAY-REL-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25610,7 +25610,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-007 — evidence · HCM Fusion",
-    "description": "PAY-REL-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25673,7 +25673,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-008 — evidence · HCM Fusion",
-    "description": "PAY-REL-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25736,7 +25736,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-009 — evidence · HCM Fusion",
-    "description": "PAY-REL-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25799,7 +25799,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-010 — evidence · HCM Fusion",
-    "description": "PAY-REL-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25862,7 +25862,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-011 — evidence · HCM Fusion",
-    "description": "PAY-REL-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25925,7 +25925,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-012 — evidence · HCM Fusion",
-    "description": "PAY-REL-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -25988,7 +25988,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-013 — evidence · HCM Fusion",
-    "description": "PAY-REL-013 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26051,7 +26051,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-014 — evidence · HCM Fusion",
-    "description": "PAY-REL-014 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26114,7 +26114,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-016 — evidence · HCM Fusion",
-    "description": "PAY-REL-016 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-016 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26177,7 +26177,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-REL-018 — evidence · HCM Fusion",
-    "description": "PAY-REL-018 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-REL-018 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26240,7 +26240,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-001 — evidence · HCM Fusion",
-    "description": "PAY-TRU-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26303,7 +26303,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-002 — evidence · HCM Fusion",
-    "description": "PAY-TRU-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26366,7 +26366,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-003 — evidence · HCM Fusion",
-    "description": "PAY-TRU-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26429,7 +26429,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-004 — evidence · HCM Fusion",
-    "description": "PAY-TRU-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26492,7 +26492,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-005 — evidence · HCM Fusion",
-    "description": "PAY-TRU-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26555,7 +26555,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-006 — evidence · HCM Fusion",
-    "description": "PAY-TRU-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26618,7 +26618,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-007 — evidence · HCM Fusion",
-    "description": "PAY-TRU-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26681,7 +26681,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-008 — evidence · HCM Fusion",
-    "description": "PAY-TRU-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26744,7 +26744,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-009 — evidence · HCM Fusion",
-    "description": "PAY-TRU-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26807,7 +26807,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-010 — evidence · HCM Fusion",
-    "description": "PAY-TRU-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26870,7 +26870,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-TRU-011 — evidence · HCM Fusion",
-    "description": "PAY-TRU-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-TRU-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26933,7 +26933,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-001 — evidence · HCM Fusion",
-    "description": "PAY-XFER-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -26996,7 +26996,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-002 — evidence · HCM Fusion",
-    "description": "PAY-XFER-002 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27059,7 +27059,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-003 — evidence · HCM Fusion",
-    "description": "PAY-XFER-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27122,7 +27122,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-004 — evidence · HCM Fusion",
-    "description": "PAY-XFER-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27185,7 +27185,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-005 — evidence · HCM Fusion",
-    "description": "PAY-XFER-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27248,7 +27248,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-006 — evidence · HCM Fusion",
-    "description": "PAY-XFER-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27311,7 +27311,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-007 — evidence · HCM Fusion",
-    "description": "PAY-XFER-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27374,7 +27374,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-008 — evidence · HCM Fusion",
-    "description": "PAY-XFER-008 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27437,7 +27437,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-009 — evidence · HCM Fusion",
-    "description": "PAY-XFER-009 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27500,7 +27500,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-010 — evidence · HCM Fusion",
-    "description": "PAY-XFER-010 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27563,7 +27563,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-011 — evidence · HCM Fusion",
-    "description": "PAY-XFER-011 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27626,7 +27626,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-012 — evidence · HCM Fusion",
-    "description": "PAY-XFER-012 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27689,7 +27689,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "PAY-XFER-015 — evidence · HCM Fusion",
-    "description": "PAY-XFER-015 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "PAY-XFER-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27752,7 +27752,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "SEC-HCM-001 — evidence · HCM Fusion",
-    "description": "SEC-HCM-001 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "SEC-HCM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27815,7 +27815,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "SEC-HCM-003 — evidence · HCM Fusion",
-    "description": "SEC-HCM-003 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "SEC-HCM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27878,7 +27878,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "SEC-HCM-004 — evidence · HCM Fusion",
-    "description": "SEC-HCM-004 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "SEC-HCM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -27941,7 +27941,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "SEC-HCM-005 — evidence · HCM Fusion",
-    "description": "SEC-HCM-005 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "SEC-HCM-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -28004,7 +28004,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "SEC-HCM-006 — evidence · HCM Fusion",
-    "description": "SEC-HCM-006 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "SEC-HCM-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -28067,7 +28067,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "SEC-HCM-007 — evidence · HCM Fusion",
-    "description": "SEC-HCM-007 — evidence · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "SEC-HCM-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
     "breadcrumbs": [
       {
@@ -28130,7 +28130,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Absence Management — Module Case",
-    "description": "Absence Management — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence Management — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28193,7 +28193,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Absence.Md | Digi Tracks",
-    "description": "Absence.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28256,7 +28256,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Absence.Txt | Digi Tracks",
-    "description": "Absence.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28319,7 +28319,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Compensation — Module Case",
-    "description": "Compensation — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Compensation — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28382,7 +28382,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Compensation.Md | Digi Tracks",
-    "description": "Compensation.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Compensation.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28445,7 +28445,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Compensation.Txt | Digi Tracks",
-    "description": "Compensation.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Compensation.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28508,7 +28508,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Core HR — Module Case",
-    "description": "Core HR — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Core HR — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28571,7 +28571,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Core Hr.Md | Digi Tracks",
-    "description": "Core Hr.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Core Hr.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28634,7 +28634,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Core Hr.Txt | Digi Tracks",
-    "description": "Core Hr.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Core Hr.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28697,7 +28697,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Learning Management — Module Case",
-    "description": "Learning Management — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Learning Management — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28760,7 +28760,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Learning.Md | Digi Tracks",
-    "description": "Learning.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Learning.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28823,7 +28823,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Learning.Txt | Digi Tracks",
-    "description": "Learning.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Learning.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28886,7 +28886,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Time and Labor — Module Case",
-    "description": "Time and Labor — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time and Labor — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -28949,7 +28949,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Otl.Md | Digi Tracks",
-    "description": "Otl.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Otl.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29012,7 +29012,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Otl.Txt | Digi Tracks",
-    "description": "Otl.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Otl.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29075,7 +29075,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Payroll — Module Case",
-    "description": "Payroll — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29138,7 +29138,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Payroll.Md | Digi Tracks",
-    "description": "Payroll.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29201,7 +29201,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Payroll.Txt | Digi Tracks",
-    "description": "Payroll.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29264,7 +29264,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Oracle Recruiting — Module Case",
-    "description": "Oracle Recruiting — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Oracle Recruiting — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29327,7 +29327,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Recruiting.Md | Digi Tracks",
-    "description": "Recruiting.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Recruiting.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29390,7 +29390,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Recruiting.Txt | Digi Tracks",
-    "description": "Recruiting.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Recruiting.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29453,7 +29453,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Talent Management — Module Case",
-    "description": "Talent Management — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Talent Management — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29516,7 +29516,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Talent.Md | Digi Tracks",
-    "description": "Talent.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Talent.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29579,7 +29579,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Talent.Txt | Digi Tracks",
-    "description": "Talent.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Talent.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29642,7 +29642,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Workforce Monitoring — Module Case",
-    "description": "Workforce Monitoring — Module Case: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Workforce Monitoring — Module Case: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29705,7 +29705,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Workforce Monitoring.Md | Digi Tracks",
-    "description": "Workforce Monitoring.Md | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Workforce Monitoring.Md | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29768,7 +29768,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Workforce Monitoring.Txt | Digi Tracks",
-    "description": "Workforce Monitoring.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Workforce Monitoring.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "module-export",
     "breadcrumbs": [
       {
@@ -29831,7 +29831,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Terminology · HCM Fusion",
-    "description": "Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -29886,7 +29886,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence Plan — Terminology · HCM Fusion",
-    "description": "Absence Plan — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence Plan — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -29945,7 +29945,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Accrual and Entitlement — Terminology · HCM Fusion",
-    "description": "Accrual and Entitlement — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Accrual and Entitlement — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30004,7 +30004,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Business Unit — Terminology · HCM Fusion",
-    "description": "Business Unit — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Business Unit — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30088,7 +30088,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Career Site Contextualization — Terminology · HCM Fusion",
-    "description": "Career Site Contextualization — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Career Site Contextualization — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30122,7 +30122,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Career Site — Terminology · HCM Fusion",
-    "description": "Career Site — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Career Site — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30181,7 +30181,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Recruiting to Core HR Handoff — Terminology · HCM Fusion",
-    "description": "Recruiting to Core HR Handoff — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Recruiting to Core HR Handoff — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30240,7 +30240,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Effort and Result — Terminology · HCM Fusion",
-    "description": "Effort and Result — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Effort and Result — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30299,7 +30299,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "HCM Group — Terminology · HCM Fusion",
-    "description": "HCM Group — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "HCM Group — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30358,7 +30358,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Job Requisition — Terminology · HCM Fusion",
-    "description": "Job Requisition — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Job Requisition — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30417,7 +30417,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Job — Terminology · HCM Fusion",
-    "description": "Job — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Job — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30476,7 +30476,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Learning Record — Terminology · HCM Fusion",
-    "description": "Learning Record — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Learning Record — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30535,7 +30535,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Legal Entity — Terminology · HCM Fusion",
-    "description": "Legal Entity — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Legal Entity — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30594,7 +30594,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Pay Element — Terminology · HCM Fusion",
-    "description": "Pay Element — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Pay Element — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30653,7 +30653,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payroll Relationship — Terminology · HCM Fusion",
-    "description": "Payroll Relationship — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll Relationship — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30712,7 +30712,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Person ID Constraint — Terminology · HCM Fusion",
-    "description": "Person ID Constraint — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Person ID Constraint — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30771,7 +30771,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Position — Terminology · HCM Fusion",
-    "description": "Position — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Position — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30830,7 +30830,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Repeating Time Period — Terminology · HCM Fusion",
-    "description": "Repeating Time Period — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Repeating Time Period — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30889,7 +30889,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Retroactive Processing — Terminology · HCM Fusion",
-    "description": "Retroactive Processing — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Retroactive Processing — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -30948,7 +30948,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Calculation Rule — Terminology · HCM Fusion",
-    "description": "Time Calculation Rule — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Calculation Rule — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -31032,7 +31032,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Consumer Set — Terminology · HCM Fusion",
-    "description": "Time Consumer Set — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Consumer Set — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -31091,7 +31091,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Consumer Validation — Terminology · HCM Fusion",
-    "description": "Time Consumer Validation — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Consumer Validation — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -31125,7 +31125,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Consumer — Terminology · HCM Fusion",
-    "description": "Time Consumer — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Consumer — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -31184,7 +31184,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Entry Exception — Terminology · HCM Fusion",
-    "description": "Time Entry Exception — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Entry Exception — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -31243,7 +31243,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Entry Rule — Terminology · HCM Fusion",
-    "description": "Time Entry Rule — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Entry Rule — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -31302,7 +31302,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Worker Time Entry Profile — Terminology · HCM Fusion",
-    "description": "Worker Time Entry Profile — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Worker Time Entry Profile — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -31361,7 +31361,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Worker Time Processing Profile — Terminology · HCM Fusion",
-    "description": "Worker Time Processing Profile — Terminology · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Worker Time Processing Profile — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
     "breadcrumbs": [
       {
@@ -31420,7 +31420,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Labs · HCM Fusion",
-    "description": "Labs · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Labs · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -31475,7 +31475,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Learn · HCM Fusion",
-    "description": "Learn · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Learn · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -31530,7 +31530,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Course catalogue · HCM Fusion",
-    "description": "Course catalogue · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Course catalogue · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -31589,7 +31589,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence Management course · HCM Fusion",
-    "description": "Absence Management course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence Management course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -31652,7 +31652,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Benefits course · HCM Fusion",
-    "description": "Benefits course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Benefits course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -31715,7 +31715,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Compensation course · HCM Fusion",
-    "description": "Compensation course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Compensation course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -31778,7 +31778,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Core HR course · HCM Fusion",
-    "description": "Core HR course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Core HR course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -31841,7 +31841,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Global Payroll course · HCM Fusion",
-    "description": "Global Payroll course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Global Payroll course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -31904,7 +31904,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Learning Management course · HCM Fusion",
-    "description": "Learning Management course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Learning Management course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -31967,7 +31967,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time and Labor course · HCM Fusion",
-    "description": "Time and Labor course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time and Labor course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -32030,7 +32030,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payroll course · HCM Fusion",
-    "description": "Payroll course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -32093,7 +32093,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Procurement course · HCM Fusion",
-    "description": "Procurement course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Procurement course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -32156,7 +32156,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Oracle Recruiting course · HCM Fusion",
-    "description": "Oracle Recruiting course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Oracle Recruiting course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -32219,7 +32219,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Talent Management course · HCM Fusion",
-    "description": "Talent Management course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Talent Management course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -32282,7 +32282,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Workforce Monitoring course · HCM Fusion",
-    "description": "Workforce Monitoring course · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Workforce Monitoring course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
     "breadcrumbs": [
       {
@@ -32345,7 +32345,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Configuring an accrual plan: term, frequency, limits and carryover · HCM Fusion",
-    "description": "Configuring an accrual plan: term, frequency, limits and carryover · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Configuring an accrual plan: term, frequency, limits and carryover · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32408,7 +32408,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Certifications: the action items that gate continued pay · HCM Fusion",
-    "description": "Certifications: the action items that gate continued pay · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Certifications: the action items that gate continued pay · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32471,7 +32471,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Compensatory time plans: earned time off instead of overtime pay · HCM Fusion",
-    "description": "Compensatory time plans: earned time off instead of overtime pay · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Compensatory time plans: earned time off instead of overtime pay · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32534,7 +32534,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Concurrency vs concurrent entitlement vs plan priority · HCM Fusion",
-    "description": "Concurrency vs concurrent entitlement vs plan priority · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Concurrency vs concurrent entitlement vs plan priority · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32597,7 +32597,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Loading absence data: integrated workbooks vs the HCM Spreadsheet Data Loader · HCM Fusion",
-    "description": "Loading absence data: integrated workbooks vs the HCM Spreadsheet Data Loader · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Loading absence data: integrated workbooks vs the HCM Spreadsheet Data Loader · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32660,7 +32660,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Date effectivity — update vs correct vs end-date · HCM Fusion",
-    "description": "Date effectivity — update vs correct vs end-date · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Date effectivity — update vs correct vs end-date · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32723,7 +32723,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Deep links — straight to the page · HCM Fusion",
-    "description": "Deep links — straight to the page · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Deep links — straight to the page · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32786,7 +32786,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Donation plans: time a worker receives from coworkers · HCM Fusion",
-    "description": "Donation plans: time a worker receives from coworkers · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Donation plans: time a worker receives from coworkers · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32849,7 +32849,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Who may enroll: eligibility profiles and derived factors · HCM Fusion",
-    "description": "Who may enroll: eligibility profiles and derived factors · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Who may enroll: eligibility profiles and derived factors · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32912,7 +32912,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "HCM Extracts — getting absence data out and reconciling it with Payroll · HCM Fusion",
-    "description": "HCM Extracts — getting absence data out and reconciling it with Payroll · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "HCM Extracts — getting absence data out and reconciling it with Payroll · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -32975,7 +32975,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Fast formulas: the rules you write yourself · HCM Fusion",
-    "description": "Fast formulas: the rules you write yourself · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Fast formulas: the rules you write yourself · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33038,7 +33038,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Lookups, value sets, and flexfields — where lists and extra fields come from · HCM Fusion",
-    "description": "Lookups, value sets, and flexfields — where lists and extra fields come from · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Lookups, value sets, and flexfields — where lists and extra fields come from · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33101,7 +33101,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence Management: six components and a setup order · HCM Fusion",
-    "description": "Absence Management: six components and a setup order · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence Management: six components and a setup order · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33164,7 +33164,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payroll elements — carrying absences and balances to Payroll · HCM Fusion",
-    "description": "Payroll elements — carrying absences and balances to Payroll · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Payroll elements — carrying absences and balances to Payroll · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33227,7 +33227,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The six absence plan types, and when each one is the right one · HCM Fusion",
-    "description": "The six absence plan types, and when each one is the right one · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The six absence plan types, and when each one is the right one · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33290,7 +33290,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence processes: the six scheduled runs that turn absences into entitlements · HCM Fusion",
-    "description": "Absence processes: the six scheduled runs that turn absences into entitlements · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence processes: the six scheduled runs that turn absences into entitlements · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33353,7 +33353,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "From a submitted absence to an entitlement · HCM Fusion",
-    "description": "From a submitted absence to an entitlement · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "From a submitted absence to an entitlement · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33416,7 +33416,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Qualification plans: paying an absence with no balance · HCM Fusion",
-    "description": "Qualification plans: paying an absence with no balance · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Qualification plans: paying an absence with no balance · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33479,7 +33479,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Rate definitions: what one unit of absence costs · HCM Fusion",
-    "description": "Rate definitions: what one unit of absence costs · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Rate definitions: what one unit of absence costs · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33542,7 +33542,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "How an absence becomes a number of hours · HCM Fusion",
-    "description": "How an absence becomes a number of hours · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "How an absence becomes a number of hours · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33605,7 +33605,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Display Features: what the recording pages show and enforce · HCM Fusion",
-    "description": "Display Features: what the recording pages show and enforce · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Display Features: what the recording pages show and enforce · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33668,7 +33668,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Absence types, reasons, and categories — the record workers touch · HCM Fusion",
-    "description": "Absence types, reasons, and categories — the record workers touch · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Absence types, reasons, and categories — the record workers touch · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33731,7 +33731,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Configuration order, and the failures it prevents · HCM Fusion",
-    "description": "Configuration order, and the failures it prevents · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Configuration order, and the failures it prevents · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33794,7 +33794,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Three Structures, Three Functional Areas, and Where Each Setting Lives · HCM Fusion",
-    "description": "Three Structures, Three Functional Areas, and Where Each Setting Lives · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Three Structures, Three Functional Areas, and Where Each Setting Lives · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33857,7 +33857,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Jobs, positions and the assignment that joins them · HCM Fusion",
-    "description": "Jobs, positions and the assignment that joins them · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Jobs, positions and the assignment that joins them · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33920,7 +33920,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The Security Model: What You Can Do, What You Can See, and Where It Is Configured · HCM Fusion",
-    "description": "The Security Model: What You Can Do, What You Can See, and Where It Is Configured · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The Security Model: What You Can Do, What You Can See, and Where It Is Configured · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -33983,7 +33983,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Worker, Assignment, Work Relationship: The Three Records and Their Rules · HCM Fusion",
-    "description": "Worker, Assignment, Work Relationship: The Three Records and Their Rules · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Worker, Assignment, Work Relationship: The Three Records and Their Rules · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34046,7 +34046,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The Worker Lifecycle: What a Work Relationship Can and Cannot Survive · HCM Fusion",
-    "description": "The Worker Lifecycle: What a Work Relationship Can and Cannot Survive · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The Worker Lifecycle: What a Work Relationship Can and Cannot Survive · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34109,7 +34109,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Career sites and how they decide which jobs appear · HCM Fusion",
-    "description": "Career sites and how they decide which jobs appear · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Career sites and how they decide which jobs appear · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34172,7 +34172,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The Oracle Recruiting mental model · HCM Fusion",
-    "description": "The Oracle Recruiting mental model · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The Oracle Recruiting mental model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34235,7 +34235,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Job Requisitions Over REST: Grants, Roles and What the Page Will Not Tell You · HCM Fusion",
-    "description": "Job Requisitions Over REST: Grants, Roles and What the Page Will Not Tell You · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Job Requisitions Over REST: Grants, Roles and What the Page Will Not Tell You · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34298,7 +34298,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Consumer Sets · HCM Fusion",
-    "description": "Time Consumer Sets · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Consumer Sets · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34361,7 +34361,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The Time and Labor mental model · HCM Fusion",
-    "description": "The Time and Labor mental model · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The Time and Labor mental model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34424,7 +34424,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The Worker Time Processing Profile · HCM Fusion",
-    "description": "The Worker Time Processing Profile · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The Worker Time Processing Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34487,7 +34487,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Repeating Time Periods and What They Are Offered On · HCM Fusion",
-    "description": "Repeating Time Periods and What They Are Offered On · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Repeating Time Periods and What They Are Offered On · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34550,7 +34550,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Reporting Channels and Who May Act on Whose Time · HCM Fusion",
-    "description": "Time Reporting Channels and Who May Act on Whose Time · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Reporting Channels and Who May Act on Whose Time · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34613,7 +34613,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The Six Rule Types and What Each One Is For · HCM Fusion",
-    "description": "The Six Rule Types and What Each One Is For · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The Six Rule Types and What Each One Is For · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34676,7 +34676,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Time Card Actions and What Validates When · HCM Fusion",
-    "description": "Time Card Actions and What Validates When · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Time Card Actions and What Validates When · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34739,7 +34739,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The Worker Time Entry Profile · HCM Fusion",
-    "description": "The Worker Time Entry Profile · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The Worker Time Entry Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34802,7 +34802,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Personal calculation cards: components, details and enterable values · HCM Fusion",
-    "description": "Personal calculation cards: components, details and enterable values · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Personal calculation cards: components, details and enterable values · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34865,7 +34865,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Standard element entries: where pay inputs live · HCM Fusion",
-    "description": "Standard element entries: where pay inputs live · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Standard element entries: where pay inputs live · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34928,7 +34928,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The payroll cycle and payroll flows · HCM Fusion",
-    "description": "The payroll cycle and payroll flows · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The payroll cycle and payroll flows · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -34991,7 +34991,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Personal payment methods: how a person is paid · HCM Fusion",
-    "description": "Personal payment methods: how a person is paid · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Personal payment methods: how a person is paid · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -35054,7 +35054,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Personal payroll entries: the person-level payroll surface · HCM Fusion",
-    "description": "Personal payroll entries: the person-level payroll surface · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Personal payroll entries: the person-level payroll surface · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -35117,7 +35117,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "The payroll relationship, and the dates termination sets · HCM Fusion",
-    "description": "The payroll relationship, and the dates termination sets · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "The payroll relationship, and the dates termination sets · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -35180,7 +35180,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Adding and transferring payrolls · HCM Fusion",
-    "description": "Adding and transferring payrolls · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Adding and transferring payrolls · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -35243,7 +35243,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tax reporting units and moving between them · HCM Fusion",
-    "description": "Tax reporting units and moving between them · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Tax reporting units and moving between them · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
     "breadcrumbs": [
       {
@@ -35306,7 +35306,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Learning paths · HCM Fusion",
-    "description": "Learning paths · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Learning paths · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -35365,7 +35365,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Recall review · HCM Fusion",
-    "description": "Recall review · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Recall review · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "application-user-route",
     "breadcrumbs": [
       {
@@ -35424,7 +35424,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Saved · HCM Fusion",
-    "description": "Saved · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Saved · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "application-user-route",
     "breadcrumbs": [
       {
@@ -35483,7 +35483,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Create a career site · HCM Fusion",
-    "description": "Create a career site · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Create a career site · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "procedure",
     "breadcrumbs": [
       {
@@ -35546,7 +35546,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Create a Worker Time Processing Profile · HCM Fusion",
-    "description": "Create a Worker Time Processing Profile · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Create a Worker Time Processing Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "procedure",
     "breadcrumbs": [
       {
@@ -35609,7 +35609,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Diagnose missing time in a consumer · HCM Fusion",
-    "description": "Diagnose missing time in a consumer · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Diagnose missing time in a consumer · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "procedure",
     "breadcrumbs": [
       {
@@ -35672,7 +35672,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Tutor · HCM Fusion",
-    "description": "Tutor · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Tutor · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "application-user-route",
     "breadcrumbs": [
       {
@@ -35731,7 +35731,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Sign in · HCM Fusion",
-    "description": "Sign in · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Sign in · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "application-user-route",
     "breadcrumbs": [
       {
@@ -35786,7 +35786,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Practice · HCM Fusion",
-    "description": "Practice · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Practice · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -35841,7 +35841,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Assessments · HCM Fusion",
-    "description": "Assessments · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Assessments · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -35900,7 +35900,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: configuring an accrual plan · HCM Fusion",
-    "description": "Self-check: configuring an accrual plan · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: configuring an accrual plan · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -35963,7 +35963,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: absence certifications · HCM Fusion",
-    "description": "Self-check: absence certifications · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: absence certifications · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36026,7 +36026,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: compensatory time plans · HCM Fusion",
-    "description": "Self-check: compensatory time plans · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: compensatory time plans · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36089,7 +36089,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: concurrency vs concurrent entitlement vs plan priority · HCM Fusion",
-    "description": "Self-check: concurrency vs concurrent entitlement vs plan priority · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: concurrency vs concurrent entitlement vs plan priority · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36152,7 +36152,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: loading absence data in bulk · HCM Fusion",
-    "description": "Self-check: loading absence data in bulk · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: loading absence data in bulk · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36215,7 +36215,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: date effectivity — update vs correct vs end-date · HCM Fusion",
-    "description": "Self-check: date effectivity — update vs correct vs end-date · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: date effectivity — update vs correct vs end-date · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36278,7 +36278,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: deep links · HCM Fusion",
-    "description": "Self-check: deep links · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: deep links · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36341,7 +36341,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: donation plans · HCM Fusion",
-    "description": "Self-check: donation plans · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: donation plans · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36404,7 +36404,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: eligibility profiles and derived factors · HCM Fusion",
-    "description": "Self-check: eligibility profiles and derived factors · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: eligibility profiles and derived factors · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36467,7 +36467,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: HCM Extracts and payroll reconciliation · HCM Fusion",
-    "description": "Self-check: HCM Extracts and payroll reconciliation · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: HCM Extracts and payroll reconciliation · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36530,7 +36530,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: fast formulas for absence rules · HCM Fusion",
-    "description": "Self-check: fast formulas for absence rules · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: fast formulas for absence rules · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36593,7 +36593,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: lookups, value sets, and flexfields · HCM Fusion",
-    "description": "Self-check: lookups, value sets, and flexfields · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: lookups, value sets, and flexfields · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36656,7 +36656,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the Absence Management components · HCM Fusion",
-    "description": "Self-check: the Absence Management components · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the Absence Management components · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36719,7 +36719,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: payroll elements for absences · HCM Fusion",
-    "description": "Self-check: payroll elements for absences · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: payroll elements for absences · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36782,7 +36782,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the six absence plan types · HCM Fusion",
-    "description": "Self-check: the six absence plan types · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the six absence plan types · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36845,7 +36845,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: absence processes · HCM Fusion",
-    "description": "Self-check: absence processes · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: absence processes · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36908,7 +36908,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: from a submitted absence to an entitlement · HCM Fusion",
-    "description": "Self-check: from a submitted absence to an entitlement · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: from a submitted absence to an entitlement · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -36971,7 +36971,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: qualification plans and entitlement bands · HCM Fusion",
-    "description": "Self-check: qualification plans and entitlement bands · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: qualification plans and entitlement bands · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37034,7 +37034,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: rate definitions for absence payments · HCM Fusion",
-    "description": "Self-check: rate definitions for absence payments · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: rate definitions for absence payments · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37097,7 +37097,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: how an absence becomes a number of hours · HCM Fusion",
-    "description": "Self-check: how an absence becomes a number of hours · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: how an absence becomes a number of hours · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37160,7 +37160,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: display features of an absence type · HCM Fusion",
-    "description": "Self-check: display features of an absence type · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: display features of an absence type · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37223,7 +37223,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: absence types, reasons, and categories · HCM Fusion",
-    "description": "Self-check: absence types, reasons, and categories · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: absence types, reasons, and categories · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37286,7 +37286,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: Core HR configuration order · HCM Fusion",
-    "description": "Self-check: Core HR configuration order · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: Core HR configuration order · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37349,7 +37349,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the three enterprise structures · HCM Fusion",
-    "description": "Self-check: the three enterprise structures · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the three enterprise structures · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37412,7 +37412,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: jobs, positions and assignments · HCM Fusion",
-    "description": "Self-check: jobs, positions and assignments · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: jobs, positions and assignments · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37475,7 +37475,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the security model · HCM Fusion",
-    "description": "Self-check: the security model · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the security model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37538,7 +37538,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: worker, assignment, work relationship · HCM Fusion",
-    "description": "Self-check: worker, assignment, work relationship · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: worker, assignment, work relationship · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37601,7 +37601,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the worker lifecycle · HCM Fusion",
-    "description": "Self-check: the worker lifecycle · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the worker lifecycle · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37664,7 +37664,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: career sites and contextualization · HCM Fusion",
-    "description": "Self-check: career sites and contextualization · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: career sites and contextualization · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37727,7 +37727,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the Oracle Recruiting mental model · HCM Fusion",
-    "description": "Self-check: the Oracle Recruiting mental model · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the Oracle Recruiting mental model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37790,7 +37790,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: job requisitions over REST · HCM Fusion",
-    "description": "Self-check: job requisitions over REST · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: job requisitions over REST · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37853,7 +37853,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: time consumer sets · HCM Fusion",
-    "description": "Self-check: time consumer sets · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: time consumer sets · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37916,7 +37916,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the Time and Labor mental model · HCM Fusion",
-    "description": "Self-check: the Time and Labor mental model · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the Time and Labor mental model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -37979,7 +37979,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the Worker Time Processing Profile · HCM Fusion",
-    "description": "Self-check: the Worker Time Processing Profile · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the Worker Time Processing Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38042,7 +38042,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: Repeating Time Periods · HCM Fusion",
-    "description": "Self-check: Repeating Time Periods · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: Repeating Time Periods · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38105,7 +38105,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: time reporting channels · HCM Fusion",
-    "description": "Self-check: time reporting channels · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: time reporting channels · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38168,7 +38168,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the rule taxonomy · HCM Fusion",
-    "description": "Self-check: the rule taxonomy · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the rule taxonomy · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38231,7 +38231,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: Time Card Actions · HCM Fusion",
-    "description": "Self-check: Time Card Actions · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: Time Card Actions · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38294,7 +38294,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the Worker Time Entry Profile · HCM Fusion",
-    "description": "Self-check: the Worker Time Entry Profile · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the Worker Time Entry Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38357,7 +38357,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: personal calculation cards · HCM Fusion",
-    "description": "Self-check: personal calculation cards · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: personal calculation cards · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38420,7 +38420,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: standard element entries · HCM Fusion",
-    "description": "Self-check: standard element entries · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: standard element entries · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38483,7 +38483,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the payroll cycle and payroll flows · HCM Fusion",
-    "description": "Self-check: the payroll cycle and payroll flows · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the payroll cycle and payroll flows · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38546,7 +38546,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: personal payment methods · HCM Fusion",
-    "description": "Self-check: personal payment methods · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: personal payment methods · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38609,7 +38609,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: personal payroll entries · HCM Fusion",
-    "description": "Self-check: personal payroll entries · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: personal payroll entries · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38672,7 +38672,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: the payroll relationship and termination dates · HCM Fusion",
-    "description": "Self-check: the payroll relationship and termination dates · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: the payroll relationship and termination dates · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38735,7 +38735,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: adding and transferring payrolls · HCM Fusion",
-    "description": "Self-check: adding and transferring payrolls · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: adding and transferring payrolls · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38798,7 +38798,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Self-check: tax reporting units and moving between them · HCM Fusion",
-    "description": "Self-check: tax reporting units and moving between them · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Self-check: tax reporting units and moving between them · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
     "breadcrumbs": [
       {
@@ -38861,7 +38861,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scenarios · HCM Fusion",
-    "description": "Scenarios · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Scenarios · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -38920,7 +38920,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "A UK-only career site is showing a US job · HCM Fusion",
-    "description": "A UK-only career site is showing a US job · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "A UK-only career site is showing a US job · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "scenario",
     "breadcrumbs": [
       {
@@ -38983,7 +38983,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "A project manager worked a full week and was paid nothing · HCM Fusion",
-    "description": "A project manager worked a full week and was paid nothing · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "A project manager worked a full week and was paid nothing · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "scenario",
     "breadcrumbs": [
       {
@@ -39046,7 +39046,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Procedures · HCM Fusion",
-    "description": "Procedures · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Procedures · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -39105,7 +39105,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Profile · HCM Fusion",
-    "description": "Profile · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "application-user-route",
     "breadcrumbs": [
       {
@@ -39160,7 +39160,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Your progress · HCM Fusion",
-    "description": "Your progress · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Your progress · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "application-user-route",
     "breadcrumbs": [
       {
@@ -39215,7 +39215,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Resources · HCM Fusion",
-    "description": "Resources · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Resources · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -39270,7 +39270,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Robots.Txt | Digi Tracks",
-    "description": "Robots.Txt | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Robots.Txt | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "crawl-utility",
     "breadcrumbs": [
       {
@@ -39325,7 +39325,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Sitemap.Xml | Digi Tracks",
-    "description": "Sitemap.Xml | Digi Tracks: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Sitemap.Xml | Digi Tracks: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "crawl-utility",
     "breadcrumbs": [
       {
@@ -39380,7 +39380,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sources · HCM Fusion",
-    "description": "Sources · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Sources · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -39435,7 +39435,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Known gaps · HCM Fusion",
-    "description": "Known gaps · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Known gaps · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -39497,7 +39497,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Release context · HCM Fusion",
-    "description": "Release context · HCM Fusion: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.",
+    "description": "Release context · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
     "breadcrumbs": [
       {
@@ -39534,7 +39534,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Learning platforms",
-    "description": "Learning platforms: find the relevant Digi Tracks learning path, its access boundary and the next practical step.",
+    "description": "Four public learning platforms — SourceCraft, LearnPMO, ProcureSherpa and HCM Fusion — each opened directly in the browser.",
     "template": "learning-entry",
     "breadcrumbs": [
       {
@@ -39588,7 +39588,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Contact Digi Tracks Learning",
-    "description": "Contact Digi Tracks Learning: find the relevant Digi Tracks learning path, its access boundary and the next practical step.",
+    "description": "Contact Digi Tracks Learning: a Digi Tracks learning page.",
     "template": "learning-entry",
     "breadcrumbs": [
       {
@@ -39646,7 +39646,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "HCM Fusion — Human Capital platform",
-    "description": "HCM Fusion — Human Capital platform: find the relevant Digi Tracks learning path, its access boundary and the next practical step.",
+    "description": "HCM Fusion: HCM Studio lessons and practice labs across Oracle Fusion Cloud HCM modules.",
     "template": "learning-entry",
     "breadcrumbs": [
       {
@@ -39704,7 +39704,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "LearnPMO — Project & Portfolio platform",
-    "description": "LearnPMO — Project & Portfolio platform: find the relevant Digi Tracks learning path, its access boundary and the next practical step.",
+    "description": "LearnPMO: PM360 Academy lessons, mock exams and a practice simulator for project, programme and portfolio delivery.",
     "template": "learning-entry",
     "breadcrumbs": [
       {
@@ -39822,7 +39822,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Robots.Txt | Digi Tracks",
-    "description": "Robots.Txt | Digi Tracks: find the relevant Digi Tracks learning path, its access boundary and the next practical step.",
+    "description": "Robots.Txt | Digi Tracks: a Digi Tracks learning page.",
     "template": "learning-entry",
     "breadcrumbs": [
       {
@@ -39877,7 +39877,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sitemap.Xml | Digi Tracks",
-    "description": "Sitemap.Xml | Digi Tracks: find the relevant Digi Tracks learning path, its access boundary and the next practical step.",
+    "description": "Sitemap.Xml | Digi Tracks: a Digi Tracks learning page.",
     "template": "learning-entry",
     "breadcrumbs": [
       {
@@ -39932,7 +39932,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "SourceCraft — Procurement platform",
-    "description": "SourceCraft — Procurement platform: find the relevant Digi Tracks learning path, its access boundary and the next practical step.",
+    "description": "SourceCraft: procurement and contract language explained plainly, with regional reference lenses and saved terms.",
     "template": "learning-entry",
     "breadcrumbs": [
       {
@@ -39965,7 +39965,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "root-redirect",
     "breadcrumbs": [
       {
@@ -40017,7 +40017,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Account & workspaces · LearnPMO",
-    "description": "Account & workspaces · LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Account & workspaces · LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "application-account",
     "breadcrumbs": [
       {
@@ -40072,7 +40072,7 @@ export const routeRegistry = [
     "routeClass": "retired",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "defect-probe",
     "breadcrumbs": [
       {
@@ -40127,7 +40127,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Practice assessments | LearnPMO",
-    "description": "Practice assessments | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Practice assessments | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -40185,7 +40185,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -40240,7 +40240,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -40295,7 +40295,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Cohort practice | LearnPMO",
-    "description": "Cohort practice | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Cohort practice | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -40353,7 +40353,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Project controls | LearnPMO",
-    "description": "Project controls | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Project controls | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -40411,7 +40411,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Practice workspace | LearnPMO",
-    "description": "Practice workspace | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Practice workspace | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -40469,7 +40469,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -40524,7 +40524,7 @@ export const routeRegistry = [
     "routeClass": "retired",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "defect-probe",
     "breadcrumbs": [
       {
@@ -40579,7 +40579,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -40634,7 +40634,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Document templates | LearnPMO",
-    "description": "Document templates | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Document templates | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -40692,7 +40692,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Mock project management exams | LearnPMO",
-    "description": "Mock project management exams | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Mock project management exams | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -40750,7 +40750,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "utility",
     "breadcrumbs": [
       {
@@ -40805,7 +40805,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -40860,7 +40860,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Industry practice | LearnPMO",
-    "description": "Industry practice | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Industry practice | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -40918,7 +40918,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -40998,7 +40998,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -41028,7 +41028,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Project management lessons | LearnPMO",
-    "description": "Project management lessons | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Project management lessons | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -41086,7 +41086,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "utility",
     "breadcrumbs": [
       {
@@ -41141,7 +41141,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Study plan | LearnPMO",
-    "description": "Study plan | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Study plan | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -41199,7 +41199,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "PMO practice | LearnPMO",
-    "description": "PMO practice | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "PMO practice | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -41257,7 +41257,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Portfolio management practice | LearnPMO",
-    "description": "Portfolio management practice | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Portfolio management practice | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -41315,7 +41315,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Programme management practice | LearnPMO",
-    "description": "Programme management practice | LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Programme management practice | LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "sitemap-application-page",
     "breadcrumbs": [
       {
@@ -41373,7 +41373,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -41428,7 +41428,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -41483,7 +41483,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -41538,7 +41538,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -41593,7 +41593,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Robots.Txt | Digi Tracks",
-    "description": "Robots.Txt | Digi Tracks: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Robots.Txt | Digi Tracks: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "utility",
     "breadcrumbs": [
       {
@@ -41648,7 +41648,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -41703,7 +41703,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -41758,7 +41758,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "application-account",
     "breadcrumbs": [
       {
@@ -41813,7 +41813,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "utility",
     "breadcrumbs": [
       {
@@ -41868,7 +41868,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Sitemap.Xml | Digi Tracks",
-    "description": "Sitemap.Xml | Digi Tracks: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "Sitemap.Xml | Digi Tracks: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "utility",
     "breadcrumbs": [
       {
@@ -41923,7 +41923,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -41978,7 +41978,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -42033,7 +42033,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "LearnPMO",
-    "description": "LearnPMO: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.",
+    "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
     "breadcrumbs": [
       {
@@ -42351,7 +42351,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Developer & Security Tools, Local-First",
-    "description": "Compare the relevant Digi Tracks tools, their verified scope and the next practical evaluation step.",
+    "description": "Compare the relevant Digi Tracks tools, their scope and the next practical step.",
     "template": "capability-hub",
     "breadcrumbs": [
       {
@@ -42525,7 +42525,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Construction & Fleet Operations Software",
-    "description": "Compare the relevant Digi Tracks tools, their verified scope and the next practical evaluation step.",
+    "description": "Compare the relevant Digi Tracks tools, their scope and the next practical step.",
     "template": "capability-hub",
     "breadcrumbs": [
       {
@@ -46195,7 +46195,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Academy | Digi Tracks",
-    "description": "Academy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Academy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "academy:",
     "breadcrumbs": [
@@ -46222,7 +46222,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Adoption And Change | Digi Tracks",
-    "description": "Func Adoption And Change | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Adoption And Change | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-adoption-and-change",
     "breadcrumbs": [
@@ -46249,7 +46249,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Ai Supplier Assurance | Digi Tracks",
-    "description": "Func Ai Supplier Assurance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Ai Supplier Assurance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-ai-supplier-assurance",
     "breadcrumbs": [
@@ -46276,7 +46276,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Allocation And Shortage | Digi Tracks",
-    "description": "Func Allocation And Shortage | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Allocation And Shortage | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-allocation-and-shortage",
     "breadcrumbs": [
@@ -46303,7 +46303,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Award Criteria And Low Bids | Digi Tracks",
-    "description": "Func Award Criteria And Low Bids | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Award Criteria And Low Bids | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-award-criteria-and-low-bids",
     "breadcrumbs": [
@@ -46330,7 +46330,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Bid Rigging Detection | Digi Tracks",
-    "description": "Func Bid Rigging Detection | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Bid Rigging Detection | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-bid-rigging-detection",
     "breadcrumbs": [
@@ -46357,7 +46357,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Cash Conversion Cycle | Digi Tracks",
-    "description": "Func Cash Conversion Cycle | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Cash Conversion Cycle | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-cash-conversion-cycle",
     "breadcrumbs": [
@@ -46384,7 +46384,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Category Mgmt | Digi Tracks",
-    "description": "Func Category Mgmt | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Category Mgmt | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-category-mgmt",
     "breadcrumbs": [
@@ -46411,7 +46411,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Category Strategy | Digi Tracks",
-    "description": "Func Category Strategy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Category Strategy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-category-strategy",
     "breadcrumbs": [
@@ -46438,7 +46438,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Change Control | Digi Tracks",
-    "description": "Func Change Control | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Change Control | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-change-control",
     "breadcrumbs": [
@@ -46465,7 +46465,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Circular Sourcing Economics | Digi Tracks",
-    "description": "Func Circular Sourcing Economics | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Circular Sourcing Economics | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-circular-sourcing-economics",
     "breadcrumbs": [
@@ -46492,7 +46492,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Claims And Remedies | Digi Tracks",
-    "description": "Func Claims And Remedies | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Claims And Remedies | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-claims-and-remedies",
     "breadcrumbs": [
@@ -46519,7 +46519,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Commercial Terms | Digi Tracks",
-    "description": "Func Commercial Terms | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Commercial Terms | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-commercial-terms",
     "breadcrumbs": [
@@ -46546,7 +46546,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Contract Structuring | Digi Tracks",
-    "description": "Func Contract Structuring | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Contract Structuring | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-contract-structuring",
     "breadcrumbs": [
@@ -46573,7 +46573,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Contract Types Renewal | Digi Tracks",
-    "description": "Func Contract Types Renewal | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Contract Types Renewal | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-contract-types-renewal",
     "breadcrumbs": [
@@ -46600,7 +46600,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Controlled Goods And Clearance Constraints | Digi Tracks",
-    "description": "Func Controlled Goods And Clearance Constraints | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Controlled Goods And Clearance Constraints | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-controlled-goods-and-clearance-constraints",
     "breadcrumbs": [
@@ -46627,7 +46627,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Corrective Action | Digi Tracks",
-    "description": "Func Corrective Action | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Corrective Action | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-corrective-action",
     "breadcrumbs": [
@@ -46654,7 +46654,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Customs Valuation Import Compliance | Digi Tracks",
-    "description": "Func Customs Valuation Import Compliance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Customs Valuation Import Compliance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-customs-valuation-import-compliance",
     "breadcrumbs": [
@@ -46681,7 +46681,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Data Licensing And Provenance | Digi Tracks",
-    "description": "Func Data Licensing And Provenance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Data Licensing And Provenance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-data-licensing-and-provenance",
     "breadcrumbs": [
@@ -46708,7 +46708,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Demand Management | Digi Tracks",
-    "description": "Func Demand Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Demand Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-demand-management",
     "breadcrumbs": [
@@ -46735,7 +46735,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Digital Procurement | Digi Tracks",
-    "description": "Func Digital Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Digital Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-digital-procurement",
     "breadcrumbs": [
@@ -46762,7 +46762,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Disruption Recovery | Digi Tracks",
-    "description": "Func Disruption Recovery | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Disruption Recovery | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-disruption-recovery",
     "breadcrumbs": [
@@ -46789,7 +46789,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Distress Exit And Recovery | Digi Tracks",
-    "description": "Func Distress Exit And Recovery | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Distress Exit And Recovery | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-distress-exit-and-recovery",
     "breadcrumbs": [
@@ -46816,7 +46816,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Doa Controls | Digi Tracks",
-    "description": "Func Doa Controls | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Doa Controls | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-doa-controls",
     "breadcrumbs": [
@@ -46843,7 +46843,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Dual Source Resilience | Digi Tracks",
-    "description": "Func Dual Source Resilience | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Dual Source Resilience | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-dual-source-resilience",
     "breadcrumbs": [
@@ -46870,7 +46870,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Early Supplier Involvement | Digi Tracks",
-    "description": "Func Early Supplier Involvement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Early Supplier Involvement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-early-supplier-involvement",
     "breadcrumbs": [
@@ -46897,7 +46897,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Emergency Procurement | Digi Tracks",
-    "description": "Func Emergency Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Emergency Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-emergency-procurement",
     "breadcrumbs": [
@@ -46924,7 +46924,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Energy Utility Procurement | Digi Tracks",
-    "description": "Func Energy Utility Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Energy Utility Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-energy-utility-procurement",
     "breadcrumbs": [
@@ -46951,7 +46951,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Essential Service Continuity Obligation | Digi Tracks",
-    "description": "Func Essential Service Continuity Obligation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Essential Service Continuity Obligation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-essential-service-continuity-obligation",
     "breadcrumbs": [
@@ -46978,7 +46978,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Ethics Compliance | Digi Tracks",
-    "description": "Func Ethics Compliance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Ethics Compliance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-ethics-compliance",
     "breadcrumbs": [
@@ -47005,7 +47005,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Executive Ask | Digi Tracks",
-    "description": "Func Executive Ask | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Executive Ask | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-executive-ask",
     "breadcrumbs": [
@@ -47032,7 +47032,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Forecast Method And Error | Digi Tracks",
-    "description": "Func Forecast Method And Error | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Forecast Method And Error | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-forecast-method-and-error",
     "breadcrumbs": [
@@ -47059,7 +47059,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Fraud Response And Disclosure | Digi Tracks",
-    "description": "Func Fraud Response And Disclosure | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Fraud Response And Disclosure | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-fraud-response-and-disclosure",
     "breadcrumbs": [
@@ -47086,7 +47086,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Freight And Landed Cost | Digi Tracks",
-    "description": "Func Freight And Landed Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Freight And Landed Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-freight-and-landed-cost",
     "breadcrumbs": [
@@ -47113,7 +47113,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Global Sourcing Currency Risk | Digi Tracks",
-    "description": "Func Global Sourcing Currency Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Global Sourcing Currency Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-global-sourcing-currency-risk",
     "breadcrumbs": [
@@ -47140,7 +47140,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Incoterms 2020 | Digi Tracks",
-    "description": "Func Incoterms 2020 | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Incoterms 2020 | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-incoterms-2020",
     "breadcrumbs": [
@@ -47167,7 +47167,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Indirect Sourcing | Digi Tracks",
-    "description": "Func Indirect Sourcing | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Indirect Sourcing | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-indirect-sourcing",
     "breadcrumbs": [
@@ -47194,7 +47194,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Innovation Deal Structure | Digi Tracks",
-    "description": "Func Innovation Deal Structure | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Innovation Deal Structure | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-innovation-deal-structure",
     "breadcrumbs": [
@@ -47221,7 +47221,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func International Payment Trade Finance | Digi Tracks",
-    "description": "Func International Payment Trade Finance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func International Payment Trade Finance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-international-payment-trade-finance",
     "breadcrumbs": [
@@ -47248,7 +47248,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Landed Cost Tco | Digi Tracks",
-    "description": "Func Landed Cost Tco | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Landed Cost Tco | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-landed-cost-tco",
     "breadcrumbs": [
@@ -47275,7 +47275,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Lotting And Call Off Architecture | Digi Tracks",
-    "description": "Func Lotting And Call Off Architecture | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Lotting And Call Off Architecture | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-lotting-and-call-off-architecture",
     "breadcrumbs": [
@@ -47302,7 +47302,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Market Structure | Digi Tracks",
-    "description": "Func Market Structure | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Market Structure | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-market-structure",
     "breadcrumbs": [
@@ -47329,7 +47329,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Marketing And Creative Services | Digi Tracks",
-    "description": "Func Marketing And Creative Services | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Marketing And Creative Services | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-marketing-and-creative-services",
     "breadcrumbs": [
@@ -47356,7 +47356,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Mission Value | Digi Tracks",
-    "description": "Func Mission Value | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Mission Value | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-mission-value",
     "breadcrumbs": [
@@ -47383,7 +47383,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Model Service Procurement | Digi Tracks",
-    "description": "Func Model Service Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Model Service Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-model-service-procurement",
     "breadcrumbs": [
@@ -47410,7 +47410,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Negotiation Record | Digi Tracks",
-    "description": "Func Negotiation Record | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Negotiation Record | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-negotiation-record",
     "breadcrumbs": [
@@ -47437,7 +47437,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Negotiation Strategy | Digi Tracks",
-    "description": "Func Negotiation Strategy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Negotiation Strategy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-negotiation-strategy",
     "breadcrumbs": [
@@ -47464,7 +47464,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Obligation Register | Digi Tracks",
-    "description": "Func Obligation Register | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Obligation Register | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-obligation-register",
     "breadcrumbs": [
@@ -47491,7 +47491,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Operating Model | Digi Tracks",
-    "description": "Func Operating Model | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Operating Model | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-operating-model",
     "breadcrumbs": [
@@ -47518,7 +47518,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Order Quantity And Reorder Point | Digi Tracks",
-    "description": "Func Order Quantity And Reorder Point | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Order Quantity And Reorder Point | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-order-quantity-and-reorder-point",
     "breadcrumbs": [
@@ -47545,7 +47545,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Owning The Forecast Number | Digi Tracks",
-    "description": "Func Owning The Forecast Number | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Owning The Forecast Number | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-owning-the-forecast-number",
     "breadcrumbs": [
@@ -47572,7 +47572,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Payment Terms Value | Digi Tracks",
-    "description": "Func Payment Terms Value | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Payment Terms Value | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-payment-terms-value",
     "breadcrumbs": [
@@ -47599,7 +47599,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func People Time Categories | Digi Tracks",
-    "description": "Func People Time Categories | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func People Time Categories | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-people-time-categories",
     "breadcrumbs": [
@@ -47626,7 +47626,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Po Execution | Digi Tracks",
-    "description": "Func Po Execution | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Po Execution | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-po-execution",
     "breadcrumbs": [
@@ -47653,7 +47653,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Professional Services | Digi Tracks",
-    "description": "Func Professional Services | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Professional Services | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-professional-services",
     "breadcrumbs": [
@@ -47680,7 +47680,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Purchasing Fraud Risk | Digi Tracks",
-    "description": "Func Purchasing Fraud Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Purchasing Fraud Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-purchasing-fraud-risk",
     "breadcrumbs": [
@@ -47707,7 +47707,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Quality And Audit | Digi Tracks",
-    "description": "Func Quality And Audit | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Quality And Audit | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-quality-and-audit",
     "breadcrumbs": [
@@ -47734,7 +47734,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Quote Normalization | Digi Tracks",
-    "description": "Func Quote Normalization | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Quote Normalization | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-quote-normalization",
     "breadcrumbs": [
@@ -47761,7 +47761,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Regulated Procurement | Digi Tracks",
-    "description": "Func Regulated Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Regulated Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-regulated-procurement",
     "breadcrumbs": [
@@ -47788,7 +47788,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Regulated Supplier Qualification | Digi Tracks",
-    "description": "Func Regulated Supplier Qualification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Regulated Supplier Qualification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-regulated-supplier-qualification",
     "breadcrumbs": [
@@ -47815,7 +47815,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Requirement Scope | Digi Tracks",
-    "description": "Func Requirement Scope | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Requirement Scope | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-requirement-scope",
     "breadcrumbs": [
@@ -47842,7 +47842,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Requisition Intake | Digi Tracks",
-    "description": "Func Requisition Intake | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Requisition Intake | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-requisition-intake",
     "breadcrumbs": [
@@ -47869,7 +47869,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Resilience Continuity | Digi Tracks",
-    "description": "Func Resilience Continuity | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Resilience Continuity | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-resilience-continuity",
     "breadcrumbs": [
@@ -47896,7 +47896,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Rfq Issuance | Digi Tracks",
-    "description": "Func Rfq Issuance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Rfq Issuance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-rfq-issuance",
     "breadcrumbs": [
@@ -47923,7 +47923,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Rfx Strategy | Digi Tracks",
-    "description": "Func Rfx Strategy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Rfx Strategy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-rfx-strategy",
     "breadcrumbs": [
@@ -47950,7 +47950,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Rights And Dependency In Joint Work | Digi Tracks",
-    "description": "Func Rights And Dependency In Joint Work | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Rights And Dependency In Joint Work | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-rights-and-dependency-in-joint-work",
     "breadcrumbs": [
@@ -47977,7 +47977,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Savings Reporting | Digi Tracks",
-    "description": "Func Savings Reporting | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Savings Reporting | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-savings-reporting",
     "breadcrumbs": [
@@ -48004,7 +48004,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Scope3 Buying Baseline | Digi Tracks",
-    "description": "Func Scope3 Buying Baseline | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Scope3 Buying Baseline | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-scope3-buying-baseline",
     "breadcrumbs": [
@@ -48031,7 +48031,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Service Negotiation Analytics | Digi Tracks",
-    "description": "Func Service Negotiation Analytics | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Service Negotiation Analytics | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-service-negotiation-analytics",
     "breadcrumbs": [
@@ -48058,7 +48058,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Service Rate Pyramid Should Cost | Digi Tracks",
-    "description": "Func Service Rate Pyramid Should Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Service Rate Pyramid Should Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-service-rate-pyramid-should-cost",
     "breadcrumbs": [
@@ -48085,7 +48085,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Service Risk And Pricing Structures | Digi Tracks",
-    "description": "Func Service Risk And Pricing Structures | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Service Risk And Pricing Structures | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-service-risk-and-pricing-structures",
     "breadcrumbs": [
@@ -48112,7 +48112,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Service Transition Planning | Digi Tracks",
-    "description": "Func Service Transition Planning | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Service Transition Planning | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-service-transition-planning",
     "breadcrumbs": [
@@ -48139,7 +48139,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Should Cost | Digi Tracks",
-    "description": "Func Should Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Should Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-should-cost",
     "breadcrumbs": [
@@ -48166,7 +48166,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Social Value Labour Due Diligence | Digi Tracks",
-    "description": "Func Social Value Labour Due Diligence | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Social Value Labour Due Diligence | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-social-value-labour-due-diligence",
     "breadcrumbs": [
@@ -48193,7 +48193,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Software Licensing | Digi Tracks",
-    "description": "Func Software Licensing | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Software Licensing | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-software-licensing",
     "breadcrumbs": [
@@ -48220,7 +48220,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Spend Analysis | Digi Tracks",
-    "description": "Func Spend Analysis | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Spend Analysis | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-spend-analysis",
     "breadcrumbs": [
@@ -48247,7 +48247,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Spend Analytics | Digi Tracks",
-    "description": "Func Spend Analytics | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Spend Analytics | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-spend-analytics",
     "breadcrumbs": [
@@ -48274,7 +48274,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Srm Scorecards | Digi Tracks",
-    "description": "Func Srm Scorecards | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Srm Scorecards | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-srm-scorecards",
     "breadcrumbs": [
@@ -48301,7 +48301,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Stakeholder Mapping | Digi Tracks",
-    "description": "Func Stakeholder Mapping | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Stakeholder Mapping | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-stakeholder-mapping",
     "breadcrumbs": [
@@ -48328,7 +48328,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Standstill Challenge Defensible File | Digi Tracks",
-    "description": "Func Standstill Challenge Defensible File | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Standstill Challenge Defensible File | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-standstill-challenge-defensible-file",
     "breadcrumbs": [
@@ -48355,7 +48355,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Supplier Development | Digi Tracks",
-    "description": "Func Supplier Development | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Supplier Development | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-supplier-development",
     "breadcrumbs": [
@@ -48382,7 +48382,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Supplier Early Warning Response | Digi Tracks",
-    "description": "Func Supplier Early Warning Response | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Supplier Early Warning Response | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-supplier-early-warning-response",
     "breadcrumbs": [
@@ -48409,7 +48409,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Supplier Eval | Digi Tracks",
-    "description": "Func Supplier Eval | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Supplier Eval | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-supplier-eval",
     "breadcrumbs": [
@@ -48436,7 +48436,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Supplier Financial Health | Digi Tracks",
-    "description": "Func Supplier Financial Health | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Supplier Financial Health | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-supplier-financial-health",
     "breadcrumbs": [
@@ -48463,7 +48463,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Supplier Onboarding | Digi Tracks",
-    "description": "Func Supplier Onboarding | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Supplier Onboarding | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-supplier-onboarding",
     "breadcrumbs": [
@@ -48490,7 +48490,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Supplier Risk | Digi Tracks",
-    "description": "Func Supplier Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Supplier Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-supplier-risk",
     "breadcrumbs": [
@@ -48517,7 +48517,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Supply Chain Finance | Digi Tracks",
-    "description": "Func Supply Chain Finance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Supply Chain Finance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-supply-chain-finance",
     "breadcrumbs": [
@@ -48544,7 +48544,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Sustainability | Digi Tracks",
-    "description": "Func Sustainability | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Sustainability | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-sustainability",
     "breadcrumbs": [
@@ -48571,7 +48571,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Tail Period And Exit Cooperation | Digi Tracks",
-    "description": "Func Tail Period And Exit Cooperation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Tail Period And Exit Cooperation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-tail-period-and-exit-cooperation",
     "breadcrumbs": [
@@ -48598,7 +48598,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Tail Spend Program | Digi Tracks",
-    "description": "Func Tail Spend Program | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Tail Spend Program | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-tail-spend-program",
     "breadcrumbs": [
@@ -48625,7 +48625,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Threeway Matching | Digi Tracks",
-    "description": "Func Threeway Matching | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Threeway Matching | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-threeway-matching",
     "breadcrumbs": [
@@ -48652,7 +48652,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Transformation Roadmap | Digi Tracks",
-    "description": "Func Transformation Roadmap | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Transformation Roadmap | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-transformation-roadmap",
     "breadcrumbs": [
@@ -48679,7 +48679,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Value Narrative | Digi Tracks",
-    "description": "Func Value Narrative | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Value Narrative | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-value-narrative",
     "breadcrumbs": [
@@ -48706,7 +48706,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Who Owns The Stock | Digi Tracks",
-    "description": "Func Who Owns The Stock | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Who Owns The Stock | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-who-owns-the-stock",
     "breadcrumbs": [
@@ -48733,7 +48733,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Func Works And Construction Buying | Digi Tracks",
-    "description": "Func Works And Construction Buying | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Func Works And Construction Buying | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "academy:func-works-and-construction-buying",
     "breadcrumbs": [
@@ -48760,7 +48760,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Approvals | Digi Tracks",
-    "description": "Approvals | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Approvals | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "approvals:",
     "breadcrumbs": [
@@ -48787,7 +48787,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Audit | Digi Tracks",
-    "description": "Audit | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Audit | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "local-workspace",
     "contentKey": "audit:",
     "breadcrumbs": [
@@ -48814,7 +48814,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Backup | Digi Tracks",
-    "description": "Backup | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Backup | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "local-workspace",
     "contentKey": "backup:",
     "breadcrumbs": [
@@ -48841,7 +48841,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Calc | Digi Tracks",
-    "description": "Calc | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "calc:",
     "breadcrumbs": [
@@ -48868,7 +48868,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Budget Vs Actual | Digi Tracks",
-    "description": "Calc Budget Vs Actual | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Budget Vs Actual | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-budget-vs-actual",
     "breadcrumbs": [
@@ -48895,7 +48895,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Compare Quotes | Digi Tracks",
-    "description": "Calc Compare Quotes | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Compare Quotes | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-compare-quotes",
     "breadcrumbs": [
@@ -48922,7 +48922,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Fx Currency | Digi Tracks",
-    "description": "Calc Fx Currency | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Fx Currency | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-fx-currency",
     "breadcrumbs": [
@@ -48949,7 +48949,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Gst Tax | Digi Tracks",
-    "description": "Calc Gst Tax | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Gst Tax | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-gst-tax",
     "breadcrumbs": [
@@ -48976,7 +48976,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Kpi Calculator | Digi Tracks",
-    "description": "Calc Kpi Calculator | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Kpi Calculator | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-kpi-calculator",
     "breadcrumbs": [
@@ -49003,7 +49003,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Landed Cost | Digi Tracks",
-    "description": "Calc Landed Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Landed Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-landed-cost",
     "breadcrumbs": [
@@ -49030,7 +49030,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Make Vs Buy | Digi Tracks",
-    "description": "Calc Make Vs Buy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Make Vs Buy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-make-vs-buy",
     "breadcrumbs": [
@@ -49057,7 +49057,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Moq | Digi Tracks",
-    "description": "Calc Moq | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Moq | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-moq",
     "breadcrumbs": [
@@ -49084,7 +49084,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Multi Year Contract Cost | Digi Tracks",
-    "description": "Calc Multi Year Contract Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Multi Year Contract Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-multi-year-contract-cost",
     "breadcrumbs": [
@@ -49111,7 +49111,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Negotiation Savings | Digi Tracks",
-    "description": "Calc Negotiation Savings | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Negotiation Savings | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-negotiation-savings",
     "breadcrumbs": [
@@ -49138,7 +49138,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Payment Terms | Digi Tracks",
-    "description": "Calc Payment Terms | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Payment Terms | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-payment-terms",
     "breadcrumbs": [
@@ -49165,7 +49165,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Po Value Check | Digi Tracks",
-    "description": "Calc Po Value Check | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Po Value Check | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-po-value-check",
     "breadcrumbs": [
@@ -49192,7 +49192,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Price Escalation | Digi Tracks",
-    "description": "Calc Price Escalation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Price Escalation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-price-escalation",
     "breadcrumbs": [
@@ -49219,7 +49219,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Price Increase | Digi Tracks",
-    "description": "Calc Price Increase | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Price Increase | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-price-increase",
     "breadcrumbs": [
@@ -49246,7 +49246,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Savings Analysis | Digi Tracks",
-    "description": "Calc Savings Analysis | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Savings Analysis | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-savings-analysis",
     "breadcrumbs": [
@@ -49273,7 +49273,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Should Cost | Digi Tracks",
-    "description": "Calc Should Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Should Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-should-cost",
     "breadcrumbs": [
@@ -49300,7 +49300,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Supplier Concentration | Digi Tracks",
-    "description": "Calc Supplier Concentration | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Supplier Concentration | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-supplier-concentration",
     "breadcrumbs": [
@@ -49327,7 +49327,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Supplier Scorecard | Digi Tracks",
-    "description": "Calc Supplier Scorecard | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Supplier Scorecard | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-supplier-scorecard",
     "breadcrumbs": [
@@ -49354,7 +49354,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Calc Tco | Digi Tracks",
-    "description": "Calc Tco | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calc Tco | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "calc:calc-tco",
     "breadcrumbs": [
@@ -49381,7 +49381,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Cl | Digi Tracks",
-    "description": "Cl | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "cl:",
     "breadcrumbs": [
@@ -49408,7 +49408,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Award Recommendation | Digi Tracks",
-    "description": "Cl Award Recommendation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Award Recommendation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-award-recommendation",
     "breadcrumbs": [
@@ -49435,7 +49435,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Claims Management | Digi Tracks",
-    "description": "Cl Claims Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Claims Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-claims-management",
     "breadcrumbs": [
@@ -49462,7 +49462,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Commercial Evaluation | Digi Tracks",
-    "description": "Cl Commercial Evaluation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Commercial Evaluation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-commercial-evaluation",
     "breadcrumbs": [
@@ -49489,7 +49489,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Contract Renewal | Digi Tracks",
-    "description": "Cl Contract Renewal | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Contract Renewal | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-contract-renewal",
     "breadcrumbs": [
@@ -49516,7 +49516,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Contract Review | Digi Tracks",
-    "description": "Cl Contract Review | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Contract Review | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-contract-review",
     "breadcrumbs": [
@@ -49543,7 +49543,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Emergency Procurement | Digi Tracks",
-    "description": "Cl Emergency Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Emergency Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-emergency-procurement",
     "breadcrumbs": [
@@ -49570,7 +49570,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Exception Approval | Digi Tracks",
-    "description": "Cl Exception Approval | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Exception Approval | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-exception-approval",
     "breadcrumbs": [
@@ -49597,7 +49597,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Expediting | Digi Tracks",
-    "description": "Cl Expediting | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Expediting | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-expediting",
     "breadcrumbs": [
@@ -49624,7 +49624,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Invoice Verification | Digi Tracks",
-    "description": "Cl Invoice Verification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Invoice Verification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-invoice-verification",
     "breadcrumbs": [
@@ -49651,7 +49651,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Negotiation | Digi Tracks",
-    "description": "Cl Negotiation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Negotiation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-negotiation",
     "breadcrumbs": [
@@ -49678,7 +49678,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Negotiation Closeout | Digi Tracks",
-    "description": "Cl Negotiation Closeout | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Negotiation Closeout | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-negotiation-closeout",
     "breadcrumbs": [
@@ -49705,7 +49705,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Po Amendment | Digi Tracks",
-    "description": "Cl Po Amendment | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Po Amendment | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-po-amendment",
     "breadcrumbs": [
@@ -49732,7 +49732,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Po Creation | Digi Tracks",
-    "description": "Cl Po Creation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Po Creation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-po-creation",
     "breadcrumbs": [
@@ -49759,7 +49759,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Procurement Audit | Digi Tracks",
-    "description": "Cl Procurement Audit | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Procurement Audit | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-procurement-audit",
     "breadcrumbs": [
@@ -49786,7 +49786,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Procurement File Completeness | Digi Tracks",
-    "description": "Cl Procurement File Completeness | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Procurement File Completeness | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-procurement-file-completeness",
     "breadcrumbs": [
@@ -49813,7 +49813,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Procurement Intake | Digi Tracks",
-    "description": "Cl Procurement Intake | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Procurement Intake | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-procurement-intake",
     "breadcrumbs": [
@@ -49840,7 +49840,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Quote Collection | Digi Tracks",
-    "description": "Cl Quote Collection | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Quote Collection | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-quote-collection",
     "breadcrumbs": [
@@ -49867,7 +49867,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Quote Comparison | Digi Tracks",
-    "description": "Cl Quote Comparison | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Quote Comparison | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-quote-comparison",
     "breadcrumbs": [
@@ -49894,7 +49894,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Requirement Definition | Digi Tracks",
-    "description": "Cl Requirement Definition | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Requirement Definition | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-requirement-definition",
     "breadcrumbs": [
@@ -49921,7 +49921,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Rfp Preparation | Digi Tracks",
-    "description": "Cl Rfp Preparation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Rfp Preparation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-rfp-preparation",
     "breadcrumbs": [
@@ -49948,7 +49948,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Rfq Preparation | Digi Tracks",
-    "description": "Cl Rfq Preparation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Rfq Preparation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-rfq-preparation",
     "breadcrumbs": [
@@ -49975,7 +49975,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Savings Validation | Digi Tracks",
-    "description": "Cl Savings Validation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Savings Validation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-savings-validation",
     "breadcrumbs": [
@@ -50002,7 +50002,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Single Source Justification | Digi Tracks",
-    "description": "Cl Single Source Justification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Single Source Justification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-single-source-justification",
     "breadcrumbs": [
@@ -50029,7 +50029,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Sourcing Strategy | Digi Tracks",
-    "description": "Cl Sourcing Strategy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Sourcing Strategy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-sourcing-strategy",
     "breadcrumbs": [
@@ -50056,7 +50056,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Supplier Corrective Action | Digi Tracks",
-    "description": "Cl Supplier Corrective Action | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Supplier Corrective Action | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-supplier-corrective-action",
     "breadcrumbs": [
@@ -50083,7 +50083,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Supplier Due Diligence | Digi Tracks",
-    "description": "Cl Supplier Due Diligence | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Supplier Due Diligence | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-supplier-due-diligence",
     "breadcrumbs": [
@@ -50110,7 +50110,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Supplier Evaluation | Digi Tracks",
-    "description": "Cl Supplier Evaluation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Supplier Evaluation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-supplier-evaluation",
     "breadcrumbs": [
@@ -50137,7 +50137,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Supplier Identification | Digi Tracks",
-    "description": "Cl Supplier Identification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Supplier Identification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-supplier-identification",
     "breadcrumbs": [
@@ -50164,7 +50164,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Supplier Onboarding | Digi Tracks",
-    "description": "Cl Supplier Onboarding | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Supplier Onboarding | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-supplier-onboarding",
     "breadcrumbs": [
@@ -50191,7 +50191,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Supplier Performance Review | Digi Tracks",
-    "description": "Cl Supplier Performance Review | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Supplier Performance Review | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-supplier-performance-review",
     "breadcrumbs": [
@@ -50218,7 +50218,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Supplier Risk Review | Digi Tracks",
-    "description": "Cl Supplier Risk Review | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Supplier Risk Review | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-supplier-risk-review",
     "breadcrumbs": [
@@ -50245,7 +50245,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Supplier Selection | Digi Tracks",
-    "description": "Cl Supplier Selection | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Supplier Selection | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-supplier-selection",
     "breadcrumbs": [
@@ -50272,7 +50272,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Technical Evaluation | Digi Tracks",
-    "description": "Cl Technical Evaluation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Technical Evaluation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-technical-evaluation",
     "breadcrumbs": [
@@ -50299,7 +50299,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cl Three Way Match | Digi Tracks",
-    "description": "Cl Three Way Match | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cl Three Way Match | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "cl:cl-three-way-match",
     "breadcrumbs": [
@@ -50326,7 +50326,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Contracts | Digi Tracks",
-    "description": "Contracts | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Contracts | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "contracts:",
     "breadcrumbs": [
@@ -50353,7 +50353,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Dash Savings | Digi Tracks",
-    "description": "Dash Savings | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Dash Savings | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "dash-savings:",
     "breadcrumbs": [
@@ -50380,7 +50380,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Dec | Digi Tracks",
-    "description": "Dec | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Dec | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "dec:",
     "breadcrumbs": [
@@ -50407,7 +50407,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Accept Price Increase | Digi Tracks",
-    "description": "Accept Price Increase | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Accept Price Increase | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:accept-price-increase",
     "breadcrumbs": [
@@ -50434,7 +50434,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Approve Exception | Digi Tracks",
-    "description": "Approve Exception | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Approve Exception | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:approve-exception",
     "breadcrumbs": [
@@ -50461,7 +50461,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Competitive Or Single | Digi Tracks",
-    "description": "Competitive Or Single | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Competitive Or Single | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:competitive-or-single",
     "breadcrumbs": [
@@ -50488,7 +50488,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Consolidate Suppliers | Digi Tracks",
-    "description": "Consolidate Suppliers | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Consolidate Suppliers | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:consolidate-suppliers",
     "breadcrumbs": [
@@ -50515,7 +50515,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Dual Source | Digi Tracks",
-    "description": "Dual Source | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Dual Source | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:dual-source",
     "breadcrumbs": [
@@ -50542,7 +50542,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Framework Agreement | Digi Tracks",
-    "description": "Framework Agreement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Framework Agreement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:framework-agreement",
     "breadcrumbs": [
@@ -50569,7 +50569,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Make Or Buy | Digi Tracks",
-    "description": "Make Or Buy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Make Or Buy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:make-or-buy",
     "breadcrumbs": [
@@ -50596,7 +50596,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Negotiate Or Accept | Digi Tracks",
-    "description": "Negotiate Or Accept | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Negotiate Or Accept | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:negotiate-or-accept",
     "breadcrumbs": [
@@ -50623,7 +50623,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Re Source | Digi Tracks",
-    "description": "Re Source | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Re Source | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:re-source",
     "breadcrumbs": [
@@ -50650,7 +50650,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Renew Vs Resource | Digi Tracks",
-    "description": "Renew Vs Resource | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Renew Vs Resource | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:renew-vs-resource",
     "breadcrumbs": [
@@ -50677,7 +50677,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Rfi Or Rfq | Digi Tracks",
-    "description": "Rfi Or Rfq | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Rfi Or Rfq | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:rfi-or-rfq",
     "breadcrumbs": [
@@ -50704,7 +50704,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Rfq Or Rfp | Digi Tracks",
-    "description": "Rfq Or Rfp | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Rfq Or Rfp | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:rfq-or-rfp",
     "breadcrumbs": [
@@ -50731,7 +50731,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sourcing Method | Digi Tracks",
-    "description": "Sourcing Method | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sourcing Method | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:sourcing-method",
     "breadcrumbs": [
@@ -50758,7 +50758,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Concentration | Digi Tracks",
-    "description": "Supplier Concentration | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Concentration | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:supplier-concentration",
     "breadcrumbs": [
@@ -50785,7 +50785,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Financial Risk | Digi Tracks",
-    "description": "Supplier Financial Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Financial Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:supplier-financial-risk",
     "breadcrumbs": [
@@ -50812,7 +50812,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Unit Or Tco | Digi Tracks",
-    "description": "Unit Or Tco | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Unit Or Tco | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "dec:unit-or-tco",
     "breadcrumbs": [
@@ -50839,7 +50839,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Fav | Digi Tracks",
-    "description": "Fav | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Fav | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "local-workspace",
     "contentKey": "fav:",
     "breadcrumbs": [
@@ -50866,7 +50866,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Glossary | Digi Tracks",
-    "description": "Glossary | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Glossary | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "glossary:",
     "breadcrumbs": [
@@ -50893,7 +50893,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Altman Z | Digi Tracks",
-    "description": "Gloss Altman Z | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Altman Z | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-altman-z",
     "breadcrumbs": [
@@ -50920,7 +50920,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Audit | Digi Tracks",
-    "description": "Gloss Audit | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Audit | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-audit",
     "breadcrumbs": [
@@ -50947,7 +50947,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Auto Renewal | Digi Tracks",
-    "description": "Gloss Auto Renewal | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Auto Renewal | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-auto-renewal",
     "breadcrumbs": [
@@ -50974,7 +50974,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Batna | Digi Tracks",
-    "description": "Gloss Batna | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Batna | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-batna",
     "breadcrumbs": [
@@ -51001,7 +51001,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Bcp | Digi Tracks",
-    "description": "Gloss Bcp | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Bcp | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-bcp",
     "breadcrumbs": [
@@ -51028,7 +51028,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Bid | Digi Tracks",
-    "description": "Gloss Bid | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Bid | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-bid",
     "breadcrumbs": [
@@ -51055,7 +51055,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Blanket Po | Digi Tracks",
-    "description": "Gloss Blanket Po | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Blanket Po | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-blanket-po",
     "breadcrumbs": [
@@ -51082,7 +51082,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Bottleneck | Digi Tracks",
-    "description": "Gloss Bottleneck | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Bottleneck | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-bottleneck",
     "breadcrumbs": [
@@ -51109,7 +51109,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Capex | Digi Tracks",
-    "description": "Gloss Capex | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Capex | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-capex",
     "breadcrumbs": [
@@ -51136,7 +51136,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Category Management | Digi Tracks",
-    "description": "Gloss Category Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Category Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-category-management",
     "breadcrumbs": [
@@ -51163,7 +51163,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Change Order | Digi Tracks",
-    "description": "Gloss Change Order | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Change Order | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-change-order",
     "breadcrumbs": [
@@ -51190,7 +51190,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Cloud | Digi Tracks",
-    "description": "Gloss Cloud | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Cloud | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-cloud",
     "breadcrumbs": [
@@ -51217,7 +51217,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Co Employment | Digi Tracks",
-    "description": "Gloss Co Employment | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Co Employment | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-co-employment",
     "breadcrumbs": [
@@ -51244,7 +51244,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Controls | Digi Tracks",
-    "description": "Gloss Controls | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Controls | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-controls",
     "breadcrumbs": [
@@ -51271,7 +51271,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Cost Avoidance | Digi Tracks",
-    "description": "Gloss Cost Avoidance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Cost Avoidance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-cost-avoidance",
     "breadcrumbs": [
@@ -51298,7 +51298,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Cost Breakdown | Digi Tracks",
-    "description": "Gloss Cost Breakdown | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Cost Breakdown | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-cost-breakdown",
     "breadcrumbs": [
@@ -51325,7 +51325,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Cost To Serve | Digi Tracks",
-    "description": "Gloss Cost To Serve | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Cost To Serve | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-cost-to-serve",
     "breadcrumbs": [
@@ -51352,7 +51352,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Cpo | Digi Tracks",
-    "description": "Gloss Cpo | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Cpo | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-cpo",
     "breadcrumbs": [
@@ -51379,7 +51379,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Ddp | Digi Tracks",
-    "description": "Gloss Ddp | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Ddp | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-ddp",
     "breadcrumbs": [
@@ -51406,7 +51406,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Delegation Of Authority | Digi Tracks",
-    "description": "Gloss Delegation Of Authority | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Delegation Of Authority | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-delegation-of-authority",
     "breadcrumbs": [
@@ -51433,7 +51433,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Direct Spend | Digi Tracks",
-    "description": "Gloss Direct Spend | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Direct Spend | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-direct-spend",
     "breadcrumbs": [
@@ -51460,7 +51460,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Doa | Digi Tracks",
-    "description": "Gloss Doa | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Doa | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-doa",
     "breadcrumbs": [
@@ -51487,7 +51487,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Ebitda | Digi Tracks",
-    "description": "Gloss Ebitda | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Ebitda | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-ebitda",
     "breadcrumbs": [
@@ -51514,7 +51514,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Emergency Procurement | Digi Tracks",
-    "description": "Gloss Emergency Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Emergency Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-emergency-procurement",
     "breadcrumbs": [
@@ -51541,7 +51541,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Eoq | Digi Tracks",
-    "description": "Gloss Eoq | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Eoq | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-eoq",
     "breadcrumbs": [
@@ -51568,7 +51568,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Esg | Digi Tracks",
-    "description": "Gloss Esg | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Esg | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-esg",
     "breadcrumbs": [
@@ -51595,7 +51595,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Evidence | Digi Tracks",
-    "description": "Gloss Evidence | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Evidence | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-evidence",
     "breadcrumbs": [
@@ -51622,7 +51622,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Ftl | Digi Tracks",
-    "description": "Gloss Ftl | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Ftl | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-ftl",
     "breadcrumbs": [
@@ -51649,7 +51649,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Fuel Surcharge | Digi Tracks",
-    "description": "Gloss Fuel Surcharge | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Fuel Surcharge | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-fuel-surcharge",
     "breadcrumbs": [
@@ -51676,7 +51676,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Fx | Digi Tracks",
-    "description": "Gloss Fx | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Fx | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-fx",
     "breadcrumbs": [
@@ -51703,7 +51703,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Gainshare | Digi Tracks",
-    "description": "Gloss Gainshare | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Gainshare | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-gainshare",
     "breadcrumbs": [
@@ -51730,7 +51730,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Gpo | Digi Tracks",
-    "description": "Gloss Gpo | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Gpo | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-gpo",
     "breadcrumbs": [
@@ -51757,7 +51757,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Hhi | Digi Tracks",
-    "description": "Gloss Hhi | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Hhi | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-hhi",
     "breadcrumbs": [
@@ -51784,7 +51784,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Hs Code | Digi Tracks",
-    "description": "Gloss Hs Code | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Hs Code | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-hs-code",
     "breadcrumbs": [
@@ -51811,7 +51811,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Iaas | Digi Tracks",
-    "description": "Gloss Iaas | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Iaas | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-iaas",
     "breadcrumbs": [
@@ -51838,7 +51838,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Incoterms | Digi Tracks",
-    "description": "Gloss Incoterms | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Incoterms | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-incoterms",
     "breadcrumbs": [
@@ -51865,7 +51865,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Indemnity | Digi Tracks",
-    "description": "Gloss Indemnity | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Indemnity | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-indemnity",
     "breadcrumbs": [
@@ -51892,7 +51892,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Iq Oq Pq | Digi Tracks",
-    "description": "Gloss Iq Oq Pq | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Iq Oq Pq | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-iq-oq-pq",
     "breadcrumbs": [
@@ -51919,7 +51919,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Kpi | Digi Tracks",
-    "description": "Gloss Kpi | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Kpi | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-kpi",
     "breadcrumbs": [
@@ -51946,7 +51946,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Kraljic | Digi Tracks",
-    "description": "Gloss Kraljic | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Kraljic | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-kraljic",
     "breadcrumbs": [
@@ -51973,7 +51973,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Landed Cost | Digi Tracks",
-    "description": "Gloss Landed Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Landed Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-landed-cost",
     "breadcrumbs": [
@@ -52000,7 +52000,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Letter Of Credit | Digi Tracks",
-    "description": "Gloss Letter Of Credit | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Letter Of Credit | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-letter-of-credit",
     "breadcrumbs": [
@@ -52027,7 +52027,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Leverage | Digi Tracks",
-    "description": "Gloss Leverage | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Leverage | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-leverage",
     "breadcrumbs": [
@@ -52054,7 +52054,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Liability | Digi Tracks",
-    "description": "Gloss Liability | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Liability | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-liability",
     "breadcrumbs": [
@@ -52081,7 +52081,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Ltl | Digi Tracks",
-    "description": "Gloss Ltl | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Ltl | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-ltl",
     "breadcrumbs": [
@@ -52108,7 +52108,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Maverick Spend | Digi Tracks",
-    "description": "Gloss Maverick Spend | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Maverick Spend | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-maverick-spend",
     "breadcrumbs": [
@@ -52135,7 +52135,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Moq | Digi Tracks",
-    "description": "Gloss Moq | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Moq | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-moq",
     "breadcrumbs": [
@@ -52162,7 +52162,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Opex | Digi Tracks",
-    "description": "Gloss Opex | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Opex | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-opex",
     "breadcrumbs": [
@@ -52189,7 +52189,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Otd | Digi Tracks",
-    "description": "Gloss Otd | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Otd | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-otd",
     "breadcrumbs": [
@@ -52216,7 +52216,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Otif | Digi Tracks",
-    "description": "Gloss Otif | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Otif | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-otif",
     "breadcrumbs": [
@@ -52243,7 +52243,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss P2p | Digi Tracks",
-    "description": "Gloss P2p | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss P2p | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-p2p",
     "breadcrumbs": [
@@ -52270,7 +52270,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Paas | Digi Tracks",
-    "description": "Gloss Paas | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Paas | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-paas",
     "breadcrumbs": [
@@ -52297,7 +52297,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Pareto | Digi Tracks",
-    "description": "Gloss Pareto | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Pareto | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-pareto",
     "breadcrumbs": [
@@ -52324,7 +52324,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Ppv | Digi Tracks",
-    "description": "Gloss Ppv | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Ppv | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-ppv",
     "breadcrumbs": [
@@ -52351,7 +52351,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Procure To Pay | Digi Tracks",
-    "description": "Gloss Procure To Pay | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Procure To Pay | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-procure-to-pay",
     "breadcrumbs": [
@@ -52378,7 +52378,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Qbr | Digi Tracks",
-    "description": "Gloss Qbr | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Qbr | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-qbr",
     "breadcrumbs": [
@@ -52405,7 +52405,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Rate Card | Digi Tracks",
-    "description": "Gloss Rate Card | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Rate Card | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-rate-card",
     "breadcrumbs": [
@@ -52432,7 +52432,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Rfi | Digi Tracks",
-    "description": "Gloss Rfi | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Rfi | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-rfi",
     "breadcrumbs": [
@@ -52459,7 +52459,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Rfp | Digi Tracks",
-    "description": "Gloss Rfp | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Rfp | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-rfp",
     "breadcrumbs": [
@@ -52486,7 +52486,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Rfq | Digi Tracks",
-    "description": "Gloss Rfq | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Rfq | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-rfq",
     "breadcrumbs": [
@@ -52513,7 +52513,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Rft | Digi Tracks",
-    "description": "Gloss Rft | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Rft | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-rft",
     "breadcrumbs": [
@@ -52540,7 +52540,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Rfx | Digi Tracks",
-    "description": "Gloss Rfx | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Rfx | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-rfx",
     "breadcrumbs": [
@@ -52567,7 +52567,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Roi | Digi Tracks",
-    "description": "Gloss Roi | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Roi | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-roi",
     "breadcrumbs": [
@@ -52594,7 +52594,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Root Cause | Digi Tracks",
-    "description": "Gloss Root Cause | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Root Cause | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-root-cause",
     "breadcrumbs": [
@@ -52621,7 +52621,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Routine | Digi Tracks",
-    "description": "Gloss Routine | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Routine | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-routine",
     "breadcrumbs": [
@@ -52648,7 +52648,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Run Rate | Digi Tracks",
-    "description": "Gloss Run Rate | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Run Rate | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-run-rate",
     "breadcrumbs": [
@@ -52675,7 +52675,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss S2p | Digi Tracks",
-    "description": "Gloss S2p | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss S2p | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-s2p",
     "breadcrumbs": [
@@ -52702,7 +52702,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Saas | Digi Tracks",
-    "description": "Gloss Saas | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Saas | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-saas",
     "breadcrumbs": [
@@ -52729,7 +52729,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Scorecard | Digi Tracks",
-    "description": "Gloss Scorecard | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Scorecard | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-scorecard",
     "breadcrumbs": [
@@ -52756,7 +52756,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Segregation Of Duties | Digi Tracks",
-    "description": "Gloss Segregation Of Duties | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Segregation Of Duties | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-segregation-of-duties",
     "breadcrumbs": [
@@ -52783,7 +52783,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Should Cost | Digi Tracks",
-    "description": "Gloss Should Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Should Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-should-cost",
     "breadcrumbs": [
@@ -52810,7 +52810,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Single Source | Digi Tracks",
-    "description": "Gloss Single Source | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Single Source | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-single-source",
     "breadcrumbs": [
@@ -52837,7 +52837,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Sla | Digi Tracks",
-    "description": "Gloss Sla | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Sla | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-sla",
     "breadcrumbs": [
@@ -52864,7 +52864,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Sole Source | Digi Tracks",
-    "description": "Gloss Sole Source | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Sole Source | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-sole-source",
     "breadcrumbs": [
@@ -52891,7 +52891,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Source To Contract | Digi Tracks",
-    "description": "Gloss Source To Contract | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Source To Contract | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-source-to-contract",
     "breadcrumbs": [
@@ -52918,7 +52918,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Sow | Digi Tracks",
-    "description": "Gloss Sow | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Sow | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-sow",
     "breadcrumbs": [
@@ -52945,7 +52945,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Spend Cube | Digi Tracks",
-    "description": "Gloss Spend Cube | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Spend Cube | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-spend-cube",
     "breadcrumbs": [
@@ -52972,7 +52972,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Spend Under Management | Digi Tracks",
-    "description": "Gloss Spend Under Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Spend Under Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-spend-under-management",
     "breadcrumbs": [
@@ -52999,7 +52999,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Standby Lc | Digi Tracks",
-    "description": "Gloss Standby Lc | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Standby Lc | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-standby-lc",
     "breadcrumbs": [
@@ -53026,7 +53026,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Strategic Sourcing | Digi Tracks",
-    "description": "Gloss Strategic Sourcing | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Strategic Sourcing | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-strategic-sourcing",
     "breadcrumbs": [
@@ -53053,7 +53053,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Sum | Digi Tracks",
-    "description": "Gloss Sum | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Sum | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-sum",
     "breadcrumbs": [
@@ -53080,7 +53080,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Supplier Base | Digi Tracks",
-    "description": "Gloss Supplier Base | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Supplier Base | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-supplier-base",
     "breadcrumbs": [
@@ -53107,7 +53107,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Supply Chain Finance | Digi Tracks",
-    "description": "Gloss Supply Chain Finance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Supply Chain Finance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-supply-chain-finance",
     "breadcrumbs": [
@@ -53134,7 +53134,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Tariff | Digi Tracks",
-    "description": "Gloss Tariff | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Tariff | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-tariff",
     "breadcrumbs": [
@@ -53161,7 +53161,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Tco | Digi Tracks",
-    "description": "Gloss Tco | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Tco | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-tco",
     "breadcrumbs": [
@@ -53188,7 +53188,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Tier 1 | Digi Tracks",
-    "description": "Gloss Tier 1 | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Tier 1 | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-tier-1",
     "breadcrumbs": [
@@ -53215,7 +53215,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Walk Away | Digi Tracks",
-    "description": "Gloss Walk Away | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Walk Away | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-walk-away",
     "breadcrumbs": [
@@ -53242,7 +53242,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Working Capital | Digi Tracks",
-    "description": "Gloss Working Capital | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Working Capital | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-working-capital",
     "breadcrumbs": [
@@ -53269,7 +53269,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Gloss Zopa | Digi Tracks",
-    "description": "Gloss Zopa | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Gloss Zopa | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "glossary:gloss-zopa",
     "breadcrumbs": [
@@ -53296,7 +53296,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Assumptions | Digi Tracks",
-    "description": "Assumptions | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Assumptions | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:assumptions",
     "breadcrumbs": [
@@ -53323,7 +53323,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Calculators | Digi Tracks",
-    "description": "Calculators | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Calculators | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:calculators",
     "breadcrumbs": [
@@ -53350,7 +53350,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Disclaimers | Digi Tracks",
-    "description": "Disclaimers | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Disclaimers | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:disclaimers",
     "breadcrumbs": [
@@ -53377,7 +53377,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Getting Started | Digi Tracks",
-    "description": "Getting Started | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Getting Started | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:getting-started",
     "breadcrumbs": [
@@ -53404,7 +53404,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Methodology | Digi Tracks",
-    "description": "Methodology | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Methodology | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:methodology",
     "breadcrumbs": [
@@ -53431,7 +53431,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Navigating | Digi Tracks",
-    "description": "Navigating | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Navigating | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:navigating",
     "breadcrumbs": [
@@ -53458,7 +53458,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Privacy | Digi Tracks",
-    "description": "Privacy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Privacy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:privacy",
     "breadcrumbs": [
@@ -53485,7 +53485,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Saving Data | Digi Tracks",
-    "description": "Saving Data | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Saving Data | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:saving-data",
     "breadcrumbs": [
@@ -53512,7 +53512,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Sops Checklists | Digi Tracks",
-    "description": "Sops Checklists | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sops Checklists | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:sops-checklists",
     "breadcrumbs": [
@@ -53539,7 +53539,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Templates | Digi Tracks",
-    "description": "Templates | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Templates | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:templates",
     "breadcrumbs": [
@@ -53566,7 +53566,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Troubleshooting | Digi Tracks",
-    "description": "Troubleshooting | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Troubleshooting | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "help-detail",
     "contentKey": "help:troubleshooting",
     "breadcrumbs": [
@@ -53593,7 +53593,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Abnormally Low Tender | Digi Tracks",
-    "description": "Abnormally Low Tender | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Abnormally Low Tender | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:abnormally-low-tender",
     "breadcrumbs": [
@@ -53620,7 +53620,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Agency Fee Models | Digi Tracks",
-    "description": "Agency Fee Models | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Agency Fee Models | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:agency-fee-models",
     "breadcrumbs": [
@@ -53647,7 +53647,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Agency Scope Brief | Digi Tracks",
-    "description": "Agency Scope Brief | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Agency Scope Brief | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:agency-scope-brief",
     "breadcrumbs": [
@@ -53674,7 +53674,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Ai Evaluation And Benchmarks | Digi Tracks",
-    "description": "Ai Evaluation And Benchmarks | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Ai Evaluation And Benchmarks | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:ai-evaluation-and-benchmarks",
     "breadcrumbs": [
@@ -53701,7 +53701,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Ai Supplier Assurance | Digi Tracks",
-    "description": "Ai Supplier Assurance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Ai Supplier Assurance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:ai-supplier-assurance",
     "breadcrumbs": [
@@ -53728,7 +53728,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Audit Trail | Digi Tracks",
-    "description": "Audit Trail | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Audit Trail | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:audit-trail",
     "breadcrumbs": [
@@ -53755,7 +53755,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Award Criteria Weighting | Digi Tracks",
-    "description": "Award Criteria Weighting | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Award Criteria Weighting | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:award-criteria-weighting",
     "breadcrumbs": [
@@ -53782,7 +53782,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Background And Foreground Rights | Digi Tracks",
-    "description": "Background And Foreground Rights | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Background And Foreground Rights | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:background-and-foreground-rights",
     "breadcrumbs": [
@@ -53809,7 +53809,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Batna | Digi Tracks",
-    "description": "Batna | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Batna | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:batna",
     "breadcrumbs": [
@@ -53836,7 +53836,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Bench Utilisation Economics | Digi Tracks",
-    "description": "Bench Utilisation Economics | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Bench Utilisation Economics | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:bench-utilisation-economics",
     "breadcrumbs": [
@@ -53863,7 +53863,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Bid Rigging Patterns | Digi Tracks",
-    "description": "Bid Rigging Patterns | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Bid Rigging Patterns | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:bid-rigging-patterns",
     "breadcrumbs": [
@@ -53890,7 +53890,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Business Continuity | Digi Tracks",
-    "description": "Business Continuity | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Business Continuity | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:business-continuity",
     "breadcrumbs": [
@@ -53917,7 +53917,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Capex | Digi Tracks",
-    "description": "C Capex | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Capex | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-capex",
     "breadcrumbs": [
@@ -53944,7 +53944,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Direct Procurement | Digi Tracks",
-    "description": "C Direct Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Direct Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-direct-procurement",
     "breadcrumbs": [
@@ -53971,7 +53971,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Indirect Procurement | Digi Tracks",
-    "description": "C Indirect Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Indirect Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-indirect-procurement",
     "breadcrumbs": [
@@ -53998,7 +53998,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Maverick Spend | Digi Tracks",
-    "description": "C Maverick Spend | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Maverick Spend | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-maverick-spend",
     "breadcrumbs": [
@@ -54025,7 +54025,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Opex | Digi Tracks",
-    "description": "C Opex | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Opex | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-opex",
     "breadcrumbs": [
@@ -54052,7 +54052,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Procure To Pay | Digi Tracks",
-    "description": "C Procure To Pay | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Procure To Pay | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-procure-to-pay",
     "breadcrumbs": [
@@ -54079,7 +54079,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Procurement | Digi Tracks",
-    "description": "C Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-procurement",
     "breadcrumbs": [
@@ -54106,7 +54106,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Procurement Lifecycle | Digi Tracks",
-    "description": "C Procurement Lifecycle | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Procurement Lifecycle | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-procurement-lifecycle",
     "breadcrumbs": [
@@ -54133,7 +54133,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Procurement Savings | Digi Tracks",
-    "description": "C Procurement Savings | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Procurement Savings | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-procurement-savings",
     "breadcrumbs": [
@@ -54160,7 +54160,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Purchasing | Digi Tracks",
-    "description": "C Purchasing | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Purchasing | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-purchasing",
     "breadcrumbs": [
@@ -54187,7 +54187,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Source To Contract | Digi Tracks",
-    "description": "C Source To Contract | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Source To Contract | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-source-to-contract",
     "breadcrumbs": [
@@ -54214,7 +54214,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Spend Management | Digi Tracks",
-    "description": "C Spend Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Spend Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-spend-management",
     "breadcrumbs": [
@@ -54241,7 +54241,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Strategic Procurement | Digi Tracks",
-    "description": "C Strategic Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Strategic Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-strategic-procurement",
     "breadcrumbs": [
@@ -54268,7 +54268,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Strategic Sourcing | Digi Tracks",
-    "description": "C Strategic Sourcing | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Strategic Sourcing | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-strategic-sourcing",
     "breadcrumbs": [
@@ -54295,7 +54295,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Supplier Management | Digi Tracks",
-    "description": "C Supplier Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Supplier Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-supplier-management",
     "breadcrumbs": [
@@ -54322,7 +54322,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "C Three Way Match | Digi Tracks",
-    "description": "C Three Way Match | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "C Three Way Match | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:c-three-way-match",
     "breadcrumbs": [
@@ -54349,7 +54349,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Call Off Architecture | Digi Tracks",
-    "description": "Call Off Architecture | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Call Off Architecture | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:call-off-architecture",
     "breadcrumbs": [
@@ -54376,7 +54376,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Category Management | Digi Tracks",
-    "description": "Category Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Category Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:category-management",
     "breadcrumbs": [
@@ -54403,7 +54403,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Change Control | Digi Tracks",
-    "description": "Change Control | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Change Control | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:change-control",
     "breadcrumbs": [
@@ -54430,7 +54430,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Circular Economy Levers | Digi Tracks",
-    "description": "Circular Economy Levers | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Circular Economy Levers | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:circular-economy-levers",
     "breadcrumbs": [
@@ -54457,7 +54457,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Clearance And Sovereignty Requirements | Digi Tracks",
-    "description": "Clearance And Sovereignty Requirements | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Clearance And Sovereignty Requirements | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:clearance-and-sovereignty-requirements",
     "breadcrumbs": [
@@ -54484,7 +54484,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Competitive Tension | Digi Tracks",
-    "description": "Competitive Tension | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Competitive Tension | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:competitive-tension",
     "breadcrumbs": [
@@ -54511,7 +54511,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Concentration Risk | Digi Tracks",
-    "description": "Concentration Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Concentration Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:concentration-risk",
     "breadcrumbs": [
@@ -54538,7 +54538,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Concession Management | Digi Tracks",
-    "description": "Concession Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Concession Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:concession-management",
     "breadcrumbs": [
@@ -54565,7 +54565,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Conflict Of Interest | Digi Tracks",
-    "description": "Conflict Of Interest | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Conflict Of Interest | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:conflict-of-interest",
     "breadcrumbs": [
@@ -54592,7 +54592,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Construction Contract Forms | Digi Tracks",
-    "description": "Construction Contract Forms | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Construction Contract Forms | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:construction-contract-forms",
     "breadcrumbs": [
@@ -54619,7 +54619,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Contingent Workforce | Digi Tracks",
-    "description": "Contingent Workforce | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Contingent Workforce | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:contingent-workforce",
     "breadcrumbs": [
@@ -54646,7 +54646,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Contract Structure | Digi Tracks",
-    "description": "Contract Structure | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Contract Structure | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:contract-structure",
     "breadcrumbs": [
@@ -54673,7 +54673,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cost Avoidance | Digi Tracks",
-    "description": "Cost Avoidance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cost Avoidance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:cost-avoidance",
     "breadcrumbs": [
@@ -54700,7 +54700,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cost Breakdown | Digi Tracks",
-    "description": "Cost Breakdown | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Cost Breakdown | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:cost-breakdown",
     "breadcrumbs": [
@@ -54727,7 +54727,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Currency Fx | Digi Tracks",
-    "description": "Currency Fx | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Currency Fx | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:currency-fx",
     "breadcrumbs": [
@@ -54754,7 +54754,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Customs And Duty | Digi Tracks",
-    "description": "Customs And Duty | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Customs And Duty | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:customs-and-duty",
     "breadcrumbs": [
@@ -54781,7 +54781,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Data Licence Scope | Digi Tracks",
-    "description": "Data Licence Scope | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Data Licence Scope | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:data-licence-scope",
     "breadcrumbs": [
@@ -54808,7 +54808,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Dataset Provenance And Rights | Digi Tracks",
-    "description": "Dataset Provenance And Rights | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Dataset Provenance And Rights | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:dataset-provenance-and-rights",
     "breadcrumbs": [
@@ -54835,7 +54835,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Delegation Of Authority | Digi Tracks",
-    "description": "Delegation Of Authority | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Delegation Of Authority | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:delegation-of-authority",
     "breadcrumbs": [
@@ -54862,7 +54862,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Demand Management | Digi Tracks",
-    "description": "Demand Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Demand Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:demand-management",
     "breadcrumbs": [
@@ -54889,7 +54889,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Direct Indirect Spend | Digi Tracks",
-    "description": "Direct Indirect Spend | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Direct Indirect Spend | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:direct-indirect-spend",
     "breadcrumbs": [
@@ -54916,7 +54916,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Early Supplier Involvement | Digi Tracks",
-    "description": "Early Supplier Involvement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Early Supplier Involvement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:early-supplier-involvement",
     "breadcrumbs": [
@@ -54943,7 +54943,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Early Warning Ladder | Digi Tracks",
-    "description": "Early Warning Ladder | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Early Warning Ladder | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:early-warning-ladder",
     "breadcrumbs": [
@@ -54970,7 +54970,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Energy Contract Structures | Digi Tracks",
-    "description": "Energy Contract Structures | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Energy Contract Structures | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:energy-contract-structures",
     "breadcrumbs": [
@@ -54997,7 +54997,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Environmental Claim Verification | Digi Tracks",
-    "description": "Environmental Claim Verification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Environmental Claim Verification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:environmental-claim-verification",
     "breadcrumbs": [
@@ -55024,7 +55024,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Esg Data Quality | Digi Tracks",
-    "description": "Esg Data Quality | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Esg Data Quality | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:esg-data-quality",
     "breadcrumbs": [
@@ -55051,7 +55051,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Essential Service Continuity Duty | Digi Tracks",
-    "description": "Essential Service Continuity Duty | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Essential Service Continuity Duty | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:essential-service-continuity-duty",
     "breadcrumbs": [
@@ -55078,7 +55078,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Evaluation Criteria | Digi Tracks",
-    "description": "Evaluation Criteria | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Evaluation Criteria | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:evaluation-criteria",
     "breadcrumbs": [
@@ -55105,7 +55105,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Export Control And Dual Use | Digi Tracks",
-    "description": "Export Control And Dual Use | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Export Control And Dual Use | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:export-control-and-dual-use",
     "breadcrumbs": [
@@ -55132,7 +55132,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Forecast Error And Bias | Digi Tracks",
-    "description": "Forecast Error And Bias | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Forecast Error And Bias | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:forecast-error-and-bias",
     "breadcrumbs": [
@@ -55159,7 +55159,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Forecast Method Choice | Digi Tracks",
-    "description": "Forecast Method Choice | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Forecast Method Choice | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:forecast-method-choice",
     "breadcrumbs": [
@@ -55186,7 +55186,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Forecast Ownership And Governance | Digi Tracks",
-    "description": "Forecast Ownership And Governance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Forecast Ownership And Governance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:forecast-ownership-and-governance",
     "breadcrumbs": [
@@ -55213,7 +55213,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Framework Agreement | Digi Tracks",
-    "description": "Framework Agreement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Framework Agreement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:framework-agreement",
     "breadcrumbs": [
@@ -55240,7 +55240,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Fraud Triangle | Digi Tracks",
-    "description": "Fraud Triangle | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Fraud Triangle | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:fraud-triangle",
     "breadcrumbs": [
@@ -55267,7 +55267,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Freight Modes | Digi Tracks",
-    "description": "Freight Modes | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Freight Modes | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:freight-modes",
     "breadcrumbs": [
@@ -55294,7 +55294,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Incoterms | Digi Tracks",
-    "description": "Incoterms | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Incoterms | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:incoterms",
     "breadcrumbs": [
@@ -55321,7 +55321,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Innovation Deal Structure | Digi Tracks",
-    "description": "Innovation Deal Structure | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Innovation Deal Structure | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:innovation-deal-structure",
     "breadcrumbs": [
@@ -55348,7 +55348,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Insolvency Claims Ranking | Digi Tracks",
-    "description": "Insolvency Claims Ranking | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Insolvency Claims Ranking | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:insolvency-claims-ranking",
     "breadcrumbs": [
@@ -55375,7 +55375,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Knowledge Transfer Evidence | Digi Tracks",
-    "description": "Knowledge Transfer Evidence | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Knowledge Transfer Evidence | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:knowledge-transfer-evidence",
     "breadcrumbs": [
@@ -55402,7 +55402,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Labour Rate Pyramid | Digi Tracks",
-    "description": "Labour Rate Pyramid | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Labour Rate Pyramid | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:labour-rate-pyramid",
     "breadcrumbs": [
@@ -55429,7 +55429,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Landed Cost Model | Digi Tracks",
-    "description": "Landed Cost Model | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Landed Cost Model | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:landed-cost-model",
     "breadcrumbs": [
@@ -55456,7 +55456,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Liability Indemnity | Digi Tracks",
-    "description": "Liability Indemnity | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Liability Indemnity | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:liability-indemnity",
     "breadcrumbs": [
@@ -55483,7 +55483,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Load Profile Hedging | Digi Tracks",
-    "description": "Load Profile Hedging | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Load Profile Hedging | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:load-profile-hedging",
     "breadcrumbs": [
@@ -55510,7 +55510,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Lotting And Lot Design | Digi Tracks",
-    "description": "Lotting And Lot Design | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Lotting And Lot Design | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:lotting-and-lot-design",
     "breadcrumbs": [
@@ -55537,7 +55537,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Make Or Buy | Digi Tracks",
-    "description": "Make Or Buy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Make Or Buy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:make-or-buy",
     "breadcrumbs": [
@@ -55564,7 +55564,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Marketing Performance Measurement | Digi Tracks",
-    "description": "Marketing Performance Measurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Marketing Performance Measurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:marketing-performance-measurement",
     "breadcrumbs": [
@@ -55591,7 +55591,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Model Service Pricing | Digi Tracks",
-    "description": "Model Service Pricing | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Model Service Pricing | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:model-service-pricing",
     "breadcrumbs": [
@@ -55618,7 +55618,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Modern Slavery Due Diligence | Digi Tracks",
-    "description": "Modern Slavery Due Diligence | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Modern Slavery Due Diligence | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:modern-slavery-due-diligence",
     "breadcrumbs": [
@@ -55645,7 +55645,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Multiyear Price Arc | Digi Tracks",
-    "description": "Multiyear Price Arc | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Multiyear Price Arc | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:multiyear-price-arc",
     "breadcrumbs": [
@@ -55672,7 +55672,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Negotiation Leverage | Digi Tracks",
-    "description": "Negotiation Leverage | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Negotiation Leverage | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:negotiation-leverage",
     "breadcrumbs": [
@@ -55699,7 +55699,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Negotiation Planning | Digi Tracks",
-    "description": "Negotiation Planning | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Negotiation Planning | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:negotiation-planning",
     "breadcrumbs": [
@@ -55726,7 +55726,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Obsolescence And Carrying Risk | Digi Tracks",
-    "description": "Obsolescence And Carrying Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Obsolescence And Carrying Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:obsolescence-and-carrying-risk",
     "breadcrumbs": [
@@ -55753,7 +55753,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Order Quantity Economics | Digi Tracks",
-    "description": "Order Quantity Economics | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Order Quantity Economics | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:order-quantity-economics",
     "breadcrumbs": [
@@ -55780,7 +55780,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Parallel Running And Dual Changeover | Digi Tracks",
-    "description": "Parallel Running And Dual Changeover | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Parallel Running And Dual Changeover | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:parallel-running-and-dual-changeover",
     "breadcrumbs": [
@@ -55807,7 +55807,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payment Diversion | Digi Tracks",
-    "description": "Payment Diversion | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Payment Diversion | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:payment-diversion",
     "breadcrumbs": [
@@ -55834,7 +55834,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payment Terms | Digi Tracks",
-    "description": "Payment Terms | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Payment Terms | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:payment-terms",
     "breadcrumbs": [
@@ -55861,7 +55861,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Pilot To Scale Gap | Digi Tracks",
-    "description": "Pilot To Scale Gap | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Pilot To Scale Gap | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:pilot-to-scale-gap",
     "breadcrumbs": [
@@ -55888,7 +55888,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Planning Horizon And Variability | Digi Tracks",
-    "description": "Planning Horizon And Variability | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Planning Horizon And Variability | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:planning-horizon-and-variability",
     "breadcrumbs": [
@@ -55915,7 +55915,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Price Vs Cost | Digi Tracks",
-    "description": "Price Vs Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Price Vs Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:price-vs-cost",
     "breadcrumbs": [
@@ -55942,7 +55942,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Process Validation And Traceability | Digi Tracks",
-    "description": "Process Validation And Traceability | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Process Validation And Traceability | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:process-validation-and-traceability",
     "breadcrumbs": [
@@ -55969,7 +55969,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Procurement Ethics | Digi Tracks",
-    "description": "Procurement Ethics | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Procurement Ethics | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:procurement-ethics",
     "breadcrumbs": [
@@ -55996,7 +55996,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Procurement Value | Digi Tracks",
-    "description": "Procurement Value | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Procurement Value | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:procurement-value",
     "breadcrumbs": [
@@ -56023,7 +56023,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Audit Preparation | Digi Tracks",
-    "description": "Prompt Audit Preparation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Audit Preparation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-audit-preparation",
     "breadcrumbs": [
@@ -56050,7 +56050,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Bid Comparison | Digi Tracks",
-    "description": "Prompt Bid Comparison | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Bid Comparison | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-bid-comparison",
     "breadcrumbs": [
@@ -56077,7 +56077,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Category Strategy | Digi Tracks",
-    "description": "Prompt Category Strategy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Category Strategy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-category-strategy",
     "breadcrumbs": [
@@ -56104,7 +56104,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Contract Review Support | Digi Tracks",
-    "description": "Prompt Contract Review Support | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Contract Review Support | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-contract-review-support",
     "breadcrumbs": [
@@ -56131,7 +56131,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Executive Reporting | Digi Tracks",
-    "description": "Prompt Executive Reporting | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Executive Reporting | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-executive-reporting",
     "breadcrumbs": [
@@ -56158,7 +56158,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Kpi Analysis | Digi Tracks",
-    "description": "Prompt Kpi Analysis | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Kpi Analysis | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-kpi-analysis",
     "breadcrumbs": [
@@ -56185,7 +56185,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Negotiation Planning | Digi Tracks",
-    "description": "Prompt Negotiation Planning | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Negotiation Planning | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-negotiation-planning",
     "breadcrumbs": [
@@ -56212,7 +56212,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Quote Normalization | Digi Tracks",
-    "description": "Prompt Quote Normalization | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Quote Normalization | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-quote-normalization",
     "breadcrumbs": [
@@ -56239,7 +56239,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Rfp Development | Digi Tracks",
-    "description": "Prompt Rfp Development | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Rfp Development | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-rfp-development",
     "breadcrumbs": [
@@ -56266,7 +56266,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Rfq Preparation | Digi Tracks",
-    "description": "Prompt Rfq Preparation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Rfq Preparation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-rfq-preparation",
     "breadcrumbs": [
@@ -56293,7 +56293,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Should Cost Analysis | Digi Tracks",
-    "description": "Prompt Should Cost Analysis | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Should Cost Analysis | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-should-cost-analysis",
     "breadcrumbs": [
@@ -56320,7 +56320,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Spend Analysis | Digi Tracks",
-    "description": "Prompt Spend Analysis | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Spend Analysis | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-spend-analysis",
     "breadcrumbs": [
@@ -56347,7 +56347,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Supplier Market Research | Digi Tracks",
-    "description": "Prompt Supplier Market Research | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Supplier Market Research | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-supplier-market-research",
     "breadcrumbs": [
@@ -56374,7 +56374,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Supplier Performance Evaluation | Digi Tracks",
-    "description": "Prompt Supplier Performance Evaluation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Supplier Performance Evaluation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-supplier-performance-evaluation",
     "breadcrumbs": [
@@ -56401,7 +56401,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Prompt Supplier Risk Assessment | Digi Tracks",
-    "description": "Prompt Supplier Risk Assessment | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Prompt Supplier Risk Assessment | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:prompt-supplier-risk-assessment",
     "breadcrumbs": [
@@ -56428,7 +56428,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Provisional Sums Dayworks | Digi Tracks",
-    "description": "Provisional Sums Dayworks | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Provisional Sums Dayworks | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:provisional-sums-dayworks",
     "breadcrumbs": [
@@ -56455,7 +56455,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Public Procurement Rules | Digi Tracks",
-    "description": "Public Procurement Rules | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Public Procurement Rules | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:public-procurement-rules",
     "breadcrumbs": [
@@ -56482,7 +56482,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Red Flag Indicators | Digi Tracks",
-    "description": "Red Flag Indicators | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Red Flag Indicators | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:red-flag-indicators",
     "breadcrumbs": [
@@ -56509,7 +56509,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Regulated Supplier Qualification | Digi Tracks",
-    "description": "Regulated Supplier Qualification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Regulated Supplier Qualification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:regulated-supplier-qualification",
     "breadcrumbs": [
@@ -56536,7 +56536,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Rescue Or Replace | Digi Tracks",
-    "description": "Rescue Or Replace | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Rescue Or Replace | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:rescue-or-replace",
     "breadcrumbs": [
@@ -56563,7 +56563,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Rfi Rfq Rfp | Digi Tracks",
-    "description": "Rfi Rfq Rfp | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Rfi Rfq Rfp | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:rfi-rfq-rfp",
     "breadcrumbs": [
@@ -56590,7 +56590,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Safety Stock And Service Level | Digi Tracks",
-    "description": "Safety Stock And Service Level | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Safety Stock And Service Level | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:safety-stock-and-service-level",
     "breadcrumbs": [
@@ -56617,7 +56617,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Savings Baseline | Digi Tracks",
-    "description": "Savings Baseline | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Savings Baseline | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:savings-baseline",
     "breadcrumbs": [
@@ -56644,7 +56644,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Savings Measurement | Digi Tracks",
-    "description": "Savings Measurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Savings Measurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:savings-measurement",
     "breadcrumbs": [
@@ -56671,7 +56671,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Savings Realization | Digi Tracks",
-    "description": "Savings Realization | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Savings Realization | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:savings-realization",
     "breadcrumbs": [
@@ -56698,7 +56698,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Savings Types | Digi Tracks",
-    "description": "Savings Types | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Savings Types | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:savings-types",
     "breadcrumbs": [
@@ -56725,7 +56725,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scope3 Supplier Emissions | Digi Tracks",
-    "description": "Scope3 Supplier Emissions | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Scope3 Supplier Emissions | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:scope3-supplier-emissions",
     "breadcrumbs": [
@@ -56752,7 +56752,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Segregation Of Duties | Digi Tracks",
-    "description": "Segregation Of Duties | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Segregation Of Duties | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:segregation-of-duties",
     "breadcrumbs": [
@@ -56779,7 +56779,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Service Level Agreement | Digi Tracks",
-    "description": "Service Level Agreement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Service Level Agreement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:service-level-agreement",
     "breadcrumbs": [
@@ -56806,7 +56806,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Service Risk Pricing Models | Digi Tracks",
-    "description": "Service Risk Pricing Models | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Service Risk Pricing Models | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:service-risk-pricing-models",
     "breadcrumbs": [
@@ -56833,7 +56833,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Service Should Cost Anatomy | Digi Tracks",
-    "description": "Service Should Cost Anatomy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Service Should Cost Anatomy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:service-should-cost-anatomy",
     "breadcrumbs": [
@@ -56860,7 +56860,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Service Transition Design | Digi Tracks",
-    "description": "Service Transition Design | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Service Transition Design | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:service-transition-design",
     "breadcrumbs": [
@@ -56887,7 +56887,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Should Cost | Digi Tracks",
-    "description": "Should Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Should Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:should-cost",
     "breadcrumbs": [
@@ -56914,7 +56914,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Social Value In Awarding | Digi Tracks",
-    "description": "Social Value In Awarding | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Social Value In Awarding | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:social-value-in-awarding",
     "breadcrumbs": [
@@ -56941,7 +56941,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sourcing Strategy | Digi Tracks",
-    "description": "Sourcing Strategy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sourcing Strategy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:sourcing-strategy",
     "breadcrumbs": [
@@ -56968,7 +56968,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Specification | Digi Tracks",
-    "description": "Specification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Specification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:specification",
     "breadcrumbs": [
@@ -56995,7 +56995,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Spend Analysis | Digi Tracks",
-    "description": "Spend Analysis | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Spend Analysis | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:spend-analysis",
     "breadcrumbs": [
@@ -57022,7 +57022,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Standstill And Challenge | Digi Tracks",
-    "description": "Standstill And Challenge | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Standstill And Challenge | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:standstill-and-challenge",
     "breadcrumbs": [
@@ -57049,7 +57049,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Statement Of Work | Digi Tracks",
-    "description": "Statement Of Work | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Statement Of Work | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:statement-of-work",
     "breadcrumbs": [
@@ -57076,7 +57076,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Step In And Contingency | Digi Tracks",
-    "description": "Step In And Contingency | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Step In And Contingency | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:step-in-and-contingency",
     "breadcrumbs": [
@@ -57103,7 +57103,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Stock Ownership Models | Digi Tracks",
-    "description": "Stock Ownership Models | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Stock Ownership Models | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:stock-ownership-models",
     "breadcrumbs": [
@@ -57130,7 +57130,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Development | Digi Tracks",
-    "description": "Supplier Development | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Development | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-development",
     "breadcrumbs": [
@@ -57157,7 +57157,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Distress Signals | Digi Tracks",
-    "description": "Supplier Distress Signals | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Distress Signals | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-distress-signals",
     "breadcrumbs": [
@@ -57184,7 +57184,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Financial Risk | Digi Tracks",
-    "description": "Supplier Financial Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Financial Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-financial-risk",
     "breadcrumbs": [
@@ -57211,7 +57211,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Led Requirement Risk | Digi Tracks",
-    "description": "Supplier Led Requirement Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Led Requirement Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-led-requirement-risk",
     "breadcrumbs": [
@@ -57238,7 +57238,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Market Analysis | Digi Tracks",
-    "description": "Supplier Market Analysis | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Market Analysis | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-market-analysis",
     "breadcrumbs": [
@@ -57265,7 +57265,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Performance | Digi Tracks",
-    "description": "Supplier Performance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Performance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-performance",
     "breadcrumbs": [
@@ -57292,7 +57292,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Qualification | Digi Tracks",
-    "description": "Supplier Qualification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Qualification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-qualification",
     "breadcrumbs": [
@@ -57319,7 +57319,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Relationship Management | Digi Tracks",
-    "description": "Supplier Relationship Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Relationship Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-relationship-management",
     "breadcrumbs": [
@@ -57346,7 +57346,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier Segmentation | Digi Tracks",
-    "description": "Supplier Segmentation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supplier Segmentation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supplier-segmentation",
     "breadcrumbs": [
@@ -57373,7 +57373,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supply Chain Risk | Digi Tracks",
-    "description": "Supply Chain Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Supply Chain Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:supply-chain-risk",
     "breadcrumbs": [
@@ -57400,7 +57400,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tail Period Economics | Digi Tracks",
-    "description": "Tail Period Economics | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tail Period Economics | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:tail-period-economics",
     "breadcrumbs": [
@@ -57427,7 +57427,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Total Cost Of Ownership | Digi Tracks",
-    "description": "Total Cost Of Ownership | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Total Cost Of Ownership | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:total-cost-of-ownership",
     "breadcrumbs": [
@@ -57454,7 +57454,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Vendor Lockin And Portability | Digi Tracks",
-    "description": "Vendor Lockin And Portability | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Vendor Lockin And Portability | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:vendor-lockin-and-portability",
     "breadcrumbs": [
@@ -57481,7 +57481,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Vendor Master Integrity | Digi Tracks",
-    "description": "Vendor Master Integrity | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Vendor Master Integrity | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:vendor-master-integrity",
     "breadcrumbs": [
@@ -57508,7 +57508,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Whistleblower Channel | Digi Tracks",
-    "description": "Whistleblower Channel | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Whistleblower Channel | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:whistleblower-channel",
     "breadcrumbs": [
@@ -57535,7 +57535,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Working Capital | Digi Tracks",
-    "description": "Working Capital | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Working Capital | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:working-capital",
     "breadcrumbs": [
@@ -57562,7 +57562,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Zopa | Digi Tracks",
-    "description": "Zopa | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Zopa | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "k:zopa",
     "breadcrumbs": [
@@ -57589,7 +57589,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Audit Findings | Digi Tracks",
-    "description": "Kpi Audit Findings | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Audit Findings | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-audit-findings",
     "breadcrumbs": [
@@ -57616,7 +57616,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Bid Rate | Digi Tracks",
-    "description": "Kpi Bid Rate | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Bid Rate | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-bid-rate",
     "breadcrumbs": [
@@ -57643,7 +57643,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Claims Resolution Time | Digi Tracks",
-    "description": "Kpi Claims Resolution Time | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Claims Resolution Time | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-claims-resolution-time",
     "breadcrumbs": [
@@ -57670,7 +57670,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Claims Value | Digi Tracks",
-    "description": "Kpi Claims Value | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Claims Value | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-claims-value",
     "breadcrumbs": [
@@ -57697,7 +57697,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Contract Compliance | Digi Tracks",
-    "description": "Kpi Contract Compliance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Contract Compliance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-contract-compliance",
     "breadcrumbs": [
@@ -57724,7 +57724,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Contract Coverage | Digi Tracks",
-    "description": "Kpi Contract Coverage | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Contract Coverage | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-contract-coverage",
     "breadcrumbs": [
@@ -57751,7 +57751,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Cost Avoidance | Digi Tracks",
-    "description": "Kpi Cost Avoidance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Cost Avoidance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-cost-avoidance",
     "breadcrumbs": [
@@ -57778,7 +57778,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Cycle Time | Digi Tracks",
-    "description": "Kpi Cycle Time | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Cycle Time | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-cycle-time",
     "breadcrumbs": [
@@ -57805,7 +57805,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Defect Rate | Digi Tracks",
-    "description": "Kpi Defect Rate | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Defect Rate | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-defect-rate",
     "breadcrumbs": [
@@ -57832,7 +57832,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Expedite Cost | Digi Tracks",
-    "description": "Kpi Expedite Cost | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Expedite Cost | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-expedite-cost",
     "breadcrumbs": [
@@ -57859,7 +57859,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Invoice Exception Rate | Digi Tracks",
-    "description": "Kpi Invoice Exception Rate | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Invoice Exception Rate | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-invoice-exception-rate",
     "breadcrumbs": [
@@ -57886,7 +57886,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Maverick Spend | Digi Tracks",
-    "description": "Kpi Maverick Spend | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Maverick Spend | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-maverick-spend",
     "breadcrumbs": [
@@ -57913,7 +57913,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Negotiation Savings | Digi Tracks",
-    "description": "Kpi Negotiation Savings | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Negotiation Savings | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-negotiation-savings",
     "breadcrumbs": [
@@ -57940,7 +57940,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Otd | Digi Tracks",
-    "description": "Kpi Otd | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Otd | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-otd",
     "breadcrumbs": [
@@ -57967,7 +57967,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Otif | Digi Tracks",
-    "description": "Kpi Otif | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Otif | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-otif",
     "breadcrumbs": [
@@ -57994,7 +57994,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Po Accuracy | Digi Tracks",
-    "description": "Kpi Po Accuracy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Po Accuracy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-po-accuracy",
     "breadcrumbs": [
@@ -58021,7 +58021,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Po Amendment Rate | Digi Tracks",
-    "description": "Kpi Po Amendment Rate | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Po Amendment Rate | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-po-amendment-rate",
     "breadcrumbs": [
@@ -58048,7 +58048,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Ppv | Digi Tracks",
-    "description": "Kpi Ppv | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Ppv | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-ppv",
     "breadcrumbs": [
@@ -58075,7 +58075,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Remediation Rate | Digi Tracks",
-    "description": "Kpi Remediation Rate | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Remediation Rate | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-remediation-rate",
     "breadcrumbs": [
@@ -58102,7 +58102,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Req To Po Time | Digi Tracks",
-    "description": "Kpi Req To Po Time | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Req To Po Time | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-req-to-po-time",
     "breadcrumbs": [
@@ -58129,7 +58129,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Rfq Cycle | Digi Tracks",
-    "description": "Kpi Rfq Cycle | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Rfq Cycle | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-rfq-cycle",
     "breadcrumbs": [
@@ -58156,7 +58156,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Roi | Digi Tracks",
-    "description": "Kpi Roi | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Roi | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-roi",
     "breadcrumbs": [
@@ -58183,7 +58183,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Savings | Digi Tracks",
-    "description": "Kpi Savings | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Savings | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-savings",
     "breadcrumbs": [
@@ -58210,7 +58210,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Savings Realization | Digi Tracks",
-    "description": "Kpi Savings Realization | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Savings Realization | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-savings-realization",
     "breadcrumbs": [
@@ -58237,7 +58237,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Sourcing Coverage | Digi Tracks",
-    "description": "Kpi Sourcing Coverage | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Sourcing Coverage | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-sourcing-coverage",
     "breadcrumbs": [
@@ -58264,7 +58264,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Sourcing Cycle Time | Digi Tracks",
-    "description": "Kpi Sourcing Cycle Time | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Sourcing Cycle Time | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-sourcing-cycle-time",
     "breadcrumbs": [
@@ -58291,7 +58291,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Sum | Digi Tracks",
-    "description": "Kpi Sum | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Sum | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-sum",
     "breadcrumbs": [
@@ -58318,7 +58318,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Supplier Concentration | Digi Tracks",
-    "description": "Kpi Supplier Concentration | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Supplier Concentration | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-supplier-concentration",
     "breadcrumbs": [
@@ -58345,7 +58345,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Tco | Digi Tracks",
-    "description": "Kpi Tco | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Tco | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-tco",
     "breadcrumbs": [
@@ -58372,7 +58372,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Three Way Match Rate | Digi Tracks",
-    "description": "Kpi Three Way Match Rate | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Three Way Match Rate | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-three-way-match-rate",
     "breadcrumbs": [
@@ -58399,7 +58399,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kpi Working Capital Impact | Digi Tracks",
-    "description": "Kpi Working Capital Impact | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Kpi Working Capital Impact | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "kpi:kpi-working-capital-impact",
     "breadcrumbs": [
@@ -58426,7 +58426,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Learning Paths | Digi Tracks",
-    "description": "Learning Paths | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Learning Paths | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "learning-paths:",
     "breadcrumbs": [
@@ -58453,7 +58453,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Lifecycle | Digi Tracks",
-    "description": "Lifecycle | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Lifecycle | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "lifecycle:",
     "breadcrumbs": [
@@ -58480,7 +58480,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "List | Digi Tracks",
-    "description": "List | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "List | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "local-workspace",
     "contentKey": "list:",
     "breadcrumbs": [
@@ -58507,7 +58507,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Maturity | Digi Tracks",
-    "description": "Maturity | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Maturity | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "maturity:",
     "breadcrumbs": [
@@ -58534,7 +58534,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Quickstart | Digi Tracks",
-    "description": "Quickstart | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Quickstart | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "quickstart:",
     "breadcrumbs": [
@@ -58561,7 +58561,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Recent | Digi Tracks",
-    "description": "Recent | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Recent | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "local-workspace",
     "contentKey": "recent:",
     "breadcrumbs": [
@@ -58588,7 +58588,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Case Emergency Procurement | Digi Tracks",
-    "description": "Case Emergency Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Case Emergency Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:case-emergency-procurement",
     "breadcrumbs": [
@@ -58615,7 +58615,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Case Global Manufacturing Raw Material | Digi Tracks",
-    "description": "Case Global Manufacturing Raw Material | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Case Global Manufacturing Raw Material | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:case-global-manufacturing-raw-material",
     "breadcrumbs": [
@@ -58642,7 +58642,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Case It Infrastructure Procurement | Digi Tracks",
-    "description": "Case It Infrastructure Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Case It Infrastructure Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:case-it-infrastructure-procurement",
     "breadcrumbs": [
@@ -58669,7 +58669,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Case Logistics Transportation Sourcing | Digi Tracks",
-    "description": "Case Logistics Transportation Sourcing | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Case Logistics Transportation Sourcing | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:case-logistics-transportation-sourcing",
     "breadcrumbs": [
@@ -58696,7 +58696,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Case Saas Vendor Selection | Digi Tracks",
-    "description": "Case Saas Vendor Selection | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Case Saas Vendor Selection | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:case-saas-vendor-selection",
     "breadcrumbs": [
@@ -58723,7 +58723,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scn Contract Renewal | Digi Tracks",
-    "description": "Scn Contract Renewal | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Scn Contract Renewal | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:scn-contract-renewal",
     "breadcrumbs": [
@@ -58750,7 +58750,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scn New Purchase | Digi Tracks",
-    "description": "Scn New Purchase | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Scn New Purchase | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:scn-new-purchase",
     "breadcrumbs": [
@@ -58777,7 +58777,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scn Price Increase | Digi Tracks",
-    "description": "Scn Price Increase | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Scn Price Increase | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:scn-price-increase",
     "breadcrumbs": [
@@ -58804,7 +58804,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scn Savings Report | Digi Tracks",
-    "description": "Scn Savings Report | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Scn Savings Report | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:scn-savings-report",
     "breadcrumbs": [
@@ -58831,7 +58831,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scn Single Source | Digi Tracks",
-    "description": "Scn Single Source | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Scn Single Source | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:scn-single-source",
     "breadcrumbs": [
@@ -58858,7 +58858,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scn Supplier Risk | Digi Tracks",
-    "description": "Scn Supplier Risk | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Scn Supplier Risk | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "scen:scn-supplier-risk",
     "breadcrumbs": [
@@ -58885,7 +58885,7 @@ export const routeRegistry = [
     "routeClass": "private",
     "indexable": false,
     "title": "Settings | Digi Tracks",
-    "description": "Settings | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Settings | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "local-workspace",
     "contentKey": "settings:",
     "breadcrumbs": [
@@ -58912,7 +58912,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Sop | Digi Tracks",
-    "description": "Sop | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "sop:",
     "breadcrumbs": [
@@ -58939,7 +58939,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Claims Management | Digi Tracks",
-    "description": "Sop Claims Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Claims Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-claims-management",
     "breadcrumbs": [
@@ -58966,7 +58966,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Contingent Labour | Digi Tracks",
-    "description": "Sop Contingent Labour | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Contingent Labour | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-contingent-labour",
     "breadcrumbs": [
@@ -58993,7 +58993,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Contract Change Control | Digi Tracks",
-    "description": "Sop Contract Change Control | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Contract Change Control | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-contract-change-control",
     "breadcrumbs": [
@@ -59020,7 +59020,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Contract Renewal | Digi Tracks",
-    "description": "Sop Contract Renewal | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Contract Renewal | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-contract-renewal",
     "breadcrumbs": [
@@ -59047,7 +59047,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Contract Review | Digi Tracks",
-    "description": "Sop Contract Review | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Contract Review | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-contract-review",
     "breadcrumbs": [
@@ -59074,7 +59074,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Emergency Procurement | Digi Tracks",
-    "description": "Sop Emergency Procurement | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Emergency Procurement | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-emergency-procurement",
     "breadcrumbs": [
@@ -59101,7 +59101,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Expediting | Digi Tracks",
-    "description": "Sop Expediting | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Expediting | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-expediting",
     "breadcrumbs": [
@@ -59128,7 +59128,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Freight And Customs | Digi Tracks",
-    "description": "Sop Freight And Customs | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Freight And Customs | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-freight-and-customs",
     "breadcrumbs": [
@@ -59155,7 +59155,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Invoice Verification | Digi Tracks",
-    "description": "Sop Invoice Verification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Invoice Verification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-invoice-verification",
     "breadcrumbs": [
@@ -59182,7 +59182,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Negotiation Preparation | Digi Tracks",
-    "description": "Sop Negotiation Preparation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Negotiation Preparation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-negotiation-preparation",
     "breadcrumbs": [
@@ -59209,7 +59209,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Po Amendments | Digi Tracks",
-    "description": "Sop Po Amendments | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Po Amendments | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-po-amendments",
     "breadcrumbs": [
@@ -59236,7 +59236,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Po Creation | Digi Tracks",
-    "description": "Sop Po Creation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Po Creation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-po-creation",
     "breadcrumbs": [
@@ -59263,7 +59263,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Procurement Audit | Digi Tracks",
-    "description": "Sop Procurement Audit | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Procurement Audit | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-procurement-audit",
     "breadcrumbs": [
@@ -59290,7 +59290,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Procurement Audit Program | Digi Tracks",
-    "description": "Sop Procurement Audit Program | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Procurement Audit Program | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-procurement-audit-program",
     "breadcrumbs": [
@@ -59317,7 +59317,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Procurement Intake | Digi Tracks",
-    "description": "Sop Procurement Intake | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Procurement Intake | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-procurement-intake",
     "breadcrumbs": [
@@ -59344,7 +59344,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Procurement Lifecycle | Digi Tracks",
-    "description": "Sop Procurement Lifecycle | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Procurement Lifecycle | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-procurement-lifecycle",
     "breadcrumbs": [
@@ -59371,7 +59371,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Purchase Requisition | Digi Tracks",
-    "description": "Sop Purchase Requisition | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Purchase Requisition | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-purchase-requisition",
     "breadcrumbs": [
@@ -59398,7 +59398,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Rfp | Digi Tracks",
-    "description": "Sop Rfp | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Rfp | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-rfp",
     "breadcrumbs": [
@@ -59425,7 +59425,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Rfq | Digi Tracks",
-    "description": "Sop Rfq | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Rfq | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-rfq",
     "breadcrumbs": [
@@ -59452,7 +59452,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Savings Calculation | Digi Tracks",
-    "description": "Sop Savings Calculation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Savings Calculation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-savings-calculation",
     "breadcrumbs": [
@@ -59479,7 +59479,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Savings Validation | Digi Tracks",
-    "description": "Sop Savings Validation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Savings Validation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-savings-validation",
     "breadcrumbs": [
@@ -59506,7 +59506,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Supplier Evaluation | Digi Tracks",
-    "description": "Sop Supplier Evaluation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Supplier Evaluation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-supplier-evaluation",
     "breadcrumbs": [
@@ -59533,7 +59533,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Supplier Onboarding | Digi Tracks",
-    "description": "Sop Supplier Onboarding | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Supplier Onboarding | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-supplier-onboarding",
     "breadcrumbs": [
@@ -59560,7 +59560,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Supplier Performance Management | Digi Tracks",
-    "description": "Sop Supplier Performance Management | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Supplier Performance Management | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-supplier-performance-management",
     "breadcrumbs": [
@@ -59587,7 +59587,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Supplier Price Increase Review | Digi Tracks",
-    "description": "Sop Supplier Price Increase Review | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Supplier Price Increase Review | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-supplier-price-increase-review",
     "breadcrumbs": [
@@ -59614,7 +59614,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Sustainable Sourcing Verification | Digi Tracks",
-    "description": "Sop Sustainable Sourcing Verification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Sustainable Sourcing Verification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-sustainable-sourcing-verification",
     "breadcrumbs": [
@@ -59641,7 +59641,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Tender Design And Defence | Digi Tracks",
-    "description": "Sop Tender Design And Defence | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Tender Design And Defence | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-tender-design-and-defence",
     "breadcrumbs": [
@@ -59668,7 +59668,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Three Way Match | Digi Tracks",
-    "description": "Sop Three Way Match | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Three Way Match | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-three-way-match",
     "breadcrumbs": [
@@ -59695,7 +59695,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sop Vendor Master Integrity | Digi Tracks",
-    "description": "Sop Vendor Master Integrity | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Sop Vendor Master Integrity | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "sop:sop-vendor-master-integrity",
     "breadcrumbs": [
@@ -59722,7 +59722,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Spend Model | Digi Tracks",
-    "description": "Spend Model | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Spend Model | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "spend-model:",
     "breadcrumbs": [
@@ -59749,7 +59749,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Suppliers | Digi Tracks",
-    "description": "Suppliers | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Suppliers | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "suppliers:",
     "breadcrumbs": [
@@ -59776,7 +59776,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "Tpl | Digi Tracks",
-    "description": "Tpl | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "tpl:",
     "breadcrumbs": [
@@ -59803,7 +59803,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Award Recommendation | Digi Tracks",
-    "description": "Tpl Award Recommendation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Award Recommendation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-award-recommendation",
     "breadcrumbs": [
@@ -59830,7 +59830,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Bid Comparison | Digi Tracks",
-    "description": "Tpl Bid Comparison | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Bid Comparison | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-bid-comparison",
     "breadcrumbs": [
@@ -59857,7 +59857,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Bid Instructions | Digi Tracks",
-    "description": "Tpl Bid Instructions | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Bid Instructions | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-bid-instructions",
     "breadcrumbs": [
@@ -59884,7 +59884,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Bid Waiver | Digi Tracks",
-    "description": "Tpl Bid Waiver | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Bid Waiver | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-bid-waiver",
     "breadcrumbs": [
@@ -59911,7 +59911,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Business Case | Digi Tracks",
-    "description": "Tpl Business Case | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Business Case | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-business-case",
     "breadcrumbs": [
@@ -59938,7 +59938,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Commercial Evaluation | Digi Tracks",
-    "description": "Tpl Commercial Evaluation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Commercial Evaluation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-commercial-evaluation",
     "breadcrumbs": [
@@ -59965,7 +59965,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Contract Change Request | Digi Tracks",
-    "description": "Tpl Contract Change Request | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Contract Change Request | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-contract-change-request",
     "breadcrumbs": [
@@ -59992,7 +59992,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Contract Performance Review | Digi Tracks",
-    "description": "Tpl Contract Performance Review | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Contract Performance Review | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-contract-performance-review",
     "breadcrumbs": [
@@ -60019,7 +60019,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Contract Renewal Assessment | Digi Tracks",
-    "description": "Tpl Contract Renewal Assessment | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Contract Renewal Assessment | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-contract-renewal-assessment",
     "breadcrumbs": [
@@ -60046,7 +60046,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Contract Review Checklist | Digi Tracks",
-    "description": "Tpl Contract Review Checklist | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Contract Review Checklist | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-contract-review-checklist",
     "breadcrumbs": [
@@ -60073,7 +60073,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Cost Avoidance | Digi Tracks",
-    "description": "Tpl Cost Avoidance | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Cost Avoidance | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-cost-avoidance",
     "breadcrumbs": [
@@ -60100,7 +60100,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Emergency Justification | Digi Tracks",
-    "description": "Tpl Emergency Justification | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Emergency Justification | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-emergency-justification",
     "breadcrumbs": [
@@ -60127,7 +60127,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Exception Request | Digi Tracks",
-    "description": "Tpl Exception Request | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Exception Request | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-exception-request",
     "breadcrumbs": [
@@ -60154,7 +60154,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Negotiation Agenda | Digi Tracks",
-    "description": "Tpl Negotiation Agenda | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Negotiation Agenda | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-negotiation-agenda",
     "breadcrumbs": [
@@ -60181,7 +60181,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Negotiation Concession Log | Digi Tracks",
-    "description": "Tpl Negotiation Concession Log | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Negotiation Concession Log | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-negotiation-concession-log",
     "breadcrumbs": [
@@ -60208,7 +60208,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Negotiation Planner | Digi Tracks",
-    "description": "Tpl Negotiation Planner | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Negotiation Planner | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-negotiation-planner",
     "breadcrumbs": [
@@ -60235,7 +60235,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Negotiation Summary | Digi Tracks",
-    "description": "Tpl Negotiation Summary | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Negotiation Summary | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-negotiation-summary",
     "breadcrumbs": [
@@ -60262,7 +60262,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Rfi | Digi Tracks",
-    "description": "Tpl Rfi | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Rfi | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-rfi",
     "breadcrumbs": [
@@ -60289,7 +60289,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Rfp | Digi Tracks",
-    "description": "Tpl Rfp | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Rfp | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-rfp",
     "breadcrumbs": [
@@ -60316,7 +60316,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Rfq | Digi Tracks",
-    "description": "Tpl Rfq | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Rfq | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-rfq",
     "breadcrumbs": [
@@ -60343,7 +60343,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Savings Calculation | Digi Tracks",
-    "description": "Tpl Savings Calculation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Savings Calculation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-savings-calculation",
     "breadcrumbs": [
@@ -60370,7 +60370,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Savings Validation | Digi Tracks",
-    "description": "Tpl Savings Validation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Savings Validation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-savings-validation",
     "breadcrumbs": [
@@ -60397,7 +60397,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Single Source | Digi Tracks",
-    "description": "Tpl Single Source | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Single Source | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-single-source",
     "breadcrumbs": [
@@ -60424,7 +60424,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Sole Source | Digi Tracks",
-    "description": "Tpl Sole Source | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Sole Source | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-sole-source",
     "breadcrumbs": [
@@ -60451,7 +60451,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Sourcing Strategy | Digi Tracks",
-    "description": "Tpl Sourcing Strategy | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Sourcing Strategy | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-sourcing-strategy",
     "breadcrumbs": [
@@ -60478,7 +60478,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Supplier Business Review | Digi Tracks",
-    "description": "Tpl Supplier Business Review | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Supplier Business Review | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-supplier-business-review",
     "breadcrumbs": [
@@ -60505,7 +60505,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Supplier Corrective Action | Digi Tracks",
-    "description": "Tpl Supplier Corrective Action | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Supplier Corrective Action | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-supplier-corrective-action",
     "breadcrumbs": [
@@ -60532,7 +60532,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Supplier Due Diligence | Digi Tracks",
-    "description": "Tpl Supplier Due Diligence | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Supplier Due Diligence | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-supplier-due-diligence",
     "breadcrumbs": [
@@ -60559,7 +60559,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Supplier Evaluation | Digi Tracks",
-    "description": "Tpl Supplier Evaluation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Supplier Evaluation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-supplier-evaluation",
     "breadcrumbs": [
@@ -60586,7 +60586,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Supplier Invitation | Digi Tracks",
-    "description": "Tpl Supplier Invitation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Supplier Invitation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-supplier-invitation",
     "breadcrumbs": [
@@ -60613,7 +60613,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Supplier Onboarding | Digi Tracks",
-    "description": "Tpl Supplier Onboarding | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Supplier Onboarding | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-supplier-onboarding",
     "breadcrumbs": [
@@ -60640,7 +60640,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Supplier Risk Assessment | Digi Tracks",
-    "description": "Tpl Supplier Risk Assessment | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Supplier Risk Assessment | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-supplier-risk-assessment",
     "breadcrumbs": [
@@ -60667,7 +60667,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Supplier Scorecard | Digi Tracks",
-    "description": "Tpl Supplier Scorecard | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Supplier Scorecard | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-supplier-scorecard",
     "breadcrumbs": [
@@ -60694,7 +60694,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Technical Evaluation | Digi Tracks",
-    "description": "Tpl Technical Evaluation | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Technical Evaluation | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-technical-evaluation",
     "breadcrumbs": [
@@ -60721,7 +60721,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tpl Weighted Scoring | Digi Tracks",
-    "description": "Tpl Weighted Scoring | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "Tpl Weighted Scoring | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-content-detail",
     "contentKey": "tpl:tpl-weighted-scoring",
     "breadcrumbs": [
@@ -60748,7 +60748,7 @@ export const routeRegistry = [
     "routeClass": "public-utility",
     "indexable": false,
     "title": "What | Digi Tracks",
-    "description": "What | Digi Tracks: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.",
+    "description": "What | Digi Tracks: a ProcureSherpa learning guide on procurement practice.",
     "template": "hash-application-screen",
     "contentKey": "what:",
     "breadcrumbs": [
@@ -61499,7 +61499,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Regional context packs | Source Craft",
-    "description": "Regional context packs | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "Regional context packs | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -61582,7 +61582,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "England regional pack | Source Craft",
-    "description": "England regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "England regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -61641,7 +61641,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Northern Ireland regional pack | Source Craft",
-    "description": "Northern Ireland regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "Northern Ireland regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -61700,7 +61700,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scotland regional pack | Source Craft",
-    "description": "Scotland regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "Scotland regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -61759,7 +61759,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Wales regional pack | Source Craft",
-    "description": "Wales regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "Wales regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -61793,7 +61793,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "United Kingdom: locale and umbrella selector regional pack | Source Craft",
-    "description": "United Kingdom: locale and umbrella selector regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "United Kingdom: locale and umbrella selector regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -61852,7 +61852,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Global baseline regional pack | Source Craft",
-    "description": "Global baseline regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "Global baseline regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -61911,7 +61911,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "India regional pack | Source Craft",
-    "description": "India regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "India regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -61995,7 +61995,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "California, United States regional pack | Source Craft",
-    "description": "California, United States regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "California, United States regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -62029,7 +62029,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "United States regional pack | Source Craft",
-    "description": "United States regional pack | Source Craft: a preserved SourceCraft regional route. Regional notes await owner permission before migration.",
+    "description": "United States regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
     "breadcrumbs": [
       {
@@ -62311,7 +62311,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Addressable spend | Source Craft",
-    "description": "Addressable spend | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Addressable spend | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:addressable-spend",
     "breadcrumbs": [
@@ -62371,7 +62371,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Artificial intelligence in procurement | Source Craft",
-    "description": "Artificial intelligence in procurement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Artificial intelligence in procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:ai-in-procurement",
     "breadcrumbs": [
@@ -62431,7 +62431,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Anchoring | Source Craft",
-    "description": "Anchoring | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Anchoring | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:anchoring",
     "breadcrumbs": [
@@ -62491,7 +62491,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Approval threshold | Source Craft",
-    "description": "Approval threshold | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Approval threshold | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:approval-threshold",
     "breadcrumbs": [
@@ -62551,7 +62551,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Audit trail | Source Craft",
-    "description": "Audit trail | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Audit trail | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:audit-trail",
     "breadcrumbs": [
@@ -62611,7 +62611,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Auto-renewal | Source Craft",
-    "description": "Auto-renewal | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Auto-renewal | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:auto-renewal",
     "breadcrumbs": [
@@ -62672,7 +62672,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "BATNA | Source Craft",
-    "description": "BATNA | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "BATNA | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:batna",
     "breadcrumbs": [
@@ -62732,7 +62732,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Benchmarking | Source Craft",
-    "description": "Benchmarking | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Benchmarking | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:benchmarking",
     "breadcrumbs": [
@@ -62792,7 +62792,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Budget variance | Source Craft",
-    "description": "Budget variance | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Budget variance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:budget-variance",
     "breadcrumbs": [
@@ -62852,7 +62852,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Business case | Source Craft",
-    "description": "Business case | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Business case | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:business-case",
     "breadcrumbs": [
@@ -62912,7 +62912,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Business continuity planning | Source Craft",
-    "description": "Business continuity planning | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Business continuity planning | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:business-continuity-planning",
     "breadcrumbs": [
@@ -62972,7 +62972,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cash flow forecast | Source Craft",
-    "description": "Cash flow forecast | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Cash flow forecast | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:cash-flow-forecast",
     "breadcrumbs": [
@@ -63032,7 +63032,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Catalogue buying | Source Craft",
-    "description": "Catalogue buying | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Catalogue buying | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:catalogue-buying",
     "breadcrumbs": [
@@ -63092,7 +63092,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Category management | Source Craft",
-    "description": "Category management | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Category management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:category-management",
     "breadcrumbs": [
@@ -63152,7 +63152,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Category strategy | Source Craft",
-    "description": "Category strategy | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Category strategy | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:category-strategy",
     "breadcrumbs": [
@@ -63212,7 +63212,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Circular procurement | Source Craft",
-    "description": "Circular procurement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Circular procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:circular-procurement",
     "breadcrumbs": [
@@ -63272,7 +63272,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Compliance | Source Craft",
-    "description": "Compliance | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Compliance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:compliance",
     "breadcrumbs": [
@@ -63332,7 +63332,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Concession strategy | Source Craft",
-    "description": "Concession strategy | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Concession strategy | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:concession-strategy",
     "breadcrumbs": [
@@ -63392,7 +63392,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Confidentiality agreement | Source Craft",
-    "description": "Confidentiality agreement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Confidentiality agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:confidentiality-nda",
     "breadcrumbs": [
@@ -63452,7 +63452,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Conflict of interest | Source Craft",
-    "description": "Conflict of interest | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Conflict of interest | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:conflict-of-interest",
     "breadcrumbs": [
@@ -63512,7 +63512,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Contract amendment | Source Craft",
-    "description": "Contract amendment | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Contract amendment | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:contract-amendment",
     "breadcrumbs": [
@@ -63572,7 +63572,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Contract assignment | Source Craft",
-    "description": "Contract assignment | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Contract assignment | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:contract-assignment",
     "breadcrumbs": [
@@ -63632,7 +63632,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Contract management | Source Craft",
-    "description": "Contract management | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Contract management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:contract-management",
     "breadcrumbs": [
@@ -63692,7 +63692,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Contract renegotiation | Source Craft",
-    "description": "Contract renegotiation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Contract renegotiation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:contract-renegotiation",
     "breadcrumbs": [
@@ -63752,7 +63752,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Contract renewal | Source Craft",
-    "description": "Contract renewal | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Contract renewal | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:contract-renewal",
     "breadcrumbs": [
@@ -63812,7 +63812,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Contract variation | Source Craft",
-    "description": "Contract variation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Contract variation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:contract-variation",
     "breadcrumbs": [
@@ -63872,7 +63872,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Cost avoidance | Source Craft",
-    "description": "Cost avoidance | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Cost avoidance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:cost-avoidance",
     "breadcrumbs": [
@@ -63932,7 +63932,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Data protection in procurement | Source Craft",
-    "description": "Data protection in procurement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Data protection in procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:data-protection-in-procurement",
     "breadcrumbs": [
@@ -63992,7 +63992,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Data quality | Source Craft",
-    "description": "Data quality | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Data quality | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:data-quality",
     "breadcrumbs": [
@@ -64052,7 +64052,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Demand management | Source Craft",
-    "description": "Demand management | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Demand management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:demand-management",
     "breadcrumbs": [
@@ -64112,7 +64112,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Digital procurement | Source Craft",
-    "description": "Digital procurement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Digital procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:digital-procurement",
     "breadcrumbs": [
@@ -64172,7 +64172,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "E-auction | Source Craft",
-    "description": "E-auction | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "E-auction | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:e-auction",
     "breadcrumbs": [
@@ -64232,7 +64232,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "E-procurement | Source Craft",
-    "description": "E-procurement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "E-procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:e-procurement",
     "breadcrumbs": [
@@ -64292,7 +64292,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Entire agreement clause | Source Craft",
-    "description": "Entire agreement clause | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Entire agreement clause | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:entire-agreement-clause",
     "breadcrumbs": [
@@ -64352,7 +64352,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Environmental, social and governance factors | Source Craft",
-    "description": "Environmental, social and governance factors | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Environmental, social and governance factors | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:environmental-social-governance",
     "breadcrumbs": [
@@ -64412,7 +64412,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Escalation | Source Craft",
-    "description": "Escalation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Escalation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:escalation",
     "breadcrumbs": [
@@ -64472,7 +64472,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Expediting | Source Craft",
-    "description": "Expediting | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Expediting | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:expediting",
     "breadcrumbs": [
@@ -64532,7 +64532,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Force majeure | Source Craft",
-    "description": "Force majeure | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Force majeure | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:force-majeure",
     "breadcrumbs": [
@@ -64592,7 +64592,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Foreign exchange risk | Source Craft",
-    "description": "Foreign exchange risk | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Foreign exchange risk | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:foreign-exchange-risk",
     "breadcrumbs": [
@@ -64652,7 +64652,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Framework agreement | Source Craft",
-    "description": "Framework agreement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Framework agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:framework-agreement",
     "breadcrumbs": [
@@ -64712,7 +64712,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Goods receipt note | Source Craft",
-    "description": "Goods receipt note | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Goods receipt note | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:goods-receipt-note",
     "breadcrumbs": [
@@ -64772,7 +64772,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Governance | Source Craft",
-    "description": "Governance | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Governance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:governance",
     "breadcrumbs": [
@@ -64832,7 +64832,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Governing law | Source Craft",
-    "description": "Governing law | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Governing law | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:governing-law",
     "breadcrumbs": [
@@ -64892,7 +64892,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Greenwashing | Source Craft",
-    "description": "Greenwashing | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Greenwashing | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:greenwashing",
     "breadcrumbs": [
@@ -64952,7 +64952,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Guided buying | Source Craft",
-    "description": "Guided buying | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Guided buying | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:guided-buying",
     "breadcrumbs": [
@@ -65012,7 +65012,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Incoterms rules | Source Craft",
-    "description": "Incoterms rules | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Incoterms rules | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:incoterms",
     "breadcrumbs": [
@@ -65072,7 +65072,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Indemnity | Source Craft",
-    "description": "Indemnity | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Indemnity | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:indemnity",
     "breadcrumbs": [
@@ -65132,7 +65132,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Intellectual property rights | Source Craft",
-    "description": "Intellectual property rights | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Intellectual property rights | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:intellectual-property",
     "breadcrumbs": [
@@ -65192,7 +65192,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Invoice exception | Source Craft",
-    "description": "Invoice exception | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Invoice exception | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:invoice-exception",
     "breadcrumbs": [
@@ -65252,7 +65252,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Invoice matching | Source Craft",
-    "description": "Invoice matching | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Invoice matching | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:invoice-matching",
     "breadcrumbs": [
@@ -65312,7 +65312,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Kraljic matrix | Source Craft",
-    "description": "Kraljic matrix | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Kraljic matrix | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:kraljic-matrix",
     "breadcrumbs": [
@@ -65372,7 +65372,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Landed cost | Source Craft",
-    "description": "Landed cost | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Landed cost | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:landed-cost",
     "breadcrumbs": [
@@ -65432,7 +65432,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Letter of credit | Source Craft",
-    "description": "Letter of credit | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Letter of credit | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:letter-of-credit",
     "breadcrumbs": [
@@ -65492,7 +65492,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Limitation of liability | Source Craft",
-    "description": "Limitation of liability | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Limitation of liability | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:limitation-of-liability",
     "breadcrumbs": [
@@ -65552,7 +65552,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Liquidated damages | Source Craft",
-    "description": "Liquidated damages | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Liquidated damages | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:liquidated-damages",
     "breadcrumbs": [
@@ -65612,7 +65612,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Make or buy analysis | Source Craft",
-    "description": "Make or buy analysis | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Make or buy analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:make-or-buy-analysis",
     "breadcrumbs": [
@@ -65672,7 +65672,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Market analysis | Source Craft",
-    "description": "Market analysis | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Market analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:market-analysis",
     "breadcrumbs": [
@@ -65732,7 +65732,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Master services agreement | Source Craft",
-    "description": "Master services agreement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Master services agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:master-services-agreement",
     "breadcrumbs": [
@@ -65792,7 +65792,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Maverick spend | Source Craft",
-    "description": "Maverick spend | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Maverick spend | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:maverick-spend",
     "breadcrumbs": [
@@ -65852,7 +65852,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Modern slavery in supply chains | Source Craft",
-    "description": "Modern slavery in supply chains | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Modern slavery in supply chains | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:modern-slavery",
     "breadcrumbs": [
@@ -65912,7 +65912,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Negotiation leverage | Source Craft",
-    "description": "Negotiation leverage | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Negotiation leverage | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:negotiation-leverage",
     "breadcrumbs": [
@@ -65972,7 +65972,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Negotiation preparation | Source Craft",
-    "description": "Negotiation preparation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Negotiation preparation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:negotiation-preparation",
     "breadcrumbs": [
@@ -66032,7 +66032,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Negotiation strategy | Source Craft",
-    "description": "Negotiation strategy | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Negotiation strategy | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:negotiation-strategy",
     "breadcrumbs": [
@@ -66092,7 +66092,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Net present value | Source Craft",
-    "description": "Net present value | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Net present value | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:net-present-value",
     "breadcrumbs": [
@@ -66152,7 +66152,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Payment terms | Source Craft",
-    "description": "Payment terms | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Payment terms | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:payment-terms",
     "breadcrumbs": [
@@ -66212,7 +66212,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Procurement analytics | Source Craft",
-    "description": "Procurement analytics | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Procurement analytics | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:procurement-analytics",
     "breadcrumbs": [
@@ -66272,7 +66272,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Procurement automation | Source Craft",
-    "description": "Procurement automation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Procurement automation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:procurement-automation",
     "breadcrumbs": [
@@ -66332,7 +66332,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Product carbon footprint | Source Craft",
-    "description": "Product carbon footprint | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Product carbon footprint | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:product-carbon-footprint",
     "breadcrumbs": [
@@ -66392,7 +66392,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Public procurement | Source Craft",
-    "description": "Public procurement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Public procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:public-procurement",
     "breadcrumbs": [
@@ -66477,7 +66477,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Purchase order acknowledgement | Source Craft",
-    "description": "Purchase order acknowledgement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Purchase order acknowledgement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:purchase-order-acknowledgement",
     "breadcrumbs": [
@@ -66512,7 +66512,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Purchase order | Source Craft",
-    "description": "Purchase order | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Purchase order | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:purchase-order",
     "breadcrumbs": [
@@ -66572,7 +66572,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Purchase price variance | Source Craft",
-    "description": "Purchase price variance | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Purchase price variance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:purchase-price-variance",
     "breadcrumbs": [
@@ -66632,7 +66632,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Purchase requisition | Source Craft",
-    "description": "Purchase requisition | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Purchase requisition | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:purchase-requisition",
     "breadcrumbs": [
@@ -66692,7 +66692,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Purchase to pay | Source Craft",
-    "description": "Purchase to pay | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Purchase to pay | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:purchase-to-pay",
     "breadcrumbs": [
@@ -66752,7 +66752,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Request for information | Source Craft",
-    "description": "Request for information | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Request for information | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:request-for-information",
     "breadcrumbs": [
@@ -66812,7 +66812,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Request for proposal | Source Craft",
-    "description": "Request for proposal | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Request for proposal | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:request-for-proposal",
     "breadcrumbs": [
@@ -66872,7 +66872,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Request for quotation | Source Craft",
-    "description": "Request for quotation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Request for quotation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:request-for-quotation",
     "breadcrumbs": [
@@ -66932,7 +66932,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Request for tender | Source Craft",
-    "description": "Request for tender | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Request for tender | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:request-for-tender",
     "breadcrumbs": [
@@ -66992,7 +66992,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Retendering | Source Craft",
-    "description": "Retendering | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Retendering | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:retendering",
     "breadcrumbs": [
@@ -67052,7 +67052,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Return on investment | Source Craft",
-    "description": "Return on investment | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Return on investment | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:return-on-investment",
     "breadcrumbs": [
@@ -67112,7 +67112,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sanctions screening | Source Craft",
-    "description": "Sanctions screening | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Sanctions screening | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:sanctions-screening",
     "breadcrumbs": [
@@ -67172,7 +67172,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Savings tracking | Source Craft",
-    "description": "Savings tracking | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Savings tracking | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:savings-tracking",
     "breadcrumbs": [
@@ -67232,7 +67232,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Scope 3 emissions | Source Craft",
-    "description": "Scope 3 emissions | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Scope 3 emissions | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:scope-3-emissions",
     "breadcrumbs": [
@@ -67292,7 +67292,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Segregation of duties | Source Craft",
-    "description": "Segregation of duties | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Segregation of duties | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:segregation-of-duties",
     "breadcrumbs": [
@@ -67352,7 +67352,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Service level agreement | Source Craft",
-    "description": "Service level agreement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Service level agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:service-level-agreement",
     "breadcrumbs": [
@@ -67412,7 +67412,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Should-cost analysis | Source Craft",
-    "description": "Should-cost analysis | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Should-cost analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:should-cost-analysis",
     "breadcrumbs": [
@@ -67472,7 +67472,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Should-cost negotiation | Source Craft",
-    "description": "Should-cost negotiation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Should-cost negotiation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:should-cost-negotiation",
     "breadcrumbs": [
@@ -67532,7 +67532,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Single source and sole source | Source Craft",
-    "description": "Single source and sole source | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Single source and sole source | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:single-source-vs-sole-source",
     "breadcrumbs": [
@@ -67592,7 +67592,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Source to contract | Source Craft",
-    "description": "Source to contract | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Source to contract | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:source-to-contract",
     "breadcrumbs": [
@@ -67652,7 +67652,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Source to pay | Source Craft",
-    "description": "Source to pay | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Source to pay | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:source-to-pay",
     "breadcrumbs": [
@@ -67712,7 +67712,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sourcing event | Source Craft",
-    "description": "Sourcing event | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Sourcing event | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:sourcing-event",
     "breadcrumbs": [
@@ -67772,7 +67772,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sourcing pipeline | Source Craft",
-    "description": "Sourcing pipeline | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Sourcing pipeline | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:sourcing-pipeline",
     "breadcrumbs": [
@@ -67832,7 +67832,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Spend analysis | Source Craft",
-    "description": "Spend analysis | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Spend analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:spend-analysis",
     "breadcrumbs": [
@@ -67892,7 +67892,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Spend cube | Source Craft",
-    "description": "Spend cube | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Spend cube | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:spend-cube",
     "breadcrumbs": [
@@ -67952,7 +67952,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Statement of work | Source Craft",
-    "description": "Statement of work | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Statement of work | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:statement-of-work",
     "breadcrumbs": [
@@ -68012,7 +68012,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Strategic sourcing | Source Craft",
-    "description": "Strategic sourcing | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Strategic sourcing | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:strategic-sourcing",
     "breadcrumbs": [
@@ -68072,7 +68072,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier code of conduct | Source Craft",
-    "description": "Supplier code of conduct | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier code of conduct | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-code-of-conduct",
     "breadcrumbs": [
@@ -68132,7 +68132,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier decarbonisation | Source Craft",
-    "description": "Supplier decarbonisation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier decarbonisation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-decarbonisation",
     "breadcrumbs": [
@@ -68192,7 +68192,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier development | Source Craft",
-    "description": "Supplier development | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier development | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-development",
     "breadcrumbs": [
@@ -68252,7 +68252,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier diversity | Source Craft",
-    "description": "Supplier diversity | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier diversity | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-diversity",
     "breadcrumbs": [
@@ -68312,7 +68312,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier due diligence | Source Craft",
-    "description": "Supplier due diligence | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier due diligence | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-due-diligence",
     "breadcrumbs": [
@@ -68372,7 +68372,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier exit management | Source Craft",
-    "description": "Supplier exit management | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier exit management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-exit-management",
     "breadcrumbs": [
@@ -68432,7 +68432,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier innovation | Source Craft",
-    "description": "Supplier innovation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier innovation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-innovation",
     "breadcrumbs": [
@@ -68492,7 +68492,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier onboarding | Source Craft",
-    "description": "Supplier onboarding | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier onboarding | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-onboarding",
     "breadcrumbs": [
@@ -68552,7 +68552,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier performance review | Source Craft",
-    "description": "Supplier performance review | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier performance review | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-performance-review",
     "breadcrumbs": [
@@ -68612,7 +68612,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier relationship management | Source Craft",
-    "description": "Supplier relationship management | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier relationship management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-relationship-management",
     "breadcrumbs": [
@@ -68672,7 +68672,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier risk assessment | Source Craft",
-    "description": "Supplier risk assessment | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier risk assessment | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-risk-assessment",
     "breadcrumbs": [
@@ -68732,7 +68732,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier scorecard | Source Craft",
-    "description": "Supplier scorecard | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier scorecard | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-scorecard",
     "breadcrumbs": [
@@ -68792,7 +68792,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supplier segmentation | Source Craft",
-    "description": "Supplier segmentation | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supplier segmentation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supplier-segmentation",
     "breadcrumbs": [
@@ -68852,7 +68852,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Supply chain risk | Source Craft",
-    "description": "Supply chain risk | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Supply chain risk | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:supply-chain-risk",
     "breadcrumbs": [
@@ -68912,7 +68912,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Sustainable procurement | Source Craft",
-    "description": "Sustainable procurement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Sustainable procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:sustainable-procurement",
     "breadcrumbs": [
@@ -68972,7 +68972,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Tail spend | Source Craft",
-    "description": "Tail spend | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Tail spend | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:tail-spend",
     "breadcrumbs": [
@@ -69032,7 +69032,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Termination clause | Source Craft",
-    "description": "Termination clause | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Termination clause | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:termination-clause",
     "breadcrumbs": [
@@ -69092,7 +69092,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Three-way match | Source Craft",
-    "description": "Three-way match | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Three-way match | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:three-way-match",
     "breadcrumbs": [
@@ -69152,7 +69152,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Total cost of carbon | Source Craft",
-    "description": "Total cost of carbon | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Total cost of carbon | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:total-cost-of-carbon",
     "breadcrumbs": [
@@ -69212,7 +69212,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Total cost of ownership | Source Craft",
-    "description": "Total cost of ownership | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Total cost of ownership | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:total-cost-of-ownership",
     "breadcrumbs": [
@@ -69272,7 +69272,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Trade-off analysis | Source Craft",
-    "description": "Trade-off analysis | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Trade-off analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:trade-off-analysis",
     "breadcrumbs": [
@@ -69332,7 +69332,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Value engineering | Source Craft",
-    "description": "Value engineering | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Value engineering | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:value-engineering",
     "breadcrumbs": [
@@ -69392,7 +69392,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Walk-away point | Source Craft",
-    "description": "Walk-away point | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Walk-away point | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:walk-away-point",
     "breadcrumbs": [
@@ -69452,7 +69452,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Warranty | Source Craft",
-    "description": "Warranty | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Warranty | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:warranty",
     "breadcrumbs": [
@@ -69512,7 +69512,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Working capital | Source Craft",
-    "description": "Working capital | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Working capital | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:working-capital",
     "breadcrumbs": [
@@ -69572,7 +69572,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": false,
     "title": "Zone of possible agreement | Source Craft",
-    "description": "Zone of possible agreement | Source Craft: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.",
+    "description": "Zone of possible agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
     "contentKey": "sourcecraft-term:zopa",
     "breadcrumbs": [

@@ -80,7 +80,7 @@ const buyingLabels: Record<PublicProductRecord["buyingModel"], string> = {
   "quote-led": "Quote-led",
   subscription: "Subscription",
   "one-off": "One-off",
-  unknown: "Confirm during evaluation",
+  unknown: "Agreed during scoping",
 };
 
 function isCatalogueView(value: string | null): value is CatalogueView {
@@ -300,7 +300,7 @@ export default function ProductCatalogue({ products, demoEligibleProductIds, con
               <p className="t-label">The working catalogue</p>
               <h2 id="catalogue-browser-title">Choose the work.<br /><em>Inspect the tool.</em></h2>
             </div>
-            <p>Search the catalogue, narrow by discipline or open a product directly. The inspector shows the product record, not a simulated application screen.</p>
+            <p>Search the catalogue, narrow by discipline or open a product directly. The inspector shows the product record, not a product demo.</p>
           </div>
 
           <div className="catalogue-controls">
@@ -392,7 +392,7 @@ export default function ProductCatalogue({ products, demoEligibleProductIds, con
                     <div><dt>Status</dt><dd>{activeProduct.status}</dd></div>
                     <div><dt>Buying model</dt><dd>{buyingLabels[activeProduct.buyingModel]}</dd></div>
                     <div><dt>Deployment</dt><dd>{activeProduct.deployment}</dd></div>
-                    <div><dt>Platforms</dt><dd>{activeProduct.platforms.join(" · ") || "Confirm during evaluation"}</dd></div>
+                    <div><dt>Platforms</dt><dd>{activeProduct.platforms.join(" · ") || "Agreed during scoping"}</dd></div>
                   </dl>
                   {activeChildren.length > 0 && (
                     <div className="catalogue-inspector__family">

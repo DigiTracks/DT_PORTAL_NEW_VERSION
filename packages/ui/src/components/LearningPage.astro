@@ -12,30 +12,50 @@ const isContact = route.path === "/contact/";
 const isProcurementLearning = route.template === "procurement-learning";
 const name = route.title.replace(" | Digi Tracks", "");
 
-const platforms: Record<string, { label: string; href: string; blurb: string; points: string[] }> = {
+const platforms: Record<string, { label: string; href: string; access: string; blurb: string; points: string[] }> = {
   "/sourcecraft/": {
     label: "SourceCraft",
     href: "https://sourcecraft.digitracks.net/",
-    blurb: "Contract and procurement language, worked clause by clause so the phrasing is familiar before it matters.",
-    points: ["Clause and term libraries", "Negotiation phrasing in context", "Public guides and glossaries"]
+    access: "Free reference — open in the browser",
+    blurb: "A field guide to better buying: procurement and contract language explained plainly, with a regional lens for India, the United States, the United Kingdom and California.",
+    points: [
+      "Terms, clauses and comparisons explained in plain language",
+      "Regional reference lenses for India, the US, the UK and California",
+      "Saved terms so a working glossary follows you between pages"
+    ]
   },
   "/learnpmo/": {
     label: "LearnPMO",
     href: "https://learnpmo.digitracks.net/",
-    blurb: "Project and portfolio delivery, from the first plan to the governance conversation that follows it.",
-    points: ["Planning and scheduling practice", "Portfolio and governance models", "Delivery role walkthroughs"]
+    access: "Academy and labs — sign in to save progress",
+    blurb: "PM360 Academy: project, programme and portfolio delivery taught through lessons, mock exams and a practice simulator rather than slideware.",
+    points: [
+      "Academy lessons, study plans and mock exams",
+      "Practice simulator with projects, sprints and timesheets",
+      "PMO registers: charter, scope, decision log, risks and lessons learned"
+    ]
   },
   "/procuresherpa/": {
     label: "ProcureSherpa Learning",
     href: "https://procuresherpa.digitracks.net/",
-    blurb: "Practical procurement capability: sourcing, contracts, spend and the decisions that sit between them.",
-    points: ["Sourcing and category basics", "Contract and supplier controls", "Templates, calculators and SOPs"]
+    access: "Open modules, calculators and templates",
+    blurb: "A procurement learning platform built around the work: academy modules, calculators, SOPs, checklists and scenarios you can apply the same week.",
+    points: [
+      "Academy modules across sourcing, contracts and spend",
+      "Calculators, checklists and SOPs for day-to-day buying",
+      "Scenario practice with locally saved work"
+    ]
   },
   "/hcmfusion/": {
     label: "HCM Fusion",
     href: "https://hcmfusion.digitracks.net/",
-    blurb: "Oracle HCM and human capital workflows, explained against the screens and processes you actually use.",
-    points: ["Core HR and payroll context", "Talent and role design", "Release and configuration notes"]
+    access: "Read every lesson without an account",
+    blurb: "HCM Studio for Oracle Fusion Cloud HCM: Core HR, absence, time and labour, payroll, recruiting and talent, taught in configuration order with practice labs.",
+    points: [
+      "Core HR, Absence, Time and Labor, Payroll and Recruiting",
+      "Talent, Learning, Compensation and Workforce Monitoring",
+      "Configuration order, the failures it prevents, and practice labs"
+    ]
   }
 };
 
@@ -72,7 +92,7 @@ const contactHref = `https://digitracks.net/contact/?intent=consultation&origin=
         <Button href="https://digitracks.net/products/" variant="secondary">See related products</Button>
       </div>
     </div>
-    <div class="learning-entry__stamp"><span>{platform.label} / direct link</span><strong aria-hidden="true">↗</strong><a href={platform.href}>{platform.href.replace("https://", "").replace(/\/$/, "")}</a><small>Open — no account required</small></div>
+    <div class="learning-entry__stamp"><span>{platform.label} / direct link</span><strong aria-hidden="true">↗</strong><a href={platform.href}>{platform.href.replace("https://", "").replace(/\/$/, "")}</a><small>{platform.access}</small></div>
   </div>
   <div class="shell learning-entry__body">
     <aside><p class="t-label">On this page</p><a href="#learning-entry-next">What you will find</a><a href={platform.href}>Open the platform</a><a href="https://digitracks.net/products/">Product catalogue</a></aside>

@@ -20,7 +20,7 @@ const capabilities = [
   ["Saved work", "Local calculations and settings, with JSON backup and restore plus an in-memory fallback."]
 ] as const;
 const boundaries = [
-  ["Enrolment and access", "Learning access is arranged with our team, so every learner is set up with the right material."],
+  ["Direct access", "Every published module is open in the browser. Where progress is saved, the platform asks you to sign in."],
   ["Credentials", "Results, badges and exam history stay local to the learner. Accreditation and external credentials are not part of this release."],
   ["Cross-device progress", "Progress saves on the device. Cloud sync across devices is on the roadmap."],
   ["AI and integrations", "The copilot retrieves from bundled knowledge and cites its sources, with no external model in the loop."],
@@ -36,7 +36,7 @@ const boundaries = [
       <h1 id="procurement-learning-title">Learn the work.<br><em>Then use the tool.</em></h1>
       <p class="procurement-learning__lede">{route.description}</p>
       <div class="button-row"><Button href={requestHref} ctaId="request-learning-access">Ask about learning access</Button><Button href="https://digitracks.net/products/sherpa-toolkit/" external variant="secondary" ctaId="inspect-product">Inspect Procure Sherpa</Button></div>
-      <p class="procurement-learning__note">Ask about learning access and our team will arrange enrolment, material and the right starting point.</p>
+      <p class="procurement-learning__note">Ask about learning access and our team will point you to the right module and starting point.</p>
     </div>
     <figure class="academy-instrument" aria-label="ProcureSherpa Academy learning model">
       <div class="academy-instrument__head"><ProductMark product={sherpa} size={42} /><span>ACADEMY / LOCAL WORKING MODEL</span><small>01</small></div>
@@ -86,5 +86,5 @@ const boundaries = [
 </section>
 
 <section class="academy-close" aria-labelledby="academy-close-title">
-  <div class="shell academy-close__grid"><div><p class="t-label">Learning access</p><h2 id="academy-close-title">Ask for the right kind of access.</h2></div><div><p>Tell us whether you need the public toolkit, guided learning or a product evaluation. We will confirm what is available rather than imply enrolment.</p><Button href={requestHref} ctaId="request-learning-access">Ask about ProcureSherpa Learning</Button></div></div>
+  <div class="shell academy-close__grid"><div><p class="t-label">Learning access</p><h2 id="academy-close-title">Ask for the right kind of access.</h2></div><div><p>Tell us whether you need the public toolkit, guided learning or a scoped walkthrough. We will confirm what is available and send the link.</p><Button href={requestHref} ctaId="request-learning-access">Ask about ProcureSherpa Learning</Button></div></div>
 </section>

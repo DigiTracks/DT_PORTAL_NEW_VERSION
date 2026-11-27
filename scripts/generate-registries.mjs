@@ -545,18 +545,28 @@ function routeTitle(origin, raw, routePath, product) {
 
 function routeDescription(origin, raw, title, product) {
   if (product) return product.summary;
-  if (raw.template === "term") return `${title}: a SourceCraft reference route. Editorial approval and content permission are pending, so no definition is republished.`;
-  if (origin === "hcmfusion") return `${title}: an HCM Fusion route preserving the published learning-library identifier while authorised content and assessment policy are confirmed.`;
-  if (origin === "sourcecraft" && raw.template === "regional-pack") return `${title}: a preserved SourceCraft regional route. Regional notes await owner permission before migration.`;
-  if (origin === "procuresherpa" && raw.path.includes("#")) return `${title}: a preserved ProcureSherpa hash route. Authorised content is required before the guide body can be migrated.`;
-  if (origin === "learnpmo") return `${title}: an independently authored LearnPMO entry point. Workspace source, saved-state rules and authenticated behavior remain owner-gated.`;
-  if (origin === "learn") return `${title}: find the relevant Digi Tracks learning path, its access boundary and the next practical step.`;
+  if (raw.template === "term") return `${title}: a working procurement and contract reference from SourceCraft.`;
+  if (origin === "hcmfusion") return `${title}: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.`;
+  if (origin === "sourcecraft" && raw.template === "regional-pack") return `${title}: SourceCraft regional reference for procurement and contract language.`;
+  if (origin === "procuresherpa" && raw.path.includes("#")) return `${title}: a ProcureSherpa learning guide on procurement practice.`;
+  if (origin === "learnpmo") return `${title}: a LearnPMO academy route for project, programme and portfolio delivery.`;
+  if (origin === "learn") {
+    const learning = {
+      "/": "Four public learning platforms — SourceCraft, LearnPMO, ProcureSherpa and HCM Fusion — each opened directly in the browser.",
+      "/sourcecraft": "SourceCraft: procurement and contract language explained plainly, with regional reference lenses and saved terms.",
+      "/learnpmo": "LearnPMO: PM360 Academy lessons, mock exams and a practice simulator for project, programme and portfolio delivery.",
+      "/procuresherpa": "ProcureSherpa Learning: academy modules, calculators, SOPs, checklists and scenarios for procurement practice.",
+      "/hcmfusion": "HCM Fusion: HCM Studio lessons and practice labs across Oracle Fusion Cloud HCM modules."
+    };
+    const key = raw.path.replace(/\/$/, "") || "/";
+    return learning[key] ?? `${title}: a Digi Tracks learning page.`;
+  }
   const descriptions = {
     home: "Explore Digi Tracks operational software, learning tools and working applications, then request the right product or deployment conversation.",
     "product-index": `Browse ${products.length} Digi Tracks catalogue entries with clear licence, deployment and access boundaries.`,
     "solution-index": "Find Digi Tracks software by the work you do, from education and healthcare to procurement and recruitment.",
     "industry-index": "Explore operational software for education, healthcare, beauty and wellness, business operations, procurement and recruitment.",
-    "capability-hub": "Compare the relevant Digi Tracks tools, their verified scope and the next practical evaluation step.",
+    "capability-hub": "Compare the relevant Digi Tracks tools, their scope and the next practical step.",
     legal: "Read the Digi Tracks site terms, privacy information and accessibility commitment.",
     marketing: `Learn about ${title} and find a clear next step with Digi Tracks.`,
     "sourcecraft-index": "Search, save and organise procurement terminology with transparent editorial and offline-state boundaries.",
