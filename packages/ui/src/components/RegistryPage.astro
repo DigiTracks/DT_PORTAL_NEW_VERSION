@@ -228,7 +228,7 @@ const pageStyles = [
   ) : isProductIndex ? (
     <ProductCatalogue products={publicProducts} demoEligibleProductIds={demoEligibleProductIds} contactHref={contactHref} client:visible />
   ) : isSolutionIndex ? (
-    <SolutionsIndex route={route} solutions={solutions} variant={route.template === "industry-index" ? "industries" : "solutions"} />
+    <SolutionsIndex route={route} solutions={solutions} products={publicProducts} variant={route.template === "industry-index" ? "industries" : "solutions"} />
   ) : isHub ? (
     <>
       <PageHero id="page-title" title={hub?.name ?? titleWithoutSite} eyebrow="Capability hub" lede={hub?.summary ?? route.description} />

@@ -2386,3 +2386,41 @@ html.m-enter .hero-home__visual {
     min-height: 0;
   }
 }
+/* Anchor card footers so the two portfolio slots end on the same line. */
+.duo-product__evidence {
+  margin-top: auto;
+}
+
+.duo-product__map li {
+  padding-block: 0.62rem;
+}
+
+.duo-product > header {
+  margin-bottom: 2rem;
+}
+
+.duo-product__family {
+  margin-bottom: 1.2rem;
+}
+/* Give the two portfolio slots their own colour identity. */
+.home-duo .duo-product:first-child {
+  background: linear-gradient(180deg, #f3f7fd 0%, #e9f0fa 100%);
+  border-top: 4px solid #2f5da8;
+}
+
+.home-duo .duo-product:last-child {
+  background: linear-gradient(180deg, #fdf8e9 0%, #f7edd4 100%);
+  border-top: 4px solid #e0b64a;
+}
+
+.home-duo .section-head {
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 34rem);
+  align-items: end;
+  gap: clamp(1.5rem, 4vw, 4rem);
+}
+
+@media (max-width: 60rem) {
+  .home-duo .section-head {
+    grid-template-columns: 1fr;
+  }
+}

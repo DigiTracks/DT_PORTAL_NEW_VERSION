@@ -5,18 +5,69 @@ import Button from "./Button.astro";
 interface Props {
   route: RouteRecord;
   solutions: readonly SolutionRecord[];
+  products?: readonly { id: string }[];
   variant: "industries" | "solutions";
 }
 
-const { route, solutions, variant } = Astro.props;
+const { route, solutions, products = [], variant } = Astro.props;
 const isIndustry = variant === "industries";
 const eyebrow = isIndustry ? "Industry paths" : "Solutions";
 const heading = isIndustry ? "Software by industry." : "Software by the work you do.";
 const accentHead = isIndustry ? "Every sector has its own rhythm." : "Every team has its own workflow.";
 const lede = isIndustry
   ? "Six industries, one catalogue. Each path shows the products that fit the work, the deployment behind them and the questions worth asking before a rollout."
-  : "Find the products that match the work in front of you, from education and healthcare to procurement, recruitment and engineering operations.";
-const totalProducts = new Set(solutions.flatMap((item) => item.productIds)).size;
+  : "Six capability families rather than six sectors: procurement, education, people, engineering, field operations and business operations, each mapped to the products that do the work.";
+const productIds = new Set(products.map((product) => product.id));
+const families = [
+  {
+    id: "procurement",
+    name: "Procurement & supply",
+    href: "/procurement-software/",
+    summary: "Sourcing, contracts, spend and supplier controls across the buying cycle, with a learning layer beside the tools.",
+    flow: "Sourcing → contract → spend → supplier control",
+    productIds: ["vertex", "vantor", "procure5", "procura", "logistra", "sherpa"]
+  },
+  {
+    id: "education",
+    name: "Education operations",
+    href: "/solutions/education/",
+    summary: "Admissions, records, fees and campus operations across school, college and university, on one education mission.",
+    flow: "Admissions → records → fees → campus operations",
+    productIds: ["vedik", "vedik-school-erp", "unnati", "vedik-university", "campus-grid", "vedik-social"]
+  },
+  {
+    id: "people",
+    name: "People & hiring",
+    href: "/solutions/recruitment/",
+    summary: "Résumé intake, deterministic candidate review, interview practice and role development for hiring teams.",
+    flow: "Intake → screening → shortlist → offer",
+    productIds: ["nipuna", "planora", "mindone", "mindone-pro"]
+  },
+  {
+    id: "engineering",
+    name: "Engineering & security",
+    href: "/developer-tools/",
+    summary: "Code intelligence, security reasoning, delivery tracking and project operations for software teams.",
+    flow: "Read the code → reason about risk → ship → operate",
+    productIds: ["orion", "orion-hunter", "recon", "opspilot"]
+  },
+  {
+    id: "field",
+    name: "Field operations",
+    href: "/field-operations/",
+    summary: "Local-first tools for sites, crews and workspaces that keep working when the connection does not.",
+    flow: "Site → crew → record → reconcile",
+    productIds: ["construction", "transportation", "unify", "glowra"]
+  },
+  {
+    id: "business",
+    name: "Business operations",
+    href: "/solutions/business-operations/",
+    summary: "Finance, documents, workflow and the internal systems a company runs on, across entities and currencies.",
+    flow: "Finance → documents → internal workflow",
+    productIds: ["chronos", "nexora", "monexa", "arventa", "workzen"]
+  }
+] as const;
 const flows: Record<string, string> = {
   education: "Admissions → records → fees → campus operations",
   healthcare: "Scheduling → patient records → specialty workflows",
@@ -25,6 +76,10 @@ const flows: Record<string, string> = {
   procurement: "Sourcing → contract → spend → supplier control",
   recruitment: "Intake → screening → shortlist → offer"
 };
+const entries = isIndustry
+  ? solutions.map((item) => ({ id: item.id, name: item.name, href: `/solutions/${item.id}/`, summary: item.summary, flow: flows[item.id] ?? "Workflow mapped with the product team", productIds: item.productIds.filter((id) => productIds.size === 0 || productIds.has(id)) }))
+  : families.map((family) => ({ ...family, productIds: family.productIds.filter((id) => productIds.has(id)) }));
+const totalProducts = new Set(entries.flatMap((item) => item.productIds)).size;
 const steps = [
   ["01", "Map the workflow", "Name the process that has to change and the records it touches."],
   ["02", "Match the products", "Shortlist the systems that already cover that work, not adjacent demos."],
@@ -57,7 +112,7 @@ const constraints = isIndustry
       <h1 id="page-title">{heading}<br /><em>{accentHead}</em></h1>
       <p class="sol-hero__lede">{lede}</p>
       <div class="sol-hero__stats">
-        <span><strong>{solutions.length}</strong> {isIndustry ? "industry paths" : "solution paths"}</span>
+        <span><strong>{entries.length}</strong> {isIndustry ? "industry paths" : "capability families"}</span>
         <span><strong>{totalProducts}</strong> products mapped</span>
         <span><strong>3</strong> deployment models</span>
       </div>
@@ -68,9 +123,9 @@ const constraints = isIndustry
         <caption class="sr-only">Solutions, the number of products mapped and the workflow each covers</caption>
         <thead><tr><th scope="col">Path</th><th scope="col">Products</th></tr></thead>
         <tbody>
-          {solutions.map((item) => (
+          {entries.map((item) => (
             <tr>
-              <th scope="row"><a href={`/solutions/${item.id}/`}>{item.name}</a></th>
+              <th scope="row"><a href={item.href}>{item.name}</a></th>
               <td>{String(item.productIds.length).padStart(2, "0")}</td>
             </tr>
           ))}
@@ -83,9 +138,9 @@ const constraints = isIndustry
 <section class="sol-path">
   <div class="shell sol-path__grid">
     <div class="sol-path__intro">
-      <p class="t-label">How a path is built</p>
+      <p class="t-label">{isIndustry ? "How a path is built" : "How a capability is matched"}</p>
       <h2>Three moves,<br /><em>no guesswork.</em></h2>
-      <p>Each path connects a real workflow to the products that already do the work, then to the deployment decision behind them.</p>
+      <p>{isIndustry ? "Each path connects a real workflow to the products that already do the work, then to the deployment decision behind them." : "Each family groups the products that cover one kind of work, so the conversation starts from the job rather than the catalogue."}</p>
     </div>
     <ol class="sol-path__steps">
       {steps.map(([num, title, copy]) => (
@@ -102,14 +157,14 @@ const constraints = isIndustry
       <p>{isIndustry ? "Six operating contexts, each with its own rhythm and its own product fit." : "Six starting points, each linked to the products that deliver it."}</p>
     </div>
     <ul class="sol-grid">
-      {solutions.map((item, index) => (
+      {entries.map((item, index) => (
         <li class="sol-card">
-          <a href={`/solutions/${item.id}/`}>
+          <a href={item.href}>
             <span class="sol-card__ghost" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
             <span class="sol-card__index">{String(index + 1).padStart(2, "0")}</span>
             <h2>{item.name}</h2>
             <p>{item.summary}</p>
-            <span class="sol-card__flow">{flows[item.id] ?? "Workflow mapped with the product team"}</span>
+            <span class="sol-card__flow">{item.flow}</span>
             <span class="sol-card__foot">
               <span>{item.productIds.length} {item.productIds.length === 1 ? "product" : "products"}</span>
               <span class="sol-card__go" aria-hidden="true">→</span>
