@@ -197,10 +197,12 @@
 }
 
 .services-engagement-grid .button {
-  width: 100%;
+  width: auto;
+  justify-self: start;
+  align-self: start;
   margin-top: auto;
-  padding-inline: 0.8rem;
-  font-size: 0.8rem;
+  padding-inline: 1rem;
+  font-size: 0.84rem;
 }
 
 .services-sequence {

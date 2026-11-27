@@ -38,7 +38,23 @@ interface Props {
 const { route, product } = Astro.props;
 const canonical = routeUrl(route.origin, route.path);
 const titleWithoutSite = route.title.split(" | ")[0];
-const breadcrumbs = route.breadcrumbs.map((item) => ({ name: item.label, item: routeUrl(route.origin, item.path) }));
+const crumbNames: Record<string, string> = {
+  "/products/": "Products",
+  "/industries/": "Industries",
+  "/solutions/": "Solutions",
+  "/services/": "Services",
+  "/procurement-software/": "Procurement",
+  "/developer-tools/": "Developer tools",
+  "/field-operations/": "Field operations",
+  "/faq/": "FAQ",
+  "/trust/": "Trust",
+  "/about/": "About",
+  "/engineering/": "Engineering",
+  "/offline-first-software/": "Offline first"
+};
+const crumbLabel = (path: string, label: string) =>
+  crumbNames[path] ?? (label.length > 44 ? `${label.slice(0, 42).trimEnd()}…` : label);
+const breadcrumbs = route.breadcrumbs.map((item) => ({ name: crumbLabel(item.path, item.label), item: routeUrl(route.origin, item.path) }));
 const schema = route.indexable
   ? [
       breadcrumbSchema(breadcrumbs),
@@ -155,7 +171,7 @@ const pageStyles = [
 >
   {!isHome && <nav class="breadcrumbs shell" aria-label="Breadcrumb">
     <ol>
-      {route.breadcrumbs.map((item, index) => <li>{index < route.breadcrumbs.length - 1 ? <a href={routeUrl(route.origin, item.path)}>{item.label}</a> : <span aria-current="page">{item.label}</span>}</li>)}
+      {route.breadcrumbs.map((item, index) => <li>{index < route.breadcrumbs.length - 1 ? <a href={routeUrl(route.origin, item.path)}>{crumbLabel(item.path, item.label)}</a> : <span aria-current="page">{crumbLabel(item.path, item.label)}</span>}</li>)}
     </ol>
   </nav>}
 
