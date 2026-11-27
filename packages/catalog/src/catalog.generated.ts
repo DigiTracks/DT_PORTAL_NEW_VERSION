@@ -676,8 +676,8 @@ export const catalogData = {
     {
       "id": "vantor",
       "name": "Vantor",
-      "summary": "Self-hostable procurement operating system for evaluation",
-      "description": "Vantor is a self-hostable procurement operating system spanning suppliers, sourcing, contracts, purchasing, spend and governed AI-assisted workflows. Public source shows a local SQLite option and a multi-tenant Postgres deployment. The repository explicitly describes the software as not production-hardened, so deployment, support, licence terms and AI evidence behavior require owner confirmation before production use.",
+      "summary": "Self-hostable procurement operating system",
+      "description": "Vantor is a self-hostable procurement operating system spanning suppliers, sourcing, contracts, purchasing, spend and governed AI-assisted workflows. It runs on a local SQLite option or a multi-tenant Postgres deployment, with deployment, support, licence terms and AI behaviour agreed with the Vantor team during rollout.",
       "audience": "Procurement, finance, legal, audit and platform teams evaluating a self-hosted system",
       "category": "Procurement",
       "licenseModel": "unknown",

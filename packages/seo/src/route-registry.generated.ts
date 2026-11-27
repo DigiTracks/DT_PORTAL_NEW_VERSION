@@ -45008,7 +45008,7 @@ export const routeRegistry = [
     "routeClass": "public-seo",
     "indexable": true,
     "title": "Vantor | Digi Tracks",
-    "description": "Self-hostable procurement operating system for evaluation",
+    "description": "Self-hostable procurement operating system",
     "template": "product-detail",
     "contentKey": "vantor",
     "breadcrumbs": [
