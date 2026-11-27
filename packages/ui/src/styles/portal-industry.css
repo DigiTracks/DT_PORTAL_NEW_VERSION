@@ -269,8 +269,8 @@
   grid-template-columns: 4rem minmax(0, 1fr) 2rem;
   align-items: center;
   gap: 2rem;
-  min-height: 9rem;
-  padding-block: 1.4rem;
+  min-height: 6.5rem;
+  padding-block: 1.2rem;
   border-bottom: 1px solid var(--p-border);
 }
 
@@ -302,7 +302,7 @@
 }
 
 .industry-instruments {
-  background: var(--paper);
+  background: #f8f4e8;
 }
 
 .industry-product-grid {
@@ -329,7 +329,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.6rem;
 }
 
 .industry-product-card__head a {
@@ -380,7 +380,7 @@
 
 .industry-questions {
   border-block: 1px solid var(--p-border);
-  background: var(--paper);
+  background: #f2f5f9;
 }
 
 .industry-questions__grid {
@@ -417,9 +417,13 @@
 }
 
 .industry-outcomes {
-  background: var(--signal-deep);
+  background: var(--night-raised);
   color: var(--paper-bright);
-  --p-muted: var(--paper-bright);
+  --p-muted: var(--steel);
+}
+
+.industry-outcomes .t-label {
+  color: var(--signal);
 }
 
 .industry-outcomes__grid {
