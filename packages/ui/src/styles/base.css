@@ -618,6 +618,18 @@ section[id],
   color: var(--p-ink);
 }
 
+.on-night {
+  --p-ink: var(--paper-bright);
+  --p-muted: rgb(198 212 230 / 80%);
+  --p-border: rgb(198 212 230 / 18%);
+  --p-border-strong: rgb(198 212 230 / 42%);
+  --p-bg: var(--night);
+  --p-surface: var(--night-raised);
+  --p-action: var(--signal);
+  --p-action-ink: var(--night);
+  --p-focus: var(--signal);
+}
+
 .button--quiet {
   padding-inline: 0;
   border-bottom-color: var(--p-border-strong);

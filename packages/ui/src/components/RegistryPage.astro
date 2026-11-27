@@ -14,6 +14,7 @@ import ProcurementEcosystem from "./ProcurementEcosystem.astro";
 import ProductCatalogue from "./ProductCatalogue.tsx";
 import ProductInstrument from "./ProductInstrument.astro";
 import ServicesPage from "./ServicesPage.astro";
+import SolutionsIndex from "./SolutionsIndex.astro";
 import SiteLayout from "./SiteLayout.astro";
 import VedikEcosystem from "./VedikEcosystem.astro";
 import "../styles/base.css";
@@ -208,10 +209,7 @@ const pageStyles = [
   ) : isProductIndex ? (
     <ProductCatalogue products={publicProducts} demoEligibleProductIds={demoEligibleProductIds} contactHref={contactHref} client:visible />
   ) : isSolutionIndex ? (
-    <>
-      <PageHero id="page-title" title={route.template === "industry-index" ? "Software by industry" : "Solutions by the work you do"} eyebrow={route.template === "industry-index" ? "Industry paths" : "Operational solutions"} lede={route.description} />
-      <section class="section" aria-labelledby="paths-title"><div class="shell"><ul class="index-list">{solutions.map((item) => <li><a href={`/solutions/${item.id}/`}><strong>{item.name}</strong><span>{item.summary}</span><small>{item.productIds.length} product {item.productIds.length === 1 ? "family" : "families"}</small></a></li>)}</ul></div></section>
-    </>
+    <SolutionsIndex route={route} solutions={solutions} variant={route.template === "industry-index" ? "industries" : "solutions"} />
   ) : isHub ? (
     <>
       <PageHero id="page-title" title={hub?.name ?? titleWithoutSite} eyebrow="Capability hub" lede={hub?.summary ?? route.description} />
