@@ -23,7 +23,7 @@ const platforms: Record<string, PlatformEntry> = {
     label: "Contract language",
     href: "https://sourcecraft.digitracks.net/",
     lede: "Procurement and contract language explained plainly, with the same term read across regions.",
-    facts: ["Free to open", "No account", "Reference in the browser"],
+    facts: ["Live site", "Direct link", "Reference in the browser"],
     links: [
       { label: "Browse the reference", href: "https://sourcecraft.digitracks.net/explore/", note: "Terms, clauses and the comparisons behind them." },
       { label: "Compare terms", href: "https://sourcecraft.digitracks.net/compare/", note: "Put two terms side by side before you use either." },
@@ -36,7 +36,7 @@ const platforms: Record<string, PlatformEntry> = {
     label: "Project delivery",
     href: "https://learnpmo.digitracks.net/",
     lede: "Project, programme and portfolio delivery taught through lessons, mock exams and practice by industry.",
-    facts: ["Free to open", "No account", "Progress kept in the browser"],
+    facts: ["Live site", "Direct link", "Progress kept in the browser"],
     links: [
       { label: "Lessons", href: "https://learnpmo.digitracks.net/lessons", note: "The academy sequence, from charter to closure." },
       { label: "Mock exams", href: "https://learnpmo.digitracks.net/exams", note: "Sit a paper and see the reasoning behind each answer." },
@@ -50,7 +50,7 @@ const platforms: Record<string, PlatformEntry> = {
     label: "Procurement",
     href: "https://procuresherpa.digitracks.net/",
     lede: "Academy modules, calculators, SOPs and templates for sourcing, contracts and spend.",
-    facts: ["Free to open", "No account", "Saved work stays on the device"],
+    facts: ["Live site", "Direct link", "Saved work stays on the device"],
     links: [
       { label: "Open the academy", href: "https://procuresherpa.digitracks.net/", note: "Modules, calculators, the reference library and scenario practice." }
     ]
@@ -61,7 +61,7 @@ const platforms: Record<string, PlatformEntry> = {
     label: "People operations",
     href: "https://hcmfusion.digitracks.net/",
     lede: "Oracle Fusion Cloud HCM taught in configuration order: Core HR, absence, time, payroll, recruiting and talent.",
-    facts: ["Free to open", "No account", "Practice labs in the browser"],
+    facts: ["Live site", "Direct link", "Practice labs in the browser"],
     links: [
       { label: "Learning paths", href: "https://hcmfusion.digitracks.net/learn/paths", note: "The order to configure in, and why it matters." },
       { label: "Courses", href: "https://hcmfusion.digitracks.net/learn/courses", note: "Every lesson, grouped by module." },
@@ -94,7 +94,7 @@ if (!platform) throw new Error(`No launch entry for ${route.path}`);
     <div class="ll-address">
       <p class="t-label">Direct address</p>
       <a href={platform.href} rel="noreferrer" target="_blank">{platform.href.replace("https://", "").replace(/\/$/, "")}<span aria-hidden="true">↗</span></a>
-      <p>The link goes straight into the live platform. Nothing is sent, stored or approved on the way.</p>
+      <p>The link goes straight into the live application. This page holds none of its content.</p>
     </div>
   </div>
 </section>
@@ -121,10 +121,10 @@ if (!platform) throw new Error(`No launch entry for ${route.path}`);
 
 <section class="ll-boundary section" aria-labelledby="ll-boundary-title">
   <div class="shell ll-boundary__grid">
-    <div><p class="t-label">Access</p><h2 id="ll-boundary-title">Free, open, no request.</h2></div>
+    <div><p class="t-label">Boundary</p><h2 id="ll-boundary-title">The platform does the work.</h2></div>
     <div class="ll-boundary__body">
-      <p>Every published page in {platform.name} is open to anyone with the link. There is no approval step, no trial key and no account to ask for.</p>
-      <p>Work you save — progress, notes, calculations — is kept in this browser on this device. Nothing is uploaded, and clearing site data clears the work.</p>
+      <p>{platform.name} runs at its own address with its own navigation, search and lessons. This page links to it; it does not copy it.</p>
+      <p>Work you save in {platform.name} — progress, notes, calculations — is kept in your browser on this device.</p>
       <Button href={platform.href} external ctaId="open-live-platform">Open {platform.name}<span aria-hidden="true"> ↗</span></Button>
     </div>
   </div>

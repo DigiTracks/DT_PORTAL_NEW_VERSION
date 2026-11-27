@@ -158,6 +158,8 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
           }
         };
         if (!isLoopbackHostname(window.location.hostname)) return;
+        // The learning surface must always send people to the live platforms, never to a local preview copy.
+        if (document.documentElement.dataset.origin === "learn") return;
 
         const normalizedHostname = (hostname) => hostname.toLowerCase().replace(/\.$/, "");
         const previewByHostname = new Map(previewOrigins.map((item) => {
@@ -166,6 +168,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
         }));
         const currentOrigin = new URL(currentProduction).origin;
         const rewriteAnchor = (anchor) => {
+          if (anchor.closest("[data-live]")) return;
           const href = anchor.getAttribute("href");
           if (!href) return;
           let target;

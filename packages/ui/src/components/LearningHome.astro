@@ -8,6 +8,8 @@ const platforms = [
     name: "SourceCraft",
     label: "Contract language",
     href: "https://sourcecraft.digitracks.net/",
+    domain: "sourcecraft.digitracks.net",
+    icon: "/brand/platform-sourcecraft.webp",
     lede: "Procurement and contract language in plain words, with the same term read across regions."
   },
   {
@@ -16,6 +18,8 @@ const platforms = [
     name: "LearnPMO",
     label: "Project delivery",
     href: "https://learnpmo.digitracks.net/",
+    domain: "learnpmo.digitracks.net",
+    icon: "/brand/platform-learnpmo.webp",
     lede: "Lessons, mock exams and industry practice for project, programme and portfolio delivery."
   },
   {
@@ -24,6 +28,8 @@ const platforms = [
     name: "ProcureSherpa Learning",
     label: "Procurement",
     href: "https://procuresherpa.digitracks.net/",
+    domain: "procuresherpa.digitracks.net",
+    icon: "/brand/platform-procuresherpa.webp",
     lede: "Academy modules, calculators, SOPs and templates for sourcing, contracts and spend."
   },
   {
@@ -32,6 +38,8 @@ const platforms = [
     name: "HCM Fusion",
     label: "People operations",
     href: "https://hcmfusion.digitracks.net/",
+    domain: "hcmfusion.digitracks.net",
+    icon: "/brand/platform-hcmfusion.webp",
     lede: "Oracle Fusion Cloud HCM taught in configuration order, with practice labs at every step."
   }
 ];
@@ -42,9 +50,9 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
 <section class="learning-hero" aria-labelledby="learning-title">
   <div class="shell learning-hero__grid">
     <div class="learning-hero__copy">
-      <p class="t-label">Digi Tracks learning / launch</p>
+      <p class="t-label">Digi Tracks learning / four live platforms</p>
       <h1 id="learning-title">Four platforms.<br><em>One click each.</em></h1>
-      <p class="learning-hero__lede">SourceCraft, LearnPMO, ProcureSherpa Learning and HCM Fusion are live, free and open. This page exists for one job: to send you straight into the one you need.</p>
+      <p class="learning-hero__lede">Four learning platforms, all live. Each card below goes straight to the real application at its own address — this page is only the door.</p>
       <div class="button-row">
         <Button href="#learning-paths" ctaId="explore-learning-paths">Choose a platform</Button>
         <Button href={requestHref} variant="secondary">Talk to the studio</Button>
@@ -54,7 +62,7 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
       <span class="learning-orbit__rule" aria-hidden="true"></span>
       <span class="learning-orbit__core" aria-hidden="true"><small>DT / LEARN</small><strong>Four<br>doors</strong></span>
       {platforms.map((platform, index) => (
-        <a class={`learning-orbit__card learning-orbit__card--${index + 1}`} href={platform.href} rel="noreferrer" target="_blank">
+        <a class={`learning-orbit__card learning-orbit__card--${index + 1}`} href={platform.href} rel="noreferrer" target="_blank" data-live>
           <span>{String(index + 1).padStart(2, "0")} / {platform.mark}</span>
           <strong>{platform.label}</strong>
           <small>{platform.name}</small>
@@ -63,22 +71,27 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
     </nav>
   </div>
   <div class="shell learning-hero__ledger">
-    <span>04 live platforms</span><span>Free to open</span><span>No account, no approval</span>
+    <span>04 live platforms</span><span>Direct links</span><span>Opens the live site</span>
   </div>
 </section>
 
 <section class="section learning-paths" id="learning-paths" aria-labelledby="paths-title">
   <div class="shell">
     <div class="section-head">
-      <div><p class="t-label">Take the door you need</p><h2 id="paths-title">Each link opens the live platform.</h2></div>
-      <p>Every card is a direct link to a working site, not a preview. Nothing is requested, nothing is gated, and each platform keeps its own saved work in your browser.</p>
+      <div><p class="t-label">The four platforms</p><h2 id="paths-title">Open the one you need.</h2></div>
+      <p>Every row is a working link to the live application. Nothing is rebuilt or mirrored here, and nothing stands between the link and the platform.</p>
     </div>
     <ol class="learning-path-grid">
       {platforms.map((platform, index) => <li key={platform.key}>
-        <a href={platform.href} rel="noreferrer" target="_blank">
+        <a href={platform.href} rel="noreferrer" target="_blank" data-live>
           <span class="learning-path-grid__number">{String(index + 1).padStart(2, "0")}</span>
-          <div><p class="t-label">{platform.label}</p><h3>{platform.name}</h3><p>{platform.lede}</p></div>
-          <span class="learning-path-grid__arrow" aria-hidden="true">↗</span>
+          <img class="learning-path-grid__icon" src={platform.icon} alt="" width="56" height="56" loading="lazy" />
+          <div class="learning-path-grid__copy">
+            <p class="t-label">{platform.label}</p>
+            <h3>{platform.name}</h3>
+            <p>{platform.lede}</p>
+            <span class="learning-path-grid__open">{platform.domain}<span aria-hidden="true">Open live ↗</span></span>
+          </div>
         </a>
       </li>)}
     </ol>
@@ -87,7 +100,11 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
 
 <section class="section section--ruled learning-boundary" aria-labelledby="learning-boundary-title">
   <div class="shell learning-boundary__grid">
-    <div><p class="t-label">Access</p><h2 id="learning-boundary-title">Free to open. Nothing to request.</h2></div>
-    <div class="prose"><p>All four platforms are public learning sites: every published lesson, calculator and template opens from the link. There is no trial key, no approval step and no account to ask for.</p><p>Progress, notes and calculations are kept in this browser on this device. Nothing is uploaded, and clearing site data clears the work. If a walkthrough would help, the studio will run one against your own material.</p><Button href={requestHref} variant="secondary">Talk to the studio</Button></div>
+    <div><p class="t-label">One page, four addresses</p><h2 id="learning-boundary-title">The platforms are the destination.</h2></div>
+    <div class="prose">
+      <p>SourceCraft, LearnPMO, ProcureSherpa Learning and HCM Fusion each run as their own application. This page links to them; it does not copy them, and it holds none of their content.</p>
+      <p>Each platform keeps its own saved work in your browser, on this device. If a guided walkthrough would help, the studio will run one against your own material.</p>
+      <Button href={requestHref} variant="secondary">Talk to the studio</Button>
+    </div>
   </div>
 </section>
