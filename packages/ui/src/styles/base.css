@@ -90,13 +90,13 @@ html[data-origin="learn"] {
   --header-accent: #244bc5;
   --header-action: #244bc5;
   --header-action-ink: #fffaf0;
-  --footer-bg: #244bc5;
+  --footer-bg: #0d1b2e;
   --footer-ink: #fffaf0;
-  --footer-muted: #dce5ff;
-  --footer-border: rgb(255 250 240 / 20%);
-  --close-bg: #244bc5;
+  --footer-muted: #c6d4e6;
+  --footer-border: rgb(198 212 230 / 18%);
+  --close-bg: #0d1b2e;
   --close-ink: #fffaf0;
-  --close-muted: #dce5ff;
+  --close-muted: #c6d4e6;
   --close-border: rgb(255 250 240 / 20%);
   --close-action: #f3cf65;
   --close-action-ink: #14213f;

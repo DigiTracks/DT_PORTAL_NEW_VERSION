@@ -11,26 +11,92 @@ const { route } = Astro.props;
 const isContact = route.path === "/contact/";
 const isProcurementLearning = route.template === "procurement-learning";
 const name = route.title.replace(" | Digi Tracks", "");
-const requestHref = `https://digitracks.net/contact/?intent=learning&origin=${route.origin}&route=${encodeURIComponent(route.path)}`;
+
+const platforms: Record<string, { label: string; href: string; blurb: string; points: string[] }> = {
+  "/sourcecraft/": {
+    label: "SourceCraft",
+    href: "https://sourcecraft.digitracks.net/",
+    blurb: "Contract and procurement language, worked clause by clause so the phrasing is familiar before it matters.",
+    points: ["Clause and term libraries", "Negotiation phrasing in context", "Public guides and glossaries"]
+  },
+  "/learnpmo/": {
+    label: "LearnPMO",
+    href: "https://learnpmo.digitracks.net/",
+    blurb: "Project and portfolio delivery, from the first plan to the governance conversation that follows it.",
+    points: ["Planning and scheduling practice", "Portfolio and governance models", "Delivery role walkthroughs"]
+  },
+  "/procuresherpa/": {
+    label: "ProcureSherpa Learning",
+    href: "https://procuresherpa.digitracks.net/",
+    blurb: "Practical procurement capability: sourcing, contracts, spend and the decisions that sit between them.",
+    points: ["Sourcing and category basics", "Contract and supplier controls", "Templates, calculators and SOPs"]
+  },
+  "/hcmfusion/": {
+    label: "HCM Fusion",
+    href: "https://hcmfusion.digitracks.net/",
+    blurb: "Oracle HCM and human capital workflows, explained against the screens and processes you actually use.",
+    points: ["Core HR and payroll context", "Talent and role design", "Release and configuration notes"]
+  }
+};
+
+const platform = platforms[route.path];
+const contactHref = `https://digitracks.net/contact/?intent=consultation&origin=${route.origin}&route=${encodeURIComponent(route.path)}`;
 ---
 
 {isProcurementLearning ? (
   <ProcurementLearning route={route} />
+) : isContact ? (
+<section class="learning-entry" aria-labelledby="learning-entry-title">
+  <div class="shell learning-entry__hero">
+    <div><p class="t-label">Digi Tracks learning / contact</p><h1 id="learning-entry-title">Ask the studio<em> directly.</em></h1><p class="learning-entry__lede">Questions about a platform, a learning path or a product decision go to the same team that builds the software.</p></div>
+    <div class="learning-entry__stamp" aria-hidden="true"><span>LEARN</span><strong>DT</strong><small>DIGITRACKS / LEARN</small></div>
+  </div>
+  <div class="shell learning-entry__body">
+    <aside><p class="t-label">Platforms</p><a href="https://sourcecraft.digitracks.net/">SourceCraft</a><a href="https://learnpmo.digitracks.net/">LearnPMO</a><a href="https://procuresherpa.digitracks.net/">ProcureSherpa</a><a href="https://hcmfusion.digitracks.net/">HCM Fusion</a></aside>
+    <div class="prose">
+      <h2>One conversation, the right link.</h2>
+      <p>Every public learning page is open. If you want a guided walkthrough, a team session or help choosing between platforms, tell us the workflow and we will point you to the exact page.</p>
+      <Button href={contactHref} ctaId="learning-contact">Contact the studio</Button>
+    </div>
+  </div>
+</section>
+) : platform ? (
+<section class="learning-entry learning-entry--platform" aria-labelledby="learning-entry-title">
+  <div class="shell learning-entry__hero">
+    <div>
+      <p class="t-label">Digi Tracks learning / platform</p>
+      <h1 id="learning-entry-title">{platform.label}<em> is open.</em></h1>
+      <p class="learning-entry__lede">{platform.blurb}</p>
+      <div class="button-row">
+        <Button href={platform.href} external ctaId="open-learning-platform">Open {platform.label}</Button>
+        <Button href="https://digitracks.net/products/" variant="secondary">See related products</Button>
+      </div>
+    </div>
+    <div class="learning-entry__stamp"><span>{platform.label} / direct link</span><strong aria-hidden="true">↗</strong><a href={platform.href}>{platform.href.replace("https://", "").replace(/\/$/, "")}</a><small>Open — no account required</small></div>
+  </div>
+  <div class="shell learning-entry__body">
+    <aside><p class="t-label">On this page</p><a href="#learning-entry-next">What you will find</a><a href={platform.href}>Open the platform</a><a href="https://digitracks.net/products/">Product catalogue</a></aside>
+    <div class="prose">
+      <h2 id="learning-entry-next">Go straight in.</h2>
+      <p>No account is needed to read the public pages. The link above opens {platform.label} directly — the same material our team uses when scoping a piece of work.</p>
+      <ul>{platform.points.map((point) => <li>{point}</li>)}</ul>
+      <h2>Bring a real question.</h2>
+      <p>Pick a live clause, plan or process you are working on and follow it through the platform. If you want that walkthrough with our team, book a session and we will use your example, not a demo script.</p>
+      <Button href={platform.href} external ctaId="open-learning-platform">Open {platform.label} ↗</Button>
+    </div>
+  </div>
+</section>
 ) : (
 <section class="learning-entry" aria-labelledby="learning-entry-title">
   <div class="shell learning-entry__hero">
-    <div><p class="t-label">Digi Tracks learning / {isContact ? "Access guidance" : "Product learning path"}</p><h1 id="learning-entry-title">{isContact ? "Ask for the right kind of access." : name}</h1><p class="learning-entry__lede">{route.description}</p></div>
-    <div class="learning-entry__stamp" aria-hidden="true"><span>{isContact ? "ACCESS" : name.slice(0, 8).toUpperCase()}</span><strong>{isContact ? "?" : "↗"}</strong><small>DIGITRACKS / LEARN</small></div>
+    <div><p class="t-label">Digi Tracks learning</p><h1 id="learning-entry-title">{name}</h1><p class="learning-entry__lede">{route.description}</p></div>
+    <div class="learning-entry__stamp" aria-hidden="true"><span>LEARN</span><strong>DT</strong><small>DIGITRACKS / LEARN</small></div>
   </div>
   <div class="shell learning-entry__body">
-    <aside><p class="t-label">On this page</p><a href="#learning-entry-next">What happens next</a><a href="#learning-entry-boundary">Access boundary</a><a href="https://digitracks.net/products/">Product catalogue</a></aside>
+    <aside><p class="t-label">Platforms</p><a href="https://sourcecraft.digitracks.net/">SourceCraft</a><a href="https://learnpmo.digitracks.net/">LearnPMO</a><a href="https://procuresherpa.digitracks.net/">ProcureSherpa</a><a href="https://hcmfusion.digitracks.net/">HCM Fusion</a></aside>
     <div class="prose">
-      <h2 id="learning-entry-next">Start with the outcome you need.</h2>
-      <p>{isContact ? "Tell us which system you are evaluating, the workflow you want to understand and whether you need product guidance, migration help or authorised learning access." : `This path connects learning to the ${name} product context. Start with the workflow you need to understand, then ask for the access appropriate to that goal.`}</p>
-      <p>A product demo, a course seat and a migration consultation are different requests. Naming the right one helps avoid sending protected material to someone who only needs a guided overview.</p>
-      <h2 id="learning-entry-boundary">What this public page does not do.</h2>
-      <p>It does not enrol a learner, issue a demo link, expose assessment questions or save progress. Those actions require a configured, authorised service and a clear confirmation of what was actually granted.</p>
-      <Button href={requestHref} ctaId="request-learning-access">{isContact ? "Request access guidance" : "Ask about this learning path"}</Button>
+      <h2>Public pages, open links.</h2>
+      <p>Every learning platform is readable without an account. Choose the one that matches the work in front of you and open it directly.</p>
     </div>
   </div>
 </section>

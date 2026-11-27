@@ -16,6 +16,12 @@ const learningThemes: Record<string, { label: string; mark: string }> = {
   "/sourcecraft/": { label: "Contract language", mark: "SC" }
 };
 const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=learn";
+const platformHrefs: Record<string, string> = {
+  "/hcmfusion/": "https://hcmfusion.digitracks.net/",
+  "/learnpmo/": "https://learnpmo.digitracks.net/",
+  "/procuresherpa/": "https://procuresherpa.digitracks.net/",
+  "/sourcecraft/": "https://sourcecraft.digitracks.net/"
+};
 ---
 
 <section class="learning-hero" aria-labelledby="learning-title">
@@ -34,7 +40,7 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
       <span class="learning-orbit__core" aria-hidden="true"><small>DT / LEARN</small><strong>Choose<br>a direction</strong></span>
       {learningRoutes.map((route, index) => {
         const theme = learningThemes[route.path] ?? { label: "Learning path", mark: "DT" };
-        return <a key={route.id} class={`learning-orbit__card learning-orbit__card--${index + 1}`} href={route.path}>
+        return <a key={route.id} class={`learning-orbit__card learning-orbit__card--${index + 1}`} href={platformHrefs[route.path] ?? route.path} rel="noopener">
           <span>{String(index + 1).padStart(2, "0")} / {theme.mark}</span>
           <strong>{theme.label}</strong>
           <small>{route.title.replace(" | Digi Tracks", "").split(" — ")[0]}</small>
@@ -43,7 +49,7 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
     </nav>
   </div>
   <div class="shell learning-hero__ledger">
-    <span>{String(publicOriginCount).padStart(2, "0")} public origins</span><span>Direct product context</span><span>Access stated before enrolment</span>
+    <span>{String(publicOriginCount).padStart(2, "0")} public origins</span><span>Direct product context</span><span>Open links, no account</span>
   </div>
 </section>
 
@@ -51,11 +57,11 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">Choose your direction</p><h2 id="paths-title">Start with the system you need to understand.</h2></div>
-      <p>Each path keeps its own public identity. Account data and learning progress are never shared between origins.</p>
+      <p>Each path is its own public site. Open it directly — nothing sits behind a sign-up wall.</p>
     </div>
     <ol class="learning-path-grid">
       {learningRoutes.map((route, index) => <li key={route.id}>
-        <a href={route.path}>
+        <a href={platformHrefs[route.path] ?? route.path} rel="noopener">
           <span class="learning-path-grid__number">{String(index + 1).padStart(2, "0")}</span>
           <div><p class="t-label">Learning origin</p><h3>{route.title.replace(" | Digi Tracks", "")}</h3><p>{route.description}</p></div>
           <span class="learning-path-grid__arrow" aria-hidden="true">↗</span>
@@ -67,7 +73,7 @@ const requestHref = "https://digitracks.net/contact/?intent=consultation&origin=
 
 <section class="section section--ruled learning-boundary" aria-labelledby="learning-boundary-title">
   <div class="shell learning-boundary__grid">
-    <div><p class="t-label">A useful boundary</p><h2 id="learning-boundary-title">Public guidance is not the same as a course seat.</h2></div>
-    <div class="prose"><p>You can explore the public route and understand what an origin covers. Enrolment, assessments, saved progress and protected learning material require a separately authorised account.</p><p>Where access is not configured, this site says so rather than showing a simulated lesson or an invented completion state.</p><Button href={requestHref} variant="secondary">Ask which path fits</Button></div>
+    <div><p class="t-label">Direct links</p><h2 id="learning-boundary-title">Everything public is open.</h2></div>
+    <div class="prose"><p>Each platform is a live site with its own material. Use the links directly; no account, no enrolment step and no waiting for approval.</p><p>If you want a session run with your own contract, plan or process, talk to the studio and we will bring the platform to that conversation.</p><Button href={requestHref} variant="secondary">Talk to the studio</Button></div>
   </div>
 </section>

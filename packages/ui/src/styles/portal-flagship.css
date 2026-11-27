@@ -871,3 +871,89 @@
 .edition-table td {
   font-size: 1rem;
 }
+/* Edition comparison: colour-coded sides, warm Basic / cool Complete. */
+.page-edition-comparison .edition-hero {
+  background-image:
+    radial-gradient(52rem 30rem at 82% 8%, rgb(245 207 101 / 16%), transparent 62%),
+    radial-gradient(40rem 26rem at 12% 92%, rgb(74 124 196 / 20%), transparent 66%);
+}
+
+.page-edition-comparison .edition-matrix-section {
+  background: linear-gradient(180deg, #fbf6ea, #f4eee0);
+}
+
+.edition-table thead th:nth-child(2) {
+  background: linear-gradient(180deg, #f7d98e, #eec45f);
+  color: #3a2a06;
+}
+
+.edition-table thead th:nth-child(3) {
+  background: linear-gradient(180deg, #244a7c, #16304f);
+  color: #fffaf0;
+}
+
+.edition-table tbody th {
+  background: #fbf6ea;
+  box-shadow: inset 3px 0 0 var(--signal);
+}
+
+.edition-table tbody td:nth-child(2) {
+  background: #fdf8ec;
+  color: #4a3b1c;
+}
+
+.edition-table tbody td:nth-child(3) {
+  background: #f1f6fc;
+  color: #33475f;
+}
+
+.edition-table tbody tr:nth-child(even) td:nth-child(2) {
+  background: #faf1da;
+}
+
+.edition-table tbody tr:nth-child(even) td:nth-child(3) {
+  background: #e8f0fa;
+}
+
+.edition-table tbody tr:hover td:nth-child(2) {
+  background: #f7ead0;
+}
+
+.edition-table tbody tr:hover td:nth-child(3) {
+  background: #e2ecf9;
+}
+
+.edition-decisions {
+  background: linear-gradient(180deg, #fdfbf4, #f7f2e6);
+}
+
+.edition-decisions__cards article:first-child {
+  border: 1px solid #e8d3a2;
+  background: linear-gradient(165deg, #fff8e4, #f8ecca);
+}
+
+.edition-decisions__cards article:first-child > span {
+  color: #8a6114;
+}
+
+.edition-decisions__cards article:last-child {
+  border: 1px solid #1d3b60;
+  background: linear-gradient(165deg, #16304f, #0d1b2e);
+  color: #fffaf0;
+}
+
+.edition-decisions__cards article:last-child > span {
+  color: var(--signal);
+}
+
+.edition-decisions__cards article:last-child p:not(.t-label) {
+  color: var(--steel);
+}
+
+.edition-questions details[open] summary {
+  color: #8a6114;
+}
+
+.edition-questions summary:hover {
+  color: #8a6114;
+}
