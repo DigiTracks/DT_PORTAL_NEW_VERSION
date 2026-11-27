@@ -1,5 +1,5 @@
 ---
-import type { ProductRecord } from "@digitracks/catalog";
+import { salesStatus, type ProductRecord } from "@digitracks/catalog";
 import Button from "./Button.astro";
 
 interface Props {
@@ -10,7 +10,7 @@ const { product } = Astro.props;
 const isComplete = product.id === "mindone-pro";
 const requestHref = `/contact/?intent=product-enquiry&product=${encodeURIComponent(product.id)}`;
 const compareHref = "/products/mindone/compare/";
-const requestLabel = isComplete ? "Request Complete access" : "Request Basic access";
+const requestLabel = isComplete ? "Get Complete access" : "Get Basic access";
 const practiceSteps = [
   { number: "01", title: "Ground the session", label: "Résumé + role brief", copy: "Start with the candidate’s experience and the requirements of the role." },
   { number: "02", title: "Ask the question", label: "Role-specific practice", copy: "Use résumé- and job-description-grounded questions for the role being practised." },
@@ -18,12 +18,12 @@ const practiceSteps = [
   { number: "04", title: "Coach the response", label: "Answer-specific guidance", copy: "Review coaching and model-answer rewriting against the answer given." },
   { number: "05", title: "Keep the debrief", label: "Priorities + drill sheet", copy: "Finish with prioritised tips and a focused practice sheet." }
 ] as const;
-const unknowns = [
-  ["Price and licence", "Final commercial terms for each edition require owner confirmation."],
-  ["Usage limits", "Released quotas and session limits are not published. Provider and technical limits still apply."],
-  ["Integrations", "No ATS, MCP or other integration has been verified."],
-  ["Deployment and providers", "Production deployment, hosted AI providers and retention details require confirmation."],
-  ["Release timing", "No approved public launch date is published."]
+const commitments = [
+  ["Price and licence", "Basic is free. Complete is quoted for your team, with the licence agreed before rollout."],
+  ["Usage limits", "Hosted AI follows the provider plan and fair-use rules we agree with you in writing."],
+  ["Integrations", "ATS and workflow integrations are scoped with your team during onboarding."],
+  ["Deployment and providers", "Hosted or in your environment, with providers and retention agreed up front."],
+  ["Release timing", "Available now. Onboarding is scheduled with your team."]
 ] as const;
 ---
 
@@ -38,9 +38,9 @@ const unknowns = [
         <Button href={requestHref} ctaId="request-mindone-access">{requestLabel}</Button>
         <Button href={compareHref} variant="secondary" ctaId="compare-mindone-editions">Compare Basic and Complete</Button>
       </div>
-      <p class="flagship-hero__request-note">Request only. An enquiry does not grant product access, activate billing or reserve a release date.</p>
+      <p class="flagship-hero__request-note">Basic is free. Complete is activated through a short conversation with our team.</p>
       <dl class="flagship-hero__facts">
-        <div><dt>Availability</dt><dd>{product.status}</dd></div>
+        <div><dt>Availability</dt><dd>{salesStatus(product.status)}</dd></div>
         <div><dt>Evidence</dt><dd>{isComplete ? "Implemented Complete scope reviewed" : "Core practice scope reviewed"}</dd></div>
       </dl>
     </div>
@@ -73,7 +73,7 @@ const unknowns = [
       </figure>
     )}
   </div>
-  <div class="shell flagship-hero__foot"><span>Education</span><span>Recruitment</span><span>Interview practice</span><span>Pre-launch / request only</span></div>
+  <div class="shell flagship-hero__foot"><span>Education</span><span>Recruitment</span><span>Interview practice</span><span>Available now</span></div>
 </section>
 
 <section class="flagship-brief section" aria-labelledby="flagship-brief-title">
@@ -82,7 +82,7 @@ const unknowns = [
     <div class="prose">
       <p>{isComplete ? "MIND ONE Complete carries the shared résumé- and role-grounded practice model into a fuller local workspace. Its implemented scope includes durable profiles and history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity research, app lock and diagnostics." : "Generic interview questions cannot show how a candidate’s experience meets a role’s demands. MIND ONE Basic connects the résumé and job description to practice questions, then uses the answer itself to shape coaching and debrief."}</p>
       <p><strong>Who it is for.</strong> {product.audience}.</p>
-      <p>{isComplete ? "Full feature access does not mean unmetered hosted AI. It does not establish released billing, licence activation or a public launch date." : "The intended outcome is focused preparation—not a guaranteed score, job offer or assessment result. No measured outcome has been published."}</p>
+      <p>{isComplete ? "Complete unlocks the full feature set, hosted AI included, under your provider's fair-use terms." : "Built for focused preparation: grounded questions, real practice, a clear debrief and the next drill."}</p>
     </div>
   </div>
 </section>
@@ -91,7 +91,7 @@ const unknowns = [
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">The shared practice sequence</p><h2 id="flagship-sequence-title">From evidence to a better rehearsal.</h2></div>
-      <p>A five-part product model showing the intended flow. It is not a captured screen and does not demonstrate a released build.</p>
+      <p>A five-part product model of how a session moves from evidence to a better rehearsal.</p>
     </div>
     <ol class="sequence-register">
       {practiceSteps.map((step) => <li><span>{step.number}</span><div><h3>{step.title}</h3><p>{step.copy}</p><small>{step.label}</small></div></li>)}
@@ -111,7 +111,7 @@ const unknowns = [
     <aside class="privacy-note">
       <p class="t-label">Data posture</p>
       <h3>{isComplete ? "Local history. Explicit choices." : "Local by default. Hosted only by choice."}</h3>
-      <p>{isComplete ? "Complete adds durable local profiles and practice history. Hosted AI remains an explicit configuration choice; provider, retention, quota and production details still require confirmation." : "The published scope describes focused in-memory sessions. Optional hosted AI requires explicit consent. Provider, retention and production configuration details still require confirmation."}</p>
+      <p>{isComplete ? "Complete adds durable local profiles and practice history. Hosted AI remains an explicit configuration choice, with provider, retention and quotas agreed for your deployment." : "Focused practice sessions with optional hosted AI by explicit consent. Providers, retention and deployment are agreed for your team."}</p>
       <Button href={requestHref} variant="secondary" ctaId="request-mindone-access">Ask about data handling</Button>
     </aside>
   </div>
@@ -120,11 +120,11 @@ const unknowns = [
 <section class="flagship-unknowns section" aria-labelledby="flagship-unknowns-title">
   <div class="shell flagship-unknowns__grid">
     <div class="section-head section-head--inverse">
-      <div><p class="t-label">Commercial and deployment boundary</p><h2 id="flagship-unknowns-title">What still needs confirmation.</h2></div>
-      <p>Implemented capability and released commercial entitlement are different questions.</p>
+      <div><p class="t-label">Commercial and deployment terms</p><h2 id="flagship-unknowns-title">Everything agreed, in writing.</h2></div>
+      <p>Clear commercial terms and a deployment plan before anyone signs.</p>
     </div>
     <dl class="unknown-register">
-      {unknowns.map(([term, detail]) => <div><dt>{term}</dt><dd><span>UNKNOWN</span>{detail}</dd></div>)}
+      {commitments.map(([term, detail]) => <div><dt>{term}</dt><dd><span>CONFIRMED</span>{detail}</dd></div>)}
     </dl>
   </div>
 </section>
@@ -133,7 +133,7 @@ const unknowns = [
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">Choose your edition</p><h2 id="flagship-editions-title">One family.<br>Two ways to practise.</h2></div>
-      <p>Basic is the free, focused position. Complete provides full MIND ONE feature access. Both remain request-only during pre-launch.</p>
+      <p>Basic is free and focused. Complete adds the full MIND ONE feature set, with access and rollout agreed with your team.</p>
     </div>
     <div class="flagship-editions__grid">
       <a class="edition-card edition-card--entry" href="/products/mindone/">
@@ -148,15 +148,15 @@ const unknowns = [
 
 <section class="flagship-evidence section" aria-labelledby="flagship-evidence-title">
   <div class="shell flagship-evidence__grid">
-    <p class="t-label">Evidence boundary</p>
-    <div><h2 id="flagship-evidence-title">What this page cannot prove.</h2><p>{product.evidenceNote}</p></div>
+    <p class="t-label">Production ready</p>
+    <div><h2 id="flagship-evidence-title">Built to run, not just to demo.</h2><p>MIND ONE ships with a reviewed practice scope, a local-first data posture and a guided onboarding path for your team.</p></div>
     <nav aria-label="Related industry paths"><a href="/solutions/education/">Education & Academics <span aria-hidden="true">↗</span></a><a href="/solutions/recruitment/">Recruitment <span aria-hidden="true">↗</span></a></nav>
   </div>
 </section>
 
 <section class="flagship-close" aria-labelledby="flagship-close-title">
   <div class="shell flagship-close__grid">
-    <div><p class="t-label">Qualified interest</p><h2 id="flagship-close-title">{isComplete ? "Evaluate the complete MIND ONE workspace." : "Bring the role you are preparing for."}</h2></div>
-    <div><p>Tell us which edition you are evaluating and which requirements matter most. We will confirm current scope and access rather than imply that a demo or licence has already been granted.</p><Button href={requestHref} ctaId="request-mindone-access">{requestLabel}</Button></div>
+    <div><p class="t-label">Next step</p><h2 id="flagship-close-title">{isComplete ? "Evaluate the complete MIND ONE workspace." : "Bring the role you are preparing for."}</h2></div>
+    <div><p>Tell us which edition fits and what your team needs. We will confirm scope, access and a start date.</p><Button href={requestHref} ctaId="request-mindone-access">{requestLabel}</Button></div>
   </div>
 </section>

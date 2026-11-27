@@ -2,7 +2,6 @@ import { useCallback, useEffect, useLayoutEffect, useState } from "react";
 import type { PublicProductRecord } from "@digitracks/catalog";
 import Icon, { type IconName } from "./Icon";
 import ProductMark from "./ProductMark";
-import ProductSignal from "./ProductSignal";
 
 interface AtlasGroup {
   id: string;
@@ -122,12 +121,14 @@ export default function ProductAtlas({ products }: ProductAtlasProps) {
   const currentGroupProducts = groupProducts(activeGroup, products);
   const [activeProductId, setActiveProductId] = useState(currentGroupProducts[0]?.id ?? "");
   const [urlStateReady, setUrlStateReady] = useState(false);
+  const [showAll, setShowAll] = useState(false);
   const activeProduct = currentGroupProducts.find((product) => product.id === activeProductId) ?? currentGroupProducts[0];
 
   const applyUrlState = useCallback((params: URLSearchParams) => {
     const next = readAtlasState(params, products);
     setActiveGroupId(next.groupId);
     setActiveProductId(next.productId);
+    setShowAll(false);
     return next;
   }, [products]);
 
@@ -153,6 +154,7 @@ export default function ProductAtlas({ products }: ProductAtlasProps) {
     const next = { groupId: group.id, productId: nextProducts[0]?.id ?? "" };
     setActiveGroupId(next.groupId);
     setActiveProductId(next.productId);
+    setShowAll(false);
     writeAtlasUrl(next, "push");
   }
 
@@ -192,7 +194,7 @@ export default function ProductAtlas({ products }: ProductAtlasProps) {
           <span>{activeGroup.label}</span>
           <span>{String(currentGroupProducts.length).padStart(2, "0")} records</span>
         </div>
-        {currentGroupProducts.map((product, index) => {
+        {(showAll ? currentGroupProducts : currentGroupProducts.slice(0, 6)).map((product, index) => {
           const selected = product.id === activeProduct.id;
           return (
             <button
@@ -205,14 +207,20 @@ export default function ProductAtlas({ products }: ProductAtlasProps) {
             >
               <span className="product-atlas__product-index">{String(index + 1).padStart(2, "0")}</span>
               <ProductMark product={product} size={38} />
-              <span>
-                <strong>{product.name}</strong>
+              <span title={product.summary}>
+                <strong title={product.name}>{product.name}</strong>
                 <small>{product.summary}</small>
               </span>
               <span className="product-atlas__product-status">{product.status}</span>
             </button>
           );
         })}
+        {currentGroupProducts.length > 6 && !showAll && (
+          <button type="button" className="product-atlas__more" onClick={() => setShowAll(true)}>
+            Show all {currentGroupProducts.length} {activeGroup.label.toLowerCase()} records
+            <span aria-hidden="true">↓</span>
+          </button>
+        )}
       </div>
 
       <div className="product-atlas__detail" key={activeProduct.id} aria-live="polite">
@@ -220,7 +228,14 @@ export default function ProductAtlas({ products }: ProductAtlasProps) {
           <span>Catalogue record</span>
           <span>{activeProduct.category}</span>
         </div>
-        <ProductSignal product={activeProduct} compact labels={false} />
+        <ul className="product-atlas__caps" aria-label={`${activeProduct.name} selected capabilities`}>
+          {activeProduct.capabilities.slice(0, 4).map((capability, index) => (
+            <li key={capability}>
+              <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+              {capability}
+            </li>
+          ))}
+        </ul>
         <div className="product-atlas__detail-copy">
           <p className="t-label">{activeProduct.status}</p>
           <h3>{activeProduct.name}</h3>
@@ -230,6 +245,19 @@ export default function ProductAtlas({ products }: ProductAtlasProps) {
             <div><dt>Platforms</dt><dd>{activeProduct.platforms.join(" · ")}</dd></div>
           </dl>
           <a className="text-link" href={`${activeProduct.route}/`}>Inspect {activeProduct.name}<span aria-hidden="true">↗</span></a>
+        </div>
+        <div className="product-atlas__also">
+          <p className="t-label">Also in {activeGroup.label}</p>
+          <ul>
+            {currentGroupProducts.filter((product) => product.id !== activeProduct.id).slice(0, 3).map((product) => (
+              <li key={product.id}>
+                <button type="button" onClick={() => chooseProduct(product.id)}>
+                  {product.name}
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 ---
-import { isDemoProduct, productRegistry, type ProductRecord, type SolutionRecord } from "@digitracks/catalog";
+import { isDemoProduct, productRegistry, salesAvailability, type ProductRecord, type SolutionRecord } from "@digitracks/catalog";
 import Button from "./Button.astro";
 import ProductMark from "./ProductMark";
 
@@ -130,7 +130,7 @@ const contactHref = "/contact/?intent=consultation";
 
 <section class="industry-workflow section" aria-labelledby="industry-workflow-title">
   <div class="shell">
-    <div class="section-head"><div><p class="t-label">02 / Evaluation path</p><h2 id="industry-workflow-title">A deliberate sequence.</h2></div><p>This is an evaluation framework, not a promised delivery timetable.</p></div>
+    <div class="section-head"><div><p class="t-label">02 / The working sequence</p><h2 id="industry-workflow-title">A deliberate sequence.</h2></div><p>Each stage has an owner, an output and a clear point to proceed.</p></div>
     <ol class="industry-sequence">
       {solution.workflow.map((stage, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{stage.title}</h3><p>{stage.description}</p></div><i aria-hidden="true"></i></li>)}
     </ol>
@@ -139,7 +139,7 @@ const contactHref = "/contact/?intent=consultation";
 
 <section class="industry-instruments section" id="industry-instruments" aria-labelledby="industry-instruments-title">
   <div class="shell">
-    <div class="section-head"><div><p class="t-label">03 / Instruments in this path</p><h2 id="industry-instruments-title">Products with a specific job.</h2></div><p>Related products are not automatically integrated. Each retains its own deployment, evidence and access boundary.</p></div>
+    <div class="section-head"><div><p class="t-label">03 / Products in this path</p><h2 id="industry-instruments-title">Products with a specific job.</h2></div><p>Each product keeps its own deployment, licence and support terms, agreed with your team.</p></div>
     <div class="industry-product-grid">
       {products.map((product) => {
         const requestOnly = product.availability === "request-only";
@@ -147,12 +147,12 @@ const contactHref = "/contact/?intent=consultation";
         const href = `/contact/?intent=${demoEligible ? "demo" : "product-enquiry"}&product=${encodeURIComponent(product.id)}`;
         return <article class="industry-product-card">
           <div class="industry-product-card__head"><ProductMark product={product} size={58} /><a href={`${product.route}/`} aria-label={`Inspect product: ${product.name}`}>Inspect product <span aria-hidden="true">↗</span></a></div>
-          <p class="t-label">{product.category} / {requestOnly ? "Request only" : product.status}</p>
+          <p class="t-label">{product.category} / {salesAvailability(product.availability)}</p>
           <h3>{product.name}</h3>
           <p>{product.summary}.</p>
           <p class="industry-product-card__audience"><strong>Who benefits</strong>{product.audience}.</p>
-          <p class="industry-product-card__evidence"><strong>Evidence boundary</strong>{product.evidenceNote ?? "Published product scope; production evaluation remains required."}</p>
-          <Button href={href} variant="secondary" ctaId={demoEligible ? "request-product-demo" : "request-product-interest"}>{demoEligible ? "Request a product evaluation" : "Register product interest"}</Button>
+          <p class="industry-product-card__evidence"><strong>Deployment</strong>{product.deployment}. Integration and rollout are scoped with your team.</p>
+          <Button href={href} variant="secondary" ctaId={demoEligible ? "request-product-demo" : "request-product-interest"}>{demoEligible ? "Request a product demo" : "Talk to the product team"}</Button>
         </article>;
       })}
     </div>
@@ -161,18 +161,18 @@ const contactHref = "/contact/?intent=consultation";
 
 <section class="industry-questions section" aria-labelledby="industry-questions-title">
   <div class="shell industry-questions__grid">
-    <div><p class="t-label">04 / Bring these questions</p><h2 id="industry-questions-title">Make the evaluation specific.</h2></div>
+    <div><p class="t-label">04 / Bring these questions</p><h2 id="industry-questions-title">Make the first conversation specific.</h2></div>
     <ol>{detail.questions.map((question, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><p>{question}</p></li>)}</ol>
   </div>
 </section>
 
 <section class="industry-outcomes section" aria-labelledby="industry-outcomes-title">
   <div class="shell industry-outcomes__grid">
-    <div><p class="t-label">05 / Useful evaluation outputs</p><h2 id="industry-outcomes-title">What a good first conversation should produce.</h2></div>
+    <div><p class="t-label">05 / What the first conversation produces</p><h2 id="industry-outcomes-title">What a good first conversation should produce.</h2></div>
     <ol>{solution.outcomes.map((outcome) => <li><span aria-hidden="true">↗</span><p>{outcome}</p></li>)}</ol>
   </div>
 </section>
 
 <section class="industry-close" aria-labelledby="industry-close-title">
-  <div class="shell industry-close__grid"><div><p class="t-label">Industry-specific next step</p><h2 id="industry-close-title">Bring the workflow you need to change.</h2></div><div><p>Tell us the current process, the tools involved and the evidence required for a decision. We will keep the enquiry tied to this industry and the relevant products.</p><Button href={contactHref} ctaId="request-product-consultation">Start the evaluation conversation</Button></div></div>
+  <div class="shell industry-close__grid"><div><p class="t-label">Industry-specific next step</p><h2 id="industry-close-title">Bring the workflow you need to change.</h2></div><div><p>Tell us the current process, the tools involved and the evidence required for a decision. We will keep the enquiry tied to this industry and the relevant products.</p><Button href={contactHref} ctaId="request-product-consultation">Start the conversation</Button></div></div>
 </section>

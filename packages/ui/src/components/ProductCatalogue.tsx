@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState, type MouseEvent } from "react";
-import type { PublicProductRecord } from "@digitracks/catalog";
+import { salesAvailability, type PublicProductRecord } from "@digitracks/catalog";
 import Icon, { type IconName } from "./Icon";
 import ProductMark from "./ProductMark";
 import ProductSignal from "./ProductSignal";
@@ -72,7 +72,7 @@ const viewLabels: Record<CatalogueView, string> = {
   flagships: "Flagship products",
   family: "Products within a family",
   free: "Free to use",
-  prelaunch: "Request-only routes",
+  prelaunch: "Enterprise deployment",
 };
 
 const buyingLabels: Record<PublicProductRecord["buyingModel"], string> = {
@@ -288,7 +288,7 @@ export default function ProductCatalogue({ products, demoEligibleProductIds, con
         <div className="shell catalogue-hero__foot">
           <div><strong>{String(flagshipCount).padStart(2, "0")}</strong><span>Flagship products</span></div>
           <div><strong>{String(familyCount).padStart(2, "0")}</strong><span>Products within families</span></div>
-          <div><strong>{String(requestOnlyCount).padStart(2, "0")}</strong><span>Request-only routes</span></div>
+          <div><strong>{String(requestOnlyCount).padStart(2, "0")}</strong><span>Enterprise deployments</span></div>
           <p>Full product access is qualified and issued separately.</p>
         </div>
       </section>
@@ -300,7 +300,7 @@ export default function ProductCatalogue({ products, demoEligibleProductIds, con
               <p className="t-label">The working catalogue</p>
               <h2 id="catalogue-browser-title">Choose the work.<br /><em>Inspect the tool.</em></h2>
             </div>
-            <p>Search the audited records, narrow by discipline or open a product directly. The inspector shows catalogue facts—not a simulated application screen.</p>
+            <p>Search the catalogue, narrow by discipline or open a product directly. The inspector shows the product record, not a simulated application screen.</p>
           </div>
 
           <div className="catalogue-controls">
@@ -358,7 +358,7 @@ export default function ProductCatalogue({ products, demoEligibleProductIds, con
                               <span className="catalogue-record__mark"><ProductMark product={product} size={42} /></span>
                               <strong>{product.name}</strong>
                               <span className="catalogue-record__summary">{product.summary}</span>
-                              <span className="catalogue-record__meta">{parent ? `Within ${parent.name}` : product.availability === "request-only" ? "Request-only route" : product.category}</span>
+                              <span className="catalogue-record__meta">{parent ? `Within ${parent.name}` : salesAvailability(product.availability)}</span>
                               <span className="catalogue-record__arrow"><Arrow /></span>
                             </a>
                           </li>
@@ -389,7 +389,7 @@ export default function ProductCatalogue({ products, demoEligibleProductIds, con
                   </div>
                   <ProductSignal product={activeProduct} compact={false} />
                   <dl className="catalogue-inspector__facts">
-                    <div><dt>Status</dt><dd>{activeProduct.availability === "request-only" ? "Request-only route" : activeProduct.status}</dd></div>
+                    <div><dt>Status</dt><dd>{activeProduct.status}</dd></div>
                     <div><dt>Buying model</dt><dd>{buyingLabels[activeProduct.buyingModel]}</dd></div>
                     <div><dt>Deployment</dt><dd>{activeProduct.deployment}</dd></div>
                     <div><dt>Platforms</dt><dd>{activeProduct.platforms.join(" · ") || "Confirm during evaluation"}</dd></div>

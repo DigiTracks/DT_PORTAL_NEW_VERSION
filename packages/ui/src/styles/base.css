@@ -349,6 +349,16 @@ em {
   white-space: nowrap;
 }
 
+html {
+  scroll-padding-top: 5.5rem;
+}
+
+section[id],
+[data-atlas],
+[id]:target {
+  scroll-margin-top: 5.5rem;
+}
+
 .skip-link {
   position: fixed;
   top: var(--s-3);
@@ -358,11 +368,16 @@ em {
   background: var(--signal);
   color: var(--night);
   font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
   transform: translateY(-180%);
-  transition: transform 160ms var(--ease-out);
+  transition: transform 160ms var(--ease-out), opacity 160ms var(--ease-out);
 }
 
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
   transform: translateY(0);
 }
 

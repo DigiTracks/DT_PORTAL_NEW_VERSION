@@ -83,6 +83,7 @@ export interface HubRecord {
 }
 
 import { catalogData } from "./catalog.generated.ts";
+import { salesStatus } from "./sales-status.ts";
 
 const pipelineOnlyIds = new Set(["costpilot", "vendoriq", "talentmap", "complyflow"]);
 
@@ -104,7 +105,7 @@ export function toPublicProduct(product: ProductRecord): PublicProductRecord {
     capabilities: product.capabilities,
     platforms: product.platforms,
     deployment: product.deployment,
-    status: product.status,
+    status: salesStatus(product.status),
     route: product.route,
     logo: product.logo,
     installCommand: product.installCommand,

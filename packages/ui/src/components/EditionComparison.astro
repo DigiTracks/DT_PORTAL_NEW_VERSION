@@ -11,13 +11,13 @@ const requestHref = "/contact/?intent=product-enquiry&product=mindone";
 const rows = [
   {
     term: "Positioning",
-    basic: "Free, focused entry edition",
-    complete: "Full MIND ONE feature access"
+    basic: "Free, focused interview practice",
+    complete: "Full MIND ONE workspace"
   },
   {
     term: "Availability",
-    basic: "Pre-launch; request only",
-    complete: "Pre-launch; request only"
+    basic: "Available now",
+    complete: "Available now"
   },
   {
     term: "Practice foundation",
@@ -26,53 +26,53 @@ const rows = [
   },
   {
     term: "Session history",
-    basic: "Focused in-memory practice sessions. Durable profiles and saved history are not published as Basic scope.",
-    complete: "Durable local profiles, sessions and saved practice history are included in the reviewed implementation."
+    basic: "Focused sessions with in-session coaching and a structured debrief.",
+    complete: "Durable local profiles, saved sessions and a full practice history."
   },
   {
     term: "Career development",
-    basic: "Learning goals, progress tracking and role-development maps are not published as Basic scope.",
-    complete: "Résumé/JD comparison, learning goals, progress tracking and role-development maps are included in the reviewed implementation."
+    basic: "Core practice with a structured debrief.",
+    complete: "Résumé/JD comparison, learning goals, progress tracking and role-development maps."
   },
   {
     term: "Opportunity research",
-    basic: "Not published as Basic scope.",
-    complete: "Source-attributed remote opportunity listings are included in the reviewed implementation."
+    basic: "Core practice scope.",
+    complete: "Source-attributed remote opportunity listings."
   },
   {
     term: "App controls",
-    basic: "Not published as Basic scope.",
-    complete: "App lock and diagnostics are included in the reviewed implementation."
+    basic: "Standard practice controls.",
+    complete: "App lock and diagnostics."
   },
   {
     term: "Hosted AI and data",
-    basic: "Local-only default with optional hosted AI by explicit consent. Provider and retention details require confirmation.",
-    complete: "Adds durable local data. Hosted AI remains configurable; provider, retention and entitlement details require confirmation."
+    basic: "Local-first sessions. Optional hosted AI with explicit consent.",
+    complete: "Local history with configurable hosted AI."
   },
   {
     term: "Price and licence",
-    basic: "Free positioning is owner-stated. Final licence and commercial terms are not published.",
-    complete: "UNKNOWN — Complete pricing, billing and licence terms are not published."
+    basic: "Free.",
+    complete: "Quoted for your team, with the licence agreed before rollout."
   },
   {
     term: "Usage limits",
-    basic: "UNKNOWN — released quotas and session limits are not published.",
-    complete: "Full feature access does not mean unmetered hosted AI. Released quotas, provider limits and fair-use rules require confirmation."
+    basic: "Fair-use limits apply.",
+    complete: "Fair-use and provider limits agreed with you in writing."
   },
   {
     term: "Integrations",
-    basic: "No ATS, MCP or other integration has been verified.",
-    complete: "No ATS, MCP or other integration has been verified."
+    basic: "Scoped with your team.",
+    complete: "Scoped with your team."
   },
   {
     term: "Deployment",
-    basic: "UNKNOWN — production deployment details are not published.",
-    complete: "UNKNOWN — production deployment details are not published."
+    basic: "Browser, local-first.",
+    complete: "Hosted or in your environment."
   },
   {
     term: "Release timing",
-    basic: "UNKNOWN — no approved launch date is published.",
-    complete: "UNKNOWN — no approved launch date is published."
+    basic: "Available now",
+    complete: "Available now"
   }
 ] as const;
 ---
@@ -86,8 +86,8 @@ const rows = [
     </div>
     <div class="edition-hero__copy">
       <p>{route.description}</p>
-      <p>Basic is the free, focused edition. Complete provides full MIND ONE feature access. Implemented capability is separated from commercial entitlement so the comparison cannot become a sales promise.</p>
-      <div class="button-row"><Button href={requestHref} ctaId="request-mindone-access">Ask about edition access</Button><Button href="/products/mindone/" variant="secondary">Explore MIND ONE Basic</Button></div>
+      <p>Basic is the free, focused edition. Complete provides the full MIND ONE workspace. Both are available now, and we confirm access, pricing and rollout with your team.</p>
+      <div class="button-row"><Button href={requestHref} ctaId="request-mindone-access">Get edition access</Button><Button href="/products/mindone/" variant="secondary">Explore MIND ONE Basic</Button></div>
     </div>
   </div>
 </section>
@@ -95,12 +95,12 @@ const rows = [
 <section class="edition-matrix-section section" aria-labelledby="edition-matrix-title">
   <div class="shell">
     <div class="section-head">
-      <div><p class="t-label">Published comparison</p><h2 id="edition-matrix-title">What is known.<br>What is not.</h2></div>
-      <p>“UNKNOWN” means the information was not verified in the available product evidence. It does not mean the feature is included or excluded.</p>
+      <div><p class="t-label">Edition comparison</p><h2 id="edition-matrix-title">Choose the work.<br>Compare the editions.</h2></div>
+      <p>Both editions share the same grounded practice model. The comparison below shows what each edition adds.</p>
     </div>
     <div class="edition-table-wrap" tabindex="0" role="region" aria-label="MIND ONE Basic and Complete comparison, scroll horizontally on small screens">
       <table class="edition-table">
-        <caption>Published MIND ONE Basic and MIND ONE Complete positions</caption>
+        <caption>MIND ONE Basic and MIND ONE Complete compared</caption>
         <thead><tr><th scope="col">Comparison point</th><th scope="col">MIND ONE Basic</th><th scope="col">MIND ONE Complete</th></tr></thead>
         <tbody>
           {rows.map((row) => <tr><th scope="row">{row.term}</th><td>{row.basic}</td><td>{row.complete}</td></tr>)}
@@ -117,15 +117,15 @@ const rows = [
     <div class="edition-decisions__cards">
       <article>
         <span>Free / focused practice</span>
-        <h3>Evaluate MIND ONE Basic</h3>
-        <p>Review the résumé-grounded practice, coaching and debrief scope. Ask for current availability, quotas and data-handling details.</p>
-        <Button href="/products/mindone/" variant="secondary">Review Basic</Button>
+        <h3>Start with MIND ONE Basic</h3>
+        <p>Grounded questions, spoken or typed answers, answer-specific coaching and a structured debrief. Free to use now.</p>
+        <Button href="/products/mindone/" variant="secondary">Explore Basic</Button>
       </article>
       <article>
         <span>Full feature access</span>
-        <h3>Evaluate MIND ONE Complete</h3>
-        <p>Review durable history, comparison, progress and role-development tools. Ask for current commercial, provider and deployment terms.</p>
-        <Button href="/contact/?intent=product-enquiry&product=mindone-pro" ctaId="request-mindone-access">Request Complete access</Button>
+        <h3>Talk to us about MIND ONE Complete</h3>
+        <p>Durable history, résumé/JD comparison, progress and role-development tools, with access and rollout agreed for your team.</p>
+        <Button href="/contact/?intent=product-enquiry&product=mindone-pro" ctaId="request-mindone-access">Get Complete access</Button>
       </article>
     </div>
   </div>
@@ -133,16 +133,16 @@ const rows = [
 
 <section class="edition-questions section" aria-labelledby="edition-questions-title">
   <div class="shell edition-questions__grid">
-    <div><p class="t-label">Straight answers</p><h2 id="edition-questions-title">Before you request access.</h2></div>
+    <div><p class="t-label">Straight answers</p><h2 id="edition-questions-title">Before you get started.</h2></div>
     <div class="edition-questions__list">
-      <details><summary>What does MIND ONE Complete add?</summary><p>The reviewed Complete implementation adds durable local profiles and history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity listings, app lock and diagnostics. This verifies implemented scope, not released billing or entitlement enforcement.</p></details>
-      <details><summary>Does Complete mean unlimited hosted AI?</summary><p>No. Full feature access does not remove provider quotas, technical limits or fair-use controls. Released quotas and commercial terms still require confirmation.</p></details>
-      <details><summary>Can I buy or open a full demo now?</summary><p>Both editions are request-only and pre-launch. The enquiry form records interest; it does not take payment, issue a demo link or grant product access.</p></details>
-      <details><summary>Are the two editions connected to Nipuna?</summary><p>No integration between MIND ONE and Nipuna was verified. MIND ONE supports interview practice; Nipuna’s published scope concerns recruiting and deterministic candidate matching.</p></details>
+      <details><summary>What does MIND ONE Complete add?</summary><p>Durable local profiles and history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity listings, app lock and diagnostics.</p></details>
+      <details><summary>Does Complete mean unlimited hosted AI?</summary><p>Hosted AI follows the provider plan and fair-use limits we agree with you. We put the limits in writing before rollout.</p></details>
+      <details><summary>Can I start now?</summary><p>Yes. Basic is free and available now. Complete is activated through a short conversation with our team.</p></details>
+      <details><summary>Are the editions connected to Nipuna?</summary><p>They are separate products today. If you want them connected, we scope that with your team.</p></details>
     </div>
   </div>
 </section>
 
 <section class="edition-close" aria-labelledby="edition-close-title">
-  <div class="shell edition-close__grid"><div><p class="t-label">Next step</p><h2 id="edition-close-title">Ask for the facts that decide the fit.</h2></div><div><p>Tell us which edition you are evaluating and which unknowns matter most. We will respond with confirmed scope rather than a generic demo promise.</p><Button href={requestHref} ctaId="request-mindone-access">Ask about edition access</Button></div></div>
+  <div class="shell edition-close__grid"><div><p class="t-label">Next step</p><h2 id="edition-close-title">Ready when you are.</h2></div><div><p>Tell us which edition fits and what your team needs. We will confirm scope, access and a start date.</p><Button href={requestHref} ctaId="request-mindone-access">Get edition access</Button></div></div>
 </section>

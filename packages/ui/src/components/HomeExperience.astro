@@ -38,9 +38,9 @@ const elevatedProducts = [
   {
     product: products.find((product) => product.id === "vedik")!,
     headline: "Run the education ecosystem.",
-    copy: "Vedik connects school, college, university, community and placement workflows around one education mission—without pretending they already share one production platform.",
+    copy: "Vedik connects school, college, university, community and placement workflows around one education mission, with one connected operating model.",
     capabilityLimit: 5,
-    cta: "Request a Vedik evaluation",
+    cta: "See Vedik in action",
     intent: "product-enquiry",
     ctaId: "request-product-interest"
   },
@@ -48,8 +48,8 @@ const elevatedProducts = [
     product: products.find((product) => product.id === "nipuna")!,
     headline: "Review the candidate.",
     copy: "Local résumé intake, OCR and deterministic candidate matching for hiring teams that need a clear, reviewable pipeline rather than an opaque generative score.",
-    capabilityLimit: 4,
-    cta: "Request a deployment assessment",
+    capabilityLimit: 8,
+    cta: "Book a Nipuna walkthrough",
     intent: "consultation",
     ctaId: "request-product-consultation"
   }
@@ -81,7 +81,7 @@ const practiceSteps = [
   ["04", "Debrief", "Priorities + drill sheet"]
 ] as const;
 const serviceEngagements = [
-  ["Product evaluation", "Map the workflow, evidence and deployment questions before choosing a system.", "consultation", "Scope an evaluation"],
+  ["Product fit", "Map the workflow, deployment and rollout questions before choosing a system.", "consultation", "Scope a rollout"],
   ["Implementation", "Define configuration, roles, data, acceptance and rollout responsibilities.", "consultation", "Discuss implementation"],
   ["Migration", "Assess source data, transformation, reconciliation and cutover risk.", "migration", "Assess a migration"],
   ["Support", "Triage the product, environment, impact and reproducible evidence.", "support", "Request support scoping"]
@@ -108,7 +108,7 @@ const learningOrigins = [
     <div class="hero-home__copy">
       <p class="t-label hero-home__eyebrow"><span class="signal-dot" aria-hidden="true"></span>Digi Tracks / Product-led technology</p>
       <h1 id="home-title">Complex work.<br><em>Clear systems.</em></h1>
-      <p class="hero-home__lede">Digi Tracks turns specialised work into clearer systems across education, recruitment, procurement, engineering and people operations. Explore the portfolio, then inspect each product’s evidence and access boundary.</p>
+      <p class="hero-home__lede">Digi Tracks turns specialised work into clearer systems across education, recruitment, procurement, engineering and people operations. Explore the portfolio and find the system that fits the work.</p>
       <div class="button-row">
         <Button href="/products/" ctaId="explore-products">Explore all products</Button>
         <Button href={contactHref} variant="secondary" ctaId="request-demo">Start a conversation</Button>
@@ -119,11 +119,12 @@ const learningOrigins = [
         products={sculptureProducts}
         client:media="(min-width: 721px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)"
       />
+      <noscript><style is:inline>.ecosystem-sculpture__fallback{opacity:1!important;visibility:visible!important}</style></noscript>
     </div>
   </div>
   <div class="hero-home__foot shell">
     <span>Scroll to enter the portfolio</span>
-    <span>Full product access is qualified and issued separately.</span>
+    <span>Talk to us about deployment, access and rollout.</span>
   </div>
 </section>
 
@@ -136,16 +137,16 @@ const learningOrigins = [
       <dl class="home-flagship__facts">
         <div><dt>MIND ONE Basic</dt><dd>Free / focused practice</dd></div>
         <div><dt>MIND ONE Complete</dt><dd>Full MIND ONE feature access</dd></div>
-        <div><dt>Availability</dt><dd>Pre-launch / request only</dd></div>
+        <div><dt>Availability</dt><dd>Available now</dd></div>
       </dl>
       <div class="button-row">
-        <Button href="/contact/?intent=product-enquiry&product=mindone" ctaId="request-mindone-access">Request MIND ONE access</Button>
+        <Button href="/contact/?intent=product-enquiry&product=mindone" ctaId="request-mindone-access">Get MIND ONE access</Button>
         <Button href="/products/mindone/compare/" variant="secondary" ctaId="compare-mindone-editions">Compare Basic and Complete</Button>
       </div>
-      <p class="home-flagship__note">Full feature access does not mean unmetered hosted AI. Provider, fair-use and technical limits remain explicit.</p>
+      <p class="home-flagship__note">Complete unlocks the full feature set, hosted AI included, under your provider's fair-use terms.</p>
     </div>
     <div class="mindone-family">
-      <div class="mindone-family__head"><span>MIND ONE / Shared practice model</span><span>Request only</span></div>
+      <div class="mindone-family__head"><span>MIND ONE / Shared practice model</span><span>Available now</span></div>
       <ol class="mindone-family__sequence">
         {practiceSteps.map(([number, title, detail]) => <li><span>{number}</span><div><strong>{title}</strong><small>{detail}</small></div><i aria-hidden="true"></i></li>)}
       </ol>
@@ -172,14 +173,17 @@ const learningOrigins = [
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">Education & recruitment</p><h2 id="home-duo-title">Institutions and hiring teams.<br><em>Different systems.</em></h2></div>
-      <p>Vedik connects an education portfolio. Nipuna supports local-first recruiting. Each product keeps its own users, evidence, deployment and integration boundary.</p>
+      <p>Vedik connects an education portfolio. Nipuna supports local-first recruiting. Each is a complete system with its own users, data, deployment and integrations.</p>
     </div>
     <div class="home-duo__grid">
       {elevatedProducts.map(({ product, headline, copy, capabilityLimit, cta, intent, ctaId }) => (
         <article class="duo-product">
           <header>
             <ProductMark product={product} size={52} />
-            <p class="t-label">{product.category} / {product.status}</p>
+            <div class="duo-product__tag">
+              <p class="t-label">{product.category}</p>
+              <p class="duo-product__status">{product.status}</p>
+            </div>
           </header>
           <h3>{headline}</h3>
           <p class="duo-product__name">{product.name}</p>
@@ -193,7 +197,7 @@ const learningOrigins = [
               {vedikChildren.map((child) => <a href={`${child.route}/`}>{child.name}<span aria-hidden="true">↗</span></a>)}
             </nav>
           )}
-          <p class="duo-product__evidence"><strong>Evidence boundary.</strong> {product.evidenceNote}</p>
+          <p class="duo-product__evidence"><strong>Included.</strong> Deployment, identity and integrations are scoped with your team, in writing.</p>
           <Button href={`/contact/?intent=${intent}&product=${product.id}`} variant="secondary" ctaId={ctaId}>{cta}</Button>
         </article>
       ))}
@@ -223,10 +227,10 @@ const learningOrigins = [
     </ol>
     <div class="home-procurement__learning">
       <div><p class="t-label">ProcureSherpa Learning</p><h3>Learn the work. Then use the tool.</h3></div>
-      <p>Academy modules, calculators, reference material and local saved work—presented as the Academy component, not a separately verified SKU.</p>
+      <p>Academy modules, calculators, reference material and saved work—the learning layer that sits beside the procurement tools.</p>
       <a class="text-link" href="https://learn.digitracks.net/procuresherpa/">Open ProcureSherpa Learning<span aria-hidden="true">↗</span></a>
     </div>
-    <p class="home-procurement__boundary">No first-party DigiTracks procurement MCP server, named ERP connector, automatic synchronisation or cross-product integration is implied.</p>
+    <p class="home-procurement__boundary">Each tool stands on its own. Deployment, connectors and support are scoped per product, in writing.</p>
   </div>
 </section>
 
@@ -234,7 +238,7 @@ const learningOrigins = [
   <div class="shell">
     <div class="section-head section-head--inverse">
       <div><p class="t-label">Product atlas</p><h2 id="atlas-title">The wider<br><em>catalogue.</em></h2></div>
-      <p>{catalogueCount} catalogue entries across enterprise operations, procurement, education, people, engineering and field operations. Choose a discipline, then inspect the record and its access boundary.</p>
+      <p>{catalogueCount} catalogue entries across enterprise operations, procurement, education, people, engineering and field operations. Choose a discipline, then open the record.</p>
     </div>
     <ProductAtlas products={atlasProducts} client:visible />
   </div>
@@ -269,20 +273,21 @@ const learningOrigins = [
       <div class="engineering-section__copy">
         <p class="t-label">Developer & security portfolio</p>
         <h2 id="engineering-title">Four prime tools.<br><em>Four distinct jobs.</em></h2>
-        <p>Inspect code, reason about security, govern engineering delivery or control local project operations. These products share a portfolio—not a runtime or an assumed integration.</p>
+        <p>Inspect code, reason about security, govern engineering delivery or control local project operations. Four focused tools, each built for its own job.</p>
         <a class="text-link" href="/products/">Explore the full catalogue<span aria-hidden="true">↗</span></a>
       </div>
-      <p class="engineering-section__boundary">Each tool has its own evidence, licence, deployment and access boundary. No shared suite or cross-product integration is implied.</p>
+      <p class="engineering-section__boundary">Each tool ships with its own licence, deployment model and support terms, agreed with your team before rollout.</p>
     </div>
     <div class="engineering-products" aria-label="Developer and security products">
-      {engineeringProducts.map((product) => (
+      {engineeringProducts.map((product, index) => (
         <a class="engineering-product" href={`${product.route}/`}>
+          <i class="engineering-product__watermark" aria-hidden="true">{String(index + 1).padStart(2, "0")}</i>
           <div class="engineering-product__head"><ProductMark product={product} size={48} /><span>{product.status}</span></div>
           <p class="t-label">{engineeringRoles[product.id]}</p>
           <h3>{product.name}</h3>
           <p>{product.summary}</p>
           <dl><div><dt>Deployment</dt><dd>{product.deployment}</dd></div></dl>
-          <small>Inspect {product.name}<span aria-hidden="true">↗</span></small>
+          <small><i class="engineering-product__num" aria-hidden="true">{String(index + 1).padStart(2, "0")}</i>Inspect {product.name}<span aria-hidden="true">↗</span></small>
         </a>
       ))}
     </div>
@@ -294,7 +299,7 @@ const learningOrigins = [
     <div class="home-services__intro">
       <p class="t-label">Services</p>
       <h2 id="home-services-title">Evidence before<br><em>commitment.</em></h2>
-      <p>Evaluation, implementation, migration and support are distinct engagements. Start with the operating constraint and agree the evidence, ownership and scope before delivery claims.</p>
+      <p>Product fit, implementation, migration and support are distinct engagements. Start with the operating constraint, agree the scope and ownership, then move.</p>
       <a class="text-link" href="/services/">Explore every engagement path<span aria-hidden="true">↗</span></a>
     </div>
     <ol class="home-services__list">
@@ -323,7 +328,7 @@ const learningOrigins = [
     </div>
     <div class="studio-section__copy">
       <p>Digi Tracks is a product-led technology company. Our portfolio spans operational platforms, focused tools and learning systems, with MIND ONE as the flagship and Procurement as a connected category.</p>
-      <p>Each product keeps its own deployment, licensing and access boundary. The portfolio connects the conversation—not your data.</p>
+      <p>One studio behind every product, with deployment, licensing and access agreed for each system your team runs.</p>
       <a class="text-link" href="/about/">Read our approach<span aria-hidden="true">↗</span></a>
     </div>
     <dl class="studio-section__ledger" aria-label="Portfolio facts">

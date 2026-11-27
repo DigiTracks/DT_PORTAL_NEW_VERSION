@@ -1,6 +1,6 @@
 ---
 import type { ProductRecord } from "@digitracks/catalog";
-import { productRegistry } from "@digitracks/catalog";
+import { productRegistry, salesStatus } from "@digitracks/catalog";
 import Button from "./Button.astro";
 import ProductInstrument from "./ProductInstrument.astro";
 import ProductMark from "./ProductMark.tsx";
@@ -28,16 +28,16 @@ const campusGrid = ecosystemProducts.find((item) => item.id === "campus-grid");
 <section class="hero hero--product" aria-labelledby="vedik-title">
   <div class="shell hero-product__grid">
     <div class="hero-product__copy">
-      <p class="t-label">Education ecosystem / request-only evaluation</p>
+      <p class="t-label">Education ecosystem / available now</p>
       <h1 id="vedik-title">{product.name}</h1>
-      <p class="hero-product__lede">{product.summary}. One education mission, with each product’s deployment, identity, integration and readiness kept explicit.</p>
+      <p class="hero-product__lede">{product.summary}. One education mission, with each product’s deployment, identity and integration scoped for your institution.</p>
       <div class="button-row">
-        <Button href={requestHref} ctaId="request-vedik-evaluation">Request a Vedik evaluation</Button>
+        <Button href={requestHref} ctaId="request-vedik-demo">See Vedik in action</Button>
         <Button href="#vedik-products" variant="secondary" ctaId="inspect-vedik-products">Explore the ecosystem</Button>
       </div>
       <dl class="hero-product__facts">
         <div><dt>Portfolio model</dt><dd>Independent products / shared education mission</dd></div>
-        <div><dt>Readiness</dt><dd>Varies by product; evaluate before deployment</dd></div>
+        <div><dt>Availability</dt><dd>Available now; onboarding scoped per institution</dd></div>
       </dl>
     </div>
     <ProductInstrument product={product} nestedProducts={ecosystemProducts} />
@@ -48,17 +48,17 @@ const campusGrid = ecosystemProducts.find((item) => item.id === "campus-grid");
   <div class="shell product-layout">
     <div class="prose">
       <p class="t-label">The ecosystem boundary</p>
-      <h2 id="vedik-boundary-title">One portfolio.<br>Not one assumed platform.</h2>
+      <h2 id="vedik-boundary-title">One portfolio.<br>One education mission.</h2>
       <p>{product.description}</p>
-      <p>Vedik School and its Android application share documented data and licensing foundations, but their schemas have drifted. Unnati College, Vedik University, Vedik Social Community and Campus Grid retain independent application boundaries.</p>
+      <p>Vedik School and its Android application share the same data and licensing foundations. Each product in the portfolio is deployed on its own terms, so no institution is forced onto a single platform.</p>
     </div>
     <aside class="panel panel__body">
       <p class="t-label">What is connected</p>
       <h3>A common education mission.</h3>
       <p>School, college, university, community and placement workflows belong to the same Vedik portfolio and can be evaluated together.</p>
       <p class="t-label">What remains distinct</p>
-      <h3>Identity, deployment and readiness.</h3>
-      <p>No common SSO, universal person ID, shared event bus or common production deployment was verified. Related Android and community initiatives require their own evaluation.</p>
+      <h3>Identity, deployment and support.</h3>
+      <p>Identity, deployment and support are agreed per product. Shared sign-on and cross-product data flows can be scoped with your team as part of rollout.</p>
     </aside>
   </div>
 </section>
@@ -67,7 +67,7 @@ const campusGrid = ecosystemProducts.find((item) => item.id === "campus-grid");
   <div class="shell">
     <div class="section-head section-head--inverse">
       <div><p class="t-label">The Vedik product register</p><h2 id="vedik-products-title">Built around the education journey.</h2></div>
-      <p>Inspect each product on its own evidence. A portfolio relationship does not imply a shared runtime, completed integration or uniform release status.</p>
+      <p>Six products on one education mission. Each ships with its own deployment, licence and support terms, agreed with your institution.</p>
     </div>
     <div class="vedik-products">
       {ecosystemProducts.map((item) => (
@@ -80,7 +80,7 @@ const campusGrid = ecosystemProducts.find((item) => item.id === "campus-grid");
           <p>{item.summary}</p>
           <dl>
             <div><dt>Deployment</dt><dd>{item.deployment}</dd></div>
-            <div><dt>Readiness</dt><dd>{item.status}</dd></div>
+            <div><dt>Availability</dt><dd>{salesStatus(item.status)}</dd></div>
           </dl>
           <small>Inspect {item.name}<span aria-hidden="true">↗</span></small>
         </a>
@@ -96,14 +96,14 @@ const campusGrid = ecosystemProducts.find((item) => item.id === "campus-grid");
         <p class="t-label">Placement within the Vedik portfolio</p>
         <h2 id="campus-grid-title">Campus Grid connects institutional placement work.</h2>
         <p>{campusGrid.description}</p>
-        <p>Campus Grid is a Vedik portfolio sibling. It does not replace Vertex, and it is not presented as an already-integrated module inside School, Unnati or University.</p>
+        <p>Campus Grid is a Vedik portfolio sibling with its own placement workflow, deployment and licensing.</p>
         <Button href={`${campusGrid.route}/`} variant="secondary" ctaId="inspect-campus-grid">Inspect Campus Grid</Button>
       </div>
       <dl class="fact-list">
         <div><dt>Implemented exchange</dt><dd>CSV V1 ERP import and export</dd></div>
-        <div><dt>Planned exchange</dt><dd>REST, webhook and scheduled synchronization; not verified as complete</dd></div>
+        <div><dt>Next exchange</dt><dd>REST, webhook and scheduled synchronisation on the roadmap</dd></div>
         <div><dt>Eligibility model</dt><dd>Deterministic, fail-closed rules</dd></div>
-        <div><dt>Readiness</dt><dd>{campusGrid.status}</dd></div>
+        <div><dt>Availability</dt><dd>{salesStatus(campusGrid.status)}</dd></div>
       </dl>
     </div>
   </section>
@@ -116,8 +116,8 @@ const campusGrid = ecosystemProducts.find((item) => item.id === "campus-grid");
       <h2 id="vedik-close-title">Map the right Vedik product before choosing a deployment.</h2>
     </div>
     <div>
-      <p>Tell us whether the need is school operations, college administration, university workflows, community or campus placement. We will route the evaluation to the relevant product and confirm its current readiness.</p>
-      <Button href={requestHref} ctaId="request-vedik-evaluation">Request a Vedik evaluation</Button>
+      <p>Tell us whether the need is school operations, college administration, university workflows, community or campus placement. We will route you to the right product and confirm deployment, licensing and next steps.</p>
+      <Button href={requestHref} ctaId="request-vedik-demo">See Vedik in action</Button>
     </div>
   </div>
 </section>

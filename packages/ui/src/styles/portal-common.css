@@ -488,6 +488,56 @@
   font-size: 0.8rem;
 }
 
+/* Panel surface follows the header theme so it stays legible on every origin. */
+.site-header .nav-menu__panel {
+  border-color: var(--header-border);
+  background: var(--header-panel);
+  box-shadow: 0 1.75rem 4.5rem rgb(10 20 40 / 18%);
+  color: var(--header-ink);
+}
+
+.site-header .nav-menu__panel::before {
+  border-color: var(--header-border);
+  background: var(--header-panel);
+}
+
+.site-header .nav-menu__intro {
+  border-right-color: var(--header-border);
+}
+
+.site-header .nav-menu__group + .nav-menu__group {
+  border-left-color: var(--header-border);
+}
+
+.site-header .nav-menu__group .t-label {
+  color: var(--header-muted);
+}
+
+.site-header .nav-menu__intro > p:not(.t-label) {
+  color: var(--header-muted);
+}
+
+.site-header .nav-menu__intro > a {
+  border-bottom-color: var(--header-accent);
+  color: var(--header-accent);
+}
+
+.site-header .nav-menu__group a {
+  display: grid;
+  border-bottom-color: color-mix(in srgb, var(--header-ink) 10%, transparent);
+  color: color-mix(in srgb, var(--header-ink) 82%, transparent);
+}
+
+.site-header .nav-menu__group a small {
+  color: var(--header-muted);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-header .nav-menu__group a:hover {
+    color: var(--header-accent);
+  }
+}
+
 .nav-menu--compact .nav-menu__panel {
   position: absolute;
   top: calc(100% + 1.35rem);

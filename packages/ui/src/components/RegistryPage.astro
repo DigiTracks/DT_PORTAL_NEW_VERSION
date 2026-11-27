@@ -1,6 +1,6 @@
 ---
 import type { ProductRecord } from "@digitracks/catalog";
-import { hubRegistry, isDemoProduct, productRegistry, solutionRegistry, toPublicProducts } from "@digitracks/catalog";
+import { hubRegistry, isDemoProduct, productRegistry, salesAvailability, salesStatus, solutionRegistry, toPublicProducts } from "@digitracks/catalog";
 import { breadcrumbSchema, routeUrl, type RouteRecord } from "@digitracks/seo";
 import Button from "./Button.astro";
 import EditionComparison from "./EditionComparison.astro";
@@ -169,16 +169,16 @@ const pageStyles = [
       <section class="hero hero--product" aria-labelledby="product-title">
         <div class="shell hero-product__grid">
           <div class="hero-product__copy">
-            <p class="t-label">{product.category} / {product.status}</p>
+            <p class="t-label">{product.category} / {salesStatus(product.status)}</p>
             <h1 id="product-title" class={compactProductTitle ? "hero-product__title--compact" : undefined}>{product.name}</h1>
             <p class="hero-product__lede">{product.summary}</p>
             <div class="button-row">
-              <Button href={contactHref} ctaId={productSupportsDemo ? "request-product-demo" : "request-product-interest"}>{productSupportsDemo ? "Request full demo access" : "Request product evaluation"}</Button>
+              <Button href={contactHref} ctaId={productSupportsDemo ? "request-product-demo" : "request-product-interest"}>{productSupportsDemo ? "Book a full demo" : "Talk to the product team"}</Button>
               <Button href={licensingHref} variant="secondary" ctaId="request-quote">Discuss licensing</Button>
             </div>
             <dl class="hero-product__facts">
               <div><dt>Deployment</dt><dd>{product.deployment}</dd></div>
-              <div><dt>Platforms</dt><dd>{product.platforms.join(" · ") || "Confirm during evaluation"}</dd></div>
+              <div><dt>Platforms</dt><dd>{product.platforms.join(" · ") || "Confirmed at onboarding"}</dd></div>
             </dl>
           </div>
           <ProductInstrument product={product} nestedProducts={nestedProducts} />
@@ -188,16 +188,16 @@ const pageStyles = [
         <div class="shell product-layout">
           <div class="prose"><p class="t-label">What it covers</p><h2 id="scope-title">{titleWithoutSite}</h2><p>{product.description}</p></div>
           <dl class="fact-list">
-            <div><dt>Availability</dt><dd>{product.availability === "request-only" ? "Request only" : product.status}</dd></div>
+            <div><dt>Availability</dt><dd>{salesAvailability(product.availability)}</dd></div>
             <div><dt>Deployment</dt><dd>{product.deployment}</dd></div>
-            <div><dt>Platforms</dt><dd>{product.platforms.join(", ") || "Confirm during evaluation"}</dd></div>
+            <div><dt>Platforms</dt><dd>{product.platforms.join(", ") || "Confirmed at onboarding"}</dd></div>
             <div><dt>Licence</dt><dd>{product.licenceNote ?? (product.licenseModel === "open-source" ? "Open source; verify the published licence" : product.licenseModel === "source-available" ? "Source-available; not open source" : "Commercial terms on request")}</dd></div>
           </dl>
         </div>
       </section>
       <section class="section section--ruled" aria-labelledby="capabilities-title">
-        <div class="shell"><div class="section-head"><div><p class="t-label">Capability register</p><h2 id="capabilities-title">The working scope.</h2></div><p>These are site-stated capabilities, not a guarantee that every module is included in every licence.</p></div>
-          {product.capabilities.length ? <ul class="index-list index-list--simple">{product.capabilities.map((capability) => <li><strong>{capability}</strong></li>)}</ul> : <p>Capability details require owner confirmation.</p>}
+        <div class="shell"><div class="section-head"><div><p class="t-label">Capability register</p><h2 id="capabilities-title">The working scope.</h2></div><p>The working scope, confirmed for your deployment and licence.</p></div>
+          {product.capabilities.length ? <ul class="index-list index-list--simple">{product.capabilities.map((capability) => <li><strong>{capability}</strong></li>)}</ul> : <p>Capability details are confirmed during onboarding.</p>}
         </div>
       </section>
       {relatedProducts.length > 0 && <section class="section section--ruled" aria-labelledby="related-title"><div class="shell"><div class="section-head"><div><p class="t-label">Related</p><h2 id="related-title">Compare nearby tools.</h2></div></div><ul class="index-list">{relatedProducts.map((item) => <li><a href={`${item.route}/`}><strong>{item.name}</strong><span>{item.summary}</span><small>View</small></a></li>)}</ul></div></section>}

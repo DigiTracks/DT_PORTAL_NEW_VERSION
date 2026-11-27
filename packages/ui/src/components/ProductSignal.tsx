@@ -116,7 +116,7 @@ export default function ProductSignal({ product, compact = false, labels = true,
 
       <div className="product-signal__caption" aria-hidden="true">
         <span>{product.id.toUpperCase()} / CAPABILITY MAP</span>
-        <span>CATALOGUE-DERIVED · NOT A SCREENSHOT</span>
+        <span>{capabilities.length} SELECTED CAPABILITIES</span>
       </div>
     </div>
   );

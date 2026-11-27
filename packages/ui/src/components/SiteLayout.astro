@@ -366,6 +366,14 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
           if (!menu.contains(event.target)) menu.open = false;
         });
       });
+      document.querySelectorAll<HTMLDetailsElement>(".site-header details").forEach((menu) => {
+        menu.addEventListener("toggle", () => {
+          if (!menu.open) return;
+          document.querySelectorAll<HTMLDetailsElement>(".site-header details[open]").forEach((other) => {
+            if (other !== menu) other.open = false;
+          });
+        });
+      });
     </script>
   </body>
 </html>

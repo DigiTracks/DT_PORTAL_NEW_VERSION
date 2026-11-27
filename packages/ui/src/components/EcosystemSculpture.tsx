@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { PublicProductRecord } from "@digitracks/catalog";
 import type {
   BufferGeometry,
@@ -20,20 +20,20 @@ import "../styles/sculpture.css";
 
 type ThreeModule = typeof import("three");
 type RoomEnvironmentConstructor = typeof import("three/addons/environments/RoomEnvironment.js").RoomEnvironment;
-type SculptureState = "ready" | "fallback";
+type SculptureState = "loading" | "ready" | "fallback";
 type SculptureProduct = Pick<PublicProductRecord, "id" | "name" | "category" | "logo">;
 
 interface ProductCard {
   group: Group;
   productIndex: number;
   homeY: number;
+  angle: number;
+  revealed: boolean;
   texture: CanvasTexture;
 }
 
 interface SculptureBuild {
   group: Group;
-  core: Group;
-  rings: Group[];
   cards: ProductCard[];
   geometries: Set<BufferGeometry>;
   materials: Set<Material>;
@@ -50,7 +50,7 @@ const CORAL = "#ff7657";
 const YELLOW = "#ffc857";
 const GREEN = "#79d6a2";
 const ASSEMBLY_SECONDS = 1.15;
-const TURN_SECONDS = 54;
+const TURN_SECONDS = 76;
 const TURN_SPEED = Math.PI * 2 / TURN_SECONDS;
 const CARD_WIDTH = 1.28;
 const CARD_HEIGHT = 1.6;
@@ -137,7 +137,7 @@ function drawPlaceholderMark(context: CanvasRenderingContext2D, product: Sculptu
   context.roundRect(x, y, size, size, 18);
   context.fill();
   context.fillStyle = "#10202d";
-  context.font = "700 58px Arial, sans-serif";
+  context.font = `700 ${Math.round(size * 0.34)}px Arial, sans-serif`;
   context.textAlign = "center";
   context.textBaseline = "middle";
   context.fillText(initials, x + size / 2, y + size / 2 + 2);
@@ -173,7 +173,7 @@ function drawCard(context: CanvasRenderingContext2D, product: SculptureProduct) 
 
   context.fillStyle = "#f7f8f3";
   context.beginPath();
-  context.roundRect(166, 120, 180, 180, 24);
+  context.roundRect(64, 92, 384, 384, 34);
   context.fill();
   context.strokeStyle = "rgba(16,32,45,0.16)";
   context.lineWidth = 2;
@@ -181,15 +181,39 @@ function drawCard(context: CanvasRenderingContext2D, product: SculptureProduct) 
   context.fillStyle = "rgba(252,251,248,0.35)";
   context.font = "500 18px Arial, sans-serif";
   context.textAlign = "left";
-  context.fillText("APPLICATION", 42, 494);
+  context.fillText("APPLICATION", 42, 518);
   context.fillStyle = WARM_WHITE;
-  context.font = "600 42px Arial, sans-serif";
-  const lines = wrapText(context, product.name, 428, 3);
-  lines.forEach((line, index) => context.fillText(line, 42, 548 + index * 46));
+  context.font = "600 40px Arial, sans-serif";
+  const lines = wrapText(context, product.name, 428, 2);
+  lines.forEach((line, index) => context.fillText(line, 42, 566 + index * 42));
   context.fillStyle = accent;
-  context.fillRect(42, 610, 74, 4);
+  context.fillRect(42, 624, 74, 4);
   context.fillStyle = "rgba(252,251,248,0.32)";
   context.fillRect(126, 610, 344, 1);
+}
+
+function drawCardBack(context: CanvasRenderingContext2D) {
+  const gradient = context.createLinearGradient(0, 0, 512, 640);
+  gradient.addColorStop(0, "#182742");
+  gradient.addColorStop(1, "#0b1526");
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, 512, 640);
+  context.strokeStyle = "rgba(243,207,101,0.26)";
+  context.lineWidth = 2;
+  context.strokeRect(20, 20, 472, 600);
+  context.fillStyle = "rgba(243,207,101,0.5)";
+  context.font = "italic 700 142px Georgia, serif";
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillText("DT", 256, 286);
+  context.fillStyle = "rgba(247,248,243,0.34)";
+  context.font = "600 21px Arial, sans-serif";
+  context.fillText("DIGI TRACKS", 256, 400);
+  context.fillStyle = "rgba(247,248,243,0.16)";
+  context.fillRect(196, 434, 120, 1);
+  context.fillStyle = "rgba(247,248,243,0.26)";
+  context.font = "500 17px Arial, sans-serif";
+  context.fillText("PRODUCT LEDGER", 256, 486);
 }
 
 function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct[]): SculptureBuild {
@@ -202,9 +226,8 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
     DoubleSide,
     Group,
     LinearFilter,
+    LinearMipmapLinearFilter,
     Line,
-    LineBasicMaterial,
-    LineSegments,
     Mesh,
     MeshBasicMaterial,
     MeshPhysicalMaterial,
@@ -229,10 +252,7 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
   };
 
   const group = new Group();
-  const core = new Group();
-  const rings: Group[] = [];
   const cards: ProductCard[] = [];
-  group.add(core);
 
   const darkMetal = ownMaterial(new MeshPhysicalMaterial({
     color: "#132630",
@@ -248,82 +268,27 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
     roughness: 0.24,
     clearcoat: 0.4,
   }));
-  const steelMaterial = ownMaterial(new MeshStandardMaterial({
-    color: STEEL,
-    metalness: 0.8,
-    roughness: 0.28,
-  }));
-  const cyanMaterial = ownMaterial(new MeshBasicMaterial({
-    color: CYAN,
-    transparent: true,
-    opacity: 0.62,
-    toneMapped: false,
-  }));
-  const blueMaterial = ownMaterial(new MeshBasicMaterial({
-    color: BLUE,
-    transparent: true,
-    opacity: 0.32,
-    toneMapped: false,
-    blending: AdditiveBlending,
-    depthWrite: false,
-    side: DoubleSide,
-  }));
-  const frameLineMaterial = ownMaterial(new LineBasicMaterial({
-    color: CYAN,
-    transparent: true,
-    opacity: 0.22,
-    toneMapped: false,
-  }));
-
   const cardGeometry = ownGeometry(new PlaneGeometry(CARD_WIDTH, CARD_HEIGHT));
   const frameGeometry = ownGeometry(new BoxGeometry(CARD_WIDTH + 0.11, CARD_HEIGHT + 0.11, 0.075));
-  const ringGeometry = ownGeometry(new TorusGeometry(ORBIT_RADIUS + 0.12, 0.018, 5, 112));
-  const outerRingGeometry = ownGeometry(new TorusGeometry(ORBIT_RADIUS + 0.48, 0.009, 4, 112));
-  const coreGeometry = ownGeometry(new CylinderGeometry(0.22, 0.34, 5.72, 6));
-  const coreChannelGeometry = ownGeometry(new CylinderGeometry(0.045, 0.045, 5.25, 6));
-  const hubGeometry = ownGeometry(new CylinderGeometry(0.62, 0.76, 0.17, 6));
-  const rodGeometry = ownGeometry(new CylinderGeometry(0.018, 0.018, 5.7, 5));
 
-  const coreMesh = new Mesh(coreGeometry, darkMetal);
-  const coreChannel = new Mesh(coreChannelGeometry, cyanMaterial);
-  core.add(coreMesh, coreChannel);
-  [-2.82, 2.82].forEach((y) => {
-    const hub = new Mesh(hubGeometry, midMetal);
-    hub.position.y = y;
-    core.add(hub);
-    const halo = new Mesh(ringGeometry, cyanMaterial);
-    halo.rotation.x = Math.PI / 2;
-    halo.scale.setScalar(0.2);
-    halo.position.y = y;
-    core.add(halo);
-  });
-  for (let index = 0; index < 6; index += 1) {
-    const angle = (index / 6) * Math.PI * 2;
-    const rod = new Mesh(rodGeometry, index % 2 === 0 ? steelMaterial : cyanMaterial);
-    rod.position.set(Math.cos(angle) * 0.43, 0, Math.sin(angle) * 0.43);
-    core.add(rod);
-  }
+  const backCanvas = document.createElement("canvas");
+  backCanvas.width = 512;
+  backCanvas.height = 640;
+  const backContext = backCanvas.getContext("2d");
+  if (backContext) drawCardBack(backContext);
+  const backTexture = new CanvasTexture(backCanvas);
+  backTexture.colorSpace = SRGBColorSpace;
+  backTexture.minFilter = LinearMipmapLinearFilter;
+  backTexture.generateMipmaps = true;
+  textures.add(backTexture);
+  const backMaterial = ownMaterial(new MeshBasicMaterial({ map: backTexture, toneMapped: false }));
 
   const tierCount = 3;
-  for (let tier = 0; tier < tierCount; tier += 1) {
-    const ringGroup = new Group();
-    const y = (tier - 1) * TIER_HEIGHT;
-    const ring = new Mesh(ringGeometry, tier === 1 ? cyanMaterial : blueMaterial);
-    ring.rotation.x = Math.PI / 2;
-    ring.position.y = y - CARD_HEIGHT / 2 - 0.18;
-    ringGroup.add(ring);
-    const outerRing = new Mesh(outerRingGeometry, blueMaterial);
-    outerRing.rotation.x = Math.PI / 2;
-    outerRing.position.y = y + CARD_HEIGHT / 2 + 0.2;
-    ringGroup.add(outerRing);
-    group.add(ringGroup);
-    rings.push(ringGroup);
-  }
-
-  products.forEach((product, productIndex) => {
+  const ringProducts = products.filter((product) => Boolean(product.logo));
+  ringProducts.forEach((product, productIndex) => {
     const tier = productIndex % tierCount;
     const slot = Math.floor(productIndex / tierCount);
-    const tierProducts = products.filter((_, index) => index % tierCount === tier);
+    const tierProducts = ringProducts.filter((_, index) => index % tierCount === tier);
     const angle = (slot / tierProducts.length) * Math.PI * 2 + tier * 0.19;
     const homeY = (tier - 1) * TIER_HEIGHT;
     const cardGroup = new Group();
@@ -339,8 +304,8 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
     drawCard(context, product);
     const texture = new CanvasTexture(canvas);
     texture.colorSpace = SRGBColorSpace;
-    texture.minFilter = LinearFilter;
-    texture.generateMipmaps = false;
+    texture.minFilter = LinearMipmapLinearFilter;
+    texture.generateMipmaps = true;
     textures.add(texture);
     const cardMaterial = ownMaterial(new MeshBasicMaterial({
       map: texture,
@@ -349,7 +314,10 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
     }));
     const face = new Mesh(cardGeometry, cardMaterial);
     face.position.z = 0.044;
-    cardGroup.add(frame, face);
+    const reverse = new Mesh(cardGeometry, backMaterial);
+    reverse.rotation.y = Math.PI;
+    reverse.position.z = -0.044;
+    cardGroup.add(frame, face, reverse);
 
     if (product.logo) {
       const image = new Image();
@@ -357,50 +325,28 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
       image.onload = () => {
         if (isDisposed) return;
         drawCard(context, product);
-        const size = 142;
+        const size = 332;
         context.save();
         context.beginPath();
-        context.roundRect(185, 139, size, size, 18);
+        context.roundRect(90, 118, size, size, 26);
         context.clip();
-        context.drawImage(image, 185, 139, size, size);
+        context.drawImage(image, 90, 118, size, size);
         context.restore();
         texture.needsUpdate = true;
       };
       image.src = product.logo;
       images.push(image);
     } else {
-      drawPlaceholderMark(context, product, 185, 139, 142);
+      drawPlaceholderMark(context, product, 90, 118, 332);
       texture.needsUpdate = true;
     }
 
     group.add(cardGroup);
-    cards.push({ group: cardGroup, productIndex, homeY, texture });
+    cards.push({ group: cardGroup, productIndex, homeY, angle, revealed: false, texture });
   });
-
-  const framePoints: number[] = [];
-  [-1, 1].forEach((xDirection) => {
-    [-1, 1].forEach((yDirection) => {
-      const x = xDirection * 4.35;
-      const y = yDirection * 3.15;
-      framePoints.push(x, y, -1.2, x - xDirection * 0.34, y, -1.2, x, y, -1.2, x, y - yDirection * 0.34, -1.2);
-    });
-  });
-  const registrationFrameGeometry = ownGeometry(new BufferGeometry());
-  registrationFrameGeometry.setAttribute("position", new THREE.Float32BufferAttribute(framePoints, 3));
-  group.add(new LineSegments(registrationFrameGeometry, frameLineMaterial));
-
-  const orbitCurve = new THREE.EllipseCurve(0, 0, 4.48, 1.38, 0, Math.PI * 2, false, 0);
-  const orbitPoints = orbitCurve.getPoints(120).map((point) => new Vector3(point.x, point.y, 0));
-  const orbitGeometry = ownGeometry(new BufferGeometry().setFromPoints(orbitPoints));
-  const orbit = new Line(orbitGeometry, frameLineMaterial);
-  orbit.rotation.x = 1.12;
-  orbit.rotation.z = -0.28;
-  group.add(orbit);
 
   return {
     group,
-    core,
-    rings,
     cards,
     geometries,
     materials,
@@ -420,45 +366,22 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
 }
 
 function applyAssembly(build: SculptureBuild, elapsed: number) {
-  const coreProgress = easeOut(elapsed / 0.9);
-  build.core.scale.setScalar(0.86 + coreProgress * 0.14);
-  build.core.position.y = -(1 - coreProgress) * 0.35;
-  build.rings.forEach((ring, index) => {
-    const progress = easeOut((elapsed - index * 0.08) / 0.8);
-    ring.scale.setScalar(0.9 + progress * 0.1);
-    ring.rotation.y = (1 - progress) * 0.16;
-  });
   build.cards.forEach((card, index) => {
     const local = clamp((elapsed - 0.06 - index * 0.012) / 0.72);
     const progress = easeOut(local);
-    card.group.visible = local > 0;
+    card.revealed = local > 0;
+    card.group.visible = card.revealed;
     card.group.position.y = card.homeY - (1 - progress) * 0.52;
     card.group.scale.setScalar(0.84 + progress * 0.16);
   });
 }
 
 function SculptureFallback({ products }: { products: readonly SculptureProduct[] }) {
-  const id = useId().replace(/:/g, "");
   const fallbackProducts = FALLBACK_PRODUCT_IDS
     .map((id) => products.find((product) => product.id === id))
     .filter((product): product is SculptureProduct => Boolean(product));
   return (
     <div className="ecosystem-sculpture__fallback" aria-hidden="true">
-      <svg className="ecosystem-sculpture__fallback-orbit" viewBox="0 0 800 800" focusable="false">
-        <defs>
-          <radialGradient id={`${id}-halo`}>
-            <stop offset="0" stopColor="#1c5260" stopOpacity="0.7" />
-            <stop offset="0.62" stopColor="#0b1b27" stopOpacity="0.16" />
-            <stop offset="1" stopColor="#09141e" stopOpacity="0" />
-          </radialGradient>
-        </defs>
-        <ellipse cx="400" cy="400" rx="350" ry="350" fill={`url(#${id}-halo)`} />
-        <ellipse cx="400" cy="400" rx="300" ry="300" fill="none" stroke={CYAN} strokeOpacity="0.28" />
-        <ellipse cx="400" cy="400" rx="238" ry="238" fill="none" stroke={BLUE} strokeOpacity="0.3" />
-        <ellipse cx="400" cy="400" rx="168" ry="168" fill="none" stroke={CYAN} strokeOpacity="0.22" />
-        <path d="M120 210h-28v28M680 210h28v28M120 590h-28v-28M680 590h28v-28" fill="none" stroke={STEEL} strokeOpacity="0.45" />
-      </svg>
-      <div className="ecosystem-sculpture__fallback-core"><span>DT</span><small>Product orbit</small></div>
       {fallbackProducts.map((product, index) => (
         <div className={`ecosystem-sculpture__fallback-card ecosystem-sculpture__fallback-card--${index + 1}`} key={product.id}>
           <ProductMark product={product} size={82} />
@@ -473,9 +396,7 @@ function SculptureFallback({ products }: { products: readonly SculptureProduct[]
 export default function EcosystemSculpture({ products, className }: EcosystemSculptureProps) {
   const rootRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
-  const [state, setState] = useState<SculptureState>("fallback");
-  const [activeProductIndex, setActiveProductIndex] = useState(0);
-  const activeProduct = products[activeProductIndex] ?? products[0];
+  const [state, setState] = useState<SculptureState>("loading");
 
   useEffect(() => {
     const root = rootRef.current;
@@ -511,7 +432,6 @@ export default function EcosystemSculpture({ products, className }: EcosystemScu
     let targetY = 0;
     let scene: Scene | null = null;
     let camera: PerspectiveCamera | null = null;
-    let activeIndex = 0;
     let runtimeThree: ThreeModule | null = null;
     let runtimeRoomEnvironment: RoomEnvironmentConstructor | null = null;
 
@@ -573,17 +493,13 @@ export default function EcosystemSculpture({ products, className }: EcosystemScu
           pointerY = springY.position;
           velocityX = springX.velocity;
           velocityY = springY.velocity;
-          const primaryCount = products.filter((_, index) => index % 3 === 0).length;
-          const step = Math.PI * 2 / primaryCount;
-          const slot = ((Math.round(-turntableAngle / step) % primaryCount) + primaryCount) % primaryCount;
-          const nextActiveIndex = slot * 3;
-          if (nextActiveIndex !== activeIndex) {
-            activeIndex = nextActiveIndex;
-            setActiveProductIndex(nextActiveIndex);
-          }
         }
 
         build.group.rotation.set(BASE_ROTATION.x + pointerX, BASE_ROTATION.y + turntableAngle + pointerY, BASE_ROTATION.z);
+        const spin = build.group.rotation.y;
+        build.cards.forEach((card) => {
+          card.group.visible = card.revealed;
+        });
         renderer.render(scene, camera);
         if (!reportedReady) {
           reportedReady = true;
@@ -622,16 +538,19 @@ export default function EcosystemSculpture({ products, className }: EcosystemScu
       if (!canvasVisible) {
         stopFrame();
         reportedReady = false;
-        setState("fallback");
         return;
       }
 
       const width = Math.max(1, Math.round(bounds.width));
       const height = Math.max(1, Math.round(bounds.height));
-      const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5, Math.sqrt(1_500_000 / (width * height)));
+      const pixelRatio = Math.min(Math.max(window.devicePixelRatio || 1, 1.5), 2, Math.sqrt(2_000_000 / (width * height)));
       renderer.setPixelRatio(pixelRatio);
       renderer.setSize(width, height, false);
       camera.aspect = width / height;
+      const vFov = (camera.fov * Math.PI) / 180;
+      const fitHeight = (TIER_HEIGHT + CARD_HEIGHT / 2 + 0.95) / Math.tan(vFov / 2);
+      const fitWidth = (ORBIT_RADIUS + CARD_WIDTH / 2 + 0.95) / (Math.tan(vFov / 2) * camera.aspect);
+      camera.position.z = Math.max(10.2, fitHeight, fitWidth) * 1.02;
       camera.updateProjectionMatrix();
       requestFrame(THREE, RoomEnvironment);
     };
@@ -668,7 +587,6 @@ export default function EcosystemSculpture({ products, className }: EcosystemScu
         velocityX = 0;
         velocityY = 0;
         applyAssembly(build, ASSEMBLY_SECONDS);
-        setActiveProductIndex(0);
       }
       requestFrame(THREE, RoomEnvironment);
     };
@@ -774,6 +692,11 @@ export default function EcosystemSculpture({ products, className }: EcosystemScu
         stage.appendChild(canvas);
 
         build = createSculpture(THREE, products);
+        const maxAnisotropy = renderer.capabilities.getMaxAnisotropy();
+        build.textures.forEach((texture) => {
+          texture.anisotropy = maxAnisotropy;
+          texture.needsUpdate = true;
+        });
         scene.add(build.group);
         scene.add(new HemisphereLight(WARM_WHITE, "#06101b", 1.55));
         const keyLight = new DirectionalLight(WARM_WHITE, 2.8);
@@ -788,6 +711,10 @@ export default function EcosystemSculpture({ products, className }: EcosystemScu
 
         applyAssembly(build, reducedMotion ? ASSEMBLY_SECONDS : 0);
         build.group.rotation.set(BASE_ROTATION.x, BASE_ROTATION.y, BASE_ROTATION.z);
+        const initialBuild = build;
+        initialBuild.cards.forEach((card) => {
+          card.group.visible = true;
+        });
 
         root.addEventListener("pointermove", handlePointerMove);
         root.addEventListener("pointerleave", handlePointerLeave);
@@ -837,11 +764,6 @@ export default function EcosystemSculpture({ products, className }: EcosystemScu
     >
       <SculptureFallback products={products} />
       <div ref={stageRef} className="ecosystem-sculpture__stage" aria-hidden="true" />
-      <div className="ecosystem-sculpture__readout" aria-hidden="true">
-        <span>{String(activeProductIndex + 1).padStart(2, "0")} / {String(products.length).padStart(2, "0")}</span>
-        <strong>{activeProduct?.name}</strong>
-        <small>{activeProduct?.category}</small>
-      </div>
     </div>
   );
 }

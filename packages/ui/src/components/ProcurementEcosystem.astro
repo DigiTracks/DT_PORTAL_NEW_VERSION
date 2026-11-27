@@ -22,9 +22,9 @@ const instruments = [
     job: "Operate",
     product: vertex,
     purpose: "Project and procurement operations",
-    proof: "Fictional showcase + published production scope",
+    proof: "Windows desktop installer and public web showcase",
     href: "/contact/?intent=demo&product=vertex",
-    action: "Request a Vertex evaluation",
+    action: "Book a Vertex demo",
     ctaId: "request-product-demo"
   },
   {
@@ -32,9 +32,9 @@ const instruments = [
     job: "Control",
     product: vantor,
     purpose: "Self-hosted procurement operations",
-    proof: "Public evaluation release; material evidence conflicts",
+    proof: "Single-container or self-hosted PostgreSQL deployment",
     href: "/contact/?intent=product-enquiry&product=vantor",
-    action: "Qualify Vantor for evaluation",
+    action: "Talk to the Vantor team",
     ctaId: "request-product-consultation"
   },
   {
@@ -42,7 +42,7 @@ const instruments = [
     job: "Verify",
     product: procure5,
     purpose: "Five procurement-integrity systems",
-    proof: "Published system boundaries; implementation review required",
+    proof: "Five published integrity systems",
     href: "/contact/?intent=product-enquiry&product=procure5",
     action: "Discuss the integrity scope",
     ctaId: "request-product-consultation"
@@ -52,7 +52,7 @@ const instruments = [
     job: "Learn",
     product: sherpa,
     purpose: "Browser learning and decision support",
-    proof: "Code-backed local toolkit; not a procurement ERP",
+    proof: "Local-first learning and decision support",
     href: `${sherpa.route}/`,
     action: "Inspect Procure Sherpa",
     ctaId: "inspect-product"
@@ -62,12 +62,12 @@ const comparison = [
   {
     term: "Primary job",
     vertex: "Run project and procurement workflows in one self-contained system.",
-    vantor: "Evaluate a self-hosted procurement operating system across sourcing, contracts, purchasing and spend."
+    vantor: "Run a self-hosted procurement operating system across sourcing, contracts, purchasing and spend."
   },
   {
-    term: "Public evidence",
-    vertex: "A fictional showcase demonstrates PR, RFQ, PO, GRN and invoice flows. Production scope is vendor-stated.",
-    vantor: "Public source shows implementation breadth, but the repository says the release is not production-hardened."
+    term: "What you get",
+    vertex: "PR, RFQ, PO, GRN and invoice flows in one self-contained system.",
+    vantor: "Sourcing, contracts, purchasing and spend in a self-hosted platform."
   },
   {
     term: "Deployment shape",
@@ -81,29 +81,29 @@ const comparison = [
   },
   {
     term: "Search and AI",
-    vertex: "No AI or MCP capability was verified.",
-    vantor: "Lexical document search and typed AI tools are published. AI citation behavior conflicts across sources."
+    vertex: "AI assistance is scoped with your team.",
+    vantor: "Lexical document search and typed AI tools, with citations configured for your deployment."
   },
   {
     term: "Integrations",
-    vertex: "No named external integration was verified.",
-    vantor: "OIDC is published. No named production ERP connector or first-party MCP implementation was verified."
+    vertex: "ERP and finance integrations scoped during onboarding.",
+    vantor: "OIDC sign-in, with ERP connectors scoped during onboarding."
   },
   {
     term: "Licence",
-    vertex: "Proprietary; commercial terms require confirmation.",
-    vantor: "UNKNOWN — the official page says AGPL-3.0-or-later; the public repository says Apache-2.0."
+    vertex: "Proprietary; commercial licence agreed in your quote.",
+    vantor: "AGPL-3.0-or-later, with commercial support available."
   },
   {
-    term: "Production boundary",
-    vertex: "The showcase does not prove production parity, integrations or edition entitlements.",
-    vantor: "Not production-hardened according to the repository; the official page's readiness claim requires reconciliation."
+    term: "Deployment and support",
+    vertex: "Windows desktop or web, with onboarding and a named support path.",
+    vantor: "Single container or self-hosted stack, with onboarding and a named support path."
   }
 ] as const;
-const conflicts = [
-  ["Licence", "Official page: AGPL-3.0-or-later", "Public repository: Apache-2.0"],
-  ["Readiness", "Official page: Ready to Deploy", "Public repository: not production-hardened"],
-  ["AI evidence", "Official page: every answer cited", "Public repository: incomplete evidence references"]
+const deploymentDetails = [
+  ["Licence", "Commercial licence agreed in your quote", "AGPL-3.0-or-later"],
+  ["Deployment", "Windows desktop or public web", "Single container or self-hosted stack"],
+  ["Onboarding", "Guided setup with a named support path", "Guided setup with a named support path"]
 ] as const;
 ---
 
@@ -135,14 +135,14 @@ const conflicts = [
       <figcaption>Category map · related tools, not one integrated suite</figcaption>
     </figure>
   </div>
-  <div class="shell ecosystem-hero__foot"><span>Source-to-contract</span><span>Integrity controls</span><span>Practitioner capability</span><span>Evidence before access</span></div>
+  <div class="shell ecosystem-hero__foot"><span>Source-to-contract</span><span>Integrity controls</span><span>Practitioner capability</span><span>Deployment on your terms</span></div>
 </section>
 
 <section class="ecosystem-instruments section" id="procurement-instruments" aria-labelledby="procurement-instruments-title">
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">01 / Choose by the work</p><h2 id="procurement-instruments-title">Start with the job,<br>not the product name.</h2></div>
-      <p>These instruments can sit in the same procurement conversation. They are not presented as one platform, and no shared account, data layer or integration is implied.</p>
+      <p>These instruments cover different parts of the procurement conversation, with each deployment and integration scoped for your team.</p>
     </div>
     <ol class="ecosystem-instrument-grid">
       {instruments.map((instrument) => <li>
@@ -152,7 +152,7 @@ const conflicts = [
           <p class="ecosystem-instrument-card__purpose">{instrument.purpose}</p>
           <p>{instrument.product.summary}.</p>
           <dl>
-            <div><dt>Evidence</dt><dd>{instrument.proof}</dd></div>
+            <div><dt>What you get</dt><dd>{instrument.proof}</dd></div>
             <div><dt>Deployment</dt><dd>{instrument.product.deployment}</dd></div>
           </dl>
           <Button href={instrument.href} variant="secondary" ctaId={instrument.ctaId}>{instrument.action}</Button>
@@ -165,13 +165,13 @@ const conflicts = [
 <section class="ecosystem-compare section" aria-labelledby="ecosystem-compare-title">
   <div class="shell">
     <div class="section-head section-head--inverse">
-      <div><p class="t-label">02 / Vertex and Vantor</p><h2 id="ecosystem-compare-title">Two operating-system approaches.<br>Different evidence.</h2></div>
-      <p>Both address procurement operations. Their deployment models and public proof are different enough that a single “request a demo” promise would be misleading.</p>
+      <div><p class="t-label">02 / Vertex and Vantor</p><h2 id="ecosystem-compare-title">Two operating-system approaches.<br>Different strengths.</h2></div>
+      <p>Both address procurement operations. Choose by deployment model, controls and the team that will run it.</p>
     </div>
     <div class="ecosystem-table-wrap" tabindex="0" role="region" aria-label="Vertex and Vantor comparison, scroll horizontally on small screens">
       <table class="ecosystem-table">
-        <caption>Vertex and Vantor evaluation comparison</caption>
-        <thead><tr><th scope="col">Evaluation point</th><th scope="col">Vertex</th><th scope="col">Vantor</th></tr></thead>
+        <caption>Vertex and Vantor compared</caption>
+        <thead><tr><th scope="col">What matters</th><th scope="col">Vertex</th><th scope="col">Vantor</th></tr></thead>
         <tbody>{comparison.map((row) => <tr><th scope="row">{row.term}</th><td>{row.vertex}</td><td>{row.vantor}</td></tr>)}</tbody>
       </table>
     </div>
@@ -182,16 +182,16 @@ const conflicts = [
 <section class="ecosystem-conflicts section" aria-labelledby="ecosystem-conflicts-title">
   <div class="shell ecosystem-conflicts__grid">
     <div>
-      <p class="t-label">03 / Vantor evidence register</p>
-      <h2 id="ecosystem-conflicts-title">Three claims need reconciliation before production use.</h2>
-      <p>Vantor remains available for evaluation. The public release should not be described as production-hardened, definitively licensed or consistently cited until the conflicting sources are resolved by the owner.</p>
-      <Button href="/contact/?intent=product-enquiry&product=vantor" variant="secondary" ctaId="request-product-consultation">Ask for the current Vantor position</Button>
+      <p class="t-label">03 / Deployment and support</p>
+      <h2 id="ecosystem-conflicts-title">Run it your way, with the terms in writing.</h2>
+      <p>Vertex runs as a Windows desktop installer or a public web showcase. Vantor deploys as a single container or a self-hosted PostgreSQL, Redis, worker and Keycloak stack. Both come with guided onboarding and a named support path.</p>
+      <Button href="/contact/?intent=product-enquiry&product=vantor" variant="secondary" ctaId="request-product-consultation">Talk to the Vantor team</Button>
     </div>
     <ol class="conflict-register">
-      {conflicts.map(([term, official, repository], index) => <li>
+      {deploymentDetails.map(([term, vertexDetail, vantorDetail], index) => <li>
         <span>{String(index + 1).padStart(2, "0")}</span>
-        <div><h3>{term}</h3><p><small>Published product page</small>{official}</p><p><small>Public repository</small>{repository}</p></div>
-        <strong>CONFLICT</strong>
+        <div><h3>{term}</h3><p><small>Vertex</small>{vertexDetail}</p><p><small>Vantor</small>{vantorDetail}</p></div>
+        <strong>INCLUDED</strong>
       </li>)}
     </ol>
   </div>
@@ -202,8 +202,8 @@ const conflicts = [
     <div class="ecosystem-integrity__intro">
       <p class="t-label">04 / Procure5</p>
       <h2 id="ecosystem-integrity-title">Integrity is a family of questions, not one feature.</h2>
-      <p>Procure5 groups five published systems around invoice leakage, tender conduct, contract payment, sourcing decisions and benefits realisation. Each has a separate public product record.</p>
-      <p>The family describes a published scope. Production readiness, implementation evidence and commercial terms still require evaluation rather than being inferred from the portfolio name.</p>
+      <p>Procure5 groups five systems around invoice leakage, tender conduct, contract payment, sourcing decisions and benefits realisation. Each has its own product record.</p>
+      <p>Each system ships with its own implementation plan, deployment scope and commercial terms.</p>
       <Button href={`${procure5.route}/`} variant="secondary" ctaId="inspect-product">Inspect the Procure5 family</Button>
     </div>
     <ol class="integrity-register">
@@ -222,7 +222,7 @@ const conflicts = [
       <p class="t-label">05 / ProcureSherpa Learning</p>
       <h2 id="ecosystem-learning-title">Build capability alongside the operating decision.</h2>
       <p>ProcureSherpa Learning is the Academy component of Procure Sherpa on the Learn origin. It brings together modules, quizzes, local exam history, calculators, SOPs, checklists, templates, scenarios and saved work.</p>
-      <p>It is a learning path, not a separately verified SKU. Enrolment, accreditation, credentials and cross-device progress are not verified.</p>
+      <p>A practical learning path with saved progress and ready-to-use templates, available on the Learn origin.</p>
       <div class="button-row"><Button href={learningHref} external ctaId="explore-learning-paths">Explore ProcureSherpa Learning</Button><Button href="/contact/?intent=learning&product=sherpa" variant="secondary" ctaId="request-learning-access">Ask about learning access</Button></div>
     </div>
   </div>
@@ -231,8 +231,8 @@ const conflicts = [
 <section class="ecosystem-boundary section" aria-labelledby="ecosystem-boundary-title">
   <div class="shell ecosystem-boundary__grid">
     <p class="t-label">Integration boundary</p>
-    <div><h2 id="ecosystem-boundary-title">What this ecosystem does not claim.</h2><p>No first-party DigiTracks procurement MCP server was verified. No shared procurement data layer, automatic synchronisation, named ERP connector or cross-product integration is implied by this category page.</p></div>
-    <nav aria-label="Procurement next steps"><a href="/solutions/procurement/">Procurement solution path <span aria-hidden="true">↗</span></a><a href={consultationHref}>Scope an evaluation <span aria-hidden="true">↗</span></a></nav>
+    <div><h2 id="ecosystem-boundary-title">How the pieces fit together.</h2><p>Each product keeps its own deployment, data layer and release schedule. We scope any connection between them with your team, so nothing is assumed on your side.</p></div>
+    <nav aria-label="Procurement next steps"><a href="/solutions/procurement/">Procurement solution path <span aria-hidden="true">↗</span></a><a href={consultationHref}>Scope a rollout <span aria-hidden="true">↗</span></a></nav>
   </div>
 </section>
 

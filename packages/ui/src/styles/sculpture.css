@@ -38,56 +38,21 @@
   transition: opacity 320ms cubic-bezier(0.23, 1, 0.32, 1), visibility 0s linear 320ms;
 }
 
-.ecosystem-sculpture[data-state="ready"] .ecosystem-sculpture__fallback {
+.ecosystem-sculpture[data-state="ready"] .ecosystem-sculpture__fallback,
+.ecosystem-sculpture[data-state="loading"] .ecosystem-sculpture__fallback {
   opacity: 0;
   visibility: hidden;
 }
 
-.ecosystem-sculpture__fallback-orbit {
-  position: absolute;
-  inset: 4%;
-  width: 92%;
-  height: 92%;
+@media (max-width: 720px), (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .ecosystem-sculpture[data-state="loading"] .ecosystem-sculpture__fallback {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
-.ecosystem-sculpture__fallback-core {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  display: grid;
-  width: clamp(4.5rem, 14%, 7rem);
-  aspect-ratio: 1;
-  place-content: center;
-  justify-items: center;
-  gap: 0.25rem;
-  border: 1px solid rgb(108 229 232 / 72%);
-  background: #10212e;
-  box-shadow: 0 0 0 0.6rem rgb(108 229 232 / 6%), 0 1.5rem 4rem rgb(0 0 0 / 24%);
-  color: #fcfbf8;
-  text-align: center;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.ecosystem-sculpture__fallback-core span,
-.ecosystem-sculpture__fallback-core small {
-  transform: rotate(-45deg);
-}
-
-.ecosystem-sculpture__fallback-core span {
-  font-family: var(--font-display);
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
-  font-weight: 550;
-  letter-spacing: -0.06em;
-  line-height: 1;
-}
-
-.ecosystem-sculpture__fallback-core small {
-  color: #9aa2ab;
-  font-family: var(--font-mono);
-  font-size: clamp(0.42rem, 0.8vw, 0.58rem);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.ecosystem-sculpture__canvas {
+  filter: drop-shadow(0 26px 42px rgb(23 63 122 / 16%));
 }
 
 .ecosystem-sculpture__fallback-card {
@@ -103,7 +68,7 @@
   padding: clamp(0.7rem, 1.6vw, 1.1rem);
   border: 1px solid rgb(16 32 45 / 22%);
   background: #fcfbf8;
-  box-shadow: 0 1.2rem 2.8rem rgb(0 0 0 / 24%);
+  box-shadow: 0 1.2rem 2.6rem rgb(23 63 122 / 16%);
   color: #10202d;
 }
 
@@ -191,49 +156,6 @@
   transform: rotate(6deg);
 }
 
-.ecosystem-sculpture__readout {
-  position: absolute;
-  bottom: 0.9rem;
-  left: 50%;
-  z-index: 3;
-  display: grid;
-  min-width: min(18rem, 60%);
-  justify-items: center;
-  gap: 0.1rem;
-  padding: 0.65rem 1rem;
-  border: 1px solid rgb(252 251 248 / 14%);
-  background: rgb(9 15 23 / 78%);
-  color: #fcfbf8;
-  text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateX(-50%);
-  transition: opacity 180ms ease;
-  backdrop-filter: blur(12px);
-}
-
-.ecosystem-sculpture[data-state="ready"] .ecosystem-sculpture__readout {
-  opacity: 1;
-}
-
-.ecosystem-sculpture__readout span,
-.ecosystem-sculpture__readout small {
-  color: #9aa2ab;
-  font-family: var(--font-mono);
-  font-size: 0.52rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.ecosystem-sculpture__readout strong {
-  max-width: 24ch;
-  font-family: var(--font-display);
-  font-size: 0.9rem;
-  font-weight: 550;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
-}
-
 @media (max-width: 720px) {
   .ecosystem-sculpture__canvas {
     display: none;
@@ -245,27 +167,70 @@
     transition: none;
   }
 
-  .ecosystem-sculpture__readout {
-    display: none;
+  .ecosystem-sculpture__fallback-card {
+    inset: auto;
+    width: clamp(4.6rem, 21.5%, 6rem);
+    aspect-ratio: 0.84;
+    gap: 0.3rem;
+    padding: 0.5rem;
   }
 
-  .ecosystem-sculpture__fallback-card {
-    width: 27%;
-    padding: 0.6rem;
+  .ecosystem-sculpture__fallback-card .product-mark {
+    width: 2.1rem;
+    height: 2.1rem;
   }
 
   .ecosystem-sculpture__fallback-card > span {
-    font-size: clamp(0.62rem, 2.6vw, 0.82rem);
+    font-size: clamp(0.6rem, 2.4vw, 0.76rem);
   }
 
   .ecosystem-sculpture__fallback-card > small {
-    font-size: 0.42rem;
+    display: none;
+  }
+
+  .ecosystem-sculpture__fallback-card--1 {
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-6deg);
+  }
+
+  .ecosystem-sculpture__fallback-card--2 {
+    top: 34%;
+    left: 80%;
+    transform: translate(-50%, -50%) rotate(5deg);
+  }
+
+  .ecosystem-sculpture__fallback-card--3 {
+    top: 66%;
+    left: 80%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+
+  .ecosystem-sculpture__fallback-card--4 {
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(4deg);
+  }
+
+  .ecosystem-sculpture__fallback-card--5 {
+    top: 66%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+
+  .ecosystem-sculpture__fallback-card--6 {
+    top: 34%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotate(6deg);
+  }
+
+  .ecosystem-sculpture__fallback-card--7 {
+    display: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ecosystem-sculpture__fallback,
-  .ecosystem-sculpture__readout {
+  .ecosystem-sculpture__fallback {
     transition: none;
   }
 }
