@@ -2,6 +2,7 @@
 import type { RouteRecord } from "@digitracks/seo";
 import Button from "./Button.astro";
 import ProcurementLearning from "./ProcurementLearning.astro";
+import LearningPlatform from "./LearningPlatform.astro";
 
 interface Props {
   route: RouteRecord;
@@ -60,6 +61,7 @@ const platforms: Record<string, { label: string; href: string; access: string; b
 };
 
 const platform = platforms[route.path];
+const differentiated = new Set(["/sourcecraft/", "/learnpmo/", "/procuresherpa/", "/hcmfusion/"]);
 const contactHref = `https://digitracks.net/contact/?intent=consultation&origin=${route.origin}&route=${encodeURIComponent(route.path)}`;
 ---
 
@@ -80,6 +82,8 @@ const contactHref = `https://digitracks.net/contact/?intent=consultation&origin=
     </div>
   </div>
 </section>
+) : platform && differentiated.has(route.path) ? (
+<LearningPlatform route={route} />
 ) : platform ? (
 <section class="learning-entry learning-entry--platform" aria-labelledby="learning-entry-title">
   <div class="shell learning-entry__hero">

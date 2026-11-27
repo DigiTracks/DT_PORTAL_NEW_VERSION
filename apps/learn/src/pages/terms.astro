@@ -1,0 +1,25 @@
+---
+import LegalPage from "@digitracks/ui/components/LegalPage.astro";
+import OriginLayout from "@digitracks/ui/components/OriginLayout.astro";
+import type { RouteRecord } from "@digitracks/seo";
+
+const route = {
+  path: "/terms/",
+  title: "Terms of Use | Learn",
+  description: "Terms of Use for the Digi Tracks learning platforms.",
+  origin: "learn",
+  breadcrumbs: [{ label: "Home", path: "/" }, { label: "Terms of Use", path: "/terms/" }],
+  canonicalOrigin: "https://learn.digitracks.net",
+  indexable: true
+} as unknown as RouteRecord;
+const navItems = [
+  { label: "Learning paths", href: "/#learning-paths" },
+  { label: "SourceCraft", href: "https://sourcecraft.digitracks.net/" },
+  { label: "LearnPMO", href: "https://learnpmo.digitracks.net/" },
+  { label: "HCM Fusion", href: "https://hcmfusion.digitracks.net/" }
+];
+---
+
+<OriginLayout route={route} brandSuffix="Learn" navItems={navItems} requestLabel="Talk to the studio" bodyClass="page-learning-entry">
+  <LegalPage route={route} />
+</OriginLayout>

@@ -1959,7 +1959,7 @@ export const catalogData = {
     {
       "id": "field-operations",
       "name": "Projects, Sites & Logistics",
-      "summary": "Project, site, fleet, route, driver and freight operations. Construction and Transportation remain available for focused evaluation.",
+      "summary": "Project, site, fleet, route, driver and freight operations. Construction and Transportation are self-hosted tools for site and fleet teams.",
       "toolIds": [
         "construction",
         "transportation"

@@ -13,3 +13,6 @@ playwright-report-*/
 .tools/
 .artifacts/
 apps/*/public/generated/
+
+.probe.mjs
+.audit*.mjs

@@ -493,7 +493,7 @@ const solutions = [
 
 const hubs = [
   { id: "developer-tools", name: "Developer & Security Tools", summary: "Four independent tools for code intelligence, security reasoning, project operations and evidence-backed engineering delivery.", toolIds: ["orion", "orion-hunter", "opspilot", "recon"] },
-  { id: "field-operations", name: "Projects, Sites & Logistics", summary: "Project, site, fleet, route, driver and freight operations. Construction and Transportation remain available for focused evaluation.", toolIds: ["construction", "transportation"] }
+  { id: "field-operations", name: "Projects, Sites & Logistics", summary: "Project, site, fleet, route, driver and freight operations. Construction and Transportation are self-hosted tools for site and fleet teams.", toolIds: ["construction", "transportation"] }
 ];
 
 writeTs("packages/catalog/src/catalog.generated.ts", "catalogData", { products, solutions, hubs });
