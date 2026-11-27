@@ -1,4 +1,5 @@
 import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type FormEvent } from "react";
+import { keepsIdempotencyKey, payloadFingerprint, resolveIdempotencyState, type IdempotencyState } from "../lib/idempotency";
 import { resolveLeadEndpoint } from "../lib/analytics";
 
 declare global {
@@ -211,6 +212,8 @@ export default function LeadForm({ products, initialIntent = "consultation", ini
   const turnstileContainerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<string | undefined>(undefined);
   const pendingRef = useRef(false);
+  // Reused only while a retry repeats the same payload after an ambiguous outcome (network error, timeout, 409, 5xx).
+  const idempotencyRef = useRef<IdempotencyState | null>(null);
   const [fields, setFields] = useState<LeadFields>(() => ({
     intent: initialIntent,
     name: "",
@@ -422,6 +425,9 @@ export default function LeadForm({ products, initialIntent = "consultation", ini
       turnstileToken,
     };
 
+    idempotencyRef.current = resolveIdempotencyState(idempotencyRef.current, payloadFingerprint(payload));
+    const idempotencyKey = idempotencyRef.current.key;
+
     const controller = new AbortController();
     const timeoutId = window.setTimeout(() => controller.abort(), 15_000);
     pendingRef.current = true;
@@ -435,7 +441,7 @@ export default function LeadForm({ products, initialIntent = "consultation", ini
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Idempotency-Key": crypto.randomUUID(),
+          "Idempotency-Key": idempotencyKey,
         },
         body: JSON.stringify(payload),
         credentials: "omit",
@@ -445,6 +451,7 @@ export default function LeadForm({ products, initialIntent = "consultation", ini
         signal: controller.signal,
       });
       const data = await readResponseJson(response);
+      if (!keepsIdempotencyKey(response.status)) idempotencyRef.current = null;
 
       if (response.status === 202 && data?.status === "received") {
         const receipt = typeof data.receiptId === "string" && data.receiptId.trim() ? data.receiptId : undefined;

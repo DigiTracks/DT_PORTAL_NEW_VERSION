@@ -64,7 +64,7 @@ const headerCtaId =
 
 const isPortal = originId === "portal";
 const headerOnDark = originId === "procuresherpa";
-const footerOnDark = originId === "learn" || originId === "procuresherpa" || originId === "learnpmo" || originId === "hcmfusion";
+const footerOnDark = originId === "portal" || originId === "learn" || originId === "procuresherpa" || originId === "learnpmo" || originId === "hcmfusion";
 const themeColors: Record<string, string> = {
   portal: "#f6efdc",
   learn: "#fffaf0",
@@ -394,12 +394,16 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
         </div>
       </div>
       <div class="shell site-footer__legal">
-        <span>© 2026 Digi Tracks</span>
-        <span>Network</span>
-        {estateLinks.filter((item) => item.label !== "Portal").map((item) => <a href={item.href}>{item.label}</a>)}
-        <a href="https://digitracks.net/privacy/">Privacy</a>
-        <a href="https://digitracks.net/terms/">Terms</a>
-        <a href="https://digitracks.net/trust/">Trust</a>
+        <span class="site-footer__copy">© 2026 Digi Tracks</span>
+        <nav class="site-footer__network" aria-label="Digi Tracks network">
+          <span class="t-label">Network</span>
+          {estateLinks.filter((item) => item.label !== "Portal").map((item) => <a href={item.href}>{item.label}</a>)}
+        </nav>
+        <nav class="site-footer__policies" aria-label="Legal">
+          <a href="https://digitracks.net/privacy/">Privacy</a>
+          <a href="https://digitracks.net/terms/">Terms</a>
+          <a href="https://digitracks.net/trust/">Trust</a>
+        </nav>
         <a class="site-footer__top-link" href="#top">Back to top<span aria-hidden="true">↑</span></a>
       </div>
     </footer>

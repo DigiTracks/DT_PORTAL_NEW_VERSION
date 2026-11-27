@@ -44,11 +44,11 @@ interface SculptureBuild {
 
 const WARM_WHITE = "#fcfbf8";
 const STEEL = "#9aa2ab";
-const CYAN = "#6ce5e8";
-const BLUE = "#477bff";
-const CORAL = "#ff7657";
-const YELLOW = "#ffc857";
-const GREEN = "#79d6a2";
+const CYAN = "#5be7ff";
+const BLUE = "#6d6bff";
+const CORAL = "#ff7a59";
+const YELLOW = "#ffc53d";
+const GREEN = "#4fe3b0";
 const ASSEMBLY_SECONDS = 1.15;
 const TURN_SECONDS = 76;
 const TURN_SPEED = Math.PI * 2 / TURN_SECONDS;
@@ -234,6 +234,8 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
     MeshStandardMaterial,
     PlaneGeometry,
     SRGBColorSpace,
+    Sprite,
+    SpriteMaterial,
     TorusGeometry,
     Vector3,
   } = THREE;
@@ -344,6 +346,45 @@ function createSculpture(THREE: ThreeModule, products: readonly SculptureProduct
     group.add(cardGroup);
     cards.push({ group: cardGroup, productIndex, homeY, angle, revealed: false, texture });
   });
+
+  // Luminous orbit rings and a soft halo give the sculpture depth against the dark hero.
+  const haloCanvas = document.createElement("canvas");
+  haloCanvas.width = 256;
+  haloCanvas.height = 256;
+  const haloContext = haloCanvas.getContext("2d");
+  if (haloContext) {
+    const gradient = haloContext.createRadialGradient(128, 128, 0, 128, 128, 128);
+    gradient.addColorStop(0, "rgba(91,231,255,0.5)");
+    gradient.addColorStop(0.42, "rgba(143,123,255,0.16)");
+    gradient.addColorStop(1, "rgba(143,123,255,0)");
+    haloContext.fillStyle = gradient;
+    haloContext.fillRect(0, 0, 256, 256);
+  }
+  const haloTexture = new CanvasTexture(haloCanvas);
+  textures.add(haloTexture);
+  const halo = new Sprite(ownMaterial(new SpriteMaterial({
+    map: haloTexture,
+    transparent: true,
+    depthWrite: false,
+    blending: AdditiveBlending,
+  })));
+  halo.scale.set(11, 11, 1);
+  group.add(halo);
+
+  const ringGeometry = ownGeometry(new TorusGeometry(ORBIT_RADIUS, 0.012, 6, 256));
+  const ringMaterials = [CYAN, BLUE, CYAN].map((color) => ownMaterial(new MeshBasicMaterial({
+    color,
+    transparent: true,
+    opacity: 0.38,
+    blending: AdditiveBlending,
+    depthWrite: false,
+  })));
+  for (let tier = 0; tier < tierCount; tier += 1) {
+    const ring = new Mesh(ringGeometry, ringMaterials[tier]);
+    ring.rotation.x = Math.PI / 2;
+    ring.position.y = (tier - 1) * TIER_HEIGHT;
+    group.add(ring);
+  }
 
   return {
     group,

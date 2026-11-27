@@ -1,4 +1,4 @@
-const CACHE = "sourcecraft-shell-v2";
+const CACHE = "sourcecraft-shell-v3";
 const SHELL = ["/", "/explore/", "/data/library.json", "/manifest.webmanifest"];
 
 export function GET() {
@@ -24,8 +24,18 @@ self.addEventListener("fetch", (event) => {
     }).catch(() => caches.match(request).then((cached) => cached || caches.match("/"))));
     return;
   }
+  if (url.pathname === "/data/library.json") {
+    event.respondWith(fetch(request).then((response) => {
+      if (response.ok) {
+        const copy = response.clone();
+        caches.open(CACHE).then((cache) => cache.put(request, copy));
+      }
+      return response;
+    }).catch(() => caches.match(request)));
+    return;
+  }
   event.respondWith(caches.match(request).then((cached) => cached || fetch(request).then((response) => {
-    if (response.ok && (url.pathname.startsWith("/_astro/") || url.pathname === "/data/library.json")) {
+    if (response.ok && url.pathname.startsWith("/_astro/")) {
       const copy = response.clone();
       caches.open(CACHE).then((cache) => cache.put(request, copy));
     }

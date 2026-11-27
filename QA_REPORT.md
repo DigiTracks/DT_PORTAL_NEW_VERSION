@@ -106,7 +106,7 @@ The following table records the current local gate results. The final build, byt
 | Root unit tests | 28/28 passed across four files |
 | Lead API tests | 104/104 passed across seven files |
 | Worker production dry-run build | Pass |
-| Six public production builds | Pass; 869 HTML files |
+| Six public production builds | Pass; 869 HTML files at the last verify-estate run. A later local build of `apps/*/dist` emits 872 HTML files (portal 63, sourcecraft 142, hcmfusion 626, learnpmo 30, learn 9, procuresherpa 2); re-run `pnpm verify:estate` to refresh the verified count |
 | Security-header generation | Pass; six `_headers` files with exact inline-script hashes |
 | Byte budgets | Pass; no failures |
 | Estate verification | Pass; 2,330 routes, 86 indexable pages, 893 redirects, 130 governed assets |
