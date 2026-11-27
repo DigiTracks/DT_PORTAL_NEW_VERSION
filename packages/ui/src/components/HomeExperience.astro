@@ -1,10 +1,8 @@
 ---
-import { productRegistry, solutionRegistry, toPublicProducts, type PublicProductRecord } from "@digitracks/catalog";
+import { productRegistry, toPublicProducts, type PublicProductRecord } from "@digitracks/catalog";
 import { routeRegistry } from "@digitracks/seo";
 import Button from "./Button.astro";
 import EcosystemSculpture from "./EcosystemSculpture.tsx";
-import Icon from "./Icon";
-import ProductAtlas from "./ProductAtlas.tsx";
 import ProductMark from "./ProductMark";
 
 interface Props {
@@ -14,19 +12,6 @@ interface Props {
 const { contactHref } = Astro.props;
 const products = toPublicProducts(productRegistry);
 const sculptureProducts = products.map(({ id, name, category, logo }) => ({ id, name, category, logo }));
-const atlasProducts = products.map(({ id, name, summary, category, capabilities, platforms, deployment, status, route, logo, installCommand }) => ({
-  id,
-  name,
-  summary,
-  category,
-  capabilities: capabilities.slice(0, 4),
-  platforms,
-  deployment,
-  status,
-  route,
-  logo,
-  installCommand
-}));
 const catalogueCount = products.length;
 const publicOriginCount = new Set(routeRegistry.map((route) => route.origin)).size;
 const mindone = products.find((product) => product.id === "mindone")!;
@@ -64,36 +49,12 @@ const procurementProductIds = ["vertex", "vantor", "procure5", "sherpa"];
 const procurementProducts = procurementProductIds
   .map((id) => products.find((product) => product.id === id))
   .filter((product): product is PublicProductRecord => Boolean(product));
-const engineeringRoles: Record<string, string> = {
-  orion: "Code intelligence",
-  "orion-hunter": "Security reasoning",
-  recon: "Engineering delivery",
-  opspilot: "Project operations"
-};
-const engineeringProductIds = ["orion", "orion-hunter", "recon", "opspilot"];
-const engineeringProducts = engineeringProductIds
-  .map((id) => products.find((product) => product.id === id))
-  .filter((product): product is PublicProductRecord => Boolean(product));
 const practiceSteps = [
   ["01", "Ground", "Résumé + role brief"],
   ["02", "Respond", "Speak or type"],
   ["03", "Coach", "Answer-specific guidance"],
   ["04", "Debrief", "Priorities + drill sheet"]
 ] as const;
-const serviceEngagements = [
-  ["Product fit", "Map the workflow, deployment and rollout questions before choosing a system.", "consultation", "Scope a rollout"],
-  ["Implementation", "Define configuration, roles, data, acceptance and rollout responsibilities.", "consultation", "Discuss implementation"],
-  ["Migration", "Assess source data, transformation, reconciliation and cutover risk.", "migration", "Assess a migration"],
-  ["Support", "Triage the product, environment, impact and reproducible evidence.", "support", "Request support scoping"]
-] as const;
-const solutionIcons = {
-  education: "education",
-  healthcare: "health",
-  "beauty-wellness": "sparkle",
-  "business-operations": "building",
-  procurement: "flow",
-  recruitment: "users"
-} as const;
 ---
 
 <section class="hero hero--home" data-enter aria-labelledby="home-title">
@@ -232,77 +193,49 @@ const solutionIcons = {
   </div>
 </section>
 
-<section class="atlas-section section" aria-labelledby="atlas-title">
+<section class="home-index section" aria-labelledby="home-index-title">
   <div class="shell">
-    <div class="section-head section-head--inverse">
-      <div><p class="t-label">Product atlas</p><h2 id="atlas-title">The wider<br><em>catalogue.</em></h2></div>
-      <p>{catalogueCount} catalogue entries across enterprise operations, procurement, education, people, engineering and field operations. Choose a discipline, then open the record.</p>
+    <div class="home-index__head">
+      <div><p class="t-label">The portfolio</p><h2 id="home-index-title">Four doors.<br><em>One catalogue.</em></h2></div>
+      <p>Every product, sector and engagement has its own page. Start with the one that matches the decision in front of you.</p>
     </div>
-    <ProductAtlas products={atlasProducts} client:visible />
-  </div>
-</section>
-
-<section class="applications-section section" aria-labelledby="applications-title">
-  <div class="shell applications-section__grid">
-    <div class="applications-section__intro">
-      <p class="t-label">Industry paths</p>
-      <h2 id="applications-title">Different work.<br>The same <em>clarity.</em></h2>
-      <p>Start with the operational reality—not a category label. These paths connect a real workflow to the products built around it.</p>
-      <a class="text-link" href="/industries/">View every industry path<span aria-hidden="true">↗</span></a>
-      <p class="applications-section__note">{solutionRegistry.length} paths · {new Set(solutionRegistry.flatMap((solution) => solution.productIds)).size} products mapped · one catalogue</p>
-    </div>
-    <ol class="application-index">
-      {solutionRegistry.map((solution) => (
-        <li>
-          <a href={`/solutions/${solution.id}/`}>
-            <span class="application-index__icon"><Icon name={solutionIcons[solution.id as keyof typeof solutionIcons] ?? "layers"} size={23} weight="duotone" /></span>
-            <strong>{solution.name}</strong>
-            <p>{solution.summary}</p>
-            <i aria-hidden="true">↗</i>
-          </a>
-        </li>
-      ))}
-    </ol>
-  </div>
-</section>
-
-<section class="engineering-section section" aria-labelledby="engineering-title">
-  <div class="shell">
-    <div class="engineering-section__head">
-      <div class="engineering-section__copy">
-        <p class="t-label">Developer & security portfolio</p>
-        <h2 id="engineering-title">Four prime tools.<br><em>Four distinct jobs.</em></h2>
-        <p>Inspect code, reason about security, govern engineering delivery or control local project operations. Four focused tools, each built for its own job.</p>
-        <a class="text-link" href="/products/">Explore the full catalogue<span aria-hidden="true">↗</span></a>
-      </div>
-      <p class="engineering-section__boundary">Each tool ships with its own licence, deployment model and support terms, agreed with your team before rollout.</p>
-    </div>
-    <div class="engineering-products" aria-label="Developer and security products">
-      {engineeringProducts.map((product, index) => (
-        <a class="engineering-product" href={`${product.route}/`}>
-          <i class="engineering-product__watermark" aria-hidden="true">{String(index + 1).padStart(2, "0")}</i>
-          <div class="engineering-product__head"><ProductMark product={product} size={48} /><span>{product.status}</span></div>
-          <p class="t-label">{engineeringRoles[product.id]}</p>
-          <h3>{product.name}</h3>
-          <p>{product.summary}</p>
-          <dl><div><dt>Deployment</dt><dd>{product.deployment}</dd></div></dl>
-          <small><i class="engineering-product__num" aria-hidden="true">{String(index + 1).padStart(2, "0")}</i>Inspect {product.name}<span aria-hidden="true">↗</span></small>
+    <ol class="home-index__grid">
+      <li>
+        <a class="home-index__card home-index__card--gold" href="/products/">
+          <span class="home-index__ghost" aria-hidden="true">01</span>
+          <p class="t-label">Catalogue</p>
+          <h3>Products</h3>
+          <p>Thirty-seven records across enterprise operations, procurement, education, people, engineering and field operations.</p>
+          <span class="home-index__meta">{catalogueCount} products<span aria-hidden="true">→</span></span>
         </a>
-      ))}
-    </div>
-  </div>
-</section>
-
-<section class="home-services section" aria-labelledby="home-services-title">
-  <div class="shell home-services__grid">
-    <div class="home-services__intro">
-      <p class="t-label">Services</p>
-      <h2 id="home-services-title">Evidence before<br><em>commitment.</em></h2>
-      <p>Product fit, implementation, migration and support are distinct engagements. Start with the operating constraint, agree the scope and ownership, then move.</p>
-      <a class="text-link" href="/services/">Explore every engagement path<span aria-hidden="true">↗</span></a>
-    </div>
-    <ol class="home-services__list">
-      {serviceEngagements.map(([title, summary, intent, cta]) => <li><div><h3>{title}</h3><p>{summary}</p></div><a href={`/contact/?intent=${intent}`} data-cta="request-conversation">{cta}<span aria-hidden="true">↗</span></a></li>)}
+      </li>
+      <li>
+        <a class="home-index__card home-index__card--cobalt" href="/industries/">
+          <span class="home-index__ghost" aria-hidden="true">02</span>
+          <p class="t-label">Sector paths</p>
+          <h3>Industries</h3>
+          <p>Six operating contexts, each mapped to the products that fit the work and the deployment behind them.</p>
+          <span class="home-index__meta">06 industry paths<span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="home-index__card home-index__card--mint" href="/solutions/">
+          <span class="home-index__ghost" aria-hidden="true">03</span>
+          <p class="t-label">Capability</p>
+          <h3>Solutions</h3>
+          <p>Start from the workflow instead of the label: audit trails, offline sites, multi-entity structure and regulated records.</p>
+          <span class="home-index__meta">06 solution paths<span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="home-index__card home-index__card--clay" href="/services/">
+          <span class="home-index__ghost" aria-hidden="true">04</span>
+          <p class="t-label">Engagements</p>
+          <h3>Services</h3>
+          <p>Product fit, implementation, migration and support — scoped, agreed and handed over with named ownership.</p>
+          <span class="home-index__meta">04 engagement paths<span aria-hidden="true">→</span></span>
+        </a>
+      </li>
     </ol>
   </div>
 </section>
@@ -321,7 +254,7 @@ const solutionIcons = {
     <dl class="studio-section__ledger" aria-label="Portfolio facts">
       <div><dt>Catalogue entries</dt><dd>{catalogueCount}</dd></div>
       <div><dt>Public origins</dt><dd>{String(publicOriginCount).padStart(2, "0")}</dd></div>
-      <div><dt>Developer & security tools</dt><dd>{String(engineeringProducts.length).padStart(2, "0")}</dd></div>
+      <div><dt>Solution paths</dt><dd>06</dd></div>
     </dl>
   </div>
 </section>

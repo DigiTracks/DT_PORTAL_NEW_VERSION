@@ -17,23 +17,90 @@ const lede = isIndustry
   ? "Six industries, one catalogue. Each path shows the products that fit the work, the deployment behind them and the questions worth asking before a rollout."
   : "Find the products that match the work in front of you, from education and healthcare to procurement, recruitment and engineering operations.";
 const totalProducts = new Set(solutions.flatMap((item) => item.productIds)).size;
+const flows: Record<string, string> = {
+  education: "Admissions → records → fees → campus operations",
+  healthcare: "Scheduling → patient records → specialty workflows",
+  "beauty-wellness": "Bookings → therapists → packages → studio reporting",
+  "business-operations": "Finance → documents → internal workflow",
+  procurement: "Sourcing → contract → spend → supplier control",
+  recruitment: "Intake → screening → shortlist → offer"
+};
+const steps = [
+  ["01", "Map the workflow", "Name the process that has to change and the records it touches."],
+  ["02", "Match the products", "Shortlist the systems that already cover that work, not adjacent demos."],
+  ["03", "Agree deployment", "Confirm hosting, identity, data and support before a rollout date."]
+] as const;
+const deployments = [
+  ["Browser-local", "Runs in the browser, with local storage as the default."],
+  ["Hosted", "Managed environment with the data controls agreed at scoping."],
+  ["In your environment", "Deployed inside your own infrastructure and identity."]
+] as const;
+const constraints = isIndustry
+  ? [
+      ["Multi-site records", "One record set across campuses, clinics or studios.", "/products/vedik/"],
+      ["Regulated data", "Patient, student or candidate data with an audit trail.", "/products/chronos/"],
+      ["Offline operation", "Work continues when the connection does not.", "/offline-first-software/"],
+      ["Supplier control", "Contracts, spend and approvals in one place.", "/products/vantor/"]
+    ]
+  : [
+      ["Audit trail", "Every change attributable, reviewable and exportable.", "/products/recon/"],
+      ["Offline sites", "Local-first operation for sites with unreliable links.", "/products/opspilot/"],
+      ["Multi-entity structure", "One system, many legal entities and currencies.", "/products/nexora/"],
+      ["Regulated records", "Healthcare, education and candidate data handled with care.", "/products/chronos/"]
+    ];
 ---
 
 <section class="sol-hero">
-  <div class="shell sol-hero__inner">
-    <p class="t-label">{eyebrow}</p>
-    <h1 id="page-title">{heading}<br /><em>{accentHead}</em></h1>
-    <p class="sol-hero__lede">{lede}</p>
-    <div class="sol-hero__stats">
-      <span><strong>{solutions.length}</strong> industry paths</span>
-      <span><strong>{totalProducts}</strong> products mapped</span>
-      <span><strong>3</strong> deployment models</span>
+  <div class="shell sol-hero__grid">
+    <div class="sol-hero__copy">
+      <p class="t-label">{eyebrow}</p>
+      <h1 id="page-title">{heading}<br /><em>{accentHead}</em></h1>
+      <p class="sol-hero__lede">{lede}</p>
+      <div class="sol-hero__stats">
+        <span><strong>{solutions.length}</strong> {isIndustry ? "industry paths" : "solution paths"}</span>
+        <span><strong>{totalProducts}</strong> products mapped</span>
+        <span><strong>3</strong> deployment models</span>
+      </div>
     </div>
+    <div class="sol-hero__ledger">
+      <p class="t-label">At a glance</p>
+      <table>
+        <caption class="sr-only">Solutions, the number of products mapped and the workflow each covers</caption>
+        <thead><tr><th scope="col">Path</th><th scope="col">Products</th></tr></thead>
+        <tbody>
+          {solutions.map((item) => (
+            <tr>
+              <th scope="row"><a href={`/solutions/${item.id}/`}>{item.name}</a></th>
+              <td>{String(item.productIds.length).padStart(2, "0")}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sol-path">
+  <div class="shell sol-path__grid">
+    <div class="sol-path__intro">
+      <p class="t-label">How a path is built</p>
+      <h2>Three moves,<br /><em>no guesswork.</em></h2>
+      <p>Each path connects a real workflow to the products that already do the work, then to the deployment decision behind them.</p>
+    </div>
+    <ol class="sol-path__steps">
+      {steps.map(([num, title, copy]) => (
+        <li><span>{num}</span><div><h3>{title}</h3><p>{copy}</p></div></li>
+      ))}
+    </ol>
   </div>
 </section>
 
 <section class="section sol-list">
   <div class="shell">
+    <div class="sol-list__head">
+      <div><p class="t-label">{isIndustry ? "Sector paths" : "Solution paths"}</p><h2>Open the path<br /><em>closest to the work.</em></h2></div>
+      <p>{isIndustry ? "Six operating contexts, each with its own rhythm and its own product fit." : "Six starting points, each linked to the products that deliver it."}</p>
+    </div>
     <ul class="sol-grid">
       {solutions.map((item, index) => (
         <li class="sol-card">
@@ -42,12 +109,40 @@ const totalProducts = new Set(solutions.flatMap((item) => item.productIds)).size
             <span class="sol-card__index">{String(index + 1).padStart(2, "0")}</span>
             <h2>{item.name}</h2>
             <p>{item.summary}</p>
+            <span class="sol-card__flow">{flows[item.id] ?? "Workflow mapped with the product team"}</span>
             <span class="sol-card__foot">
               <span>{item.productIds.length} {item.productIds.length === 1 ? "product" : "products"}</span>
               <span class="sol-card__go" aria-hidden="true">→</span>
             </span>
           </a>
         </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<section class="sol-deploy">
+  <div class="shell sol-deploy__grid">
+    <div>
+      <p class="t-label">Deployment</p>
+      <h2>Three ways to run it.<br /><em>One conversation.</em></h2>
+      <p>Every product ships in one of three deployment models. The model is agreed with your team before rollout, along with identity, data and support.</p>
+    </div>
+    <ol class="sol-deploy__list">
+      {deployments.map(([name, copy]) => <li><h3>{name}</h3><p>{copy}</p></li>)}
+    </ol>
+  </div>
+</section>
+
+<section class="sol-constraints">
+  <div class="shell">
+    <div class="sol-constraints__head">
+      <p class="t-label">Start from the constraint</p>
+      <h2>Name the problem.<br /><em>We will name the system.</em></h2>
+    </div>
+    <ul class="sol-constraints__grid">
+      {constraints.map(([name, copy, href]) => (
+        <li><a href={href}><h3>{name}</h3><p>{copy}</p><span aria-hidden="true">↗</span></a></li>
       ))}
     </ul>
   </div>
@@ -144,4 +239,66 @@ const totalProducts = new Set(solutions.flatMap((item) => item.productIds)).size
 
   @media (max-width: 980px) { .sol-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sol-close__inner { grid-template-columns: 1fr; align-items: start; } }
   @media (max-width: 620px) { .sol-grid { grid-template-columns: 1fr; } .sol-card a { min-height: 0; } }
+
+  .sol-hero__grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(20rem, 0.75fr); align-items: end; gap: clamp(2rem, 5vw, 5rem); }
+  .sol-hero__copy { display: grid; gap: 1rem; }
+  .sol-hero__ledger { border: 1px solid rgb(13 27 46 / 16%); background: rgb(255 253 246 / 70%); }
+  .sol-hero__ledger .t-label { margin: 0; padding: 0.8rem 1rem; border-bottom: 1px solid rgb(13 27 46 / 14%); }
+  .sol-hero__ledger table { width: 100%; border-collapse: collapse; }
+  .sol-hero__ledger th, .sol-hero__ledger td { padding: 0.62rem 1rem; border-bottom: 1px solid rgb(13 27 46 / 8%); font-size: 0.88rem; text-align: left; }
+  .sol-hero__ledger thead th { color: #7b8698; font-family: var(--font-mono); font-size: 0.64rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
+  .sol-hero__ledger tbody tr:nth-child(odd) { background: rgb(245 207 101 / 9%); }
+  .sol-hero__ledger tbody th { font-weight: 500; }
+  .sol-hero__ledger tbody th a { color: var(--ink); text-decoration: none; }
+  .sol-hero__ledger tbody th a:hover { color: #8a6114; }
+  .sol-hero__ledger tbody td { color: #7b8698; font-family: var(--font-mono); text-align: right; }
+
+  .sol-path { padding-block: clamp(3rem, 5vw, 4.4rem); background: var(--night); color: var(--paper-bright); }
+  .sol-path__grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+  .sol-path__intro .t-label { color: var(--signal); }
+  .sol-path__intro h2 { margin: 0.6rem 0 1rem; font-family: var(--font-display); font-size: clamp(1.9rem, 3.4vw, 2.9rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1.02; }
+  .sol-path__intro h2 em { color: var(--signal); font-family: var(--font-editorial); font-style: italic; font-weight: 400; }
+  .sol-path__intro p { margin: 0; max-width: 46ch; color: rgb(198 212 230 / 82%); line-height: 1.6; }
+  .sol-path__steps { margin: 0; padding: 0; list-style: none; border-top: 1px solid rgb(198 212 230 / 22%); }
+  .sol-path__steps li { display: grid; grid-template-columns: 4rem minmax(0, 1fr); gap: 1rem; padding: 1.2rem 0; border-bottom: 1px solid rgb(198 212 230 / 18%); }
+  .sol-path__steps span { color: var(--signal); font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; }
+  .sol-path__steps h3 { margin: 0 0 0.25rem; font-family: var(--font-display); font-size: 1.12rem; font-weight: 550; }
+  .sol-path__steps p { margin: 0; color: rgb(198 212 230 / 78%); font-size: 0.94rem; line-height: 1.55; }
+
+  .sol-list__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 28rem); align-items: end; gap: clamp(1.5rem, 4vw, 4rem); margin-bottom: clamp(1.8rem, 3vw, 2.6rem); }
+  .sol-list__head h2 { margin: 0.5rem 0 0; font-family: var(--font-display); font-size: clamp(2rem, 3.6vw, 3.1rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1.02; }
+  .sol-list__head h2 em { color: #8a6114; font-family: var(--font-editorial); font-style: italic; font-weight: 400; }
+  .sol-list__head > p { margin: 0; color: var(--ink-soft); line-height: 1.6; }
+  .sol-card__flow { position: relative; z-index: 1; display: block; color: #8a6114; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; line-height: 1.5; text-transform: uppercase; }
+
+  .sol-deploy { padding-block: clamp(3rem, 5vw, 4.4rem); background: #f2f5f9; border-block: 1px solid rgb(13 27 46 / 10%); }
+  .sol-deploy__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(2rem, 5vw, 5rem); }
+  .sol-deploy h2 { margin: 0.6rem 0 1rem; font-family: var(--font-display); font-size: clamp(1.9rem, 3.2vw, 2.7rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1.04; }
+  .sol-deploy h2 em { color: #8a6114; font-family: var(--font-editorial); font-style: italic; font-weight: 400; }
+  .sol-deploy p { margin: 0; max-width: 48ch; color: var(--ink-soft); line-height: 1.6; }
+  .sol-deploy__list { display: grid; gap: 1px; margin: 0; padding: 0; background: rgb(13 27 46 / 12%); list-style: none; }
+  .sol-deploy__list li { padding: 1.2rem 1.4rem; background: var(--paper-bright); }
+  .sol-deploy__list h3 { margin: 0 0 0.3rem; font-family: var(--font-display); font-size: 1.1rem; font-weight: 550; }
+  .sol-deploy__list p { margin: 0; font-size: 0.94rem; }
+
+  .sol-constraints { padding-block: clamp(3.2rem, 5.4vw, 4.8rem); background: #f8f4e8; }
+  .sol-constraints__head { display: grid; gap: 0.5rem; margin-bottom: 1.8rem; }
+  .sol-constraints__head h2 { margin: 0.5rem 0 0; font-family: var(--font-display); font-size: clamp(1.9rem, 3.4vw, 2.9rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1.03; }
+  .sol-constraints__head h2 em { color: #8a6114; font-family: var(--font-editorial); font-style: italic; font-weight: 400; }
+  .sol-constraints__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin: 0; padding: 0; background: rgb(13 27 46 / 12%); list-style: none; }
+  .sol-constraints__grid a { display: grid; grid-template-rows: auto auto 1fr; gap: 0.5rem; height: 100%; padding: 1.3rem 1.2rem; background: var(--paper-bright); color: inherit; text-decoration: none; }
+  .sol-constraints__grid a:hover { background: #fff6dd; }
+  .sol-constraints__grid h3 { margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 550; }
+  .sol-constraints__grid p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.5; }
+  .sol-constraints__grid span { margin-top: auto; color: #8a6114; font-size: 0.95rem; }
+
+  @media (max-width: 980px) {
+    .sol-hero__grid, .sol-path__grid, .sol-deploy__grid, .sol-list__head, .sol-constraints__head { grid-template-columns: 1fr; }
+    .sol-constraints__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 620px) {
+    .sol-constraints__grid { grid-template-columns: 1fr; }
+    .sol-hero__ledger table { font-size: 0.85rem; }
+  }
 </style>
