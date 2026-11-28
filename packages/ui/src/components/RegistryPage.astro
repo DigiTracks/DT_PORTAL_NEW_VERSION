@@ -58,6 +58,18 @@ const breadcrumbs = route.breadcrumbs.map((item) => ({ name: crumbLabel(item.pat
 const schema = route.indexable
   ? [
       breadcrumbSchema(breadcrumbs),
+      ...(route.template === "home" ? [{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Digi Tracks",
+        url: canonical,
+        logo: new URL("/brand/brand-mark.webp", canonical).toString()
+      }, {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Digi Tracks",
+        url: canonical
+      }] : []),
       ...(product && route.template === "product-detail" ? [{
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",

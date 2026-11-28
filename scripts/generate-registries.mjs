@@ -529,9 +529,6 @@ const learnpmoTitles = {
   documents: "Document templates", exams: "Mock project management exams", industries: "Industry practice", lessons: "Project management lessons",
   plan: "Study plan", pmo: "PMO practice", portfolio: "Portfolio management practice", programme: "Programme management practice"
 };
-const sourcecraftIndexable = new Set(["/", "/about/", "/explore/", "/regions/", "/sources/"]);
-const hcmIndexable = new Set(["/", "/sources/gaps/", "/sources/releases/"]);
-const blockedHcmTemplates = new Set(["course", "lesson", "concept", "glossary-entry", "evidence-claim", "assessment", "certification-paper", "procedure", "scenario", "module-export"]);
 
 function routeTitle(origin, raw, routePath, product) {
   if (origin === "portal" && product) return `${product.name} | Digi Tracks`;
@@ -592,30 +589,19 @@ function breadcrumbsFor(origin, routePath, title) {
 }
 
 function policyFor(origin, raw, routePath) {
-  const baseline = Boolean(raw.sitemapMember);
-  let indexable = baseline && raw.routeClass === "public-seo" && !routePath.includes("#");
-  let contentStatus = indexable ? "approved" : raw.routeClass === "retired" ? "retired" : "blocked";
-  if (origin === "sourcecraft") {
-    if (raw.template === "term") {
-      indexable = false;
-      contentStatus = "in-review";
-    } else if (raw.template === "regional-pack") {
-      indexable = routePath === "/regions/";
-      contentStatus = indexable ? "approved" : "blocked";
-    } else {
-      indexable = sourcecraftIndexable.has(routePath);
-      contentStatus = indexable ? "approved" : "blocked";
-    }
-  }
-  if (origin === "hcmfusion") {
-    indexable = hcmIndexable.has(routePath);
-    contentStatus = indexable ? "approved" : blockedHcmTemplates.has(raw.template) ? "blocked" : raw.routeClass === "retired" ? "retired" : "blocked";
-  }
-  if (origin === "procuresherpa" && routePath.includes("#")) {
-    indexable = false;
-    contentStatus = "blocked";
-  }
-  if (raw.routeClass !== "public-seo") indexable = false;
+  // Search indexing policy: real content is indexable; technical surfaces are not.
+  const noindexTemplates = new Set([
+    "administrative-probe", "defect-probe", "redirect", "root-redirect",
+    "crawl-utility", "pwa-utility", "utility", "robots", "sitemap", "lead-api",
+    "application-account", "application-user-route",
+    "module-export", "missing-data-alias", "hash-application-screen", "local-workspace"
+  ]);
+  const isCrawlEndpoint = /\/(robots\.txt|sitemap[^/]*\.xml)\/?$/.test(routePath);
+  const indexable = raw.routeClass !== "private"
+    && !noindexTemplates.has(raw.template)
+    && !isCrawlEndpoint
+    && !routePath.includes("#");
+  const contentStatus = indexable ? "approved" : raw.routeClass === "retired" ? "retired" : "blocked";
   return { indexable, contentStatus };
 }
 

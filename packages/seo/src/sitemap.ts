@@ -6,7 +6,7 @@ function escapeXml(value: string): string {
 
 export function buildSitemapXml(routes: readonly RouteRecord[], origin: OriginConfig, lastmod: Readonly<Record<string, string>> = {}): string {
   const urls = routes
-    .filter((route) => route.origin === origin.id && route.routeClass === "public-seo" && route.indexable)
+    .filter((route) => route.origin === origin.id && route.indexable)
     .map((route) => {
       const date = lastmod[route.id];
       const lastmodLine = date ? `    <lastmod>${escapeXml(date)}</lastmod>\n` : "";

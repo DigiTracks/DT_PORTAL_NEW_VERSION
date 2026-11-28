@@ -6,7 +6,6 @@ export default defineConfig({
   site: "https://learnpmo.digitracks.net",
   trailingSlash: "always",
   integrations: [react()],
-  redirects: { "/": "/dashboard/" },
   devToolbar: { enabled: false },
   vite: {
     ssr: { noExternal: [/^@digitracks\//, /^@fontsource-variable\//, /^@fontsource\//] },

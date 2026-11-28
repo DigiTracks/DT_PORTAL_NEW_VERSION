@@ -112,7 +112,7 @@ if (Number(process.versions.node.split(".")[0]) < 24) {
 const registryErrors = validateRouteRegistry(routeRegistry);
 if (registryErrors.length) throw new Error(`Invalid route registry:\n${registryErrors.join("\n")}`);
 
-const routes = routeRegistry.filter((route) => route.indexable && route.routeClass === "public-seo" && !route.redirectTo && !route.hashRoute);
+const routes = routeRegistry.filter((route) => route.indexable && !route.redirectTo && !route.hashRoute);
 
 // Pages built outside the route registry still need a card, because the layout
 // derives their og:image from the same path.
@@ -362,7 +362,7 @@ try {
 
 const scriptSha256 = sha256(fs.readFileSync(path.join(root, "scripts/generate-social-cards.mjs")));
 const syncedRegistry = routeRegistry.map((route) => {
-  if (!route.indexable || route.routeClass !== "public-seo" || route.redirectTo || route.hashRoute) return route;
+  if (!route.indexable || route.redirectTo || route.hashRoute) return route;
   if (route.socialImage && !route.socialImage.startsWith("/og/")) return route;
   return { ...route, socialImage: socialCardPath(originById(route.origin).origin, route.path) };
 });

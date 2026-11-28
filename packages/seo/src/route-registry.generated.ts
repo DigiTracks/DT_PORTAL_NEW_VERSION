@@ -1,4 +1,4 @@
-// Generated from the approved audit baseline on 2026-11-27.
+// Generated from the approved audit baseline on 2026-11-28.
 export const routeRegistry = [
   {
     "id": "hcmfusion:/",
@@ -224,7 +224,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/certifications/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Certification practice · HCM Fusion",
     "description": "Certification practice · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -238,7 +238,9 @@ export const routeRegistry = [
         "path": "/certifications/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -246,7 +248,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/certifications-a55589fd9713eb56.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -279,7 +282,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/certifications/cross-module-implementation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Cross-module implementation paper · HCM Fusion",
     "description": "Cross-module implementation paper · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "certification-paper",
@@ -297,7 +300,9 @@ export const routeRegistry = [
         "path": "/certifications/cross-module-implementation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -305,7 +310,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/certifications-cross-module-implementation-246ac6da89e54c68.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -338,7 +344,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/certifications/hcm-foundations/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "HCM Foundations paper · HCM Fusion",
     "description": "HCM Foundations paper · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "certification-paper",
@@ -356,7 +362,9 @@ export const routeRegistry = [
         "path": "/certifications/hcm-foundations/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -364,7 +372,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/certifications-hcm-foundations-df0df585d41a5b70.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -397,7 +406,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/certifications/recruiting/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Recruiting paper · HCM Fusion",
     "description": "Recruiting paper · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "certification-paper",
@@ -415,7 +424,9 @@ export const routeRegistry = [
         "path": "/certifications/recruiting/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -423,7 +434,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/certifications-recruiting-0590e11eecc6df84.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -456,7 +468,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/certifications/time-and-labor/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time and Labor paper · HCM Fusion",
     "description": "Time and Labor paper · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "certification-paper",
@@ -474,7 +486,9 @@ export const routeRegistry = [
         "path": "/certifications/time-and-labor/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -482,7 +496,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/certifications-time-and-labor-66a48d501b630d04.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -515,7 +530,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Concepts · HCM Fusion",
     "description": "Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -529,7 +544,9 @@ export const routeRegistry = [
         "path": "/concepts/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -537,7 +554,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-5d25963bc44e25f1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -570,7 +588,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-accrual-plan/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The accrual plan, configured — Concepts · HCM Fusion",
     "description": "The accrual plan, configured — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -588,7 +606,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-accrual-plan/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -596,7 +616,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-accrual-plan-bbedd059291de595.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -629,7 +650,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-certification/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence certifications — Concepts · HCM Fusion",
     "description": "Absence certifications — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -647,7 +668,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-certification/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -655,7 +678,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-certification-566de57fd5e9c171.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -688,7 +712,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-compensatory-plan/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Compensatory time plans — Concepts · HCM Fusion",
     "description": "Compensatory time plans — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -706,7 +730,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-compensatory-plan/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -714,7 +740,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-compensatory-plan-e7658cb6f44f45e4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -747,7 +774,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-component/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The six absence components — Concepts · HCM Fusion",
     "description": "The six absence components — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -765,7 +792,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-component/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -773,7 +802,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-component-e325ff0522905c70.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -806,7 +836,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-concurrency/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Concurrency vs concurrent entitlement vs plan priority — Concepts · HCM Fusion",
     "description": "Concurrency vs concurrent entitlement vs plan priority — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -824,7 +854,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-concurrency/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -832,7 +864,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-concurrency-ae6eb0e66ef10326.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -865,7 +898,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-data-loading/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Loading absence data (integrated workbooks and HCM Spreadsheet Data Loader) — Concepts · HCM Fusion",
     "description": "Loading absence data (integrated workbooks and HCM Spreadsheet Data Loader) — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -883,7 +916,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-data-loading/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -891,7 +926,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-data-loading-76e92847c8f8ab0e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -924,7 +960,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-date-effectivity/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Date effectivity — update vs correct vs end-date — Concepts · HCM Fusion",
     "description": "Date effectivity — update vs correct vs end-date — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -942,7 +978,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-date-effectivity/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -950,7 +988,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-date-effectivity-a054e82e201ccda4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -983,7 +1022,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-deep-links/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Deep links — getting people straight to a page — Concepts · HCM Fusion",
     "description": "Deep links — getting people straight to a page — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1001,7 +1040,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-deep-links/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1009,7 +1050,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-deep-links-d576a21bef936d93.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1042,7 +1084,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-donation-plan/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Donation plans — Concepts · HCM Fusion",
     "description": "Donation plans — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1060,7 +1102,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-donation-plan/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1068,7 +1112,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-donation-plan-b51af600d4ce0e94.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1101,7 +1146,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-eligibility-profile/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Eligibility profiles and derived factors — Concepts · HCM Fusion",
     "description": "Eligibility profiles and derived factors — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1119,7 +1164,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-eligibility-profile/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1127,7 +1174,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-eligibility-profile-213b180c00c77fd4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1160,7 +1208,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-extracts/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "HCM Extracts — getting absence data out and reconciling it with payroll — Concepts · HCM Fusion",
     "description": "HCM Extracts — getting absence data out and reconciling it with payroll — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1178,7 +1226,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-extracts/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1186,7 +1236,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-extracts-61e389f334d94bc4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1219,7 +1270,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-fast-formula/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Fast formulas in Absence Management — Concepts · HCM Fusion",
     "description": "Fast formulas in Absence Management — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1237,7 +1288,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-fast-formula/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1245,7 +1298,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-fast-formula-45aa85c9893294aa.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1278,7 +1332,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-lookups-flexfields/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Lookups, value sets, and flexfields — where lists and extra fields come from — Concepts · HCM Fusion",
     "description": "Lookups, value sets, and flexfields — where lists and extra fields come from — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1296,7 +1350,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-lookups-flexfields/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1304,7 +1360,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-lookups-flexfields-d8d2e76379d4736d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1337,7 +1394,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-payroll-elements/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Payroll elements that pay and account for absences — Concepts · HCM Fusion",
     "description": "Payroll elements that pay and account for absences — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1355,7 +1412,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-payroll-elements/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1363,7 +1422,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-payroll-elements-7b684c00fc67f1e0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1396,7 +1456,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-plan/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence plan — Concepts · HCM Fusion",
     "description": "Absence plan — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1414,7 +1474,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-plan/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1422,7 +1484,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-plan-ee2bfc4dbd9354fa.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1455,7 +1518,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-processes/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence processes — Concepts · HCM Fusion",
     "description": "Absence processes — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1473,7 +1536,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-processes/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1481,7 +1546,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-processes-c78ce2f31556d8d7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1514,7 +1580,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-processing-rules/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence approval and processing rules — Concepts · HCM Fusion",
     "description": "Absence approval and processing rules — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1532,7 +1598,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-processing-rules/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1540,7 +1608,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-processing-rules-c785d2eab10c143e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1573,7 +1642,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-qualification-plan/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Qualification plans and entitlement bands — Concepts · HCM Fusion",
     "description": "Qualification plans and entitlement bands — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1591,7 +1660,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-qualification-plan/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1599,7 +1670,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-qualification-plan-eba6309d1c342eab.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1632,7 +1704,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-rate-definition/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Rate definitions for absence payments — Concepts · HCM Fusion",
     "description": "Rate definitions for absence payments — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1650,7 +1722,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-rate-definition/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1658,7 +1732,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-rate-definition-c43edb0281d2b4dc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1691,7 +1766,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-schedule-resolution/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence duration and the work schedule — Concepts · HCM Fusion",
     "description": "Absence duration and the work schedule — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1709,7 +1784,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-schedule-resolution/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1717,7 +1794,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-schedule-resolution-0fd915805d546ba1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1775,7 +1853,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-type-display-rules/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Display features: what the recording pages show and enforce — Concepts · HCM Fusion",
     "description": "Display features: what the recording pages show and enforce — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1793,7 +1871,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-type-display-rules/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1801,7 +1881,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-type-display-rules-87ccaddb52d0c1f7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1834,7 +1915,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-type-record/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence types, reasons, and categories — the record workers touch — Concepts · HCM Fusion",
     "description": "Absence types, reasons, and categories — the record workers touch — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1852,7 +1933,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-type-record/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1860,7 +1943,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-type-record-65c8402b5762a889.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1868,7 +1952,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/absence-type/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence type — Concepts · HCM Fusion",
     "description": "Absence type — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1886,7 +1970,9 @@ export const routeRegistry = [
         "path": "/concepts/absence-type/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1894,7 +1980,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-absence-type-4f6d41ee1c1b8180.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1927,7 +2014,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/bridge-orc-corehr/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC to Core HR bridge — Concepts · HCM Fusion",
     "description": "ORC to Core HR bridge — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -1945,7 +2032,9 @@ export const routeRegistry = [
         "path": "/concepts/bridge-orc-corehr/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -1953,7 +2042,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-bridge-orc-corehr-d99f89bf85d7257c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -1986,7 +2076,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/bridge-otl-payroll/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL to Payroll bridge — Concepts · HCM Fusion",
     "description": "OTL to Payroll bridge — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2004,7 +2094,9 @@ export const routeRegistry = [
         "path": "/concepts/bridge-otl-payroll/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2012,7 +2104,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-bridge-otl-payroll-1abc111654ac9cfd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2045,7 +2138,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/bridge-otl-pc/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL to Project Costing bridge — Concepts · HCM Fusion",
     "description": "OTL to Project Costing bridge — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2063,7 +2156,9 @@ export const routeRegistry = [
         "path": "/concepts/bridge-otl-pc/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2071,7 +2166,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-bridge-otl-pc-65a04936b31516e8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2104,7 +2200,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-assignment/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Assignment — Concepts · HCM Fusion",
     "description": "Assignment — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2122,7 +2218,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-assignment/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2130,7 +2228,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-assignment-e5cf718a1876f1da.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2163,7 +2262,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-business-unit/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Business unit — Concepts · HCM Fusion",
     "description": "Business unit — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2181,7 +2280,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-business-unit/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2189,7 +2290,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-business-unit-411123767193e7c1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2222,7 +2324,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-department/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Department — Concepts · HCM Fusion",
     "description": "Department — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2240,7 +2342,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-department/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2248,7 +2352,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-department-a3286ba5946bdec7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2281,7 +2386,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-enterprise/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The enterprise — Concepts · HCM Fusion",
     "description": "The enterprise — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2299,7 +2404,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-enterprise/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2307,7 +2414,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-enterprise-778f3274d5eb352c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2340,7 +2448,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-job/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Job — Concepts · HCM Fusion",
     "description": "Job — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2358,7 +2466,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-job/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2366,7 +2476,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-job-5d92993a8ac6d094.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2399,7 +2510,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-legal-entity/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Legal entity and legal employer — Concepts · HCM Fusion",
     "description": "Legal entity and legal employer — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2417,7 +2528,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-legal-entity/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2425,7 +2538,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-legal-entity-959e1e4cafb67e57.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2458,7 +2572,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-payroll-relationship/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Payroll relationship — Concepts · HCM Fusion",
     "description": "Payroll relationship — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2476,7 +2590,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-payroll-relationship/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2484,7 +2600,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-payroll-relationship-7aa453b47fb6df70.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2517,7 +2634,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-position/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Position — Concepts · HCM Fusion",
     "description": "Position — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2535,7 +2652,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-position/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2543,7 +2662,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-position-c060918554f74b4c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2576,7 +2696,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-security-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The security model — Concepts · HCM Fusion",
     "description": "The security model — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2594,7 +2714,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-security-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2602,7 +2724,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-security-model-a6532b8ee86c986a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2635,7 +2758,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-three-structures/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Legal, managerial and functional structures — Concepts · HCM Fusion",
     "description": "Legal, managerial and functional structures — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2653,7 +2776,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-three-structures/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2661,7 +2786,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-three-structures-5bc859020ef8ecbb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2694,7 +2820,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/core-hr-work-relationship/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Work relationship — Concepts · HCM Fusion",
     "description": "Work relationship — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2712,7 +2838,9 @@ export const routeRegistry = [
         "path": "/concepts/core-hr-work-relationship/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2720,7 +2848,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-core-hr-work-relationship-94cae04f779cc14f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2753,7 +2882,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-application-flows/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Job application flow — Concepts · HCM Fusion",
     "description": "Job application flow — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2771,7 +2900,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-application-flows/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2779,7 +2910,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-application-flows-5cfcced23feb8de8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2812,7 +2944,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-career-site/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Career site — Concepts · HCM Fusion",
     "description": "Career site — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2830,7 +2962,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-career-site/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2838,7 +2972,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-career-site-11c9e00996eb5c74.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2871,7 +3006,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-contextualization/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Career site contextualization — Concepts · HCM Fusion",
     "description": "Career site contextualization — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2889,7 +3024,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-contextualization/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2897,7 +3034,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-contextualization-6e61a625c674d3cc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2930,7 +3068,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Oracle Recruiting mental model — Concepts · HCM Fusion",
     "description": "Oracle Recruiting mental model — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -2948,7 +3086,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -2956,7 +3096,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-mental-model-d3614450fc69aa29.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -2989,7 +3130,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-offering/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Recruiting and Candidate Experience offering — Concepts · HCM Fusion",
     "description": "Recruiting and Candidate Experience offering — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3007,7 +3148,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-offering/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3015,7 +3158,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-offering-a550fa08e6c953eb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3048,7 +3192,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-person-id/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Person ID on a recruiting user — Concepts · HCM Fusion",
     "description": "Person ID on a recruiting user — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3066,7 +3210,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-person-id/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3074,7 +3220,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-person-id-5fa6e09d35001c62.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3132,7 +3279,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-requisition-rest-access/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Requisition REST grants — Concepts · HCM Fusion",
     "description": "Requisition REST grants — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3150,7 +3297,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-requisition-rest-access/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3158,7 +3307,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-requisition-rest-access-98933e993c92c110.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3166,7 +3316,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-requisition/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Job requisition — Concepts · HCM Fusion",
     "description": "Job requisition — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3184,7 +3334,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-requisition/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3192,7 +3344,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-requisition-b244bc1236859cd3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3225,7 +3378,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/orc-selection-processes/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Candidate selection process — Concepts · HCM Fusion",
     "description": "Candidate selection process — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3243,7 +3396,9 @@ export const routeRegistry = [
         "path": "/concepts/orc-selection-processes/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3251,7 +3406,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-orc-selection-processes-3d4794d1f6b998da.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3284,7 +3440,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-calculation-rules/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time calculation rules — Concepts · HCM Fusion",
     "description": "Time calculation rules — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3302,7 +3458,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-calculation-rules/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3310,7 +3468,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-calculation-rules-8c8bedb288746ceb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3343,7 +3502,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-consumer-sets/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time consumer set — Concepts · HCM Fusion",
     "description": "Time consumer set — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3361,7 +3520,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-consumer-sets/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3369,7 +3530,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-consumer-sets-fea3e43d323fd7f9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3402,7 +3564,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-consumer-validation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Consumer validation — Concepts · HCM Fusion",
     "description": "Consumer validation — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3420,7 +3582,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-consumer-validation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3428,7 +3592,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-consumer-validation-e6596142e87b6440.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3461,7 +3626,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-entry-profile/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Worker time entry profile — Concepts · HCM Fusion",
     "description": "Worker time entry profile — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3479,7 +3644,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-entry-profile/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3487,7 +3654,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-entry-profile-1826c68a9cf46b35.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3520,7 +3688,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-entry-rules/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time entry rules — Concepts · HCM Fusion",
     "description": "Time entry rules — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3538,7 +3706,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-entry-rules/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3546,7 +3716,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-entry-rules-006640cfb40e6b53.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3579,7 +3750,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-exception/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time entry exception — Concepts · HCM Fusion",
     "description": "Time entry exception — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3597,7 +3768,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-exception/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3605,7 +3778,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-exception-ed0f963ca1411eb4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3638,7 +3812,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-hcm-group/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "HCM group — Concepts · HCM Fusion",
     "description": "HCM group — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3656,7 +3830,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-hcm-group/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3664,7 +3840,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-hcm-group-afae9168f434f1f6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3697,7 +3874,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-periods/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Repeating time period — Concepts · HCM Fusion",
     "description": "Repeating time period — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3715,7 +3892,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-periods/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3723,7 +3902,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-periods-19931a0837f973f7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3756,7 +3936,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-processing-chain/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The five-stage processing chain — Concepts · HCM Fusion",
     "description": "The five-stage processing chain — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3774,7 +3954,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-processing-chain/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3782,7 +3964,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-processing-chain-75bad3c6b201816b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3815,7 +3998,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-processing-profile/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Worker Time Processing Profile — Concepts · HCM Fusion",
     "description": "Worker Time Processing Profile — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3833,7 +4016,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-processing-profile/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3841,7 +4026,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-processing-profile-a9cecdd256773cd3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3874,7 +4060,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-reporting-channels/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time reporting channels — Concepts · HCM Fusion",
     "description": "Time reporting channels — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3892,7 +4078,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-reporting-channels/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3900,7 +4088,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-reporting-channels-f18558647f2f89bd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3933,7 +4122,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-rule-types/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Rule types — Concepts · HCM Fusion",
     "description": "Rule types — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -3951,7 +4140,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-rule-types/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -3959,7 +4150,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-rule-types-a50c76d6eb20b75f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -3992,7 +4184,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-time-card-actions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time card actions — Concepts · HCM Fusion",
     "description": "Time card actions — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4010,7 +4202,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-time-card-actions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4018,7 +4212,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-time-card-actions-bc0f8a6fa6fd7b8d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4051,7 +4246,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/otl-time-consumer/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time consumer — Concepts · HCM Fusion",
     "description": "Time consumer — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4069,7 +4264,9 @@ export const routeRegistry = [
         "path": "/concepts/otl-time-consumer/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4077,7 +4274,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-otl-time-consumer-19fa27b3cd61925a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4110,7 +4308,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-calc-card/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The personal calculation card — Concepts · HCM Fusion",
     "description": "The personal calculation card — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4128,7 +4326,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-calc-card/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4136,7 +4336,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-calc-card-8463af7509e9aa20.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4169,7 +4370,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-cycle/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The payroll cycle — Concepts · HCM Fusion",
     "description": "The payroll cycle — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4187,7 +4388,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-cycle/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4195,7 +4398,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-cycle-6ae69de6aa5c1f41.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4228,7 +4432,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-earnings-deductions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The Earnings and Deductions page and what feeds it — Concepts · HCM Fusion",
     "description": "The Earnings and Deductions page and what feeds it — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4246,7 +4450,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-earnings-deductions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4254,7 +4460,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-earnings-deductions-d76552a61c943033.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4287,7 +4494,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-element-entry/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Standard element entries: where pay inputs live — Concepts · HCM Fusion",
     "description": "Standard element entries: where pay inputs live — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4305,7 +4512,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-element-entry/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4313,7 +4522,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-element-entry-28d8815850ac5e3e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4346,7 +4556,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-entry/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Personal payroll entries — Concepts · HCM Fusion",
     "description": "Personal payroll entries — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4364,7 +4574,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-entry/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4372,7 +4584,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-entry-59f30c6222f5e0c3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4405,7 +4618,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-flow/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Payroll flows and flow patterns — Concepts · HCM Fusion",
     "description": "Payroll flows and flow patterns — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4423,7 +4636,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-flow/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4431,7 +4646,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-flow-e64d56b95eda6218.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4464,7 +4680,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-payment-method/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The personal payment method — Concepts · HCM Fusion",
     "description": "The personal payment method — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4482,7 +4698,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-payment-method/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4490,7 +4708,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-payment-method-560ea4d32f1942cb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4523,7 +4742,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-relationship/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The payroll relationship — Concepts · HCM Fusion",
     "description": "The payroll relationship — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4541,7 +4760,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-relationship/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4549,7 +4770,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-relationship-d720cc838eaa6c1d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4582,7 +4804,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-transfer/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Assigning and transferring a payroll — Concepts · HCM Fusion",
     "description": "Assigning and transferring a payroll — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4600,7 +4822,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-transfer/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4608,7 +4832,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-transfer-267666a6b6191f21.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4641,7 +4866,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/concepts/payroll-tru/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The tax reporting unit (TRU) — Concepts · HCM Fusion",
     "description": "The tax reporting unit (TRU) — Concepts · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "concept",
@@ -4659,7 +4884,9 @@ export const routeRegistry = [
         "path": "/concepts/payroll-tru/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4667,7 +4894,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/concepts-payroll-tru-ca8bc4bfe694b740.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4755,7 +4983,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-001 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -4777,7 +5005,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4785,7 +5015,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-001-8c17a8dd27581a0d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4818,7 +5049,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-002 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -4840,7 +5071,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4848,7 +5081,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-002-0426fdcb7ed1a0f0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4881,7 +5115,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-003 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -4903,7 +5137,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4911,7 +5147,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-003-1e6e9e5333dfc63b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -4944,7 +5181,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-004 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -4966,7 +5203,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -4974,7 +5213,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-004-1acee0747756f93d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5007,7 +5247,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-006 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5029,7 +5269,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5037,7 +5279,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-006-8ff2f2c8e5e6da7a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5070,7 +5313,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-007 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5092,7 +5335,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5100,7 +5345,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-007-7ce831ebc67dceb5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5133,7 +5379,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-008 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5155,7 +5401,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5163,7 +5411,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-008-26d80eee2eb766e1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5196,7 +5445,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-009 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5218,7 +5467,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5226,7 +5477,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-009-0634ad3ede7cfcb2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5259,7 +5511,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-010 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5281,7 +5533,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5289,7 +5543,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-010-71bf2b6eb49effd2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5322,7 +5577,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-011 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5344,7 +5599,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5352,7 +5609,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-011-0f1df7ea076dd80d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5385,7 +5643,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-012 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5407,7 +5665,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5415,7 +5675,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-012-2d57b065d41ea473.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5448,7 +5709,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ACCRUAL-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ACCRUAL-014 — evidence · HCM Fusion",
     "description": "ABS-ACCRUAL-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5470,7 +5731,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ACCRUAL-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5478,7 +5741,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-accrual-014-be0bd7a8ddb041d9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5511,7 +5775,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-001 — evidence · HCM Fusion",
     "description": "ABS-CERT-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5533,7 +5797,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5541,7 +5807,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-001-5244ec0708932c3f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5574,7 +5841,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-002 — evidence · HCM Fusion",
     "description": "ABS-CERT-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5596,7 +5863,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5604,7 +5873,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-002-3cea240064fe1178.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5637,7 +5907,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-003 — evidence · HCM Fusion",
     "description": "ABS-CERT-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5659,7 +5929,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5667,7 +5939,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-003-f4f0de4ab68b9bf2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5700,7 +5973,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-004 — evidence · HCM Fusion",
     "description": "ABS-CERT-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5722,7 +5995,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5730,7 +6005,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-004-6d4d50d991553f9c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5763,7 +6039,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-005 — evidence · HCM Fusion",
     "description": "ABS-CERT-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5785,7 +6061,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5793,7 +6071,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-005-4f18439d8ad24aa0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5826,7 +6105,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-006 — evidence · HCM Fusion",
     "description": "ABS-CERT-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5848,7 +6127,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5856,7 +6137,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-006-bbf875e7ae0c9f8d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5889,7 +6171,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-007 — evidence · HCM Fusion",
     "description": "ABS-CERT-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5911,7 +6193,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5919,7 +6203,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-007-5c4eda03eb442437.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -5952,7 +6237,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-008 — evidence · HCM Fusion",
     "description": "ABS-CERT-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -5974,7 +6259,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -5982,7 +6269,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-008-4a0eee7e91a24ad7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6015,7 +6303,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-009 — evidence · HCM Fusion",
     "description": "ABS-CERT-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6037,7 +6325,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6045,7 +6335,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-009-5e9bb954cea9ea36.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6078,7 +6369,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CERT-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CERT-010 — evidence · HCM Fusion",
     "description": "ABS-CERT-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6100,7 +6391,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CERT-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6108,7 +6401,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-cert-010-122ac976088a3163.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6141,7 +6435,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-COMP-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-COMP-001 — evidence · HCM Fusion",
     "description": "ABS-COMP-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6163,7 +6457,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-COMP-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6171,7 +6467,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-comp-001-ceec6f15f86438dc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6204,7 +6501,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-COMP-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-COMP-002 — evidence · HCM Fusion",
     "description": "ABS-COMP-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6226,7 +6523,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-COMP-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6234,7 +6533,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-comp-002-f02996160c453698.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6267,7 +6567,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-COMP-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-COMP-003 — evidence · HCM Fusion",
     "description": "ABS-COMP-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6289,7 +6589,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-COMP-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6297,7 +6599,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-comp-003-37bf73ff36970488.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6330,7 +6633,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-COMP-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-COMP-004 — evidence · HCM Fusion",
     "description": "ABS-COMP-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6352,7 +6655,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-COMP-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6360,7 +6665,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-comp-004-286d1c2080b8f124.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6393,7 +6699,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-COMP-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-COMP-005 — evidence · HCM Fusion",
     "description": "ABS-COMP-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6415,7 +6721,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-COMP-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6423,7 +6731,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-comp-005-c6639ac400bdcb3d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6456,7 +6765,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-COMP-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-COMP-006 — evidence · HCM Fusion",
     "description": "ABS-COMP-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6478,7 +6787,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-COMP-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6486,7 +6797,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-comp-006-7e088bdef3c5d9f5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6519,7 +6831,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-COMP-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-COMP-007 — evidence · HCM Fusion",
     "description": "ABS-COMP-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6541,7 +6853,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-COMP-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6549,7 +6863,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-comp-007-41f5267208fa2866.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6582,7 +6897,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-001 — evidence · HCM Fusion",
     "description": "ABS-CTIME-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6604,7 +6919,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6612,7 +6929,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-001-38356c6eb0c32dd6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6645,7 +6963,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-002 — evidence · HCM Fusion",
     "description": "ABS-CTIME-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6667,7 +6985,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6675,7 +6995,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-002-4145f2d3468b548f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6708,7 +7029,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-003 — evidence · HCM Fusion",
     "description": "ABS-CTIME-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6730,7 +7051,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6738,7 +7061,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-003-2d4ca8e12c573bf4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6771,7 +7095,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-004 — evidence · HCM Fusion",
     "description": "ABS-CTIME-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6793,7 +7117,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6801,7 +7127,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-004-fef0f4fcd710cd01.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6834,7 +7161,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-005 — evidence · HCM Fusion",
     "description": "ABS-CTIME-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6856,7 +7183,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6864,7 +7193,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-005-4c1ca1d079d6187b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6897,7 +7227,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-006 — evidence · HCM Fusion",
     "description": "ABS-CTIME-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6919,7 +7249,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6927,7 +7259,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-006-b77929ff34e4e73b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -6960,7 +7293,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-007 — evidence · HCM Fusion",
     "description": "ABS-CTIME-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -6982,7 +7315,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -6990,7 +7325,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-007-4c644b7d974fdd2b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7023,7 +7359,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-008 — evidence · HCM Fusion",
     "description": "ABS-CTIME-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7045,7 +7381,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7053,7 +7391,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-008-f7a1d8f9d81dec1d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7086,7 +7425,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-009 — evidence · HCM Fusion",
     "description": "ABS-CTIME-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7108,7 +7447,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7116,7 +7457,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-009-c5e83779a90594d1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7149,7 +7491,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-CTIME-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-CTIME-010 — evidence · HCM Fusion",
     "description": "ABS-CTIME-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7171,7 +7513,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-CTIME-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7179,7 +7523,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-ctime-010-a83fea0223baf56f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7212,7 +7557,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-001 — evidence · HCM Fusion",
     "description": "ABS-DATE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7234,7 +7579,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7242,7 +7589,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-001-57b32cfa0e17e123.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7275,7 +7623,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-002 — evidence · HCM Fusion",
     "description": "ABS-DATE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7297,7 +7645,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7305,7 +7655,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-002-d5e5aa064704a786.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7338,7 +7689,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-003 — evidence · HCM Fusion",
     "description": "ABS-DATE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7360,7 +7711,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7368,7 +7721,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-003-73aa94705fd801ef.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7401,7 +7755,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-004 — evidence · HCM Fusion",
     "description": "ABS-DATE-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7423,7 +7777,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7431,7 +7787,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-004-0e1b71ef029d0e6c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7464,7 +7821,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-005 — evidence · HCM Fusion",
     "description": "ABS-DATE-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7486,7 +7843,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7494,7 +7853,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-005-c40a5b30b2f9f102.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7527,7 +7887,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-006 — evidence · HCM Fusion",
     "description": "ABS-DATE-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7549,7 +7909,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7557,7 +7919,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-006-8f2707eb9fd023b2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7590,7 +7953,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-007 — evidence · HCM Fusion",
     "description": "ABS-DATE-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7612,7 +7975,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7620,7 +7985,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-007-aaa5580c3f2e41c6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7653,7 +8019,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-008 — evidence · HCM Fusion",
     "description": "ABS-DATE-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7675,7 +8041,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7683,7 +8051,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-008-03b4600f0cf0e638.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7716,7 +8085,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DATE-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DATE-009 — evidence · HCM Fusion",
     "description": "ABS-DATE-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7738,7 +8107,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DATE-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7746,7 +8117,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-date-009-2544accf61661bf3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7779,7 +8151,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-003 — evidence · HCM Fusion",
     "description": "ABS-DON-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7801,7 +8173,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7809,7 +8183,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-003-25e1d98de4dc3e09.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7842,7 +8217,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-004 — evidence · HCM Fusion",
     "description": "ABS-DON-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7864,7 +8239,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7872,7 +8249,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-004-8ee272e6b9bb9f91.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7905,7 +8283,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-005 — evidence · HCM Fusion",
     "description": "ABS-DON-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7927,7 +8305,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7935,7 +8315,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-005-1c8027ba33facfad.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -7968,7 +8349,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-007 — evidence · HCM Fusion",
     "description": "ABS-DON-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -7990,7 +8371,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -7998,7 +8381,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-007-bbd4ac14e9d86a72.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8031,7 +8415,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-008 — evidence · HCM Fusion",
     "description": "ABS-DON-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8053,7 +8437,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8061,7 +8447,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-008-7086ac085b7480cc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8094,7 +8481,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-009 — evidence · HCM Fusion",
     "description": "ABS-DON-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8116,7 +8503,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8124,7 +8513,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-009-3f4e0c30c5d699d1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8157,7 +8547,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-010 — evidence · HCM Fusion",
     "description": "ABS-DON-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8179,7 +8569,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8187,7 +8579,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-010-51e6cad1a704df95.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8220,7 +8613,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-011 — evidence · HCM Fusion",
     "description": "ABS-DON-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8242,7 +8635,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8250,7 +8645,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-011-fd54d8450226df20.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8283,7 +8679,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-DON-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-DON-012 — evidence · HCM Fusion",
     "description": "ABS-DON-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8305,7 +8701,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-DON-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8313,7 +8711,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-don-012-5c085a98b8c7e976.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8346,7 +8745,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELEM-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELEM-001 — evidence · HCM Fusion",
     "description": "ABS-ELEM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8368,7 +8767,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELEM-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8376,7 +8777,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elem-001-4b7ccf33834a8cbb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8409,7 +8811,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELEM-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELEM-002 — evidence · HCM Fusion",
     "description": "ABS-ELEM-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8431,7 +8833,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELEM-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8439,7 +8843,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elem-002-5ccc5adb96ded7ac.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8472,7 +8877,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELEM-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELEM-003 — evidence · HCM Fusion",
     "description": "ABS-ELEM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8494,7 +8899,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELEM-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8502,7 +8909,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elem-003-7b3c4ccf5d46e32e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8535,7 +8943,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELEM-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELEM-004 — evidence · HCM Fusion",
     "description": "ABS-ELEM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8557,7 +8965,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELEM-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8565,7 +8975,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elem-004-30a33fb1891b08ae.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8598,7 +9009,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELEM-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELEM-005 — evidence · HCM Fusion",
     "description": "ABS-ELEM-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8620,7 +9031,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELEM-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8628,7 +9041,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elem-005-39de7a94f57bb268.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8661,7 +9075,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELEM-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELEM-006 — evidence · HCM Fusion",
     "description": "ABS-ELEM-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8683,7 +9097,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELEM-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8691,7 +9107,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elem-006-b8978c4a3fe113de.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8724,7 +9141,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELEM-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELEM-007 — evidence · HCM Fusion",
     "description": "ABS-ELEM-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8746,7 +9163,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELEM-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8754,7 +9173,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elem-007-d1c1a8f97cae1124.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8787,7 +9207,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELEM-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELEM-008 — evidence · HCM Fusion",
     "description": "ABS-ELEM-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8809,7 +9229,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELEM-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8817,7 +9239,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elem-008-ad9679b7721a7e55.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8850,7 +9273,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-001 — evidence · HCM Fusion",
     "description": "ABS-ELIG-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8872,7 +9295,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8880,7 +9305,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-001-f09f23c1a2fdc66d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8913,7 +9339,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-002 — evidence · HCM Fusion",
     "description": "ABS-ELIG-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8935,7 +9361,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -8943,7 +9371,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-002-490268884ce0ffbc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -8976,7 +9405,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-003 — evidence · HCM Fusion",
     "description": "ABS-ELIG-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -8998,7 +9427,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9006,7 +9437,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-003-6f1ed0cc03fe835f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9039,7 +9471,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-004 — evidence · HCM Fusion",
     "description": "ABS-ELIG-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9061,7 +9493,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9069,7 +9503,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-004-1ab14edf3110d8cd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9102,7 +9537,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-005 — evidence · HCM Fusion",
     "description": "ABS-ELIG-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9124,7 +9559,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9132,7 +9569,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-005-27ff38d876d7d5c0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9165,7 +9603,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-009 — evidence · HCM Fusion",
     "description": "ABS-ELIG-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9187,7 +9625,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9195,7 +9635,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-009-1dc7426a8fe2f152.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9228,7 +9669,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-010 — evidence · HCM Fusion",
     "description": "ABS-ELIG-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9250,7 +9691,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9258,7 +9701,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-010-6a11d334856507e7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9291,7 +9735,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-011 — evidence · HCM Fusion",
     "description": "ABS-ELIG-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9313,7 +9757,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9321,7 +9767,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-011-8b8911e9df663c56.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9354,7 +9801,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-ELIG-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-ELIG-012 — evidence · HCM Fusion",
     "description": "ABS-ELIG-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9376,7 +9823,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-ELIG-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9384,7 +9833,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-elig-012-5d10899bd15a0f69.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9417,7 +9867,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FLEX-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FLEX-001 — evidence · HCM Fusion",
     "description": "ABS-FLEX-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9439,7 +9889,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FLEX-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9447,7 +9899,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-flex-001-7f9e40216ac60741.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9480,7 +9933,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FLEX-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FLEX-002 — evidence · HCM Fusion",
     "description": "ABS-FLEX-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9502,7 +9955,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FLEX-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9510,7 +9965,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-flex-002-a8f4fa89d03f65fb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9543,7 +9999,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FLEX-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FLEX-003 — evidence · HCM Fusion",
     "description": "ABS-FLEX-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9565,7 +10021,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FLEX-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9573,7 +10031,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-flex-003-381f2797ce7e5141.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9606,7 +10065,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FLEX-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FLEX-004 — evidence · HCM Fusion",
     "description": "ABS-FLEX-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9628,7 +10087,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FLEX-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9636,7 +10097,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-flex-004-f8c9be6ef5ce68a1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9669,7 +10131,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FLEX-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FLEX-005 — evidence · HCM Fusion",
     "description": "ABS-FLEX-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9691,7 +10153,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FLEX-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9699,7 +10163,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-flex-005-4bf375e2038cf05b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9732,7 +10197,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FLEX-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FLEX-006 — evidence · HCM Fusion",
     "description": "ABS-FLEX-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9754,7 +10219,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FLEX-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9762,7 +10229,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-flex-006-10ec9e18fdf51370.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9795,7 +10263,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-001 — evidence · HCM Fusion",
     "description": "ABS-FORM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9817,7 +10285,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9825,7 +10295,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-001-36fc1fdf44ecc410.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9858,7 +10329,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-003 — evidence · HCM Fusion",
     "description": "ABS-FORM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9880,7 +10351,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9888,7 +10361,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-003-820a5f00df9fde55.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9921,7 +10395,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-004 — evidence · HCM Fusion",
     "description": "ABS-FORM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -9943,7 +10417,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -9951,7 +10427,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-004-6706f345ab07c7c4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -9984,7 +10461,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-005 — evidence · HCM Fusion",
     "description": "ABS-FORM-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10006,7 +10483,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10014,7 +10493,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-005-d073abc7b4166180.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10047,7 +10527,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-006 — evidence · HCM Fusion",
     "description": "ABS-FORM-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10069,7 +10549,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10077,7 +10559,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-006-03d2e15e56e7cbec.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10110,7 +10593,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-007 — evidence · HCM Fusion",
     "description": "ABS-FORM-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10132,7 +10615,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10140,7 +10625,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-007-0ef260c9d580b82e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10173,7 +10659,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-008 — evidence · HCM Fusion",
     "description": "ABS-FORM-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10195,7 +10681,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10203,7 +10691,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-008-f2fa66f186a0dbee.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10236,7 +10725,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-011 — evidence · HCM Fusion",
     "description": "ABS-FORM-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10258,7 +10747,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10266,7 +10757,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-011-26e39b2edb0e33b0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10299,7 +10791,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-012 — evidence · HCM Fusion",
     "description": "ABS-FORM-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10321,7 +10813,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10329,7 +10823,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-012-752222e9a7106634.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10362,7 +10857,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-013 — evidence · HCM Fusion",
     "description": "ABS-FORM-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10384,7 +10879,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10392,7 +10889,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-013-1bb39b6e8bfdfeff.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10425,7 +10923,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-FORM-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-FORM-014 — evidence · HCM Fusion",
     "description": "ABS-FORM-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10447,7 +10945,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-FORM-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10455,7 +10955,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-form-014-d09779d063e7bfad.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10488,7 +10989,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LINK-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LINK-001 — evidence · HCM Fusion",
     "description": "ABS-LINK-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10510,7 +11011,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LINK-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10518,7 +11021,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-link-001-9eab8c5b028ab35a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10551,7 +11055,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOAD-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOAD-001 — evidence · HCM Fusion",
     "description": "ABS-LOAD-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10573,7 +11077,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOAD-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10581,7 +11087,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-load-001-c67e96e03082fa97.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10614,7 +11121,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOAD-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOAD-002 — evidence · HCM Fusion",
     "description": "ABS-LOAD-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10636,7 +11143,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOAD-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10644,7 +11153,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-load-002-800f522d52a1e3f8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10677,7 +11187,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOAD-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOAD-003 — evidence · HCM Fusion",
     "description": "ABS-LOAD-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10699,7 +11209,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOAD-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10707,7 +11219,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-load-003-6abafa1adce4e43d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10740,7 +11253,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOAD-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOAD-004 — evidence · HCM Fusion",
     "description": "ABS-LOAD-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10762,7 +11275,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOAD-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10770,7 +11285,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-load-004-205c0a45ba6f0079.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10803,7 +11319,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOAD-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOAD-005 — evidence · HCM Fusion",
     "description": "ABS-LOAD-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10825,7 +11341,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOAD-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10833,7 +11351,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-load-005-2770add1a685089b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10866,7 +11385,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOAD-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOAD-006 — evidence · HCM Fusion",
     "description": "ABS-LOAD-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10888,7 +11407,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOAD-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10896,7 +11417,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-load-006-91145b1aeeca728c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10929,7 +11451,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOAD-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOAD-007 — evidence · HCM Fusion",
     "description": "ABS-LOAD-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -10951,7 +11473,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOAD-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -10959,7 +11483,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-load-007-3ebd03fb0909f76e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -10992,7 +11517,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOAD-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOAD-008 — evidence · HCM Fusion",
     "description": "ABS-LOAD-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11014,7 +11539,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOAD-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11022,7 +11549,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-load-008-090a2067dd6e8dcd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11055,7 +11583,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOOKUP-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOOKUP-001 — evidence · HCM Fusion",
     "description": "ABS-LOOKUP-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11077,7 +11605,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOOKUP-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11085,7 +11615,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-lookup-001-d106619e82b50075.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11118,7 +11649,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOOKUP-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOOKUP-002 — evidence · HCM Fusion",
     "description": "ABS-LOOKUP-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11140,7 +11671,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOOKUP-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11148,7 +11681,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-lookup-002-b8f073359dbb5ac1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11181,7 +11715,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOOKUP-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOOKUP-003 — evidence · HCM Fusion",
     "description": "ABS-LOOKUP-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11203,7 +11737,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOOKUP-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11211,7 +11747,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-lookup-003-8a6e858187eb2352.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11244,7 +11781,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOOKUP-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOOKUP-004 — evidence · HCM Fusion",
     "description": "ABS-LOOKUP-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11266,7 +11803,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOOKUP-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11274,7 +11813,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-lookup-004-88f235cacbedbee4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11307,7 +11847,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOOKUP-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOOKUP-005 — evidence · HCM Fusion",
     "description": "ABS-LOOKUP-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11329,7 +11869,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOOKUP-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11337,7 +11879,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-lookup-005-5c7d713e5f3c17ec.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11370,7 +11913,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOOKUP-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOOKUP-006 — evidence · HCM Fusion",
     "description": "ABS-LOOKUP-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11392,7 +11935,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOOKUP-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11400,7 +11945,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-lookup-006-4c6ce2ffebc255c3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11433,7 +11979,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-LOOKUP-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-LOOKUP-007 — evidence · HCM Fusion",
     "description": "ABS-LOOKUP-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11455,7 +12001,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-LOOKUP-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11463,7 +12011,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-lookup-007-a80c17bfde3c7fa0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11496,7 +12045,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PLAN-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PLAN-001 — evidence · HCM Fusion",
     "description": "ABS-PLAN-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11518,7 +12067,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PLAN-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11526,7 +12077,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-plan-001-d3651ad8ac675004.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11559,7 +12111,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PLAN-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PLAN-002 — evidence · HCM Fusion",
     "description": "ABS-PLAN-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11581,7 +12133,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PLAN-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11589,7 +12143,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-plan-002-f59e17fedbd6027f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11622,7 +12177,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PLAN-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PLAN-003 — evidence · HCM Fusion",
     "description": "ABS-PLAN-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11644,7 +12199,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PLAN-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11652,7 +12209,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-plan-003-469d3e7ce1c77d16.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11685,7 +12243,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PLAN-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PLAN-004 — evidence · HCM Fusion",
     "description": "ABS-PLAN-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11707,7 +12265,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PLAN-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11715,7 +12275,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-plan-004-b0dbcbf60972cf89.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11748,7 +12309,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PLAN-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PLAN-005 — evidence · HCM Fusion",
     "description": "ABS-PLAN-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11770,7 +12331,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PLAN-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11778,7 +12341,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-plan-005-062b51a707e54520.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11811,7 +12375,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PLAN-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PLAN-006 — evidence · HCM Fusion",
     "description": "ABS-PLAN-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11833,7 +12397,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PLAN-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11841,7 +12407,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-plan-006-bec72dfdaa069dbc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11874,7 +12441,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PLAN-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PLAN-007 — evidence · HCM Fusion",
     "description": "ABS-PLAN-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11896,7 +12463,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PLAN-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11904,7 +12473,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-plan-007-9e3f36a1868a0e6b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -11937,7 +12507,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-001 — evidence · HCM Fusion",
     "description": "ABS-PROC-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -11959,7 +12529,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -11967,7 +12539,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-001-43c44b12b9472d2a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12000,7 +12573,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-002 — evidence · HCM Fusion",
     "description": "ABS-PROC-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12022,7 +12595,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12030,7 +12605,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-002-65be21d96868d0c5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12063,7 +12639,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-003 — evidence · HCM Fusion",
     "description": "ABS-PROC-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12085,7 +12661,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12093,7 +12671,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-003-08f5122326efffb2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12126,7 +12705,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-004 — evidence · HCM Fusion",
     "description": "ABS-PROC-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12148,7 +12727,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12156,7 +12737,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-004-e168875ab8ccb9d7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12189,7 +12771,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-005 — evidence · HCM Fusion",
     "description": "ABS-PROC-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12211,7 +12793,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12219,7 +12803,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-005-7c6623df3d1c20c0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12252,7 +12837,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-006 — evidence · HCM Fusion",
     "description": "ABS-PROC-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12274,7 +12859,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12282,7 +12869,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-006-e8a829819d65c194.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12315,7 +12903,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-007 — evidence · HCM Fusion",
     "description": "ABS-PROC-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12337,7 +12925,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12345,7 +12935,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-007-1bab850de0829d88.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12378,7 +12969,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-008 — evidence · HCM Fusion",
     "description": "ABS-PROC-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12400,7 +12991,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12408,7 +13001,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-008-b67c78b261aa1c58.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12441,7 +13035,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-009 — evidence · HCM Fusion",
     "description": "ABS-PROC-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12463,7 +13057,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12471,7 +13067,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-009-d06545d9b565f494.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12504,7 +13101,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-010 — evidence · HCM Fusion",
     "description": "ABS-PROC-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12526,7 +13123,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12534,7 +13133,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-010-b964e6d8354881ae.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12567,7 +13167,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-011 — evidence · HCM Fusion",
     "description": "ABS-PROC-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12589,7 +13189,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12597,7 +13199,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-011-1bbab8f6f61abddc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12630,7 +13233,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-012 — evidence · HCM Fusion",
     "description": "ABS-PROC-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12652,7 +13255,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12660,7 +13265,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-012-d28455a56c1122b7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12693,7 +13299,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-PROC-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-PROC-013 — evidence · HCM Fusion",
     "description": "ABS-PROC-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12715,7 +13321,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-PROC-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12723,7 +13331,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-proc-013-7ec56d9c360c9b2a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12756,7 +13365,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-001 — evidence · HCM Fusion",
     "description": "ABS-QUAL-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12778,7 +13387,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12786,7 +13397,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-001-17e66b3fd13caef6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12819,7 +13431,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-002 — evidence · HCM Fusion",
     "description": "ABS-QUAL-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12841,7 +13453,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12849,7 +13463,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-002-5bd36f205d737250.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12882,7 +13497,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-003 — evidence · HCM Fusion",
     "description": "ABS-QUAL-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12904,7 +13519,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12912,7 +13529,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-003-fadaf87a6bd1acf6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -12945,7 +13563,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-004 — evidence · HCM Fusion",
     "description": "ABS-QUAL-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -12967,7 +13585,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -12975,7 +13595,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-004-8e264bb3b2936f51.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13008,7 +13629,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-005 — evidence · HCM Fusion",
     "description": "ABS-QUAL-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13030,7 +13651,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13038,7 +13661,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-005-2d646ece7bfa5273.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13071,7 +13695,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-006 — evidence · HCM Fusion",
     "description": "ABS-QUAL-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13093,7 +13717,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13101,7 +13727,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-006-915074a327eb5b04.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13134,7 +13761,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-008 — evidence · HCM Fusion",
     "description": "ABS-QUAL-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13156,7 +13783,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13164,7 +13793,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-008-f49094b2f2f25da5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13197,7 +13827,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-009 — evidence · HCM Fusion",
     "description": "ABS-QUAL-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13219,7 +13849,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13227,7 +13859,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-009-70b277b3509a70c5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13260,7 +13893,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-010 — evidence · HCM Fusion",
     "description": "ABS-QUAL-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13282,7 +13915,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13290,7 +13925,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-010-8ac2adbf300ace53.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13323,7 +13959,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-011 — evidence · HCM Fusion",
     "description": "ABS-QUAL-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13345,7 +13981,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13353,7 +13991,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-011-154de7e16c4375fd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13386,7 +14025,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-QUAL-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-QUAL-012 — evidence · HCM Fusion",
     "description": "ABS-QUAL-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13408,7 +14047,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-QUAL-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13416,7 +14057,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-qual-012-3931f94f4d02b915.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13449,7 +14091,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-001 — evidence · HCM Fusion",
     "description": "ABS-RATE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13471,7 +14113,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13479,7 +14123,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-001-291ccbf90464d5fe.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13512,7 +14157,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-002 — evidence · HCM Fusion",
     "description": "ABS-RATE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13534,7 +14179,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13542,7 +14189,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-002-2dc972a465a36d13.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13575,7 +14223,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-003 — evidence · HCM Fusion",
     "description": "ABS-RATE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13597,7 +14245,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13605,7 +14255,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-003-e5fc7e7e9ccbb01e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13638,7 +14289,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-004 — evidence · HCM Fusion",
     "description": "ABS-RATE-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13660,7 +14311,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13668,7 +14321,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-004-308ec8c0e396fda8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13701,7 +14355,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-006 — evidence · HCM Fusion",
     "description": "ABS-RATE-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13723,7 +14377,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13731,7 +14387,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-006-2509afaf52405286.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13764,7 +14421,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-007 — evidence · HCM Fusion",
     "description": "ABS-RATE-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13786,7 +14443,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13794,7 +14453,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-007-2a7d533695153970.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13827,7 +14487,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-008 — evidence · HCM Fusion",
     "description": "ABS-RATE-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13849,7 +14509,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13857,7 +14519,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-008-133c30d23aced588.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13890,7 +14553,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-009 — evidence · HCM Fusion",
     "description": "ABS-RATE-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13912,7 +14575,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13920,7 +14585,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-009-1d6c1a71401a16a6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -13953,7 +14619,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RATE-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RATE-010 — evidence · HCM Fusion",
     "description": "ABS-RATE-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -13975,7 +14641,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RATE-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -13983,7 +14651,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rate-010-01c117be8df82d99.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14016,7 +14685,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RULE-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RULE-001 — evidence · HCM Fusion",
     "description": "ABS-RULE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14038,7 +14707,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RULE-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14046,7 +14717,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rule-001-5e4fe8421c99be98.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14079,7 +14751,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RULE-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RULE-002 — evidence · HCM Fusion",
     "description": "ABS-RULE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14101,7 +14773,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RULE-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14109,7 +14783,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rule-002-2e1bd41fe2ab22a2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14142,7 +14817,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-RULE-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-RULE-003 — evidence · HCM Fusion",
     "description": "ABS-RULE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14164,7 +14839,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-RULE-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14172,7 +14849,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-rule-003-3e3ab47dea0642ab.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14205,7 +14883,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-001 — evidence · HCM Fusion",
     "description": "ABS-SCHED-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14227,7 +14905,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14235,7 +14915,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-001-267b6b0618148627.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14268,7 +14949,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-002 — evidence · HCM Fusion",
     "description": "ABS-SCHED-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14290,7 +14971,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14298,7 +14981,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-002-f2ecdd0cc5317ef9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14331,7 +15015,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-003 — evidence · HCM Fusion",
     "description": "ABS-SCHED-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14353,7 +15037,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14361,7 +15047,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-003-0994f0c848e9be9d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14394,7 +15081,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-004 — evidence · HCM Fusion",
     "description": "ABS-SCHED-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14416,7 +15103,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14424,7 +15113,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-004-149ef308da4eee4e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14457,7 +15147,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-005 — evidence · HCM Fusion",
     "description": "ABS-SCHED-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14479,7 +15169,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14487,7 +15179,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-005-62cb65a5c73ab92e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14520,7 +15213,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-006 — evidence · HCM Fusion",
     "description": "ABS-SCHED-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14542,7 +15235,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14550,7 +15245,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-006-f445f0351f0d74e5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14583,7 +15279,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-007 — evidence · HCM Fusion",
     "description": "ABS-SCHED-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14605,7 +15301,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14613,7 +15311,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-007-92de011775ac0bdb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14646,7 +15345,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-008 — evidence · HCM Fusion",
     "description": "ABS-SCHED-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14668,7 +15367,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14676,7 +15377,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-008-308783dd17b97999.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14709,7 +15411,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SCHED-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SCHED-009 — evidence · HCM Fusion",
     "description": "ABS-SCHED-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14731,7 +15433,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SCHED-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14739,7 +15443,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-sched-009-1ffe02fd75682b52.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14772,7 +15477,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SETUP-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SETUP-001 — evidence · HCM Fusion",
     "description": "ABS-SETUP-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14794,7 +15499,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SETUP-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14802,7 +15509,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-setup-001-6e56993c0500034b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14835,7 +15543,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-SETUP-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-SETUP-002 — evidence · HCM Fusion",
     "description": "ABS-SETUP-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14857,7 +15565,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-SETUP-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14865,7 +15575,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-setup-002-86b777d0c641ee42.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14898,7 +15609,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-001 — evidence · HCM Fusion",
     "description": "ABS-TYPE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14920,7 +15631,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14928,7 +15641,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-001-07e992a1ee488cb7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -14961,7 +15675,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-002 — evidence · HCM Fusion",
     "description": "ABS-TYPE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -14983,7 +15697,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -14991,7 +15707,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-002-bff0e10bac48b34c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15024,7 +15741,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-003 — evidence · HCM Fusion",
     "description": "ABS-TYPE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15046,7 +15763,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15054,7 +15773,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-003-16d39dd07cdbfb3b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15087,7 +15807,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-004 — evidence · HCM Fusion",
     "description": "ABS-TYPE-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15109,7 +15829,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15117,7 +15839,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-004-587707aa3207180c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15150,7 +15873,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-005 — evidence · HCM Fusion",
     "description": "ABS-TYPE-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15172,7 +15895,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15180,7 +15905,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-005-4d83ce77da2158d2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15213,7 +15939,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-006 — evidence · HCM Fusion",
     "description": "ABS-TYPE-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15235,7 +15961,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15243,7 +15971,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-006-a4281992c6a11197.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15276,7 +16005,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-007 — evidence · HCM Fusion",
     "description": "ABS-TYPE-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15298,7 +16027,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15306,7 +16037,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-007-c44113c00acae79f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15339,7 +16071,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-008 — evidence · HCM Fusion",
     "description": "ABS-TYPE-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15361,7 +16093,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15369,7 +16103,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-008-a8677393b3d9ddd5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15402,7 +16137,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-009 — evidence · HCM Fusion",
     "description": "ABS-TYPE-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15424,7 +16159,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15432,7 +16169,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-009-97dac57a662298ef.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15465,7 +16203,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-010 — evidence · HCM Fusion",
     "description": "ABS-TYPE-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15487,7 +16225,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15495,7 +16235,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-010-12952eb4254f5e8d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15528,7 +16269,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-011 — evidence · HCM Fusion",
     "description": "ABS-TYPE-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15550,7 +16291,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15558,7 +16301,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-011-f509fa9148b9032a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15591,7 +16335,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-012 — evidence · HCM Fusion",
     "description": "ABS-TYPE-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15613,7 +16357,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15621,7 +16367,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-012-e9900afdaa83cc6c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15654,7 +16401,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-013 — evidence · HCM Fusion",
     "description": "ABS-TYPE-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15676,7 +16423,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15684,7 +16433,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-013-4400efdf4c0b5a4e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15717,7 +16467,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-014 — evidence · HCM Fusion",
     "description": "ABS-TYPE-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15739,7 +16489,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15747,7 +16499,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-014-e12280670d13f7b0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15780,7 +16533,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-015/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-015 — evidence · HCM Fusion",
     "description": "ABS-TYPE-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15802,7 +16555,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-015/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15810,7 +16565,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-015-4b1369eae8aa08f9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15843,7 +16599,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-016/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-016 — evidence · HCM Fusion",
     "description": "ABS-TYPE-016 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15865,7 +16621,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-016/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15873,7 +16631,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-016-6f8a7cbde1ad784b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15906,7 +16665,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-017/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-017 — evidence · HCM Fusion",
     "description": "ABS-TYPE-017 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15928,7 +16687,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-017/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15936,7 +16697,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-017-dd3a4f980c3ad78a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -15969,7 +16731,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-018/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-018 — evidence · HCM Fusion",
     "description": "ABS-TYPE-018 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -15991,7 +16753,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-018/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -15999,7 +16763,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-018-1e551cabfb77ef91.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16032,7 +16797,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-019/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-019 — evidence · HCM Fusion",
     "description": "ABS-TYPE-019 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16054,7 +16819,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-019/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16062,7 +16829,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-019-7cecb43da4d2b2f9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16095,7 +16863,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-020/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-020 — evidence · HCM Fusion",
     "description": "ABS-TYPE-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16117,7 +16885,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-020/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16125,7 +16895,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-020-2e30fdeacd2d4a61.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16158,7 +16929,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-021/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-021 — evidence · HCM Fusion",
     "description": "ABS-TYPE-021 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16180,7 +16951,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-021/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16188,7 +16961,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-021-8ed94569ad90aec2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16221,7 +16995,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-TYPE-022/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-TYPE-022 — evidence · HCM Fusion",
     "description": "ABS-TYPE-022 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16243,7 +17017,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-TYPE-022/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16251,7 +17027,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-type-022-5ef4823f8676dae5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16284,7 +17061,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-XTRACT-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-XTRACT-001 — evidence · HCM Fusion",
     "description": "ABS-XTRACT-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16306,7 +17083,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-XTRACT-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16314,7 +17093,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-xtract-001-dba36c26b383a596.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16347,7 +17127,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-XTRACT-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-XTRACT-002 — evidence · HCM Fusion",
     "description": "ABS-XTRACT-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16369,7 +17149,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-XTRACT-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16377,7 +17159,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-xtract-002-dab988c7079b8be4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16410,7 +17193,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-XTRACT-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-XTRACT-003 — evidence · HCM Fusion",
     "description": "ABS-XTRACT-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16432,7 +17215,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-XTRACT-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16440,7 +17225,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-xtract-003-641e3243e4c3750f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16473,7 +17259,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ABS-XTRACT-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ABS-XTRACT-004 — evidence · HCM Fusion",
     "description": "ABS-XTRACT-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16495,7 +17281,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ABS-XTRACT-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16503,7 +17291,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-abs-xtract-004-8af79bd7f48a7c75.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16536,7 +17325,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ASG-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ASG-009 — evidence · HCM Fusion",
     "description": "COREHR-ASG-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16558,7 +17347,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ASG-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16566,7 +17357,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-asg-009-e4e7cc6a1b029a1c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16599,7 +17391,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ASG-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ASG-010 — evidence · HCM Fusion",
     "description": "COREHR-ASG-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16621,7 +17413,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ASG-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16629,7 +17423,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-asg-010-6f17a0073b676a1d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16662,7 +17457,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ASG-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ASG-011 — evidence · HCM Fusion",
     "description": "COREHR-ASG-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16684,7 +17479,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ASG-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16692,7 +17489,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-asg-011-8f6ebab5f20af900.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16725,7 +17523,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ASG-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ASG-012 — evidence · HCM Fusion",
     "description": "COREHR-ASG-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16747,7 +17545,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ASG-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16755,7 +17555,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-asg-012-592bf02bc787d00a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16788,7 +17589,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ASG-029/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ASG-029 — evidence · HCM Fusion",
     "description": "COREHR-ASG-029 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16810,7 +17611,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ASG-029/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16818,7 +17621,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-asg-029-efe9861b37c4f731.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16851,7 +17655,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ASG-030/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ASG-030 — evidence · HCM Fusion",
     "description": "COREHR-ASG-030 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16873,7 +17677,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ASG-030/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16881,7 +17687,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-asg-030-e67b7e9f3bec8b00.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16914,7 +17721,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ASG-031/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ASG-031 — evidence · HCM Fusion",
     "description": "COREHR-ASG-031 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16936,7 +17743,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ASG-031/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -16944,7 +17753,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-asg-031-01a7e3ede1769a2b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -16977,7 +17787,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ASG-034/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ASG-034 — evidence · HCM Fusion",
     "description": "COREHR-ASG-034 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -16999,7 +17809,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ASG-034/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17007,7 +17819,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-asg-034-283f84e5f1a35e20.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17040,7 +17853,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ENT-024/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ENT-024 — evidence · HCM Fusion",
     "description": "COREHR-ENT-024 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17062,7 +17875,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ENT-024/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17070,7 +17885,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-ent-024-c86838a652da9595.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17103,7 +17919,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ENT-025/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ENT-025 — evidence · HCM Fusion",
     "description": "COREHR-ENT-025 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17125,7 +17941,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ENT-025/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17133,7 +17951,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-ent-025-4655780ca513169c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17166,7 +17985,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ENT-026/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ENT-026 — evidence · HCM Fusion",
     "description": "COREHR-ENT-026 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17188,7 +18007,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ENT-026/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17196,7 +18017,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-ent-026-2611036ddfb0b50f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17229,7 +18051,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ENT-027/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ENT-027 — evidence · HCM Fusion",
     "description": "COREHR-ENT-027 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17251,7 +18073,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ENT-027/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17259,7 +18083,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-ent-027-3b37720d8fabfdab.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17292,7 +18117,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ENT-028/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ENT-028 — evidence · HCM Fusion",
     "description": "COREHR-ENT-028 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17314,7 +18139,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ENT-028/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17322,7 +18149,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-ent-028-21300bf18b30d38b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17355,7 +18183,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-GRADE-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-GRADE-008 — evidence · HCM Fusion",
     "description": "COREHR-GRADE-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17377,7 +18205,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-GRADE-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17385,7 +18215,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-grade-008-954a15eff3474464.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17418,7 +18249,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-JOB-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-JOB-001 — evidence · HCM Fusion",
     "description": "COREHR-JOB-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17440,7 +18271,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-JOB-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17448,7 +18281,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-job-001-97fd3e7eadceaf5e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17481,7 +18315,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-JOB-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-JOB-002 — evidence · HCM Fusion",
     "description": "COREHR-JOB-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17503,7 +18337,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-JOB-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17511,7 +18347,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-job-002-966d36e18b7ab1b5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17544,7 +18381,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-NWK-020/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-NWK-020 — evidence · HCM Fusion",
     "description": "COREHR-NWK-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17566,7 +18403,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-NWK-020/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17574,7 +18413,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-nwk-020-be393f077f411b5a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17607,7 +18447,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ORDER-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ORDER-001 — evidence · HCM Fusion",
     "description": "COREHR-ORDER-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17629,7 +18469,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ORDER-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17637,7 +18479,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-order-001-edaabe26024c762d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17670,7 +18513,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ORDER-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ORDER-002 — evidence · HCM Fusion",
     "description": "COREHR-ORDER-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17692,7 +18535,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ORDER-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17700,7 +18545,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-order-002-094bd0accb63a3b4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17733,7 +18579,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-ORDER-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-ORDER-003 — evidence · HCM Fusion",
     "description": "COREHR-ORDER-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17755,7 +18601,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-ORDER-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17763,7 +18611,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-order-003-22264f25c0154545.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17796,7 +18645,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-POS-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-POS-004 — evidence · HCM Fusion",
     "description": "COREHR-POS-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17818,7 +18667,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-POS-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17826,7 +18677,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-pos-004-29a4cbf8510a6d15.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17859,7 +18711,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-POS-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-POS-005 — evidence · HCM Fusion",
     "description": "COREHR-POS-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17881,7 +18733,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-POS-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17889,7 +18743,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-pos-005-3e989e5b4eab588b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17922,7 +18777,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-POS-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-POS-006 — evidence · HCM Fusion",
     "description": "COREHR-POS-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -17944,7 +18799,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-POS-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -17952,7 +18809,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-pos-006-227e7ba46ab13145.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -17985,7 +18843,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-SYNC-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-SYNC-014 — evidence · HCM Fusion",
     "description": "COREHR-SYNC-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18007,7 +18865,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-SYNC-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18015,7 +18875,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-sync-014-fdbb45b9e5e459c6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18048,7 +18909,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-WR-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-WR-013 — evidence · HCM Fusion",
     "description": "COREHR-WR-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18070,7 +18931,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-WR-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18078,7 +18941,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-wr-013-e8dc378eb03b854d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18111,7 +18975,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-WR-016/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-WR-016 — evidence · HCM Fusion",
     "description": "COREHR-WR-016 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18133,7 +18997,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-WR-016/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18141,7 +19007,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-wr-016-bc35688227473a5c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18174,7 +19041,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-WR-017/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-WR-017 — evidence · HCM Fusion",
     "description": "COREHR-WR-017 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18196,7 +19063,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-WR-017/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18204,7 +19073,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-wr-017-39d53f163fad06f1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18237,7 +19107,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-WR-018/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-WR-018 — evidence · HCM Fusion",
     "description": "COREHR-WR-018 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18259,7 +19129,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-WR-018/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18267,7 +19139,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-wr-018-e8554ed5ccb1545c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18300,7 +19173,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-WR-019/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-WR-019 — evidence · HCM Fusion",
     "description": "COREHR-WR-019 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18322,7 +19195,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-WR-019/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18330,7 +19205,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-wr-019-80cd1264778aaef7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18363,7 +19239,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-WR-021/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-WR-021 — evidence · HCM Fusion",
     "description": "COREHR-WR-021 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18385,7 +19261,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-WR-021/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18393,7 +19271,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-wr-021-78b8c74e9813e17d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18426,7 +19305,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/COREHR-WS-015/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "COREHR-WS-015 — evidence · HCM Fusion",
     "description": "COREHR-WS-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18448,7 +19327,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/COREHR-WS-015/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18456,7 +19337,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-corehr-ws-015-f0dcfafe520c6d07.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18489,7 +19371,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-CAREERSITE-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-CAREERSITE-010 — evidence · HCM Fusion",
     "description": "ORC-CAREERSITE-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18511,7 +19393,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-CAREERSITE-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18519,7 +19403,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-careersite-010-8386049f82c1238b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18552,7 +19437,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-CAREERSITE-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-CAREERSITE-011 — evidence · HCM Fusion",
     "description": "ORC-CAREERSITE-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18574,7 +19459,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-CAREERSITE-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18582,7 +19469,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-careersite-011-cd5747429a8c57cd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18615,7 +19503,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-CAREERSITE-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-CAREERSITE-012 — evidence · HCM Fusion",
     "description": "ORC-CAREERSITE-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18637,7 +19525,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-CAREERSITE-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18645,7 +19535,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-careersite-012-1d72f479ad6cf59d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18678,7 +19569,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-CAREERSITE-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-CAREERSITE-013 — evidence · HCM Fusion",
     "description": "ORC-CAREERSITE-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18700,7 +19591,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-CAREERSITE-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18708,7 +19601,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-careersite-013-ae8c9c8b8b0cac91.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18741,7 +19635,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-CAREERSITE-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-CAREERSITE-014 — evidence · HCM Fusion",
     "description": "ORC-CAREERSITE-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18763,7 +19657,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-CAREERSITE-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18771,7 +19667,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-careersite-014-8f923c146cd4a04e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18804,7 +19701,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-CSP-020/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-CSP-020 — evidence · HCM Fusion",
     "description": "ORC-CSP-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18826,7 +19723,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-CSP-020/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18834,7 +19733,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-csp-020-52618b5b8711b207.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18867,7 +19767,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-CSP-021/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-CSP-021 — evidence · HCM Fusion",
     "description": "ORC-CSP-021 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18889,7 +19789,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-CSP-021/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18897,7 +19799,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-csp-021-ef7b9513861172a5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18930,7 +19833,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-OFFERING-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-OFFERING-004 — evidence · HCM Fusion",
     "description": "ORC-OFFERING-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -18952,7 +19855,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-OFFERING-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -18960,7 +19865,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-offering-004-39a901bd2c2e8337.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -18993,7 +19899,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-OPTIN-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-OPTIN-001 — evidence · HCM Fusion",
     "description": "ORC-OPTIN-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19015,7 +19921,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-OPTIN-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19023,7 +19931,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-optin-001-a5de1fc208910cac.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19056,7 +19965,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-PERSONID-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-PERSONID-003 — evidence · HCM Fusion",
     "description": "ORC-PERSONID-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19078,7 +19987,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-PERSONID-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19086,7 +19997,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-personid-003-571b39748303e9d1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19119,7 +20031,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-PREREQ-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-PREREQ-002 — evidence · HCM Fusion",
     "description": "ORC-PREREQ-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19141,7 +20053,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-PREREQ-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19149,7 +20063,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-prereq-002-31793dc435f28fba.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19182,7 +20097,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-REST-030/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-REST-030 — evidence · HCM Fusion",
     "description": "ORC-REST-030 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19204,7 +20119,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-REST-030/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19212,7 +20129,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-rest-030-b896662ac1bd0f33.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19245,7 +20163,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-REST-031/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-REST-031 — evidence · HCM Fusion",
     "description": "ORC-REST-031 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19267,7 +20185,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-REST-031/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19275,7 +20195,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-rest-031-f011f83d7a3b6d0b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19308,7 +20229,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-REST-033/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-REST-033 — evidence · HCM Fusion",
     "description": "ORC-REST-033 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19330,7 +20251,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-REST-033/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19338,7 +20261,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-rest-033-d5cee966246c68c4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19371,7 +20295,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-REST-034/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-REST-034 — evidence · HCM Fusion",
     "description": "ORC-REST-034 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19393,7 +20317,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-REST-034/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19401,7 +20327,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-rest-034-1d2218b0db02baa0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19434,7 +20361,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-REST-035/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-REST-035 — evidence · HCM Fusion",
     "description": "ORC-REST-035 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19456,7 +20383,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-REST-035/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19464,7 +20393,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-rest-035-0737c7c27938d211.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19497,7 +20427,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/ORC-REST-036/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "ORC-REST-036 — evidence · HCM Fusion",
     "description": "ORC-REST-036 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19519,7 +20449,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/ORC-REST-036/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19527,7 +20459,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-orc-rest-036-4064542eefda55eb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19560,7 +20493,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-ACTION-060/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-ACTION-060 — evidence · HCM Fusion",
     "description": "OTL-ACTION-060 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19582,7 +20515,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-ACTION-060/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19590,7 +20525,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-action-060-542ca1a6529423ba.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19623,7 +20559,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-ACTION-061/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-ACTION-061 — evidence · HCM Fusion",
     "description": "OTL-ACTION-061 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19645,7 +20581,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-ACTION-061/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19653,7 +20591,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-action-061-a64d19101d122e9f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19686,7 +20625,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-ACTION-062/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-ACTION-062 — evidence · HCM Fusion",
     "description": "OTL-ACTION-062 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19708,7 +20647,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-ACTION-062/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19716,7 +20657,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-action-062-e878c92cf230776c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19749,7 +20691,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHAIN-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHAIN-001 — evidence · HCM Fusion",
     "description": "OTL-CHAIN-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19771,7 +20713,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHAIN-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19779,7 +20723,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-chain-001-2c3781f0345ad827.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19812,7 +20757,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHAIN-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHAIN-002 — evidence · HCM Fusion",
     "description": "OTL-CHAIN-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19834,7 +20779,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHAIN-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19842,7 +20789,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-chain-002-e188f709c5e184e7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19875,7 +20823,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHANNEL-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHANNEL-003 — evidence · HCM Fusion",
     "description": "OTL-CHANNEL-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19897,7 +20845,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHANNEL-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19905,7 +20855,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-channel-003-ff20981c6f29cecc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -19938,7 +20889,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHANNEL-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHANNEL-004 — evidence · HCM Fusion",
     "description": "OTL-CHANNEL-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -19960,7 +20911,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHANNEL-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -19968,7 +20921,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-channel-004-a7df84249d322bc5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20001,7 +20955,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHANNEL-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHANNEL-005 — evidence · HCM Fusion",
     "description": "OTL-CHANNEL-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20023,7 +20977,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHANNEL-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20031,7 +20987,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-channel-005-ef71b08f88c82d20.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20064,7 +21021,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHANNEL-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHANNEL-006 — evidence · HCM Fusion",
     "description": "OTL-CHANNEL-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20086,7 +21043,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHANNEL-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20094,7 +21053,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-channel-006-2fe535dc81552cc5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20127,7 +21087,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHANNEL-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHANNEL-007 — evidence · HCM Fusion",
     "description": "OTL-CHANNEL-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20149,7 +21109,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHANNEL-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20157,7 +21119,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-channel-007-5db0c08815001a71.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20190,7 +21153,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHANNEL-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHANNEL-008 — evidence · HCM Fusion",
     "description": "OTL-CHANNEL-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20212,7 +21175,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHANNEL-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20220,7 +21185,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-channel-008-bc72860d4ac02b64.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20253,7 +21219,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CHANNEL-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CHANNEL-009 — evidence · HCM Fusion",
     "description": "OTL-CHANNEL-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20275,7 +21241,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CHANNEL-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20283,7 +21251,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-channel-009-a9a1533f376975b3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20316,7 +21285,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CONSUMER-050/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CONSUMER-050 — evidence · HCM Fusion",
     "description": "OTL-CONSUMER-050 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20338,7 +21307,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CONSUMER-050/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20346,7 +21317,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-consumer-050-bcd176746a8159e4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20379,7 +21351,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CONSUMER-051/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CONSUMER-051 — evidence · HCM Fusion",
     "description": "OTL-CONSUMER-051 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20401,7 +21373,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CONSUMER-051/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20409,7 +21383,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-consumer-051-9b1f53b9e5078fde.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20442,7 +21417,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CONSUMER-052/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CONSUMER-052 — evidence · HCM Fusion",
     "description": "OTL-CONSUMER-052 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20464,7 +21439,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CONSUMER-052/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20472,7 +21449,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-consumer-052-bd5a32a4bd4bb494.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20505,7 +21483,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-CONSUMER-053/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-CONSUMER-053 — evidence · HCM Fusion",
     "description": "OTL-CONSUMER-053 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20527,7 +21505,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-CONSUMER-053/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20535,7 +21515,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-consumer-053-09ddcf3f6aefdf72.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20568,7 +21549,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-ENTRYPROFILE-020/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-ENTRYPROFILE-020 — evidence · HCM Fusion",
     "description": "OTL-ENTRYPROFILE-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20590,7 +21571,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-ENTRYPROFILE-020/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20598,7 +21581,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-entryprofile-020-6f1626c0006b367d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20631,7 +21615,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-ENTRYPROFILE-021/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-ENTRYPROFILE-021 — evidence · HCM Fusion",
     "description": "OTL-ENTRYPROFILE-021 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20653,7 +21637,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-ENTRYPROFILE-021/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20661,7 +21647,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-entryprofile-021-2b59d387fa03f060.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20694,7 +21681,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-ENTRYPROFILE-022/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-ENTRYPROFILE-022 — evidence · HCM Fusion",
     "description": "OTL-ENTRYPROFILE-022 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20716,7 +21703,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-ENTRYPROFILE-022/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20724,7 +21713,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-entryprofile-022-eb6a9dd894d09f51.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20757,7 +21747,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-ENTRYPROFILE-023/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-ENTRYPROFILE-023 — evidence · HCM Fusion",
     "description": "OTL-ENTRYPROFILE-023 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20779,7 +21769,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-ENTRYPROFILE-023/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20787,7 +21779,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-entryprofile-023-6f0f174182175498.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20820,7 +21813,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-ENTRYPROFILE-024/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-ENTRYPROFILE-024 — evidence · HCM Fusion",
     "description": "OTL-ENTRYPROFILE-024 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20842,7 +21835,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-ENTRYPROFILE-024/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20850,7 +21845,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-entryprofile-024-b135f71d879ce44c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20883,7 +21879,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-PERIOD-040/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-PERIOD-040 — evidence · HCM Fusion",
     "description": "OTL-PERIOD-040 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20905,7 +21901,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-PERIOD-040/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20913,7 +21911,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-period-040-47f640a9e7e4954c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -20946,7 +21945,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-PERIOD-041/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-PERIOD-041 — evidence · HCM Fusion",
     "description": "OTL-PERIOD-041 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -20968,7 +21967,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-PERIOD-041/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -20976,7 +21977,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-period-041-9f7b989273515110.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21009,7 +22011,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-PERIOD-042/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-PERIOD-042 — evidence · HCM Fusion",
     "description": "OTL-PERIOD-042 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21031,7 +22033,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-PERIOD-042/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21039,7 +22043,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-period-042-c3a65800505c63b8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21072,7 +22077,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-PERIOD-043/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-PERIOD-043 — evidence · HCM Fusion",
     "description": "OTL-PERIOD-043 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21094,7 +22099,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-PERIOD-043/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21102,7 +22109,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-period-043-a96625828a667e11.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21135,7 +22143,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-PROCPROFILE-030/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-PROCPROFILE-030 — evidence · HCM Fusion",
     "description": "OTL-PROCPROFILE-030 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21157,7 +22165,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-PROCPROFILE-030/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21165,7 +22175,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-procprofile-030-7ad9f9cfac2dc4b0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21198,7 +22209,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-PROCPROFILE-031/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-PROCPROFILE-031 — evidence · HCM Fusion",
     "description": "OTL-PROCPROFILE-031 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21220,7 +22231,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-PROCPROFILE-031/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21228,7 +22241,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-procprofile-031-3ce0291aac3ded68.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21261,7 +22275,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-PROCPROFILE-032/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-PROCPROFILE-032 — evidence · HCM Fusion",
     "description": "OTL-PROCPROFILE-032 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21283,7 +22297,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-PROCPROFILE-032/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21291,7 +22307,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-procprofile-032-1f007ccbe0511e25.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21324,7 +22341,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-RULES-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-RULES-010 — evidence · HCM Fusion",
     "description": "OTL-RULES-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21346,7 +22363,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-RULES-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21354,7 +22373,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-rules-010-53864ae1c9e98d8c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21387,7 +22407,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-RULES-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-RULES-011 — evidence · HCM Fusion",
     "description": "OTL-RULES-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21409,7 +22429,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-RULES-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21417,7 +22439,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-rules-011-37a9b0221a3f1081.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21450,7 +22473,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-RULES-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-RULES-012 — evidence · HCM Fusion",
     "description": "OTL-RULES-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21472,7 +22495,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-RULES-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21480,7 +22505,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-rules-012-27c5e599e0915b1c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21513,7 +22539,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/OTL-SUBMIT-064/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "OTL-SUBMIT-064 — evidence · HCM Fusion",
     "description": "OTL-SUBMIT-064 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21535,7 +22561,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/OTL-SUBMIT-064/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21543,7 +22571,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-otl-submit-064-84fde07a8143e6ed.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21576,7 +22605,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-001 — evidence · HCM Fusion",
     "description": "PAY-CARD-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21598,7 +22627,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21606,7 +22637,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-001-f743ec14fc91300b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21639,7 +22671,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-002 — evidence · HCM Fusion",
     "description": "PAY-CARD-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21661,7 +22693,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21669,7 +22703,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-002-3feac5ccb09e1c35.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21702,7 +22737,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-003 — evidence · HCM Fusion",
     "description": "PAY-CARD-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21724,7 +22759,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21732,7 +22769,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-003-4bd8455a506f9630.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21765,7 +22803,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-004 — evidence · HCM Fusion",
     "description": "PAY-CARD-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21787,7 +22825,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21795,7 +22835,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-004-ea7bf9ee101b1353.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21828,7 +22869,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-006 — evidence · HCM Fusion",
     "description": "PAY-CARD-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21850,7 +22891,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21858,7 +22901,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-006-55f9b3ad637a7f2e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21891,7 +22935,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-007 — evidence · HCM Fusion",
     "description": "PAY-CARD-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21913,7 +22957,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21921,7 +22967,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-007-98ecfeca1df0fcac.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -21954,7 +23001,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-008 — evidence · HCM Fusion",
     "description": "PAY-CARD-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -21976,7 +23023,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -21984,7 +23033,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-008-0e286e459fcccde1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22017,7 +23067,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-009 — evidence · HCM Fusion",
     "description": "PAY-CARD-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22039,7 +23089,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22047,7 +23099,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-009-0b62379d6d0adf34.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22080,7 +23133,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-010 — evidence · HCM Fusion",
     "description": "PAY-CARD-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22102,7 +23155,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22110,7 +23165,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-010-20ea38069e3d6bff.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22143,7 +23199,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-011 — evidence · HCM Fusion",
     "description": "PAY-CARD-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22165,7 +23221,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22173,7 +23231,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-011-ee520511bb32ed95.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22206,7 +23265,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-012 — evidence · HCM Fusion",
     "description": "PAY-CARD-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22228,7 +23287,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22236,7 +23297,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-012-3d1af2227fb9045e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22269,7 +23331,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-013 — evidence · HCM Fusion",
     "description": "PAY-CARD-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22291,7 +23353,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22299,7 +23363,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-013-0cdad8bd68f1b2e2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22332,7 +23397,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-014 — evidence · HCM Fusion",
     "description": "PAY-CARD-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22354,7 +23419,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22362,7 +23429,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-014-bd6e4ed98536a1ed.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22395,7 +23463,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-015/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-015 — evidence · HCM Fusion",
     "description": "PAY-CARD-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22417,7 +23485,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-015/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22425,7 +23495,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-015-17ff9c74bc325b79.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22458,7 +23529,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-016/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-016 — evidence · HCM Fusion",
     "description": "PAY-CARD-016 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22480,7 +23551,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-016/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22488,7 +23561,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-016-a7c25f961b9e9d44.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22521,7 +23595,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-018/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-018 — evidence · HCM Fusion",
     "description": "PAY-CARD-018 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22543,7 +23617,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-018/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22551,7 +23627,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-018-e45e314cf23e98e0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22584,7 +23661,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-019/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-019 — evidence · HCM Fusion",
     "description": "PAY-CARD-019 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22606,7 +23683,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-019/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22614,7 +23693,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-019-ef858d9faf89790a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22647,7 +23727,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-020/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-020 — evidence · HCM Fusion",
     "description": "PAY-CARD-020 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22669,7 +23749,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-020/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22677,7 +23759,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-020-566593b545943168.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22710,7 +23793,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CARD-022/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CARD-022 — evidence · HCM Fusion",
     "description": "PAY-CARD-022 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22732,7 +23815,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CARD-022/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22740,7 +23825,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-card-022-bf9767449e8d8ba3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22773,7 +23859,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CYCLE-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CYCLE-001 — evidence · HCM Fusion",
     "description": "PAY-CYCLE-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22795,7 +23881,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CYCLE-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22803,7 +23891,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-cycle-001-c45e59d47d2f68ab.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22836,7 +23925,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CYCLE-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CYCLE-002 — evidence · HCM Fusion",
     "description": "PAY-CYCLE-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22858,7 +23947,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CYCLE-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22866,7 +23957,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-cycle-002-cad60612d78ff5d4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22899,7 +23991,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CYCLE-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CYCLE-003 — evidence · HCM Fusion",
     "description": "PAY-CYCLE-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22921,7 +24013,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CYCLE-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22929,7 +24023,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-cycle-003-2f5e303315cc0546.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -22962,7 +24057,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-CYCLE-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-CYCLE-005 — evidence · HCM Fusion",
     "description": "PAY-CYCLE-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -22984,7 +24079,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-CYCLE-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -22992,7 +24089,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-cycle-005-681813eede8034d2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23025,7 +24123,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-001 — evidence · HCM Fusion",
     "description": "PAY-ELEM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23047,7 +24145,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23055,7 +24155,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-001-268c684b84e4bff0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23088,7 +24189,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-002 — evidence · HCM Fusion",
     "description": "PAY-ELEM-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23110,7 +24211,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23118,7 +24221,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-002-6e654cbdf31b15fc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23151,7 +24255,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-003 — evidence · HCM Fusion",
     "description": "PAY-ELEM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23173,7 +24277,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23181,7 +24287,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-003-eb5d23b23d3bb2d4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23214,7 +24321,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-004 — evidence · HCM Fusion",
     "description": "PAY-ELEM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23236,7 +24343,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23244,7 +24353,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-004-79c46cecc87e0934.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23277,7 +24387,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-005 — evidence · HCM Fusion",
     "description": "PAY-ELEM-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23299,7 +24409,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23307,7 +24419,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-005-3750d267d6d3fa02.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23340,7 +24453,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-006 — evidence · HCM Fusion",
     "description": "PAY-ELEM-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23362,7 +24475,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23370,7 +24485,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-006-3c80626cbbe17e5f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23403,7 +24519,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-007 — evidence · HCM Fusion",
     "description": "PAY-ELEM-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23425,7 +24541,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23433,7 +24551,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-007-fe895811d270eca6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23466,7 +24585,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-008 — evidence · HCM Fusion",
     "description": "PAY-ELEM-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23488,7 +24607,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23496,7 +24617,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-008-0e47f1db01a2ec27.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23529,7 +24651,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-010 — evidence · HCM Fusion",
     "description": "PAY-ELEM-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23551,7 +24673,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23559,7 +24683,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-010-25c7eae65805ac28.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23592,7 +24717,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-011 — evidence · HCM Fusion",
     "description": "PAY-ELEM-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23614,7 +24739,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23622,7 +24749,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-011-2ed41b7fcf69d4a3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23655,7 +24783,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-012 — evidence · HCM Fusion",
     "description": "PAY-ELEM-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23677,7 +24805,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23685,7 +24815,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-012-3bc6cfb5a938f21b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23718,7 +24849,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-013 — evidence · HCM Fusion",
     "description": "PAY-ELEM-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23740,7 +24871,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23748,7 +24881,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-013-2342bc6843b5c338.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23781,7 +24915,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-014 — evidence · HCM Fusion",
     "description": "PAY-ELEM-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23803,7 +24937,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23811,7 +24947,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-014-dff2d761ffd014b8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23844,7 +24981,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ELEM-015/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ELEM-015 — evidence · HCM Fusion",
     "description": "PAY-ELEM-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23866,7 +25003,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ELEM-015/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23874,7 +25013,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-elem-015-9c6a50bed898256e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23907,7 +25047,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-001 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23929,7 +25069,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -23937,7 +25079,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-001-77aa4cc9cc6319f6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -23970,7 +25113,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-002 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -23992,7 +25135,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24000,7 +25145,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-002-38067cb7fcda92dd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24033,7 +25179,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-003 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24055,7 +25201,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24063,7 +25211,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-003-3acf013e3bb1dedd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24096,7 +25245,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-004 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24118,7 +25267,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24126,7 +25277,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-004-027a0f1f99bdfec4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24159,7 +25311,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-005 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24181,7 +25333,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24189,7 +25343,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-005-d48a3dd69ddacb06.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24222,7 +25377,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-006 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24244,7 +25399,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24252,7 +25409,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-006-ddda87d340e36dec.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24285,7 +25443,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-007 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24307,7 +25465,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24315,7 +25475,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-007-c92edd3386fef65c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24348,7 +25509,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-008 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24370,7 +25531,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24378,7 +25541,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-008-af86ff6711a504a1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24411,7 +25575,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-009 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24433,7 +25597,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24441,7 +25607,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-009-a18112d4099401e8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24474,7 +25641,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-010 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24496,7 +25663,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24504,7 +25673,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-010-e685f767f3047a3a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24537,7 +25707,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-ENTRY-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-ENTRY-011 — evidence · HCM Fusion",
     "description": "PAY-ENTRY-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24559,7 +25729,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-ENTRY-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24567,7 +25739,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-entry-011-bd81b7e71f3d27d0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24600,7 +25773,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-FLOW-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-FLOW-001 — evidence · HCM Fusion",
     "description": "PAY-FLOW-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24622,7 +25795,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-FLOW-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24630,7 +25805,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-flow-001-1ed54e88355919f5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24663,7 +25839,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-FLOW-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-FLOW-002 — evidence · HCM Fusion",
     "description": "PAY-FLOW-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24685,7 +25861,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-FLOW-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24693,7 +25871,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-flow-002-99e300f8f083cab1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24726,7 +25905,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-FLOW-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-FLOW-003 — evidence · HCM Fusion",
     "description": "PAY-FLOW-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24748,7 +25927,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-FLOW-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24756,7 +25937,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-flow-003-f166824c4840a391.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24789,7 +25971,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-FLOW-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-FLOW-004 — evidence · HCM Fusion",
     "description": "PAY-FLOW-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24811,7 +25993,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-FLOW-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24819,7 +26003,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-flow-004-bc2c0c4e5bbbccfb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24852,7 +26037,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-001 — evidence · HCM Fusion",
     "description": "PAY-PPM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24874,7 +26059,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24882,7 +26069,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-001-0f1b1f377a4eb31f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24915,7 +26103,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-002 — evidence · HCM Fusion",
     "description": "PAY-PPM-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -24937,7 +26125,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -24945,7 +26135,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-002-3d2834a69cae75f7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -24978,7 +26169,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-003 — evidence · HCM Fusion",
     "description": "PAY-PPM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25000,7 +26191,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25008,7 +26201,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-003-83a4bff596db5a5e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25041,7 +26235,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-004 — evidence · HCM Fusion",
     "description": "PAY-PPM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25063,7 +26257,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25071,7 +26267,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-004-db3fb907aad568d5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25104,7 +26301,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-008 — evidence · HCM Fusion",
     "description": "PAY-PPM-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25126,7 +26323,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25134,7 +26333,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-008-0b07416b01e1cd74.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25167,7 +26367,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-010 — evidence · HCM Fusion",
     "description": "PAY-PPM-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25189,7 +26389,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25197,7 +26399,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-010-eb752dbeeb52e611.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25230,7 +26433,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-011 — evidence · HCM Fusion",
     "description": "PAY-PPM-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25252,7 +26455,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25260,7 +26465,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-011-d8e82e11dec67ba9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25293,7 +26499,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-013 — evidence · HCM Fusion",
     "description": "PAY-PPM-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25315,7 +26521,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25323,7 +26531,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-013-9035eaac9e442d0e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25356,7 +26565,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-014 — evidence · HCM Fusion",
     "description": "PAY-PPM-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25378,7 +26587,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25386,7 +26597,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-014-a1786910fc06a530.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25419,7 +26631,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-PPM-015/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-PPM-015 — evidence · HCM Fusion",
     "description": "PAY-PPM-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25441,7 +26653,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-PPM-015/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25449,7 +26663,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-ppm-015-6832d72afdd26cd4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25482,7 +26697,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-001 — evidence · HCM Fusion",
     "description": "PAY-REL-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25504,7 +26719,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25512,7 +26729,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-001-a1d0cc35b11ebab3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25545,7 +26763,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-004 — evidence · HCM Fusion",
     "description": "PAY-REL-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25567,7 +26785,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25575,7 +26795,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-004-42dde6f452b254be.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25608,7 +26829,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-007 — evidence · HCM Fusion",
     "description": "PAY-REL-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25630,7 +26851,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25638,7 +26861,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-007-90bf8fff45e5c059.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25671,7 +26895,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-008 — evidence · HCM Fusion",
     "description": "PAY-REL-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25693,7 +26917,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25701,7 +26927,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-008-3e76fda71dccc3fa.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25734,7 +26961,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-009 — evidence · HCM Fusion",
     "description": "PAY-REL-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25756,7 +26983,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25764,7 +26993,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-009-afb917c0eaf2d437.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25797,7 +27027,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-010 — evidence · HCM Fusion",
     "description": "PAY-REL-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25819,7 +27049,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25827,7 +27059,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-010-53748956fc5dc7b4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25860,7 +27093,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-011 — evidence · HCM Fusion",
     "description": "PAY-REL-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25882,7 +27115,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25890,7 +27125,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-011-37b0fa9b39f44369.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25923,7 +27159,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-012 — evidence · HCM Fusion",
     "description": "PAY-REL-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -25945,7 +27181,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -25953,7 +27191,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-012-01aa523e16e53a9d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -25986,7 +27225,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-013/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-013 — evidence · HCM Fusion",
     "description": "PAY-REL-013 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26008,7 +27247,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-013/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26016,7 +27257,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-013-0144917dc5277e02.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26049,7 +27291,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-014/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-014 — evidence · HCM Fusion",
     "description": "PAY-REL-014 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26071,7 +27313,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-014/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26079,7 +27323,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-014-d06241f93ba399bf.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26112,7 +27357,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-016/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-016 — evidence · HCM Fusion",
     "description": "PAY-REL-016 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26134,7 +27379,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-016/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26142,7 +27389,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-016-30960d7b0020bf03.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26175,7 +27423,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-REL-018/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-REL-018 — evidence · HCM Fusion",
     "description": "PAY-REL-018 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26197,7 +27445,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-REL-018/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26205,7 +27455,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-rel-018-c7f3804ac6f854b4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26238,7 +27489,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-001 — evidence · HCM Fusion",
     "description": "PAY-TRU-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26260,7 +27511,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26268,7 +27521,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-001-41ad51f6b07dddec.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26301,7 +27555,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-002 — evidence · HCM Fusion",
     "description": "PAY-TRU-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26323,7 +27577,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26331,7 +27587,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-002-6fa4c9afca33d9e0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26364,7 +27621,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-003 — evidence · HCM Fusion",
     "description": "PAY-TRU-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26386,7 +27643,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26394,7 +27653,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-003-ece2cb7e671f9fd4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26427,7 +27687,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-004 — evidence · HCM Fusion",
     "description": "PAY-TRU-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26449,7 +27709,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26457,7 +27719,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-004-0a87d9494f80b1a2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26490,7 +27753,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-005 — evidence · HCM Fusion",
     "description": "PAY-TRU-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26512,7 +27775,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26520,7 +27785,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-005-f5ef5d5db6de60db.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26553,7 +27819,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-006 — evidence · HCM Fusion",
     "description": "PAY-TRU-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26575,7 +27841,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26583,7 +27851,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-006-4a5ace89b970a46e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26616,7 +27885,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-007 — evidence · HCM Fusion",
     "description": "PAY-TRU-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26638,7 +27907,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26646,7 +27917,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-007-0e64a899f5e78581.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26679,7 +27951,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-008 — evidence · HCM Fusion",
     "description": "PAY-TRU-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26701,7 +27973,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26709,7 +27983,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-008-1388a957d443a2e9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26742,7 +28017,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-009 — evidence · HCM Fusion",
     "description": "PAY-TRU-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26764,7 +28039,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26772,7 +28049,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-009-eecae6108a7daabf.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26805,7 +28083,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-010 — evidence · HCM Fusion",
     "description": "PAY-TRU-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26827,7 +28105,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26835,7 +28115,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-010-93c2ccdfd46c3e68.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26868,7 +28149,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-TRU-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-TRU-011 — evidence · HCM Fusion",
     "description": "PAY-TRU-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26890,7 +28171,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-TRU-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26898,7 +28181,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-tru-011-2bcd3a594a0f3f10.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26931,7 +28215,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-001 — evidence · HCM Fusion",
     "description": "PAY-XFER-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -26953,7 +28237,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -26961,7 +28247,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-001-443aafc25c1d96ba.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -26994,7 +28281,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-002/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-002 — evidence · HCM Fusion",
     "description": "PAY-XFER-002 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27016,7 +28303,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-002/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27024,7 +28313,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-002-e361684a3f9b9a0a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27057,7 +28347,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-003 — evidence · HCM Fusion",
     "description": "PAY-XFER-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27079,7 +28369,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27087,7 +28379,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-003-d6a48d4f5a316f06.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27120,7 +28413,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-004 — evidence · HCM Fusion",
     "description": "PAY-XFER-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27142,7 +28435,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27150,7 +28445,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-004-1af4b570635c707a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27183,7 +28479,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-005 — evidence · HCM Fusion",
     "description": "PAY-XFER-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27205,7 +28501,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27213,7 +28511,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-005-232caf781ea416bc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27246,7 +28545,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-006 — evidence · HCM Fusion",
     "description": "PAY-XFER-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27268,7 +28567,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27276,7 +28577,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-006-0b90293ae83b250e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27309,7 +28611,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-007 — evidence · HCM Fusion",
     "description": "PAY-XFER-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27331,7 +28633,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27339,7 +28643,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-007-825dea131d72967c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27372,7 +28677,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-008/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-008 — evidence · HCM Fusion",
     "description": "PAY-XFER-008 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27394,7 +28699,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-008/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27402,7 +28709,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-008-ac43823b92e1b15d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27435,7 +28743,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-009/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-009 — evidence · HCM Fusion",
     "description": "PAY-XFER-009 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27457,7 +28765,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-009/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27465,7 +28775,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-009-ed076cfef0ac8569.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27498,7 +28809,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-010/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-010 — evidence · HCM Fusion",
     "description": "PAY-XFER-010 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27520,7 +28831,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-010/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27528,7 +28841,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-010-ab7857b58df10ee0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27561,7 +28875,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-011/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-011 — evidence · HCM Fusion",
     "description": "PAY-XFER-011 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27583,7 +28897,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-011/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27591,7 +28907,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-011-98c0f76cee0ebd91.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27624,7 +28941,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-012/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-012 — evidence · HCM Fusion",
     "description": "PAY-XFER-012 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27646,7 +28963,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-012/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27654,7 +28973,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-012-b704c59c40d00b1a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27687,7 +29007,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/PAY-XFER-015/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "PAY-XFER-015 — evidence · HCM Fusion",
     "description": "PAY-XFER-015 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27709,7 +29029,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/PAY-XFER-015/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27717,7 +29039,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-pay-xfer-015-42c36f8d3f97d113.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27750,7 +29073,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/SEC-HCM-001/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "SEC-HCM-001 — evidence · HCM Fusion",
     "description": "SEC-HCM-001 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27772,7 +29095,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/SEC-HCM-001/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27780,7 +29105,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-sec-hcm-001-49c0d7fb38ff90b6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27813,7 +29139,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/SEC-HCM-003/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "SEC-HCM-003 — evidence · HCM Fusion",
     "description": "SEC-HCM-003 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27835,7 +29161,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/SEC-HCM-003/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27843,7 +29171,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-sec-hcm-003-9010d63a1dd3ea6c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27876,7 +29205,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/SEC-HCM-004/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "SEC-HCM-004 — evidence · HCM Fusion",
     "description": "SEC-HCM-004 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27898,7 +29227,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/SEC-HCM-004/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27906,7 +29237,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-sec-hcm-004-af2b129bd0b75fc1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -27939,7 +29271,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/SEC-HCM-005/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "SEC-HCM-005 — evidence · HCM Fusion",
     "description": "SEC-HCM-005 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -27961,7 +29293,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/SEC-HCM-005/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -27969,7 +29303,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-sec-hcm-005-9900321bd754df27.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -28002,7 +29337,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/SEC-HCM-006/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "SEC-HCM-006 — evidence · HCM Fusion",
     "description": "SEC-HCM-006 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -28024,7 +29359,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/SEC-HCM-006/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -28032,7 +29369,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-sec-hcm-006-0c88c56e618e4fc3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -28065,7 +29403,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/evidence/claims/SEC-HCM-007/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "SEC-HCM-007 — evidence · HCM Fusion",
     "description": "SEC-HCM-007 — evidence · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "evidence-claim",
@@ -28087,7 +29425,9 @@ export const routeRegistry = [
         "path": "/evidence/claims/SEC-HCM-007/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -28095,7 +29435,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/evidence-claims-sec-hcm-007-cb1a22f6d84eee26.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -29829,7 +31170,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Terminology · HCM Fusion",
     "description": "Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -29843,7 +31184,9 @@ export const routeRegistry = [
         "path": "/glossary/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -29851,7 +31194,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-2e047d07eea39dec.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -29884,7 +31228,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/absence-plan/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence Plan — Terminology · HCM Fusion",
     "description": "Absence Plan — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -29902,7 +31246,9 @@ export const routeRegistry = [
         "path": "/glossary/absence-plan/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -29910,7 +31256,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-absence-plan-9dd42fefe758aa96.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -29943,7 +31290,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/accrual-vs-entitlement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Accrual and Entitlement — Terminology · HCM Fusion",
     "description": "Accrual and Entitlement — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -29961,7 +31308,9 @@ export const routeRegistry = [
         "path": "/glossary/accrual-vs-entitlement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -29969,7 +31318,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-accrual-vs-entitlement-3a4826d54f34cc3f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30002,7 +31352,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/business-unit/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Business Unit — Terminology · HCM Fusion",
     "description": "Business Unit — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30020,7 +31370,9 @@ export const routeRegistry = [
         "path": "/glossary/business-unit/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30028,7 +31380,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-business-unit-ae4558ba5e2d5663.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30086,7 +31439,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/career-site-contextualization/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Career Site Contextualization — Terminology · HCM Fusion",
     "description": "Career Site Contextualization — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30104,7 +31457,9 @@ export const routeRegistry = [
         "path": "/glossary/career-site-contextualization/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30112,7 +31467,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-career-site-contextualization-8bcb116c6783614a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30120,7 +31476,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/career-site/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Career Site — Terminology · HCM Fusion",
     "description": "Career Site — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30138,7 +31494,9 @@ export const routeRegistry = [
         "path": "/glossary/career-site/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30146,7 +31504,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-career-site-10e4afe37d4dc6af.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30179,7 +31538,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/core-hr-payroll-boundary/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Recruiting to Core HR Handoff — Terminology · HCM Fusion",
     "description": "Recruiting to Core HR Handoff — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30197,7 +31556,9 @@ export const routeRegistry = [
         "path": "/glossary/core-hr-payroll-boundary/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30205,7 +31566,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-core-hr-payroll-boundary-89c4429dbc2d316e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30238,7 +31600,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/effort-vs-result/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Effort and Result — Terminology · HCM Fusion",
     "description": "Effort and Result — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30256,7 +31618,9 @@ export const routeRegistry = [
         "path": "/glossary/effort-vs-result/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30264,7 +31628,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-effort-vs-result-5a8e90c083d1abaa.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30297,7 +31662,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/hcm-group/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "HCM Group — Terminology · HCM Fusion",
     "description": "HCM Group — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30315,7 +31680,9 @@ export const routeRegistry = [
         "path": "/glossary/hcm-group/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30323,7 +31690,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-hcm-group-58acf816511dce82.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30356,7 +31724,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/job-requisition/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Job Requisition — Terminology · HCM Fusion",
     "description": "Job Requisition — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30374,7 +31742,9 @@ export const routeRegistry = [
         "path": "/glossary/job-requisition/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30382,7 +31752,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-job-requisition-fddec0d90b3d5bbe.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30415,7 +31786,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/job-vs-position/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Job — Terminology · HCM Fusion",
     "description": "Job — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30433,7 +31804,9 @@ export const routeRegistry = [
         "path": "/glossary/job-vs-position/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30441,7 +31814,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-job-vs-position-01ef9ed8a8415a0a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30474,7 +31848,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/learning-record/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Learning Record — Terminology · HCM Fusion",
     "description": "Learning Record — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30492,7 +31866,9 @@ export const routeRegistry = [
         "path": "/glossary/learning-record/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30500,7 +31876,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-learning-record-740af2a66b676b35.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30533,7 +31910,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/legal-entity/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Legal Entity — Terminology · HCM Fusion",
     "description": "Legal Entity — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30551,7 +31928,9 @@ export const routeRegistry = [
         "path": "/glossary/legal-entity/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30559,7 +31938,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-legal-entity-d5baf6d84bb91939.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30592,7 +31972,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/pay-element/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Pay Element — Terminology · HCM Fusion",
     "description": "Pay Element — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30610,7 +31990,9 @@ export const routeRegistry = [
         "path": "/glossary/pay-element/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30618,7 +32000,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-pay-element-6c4a71c465f426c0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30651,7 +32034,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/payroll-relationship/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Payroll Relationship — Terminology · HCM Fusion",
     "description": "Payroll Relationship — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30669,7 +32052,9 @@ export const routeRegistry = [
         "path": "/glossary/payroll-relationship/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30677,7 +32062,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-payroll-relationship-6aa800e7c2627cc7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30710,7 +32096,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/person-id-constraint/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Person ID Constraint — Terminology · HCM Fusion",
     "description": "Person ID Constraint — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30728,7 +32114,9 @@ export const routeRegistry = [
         "path": "/glossary/person-id-constraint/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30736,7 +32124,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-person-id-constraint-1fc4829863871119.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30769,7 +32158,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/position/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Position — Terminology · HCM Fusion",
     "description": "Position — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30787,7 +32176,9 @@ export const routeRegistry = [
         "path": "/glossary/position/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30795,7 +32186,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-position-421e1f47760bf02d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30828,7 +32220,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/repeating-time-period/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Repeating Time Period — Terminology · HCM Fusion",
     "description": "Repeating Time Period — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30846,7 +32238,9 @@ export const routeRegistry = [
         "path": "/glossary/repeating-time-period/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30854,7 +32248,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-repeating-time-period-886db45e9570e75f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30887,7 +32282,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/retroactive-payroll/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Retroactive Processing — Terminology · HCM Fusion",
     "description": "Retroactive Processing — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30905,7 +32300,9 @@ export const routeRegistry = [
         "path": "/glossary/retroactive-payroll/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30913,7 +32310,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-retroactive-payroll-d1643787367fd4bc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -30946,7 +32344,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/time-calculation-rule/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Calculation Rule — Terminology · HCM Fusion",
     "description": "Time Calculation Rule — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -30964,7 +32362,9 @@ export const routeRegistry = [
         "path": "/glossary/time-calculation-rule/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -30972,7 +32372,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-time-calculation-rule-8f04e03064c3cb5d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31030,7 +32431,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/time-consumer-set/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Consumer Set — Terminology · HCM Fusion",
     "description": "Time Consumer Set — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -31048,7 +32449,9 @@ export const routeRegistry = [
         "path": "/glossary/time-consumer-set/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31056,7 +32459,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-time-consumer-set-045b7e9a285dbae1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31089,7 +32493,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/time-consumer-validation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Consumer Validation — Terminology · HCM Fusion",
     "description": "Time Consumer Validation — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -31107,7 +32511,9 @@ export const routeRegistry = [
         "path": "/glossary/time-consumer-validation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31115,7 +32521,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-time-consumer-validation-b0e510395ce3209e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31123,7 +32530,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/time-consumer/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Consumer — Terminology · HCM Fusion",
     "description": "Time Consumer — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -31141,7 +32548,9 @@ export const routeRegistry = [
         "path": "/glossary/time-consumer/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31149,7 +32558,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-time-consumer-de7503cb0b9b83fe.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31182,7 +32592,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/time-entry-exception/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Entry Exception — Terminology · HCM Fusion",
     "description": "Time Entry Exception — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -31200,7 +32610,9 @@ export const routeRegistry = [
         "path": "/glossary/time-entry-exception/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31208,7 +32620,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-time-entry-exception-d175a05696e1ec0c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31241,7 +32654,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/time-entry-rule/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Entry Rule — Terminology · HCM Fusion",
     "description": "Time Entry Rule — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -31259,7 +32672,9 @@ export const routeRegistry = [
         "path": "/glossary/time-entry-rule/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31267,7 +32682,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-time-entry-rule-f0d361e9a456c0ef.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31300,7 +32716,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/worker-time-entry-profile/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Worker Time Entry Profile — Terminology · HCM Fusion",
     "description": "Worker Time Entry Profile — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -31318,7 +32734,9 @@ export const routeRegistry = [
         "path": "/glossary/worker-time-entry-profile/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31326,7 +32744,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-worker-time-entry-profile-5e49e97082c4a68c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31359,7 +32778,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/glossary/worker-time-processing-profile/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Worker Time Processing Profile — Terminology · HCM Fusion",
     "description": "Worker Time Processing Profile — Terminology · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "glossary-entry",
@@ -31377,7 +32796,9 @@ export const routeRegistry = [
         "path": "/glossary/worker-time-processing-profile/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31385,7 +32806,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/glossary-worker-time-processing-profile-50938a4900293174.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31418,7 +32840,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/labs/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Labs · HCM Fusion",
     "description": "Labs · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -31432,7 +32854,9 @@ export const routeRegistry = [
         "path": "/labs/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31440,7 +32864,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/labs-a89aef259600ec15.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31473,7 +32898,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Learn · HCM Fusion",
     "description": "Learn · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -31487,7 +32912,9 @@ export const routeRegistry = [
         "path": "/learn/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31495,7 +32922,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-4a6bb3554e98af3f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31528,7 +32956,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Course catalogue · HCM Fusion",
     "description": "Course catalogue · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -31546,7 +32974,9 @@ export const routeRegistry = [
         "path": "/learn/courses/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31554,7 +32984,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-a7f49333d7d945a7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31587,7 +33018,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/absence/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence Management course · HCM Fusion",
     "description": "Absence Management course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -31609,7 +33040,9 @@ export const routeRegistry = [
         "path": "/learn/courses/absence/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31617,7 +33050,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-absence-93e65b9cba1ce4fc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31650,7 +33084,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/benefits/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Benefits course · HCM Fusion",
     "description": "Benefits course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -31672,7 +33106,9 @@ export const routeRegistry = [
         "path": "/learn/courses/benefits/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31680,7 +33116,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-benefits-0f23731291793f4d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31713,7 +33150,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/compensation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Compensation course · HCM Fusion",
     "description": "Compensation course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -31735,7 +33172,9 @@ export const routeRegistry = [
         "path": "/learn/courses/compensation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31743,7 +33182,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-compensation-edcf2067f1e867a3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31776,7 +33216,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/core-hr/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Core HR course · HCM Fusion",
     "description": "Core HR course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -31798,7 +33238,9 @@ export const routeRegistry = [
         "path": "/learn/courses/core-hr/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31806,7 +33248,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-core-hr-ce4df03e1d89189d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31839,7 +33282,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/global-payroll/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Global Payroll course · HCM Fusion",
     "description": "Global Payroll course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -31861,7 +33304,9 @@ export const routeRegistry = [
         "path": "/learn/courses/global-payroll/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31869,7 +33314,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-global-payroll-7c232c0b6f4c8315.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31902,7 +33348,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/learning/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Learning Management course · HCM Fusion",
     "description": "Learning Management course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -31924,7 +33370,9 @@ export const routeRegistry = [
         "path": "/learn/courses/learning/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31932,7 +33380,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-learning-fe45df28805fb192.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -31965,7 +33414,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/otl/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time and Labor course · HCM Fusion",
     "description": "Time and Labor course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -31987,7 +33436,9 @@ export const routeRegistry = [
         "path": "/learn/courses/otl/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -31995,7 +33446,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-otl-343e657b066c2f61.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32028,7 +33480,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/payroll/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Payroll course · HCM Fusion",
     "description": "Payroll course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -32050,7 +33502,9 @@ export const routeRegistry = [
         "path": "/learn/courses/payroll/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32058,7 +33512,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-payroll-bd33dfab0ee0cb28.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32091,7 +33546,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/procurement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Procurement course · HCM Fusion",
     "description": "Procurement course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -32113,7 +33568,9 @@ export const routeRegistry = [
         "path": "/learn/courses/procurement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32121,7 +33578,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-procurement-aed9500d58f80fb6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32154,7 +33612,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/recruiting/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Oracle Recruiting course · HCM Fusion",
     "description": "Oracle Recruiting course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -32176,7 +33634,9 @@ export const routeRegistry = [
         "path": "/learn/courses/recruiting/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32184,7 +33644,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-recruiting-73b94b926cc3ad08.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32217,7 +33678,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/talent/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Talent Management course · HCM Fusion",
     "description": "Talent Management course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -32239,7 +33700,9 @@ export const routeRegistry = [
         "path": "/learn/courses/talent/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32247,7 +33710,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-talent-58e675a97ee3df6b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32280,7 +33744,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/courses/workforce-monitoring/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Workforce Monitoring course · HCM Fusion",
     "description": "Workforce Monitoring course · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "course",
@@ -32302,7 +33766,9 @@ export const routeRegistry = [
         "path": "/learn/courses/workforce-monitoring/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32310,7 +33776,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-courses-workforce-monitoring-7098047b72b5ea27.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32343,7 +33810,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-accrual-plan-config/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Configuring an accrual plan: term, frequency, limits and carryover · HCM Fusion",
     "description": "Configuring an accrual plan: term, frequency, limits and carryover · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32365,7 +33832,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-accrual-plan-config/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32373,7 +33842,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-accrual-plan-config-a510bfbdf2198174.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32406,7 +33876,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-certifications/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Certifications: the action items that gate continued pay · HCM Fusion",
     "description": "Certifications: the action items that gate continued pay · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32428,7 +33898,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-certifications/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32436,7 +33908,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-certifications-2e3985cca9b745a7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32469,7 +33942,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-compensatory-plans/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Compensatory time plans: earned time off instead of overtime pay · HCM Fusion",
     "description": "Compensatory time plans: earned time off instead of overtime pay · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32491,7 +33964,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-compensatory-plans/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32499,7 +33974,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-compensatory-plans-4d92f2392c1d8fdb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32532,7 +34008,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-concurrency/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Concurrency vs concurrent entitlement vs plan priority · HCM Fusion",
     "description": "Concurrency vs concurrent entitlement vs plan priority · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32554,7 +34030,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-concurrency/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32562,7 +34040,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-concurrency-8e31d5e433725924.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32595,7 +34074,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-data-loading/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Loading absence data: integrated workbooks vs the HCM Spreadsheet Data Loader · HCM Fusion",
     "description": "Loading absence data: integrated workbooks vs the HCM Spreadsheet Data Loader · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32617,7 +34096,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-data-loading/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32625,7 +34106,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-data-loading-80e089976fb7025f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32658,7 +34140,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-date-effectivity/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Date effectivity — update vs correct vs end-date · HCM Fusion",
     "description": "Date effectivity — update vs correct vs end-date · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32680,7 +34162,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-date-effectivity/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32688,7 +34172,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-date-effectivity-6c96ed2995e2adc6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32721,7 +34206,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-deep-links/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Deep links — straight to the page · HCM Fusion",
     "description": "Deep links — straight to the page · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32743,7 +34228,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-deep-links/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32751,7 +34238,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-deep-links-9302d8dcee1265c1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32784,7 +34272,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-donation-plans/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Donation plans: time a worker receives from coworkers · HCM Fusion",
     "description": "Donation plans: time a worker receives from coworkers · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32806,7 +34294,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-donation-plans/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32814,7 +34304,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-donation-plans-00490b2d9a5cbde4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32847,7 +34338,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-eligibility-profiles/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Who may enroll: eligibility profiles and derived factors · HCM Fusion",
     "description": "Who may enroll: eligibility profiles and derived factors · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32869,7 +34360,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-eligibility-profiles/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32877,7 +34370,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-eligibility-profiles-2086ed1d13f0c58a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32910,7 +34404,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-extracts/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "HCM Extracts — getting absence data out and reconciling it with Payroll · HCM Fusion",
     "description": "HCM Extracts — getting absence data out and reconciling it with Payroll · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32932,7 +34426,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-extracts/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -32940,7 +34436,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-extracts-febc0755954f1930.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -32973,7 +34470,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-fast-formulas/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Fast formulas: the rules you write yourself · HCM Fusion",
     "description": "Fast formulas: the rules you write yourself · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -32995,7 +34492,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-fast-formulas/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33003,7 +34502,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-fast-formulas-2bc7e808c460712a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33036,7 +34536,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-lookups-flexfields/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Lookups, value sets, and flexfields — where lists and extra fields come from · HCM Fusion",
     "description": "Lookups, value sets, and flexfields — where lists and extra fields come from · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33058,7 +34558,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-lookups-flexfields/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33066,7 +34568,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-lookups-flexfields-43fdb3fc11e6a55b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33099,7 +34602,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence Management: six components and a setup order · HCM Fusion",
     "description": "Absence Management: six components and a setup order · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33121,7 +34624,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33129,7 +34634,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-mental-model-989d0349670041d4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33162,7 +34668,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-payroll-elements/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Payroll elements — carrying absences and balances to Payroll · HCM Fusion",
     "description": "Payroll elements — carrying absences and balances to Payroll · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33184,7 +34690,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-payroll-elements/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33192,7 +34700,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-payroll-elements-46553b3867e443a5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33225,7 +34734,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-plan-types/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The six absence plan types, and when each one is the right one · HCM Fusion",
     "description": "The six absence plan types, and when each one is the right one · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33247,7 +34756,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-plan-types/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33255,7 +34766,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-plan-types-4f6dc8054f79e5f7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33288,7 +34800,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-processes/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence processes: the six scheduled runs that turn absences into entitlements · HCM Fusion",
     "description": "Absence processes: the six scheduled runs that turn absences into entitlements · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33310,7 +34822,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-processes/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33318,7 +34832,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-processes-40890c37c7d710e5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33351,7 +34866,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-processing-rules/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "From a submitted absence to an entitlement · HCM Fusion",
     "description": "From a submitted absence to an entitlement · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33373,7 +34888,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-processing-rules/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33381,7 +34898,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-processing-rules-16f8a75ce9225d46.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33414,7 +34932,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-qualification-plans/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Qualification plans: paying an absence with no balance · HCM Fusion",
     "description": "Qualification plans: paying an absence with no balance · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33436,7 +34954,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-qualification-plans/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33444,7 +34964,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-qualification-plans-ebffddecee6ffbcf.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33477,7 +34998,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-rate-definitions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Rate definitions: what one unit of absence costs · HCM Fusion",
     "description": "Rate definitions: what one unit of absence costs · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33499,7 +35020,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-rate-definitions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33507,7 +35030,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-rate-definitions-3b6b01b7232f325a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33540,7 +35064,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-schedule-identification/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "How an absence becomes a number of hours · HCM Fusion",
     "description": "How an absence becomes a number of hours · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33562,7 +35086,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-schedule-identification/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33570,7 +35096,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-schedule-identification-239628e282e0c01f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33603,7 +35130,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-type-display-rules/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Display Features: what the recording pages show and enforce · HCM Fusion",
     "description": "Display Features: what the recording pages show and enforce · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33625,7 +35152,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-type-display-rules/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33633,7 +35162,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-type-display-rules-3e56622834d8d445.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33666,7 +35196,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/absence-type-record/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Absence types, reasons, and categories — the record workers touch · HCM Fusion",
     "description": "Absence types, reasons, and categories — the record workers touch · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33688,7 +35218,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/absence-type-record/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33696,7 +35228,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-absence-type-record-a4bd0df506f7922d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33729,7 +35262,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/core-hr-configuration-order/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Configuration order, and the failures it prevents · HCM Fusion",
     "description": "Configuration order, and the failures it prevents · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33751,7 +35284,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/core-hr-configuration-order/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33759,7 +35294,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-core-hr-configuration-order-8b8d5c7790d74d97.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33792,7 +35328,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/core-hr-enterprise-structures/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Three Structures, Three Functional Areas, and Where Each Setting Lives · HCM Fusion",
     "description": "Three Structures, Three Functional Areas, and Where Each Setting Lives · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33814,7 +35350,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/core-hr-enterprise-structures/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33822,7 +35360,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-core-hr-enterprise-structures-5a9b53fd9838c480.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33855,7 +35394,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/core-hr-jobs-and-positions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Jobs, positions and the assignment that joins them · HCM Fusion",
     "description": "Jobs, positions and the assignment that joins them · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33877,7 +35416,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/core-hr-jobs-and-positions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33885,7 +35426,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-core-hr-jobs-and-positions-79ee6e5274db8de4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33918,7 +35460,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/core-hr-security-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The Security Model: What You Can Do, What You Can See, and Where It Is Configured · HCM Fusion",
     "description": "The Security Model: What You Can Do, What You Can See, and Where It Is Configured · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -33940,7 +35482,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/core-hr-security-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -33948,7 +35492,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-core-hr-security-model-820cda94f4a597b4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -33981,7 +35526,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/core-hr-worker-assignment/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Worker, Assignment, Work Relationship: The Three Records and Their Rules · HCM Fusion",
     "description": "Worker, Assignment, Work Relationship: The Three Records and Their Rules · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34003,7 +35548,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/core-hr-worker-assignment/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34011,7 +35558,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-core-hr-worker-assignment-f681f13135ff844c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34044,7 +35592,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/core-hr-worker-lifecycle/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The Worker Lifecycle: What a Work Relationship Can and Cannot Survive · HCM Fusion",
     "description": "The Worker Lifecycle: What a Work Relationship Can and Cannot Survive · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34066,7 +35614,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/core-hr-worker-lifecycle/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34074,7 +35624,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-core-hr-worker-lifecycle-1473607a57399ec8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34107,7 +35658,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/orc-career-sites/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Career sites and how they decide which jobs appear · HCM Fusion",
     "description": "Career sites and how they decide which jobs appear · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34129,7 +35680,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/orc-career-sites/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34137,7 +35690,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-orc-career-sites-7ed6af266b949218.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34170,7 +35724,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/orc-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The Oracle Recruiting mental model · HCM Fusion",
     "description": "The Oracle Recruiting mental model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34192,7 +35746,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/orc-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34200,7 +35756,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-orc-mental-model-a6cad9350b97ff4c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34233,7 +35790,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/orc-requisition-rest-access/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Job Requisitions Over REST: Grants, Roles and What the Page Will Not Tell You · HCM Fusion",
     "description": "Job Requisitions Over REST: Grants, Roles and What the Page Will Not Tell You · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34255,7 +35812,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/orc-requisition-rest-access/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34263,7 +35822,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-orc-requisition-rest-access-30eeeee2e38e93f5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34296,7 +35856,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/otl-consumer-sets/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Consumer Sets · HCM Fusion",
     "description": "Time Consumer Sets · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34318,7 +35878,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/otl-consumer-sets/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34326,7 +35888,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-otl-consumer-sets-2e3b731bbaebfba8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34359,7 +35922,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/otl-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The Time and Labor mental model · HCM Fusion",
     "description": "The Time and Labor mental model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34381,7 +35944,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/otl-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34389,7 +35954,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-otl-mental-model-a4e2efc80bbac2a6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34422,7 +35988,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/otl-processing-profile/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The Worker Time Processing Profile · HCM Fusion",
     "description": "The Worker Time Processing Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34444,7 +36010,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/otl-processing-profile/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34452,7 +36020,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-otl-processing-profile-00abe1c3b9273814.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34485,7 +36054,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/otl-repeating-time-periods/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Repeating Time Periods and What They Are Offered On · HCM Fusion",
     "description": "Repeating Time Periods and What They Are Offered On · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34507,7 +36076,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/otl-repeating-time-periods/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34515,7 +36086,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-otl-repeating-time-periods-4db1562e36b6d36a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34548,7 +36120,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/otl-reporting-channels/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Reporting Channels and Who May Act on Whose Time · HCM Fusion",
     "description": "Time Reporting Channels and Who May Act on Whose Time · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34570,7 +36142,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/otl-reporting-channels/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34578,7 +36152,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-otl-reporting-channels-f806ef5396dab7fa.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34611,7 +36186,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/otl-rule-types/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The Six Rule Types and What Each One Is For · HCM Fusion",
     "description": "The Six Rule Types and What Each One Is For · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34633,7 +36208,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/otl-rule-types/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34641,7 +36218,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-otl-rule-types-bd7caf595eea570c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34674,7 +36252,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/otl-time-card-actions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Time Card Actions and What Validates When · HCM Fusion",
     "description": "Time Card Actions and What Validates When · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34696,7 +36274,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/otl-time-card-actions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34704,7 +36284,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-otl-time-card-actions-8271c350ccf0de92.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34737,7 +36318,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/otl-time-entry-profiles/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The Worker Time Entry Profile · HCM Fusion",
     "description": "The Worker Time Entry Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34759,7 +36340,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/otl-time-entry-profiles/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34767,7 +36350,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-otl-time-entry-profiles-95b156cc0e697ee1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34800,7 +36384,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/payroll-calc-cards/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Personal calculation cards: components, details and enterable values · HCM Fusion",
     "description": "Personal calculation cards: components, details and enterable values · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34822,7 +36406,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/payroll-calc-cards/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34830,7 +36416,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-payroll-calc-cards-d26900edea1b74ad.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34863,7 +36450,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/payroll-element-entries/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Standard element entries: where pay inputs live · HCM Fusion",
     "description": "Standard element entries: where pay inputs live · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34885,7 +36472,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/payroll-element-entries/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34893,7 +36482,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-payroll-element-entries-b0a2791ab6164df1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34926,7 +36516,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/payroll-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The payroll cycle and payroll flows · HCM Fusion",
     "description": "The payroll cycle and payroll flows · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -34948,7 +36538,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/payroll-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -34956,7 +36548,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-payroll-mental-model-84c548f4b4c6e5c5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -34989,7 +36582,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/payroll-payment-methods/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Personal payment methods: how a person is paid · HCM Fusion",
     "description": "Personal payment methods: how a person is paid · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -35011,7 +36604,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/payroll-payment-methods/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35019,7 +36614,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-payroll-payment-methods-5183ce1d0f2573a2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35052,7 +36648,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/payroll-personal-entries/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Personal payroll entries: the person-level payroll surface · HCM Fusion",
     "description": "Personal payroll entries: the person-level payroll surface · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -35074,7 +36670,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/payroll-personal-entries/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35082,7 +36680,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-payroll-personal-entries-597562c352c78377.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35115,7 +36714,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/payroll-relationships/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "The payroll relationship, and the dates termination sets · HCM Fusion",
     "description": "The payroll relationship, and the dates termination sets · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -35137,7 +36736,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/payroll-relationships/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35145,7 +36746,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-payroll-relationships-d385fd4780b942d5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35178,7 +36780,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/payroll-transfers/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Adding and transferring payrolls · HCM Fusion",
     "description": "Adding and transferring payrolls · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -35200,7 +36802,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/payroll-transfers/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35208,7 +36812,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-payroll-transfers-09c78d13963cb84c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35241,7 +36846,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/lessons/payroll-tru/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Tax reporting units and moving between them · HCM Fusion",
     "description": "Tax reporting units and moving between them · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "lesson",
@@ -35263,7 +36868,9 @@ export const routeRegistry = [
         "path": "/learn/lessons/payroll-tru/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35271,7 +36878,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-lessons-payroll-tru-d507c49fc3e9768d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35304,7 +36912,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/paths/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Learning paths · HCM Fusion",
     "description": "Learning paths · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -35322,7 +36930,9 @@ export const routeRegistry = [
         "path": "/learn/paths/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35330,7 +36940,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-paths-33a3e38b68da7303.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35481,7 +37092,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/sops/create-career-site/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Create a career site · HCM Fusion",
     "description": "Create a career site · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "procedure",
@@ -35503,7 +37114,9 @@ export const routeRegistry = [
         "path": "/learn/sops/create-career-site/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35511,7 +37124,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-sops-create-career-site-0dfbb3cfc72e9743.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35544,7 +37158,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/sops/create-worker-time-processing-profile/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Create a Worker Time Processing Profile · HCM Fusion",
     "description": "Create a Worker Time Processing Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "procedure",
@@ -35566,7 +37180,9 @@ export const routeRegistry = [
         "path": "/learn/sops/create-worker-time-processing-profile/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35574,7 +37190,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-sops-create-worker-time-processing-profile-5db0658d3b37b6aa.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35607,7 +37224,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/learn/sops/diagnose-missing-time-in-consumer/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Diagnose missing time in a consumer · HCM Fusion",
     "description": "Diagnose missing time in a consumer · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "procedure",
@@ -35629,7 +37246,9 @@ export const routeRegistry = [
         "path": "/learn/sops/diagnose-missing-time-in-consumer/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35637,7 +37256,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-sops-diagnose-missing-time-in-consumer-ed0d64e67411dc29.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35784,7 +37404,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Practice · HCM Fusion",
     "description": "Practice · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -35798,7 +37418,9 @@ export const routeRegistry = [
         "path": "/practice/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35806,7 +37428,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-8e87ecf1343a1acf.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35839,7 +37462,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Assessments · HCM Fusion",
     "description": "Assessments · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -35857,7 +37480,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35865,7 +37490,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-ccd25c087f91f056.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35898,7 +37524,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-accrual-plan/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: configuring an accrual plan · HCM Fusion",
     "description": "Self-check: configuring an accrual plan · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -35920,7 +37546,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-accrual-plan/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35928,7 +37556,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-accrual-plan-9903e319b3a768ac.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -35961,7 +37590,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-certifications/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: absence certifications · HCM Fusion",
     "description": "Self-check: absence certifications · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -35983,7 +37612,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-certifications/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -35991,7 +37622,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-certifications-94d04c6552aac1f1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36024,7 +37656,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-compensatory-plans/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: compensatory time plans · HCM Fusion",
     "description": "Self-check: compensatory time plans · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36046,7 +37678,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-compensatory-plans/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36054,7 +37688,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-compensatory-plans-a30675eafbd0f178.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36087,7 +37722,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-concurrency/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: concurrency vs concurrent entitlement vs plan priority · HCM Fusion",
     "description": "Self-check: concurrency vs concurrent entitlement vs plan priority · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36109,7 +37744,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-concurrency/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36117,7 +37754,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-concurrency-825798dabe030b18.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36150,7 +37788,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-data-loading/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: loading absence data in bulk · HCM Fusion",
     "description": "Self-check: loading absence data in bulk · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36172,7 +37810,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-data-loading/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36180,7 +37820,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-data-loading-ec3bbc7c1250bcb3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36213,7 +37854,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-date-effectivity/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: date effectivity — update vs correct vs end-date · HCM Fusion",
     "description": "Self-check: date effectivity — update vs correct vs end-date · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36235,7 +37876,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-date-effectivity/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36243,7 +37886,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-date-effectivity-2dae15bea3e01f20.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36276,7 +37920,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-deep-links/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: deep links · HCM Fusion",
     "description": "Self-check: deep links · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36298,7 +37942,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-deep-links/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36306,7 +37952,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-deep-links-1e5a037f17ca1262.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36339,7 +37986,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-donation-plans/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: donation plans · HCM Fusion",
     "description": "Self-check: donation plans · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36361,7 +38008,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-donation-plans/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36369,7 +38018,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-donation-plans-aa745e49c5e2ec52.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36402,7 +38052,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-eligibility/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: eligibility profiles and derived factors · HCM Fusion",
     "description": "Self-check: eligibility profiles and derived factors · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36424,7 +38074,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-eligibility/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36432,7 +38084,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-eligibility-ca65253a3ed01240.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36465,7 +38118,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-extracts/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: HCM Extracts and payroll reconciliation · HCM Fusion",
     "description": "Self-check: HCM Extracts and payroll reconciliation · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36487,7 +38140,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-extracts/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36495,7 +38150,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-extracts-0ddba8cea2b4f26e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36528,7 +38184,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-formulas/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: fast formulas for absence rules · HCM Fusion",
     "description": "Self-check: fast formulas for absence rules · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36550,7 +38206,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-formulas/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36558,7 +38216,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-formulas-bb9c5f3c665512c2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36591,7 +38250,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-lookups-flexfields/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: lookups, value sets, and flexfields · HCM Fusion",
     "description": "Self-check: lookups, value sets, and flexfields · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36613,7 +38272,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-lookups-flexfields/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36621,7 +38282,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-lookups-flexfields-7d4c0c487045cc5e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36654,7 +38316,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the Absence Management components · HCM Fusion",
     "description": "Self-check: the Absence Management components · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36676,7 +38338,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36684,7 +38348,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-mental-model-13e013aa36f651e6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36717,7 +38382,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-payroll-elements/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: payroll elements for absences · HCM Fusion",
     "description": "Self-check: payroll elements for absences · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36739,7 +38404,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-payroll-elements/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36747,7 +38414,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-payroll-elements-eb1405d010c70601.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36780,7 +38448,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-plan-types/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the six absence plan types · HCM Fusion",
     "description": "Self-check: the six absence plan types · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36802,7 +38470,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-plan-types/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36810,7 +38480,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-plan-types-704cd4e78c82b545.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36843,7 +38514,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-processes/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: absence processes · HCM Fusion",
     "description": "Self-check: absence processes · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36865,7 +38536,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-processes/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36873,7 +38546,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-processes-2ee631adf61a368b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36906,7 +38580,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-processing-rules/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: from a submitted absence to an entitlement · HCM Fusion",
     "description": "Self-check: from a submitted absence to an entitlement · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36928,7 +38602,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-processing-rules/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36936,7 +38612,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-processing-rules-fe7fa21b31cb87db.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -36969,7 +38646,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-qualification-plans/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: qualification plans and entitlement bands · HCM Fusion",
     "description": "Self-check: qualification plans and entitlement bands · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -36991,7 +38668,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-qualification-plans/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -36999,7 +38678,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-qualification-plans-b8fb371288c0415b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37032,7 +38712,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-rate-definitions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: rate definitions for absence payments · HCM Fusion",
     "description": "Self-check: rate definitions for absence payments · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37054,7 +38734,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-rate-definitions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37062,7 +38744,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-rate-definitions-53a6b39299e4c56a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37095,7 +38778,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-schedule-identification/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: how an absence becomes a number of hours · HCM Fusion",
     "description": "Self-check: how an absence becomes a number of hours · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37117,7 +38800,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-schedule-identification/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37125,7 +38810,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-schedule-identification-5c085a15b658a5f6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37158,7 +38844,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-type-display-rules/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: display features of an absence type · HCM Fusion",
     "description": "Self-check: display features of an absence type · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37180,7 +38866,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-type-display-rules/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37188,7 +38876,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-type-display-rules-a2c1e1509c30a6cc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37221,7 +38910,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-absence-type-record/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: absence types, reasons, and categories · HCM Fusion",
     "description": "Self-check: absence types, reasons, and categories · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37243,7 +38932,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-absence-type-record/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37251,7 +38942,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-absence-type-record-60909b87a928e01c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37284,7 +38976,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-core-hr-configuration-order/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: Core HR configuration order · HCM Fusion",
     "description": "Self-check: Core HR configuration order · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37306,7 +38998,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-core-hr-configuration-order/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37314,7 +39008,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-core-hr-configuration-order-10532644a08c6573.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37347,7 +39042,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-core-hr-enterprise-structures/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the three enterprise structures · HCM Fusion",
     "description": "Self-check: the three enterprise structures · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37369,7 +39064,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-core-hr-enterprise-structures/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37377,7 +39074,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-core-hr-enterprise-structures-9edbdc649b66bec5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37410,7 +39108,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-core-hr-jobs-and-positions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: jobs, positions and assignments · HCM Fusion",
     "description": "Self-check: jobs, positions and assignments · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37432,7 +39130,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-core-hr-jobs-and-positions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37440,7 +39140,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-core-hr-jobs-and-positions-5308f0631e54f5d9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37473,7 +39174,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-core-hr-security-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the security model · HCM Fusion",
     "description": "Self-check: the security model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37495,7 +39196,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-core-hr-security-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37503,7 +39206,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-core-hr-security-model-6e0b1fbf678c490a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37536,7 +39240,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-core-hr-worker-assignment/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: worker, assignment, work relationship · HCM Fusion",
     "description": "Self-check: worker, assignment, work relationship · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37558,7 +39262,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-core-hr-worker-assignment/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37566,7 +39272,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-core-hr-worker-assignment-7bc9c98276e4f529.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37599,7 +39306,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-core-hr-worker-lifecycle/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the worker lifecycle · HCM Fusion",
     "description": "Self-check: the worker lifecycle · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37621,7 +39328,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-core-hr-worker-lifecycle/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37629,7 +39338,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-core-hr-worker-lifecycle-dce52f5769ae5fe2.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37662,7 +39372,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-orc-career-sites/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: career sites and contextualization · HCM Fusion",
     "description": "Self-check: career sites and contextualization · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37684,7 +39394,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-orc-career-sites/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37692,7 +39404,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-orc-career-sites-0f5f38fc8235e3f6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37725,7 +39438,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-orc-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the Oracle Recruiting mental model · HCM Fusion",
     "description": "Self-check: the Oracle Recruiting mental model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37747,7 +39460,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-orc-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37755,7 +39470,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-orc-mental-model-d4c367c5eaa1d183.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37788,7 +39504,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-orc-requisition-rest-access/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: job requisitions over REST · HCM Fusion",
     "description": "Self-check: job requisitions over REST · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37810,7 +39526,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-orc-requisition-rest-access/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37818,7 +39536,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-orc-requisition-rest-access-2ebbf7d26042d0d6.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37851,7 +39570,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-otl-consumer-sets/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: time consumer sets · HCM Fusion",
     "description": "Self-check: time consumer sets · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37873,7 +39592,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-otl-consumer-sets/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37881,7 +39602,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-otl-consumer-sets-b5735742e3b2c057.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37914,7 +39636,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-otl-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the Time and Labor mental model · HCM Fusion",
     "description": "Self-check: the Time and Labor mental model · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37936,7 +39658,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-otl-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -37944,7 +39668,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-otl-mental-model-f1721771dc332ac0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -37977,7 +39702,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-otl-processing-profile/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the Worker Time Processing Profile · HCM Fusion",
     "description": "Self-check: the Worker Time Processing Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -37999,7 +39724,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-otl-processing-profile/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38007,7 +39734,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-otl-processing-profile-7f39a033ea8dfefb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38040,7 +39768,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-otl-repeating-time-periods/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: Repeating Time Periods · HCM Fusion",
     "description": "Self-check: Repeating Time Periods · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38062,7 +39790,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-otl-repeating-time-periods/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38070,7 +39800,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-otl-repeating-time-periods-0fae2e8ef83b3c91.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38103,7 +39834,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-otl-reporting-channels/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: time reporting channels · HCM Fusion",
     "description": "Self-check: time reporting channels · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38125,7 +39856,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-otl-reporting-channels/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38133,7 +39866,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-otl-reporting-channels-dad0980c9b2e0a62.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38166,7 +39900,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-otl-rule-types/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the rule taxonomy · HCM Fusion",
     "description": "Self-check: the rule taxonomy · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38188,7 +39922,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-otl-rule-types/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38196,7 +39932,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-otl-rule-types-2b2c7473f0b37429.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38229,7 +39966,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-otl-time-card-actions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: Time Card Actions · HCM Fusion",
     "description": "Self-check: Time Card Actions · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38251,7 +39988,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-otl-time-card-actions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38259,7 +39998,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-otl-time-card-actions-d1e5c710bd677a62.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38292,7 +40032,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-otl-time-entry-profiles/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the Worker Time Entry Profile · HCM Fusion",
     "description": "Self-check: the Worker Time Entry Profile · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38314,7 +40054,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-otl-time-entry-profiles/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38322,7 +40064,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-otl-time-entry-profiles-e45d0be846678fc0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38355,7 +40098,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-payroll-calc-cards/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: personal calculation cards · HCM Fusion",
     "description": "Self-check: personal calculation cards · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38377,7 +40120,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-payroll-calc-cards/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38385,7 +40130,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-payroll-calc-cards-51354a191c38f162.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38418,7 +40164,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-payroll-element-entries/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: standard element entries · HCM Fusion",
     "description": "Self-check: standard element entries · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38440,7 +40186,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-payroll-element-entries/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38448,7 +40196,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-payroll-element-entries-97cdc0757204d61a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38481,7 +40230,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-payroll-mental-model/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the payroll cycle and payroll flows · HCM Fusion",
     "description": "Self-check: the payroll cycle and payroll flows · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38503,7 +40252,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-payroll-mental-model/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38511,7 +40262,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-payroll-mental-model-56fbcac41f524bbd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38544,7 +40296,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-payroll-payment-methods/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: personal payment methods · HCM Fusion",
     "description": "Self-check: personal payment methods · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38566,7 +40318,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-payroll-payment-methods/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38574,7 +40328,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-payroll-payment-methods-7c30c7e95f436bc0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38607,7 +40362,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-payroll-personal-entries/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: personal payroll entries · HCM Fusion",
     "description": "Self-check: personal payroll entries · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38629,7 +40384,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-payroll-personal-entries/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38637,7 +40394,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-payroll-personal-entries-c5e585f31a01c2c7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38670,7 +40428,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-payroll-relationships/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: the payroll relationship and termination dates · HCM Fusion",
     "description": "Self-check: the payroll relationship and termination dates · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38692,7 +40450,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-payroll-relationships/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38700,7 +40460,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-payroll-relationships-12253ec47b48f9a9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38733,7 +40494,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-payroll-transfers/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: adding and transferring payrolls · HCM Fusion",
     "description": "Self-check: adding and transferring payrolls · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38755,7 +40516,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-payroll-transfers/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38763,7 +40526,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-payroll-transfers-fa003c11b5173448.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38796,7 +40560,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/quizzes/assessment-payroll-tru/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Self-check: tax reporting units and moving between them · HCM Fusion",
     "description": "Self-check: tax reporting units and moving between them · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "assessment",
@@ -38818,7 +40582,9 @@ export const routeRegistry = [
         "path": "/practice/quizzes/assessment-payroll-tru/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38826,7 +40592,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-quizzes-assessment-payroll-tru-8372e9e74d2546fa.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38859,7 +40626,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/scenarios/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Scenarios · HCM Fusion",
     "description": "Scenarios · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -38877,7 +40644,9 @@ export const routeRegistry = [
         "path": "/practice/scenarios/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38885,7 +40654,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-scenarios-938ccdb9e8f9632b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38918,7 +40688,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/scenarios/orc-career-site-wrong-jobs/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "A UK-only career site is showing a US job · HCM Fusion",
     "description": "A UK-only career site is showing a US job · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "scenario",
@@ -38940,7 +40710,9 @@ export const routeRegistry = [
         "path": "/practice/scenarios/orc-career-site-wrong-jobs/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -38948,7 +40720,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-scenarios-orc-career-site-wrong-jobs-d20c30c13be06ed1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -38981,7 +40754,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/scenarios/otl-missing-time-in-payroll/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "A project manager worked a full week and was paid nothing · HCM Fusion",
     "description": "A project manager worked a full week and was paid nothing · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "scenario",
@@ -39003,7 +40776,9 @@ export const routeRegistry = [
         "path": "/practice/scenarios/otl-missing-time-in-payroll/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -39011,7 +40786,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-scenarios-otl-missing-time-in-payroll-a2e6c905dc520401.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -39044,7 +40820,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/practice/sops/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Procedures · HCM Fusion",
     "description": "Procedures · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -39062,7 +40838,9 @@ export const routeRegistry = [
         "path": "/practice/sops/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -39070,7 +40848,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/practice-sops-d0ed0268fd56af51.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -39213,7 +40992,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/resources/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Resources · HCM Fusion",
     "description": "Resources · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -39227,7 +41006,9 @@ export const routeRegistry = [
         "path": "/resources/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -39235,7 +41016,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/resources-8f8555a953d54180.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -39378,7 +41160,7 @@ export const routeRegistry = [
     "origin": "hcmfusion",
     "path": "/sources/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Sources · HCM Fusion",
     "description": "Sources · HCM Fusion: an HCM Fusion learning route for Oracle Fusion Cloud HCM processes and configuration.",
     "template": "hcm-index",
@@ -39392,7 +41174,9 @@ export const routeRegistry = [
         "path": "/sources/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -39400,7 +41184,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://hcmfusion.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/sources-2f02bc66b00d8a4f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -40183,7 +41968,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/assumptions/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -40197,7 +41982,9 @@ export const routeRegistry = [
         "path": "/assumptions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -40205,7 +41992,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/assumptions-fd04190bac25c5ae.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -40238,7 +42026,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/charter/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -40252,7 +42040,9 @@ export const routeRegistry = [
         "path": "/charter/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -40260,7 +42050,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/charter-58c34ffd27379099.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -40467,7 +42258,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/decisions/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -40481,7 +42272,9 @@ export const routeRegistry = [
         "path": "/decisions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -40489,7 +42282,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/decisions-be7eb04a8da97ae9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -40577,7 +42371,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/dependencies/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -40591,7 +42385,9 @@ export const routeRegistry = [
         "path": "/dependencies/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -40599,7 +42395,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/dependencies-fcb6ad9c932ee512.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -40803,7 +42600,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/financials/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -40817,7 +42614,9 @@ export const routeRegistry = [
         "path": "/financials/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -40825,7 +42624,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/financials-9f6cc97814327f98.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -40916,7 +42716,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/kanban/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -40930,7 +42730,9 @@ export const routeRegistry = [
         "path": "/kanban/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -40938,7 +42740,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/kanban-6f47d67bf931579f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -40996,7 +42799,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/lessons-learned/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41010,7 +42813,9 @@ export const routeRegistry = [
         "path": "/lessons-learned/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41018,7 +42823,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/lessons-learned-1189847beb5f0afb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -41371,7 +43177,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/projects/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41385,7 +43191,9 @@ export const routeRegistry = [
         "path": "/projects/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41393,7 +43201,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/projects-461f4fd76d9d81db.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -41426,7 +43235,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/registers/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41440,7 +43249,9 @@ export const routeRegistry = [
         "path": "/registers/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41448,7 +43259,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/registers-85c751c9984145ae.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -41481,7 +43293,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/reports/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41495,7 +43307,9 @@ export const routeRegistry = [
         "path": "/reports/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41503,7 +43317,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/reports-3cdcf901b5d17fe9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -41536,7 +43351,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/review/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41550,7 +43365,9 @@ export const routeRegistry = [
         "path": "/review/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41558,7 +43375,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/review-c1c349ef88252ffb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -41646,7 +43464,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/scope/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41660,7 +43478,9 @@ export const routeRegistry = [
         "path": "/scope/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41668,7 +43488,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/scope-b7590e94c766f2b5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -41701,7 +43522,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/search/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41715,7 +43536,9 @@ export const routeRegistry = [
         "path": "/search/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41723,7 +43546,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/search-f0b26a9d105ef84e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -41921,7 +43745,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/sprints/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41935,7 +43759,9 @@ export const routeRegistry = [
         "path": "/sprints/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41943,7 +43769,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/sprints-742f78bfad2a1d48.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -41976,7 +43803,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/tasks/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -41990,7 +43817,9 @@ export const routeRegistry = [
         "path": "/tasks/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -41998,7 +43827,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/tasks-5ad046befd25981d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -42031,7 +43861,7 @@ export const routeRegistry = [
     "origin": "learnpmo",
     "path": "/timesheets/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "LearnPMO",
     "description": "LearnPMO: a LearnPMO academy route for project, programme and portfolio delivery.",
     "template": "workspace",
@@ -42045,7 +43875,9 @@ export const routeRegistry = [
         "path": "/timesheets/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -42053,7 +43885,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://learnpmo.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/timesheets-9260c9e899ba5110.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -42755,7 +44588,7 @@ export const routeRegistry = [
     "origin": "portal",
     "path": "/privacy/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "Privacy Policy",
     "description": "Read the Digi Tracks site terms, privacy information and accessibility commitment.",
     "template": "legal",
@@ -42769,7 +44602,9 @@ export const routeRegistry = [
         "path": "/privacy/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "contact"
     ],
@@ -42777,7 +44612,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/privacy-c7000fe0b8059756.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -46076,7 +47912,7 @@ export const routeRegistry = [
     "origin": "portal",
     "path": "/terms/",
     "routeClass": "public-utility",
-    "indexable": false,
+    "indexable": true,
     "title": "Terms of Use",
     "description": "Read the Digi Tracks site terms, privacy information and accessibility commitment.",
     "template": "legal",
@@ -46090,7 +47926,9 @@ export const routeRegistry = [
         "path": "/terms/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "contact"
     ],
@@ -46098,7 +47936,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-ffb726e0b9cb2b05.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -60995,7 +62834,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/compare/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Compare terms | Source Craft",
     "description": "Search, save and organise procurement terminology with transparent editorial and offline-state boundaries.",
     "template": "sourcecraft-index",
@@ -61009,7 +62848,9 @@ export const routeRegistry = [
         "path": "/compare/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61017,7 +62858,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/compare-5aff789f2172ab68.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61050,7 +62892,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/dashboard/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Library dashboard | Source Craft",
     "description": "Search, save and organise procurement terminology with transparent editorial and offline-state boundaries.",
     "template": "sourcecraft-index",
@@ -61064,7 +62906,9 @@ export const routeRegistry = [
         "path": "/dashboard/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61072,7 +62916,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/dashboard-36a965dea4f800cd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61277,7 +63122,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/learn/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Knowledge check and flashcards | Source Craft",
     "description": "Search, save and organise procurement terminology with transparent editorial and offline-state boundaries.",
     "template": "sourcecraft-index",
@@ -61291,7 +63136,9 @@ export const routeRegistry = [
         "path": "/learn/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61299,7 +63146,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/learn-83c81fe67cec8b15.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61354,7 +63202,7 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": false,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "retired",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61580,7 +63428,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/GB-ENG/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "England regional pack | Source Craft",
     "description": "England regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -61598,7 +63446,9 @@ export const routeRegistry = [
         "path": "/regions/GB-ENG/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61606,7 +63456,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-gb-eng-646337e4c219e979.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61639,7 +63490,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/GB-NIR/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Northern Ireland regional pack | Source Craft",
     "description": "Northern Ireland regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -61657,7 +63508,9 @@ export const routeRegistry = [
         "path": "/regions/GB-NIR/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61665,7 +63518,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-gb-nir-0ae091d9a05588cb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61698,7 +63552,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/GB-SCT/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Scotland regional pack | Source Craft",
     "description": "Scotland regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -61716,7 +63570,9 @@ export const routeRegistry = [
         "path": "/regions/GB-SCT/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61724,7 +63580,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-gb-sct-7a64e4743e0ebc16.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61757,7 +63614,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/GB-WLS/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Wales regional pack | Source Craft",
     "description": "Wales regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -61775,7 +63632,9 @@ export const routeRegistry = [
         "path": "/regions/GB-WLS/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61783,7 +63642,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-gb-wls-6c586646e5534372.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61791,7 +63651,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/GB/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "United Kingdom: locale and umbrella selector regional pack | Source Craft",
     "description": "United Kingdom: locale and umbrella selector regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -61809,7 +63669,9 @@ export const routeRegistry = [
         "path": "/regions/GB/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61817,7 +63679,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-gb-3cc7dfe1b56d87b5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61850,7 +63713,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/GLOBAL/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Global baseline regional pack | Source Craft",
     "description": "Global baseline regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -61868,7 +63731,9 @@ export const routeRegistry = [
         "path": "/regions/GLOBAL/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61876,7 +63741,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-global-dd3928a123b8d682.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61909,7 +63775,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/IN/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "India regional pack | Source Craft",
     "description": "India regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -61927,7 +63793,9 @@ export const routeRegistry = [
         "path": "/regions/IN/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -61935,7 +63803,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-in-9d0555c987511030.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -61993,7 +63862,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/US-CA/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "California, United States regional pack | Source Craft",
     "description": "California, United States regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -62011,7 +63880,9 @@ export const routeRegistry = [
         "path": "/regions/US-CA/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62019,7 +63890,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-us-ca-38fb4e8f02e082b7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62027,7 +63899,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/regions/US/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "United States regional pack | Source Craft",
     "description": "United States regional pack | Source Craft: SourceCraft regional reference for procurement and contract language.",
     "template": "regional-pack",
@@ -62045,7 +63917,9 @@ export const routeRegistry = [
         "path": "/regions/US/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62053,7 +63927,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "blocked",
+    "contentStatus": "approved",
+    "socialImage": "/social/regions-us-23a0a582dc42626c.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62309,7 +64184,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/addressable-spend/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Addressable spend | Source Craft",
     "description": "Addressable spend | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62328,7 +64203,9 @@ export const routeRegistry = [
         "path": "/terms/addressable-spend/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62336,7 +64213,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-addressable-spend-bb62eaf6b12b50d1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62369,7 +64247,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/ai-in-procurement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Artificial intelligence in procurement | Source Craft",
     "description": "Artificial intelligence in procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62388,7 +64266,9 @@ export const routeRegistry = [
         "path": "/terms/ai-in-procurement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62396,7 +64276,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-ai-in-procurement-5e184562da1b3836.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62429,7 +64310,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/anchoring/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Anchoring | Source Craft",
     "description": "Anchoring | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62448,7 +64329,9 @@ export const routeRegistry = [
         "path": "/terms/anchoring/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62456,7 +64339,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-anchoring-f8bcc1ce801713ed.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62489,7 +64373,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/approval-threshold/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Approval threshold | Source Craft",
     "description": "Approval threshold | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62508,7 +64392,9 @@ export const routeRegistry = [
         "path": "/terms/approval-threshold/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62516,7 +64402,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-approval-threshold-37746ce9ee82c495.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62549,7 +64436,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/audit-trail/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Audit trail | Source Craft",
     "description": "Audit trail | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62568,7 +64455,9 @@ export const routeRegistry = [
         "path": "/terms/audit-trail/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62576,7 +64465,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-audit-trail-e74572f9f6c4d7be.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62609,7 +64499,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/auto-renewal/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Auto-renewal | Source Craft",
     "description": "Auto-renewal | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62628,7 +64518,9 @@ export const routeRegistry = [
         "path": "/terms/auto-renewal/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62636,7 +64528,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-auto-renewal-281a3814712b8396.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62670,7 +64563,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/batna/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "BATNA | Source Craft",
     "description": "BATNA | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62689,7 +64582,9 @@ export const routeRegistry = [
         "path": "/terms/batna/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62697,7 +64592,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-batna-c987d75360e68a4d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62730,7 +64626,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/benchmarking/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Benchmarking | Source Craft",
     "description": "Benchmarking | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62749,7 +64645,9 @@ export const routeRegistry = [
         "path": "/terms/benchmarking/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62757,7 +64655,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-benchmarking-ecbde10068227751.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62790,7 +64689,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/budget-variance/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Budget variance | Source Craft",
     "description": "Budget variance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62809,7 +64708,9 @@ export const routeRegistry = [
         "path": "/terms/budget-variance/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62817,7 +64718,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-budget-variance-cf2b54e4775a1ca4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62850,7 +64752,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/business-case/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Business case | Source Craft",
     "description": "Business case | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62869,7 +64771,9 @@ export const routeRegistry = [
         "path": "/terms/business-case/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62877,7 +64781,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-business-case-98cb1e847c711955.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62910,7 +64815,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/business-continuity-planning/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Business continuity planning | Source Craft",
     "description": "Business continuity planning | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62929,7 +64834,9 @@ export const routeRegistry = [
         "path": "/terms/business-continuity-planning/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62937,7 +64844,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-business-continuity-planning-7a58b9f0d4d48155.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -62970,7 +64878,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/cash-flow-forecast/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Cash flow forecast | Source Craft",
     "description": "Cash flow forecast | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -62989,7 +64897,9 @@ export const routeRegistry = [
         "path": "/terms/cash-flow-forecast/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -62997,7 +64907,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-cash-flow-forecast-5533b029707a627e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63030,7 +64941,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/catalogue-buying/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Catalogue buying | Source Craft",
     "description": "Catalogue buying | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63049,7 +64960,9 @@ export const routeRegistry = [
         "path": "/terms/catalogue-buying/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63057,7 +64970,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-catalogue-buying-5ab8e1aa5c269dcc.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63090,7 +65004,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/category-management/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Category management | Source Craft",
     "description": "Category management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63109,7 +65023,9 @@ export const routeRegistry = [
         "path": "/terms/category-management/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63117,7 +65033,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-category-management-392cd816fc2ab810.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63150,7 +65067,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/category-strategy/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Category strategy | Source Craft",
     "description": "Category strategy | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63169,7 +65086,9 @@ export const routeRegistry = [
         "path": "/terms/category-strategy/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63177,7 +65096,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-category-strategy-eafc36b18d11e259.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63210,7 +65130,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/circular-procurement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Circular procurement | Source Craft",
     "description": "Circular procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63229,7 +65149,9 @@ export const routeRegistry = [
         "path": "/terms/circular-procurement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63237,7 +65159,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-circular-procurement-d49163c4bd1d81e5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63270,7 +65193,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/compliance/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Compliance | Source Craft",
     "description": "Compliance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63289,7 +65212,9 @@ export const routeRegistry = [
         "path": "/terms/compliance/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63297,7 +65222,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-compliance-d254e0916d5872bb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63330,7 +65256,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/concession-strategy/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Concession strategy | Source Craft",
     "description": "Concession strategy | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63349,7 +65275,9 @@ export const routeRegistry = [
         "path": "/terms/concession-strategy/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63357,7 +65285,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-concession-strategy-6a17467f87a6a8ca.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63390,7 +65319,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/confidentiality-nda/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Confidentiality agreement | Source Craft",
     "description": "Confidentiality agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63409,7 +65338,9 @@ export const routeRegistry = [
         "path": "/terms/confidentiality-nda/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63417,7 +65348,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-confidentiality-nda-f5b3c58e9ff4fe79.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63450,7 +65382,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/conflict-of-interest/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Conflict of interest | Source Craft",
     "description": "Conflict of interest | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63469,7 +65401,9 @@ export const routeRegistry = [
         "path": "/terms/conflict-of-interest/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63477,7 +65411,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-conflict-of-interest-0e57f2db98b4092d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63510,7 +65445,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/contract-amendment/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Contract amendment | Source Craft",
     "description": "Contract amendment | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63529,7 +65464,9 @@ export const routeRegistry = [
         "path": "/terms/contract-amendment/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63537,7 +65474,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-contract-amendment-e0146de85b284a86.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63570,7 +65508,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/contract-assignment/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Contract assignment | Source Craft",
     "description": "Contract assignment | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63589,7 +65527,9 @@ export const routeRegistry = [
         "path": "/terms/contract-assignment/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63597,7 +65537,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-contract-assignment-2705333719e8fc6e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63630,7 +65571,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/contract-management/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Contract management | Source Craft",
     "description": "Contract management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63649,7 +65590,9 @@ export const routeRegistry = [
         "path": "/terms/contract-management/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63657,7 +65600,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-contract-management-6bf7bd6ee2804ede.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63690,7 +65634,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/contract-renegotiation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Contract renegotiation | Source Craft",
     "description": "Contract renegotiation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63709,7 +65653,9 @@ export const routeRegistry = [
         "path": "/terms/contract-renegotiation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63717,7 +65663,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-contract-renegotiation-372626f5deeb290d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63750,7 +65697,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/contract-renewal/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Contract renewal | Source Craft",
     "description": "Contract renewal | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63769,7 +65716,9 @@ export const routeRegistry = [
         "path": "/terms/contract-renewal/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63777,7 +65726,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-contract-renewal-8378abee932f35ec.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63810,7 +65760,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/contract-variation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Contract variation | Source Craft",
     "description": "Contract variation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63829,7 +65779,9 @@ export const routeRegistry = [
         "path": "/terms/contract-variation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63837,7 +65789,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-contract-variation-707630ab8aa693ed.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63870,7 +65823,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/cost-avoidance/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Cost avoidance | Source Craft",
     "description": "Cost avoidance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63889,7 +65842,9 @@ export const routeRegistry = [
         "path": "/terms/cost-avoidance/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63897,7 +65852,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-cost-avoidance-96c8f201a5e253d9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63930,7 +65886,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/data-protection-in-procurement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Data protection in procurement | Source Craft",
     "description": "Data protection in procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -63949,7 +65905,9 @@ export const routeRegistry = [
         "path": "/terms/data-protection-in-procurement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -63957,7 +65915,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-data-protection-in-procurement-dda450d2ef455761.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -63990,7 +65949,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/data-quality/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Data quality | Source Craft",
     "description": "Data quality | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64009,7 +65968,9 @@ export const routeRegistry = [
         "path": "/terms/data-quality/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64017,7 +65978,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-data-quality-2067e4b2f21abecf.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64050,7 +66012,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/demand-management/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Demand management | Source Craft",
     "description": "Demand management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64069,7 +66031,9 @@ export const routeRegistry = [
         "path": "/terms/demand-management/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64077,7 +66041,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-demand-management-5da49fab51e753f5.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64110,7 +66075,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/digital-procurement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Digital procurement | Source Craft",
     "description": "Digital procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64129,7 +66094,9 @@ export const routeRegistry = [
         "path": "/terms/digital-procurement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64137,7 +66104,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-digital-procurement-0904c90f9be4cf20.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64170,7 +66138,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/e-auction/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "E-auction | Source Craft",
     "description": "E-auction | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64189,7 +66157,9 @@ export const routeRegistry = [
         "path": "/terms/e-auction/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64197,7 +66167,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-e-auction-f33de36694b3e242.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64230,7 +66201,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/e-procurement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "E-procurement | Source Craft",
     "description": "E-procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64249,7 +66220,9 @@ export const routeRegistry = [
         "path": "/terms/e-procurement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64257,7 +66230,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-e-procurement-d30b00b61d05dbce.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64290,7 +66264,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/entire-agreement-clause/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Entire agreement clause | Source Craft",
     "description": "Entire agreement clause | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64309,7 +66283,9 @@ export const routeRegistry = [
         "path": "/terms/entire-agreement-clause/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64317,7 +66293,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-entire-agreement-clause-f57ace39eb88750a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64350,7 +66327,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/environmental-social-governance/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Environmental, social and governance factors | Source Craft",
     "description": "Environmental, social and governance factors | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64369,7 +66346,9 @@ export const routeRegistry = [
         "path": "/terms/environmental-social-governance/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64377,7 +66356,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-environmental-social-governance-387c8d036cf102dd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64410,7 +66390,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/escalation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Escalation | Source Craft",
     "description": "Escalation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64429,7 +66409,9 @@ export const routeRegistry = [
         "path": "/terms/escalation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64437,7 +66419,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-escalation-4d0bc906dd581e8f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64470,7 +66453,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/expediting/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Expediting | Source Craft",
     "description": "Expediting | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64489,7 +66472,9 @@ export const routeRegistry = [
         "path": "/terms/expediting/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64497,7 +66482,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-expediting-ecf7426e4d9dc212.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64530,7 +66516,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/force-majeure/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Force majeure | Source Craft",
     "description": "Force majeure | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64549,7 +66535,9 @@ export const routeRegistry = [
         "path": "/terms/force-majeure/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64557,7 +66545,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-force-majeure-0c4e4342688f8156.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64590,7 +66579,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/foreign-exchange-risk/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Foreign exchange risk | Source Craft",
     "description": "Foreign exchange risk | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64609,7 +66598,9 @@ export const routeRegistry = [
         "path": "/terms/foreign-exchange-risk/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64617,7 +66608,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-foreign-exchange-risk-814ab95afb60db80.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64650,7 +66642,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/framework-agreement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Framework agreement | Source Craft",
     "description": "Framework agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64669,7 +66661,9 @@ export const routeRegistry = [
         "path": "/terms/framework-agreement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64677,7 +66671,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-framework-agreement-bb0dc133d3cf0032.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64710,7 +66705,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/goods-receipt-note/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Goods receipt note | Source Craft",
     "description": "Goods receipt note | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64729,7 +66724,9 @@ export const routeRegistry = [
         "path": "/terms/goods-receipt-note/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64737,7 +66734,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-goods-receipt-note-9c991af189ace5a0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64770,7 +66768,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/governance/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Governance | Source Craft",
     "description": "Governance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64789,7 +66787,9 @@ export const routeRegistry = [
         "path": "/terms/governance/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64797,7 +66797,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-governance-1795f9c4ed49a5d7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64830,7 +66831,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/governing-law/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Governing law | Source Craft",
     "description": "Governing law | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64849,7 +66850,9 @@ export const routeRegistry = [
         "path": "/terms/governing-law/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64857,7 +66860,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-governing-law-f8faa70691cdddc0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64890,7 +66894,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/greenwashing/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Greenwashing | Source Craft",
     "description": "Greenwashing | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64909,7 +66913,9 @@ export const routeRegistry = [
         "path": "/terms/greenwashing/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64917,7 +66923,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-greenwashing-a0d46e2318398ca7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -64950,7 +66957,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/guided-buying/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Guided buying | Source Craft",
     "description": "Guided buying | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -64969,7 +66976,9 @@ export const routeRegistry = [
         "path": "/terms/guided-buying/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -64977,7 +66986,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-guided-buying-433c7ff61fedacfd.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65010,7 +67020,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/incoterms/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Incoterms rules | Source Craft",
     "description": "Incoterms rules | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65029,7 +67039,9 @@ export const routeRegistry = [
         "path": "/terms/incoterms/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65037,7 +67049,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-incoterms-98210ec84e3d6832.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65070,7 +67083,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/indemnity/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Indemnity | Source Craft",
     "description": "Indemnity | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65089,7 +67102,9 @@ export const routeRegistry = [
         "path": "/terms/indemnity/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65097,7 +67112,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-indemnity-2eb2d338b325635f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65130,7 +67146,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/intellectual-property/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Intellectual property rights | Source Craft",
     "description": "Intellectual property rights | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65149,7 +67165,9 @@ export const routeRegistry = [
         "path": "/terms/intellectual-property/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65157,7 +67175,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-intellectual-property-f9b6a057a68453b4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65190,7 +67209,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/invoice-exception/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Invoice exception | Source Craft",
     "description": "Invoice exception | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65209,7 +67228,9 @@ export const routeRegistry = [
         "path": "/terms/invoice-exception/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65217,7 +67238,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-invoice-exception-8bfaf6e12ba4b14f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65250,7 +67272,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/invoice-matching/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Invoice matching | Source Craft",
     "description": "Invoice matching | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65269,7 +67291,9 @@ export const routeRegistry = [
         "path": "/terms/invoice-matching/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65277,7 +67301,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-invoice-matching-b8af9e12a6a5c5c0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65310,7 +67335,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/kraljic-matrix/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Kraljic matrix | Source Craft",
     "description": "Kraljic matrix | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65329,7 +67354,9 @@ export const routeRegistry = [
         "path": "/terms/kraljic-matrix/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65337,7 +67364,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-kraljic-matrix-7806620a9129c8de.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65370,7 +67398,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/landed-cost/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Landed cost | Source Craft",
     "description": "Landed cost | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65389,7 +67417,9 @@ export const routeRegistry = [
         "path": "/terms/landed-cost/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65397,7 +67427,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-landed-cost-960da1d6481b2a91.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65430,7 +67461,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/letter-of-credit/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Letter of credit | Source Craft",
     "description": "Letter of credit | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65449,7 +67480,9 @@ export const routeRegistry = [
         "path": "/terms/letter-of-credit/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65457,7 +67490,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-letter-of-credit-1781fdf33bab98d4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65490,7 +67524,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/limitation-of-liability/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Limitation of liability | Source Craft",
     "description": "Limitation of liability | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65509,7 +67543,9 @@ export const routeRegistry = [
         "path": "/terms/limitation-of-liability/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65517,7 +67553,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-limitation-of-liability-25202c40f5617e27.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65550,7 +67587,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/liquidated-damages/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Liquidated damages | Source Craft",
     "description": "Liquidated damages | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65569,7 +67606,9 @@ export const routeRegistry = [
         "path": "/terms/liquidated-damages/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65577,7 +67616,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-liquidated-damages-ac25cfc9094d8803.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65610,7 +67650,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/make-or-buy-analysis/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Make or buy analysis | Source Craft",
     "description": "Make or buy analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65629,7 +67669,9 @@ export const routeRegistry = [
         "path": "/terms/make-or-buy-analysis/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65637,7 +67679,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-make-or-buy-analysis-d21b1f5966310eef.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65670,7 +67713,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/market-analysis/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Market analysis | Source Craft",
     "description": "Market analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65689,7 +67732,9 @@ export const routeRegistry = [
         "path": "/terms/market-analysis/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65697,7 +67742,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-market-analysis-d4f94d45e9dfbf6e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65730,7 +67776,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/master-services-agreement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Master services agreement | Source Craft",
     "description": "Master services agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65749,7 +67795,9 @@ export const routeRegistry = [
         "path": "/terms/master-services-agreement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65757,7 +67805,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-master-services-agreement-f3e3a8fa69a471fa.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65790,7 +67839,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/maverick-spend/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Maverick spend | Source Craft",
     "description": "Maverick spend | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65809,7 +67858,9 @@ export const routeRegistry = [
         "path": "/terms/maverick-spend/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65817,7 +67868,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-maverick-spend-3f5d998a21366fad.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65850,7 +67902,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/modern-slavery/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Modern slavery in supply chains | Source Craft",
     "description": "Modern slavery in supply chains | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65869,7 +67921,9 @@ export const routeRegistry = [
         "path": "/terms/modern-slavery/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65877,7 +67931,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-modern-slavery-8eb903f9cbe35deb.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65910,7 +67965,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/negotiation-leverage/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Negotiation leverage | Source Craft",
     "description": "Negotiation leverage | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65929,7 +67984,9 @@ export const routeRegistry = [
         "path": "/terms/negotiation-leverage/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65937,7 +67994,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-negotiation-leverage-06da751b46382047.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -65970,7 +68028,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/negotiation-preparation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Negotiation preparation | Source Craft",
     "description": "Negotiation preparation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -65989,7 +68047,9 @@ export const routeRegistry = [
         "path": "/terms/negotiation-preparation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -65997,7 +68057,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-negotiation-preparation-406e03f1194bde72.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66030,7 +68091,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/negotiation-strategy/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Negotiation strategy | Source Craft",
     "description": "Negotiation strategy | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66049,7 +68110,9 @@ export const routeRegistry = [
         "path": "/terms/negotiation-strategy/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66057,7 +68120,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-negotiation-strategy-fdbbac192b08a840.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66090,7 +68154,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/net-present-value/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Net present value | Source Craft",
     "description": "Net present value | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66109,7 +68173,9 @@ export const routeRegistry = [
         "path": "/terms/net-present-value/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66117,7 +68183,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-net-present-value-fe2952b81b26d883.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66150,7 +68217,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/payment-terms/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Payment terms | Source Craft",
     "description": "Payment terms | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66169,7 +68236,9 @@ export const routeRegistry = [
         "path": "/terms/payment-terms/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66177,7 +68246,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-payment-terms-e593e9e0371cd674.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66210,7 +68280,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/procurement-analytics/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Procurement analytics | Source Craft",
     "description": "Procurement analytics | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66229,7 +68299,9 @@ export const routeRegistry = [
         "path": "/terms/procurement-analytics/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66237,7 +68309,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-procurement-analytics-afbc53b8e4605c8f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66270,7 +68343,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/procurement-automation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Procurement automation | Source Craft",
     "description": "Procurement automation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66289,7 +68362,9 @@ export const routeRegistry = [
         "path": "/terms/procurement-automation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66297,7 +68372,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-procurement-automation-1f5afbd4eb7c7325.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66330,7 +68406,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/product-carbon-footprint/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Product carbon footprint | Source Craft",
     "description": "Product carbon footprint | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66349,7 +68425,9 @@ export const routeRegistry = [
         "path": "/terms/product-carbon-footprint/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66357,7 +68435,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-product-carbon-footprint-2b5e1b332a8ede14.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66390,7 +68469,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/public-procurement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Public procurement | Source Craft",
     "description": "Public procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66409,7 +68488,9 @@ export const routeRegistry = [
         "path": "/terms/public-procurement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66417,7 +68498,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-public-procurement-52458ef2113ba439.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66475,7 +68557,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/purchase-order-acknowledgement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Purchase order acknowledgement | Source Craft",
     "description": "Purchase order acknowledgement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66494,7 +68576,9 @@ export const routeRegistry = [
         "path": "/terms/purchase-order-acknowledgement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66502,7 +68586,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-purchase-order-acknowledgement-927a118674f73024.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66510,7 +68595,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/purchase-order/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Purchase order | Source Craft",
     "description": "Purchase order | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66529,7 +68614,9 @@ export const routeRegistry = [
         "path": "/terms/purchase-order/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66537,7 +68624,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-purchase-order-4a993d8862ba0854.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66570,7 +68658,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/purchase-price-variance/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Purchase price variance | Source Craft",
     "description": "Purchase price variance | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66589,7 +68677,9 @@ export const routeRegistry = [
         "path": "/terms/purchase-price-variance/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66597,7 +68687,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-purchase-price-variance-15067e5b2aa88df1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66630,7 +68721,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/purchase-requisition/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Purchase requisition | Source Craft",
     "description": "Purchase requisition | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66649,7 +68740,9 @@ export const routeRegistry = [
         "path": "/terms/purchase-requisition/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66657,7 +68750,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-purchase-requisition-96234a4fe3a4b3d8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66690,7 +68784,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/purchase-to-pay/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Purchase to pay | Source Craft",
     "description": "Purchase to pay | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66709,7 +68803,9 @@ export const routeRegistry = [
         "path": "/terms/purchase-to-pay/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66717,7 +68813,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-purchase-to-pay-e8d14c39859ade8a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66750,7 +68847,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/request-for-information/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Request for information | Source Craft",
     "description": "Request for information | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66769,7 +68866,9 @@ export const routeRegistry = [
         "path": "/terms/request-for-information/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66777,7 +68876,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-request-for-information-5a94e89e4944eea0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66810,7 +68910,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/request-for-proposal/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Request for proposal | Source Craft",
     "description": "Request for proposal | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66829,7 +68929,9 @@ export const routeRegistry = [
         "path": "/terms/request-for-proposal/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66837,7 +68939,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-request-for-proposal-7a9905189f025724.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66870,7 +68973,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/request-for-quotation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Request for quotation | Source Craft",
     "description": "Request for quotation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66889,7 +68992,9 @@ export const routeRegistry = [
         "path": "/terms/request-for-quotation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66897,7 +69002,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-request-for-quotation-80d9e72e2508f785.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66930,7 +69036,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/request-for-tender/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Request for tender | Source Craft",
     "description": "Request for tender | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -66949,7 +69055,9 @@ export const routeRegistry = [
         "path": "/terms/request-for-tender/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -66957,7 +69065,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-request-for-tender-6148f51f7a03e422.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -66990,7 +69099,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/retendering/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Retendering | Source Craft",
     "description": "Retendering | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67009,7 +69118,9 @@ export const routeRegistry = [
         "path": "/terms/retendering/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67017,7 +69128,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-retendering-6176ff76b97bc61a.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67050,7 +69162,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/return-on-investment/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Return on investment | Source Craft",
     "description": "Return on investment | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67069,7 +69181,9 @@ export const routeRegistry = [
         "path": "/terms/return-on-investment/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67077,7 +69191,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-return-on-investment-48af7c564e510bda.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67110,7 +69225,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/sanctions-screening/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Sanctions screening | Source Craft",
     "description": "Sanctions screening | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67129,7 +69244,9 @@ export const routeRegistry = [
         "path": "/terms/sanctions-screening/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67137,7 +69254,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-sanctions-screening-e22a6d66a3d68f0b.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67170,7 +69288,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/savings-tracking/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Savings tracking | Source Craft",
     "description": "Savings tracking | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67189,7 +69307,9 @@ export const routeRegistry = [
         "path": "/terms/savings-tracking/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67197,7 +69317,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-savings-tracking-5d2d158c986a4476.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67230,7 +69351,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/scope-3-emissions/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Scope 3 emissions | Source Craft",
     "description": "Scope 3 emissions | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67249,7 +69370,9 @@ export const routeRegistry = [
         "path": "/terms/scope-3-emissions/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67257,7 +69380,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-scope-3-emissions-79d5de1a031b2b42.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67290,7 +69414,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/segregation-of-duties/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Segregation of duties | Source Craft",
     "description": "Segregation of duties | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67309,7 +69433,9 @@ export const routeRegistry = [
         "path": "/terms/segregation-of-duties/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67317,7 +69443,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-segregation-of-duties-961b5a4e8ce429b9.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67350,7 +69477,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/service-level-agreement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Service level agreement | Source Craft",
     "description": "Service level agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67369,7 +69496,9 @@ export const routeRegistry = [
         "path": "/terms/service-level-agreement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67377,7 +69506,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-service-level-agreement-60b32c0fb6202b31.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67410,7 +69540,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/should-cost-analysis/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Should-cost analysis | Source Craft",
     "description": "Should-cost analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67429,7 +69559,9 @@ export const routeRegistry = [
         "path": "/terms/should-cost-analysis/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67437,7 +69569,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-should-cost-analysis-67e1cd4ea6bfc2c4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67470,7 +69603,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/should-cost-negotiation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Should-cost negotiation | Source Craft",
     "description": "Should-cost negotiation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67489,7 +69622,9 @@ export const routeRegistry = [
         "path": "/terms/should-cost-negotiation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67497,7 +69632,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-should-cost-negotiation-8585c42e7c62f12e.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67530,7 +69666,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/single-source-vs-sole-source/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Single source and sole source | Source Craft",
     "description": "Single source and sole source | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67549,7 +69685,9 @@ export const routeRegistry = [
         "path": "/terms/single-source-vs-sole-source/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67557,7 +69695,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-single-source-vs-sole-source-9f3677f234ca0ef1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67590,7 +69729,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/source-to-contract/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Source to contract | Source Craft",
     "description": "Source to contract | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67609,7 +69748,9 @@ export const routeRegistry = [
         "path": "/terms/source-to-contract/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67617,7 +69758,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-source-to-contract-38b940cc9dc91332.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67650,7 +69792,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/source-to-pay/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Source to pay | Source Craft",
     "description": "Source to pay | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67669,7 +69811,9 @@ export const routeRegistry = [
         "path": "/terms/source-to-pay/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67677,7 +69821,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-source-to-pay-a3397ce6fd0f7e25.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67710,7 +69855,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/sourcing-event/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Sourcing event | Source Craft",
     "description": "Sourcing event | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67729,7 +69874,9 @@ export const routeRegistry = [
         "path": "/terms/sourcing-event/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67737,7 +69884,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-sourcing-event-12a2c34deef85a96.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67770,7 +69918,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/sourcing-pipeline/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Sourcing pipeline | Source Craft",
     "description": "Sourcing pipeline | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67789,7 +69937,9 @@ export const routeRegistry = [
         "path": "/terms/sourcing-pipeline/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67797,7 +69947,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-sourcing-pipeline-87195a1969b9d02f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67830,7 +69981,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/spend-analysis/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Spend analysis | Source Craft",
     "description": "Spend analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67849,7 +70000,9 @@ export const routeRegistry = [
         "path": "/terms/spend-analysis/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67857,7 +70010,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-spend-analysis-22ec6c06c5244481.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67890,7 +70044,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/spend-cube/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Spend cube | Source Craft",
     "description": "Spend cube | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67909,7 +70063,9 @@ export const routeRegistry = [
         "path": "/terms/spend-cube/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67917,7 +70073,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-spend-cube-325c3cc6d2528364.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -67950,7 +70107,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/statement-of-work/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Statement of work | Source Craft",
     "description": "Statement of work | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -67969,7 +70126,9 @@ export const routeRegistry = [
         "path": "/terms/statement-of-work/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -67977,7 +70136,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-statement-of-work-b372934d56aef542.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68010,7 +70170,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/strategic-sourcing/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Strategic sourcing | Source Craft",
     "description": "Strategic sourcing | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68029,7 +70189,9 @@ export const routeRegistry = [
         "path": "/terms/strategic-sourcing/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68037,7 +70199,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-strategic-sourcing-498dcbfb0d95a298.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68070,7 +70233,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-code-of-conduct/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier code of conduct | Source Craft",
     "description": "Supplier code of conduct | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68089,7 +70252,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-code-of-conduct/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68097,7 +70262,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-code-of-conduct-4e139fbbad8ce6a8.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68130,7 +70296,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-decarbonisation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier decarbonisation | Source Craft",
     "description": "Supplier decarbonisation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68149,7 +70315,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-decarbonisation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68157,7 +70325,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-decarbonisation-888904e6689d25f4.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68190,7 +70359,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-development/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier development | Source Craft",
     "description": "Supplier development | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68209,7 +70378,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-development/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68217,7 +70388,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-development-5487208d96da02a0.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68250,7 +70422,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-diversity/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier diversity | Source Craft",
     "description": "Supplier diversity | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68269,7 +70441,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-diversity/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68277,7 +70451,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-diversity-861ebb9e473dc5e3.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68310,7 +70485,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-due-diligence/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier due diligence | Source Craft",
     "description": "Supplier due diligence | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68329,7 +70504,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-due-diligence/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68337,7 +70514,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-due-diligence-bee84d2688067582.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68370,7 +70548,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-exit-management/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier exit management | Source Craft",
     "description": "Supplier exit management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68389,7 +70567,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-exit-management/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68397,7 +70577,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-exit-management-ed262ef395dcfe57.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68430,7 +70611,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-innovation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier innovation | Source Craft",
     "description": "Supplier innovation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68449,7 +70630,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-innovation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68457,7 +70640,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-innovation-fed4d383f9d054ac.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68490,7 +70674,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-onboarding/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier onboarding | Source Craft",
     "description": "Supplier onboarding | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68509,7 +70693,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-onboarding/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68517,7 +70703,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-onboarding-3aa4549ce647df1f.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68550,7 +70737,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-performance-review/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier performance review | Source Craft",
     "description": "Supplier performance review | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68569,7 +70756,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-performance-review/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68577,7 +70766,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-performance-review-706f4a859966d7de.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68610,7 +70800,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-relationship-management/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier relationship management | Source Craft",
     "description": "Supplier relationship management | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68629,7 +70819,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-relationship-management/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68637,7 +70829,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-relationship-management-44e4fdb17009b4ac.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68670,7 +70863,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-risk-assessment/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier risk assessment | Source Craft",
     "description": "Supplier risk assessment | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68689,7 +70882,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-risk-assessment/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68697,7 +70892,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-risk-assessment-9931d21f1fef0705.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68730,7 +70926,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-scorecard/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier scorecard | Source Craft",
     "description": "Supplier scorecard | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68749,7 +70945,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-scorecard/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68757,7 +70955,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-scorecard-3fb4e3bf8ab0d1b7.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68790,7 +70989,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supplier-segmentation/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supplier segmentation | Source Craft",
     "description": "Supplier segmentation | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68809,7 +71008,9 @@ export const routeRegistry = [
         "path": "/terms/supplier-segmentation/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68817,7 +71018,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supplier-segmentation-11bf9c44777ca6ee.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68850,7 +71052,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/supply-chain-risk/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Supply chain risk | Source Craft",
     "description": "Supply chain risk | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68869,7 +71071,9 @@ export const routeRegistry = [
         "path": "/terms/supply-chain-risk/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68877,7 +71081,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-supply-chain-risk-08ccdf07c0ff8b79.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68910,7 +71115,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/sustainable-procurement/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Sustainable procurement | Source Craft",
     "description": "Sustainable procurement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68929,7 +71134,9 @@ export const routeRegistry = [
         "path": "/terms/sustainable-procurement/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68937,7 +71144,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-sustainable-procurement-75277cdf62bb3c37.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -68970,7 +71178,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/tail-spend/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Tail spend | Source Craft",
     "description": "Tail spend | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -68989,7 +71197,9 @@ export const routeRegistry = [
         "path": "/terms/tail-spend/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -68997,7 +71207,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-tail-spend-c8ec74ac229c2f92.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69030,7 +71241,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/termination-clause/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Termination clause | Source Craft",
     "description": "Termination clause | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69049,7 +71260,9 @@ export const routeRegistry = [
         "path": "/terms/termination-clause/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69057,7 +71270,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-termination-clause-9798baaf0a37c898.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69090,7 +71304,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/three-way-match/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Three-way match | Source Craft",
     "description": "Three-way match | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69109,7 +71323,9 @@ export const routeRegistry = [
         "path": "/terms/three-way-match/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69117,7 +71333,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-three-way-match-3b378da99a9bdd68.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69150,7 +71367,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/total-cost-of-carbon/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Total cost of carbon | Source Craft",
     "description": "Total cost of carbon | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69169,7 +71386,9 @@ export const routeRegistry = [
         "path": "/terms/total-cost-of-carbon/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69177,7 +71396,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-total-cost-of-carbon-aa4f74f9c0e5012d.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69210,7 +71430,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/total-cost-of-ownership/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Total cost of ownership | Source Craft",
     "description": "Total cost of ownership | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69229,7 +71449,9 @@ export const routeRegistry = [
         "path": "/terms/total-cost-of-ownership/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69237,7 +71459,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-total-cost-of-ownership-2414c266ed16ea91.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69270,7 +71493,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/trade-off-analysis/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Trade-off analysis | Source Craft",
     "description": "Trade-off analysis | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69289,7 +71512,9 @@ export const routeRegistry = [
         "path": "/terms/trade-off-analysis/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69297,7 +71522,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-trade-off-analysis-f1db640ee6f323df.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69330,7 +71556,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/value-engineering/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Value engineering | Source Craft",
     "description": "Value engineering | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69349,7 +71575,9 @@ export const routeRegistry = [
         "path": "/terms/value-engineering/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69357,7 +71585,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-value-engineering-72089897f45d8ead.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69390,7 +71619,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/walk-away-point/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Walk-away point | Source Craft",
     "description": "Walk-away point | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69409,7 +71638,9 @@ export const routeRegistry = [
         "path": "/terms/walk-away-point/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69417,7 +71648,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-walk-away-point-b689e17fa498d1c1.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69450,7 +71682,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/warranty/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Warranty | Source Craft",
     "description": "Warranty | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69469,7 +71701,9 @@ export const routeRegistry = [
         "path": "/terms/warranty/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69477,7 +71711,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-warranty-63e300df71df0d21.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69510,7 +71745,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/working-capital/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Working capital | Source Craft",
     "description": "Working capital | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69529,7 +71764,9 @@ export const routeRegistry = [
         "path": "/terms/working-capital/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69537,7 +71774,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-working-capital-e27277813fd89e41.png",
     "sourceStatus": "fresh_measured"
   },
   {
@@ -69570,7 +71808,7 @@ export const routeRegistry = [
     "origin": "sourcecraft",
     "path": "/terms/zopa/",
     "routeClass": "public-seo",
-    "indexable": false,
+    "indexable": true,
     "title": "Zone of possible agreement | Source Craft",
     "description": "Zone of possible agreement | Source Craft: a working procurement and contract reference from SourceCraft.",
     "template": "term",
@@ -69589,7 +71827,9 @@ export const routeRegistry = [
         "path": "/terms/zopa/"
       }
     ],
-    "schema": [],
+    "schema": [
+      "BreadcrumbList"
+    ],
     "ctaIds": [
       "request-demo"
     ],
@@ -69597,7 +71837,8 @@ export const routeRegistry = [
     "canonicalOrigin": "https://sourcecraft.digitracks.net",
     "baselineSitemap": true,
     "hashRoute": false,
-    "contentStatus": "in-review",
+    "contentStatus": "approved",
+    "socialImage": "/social/terms-zopa-c4f8cc933f4b3667.png",
     "sourceStatus": "fresh_measured"
   }
 ] as const;

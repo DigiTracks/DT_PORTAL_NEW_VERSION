@@ -4,6 +4,15 @@ import Button from "@digitracks/ui/components/Button.astro";
 import "@digitracks/ui/styles/base.css";
 import commonStyles from "@digitracks/ui/styles/portal-common.css?inline";
 
+const structuredData = JSON.stringify([{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://digitracks.net/" },
+    { "@type": "ListItem", position: 2, name: "Resources", item: "https://digitracks.net/resources/" }
+  ]
+}]).replace(/</g, "\\u003c");
+
 const groups = [
   {
     index: "01",
@@ -55,6 +64,7 @@ const groups = [
   origin="https://digitracks.net/"
   canonical="https://digitracks.net/resources/"
   pageStyles={commonStyles}
+  structuredData={structuredData}
 >
   <nav class="breadcrumbs shell" aria-label="Breadcrumb">
     <ol>

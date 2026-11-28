@@ -75,8 +75,8 @@ export function validateRouteRegistry(routes: readonly RouteRecord[]): string[] 
     if (!route.template.trim()) errors.push(`Route ${route.id} has an empty template`);
     if (!route.analyticsId.trim()) errors.push(`Route ${route.id} has an empty analytics id`);
 
-    if (route.routeClass !== "public-seo" && route.indexable) {
-      errors.push(`Route ${route.id} cannot be indexable outside public-seo`);
+    if (route.routeClass === "private" && route.indexable) {
+      errors.push(`Route ${route.id} cannot be indexable while private`);
     }
     if (route.indexable && route.contentStatus !== "approved") {
       errors.push(`Indexable route ${route.id} requires approved content status`);
