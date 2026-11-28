@@ -633,3 +633,24 @@
     width: calc(100vw - 1.5rem);
   }
 }
+
+/* Night-surface scopes: shared dark heroes and close bands carry on-night tokens,
+   so primary CTAs render gold and secondary CTAs keep light borders on night. */
+.mk-hero,
+.rs-hero,
+.sol-hero,
+.industry-hero,
+.mk-close,
+.rs-close,
+.sol-close,
+.industry-close {
+  --p-bg: var(--night);
+  --p-surface: var(--night-raised);
+  --p-ink: var(--paper-bright);
+  --p-muted: var(--steel);
+  --p-border: rgb(252 251 248 / 13%);
+  --p-border-strong: rgb(252 251 248 / 24%);
+  --p-action: var(--signal);
+  --p-action-ink: var(--night);
+  --p-focus: var(--signal);
+}

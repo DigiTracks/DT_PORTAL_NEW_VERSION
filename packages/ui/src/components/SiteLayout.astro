@@ -10,6 +10,7 @@ interface Props {
   description: string;
   origin: string;
   canonical?: string;
+  redirectTo?: string;
   indexable?: boolean;
   socialImage?: string;
   manifestHref?: string;
@@ -30,6 +31,7 @@ const {
   description,
   origin,
   canonical,
+  redirectTo,
   indexable = true,
   socialImage,
   manifestHref,
@@ -125,7 +127,7 @@ const companyLinks = [
   { label: "About Digi Tracks", href: "https://digitracks.net/about/" },
   { label: "Services", href: "https://digitracks.net/services/" },
   { label: "Solutions", href: "https://digitracks.net/solutions/" },
-  { label: "Industries", href: "https://digitracks.net/industries/" },
+  { label: "Industries", href: "https://digitracks.net/solutions/#industry-paths" },
   { label: "Resources", href: "https://digitracks.net/resources/" },
   { label: "Contact", href: "https://digitracks.net/contact/" }
 ];
@@ -147,8 +149,9 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
     <meta name="description" content={description} />
     <meta name="page-type" content="software" />
     <meta name="site-kind" content="software" />
-    <meta name="robots" content={indexable ? "index, follow" : "noindex, follow"} />
+    <meta name="robots" content={indexable && !redirectTo ? "index, follow" : "noindex, follow"} />
     <meta name="theme-color" content={themeColors[originId] ?? themeColors.portal} />
+    {redirectTo && <meta http-equiv="refresh" content={`0;url=${redirectTo}`} />}
     {manifestHref && <link rel="manifest" href={manifestHref} />}
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -282,7 +285,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
                 </div>
               </div>
             </details>
-            <a href="/industries/">Industries</a>
+            <a href="/solutions/#industry-paths">Industries</a>
             <a href="/solutions/">Solutions</a>
             <a href="/services/">Services</a>
             <details class="nav-menu nav-menu--compact nav-menu--resources">
@@ -332,7 +335,7 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
                 {engineeringLinks.map((item) => <a href={item.href}><strong>{item.label}</strong><small>{item.note}</small></a>)}
                 <p class="t-label">Explore</p>
                 <a href="https://digitracks.net/products/">All products</a>
-                <a href="/industries/">Industries</a>
+                <a href="/solutions/#industry-paths">Industries</a>
                 <a href="/solutions/">Solutions</a>
                 <a href="/services/">Services</a>
                 <a href="/about/">About Digi Tracks</a>

@@ -119,6 +119,7 @@ const isProcurementEcosystem = route.template === "procurement-ecosystem";
 const isServices = route.template === "services";
 const isProductIndex = route.template === "product-index";
 const isSolutionIndex = route.template === "solution-index" || route.template === "industry-index";
+const isIndustryRedirect = route.path === "/industries/";
 const isHub = route.template === "capability-hub";
 const marketingPaths = ["/about/", "/engineering/", "/faq/", "/trust/", "/pricing/", "/offline-first-software/"];
 const isMarketingPage = route.template === "marketing" && marketingPaths.includes(route.path);
@@ -170,6 +171,7 @@ const pageStyles = [
   socialImage={route.socialImage}
   structuredData={structuredData}
   pageStyles={pageStyles}
+  redirectTo={isIndustryRedirect ? "/solutions/#industry-paths" : undefined}
   requestHref={contactHref}
   requestLabel={requestLabel}
   bodyClass={`page-${route.template}${isFlagshipPage ? " page-flagship-product" : ""}${isVedikEcosystem ? " page-vedik-ecosystem" : ""}`}
@@ -251,6 +253,15 @@ const pageStyles = [
     </>
   ) : isProductIndex ? (
     <ProductCatalogue products={publicProducts} demoEligibleProductIds={demoEligibleProductIds} contactHref={contactHref} client:visible />
+  ) : isIndustryRedirect ? (
+    <section class="section" style="padding-block: clamp(4rem, 8vw, 7rem);">
+      <div class="shell" style="display:grid; gap:1.1rem; justify-items:start; max-width:54rem;">
+        <p class="t-label">Industry paths</p>
+        <h1 id="page-title" style="margin:0; font-family:var(--font-display); font-size:clamp(2.2rem,4.5vw,3.6rem); letter-spacing:-0.04em; line-height:1;">Industry paths now live inside Solutions.</h1>
+        <p style="margin:0; max-width:52ch; color:var(--ink-muted); line-height:1.65;">The sector paths joined the capability families on one hub. You are being redirected there now.</p>
+        <a class="button button--primary" href="/solutions/#industry-paths">Open the solutions hub</a>
+      </div>
+    </section>
   ) : isSolutionIndex ? (
     <SolutionsIndex route={route} solutions={solutions} products={publicProducts} variant={route.template === "industry-index" ? "industries" : "solutions"} />
   ) : isHub && hub ? (
