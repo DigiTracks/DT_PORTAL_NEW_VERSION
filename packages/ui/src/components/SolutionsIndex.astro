@@ -543,8 +543,8 @@ const constraints = isIndustry
   .sol-industries__grid a {
     position: relative;
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas: "idx name" "flow flow" "go go";
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "idx name go" "flow flow flow";
     gap: 0.45rem 0.9rem;
     height: 100%;
     align-content: start;
@@ -588,7 +588,7 @@ const constraints = isIndustry
   }
   .sol-industries__go {
     grid-area: go;
-    margin-top: 0.55rem;
+    padding-top: 0.35rem;
     color: var(--signal-deep);
     transition: transform 180ms ease;
   }

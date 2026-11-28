@@ -795,3 +795,70 @@
   outline: 2px solid var(--signal-deep);
   outline-offset: 2px;
 }
+
+/* Premium body sections: sequence, questions and product tiles */
+.industry-sequence {
+  gap: 0.85rem;
+  background: none;
+}
+.industry-sequence li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  gap: 1.15rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgb(13 27 46 / 11%);
+  border-left: 3px solid color-mix(in srgb, var(--a1, var(--signal)) 65%, transparent);
+  border-radius: 14px;
+  background: var(--paper-bright);
+  transition: transform 220ms var(--ease-out), border-color 220ms ease, box-shadow 220ms ease;
+}
+.industry-sequence li:hover {
+  transform: translateY(-2px);
+  border-left-color: var(--a1, var(--signal));
+  box-shadow: 0 16px 36px rgb(13 27 46 / 10%), 0 0 0 1px rgb(255 197 61 / 10%);
+}
+.industry-sequence li > span {
+  padding-top: 0.28rem;
+  color: var(--signal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+}
+.industry-sequence i {
+  align-self: center;
+  color: var(--signal-deep);
+  font-style: normal;
+  opacity: 0.55;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+.industry-sequence li:hover i { transform: translateX(3px); opacity: 1; }
+.industry-questions ol { gap: 0.8rem; }
+.industry-questions li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 1rem;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid rgb(13 27 46 / 11%);
+  border-radius: 13px;
+  background: var(--paper-bright);
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms var(--ease-out);
+}
+.industry-questions li:hover {
+  transform: translateY(-2px);
+  border-color: rgb(41 86 230 / 26%);
+  box-shadow: 0 14px 32px rgb(13 27 46 / 9%), 0 0 0 1px rgb(255 197 61 / 10%);
+}
+.industry-questions li > span {
+  padding-top: 0.22rem;
+  color: var(--signal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+}
+.industry-product-card__head img {
+  border-radius: 14px;
+  border: 1px solid rgb(13 27 46 / 12%);
+  box-shadow: 0 12px 28px rgb(13 27 46 / 13%);
+}
