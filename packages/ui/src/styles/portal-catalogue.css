@@ -1332,3 +1332,42 @@ body.page-product-index {
     height: 3.4rem;
   }
 }
+
+/* Family rows: variants nest inside the product or suite they belong to. */
+.catalogue-record--variant {
+  position: relative;
+  min-height: 4.4rem;
+  padding: 0.75rem 0.65rem 0.75rem 3.4rem;
+}
+
+.catalogue-record--variant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.65rem;
+  width: 1px;
+  background: var(--p-border);
+}
+
+.catalogue-record--variant::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.65rem;
+  width: 1.25rem;
+  height: 1px;
+  background: var(--p-border);
+}
+
+.catalogue-record--variant strong {
+  font-size: clamp(0.95rem, 1.3vw, 1.12rem);
+}
+
+.catalogue-record--variant .catalogue-record__summary {
+  font-size: 0.78rem;
+}
+
+.catalogue-record--variant .catalogue-record__mark {
+  color: var(--p-muted);
+}

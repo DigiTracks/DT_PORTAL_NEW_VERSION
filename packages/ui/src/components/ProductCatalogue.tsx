@@ -87,6 +87,18 @@ function isCatalogueView(value: string | null): value is CatalogueView {
   return value !== null && Object.hasOwn(viewLabels, value);
 }
 
+function familyName(product: PublicProductRecord) {
+  return product.name.replace(/\s+(Basic|Professional)$/, "");
+}
+
+function variantLabel(parent: PublicProductRecord, child: PublicProductRecord) {
+  return child.name.startsWith(parent.name)
+    ? child.name.slice(parent.name.length).trim() || child.name
+    : child.name.startsWith(familyName(parent)) && familyName(parent) !== parent.name
+      ? child.name.slice(familyName(parent).length).trim() || child.name
+      : child.name;
+}
+
 interface CatalogueState {
   query: string;
   disciplineId: string;
@@ -344,26 +356,37 @@ export default function ProductCatalogue({ products, demoEligibleProductIds, con
                       <small>{String(records.length).padStart(2, "0")}</small>
                     </header>
                     <ul className="catalogue-records__list">
-                      {records.map((product) => {
-                        const selected = activeProduct?.id === product.id;
-                        const parent = product.parentId ? products.find((item) => item.id === product.parentId) : undefined;
-                        return (
-                          <li key={product.id}>
-                            <a
-                              href={`${product.route}/`}
-                              className={`catalogue-record${selected ? " catalogue-record--active" : ""}`}
-                              aria-current={selected ? "true" : undefined}
-                              onClick={(event) => selectProduct(event, product)}
-                            >
-                              <span className="catalogue-record__mark"><ProductMark product={product} size={42} /></span>
-                              <strong>{product.name}</strong>
-                              <span className="catalogue-record__summary">{product.summary}</span>
-                              <span className="catalogue-record__meta">{parent ? `Within ${parent.name}` : salesAvailability(product.availability)}</span>
-                              <span className="catalogue-record__arrow"><Arrow /></span>
-                            </a>
-                          </li>
-                        );
-                      })}
+                      {(() => {
+                        const childIds = new Set(records.filter((item) => item.parentId && records.some((other) => other.id === item.parentId)).map((item) => item.id));
+                        const groups = records
+                          .filter((item) => !childIds.has(item.id))
+                          .map((parent) => ({ parent, children: records.filter((item) => item.parentId === parent.id) }));
+                        return groups.map(({ parent, children }) => {
+                          const rows = children.length ? [parent, ...children] : [parent];
+                          return rows.map((product) => {
+                            const selected = activeProduct?.id === product.id;
+                            const isVariant = product.id !== parent.id;
+                            const owner = isVariant ? parent : product.parentId ? products.find((item) => item.id === product.parentId) : undefined;
+                            const label = isVariant ? variantLabel(parent, product) : children.length ? familyName(product) : product.name;
+                            return (
+                              <li key={product.id}>
+                                <a
+                                  href={`${product.route}/`}
+                                  className={`catalogue-record${selected ? " catalogue-record--active" : ""}${isVariant ? " catalogue-record--variant" : ""}`}
+                                  aria-current={selected ? "true" : undefined}
+                                  onClick={(event) => selectProduct(event, product)}
+                                >
+                                  <span className="catalogue-record__mark"><ProductMark product={product} size={isVariant ? 32 : 42} /></span>
+                                  <strong>{label}</strong>
+                                  <span className="catalogue-record__summary">{product.summary}</span>
+                                  <span className="catalogue-record__meta">{owner ? `Within ${familyName(owner)}` : salesAvailability(product.availability)}</span>
+                                  <span className="catalogue-record__arrow"><Arrow /></span>
+                                </a>
+                              </li>
+                            );
+                          });
+                        });
+                      })()}
                     </ul>
                   </section>
                 );

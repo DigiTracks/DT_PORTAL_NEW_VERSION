@@ -1611,7 +1611,7 @@ export const catalogData = {
       "id": "mindone",
       "name": "MIND ONE Basic",
       "summary": "Free, focused interview practice with answer-specific coaching",
-      "description": "MIND ONE Basic is the free, focused entry position in the MIND ONE family. It covers résumé- and job-description-grounded practice, spoken or typed answers, answer-specific coaching and a structured debrief. MIND ONE Complete expands the experience with durable history and progress tools. Access remains request-only during pre-launch while released quotas and entitlement rules are confirmed.",
+      "description": "MIND ONE Basic is the free, focused entry position in the MIND ONE family. It covers résumé- and job-description-grounded practice, spoken or typed answers, answer-specific coaching and a structured debrief. MIND ONE Professional expands the experience with durable history and progress tools. Access remains request-only during pre-launch while released quotas and entitlement rules are confirmed.",
       "audience": "Interview candidates, career changers and people practising competency-based interviews",
       "category": "Education",
       "licenseModel": "proprietary",
@@ -1655,9 +1655,9 @@ export const catalogData = {
     },
     {
       "id": "mindone-pro",
-      "name": "MIND ONE Complete",
+      "name": "MIND ONE Professional",
       "summary": "Full MIND ONE feature access with durable practice history and progress tools",
-      "description": "MIND ONE Complete is the full-feature position in the MIND ONE family. Its implemented scope adds durable local profiles and sessions, saved history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity research, app lock and diagnostics. Access remains request-only during pre-launch; full feature access does not mean unmetered hosted AI, released billing or a confirmed launch date.",
+      "description": "MIND ONE Professional is the full-feature position in the MIND ONE family. Its implemented scope adds durable local profiles and sessions, saved history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity research, app lock and diagnostics. Access remains request-only during pre-launch; full feature access does not mean unmetered hosted AI, released billing or a confirmed launch date.",
       "audience": "Candidates and organisations seeking the complete MIND ONE experience",
       "category": "Education",
       "licenseModel": "proprietary",
@@ -1665,7 +1665,7 @@ export const catalogData = {
       "availability": "request-only",
       "requestable": true,
       "parentId": "mindone",
-      "edition": "Complete edition",
+      "edition": "Professional edition",
       "claims": [
         {
           "id": "CLM-004",
@@ -1700,7 +1700,7 @@ export const catalogData = {
       "status": "Pre-launch / request only",
       "route": "/products/mindone-pro",
       "evidenceStatus": "code-backed",
-      "evidenceNote": "The documented Complete scope includes durable local history and progress tools. It does not prove released commercial entitlement, billing, integration, provider terms, unmetered usage or public launch availability.",
+      "evidenceNote": "The documented Professional scope includes durable local history and progress tools. It does not prove released commercial entitlement, billing, integration, provider terms, unmetered usage or public launch availability.",
       "industryIds": [
         "education",
         "recruitment"
@@ -1725,7 +1725,7 @@ export const catalogData = {
         },
         {
           "title": "Choose the next conversation",
-          "description": "Request an institution or placement evaluation, or review MIND ONE Basic and Complete for candidate practice."
+          "description": "Request an institution or placement evaluation, or review MIND ONE Basic and Professional for candidate practice."
         }
       ],
       "outcomes": [

@@ -10,7 +10,7 @@ const { product } = Astro.props;
 const isComplete = product.id === "mindone-pro";
 const requestHref = `/contact/?intent=product-enquiry&product=${encodeURIComponent(product.id)}`;
 const compareHref = "/products/mindone/compare/";
-const requestLabel = isComplete ? "Get Complete access" : "Get Basic access";
+const requestLabel = isComplete ? "Get Professional access" : "Get Basic access";
 const practiceSteps = [
   { number: "01", title: "Ground the session", label: "Résumé + role brief", copy: "Start with the candidate’s experience and the requirements of the role." },
   { number: "02", title: "Ask the question", label: "Role-specific practice", copy: "Use résumé- and job-description-grounded questions for the role being practised." },
@@ -19,7 +19,7 @@ const practiceSteps = [
   { number: "05", title: "Keep the debrief", label: "Priorities + drill sheet", copy: "Finish with prioritised tips and a focused practice sheet." }
 ] as const;
 const commitments = [
-  ["Price and licence", "Basic is free. Complete is quoted for your team, with the licence agreed before rollout."],
+  ["Price and licence", "Basic is free. Professional is quoted for your team, with the licence agreed before rollout."],
   ["Usage limits", "Hosted AI follows the provider plan and fair-use rules we agree with you in writing."],
   ["Integrations", "ATS and workflow integrations are scoped with your team during onboarding."],
   ["Deployment and providers", "Hosted or in your environment, with providers and retention agreed up front."],
@@ -28,29 +28,29 @@ const commitments = [
 ---
 
 <section class="flagship-hero" aria-labelledby="flagship-title">
-  <div class="flagship-hero__word" aria-hidden="true">{isComplete ? "COMPLETE" : "M/01"}</div>
+  <div class="flagship-hero__word" aria-hidden="true">{isComplete ? "PROFESSIONAL" : "M/01"}</div>
   <div class="shell flagship-hero__grid">
     <div class="flagship-hero__copy">
       <p class="t-label"><span class="signal-dot" aria-hidden="true"></span>MIND ONE family / {product.edition}</p>
       <h1 id="flagship-title"><span class={isComplete ? "flagship-hero__title--complete" : undefined}>{product.name}</span><em>{isComplete ? "The full MIND ONE experience." : "Your experience should shape the rehearsal."}</em></h1>
-      <p class="flagship-hero__lede">{product.summary}. {isComplete ? "The implemented Complete scope adds durable local history, progress and role-development tools to the shared practice model." : "A free, focused pre-launch practice position for candidates preparing for competency-based interviews."}</p>
+      <p class="flagship-hero__lede">{product.summary}. {isComplete ? "The implemented Professional scope adds durable local history, progress and role-development tools to the shared practice model." : "A free, focused pre-launch practice position for candidates preparing for competency-based interviews."}</p>
       <div class="button-row">
         <Button href={requestHref} ctaId="request-mindone-access">{requestLabel}</Button>
-        <Button href={compareHref} variant="secondary" ctaId="compare-mindone-editions">Compare Basic and Complete</Button>
+        <Button href={compareHref} variant="secondary" ctaId="compare-mindone-editions">Compare Basic and Professional</Button>
       </div>
-      <p class="flagship-hero__request-note">Basic is free. Complete is activated through a short conversation with our team.</p>
+      <p class="flagship-hero__request-note">Basic is free. Professional is activated through a short conversation with our team.</p>
       <dl class="flagship-hero__facts">
         <div><dt>Availability</dt><dd>{salesStatus(product.status)}</dd></div>
-        <div><dt>Evidence</dt><dd>{isComplete ? "Implemented Complete scope reviewed" : "Core practice scope reviewed"}</dd></div>
+        <div><dt>Evidence</dt><dd>{isComplete ? "Implemented Professional scope reviewed" : "Core practice scope reviewed"}</dd></div>
       </dl>
     </div>
 
     {isComplete ? (
       <figure class="edition-instrument">
-        <div class="edition-instrument__head"><span>DT / MIND ONE—COMPLETE</span><span>Implemented scope</span></div>
+        <div class="edition-instrument__head"><span>DT / MIND ONE—PROFESSIONAL</span><span>Implemented scope</span></div>
         <div class="edition-instrument__body">
           <p class="t-label">Full feature position</p>
-          <strong>COMPLETE</strong>
+          <strong>PROFESSIONAL</strong>
           <ol>
             {product.capabilities.map((capability, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><p>{capability}</p></li>)}
           </ol>
@@ -80,9 +80,9 @@ const commitments = [
   <div class="shell flagship-brief__grid">
     <div><p class="t-label">The MIND ONE family</p><h2 id="flagship-brief-title">{isComplete ? "One practice model. A complete workspace." : "Practice should begin with what you have actually done."}</h2></div>
     <div class="prose">
-      <p>{isComplete ? "MIND ONE Complete carries the shared résumé- and role-grounded practice model into a fuller local workspace. Its implemented scope includes durable profiles and history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity research, app lock and diagnostics." : "Generic interview questions cannot show how a candidate’s experience meets a role’s demands. MIND ONE Basic connects the résumé and job description to practice questions, then uses the answer itself to shape coaching and debrief."}</p>
+      <p>{isComplete ? "MIND ONE Professional carries the shared résumé- and role-grounded practice model into a fuller local workspace. Its implemented scope includes durable profiles and history, résumé/JD comparison, learning goals, progress tracking, role-development maps, source-attributed opportunity research, app lock and diagnostics." : "Generic interview questions cannot show how a candidate’s experience meets a role’s demands. MIND ONE Basic connects the résumé and job description to practice questions, then uses the answer itself to shape coaching and debrief."}</p>
       <p><strong>Who it is for.</strong> {product.audience}.</p>
-      <p>{isComplete ? "Complete unlocks the full feature set, hosted AI included, under your provider's fair-use terms." : "Built for focused preparation: grounded questions, real practice, a clear debrief and the next drill."}</p>
+      <p>{isComplete ? "Professional unlocks the full feature set, hosted AI included, under your provider's fair-use terms." : "Built for focused preparation: grounded questions, real practice, a clear debrief and the next drill."}</p>
     </div>
   </div>
 </section>
@@ -102,8 +102,8 @@ const commitments = [
 <section class="flagship-scope section" aria-labelledby="flagship-scope-title">
   <div class="shell flagship-scope__grid">
     <div>
-      <p class="t-label">{isComplete ? "Complete scope" : "Basic scope"}</p>
-      <h2 id="flagship-scope-title">{isComplete ? "The complete workspace." : "Focused practice. Clear boundaries."}</h2>
+      <p class="t-label">{isComplete ? "Professional scope" : "Basic scope"}</p>
+      <h2 id="flagship-scope-title">{isComplete ? "The full workspace." : "Focused practice. Clear boundaries."}</h2>
       <ul class="index-list index-list--simple">
         {product.capabilities.map((capability) => <li><strong>{capability}</strong></li>)}
       </ul>
@@ -111,7 +111,7 @@ const commitments = [
     <aside class="privacy-note">
       <p class="t-label">Data posture</p>
       <h3>{isComplete ? "Local history. Explicit choices." : "Local by default. Hosted only by choice."}</h3>
-      <p>{isComplete ? "Complete adds durable local profiles and practice history. Hosted AI remains an explicit configuration choice, with provider, retention and quotas agreed for your deployment." : "Focused practice sessions with optional hosted AI by explicit consent. Providers, retention and deployment are agreed for your team."}</p>
+      <p>{isComplete ? "Professional adds durable local profiles and practice history. Hosted AI remains an explicit configuration choice, with provider, retention and quotas agreed for your deployment." : "Focused practice sessions with optional hosted AI by explicit consent. Providers, retention and deployment are agreed for your team."}</p>
       <Button href={requestHref} variant="secondary" ctaId="request-mindone-access">Ask about data handling</Button>
     </aside>
   </div>
@@ -133,14 +133,14 @@ const commitments = [
   <div class="shell">
     <div class="section-head">
       <div><p class="t-label">Choose your edition</p><h2 id="flagship-editions-title">One family.<br>Two ways to practise.</h2></div>
-      <p>Basic is free and focused. Complete adds the full MIND ONE feature set, with access and rollout agreed with your team.</p>
+      <p>Basic is free and focused. Professional adds the full MIND ONE feature set, with access and rollout agreed with your team.</p>
     </div>
     <div class="flagship-editions__grid">
       <a class="edition-card edition-card--entry" href="/products/mindone/">
         <span class="t-label">Free / focused practice</span><h3>MIND ONE Basic</h3><p>Grounded questions, spoken or typed answers, answer-specific coaching and a structured debrief.</p><small>Explore Basic <span aria-hidden="true">↗</span></small>
       </a>
       <a class="edition-card edition-card--complete" href="/products/mindone-pro/">
-        <span class="t-label">Full feature access</span><h3>MIND ONE Complete</h3><p>The complete practice workspace with durable history, progress, comparison and role-development tools.</p><small>Explore Complete <span aria-hidden="true">↗</span></small>
+        <span class="t-label">Full feature access</span><h3>MIND ONE Professional</h3><p>The full practice workspace with durable history, progress, comparison and role-development tools.</p><small>Explore Professional <span aria-hidden="true">↗</span></small>
       </a>
     </div>
   </div>
@@ -156,7 +156,7 @@ const commitments = [
 
 <section class="flagship-close" aria-labelledby="flagship-close-title">
   <div class="shell flagship-close__grid">
-    <div><p class="t-label">Next step</p><h2 id="flagship-close-title">{isComplete ? "Evaluate the complete MIND ONE workspace." : "Bring the role you are preparing for."}</h2></div>
+    <div><p class="t-label">Next step</p><h2 id="flagship-close-title">{isComplete ? "Evaluate the full MIND ONE workspace." : "Bring the role you are preparing for."}</h2></div>
     <div><p>Tell us which edition fits and what your team needs. We will confirm scope, access and a start date.</p><Button href={requestHref} ctaId="request-mindone-access">{requestLabel}</Button></div>
   </div>
 </section>

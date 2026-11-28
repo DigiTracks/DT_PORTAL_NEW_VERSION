@@ -424,7 +424,7 @@
   padding: 1.4rem;
   border: 1px solid var(--ink);
   background: var(--night);
-  color: var(--signal);
+  color: var(--signal-deep);
   text-align: center;
 }
 
@@ -437,7 +437,7 @@
 
 .family-constellation__core span {
   margin-bottom: 0.6rem;
-  color: var(--signal);
+  color: var(--signal-deep);
   font-family: var(--font-mono);
   font-size: 0.8rem;
   letter-spacing: 0.08em;

@@ -495,10 +495,6 @@
   color: var(--signal-deep);
 }
 
-.edition-card--complete small span {
-  color: var(--signal);
-}
-
 .flagship-evidence {
   border-top: 1px solid var(--p-border);
   background: var(--paper-bright);
@@ -943,7 +939,7 @@
 }
 
 .edition-decisions__cards article:last-child > span {
-  color: var(--signal);
+  color: var(--signal-deep);
 }
 
 .edition-decisions__cards article:last-child p:not(.t-label) {

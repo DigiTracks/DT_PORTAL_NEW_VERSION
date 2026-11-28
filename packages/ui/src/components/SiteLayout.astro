@@ -63,8 +63,8 @@ const headerCtaId =
         : "request-conversation");
 
 const isPortal = originId === "portal";
-const headerOnDark = originId === "procuresherpa";
-const footerOnDark = originId === "portal" || originId === "learn" || originId === "procuresherpa" || originId === "learnpmo" || originId === "hcmfusion";
+const headerOnDark = false;
+const footerOnDark = true;
 const themeColors: Record<string, string> = {
   portal: "#f6efdc",
   learn: "#fffaf0",
@@ -82,8 +82,7 @@ const estateLinks = [
   { label: "HCM Fusion", href: "https://hcmfusion.digitracks.net/" }
 ];
 const flagshipLinks = [
-  { label: "MIND ONE Basic", href: "https://digitracks.net/products/mindone/", note: "Free focused interview practice" },
-  { label: "MIND ONE Complete", href: "https://digitracks.net/products/mindone-pro/", note: "Full MIND ONE feature access" },
+  { label: "MIND ONE", href: "https://digitracks.net/products/mindone/", note: "Interview practice - Basic and Professional editions" },
   { label: "Vedik", href: "https://digitracks.net/products/vedik/", note: "Education ecosystem" },
   { label: "Campus Grid", href: "https://digitracks.net/products/campus-grid/", note: "Placement within the Vedik portfolio" },
   { label: "Nipuna", href: "https://digitracks.net/products/nipuna/", note: "Local-first recruiting" }
@@ -301,7 +300,6 @@ const previewOrigins = origins.map((item, index) => ({ production: item.origin, 
                   </div>
                 ))}
                 <a class="nav-menu__cta" href="/resources/">All resources<span aria-hidden="true">→</span></a>
-                <a class="nav-menu__cta" href="/products/mindone/compare/">Compare MIND ONE editions<span aria-hidden="true">→</span></a>
               </div>
             </details>
             <a href="/about/">About</a>

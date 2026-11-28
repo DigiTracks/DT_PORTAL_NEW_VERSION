@@ -1371,22 +1371,6 @@ h3 em,
   font-size: clamp(2.8rem, 4.6vw, 5rem);
 }
 
-.studio-section__ledger {
-  margin-top: 2rem;
-}
-
-.studio-section__ledger > div {
-  padding: 1rem 1.2rem;
-}
-
-.studio-section__ledger dd {
-  color: var(--ink);
-  font-size: clamp(2.2rem, 3vw, 3.2rem);
-}
-
-.studio-section__ledger > div:first-child dd {
-  color: #8a6114;
-}
 /* Balance the footer columns instead of one oversized brand well. */
 @media (min-width: 75rem) {
   .site-footer__top {
@@ -1501,7 +1485,7 @@ nav.breadcrumbs.shell {
 .site-footer__policies {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   gap: 0.4rem 1.1rem;
 }
 
@@ -1548,4 +1532,68 @@ nav.breadcrumbs.shell {
     padding-left: 0;
     border-left: 0;
   }
+}
+
+/* Footer compaction: the Products list runs two columns at desktop widths and
+   the vertical rhythm tightens, so the footer ends the page without dominating it. */
+.site-footer {
+  padding-block: clamp(1.6rem, 2.4vw, 2.2rem) 0.8rem;
+}
+
+.site-footer__top {
+  gap: clamp(1.2rem, 2vw, 2.2rem);
+  row-gap: 1.6rem;
+}
+
+.site-footer__claim {
+  margin: 0.7rem 0 0.85rem;
+  font-size: clamp(1.45rem, 1.9vw, 1.9rem);
+}
+
+.site-footer__col {
+  gap: 0.16rem;
+}
+
+.site-footer__col .t-label {
+  margin-bottom: 0.35rem;
+}
+
+.site-footer__col a {
+  padding-block: 0.13rem;
+}
+
+@media (min-width: 64rem) {
+  .site-footer__top > .site-footer__intro + .site-footer__col {
+    display: block;
+    columns: 2;
+    column-gap: 1.6rem;
+  }
+
+  .site-footer__top > .site-footer__intro + .site-footer__col a {
+    display: flex;
+    width: fit-content;
+    break-inside: avoid;
+  }
+}
+
+.site-footer__legal {
+  padding-block: 1rem 1.15rem;
+}
+
+/* Estate chrome: one header and one footer theme across every origin, so the
+   shared navigation, actions and footer always carry the same colours. */
+:root,
+html[data-origin] {
+  --header-bg: rgb(246 239 220 / 95%);
+  --header-ink: #163b70;
+  --header-muted: #526584;
+  --header-panel: #fffaf0;
+  --header-border: rgb(22 59 112 / 17%);
+  --header-accent: #8a6114;
+  --header-action: #12243c;
+  --header-action-ink: #fffaf0;
+  --footer-bg: #0c1a2c;
+  --footer-ink: #fffaf0;
+  --footer-muted: rgb(198 212 230 / 78%);
+  --footer-border: rgb(198 212 230 / 14%);
 }
