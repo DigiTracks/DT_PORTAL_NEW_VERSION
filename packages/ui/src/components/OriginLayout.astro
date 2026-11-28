@@ -1,5 +1,5 @@
 ---
-import { breadcrumbSchema, routeUrl, type RouteRecord } from "@digitracks/seo";
+import { breadcrumbSchema, routeRegistry, routeUrl, staticPageRoutes, type RouteRecord } from "@digitracks/seo";
 import SiteLayout from "./SiteLayout.astro";
 import "../styles/base.css";
 import commonStyles from "../styles/origin-common.css?inline";
@@ -21,7 +21,13 @@ interface Props {
 const { route, brandSuffix, navItems, requestHref, requestLabel, bodyClass } = Astro.props;
 const canonical = routeUrl(route.origin, route.path);
 const isHome = route.path === "/";
-const breadcrumbs = route.breadcrumbs.map((item) => ({ name: item.label, item: routeUrl(route.origin, item.path) }));
+// Breadcrumb parents may be URL prefixes without a page of their own (e.g. /evidence/).
+// Link only to routes that actually build; render the rest as plain trail text.
+const realPaths = new Set(staticPageRoutes(route.origin, routeRegistry).map((item) => item.path));
+const isCrumbLink = (path: string) => path === route.path || path === "/" || realPaths.has(path);
+const breadcrumbs = route.breadcrumbs
+  .filter((item) => isCrumbLink(item.path))
+  .map((item) => ({ name: item.label, item: routeUrl(route.origin, item.path) }));
 const structuredData = route.indexable && breadcrumbs.length
   ? JSON.stringify([breadcrumbSchema(breadcrumbs)]).replace(/</g, "\\u003c")
   : undefined;
@@ -56,7 +62,7 @@ const pageStyles = [commonStyles, originStyles[route.origin]].filter(Boolean).jo
 >
   {!isHome && <nav class="breadcrumbs shell origin-breadcrumbs" aria-label="Breadcrumb">
     <ol>
-      {route.breadcrumbs.map((item, index) => <li>{index < route.breadcrumbs.length - 1 ? <a href={routeUrl(route.origin, item.path)}>{item.label}</a> : <span aria-current="page">{item.label}</span>}</li>)}
+      {route.breadcrumbs.map((item, index) => <li>{index < route.breadcrumbs.length - 1 ? (isCrumbLink(item.path) ? <a href={routeUrl(route.origin, item.path)}>{item.label}</a> : <span>{item.label}</span>) : <span aria-current="page">{item.label}</span>}</li>)}
     </ol>
   </nav>}
   <slot />
