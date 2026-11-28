@@ -1255,6 +1255,10 @@ h3 em,
   margin-block: 1rem 0.25rem;
 }
 
+.mobile-nav__panel a.mobile-nav__request {
+  color: var(--header-action-ink);
+}
+
 .site-footer__grid {
   grid-template-columns: minmax(15rem, 1.45fr) minmax(11rem, 0.9fr) minmax(11rem, 0.8fr) minmax(11rem, 0.8fr);
 }

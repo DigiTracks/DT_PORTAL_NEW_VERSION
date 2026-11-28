@@ -660,7 +660,7 @@
 }
 
 .industry-hero__audience span {
-  color: var(--a1);
+  color: color-mix(in srgb, var(--a1) 72%, white);
 }
 
 /* The model figure becomes a glass instrument with an accent glow. */
@@ -704,10 +704,13 @@
   background: linear-gradient(90deg, color-mix(in srgb, var(--a1) 55%, transparent), transparent);
 }
 
-.industry-questions li span,
+.industry-questions li span {
+  color: var(--signal-deep);
+}
+
 .industry-outcomes li span,
 .industry-outcomes .t-label {
-  color: var(--signal-deep);
+  color: var(--signal);
 }
 
 /* Product cards: accent edge, lift and glow on hover. */
